@@ -28,6 +28,7 @@
   const lpDetailClose = document.getElementById("lpDetailClose");
   const skeleton = document.querySelector(".skeleton-list");
   const navItems = [...document.querySelectorAll(".bottom-nav [data-view]")];
+  const showLpMonitor = lpMonitor.length > 0 && Boolean(lpMonitorPanel);
 
   const loadSaved = () => {
     try {
@@ -132,8 +133,12 @@
       const query = queryText();
       if (query) {
         const newsCount = Number.isFinite(counts.newsCount) ? counts.newsCount : filtered().length;
-        const noticeCount = Number.isFinite(counts.noticeCount) ? counts.noticeCount : filteredLpMonitor().length;
-        briefMeta.textContent = `검색 결과 뉴스 ${newsCount}건 · 공식공고 ${noticeCount}건`;
+        if (showLpMonitor) {
+          const noticeCount = Number.isFinite(counts.noticeCount) ? counts.noticeCount : filteredLpMonitor().length;
+          briefMeta.textContent = `검색 결과 뉴스 ${newsCount}건 · 공식공고 ${noticeCount}건`;
+        } else {
+          briefMeta.textContent = `검색 결과 뉴스 ${newsCount}건`;
+        }
         return;
       }
       const countLabel = activeBrief.countLabel || `주요 뉴스 ${articles.length}건`;
@@ -169,6 +174,7 @@
   };
 
   const filteredLpMonitor = () => {
+    if (!showLpMonitor) return [];
     const query = queryText();
     if (!query) return lpMonitor;
     return lpMonitor.filter((item) => textMatches([

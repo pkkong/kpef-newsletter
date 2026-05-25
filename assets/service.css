@@ -716,7 +716,7 @@ button, input { font: inherit; }
   background: rgba(249,249,249,0.88);
   backdrop-filter: blur(22px);
 }
-.newsletter-only .bottom-nav { grid-template-columns: repeat(2, 1fr); }
+.newsletter-only .bottom-nav { grid-template-columns: repeat(3, 1fr); }
 .bottom-nav button,
 .bottom-nav a {
   display: flex;
