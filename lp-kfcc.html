@@ -28,6 +28,9 @@
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
     .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
     .ktcu-tabbar a { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .ktcu-profile-toolbar { display: grid; gap: 8px; margin-top: 10px; }
+    .ktcu-profile-toolbar input { width: 100%; min-height: 40px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: #fff; color: var(--text); font-size: 13px; }
+    .ktcu-profile-toolbar p { margin: 0; color: var(--secondary); font-size: 12px; line-height: 1.45; }
     .ktcu-intel-grid { display: grid; gap: 10px; margin-top: 10px; }
     .ktcu-coverage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .ktcu-coverage div { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
@@ -79,6 +82,12 @@
     .ktcu-timeline-item h3 { margin: 0; font-size: 14px; line-height: 1.4; }
     .ktcu-timeline-item h3 a { color: var(--text); text-decoration: none; }
     .ktcu-timeline-item p { margin: 0; color: var(--secondary); font-size: 12.5px; line-height: 1.45; }
+    .ktcu-news-list { display: grid; gap: 9px; }
+    .ktcu-news-row { border-top: 1px solid var(--separator); padding-top: 9px; }
+    .ktcu-news-row:first-child { border-top: 0; padding-top: 0; }
+    .ktcu-news-row span { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-news-row h3 { margin: 4px 0 0; color: var(--text); font-size: 13.5px; line-height: 1.4; }
+    .ktcu-news-row a { color: inherit; text-decoration: none; }
     .ktcu-notices { display: grid; gap: 8px; }
     .ktcu-notice { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; border-top: 1px solid var(--separator); padding-top: 10px; }
     .ktcu-notice:first-child { border-top: 0; padding-top: 0; }
@@ -101,6 +110,7 @@
     .ktcu-evidence a { color: var(--secondary); font-size: 12px; text-decoration: none; }
     .ktcu-peer-table { display: grid; gap: 7px; }
     .ktcu-peer-row { display: grid; grid-template-columns: minmax(112px, 1.2fr) minmax(78px, 0.9fr) 44px 68px 74px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
+    .ktcu-peer-head { background: #f7fafb; color: var(--secondary); font-weight: 800; }
     .ktcu-peer-row.active { border-color: #1f6b63; background: #f0faf7; }
     .ktcu-peer-row strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; }
     .ktcu-peer-row span { min-width: 0; color: var(--secondary); overflow-wrap: anywhere; }
@@ -116,8 +126,11 @@
       .ktcu-lower { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr); }
     }
     @media (max-width: 620px) {
+      .ktcu-nav span, .ktcu-tabbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
+      .ktcu-nav a, .ktcu-tabbar a { flex: 0 0 auto; }
       .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
       .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
+      .ktcu-peer-head { display: none; }
     }
   </style>
 </head>
@@ -129,11 +142,19 @@
         <span>
           <a href="index.html">Daily Brief</a>
           <a href="lp-notices.html">LP 공고</a>
+          <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
+          <a class="ktcu-profile-link" href="lp-kvic.html">벤처투자</a>
+          <a class="ktcu-profile-link" href="lp-kgrowth.html">성장금융</a>
+          <a class="ktcu-profile-link" href="lp-kdb.html">산은</a>
+          <a class="ktcu-profile-link" href="lp-kafi.html">농금원</a>
+          <a class="ktcu-profile-link" href="lp-koreapost.html">우본</a>
           <a class="ktcu-profile-link" href="lp-ktcu.html">교공</a>
           <a class="ktcu-profile-link" href="lp-pmaa.html">경공</a>
           <a class="ktcu-profile-link" href="lp-cu.html">신협</a>
           <a class="ktcu-profile-link active" href="lp-kfcc.html">새마을금고</a>
           <a class="ktcu-profile-link" href="lp-kexim.html">수은</a>
+          <a class="ktcu-profile-link" href="lp-kbiz.html">중기중앙</a>
+          <a class="ktcu-profile-link" href="lp-ibk.html">IBK</a>
         </span>
       </nav>
       <section class="ktcu-hero" aria-label="새마을금고중앙회 요약">
@@ -143,7 +164,7 @@
           <p>Mutual Finance의 투자 현황, 담당 조직, 출자공고 흐름을 공개자료 기준으로 정리했습니다. PE 관점에서는 신용공제대표이사/대체운용본부와 PEF · VC · Private Credit · Real Estate 출자 패턴을 먼저 봅니다.</p>
           <div class="ktcu-quick">
             <div class="ktcu-quick-item"><strong>핵심 창구</strong>신용공제대표이사/대체운용본부</div>
-            <div class="ktcu-quick-item"><strong>2026년 활동</strong>공식 공고 0건을 확인했습니다.</div>
+            <div class="ktcu-quick-item"><strong>2025년 활동</strong>공식 공고 0건을 확인했습니다.</div>
             <div class="ktcu-quick-item"><strong>공개자료 기준</strong>공식 조직과 공고를 먼저 반영하고, 최종 선정 GP는 출처가 확인되는 순서대로 추가합니다.</div>
           </div>
           <nav class="ktcu-tabbar" aria-label="프로필 섹션">
@@ -153,12 +174,16 @@
             <a href="#peers">Peers</a>
             <a href="#sources">Sources</a>
           </nav>
+          <div class="ktcu-profile-toolbar">
+            <input type="search" id="lpProfileSearch" placeholder="이 LP 페이지에서 공고, 뉴스, GP, 출처 검색">
+            <p>공식 공고 0건 · 뉴스 신호 3건 · 공개 팩트 13개</p>
+          </div>
         </div>
         <div class="ktcu-kpis">
           <div class="ktcu-kpi"><span>총자산</span><strong>-</strong></div>
           <div class="ktcu-kpi"><span>관심 자산군</span><strong>PEF · VC · Private Credit · Real Estate</strong></div>
           <div class="ktcu-kpi"><span>공식 공고</span><strong>0건</strong></div>
-          <div class="ktcu-kpi"><span>공고 기준 출자규모</span><strong>금액 확인중</strong></div>
+          <div class="ktcu-kpi"><span>공고 기준 출자규모</span><strong>1.00조</strong></div>
         </div>
       </section>
     </header>
@@ -167,10 +192,10 @@
       <section class="ktcu-panel">
         <h2>데이터 커버리지</h2>
         <div class="ktcu-coverage">
-          <div><span>프로필 팩트</span><strong>12개</strong></div>
-          <div><span>공개 출처</span><strong>6개</strong></div>
-          <div><span>공식 공고</span><strong>0건</strong></div>
-          <div><span>공식 확인</span><strong>8개</strong></div>
+          <div><span>프로필 팩트</span><strong>13개</strong></div>
+          <div><span>공개 출처</span><strong>7개</strong></div>
+          <div><span>공식/뉴스</span><strong>0/3건</strong></div>
+          <div><span>확인 수준</span><strong>10/3</strong></div>
         </div>
       </section>
       <section class="ktcu-panel">
@@ -185,16 +210,16 @@
       </section>
     </section>
 
-    <section class="ktcu-panel ktcu-highlight-panel" aria-label="2026년 출자 하이라이트">
+    <section class="ktcu-panel ktcu-highlight-panel" aria-label="2025년 출자 하이라이트">
       <div class="ktcu-panel-head">
         <div>
-          <h2>2026년 출자 하이라이트</h2>
+          <h2>2025년 출자 하이라이트</h2>
           <p>공식 공고에 적힌 출자 예정·배정 규모입니다. 최종 선정 또는 실제 집행 금액과는 다를 수 있습니다.</p>
         </div>
         <strong>0건<br>금액 확인중</strong>
       </div>
       <div class="ktcu-highlight-list">
-          <p class="ktcu-empty-note">2026년 공식 공고가 아직 정리되지 않았습니다.</p>
+          <p class="ktcu-empty-note">2025년 공식 공고가 아직 정리되지 않았습니다.</p>
       </div>
     </section>
 
@@ -205,11 +230,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>중앙은행 역할</dt>
-            <dd>새마을금고 운용자금 조절과 안정적 자금 운용 지원<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · high</a></small></dd>
+            <dd>새마을금고 운용자금 조절과 안정적 자금 운용 지원<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>주요 금융 기능</dt>
-            <dd>신용사업·공제사업·예금자보호준비금 관리<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · high</a></small></dd>
+            <dd>신용사업·공제사업·예금자보호준비금 관리<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
+          </div>
+          <div>
+            <dt>신용사업 역할</dt>
+            <dd>안정적 자금 운용과 자금 수급조절을 위해 여·수신업무 수행<small><a href="https://www.kfcc.co.kr/business/creditBusiness.do" target="_blank" rel="noreferrer">새마을금고중앙회 신용사업 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -220,11 +249,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>핵심 의사결정 축</dt>
-            <dd>신용공제대표이사 산하 자금운용부문(CIO)·대체운용본부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · high</a></small></dd>
+            <dd>신용공제대표이사 산하 자금운용부문(CIO)·대체운용본부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>대체운용본부</dt>
-            <dd>투자관리부·부동산금융부·기업금융부·인프라금융부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · high</a></small></dd>
+            <dd>프로젝트운용부·기업운용부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -243,27 +272,27 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립 목적</dt>
-            <dd>새마을금고 경영 지원·감독과 공동이익 추구<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · high</a></small></dd>
+            <dd>새마을금고 경영 지원·감독과 공동이익 추구<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>자산·거래자</dt>
-            <dd>자산 약 280조원·거래자수 2,355만명<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · medium</a></small></dd>
+            <dd>자산 약 280조원·거래자수 2,355만명<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>금고 수</dt>
-            <dd>1,300여개<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · medium</a></small></dd>
+            <dd>1,300여개<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · 보조 출처</a></small></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울특별시 강남구 봉은사로 114길 20<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · high</a></small></dd>
+            <dd>서울특별시 강남구 봉은사로 114길 20<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>조직 네트워크</dt>
-            <dd>본부와 전국 13개 지역본부 운영<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · high</a></small></dd>
+            <dd>본부와 전국 13개 지역본부 운영<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>대표전화</dt>
-            <dd>02-2145-9114<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · high</a></small></dd>
+            <dd>02-2145-9114<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -275,7 +304,23 @@
         <h2>활동 타임라인</h2>
         <p>공식 공고, 선정 히스토리, 최근 동향을 시간순으로 묶었습니다.</p>
         <div class="ktcu-timeline">
-          <article class="ktcu-timeline-item">
+          <article class="ktcu-timeline-item" data-kind="news" data-year="2025" data-asset="VC">
+            <div>
+              <time>2025-07-25</time>
+              <span>뉴스 신호</span>
+            </div>
+            <h3><a href="https://thebell.co.kr/front/newsview.asp?code=0204&amp;key=202507251627382520102292" target="_blank" rel="noreferrer">새마을금고중앙회 2025년 VC 위탁운용사 선정</a></h3>
+            <p>VC · VC · 600억</p>
+          </article>
+          <article class="ktcu-timeline-item" data-kind="news" data-year="2025" data-asset="PEF">
+            <div>
+              <time>2025-06-26</time>
+              <span>뉴스 신호</span>
+            </div>
+            <h3><a href="https://www.investchosun.com/m/article.html?contid=2025062680181" target="_blank" rel="noreferrer">새마을금고중앙회 2025년 PE·VC 위탁운용사 선정 절차</a></h3>
+            <p>PEF · PEF·VC · 4,400억</p>
+          </article>
+          <article class="ktcu-timeline-item" data-kind="notice_history" data-year="2025" data-asset="">
             <div>
               <time>2025-06-26</time>
               <span>출자공고 히스토리</span>
@@ -283,12 +328,29 @@
             <h3><a href="https://www.investchosun.com/site/data/html_dir/2025/06/26/2025062680181.html" target="_blank" rel="noreferrer">2025년 PE·VC 위탁운용사 선정</a></h3>
             <p>PEF·VC 대상 총 4,400억원 출자 계획 보도</p>
           </article>
+          <article class="ktcu-timeline-item" data-kind="news" data-year="2024" data-asset="PEF">
+            <div>
+              <time>2024-10-15</time>
+              <span>뉴스 신호</span>
+            </div>
+            <h3><a href="https://www.investchosun.com/site/data/html_dir/2024/10/15/2024101580231.html" target="_blank" rel="noreferrer">새마을금고중앙회 2024년 PEF·메자닌 위탁운용사 선정</a></h3>
+            <p>PEF · PEF·메자닌 · 5,000억</p>
+          </article>
         </div>
       </section>
       <section class="ktcu-panel">
         <h2>연도별 공식 공고 규모</h2>
         <div class="ktcu-years">
-        <p class="ktcu-empty-note">연도별 공고 규모는 공고 데이터가 쌓이면 표시됩니다.</p>
+        <div class="ktcu-year-row">
+          <span>2025</span>
+          <div><i style="width: 100.0%"></i></div>
+          <strong>5,000억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2024</span>
+          <div><i style="width: 100.0%"></i></div>
+          <strong>5,000억</strong>
+        </div>
         </div>
       </section>
     </section>
@@ -304,7 +366,23 @@
         <h2>선정 GP 신호</h2>
         <p>공개 공고나 뉴스에서 확인된 GP명만 표시합니다.</p>
         <div class="ktcu-gp-tags">
-          <p class="ktcu-empty-note">공개 공고에서 확인된 선정 GP가 아직 없습니다.</p>
+          <span>인터베스트</span>
+          <span>이상파트너스</span>
+          <span>글랜우드크레딧</span>
+          <span>도미누스인베스트먼트</span>
+          <span>큐리어스파트너스</span>
+          <span>IMM인베스트먼트</span>
+          <span>SV인베스트먼트</span>
+          <span>KCGI</span>
+          <span>NH투자증권-우리PE</span>
+          <span>KYPE</span>
+        </div>
+      </section>
+      <section class="ktcu-panel">
+        <h2>관련 뉴스</h2>
+        <p>뉴스레터 DB와 LP 이벤트가 직접 연결된 기사입니다.</p>
+        <div class="ktcu-news-list">
+          <p class="ktcu-empty-note">뉴스레터와 직접 연결된 뉴스는 아직 없습니다.</p>
         </div>
       </section>
     </section>
@@ -317,40 +395,103 @@
         </div>
       </div>
       <div class="ktcu-peer-table">
+          <div class="ktcu-peer-row ktcu-peer-head">
+            <strong>LP</strong>
+            <span>유형</span>
+            <span>공고</span>
+            <span>규모</span>
+            <span>팩트/출처</span>
+          </div>
           <a class="ktcu-peer-row active" href="lp-kfcc.html">
             <strong>새마을금고중앙회</strong>
-            <span>Mutual Finance</span>
-            <span>0건</span>
-            <span>-</span>
-            <span>-</span>
+            <span data-label="유형">Mutual Finance</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-25">1.00조</span>
+            <span data-label="팩트/출처">13/7</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-nps.html">
+            <strong>국민연금기금</strong>
+            <span data-label="유형">Public Pension</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-20">4,000억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kvic.html">
+            <strong>한국벤처투자</strong>
+            <span data-label="유형">Fund of Funds</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-15">-</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kgrowth.html">
+            <strong>한국성장금융</strong>
+            <span data-label="유형">Policy Fund of Funds</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-04-29">520억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kdb.html">
+            <strong>한국산업은행</strong>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">5건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-17">5.53조</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kafi.html">
+            <strong>농업정책보험금융원</strong>
+            <span data-label="유형">Policy Fund of Funds</span>
+            <span data-label="공고">38건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-18">3,375억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-koreapost.html">
+            <strong>우정사업본부</strong>
+            <span data-label="유형">Public Fund</span>
+            <span data-label="공고">6건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-26">8,000억</span>
+            <span data-label="팩트/출처">0/0</span>
           </a>
           <a class="ktcu-peer-row" href="lp-ktcu.html">
             <strong>한국교직원공제회</strong>
-            <span>Mutual Aid Association</span>
-            <span>9건</span>
-            <span>3.59조</span>
-            <span>2025-07-02</span>
+            <span data-label="유형">Mutual Aid Association</span>
+            <span data-label="공고">9건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-02">3.59조</span>
+            <span data-label="팩트/출처">27/14</span>
           </a>
           <a class="ktcu-peer-row" href="lp-pmaa.html">
             <strong>경찰공제회</strong>
-            <span>Mutual Aid Association</span>
-            <span>1건</span>
-            <span>1,800억</span>
-            <span>2026-01-12</span>
+            <span data-label="유형">Mutual Aid Association</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-01-12">1,800억</span>
+            <span data-label="팩트/출처">14/13</span>
           </a>
           <a class="ktcu-peer-row" href="lp-cu.html">
             <strong>신협중앙회</strong>
-            <span>Mutual Finance</span>
-            <span>3건</span>
-            <span>-</span>
-            <span>2025-07-14</span>
+            <span data-label="유형">Mutual Finance</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-14">-</span>
+            <span data-label="팩트/출처">15/6</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kexim.html">
             <strong>한국수출입은행</strong>
-            <span>Policy Bank</span>
-            <span>0건</span>
-            <span>-</span>
-            <span>-</span>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">2건</span>
+            <span data-label="규모" title="최신 공고일 2026-04-10">3,500억</span>
+            <span data-label="팩트/출처">11/3</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kbiz.html">
+            <strong>중소기업중앙회</strong>
+            <span data-label="유형">Mutual Aid/Industry Association</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-22">2,000억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-ibk.html">
+            <strong>IBK기업은행</strong>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-18">-</span>
+            <span data-label="팩트/출처">0/0</span>
           </a>
       </div>
     </section>
@@ -362,7 +503,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 한계</dt>
-            <dd>공식 입찰공고는 일반 조달 공고와 투자 공고가 섞여 있어 PE/VC 공고만 선별 확인 필요<small><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">새마을금고중앙회 입찰공고 · 2026-05-26 · medium</a></small></dd>
+            <dd>공식 입찰공고는 일반 조달 공고와 투자 공고가 섞여 있어 PE/VC 공고만 선별 확인 필요<small><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">새마을금고중앙회 입찰공고 · 2026-05-26 · 보조 출처</a></small></dd>
           </div>
         </dl>
       </div>
@@ -374,13 +515,28 @@
           <li><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무</a></li>
           <li><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief</a></li>
           <li><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내</a></li>
+          <li><a href="https://www.kfcc.co.kr/business/creditBusiness.do" target="_blank" rel="noreferrer">새마을금고중앙회 신용사업</a></li>
           <li><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황</a></li>
           <li><a href="https://www.investchosun.com/site/data/html_dir/2025/06/26/2025062680181.html" target="_blank" rel="noreferrer">인베스트조선</a></li>
           <li><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">새마을금고중앙회 입찰공고</a></li>
       </ul>
     </details>
 
-    <p class="ktcu-footer">기준일 2026-05-26 · 최신 공고일 - · 공개자료로 확인되지 않는 실무자명과 최종 선정 GP 히스토리는 추정하지 않습니다.</p>
+    <p class="ktcu-footer">기준일 2026-05-26 · 최신 공고일 2025-07-25 · 공개자료로 확인되지 않는 실무자명과 최종 선정 GP 히스토리는 추정하지 않습니다.</p>
   </main>
+  <script>
+    (() => {
+      const input = document.getElementById("lpProfileSearch");
+      if (!input) return;
+      const targets = Array.from(document.querySelectorAll(".ktcu-panel, .ktcu-timeline-item, .ktcu-notice, .ktcu-peer-row:not(.ktcu-peer-head), .ktcu-news-row, .ktcu-gp-tags span"));
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        targets.forEach((node) => {
+          const visible = !query || node.innerText.toLowerCase().includes(query);
+          node.style.display = visible ? "" : "none";
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -28,6 +28,9 @@
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
     .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
     .ktcu-tabbar a { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .ktcu-profile-toolbar { display: grid; gap: 8px; margin-top: 10px; }
+    .ktcu-profile-toolbar input { width: 100%; min-height: 40px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: #fff; color: var(--text); font-size: 13px; }
+    .ktcu-profile-toolbar p { margin: 0; color: var(--secondary); font-size: 12px; line-height: 1.45; }
     .ktcu-intel-grid { display: grid; gap: 10px; margin-top: 10px; }
     .ktcu-coverage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .ktcu-coverage div { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
@@ -79,6 +82,12 @@
     .ktcu-timeline-item h3 { margin: 0; font-size: 14px; line-height: 1.4; }
     .ktcu-timeline-item h3 a { color: var(--text); text-decoration: none; }
     .ktcu-timeline-item p { margin: 0; color: var(--secondary); font-size: 12.5px; line-height: 1.45; }
+    .ktcu-news-list { display: grid; gap: 9px; }
+    .ktcu-news-row { border-top: 1px solid var(--separator); padding-top: 9px; }
+    .ktcu-news-row:first-child { border-top: 0; padding-top: 0; }
+    .ktcu-news-row span { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-news-row h3 { margin: 4px 0 0; color: var(--text); font-size: 13.5px; line-height: 1.4; }
+    .ktcu-news-row a { color: inherit; text-decoration: none; }
     .ktcu-notices { display: grid; gap: 8px; }
     .ktcu-notice { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; border-top: 1px solid var(--separator); padding-top: 10px; }
     .ktcu-notice:first-child { border-top: 0; padding-top: 0; }
@@ -101,6 +110,7 @@
     .ktcu-evidence a { color: var(--secondary); font-size: 12px; text-decoration: none; }
     .ktcu-peer-table { display: grid; gap: 7px; }
     .ktcu-peer-row { display: grid; grid-template-columns: minmax(112px, 1.2fr) minmax(78px, 0.9fr) 44px 68px 74px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
+    .ktcu-peer-head { background: #f7fafb; color: var(--secondary); font-weight: 800; }
     .ktcu-peer-row.active { border-color: #1f6b63; background: #f0faf7; }
     .ktcu-peer-row strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; }
     .ktcu-peer-row span { min-width: 0; color: var(--secondary); overflow-wrap: anywhere; }
@@ -116,8 +126,11 @@
       .ktcu-lower { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr); }
     }
     @media (max-width: 620px) {
+      .ktcu-nav span, .ktcu-tabbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
+      .ktcu-nav a, .ktcu-tabbar a { flex: 0 0 auto; }
       .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
       .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
+      .ktcu-peer-head { display: none; }
     }
   </style>
 </head>
@@ -129,11 +142,19 @@
         <span>
           <a href="index.html">Daily Brief</a>
           <a href="lp-notices.html">LP 공고</a>
+          <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
+          <a class="ktcu-profile-link" href="lp-kvic.html">벤처투자</a>
+          <a class="ktcu-profile-link" href="lp-kgrowth.html">성장금융</a>
+          <a class="ktcu-profile-link" href="lp-kdb.html">산은</a>
+          <a class="ktcu-profile-link" href="lp-kafi.html">농금원</a>
+          <a class="ktcu-profile-link" href="lp-koreapost.html">우본</a>
           <a class="ktcu-profile-link" href="lp-ktcu.html">교공</a>
           <a class="ktcu-profile-link active" href="lp-pmaa.html">경공</a>
           <a class="ktcu-profile-link" href="lp-cu.html">신협</a>
           <a class="ktcu-profile-link" href="lp-kfcc.html">새마을금고</a>
           <a class="ktcu-profile-link" href="lp-kexim.html">수은</a>
+          <a class="ktcu-profile-link" href="lp-kbiz.html">중기중앙</a>
+          <a class="ktcu-profile-link" href="lp-ibk.html">IBK</a>
         </span>
       </nav>
       <section class="ktcu-hero" aria-label="경찰공제회 요약">
@@ -153,6 +174,10 @@
             <a href="#peers">Peers</a>
             <a href="#sources">Sources</a>
           </nav>
+          <div class="ktcu-profile-toolbar">
+            <input type="search" id="lpProfileSearch" placeholder="이 LP 페이지에서 공고, 뉴스, GP, 출처 검색">
+            <p>공식 공고 1건 · 뉴스 신호 0건 · 공개 팩트 14개</p>
+          </div>
         </div>
         <div class="ktcu-kpis">
           <div class="ktcu-kpi"><span>총자산</span><strong>7조 6,243억원</strong></div>
@@ -167,10 +192,10 @@
       <section class="ktcu-panel">
         <h2>데이터 커버리지</h2>
         <div class="ktcu-coverage">
-          <div><span>프로필 팩트</span><strong>10개</strong></div>
-          <div><span>공개 출처</span><strong>10개</strong></div>
-          <div><span>공식 공고</span><strong>1건</strong></div>
-          <div><span>공식 확인</span><strong>9개</strong></div>
+          <div><span>프로필 팩트</span><strong>14개</strong></div>
+          <div><span>공개 출처</span><strong>13개</strong></div>
+          <div><span>공식/뉴스</span><strong>1/0건</strong></div>
+          <div><span>확인 수준</span><strong>13/1</strong></div>
         </div>
       </section>
       <section class="ktcu-panel">
@@ -208,11 +233,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>2025년 투자자산</dt>
-            <dd>6조 8,242억원·대체투자 3조 4,771억원(51.0%)<small><a href="https://www.pmaa.or.kr/www/1461131407276/content.do" target="_blank" rel="noreferrer">경찰공제회 투자현황 · 2025-12-31 · high</a></small></dd>
+            <dd>6조 8,242억원·대체투자 3조 4,771억원(51.0%)<small><a href="https://www.pmaa.or.kr/www/1461131407276/content.do" target="_blank" rel="noreferrer">경찰공제회 투자현황 · 2025-12-31 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>2026년 자산운용 목표</dt>
-            <dd>투자자산 6조 3,787억원·목표수익률 5.0%·지급준비율 110.0%<small><a href="https://www.pmaa.or.kr/www/1715236510528/content.do" target="_blank" rel="noreferrer">경찰공제회 자산운용 계획 · 2026 · high</a></small></dd>
+            <dd>투자자산 6조 3,787억원·목표수익률 5.0%·지급준비율 110.0%<small><a href="https://www.pmaa.or.kr/www/1715236510528/content.do" target="_blank" rel="noreferrer">경찰공제회 자산운용 계획 · 2026 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -223,7 +248,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>PE 관련 핵심 부서</dt>
-            <dd>대체투자본부 기업투자팀: 국내외 PEF·PDF·VC 담당<small><a href="https://www.pmaa.or.kr/www/1461128249370/orgcht.do" target="_blank" rel="noreferrer">경찰공제회 조직도 · 2026-05-26 · high</a></small></dd>
+            <dd>대체투자본부 기업투자팀: 국내외 PEF·PDF·VC 담당<small><a href="https://www.pmaa.or.kr/www/1461128249370/orgcht.do" target="_blank" rel="noreferrer">경찰공제회 조직도 · 2026-05-26 · 공식 확인</a></small></dd>
+          </div>
+          <div>
+            <dt>금융이사/CIO</dt>
+            <dd>공석<small><a href="https://www.pmaa.or.kr/www/1474439236504/content.do" target="_blank" rel="noreferrer">경찰공제회 임원현황 · 2026-05-26 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -246,23 +275,23 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립 목적</dt>
-            <dd>경찰공무원의 생활안정과 복지 증진<small><a href="https://www.pmaa.or.kr/www/1461128128029/content.do" target="_blank" rel="noreferrer">경찰공제회 설립목적 및 연혁 · high</a></small></dd>
+            <dd>경찰공무원의 생활안정과 복지 증진<small><a href="https://www.pmaa.or.kr/www/1461128128029/content.do" target="_blank" rel="noreferrer">경찰공제회 설립목적 및 연혁 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>설립 근거</dt>
-            <dd>경찰공제회법<small><a href="https://www.pmaa.or.kr/www/1461128181587/content.do" target="_blank" rel="noreferrer">경찰공제회법 · high</a></small></dd>
+            <dd>경찰공제회법<small><a href="https://www.pmaa.or.kr/www/1461128181587/content.do" target="_blank" rel="noreferrer">경찰공제회법 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울특별시 마포구 마포대로 78 경찰공제회<small><a href="https://www.pmaa.or.kr/index.do" target="_blank" rel="noreferrer">경찰공제회 홈페이지 · high</a></small></dd>
+            <dd>서울특별시 마포구 마포대로 78 경찰공제회<small><a href="https://www.pmaa.or.kr/index.do" target="_blank" rel="noreferrer">경찰공제회 홈페이지 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>회원 수</dt>
-            <dd>135,869명<small><a href="https://www.pmaa.or.kr/www/1461131192010/content.do" target="_blank" rel="noreferrer">경찰공제회 회원현황 · 2025-12-31 · high</a></small></dd>
+            <dd>135,869명<small><a href="https://www.pmaa.or.kr/www/1461131192010/content.do" target="_blank" rel="noreferrer">경찰공제회 회원현황 · 2025-12-31 · 공식 확인</a></small></dd>
           </div>
           <div>
             <dt>2025년말 총자산</dt>
-            <dd>7조 6,243억원<small><a href="https://www.pmaa.or.kr/www/1461131080634/content.do" target="_blank" rel="noreferrer">경찰공제회 기금현황 · 2025-12-31 · high</a></small></dd>
+            <dd>7조 6,243억원<small><a href="https://www.pmaa.or.kr/www/1461131080634/content.do" target="_blank" rel="noreferrer">경찰공제회 기금현황 · 2025-12-31 · 공식 확인</a></small></dd>
           </div>
         </dl>
       </section>
@@ -274,7 +303,7 @@
         <h2>활동 타임라인</h2>
         <p>공식 공고, 선정 히스토리, 최근 동향을 시간순으로 묶었습니다.</p>
         <div class="ktcu-timeline">
-          <article class="ktcu-timeline-item">
+          <article class="ktcu-timeline-item" data-kind="official" data-year="2026" data-asset="PEF/VC">
             <div>
               <time>2026-01-12</time>
               <span>공식 공고</span>
@@ -282,7 +311,7 @@
             <h3><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do?bbs_idx=38984&amp;recruitCd=&amp;type=view" target="_blank" rel="noreferrer">[위탁운용사 공고] 경찰공제회 국내 PE·VC 위탁 운용사 선정 공고</a></h3>
             <p>PEF/VC · 블라인드 · 1,800억</p>
           </article>
-          <article class="ktcu-timeline-item">
+          <article class="ktcu-timeline-item" data-kind="notice_history" data-year="2026" data-asset="">
             <div>
               <time>2026-01-12</time>
               <span>출자공고 히스토리</span>
@@ -325,6 +354,13 @@
           <p class="ktcu-empty-note">공개 공고에서 확인된 선정 GP가 아직 없습니다.</p>
         </div>
       </section>
+      <section class="ktcu-panel">
+        <h2>관련 뉴스</h2>
+        <p>뉴스레터 DB와 LP 이벤트가 직접 연결된 기사입니다.</p>
+        <div class="ktcu-news-list">
+          <p class="ktcu-empty-note">뉴스레터와 직접 연결된 뉴스는 아직 없습니다.</p>
+        </div>
+      </section>
     </section>
 
     <section class="ktcu-panel ktcu-highlight-panel" id="peers" aria-label="LP 피어 비교">
@@ -335,40 +371,103 @@
         </div>
       </div>
       <div class="ktcu-peer-table">
+          <div class="ktcu-peer-row ktcu-peer-head">
+            <strong>LP</strong>
+            <span>유형</span>
+            <span>공고</span>
+            <span>규모</span>
+            <span>팩트/출처</span>
+          </div>
           <a class="ktcu-peer-row active" href="lp-pmaa.html">
             <strong>경찰공제회</strong>
-            <span>Mutual Aid Association</span>
-            <span>1건</span>
-            <span>1,800억</span>
-            <span>2026-01-12</span>
+            <span data-label="유형">Mutual Aid Association</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-01-12">1,800억</span>
+            <span data-label="팩트/출처">14/13</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-nps.html">
+            <strong>국민연금기금</strong>
+            <span data-label="유형">Public Pension</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-20">4,000억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kvic.html">
+            <strong>한국벤처투자</strong>
+            <span data-label="유형">Fund of Funds</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-15">-</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kgrowth.html">
+            <strong>한국성장금융</strong>
+            <span data-label="유형">Policy Fund of Funds</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-04-29">520억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kdb.html">
+            <strong>한국산업은행</strong>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">5건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-17">5.53조</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kafi.html">
+            <strong>농업정책보험금융원</strong>
+            <span data-label="유형">Policy Fund of Funds</span>
+            <span data-label="공고">38건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-18">3,375억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-koreapost.html">
+            <strong>우정사업본부</strong>
+            <span data-label="유형">Public Fund</span>
+            <span data-label="공고">6건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-26">8,000억</span>
+            <span data-label="팩트/출처">0/0</span>
           </a>
           <a class="ktcu-peer-row" href="lp-ktcu.html">
             <strong>한국교직원공제회</strong>
-            <span>Mutual Aid Association</span>
-            <span>9건</span>
-            <span>3.59조</span>
-            <span>2025-07-02</span>
+            <span data-label="유형">Mutual Aid Association</span>
+            <span data-label="공고">9건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-02">3.59조</span>
+            <span data-label="팩트/출처">27/14</span>
           </a>
           <a class="ktcu-peer-row" href="lp-cu.html">
             <strong>신협중앙회</strong>
-            <span>Mutual Finance</span>
-            <span>3건</span>
-            <span>-</span>
-            <span>2025-07-14</span>
+            <span data-label="유형">Mutual Finance</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-14">-</span>
+            <span data-label="팩트/출처">15/6</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kfcc.html">
             <strong>새마을금고중앙회</strong>
-            <span>Mutual Finance</span>
-            <span>0건</span>
-            <span>-</span>
-            <span>-</span>
+            <span data-label="유형">Mutual Finance</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2025-07-25">1.00조</span>
+            <span data-label="팩트/출처">13/7</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kexim.html">
             <strong>한국수출입은행</strong>
-            <span>Policy Bank</span>
-            <span>0건</span>
-            <span>-</span>
-            <span>-</span>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">2건</span>
+            <span data-label="규모" title="최신 공고일 2026-04-10">3,500억</span>
+            <span data-label="팩트/출처">11/3</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kbiz.html">
+            <strong>중소기업중앙회</strong>
+            <span data-label="유형">Mutual Aid/Industry Association</span>
+            <span data-label="공고">3건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-22">2,000억</span>
+            <span data-label="팩트/출처">0/0</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-ibk.html">
+            <strong>IBK기업은행</strong>
+            <span data-label="유형">Policy Bank</span>
+            <span data-label="공고">1건</span>
+            <span data-label="규모" title="최신 공고일 2026-05-18">-</span>
+            <span data-label="팩트/출처">0/0</span>
           </a>
       </div>
     </section>
@@ -380,7 +479,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 한계</dt>
-            <dd>공식 페이지는 총량·대분류·공고 중심이며 선정 GP와 개별 펀드 성과 히스토리는 별도 검증 필요<small><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">경찰공제회 입찰공고 · 2026-05-26 · medium</a></small></dd>
+            <dd>공식 페이지는 총량·대분류·공고 중심이며 선정 GP와 개별 펀드 성과 히스토리는 별도 검증 필요<small><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">경찰공제회 입찰공고 · 2026-05-26 · 보조 출처</a></small></dd>
           </div>
         </dl>
       </div>
@@ -396,12 +495,26 @@
           <li><a href="https://www.pmaa.or.kr/www/1461131080634/content.do" target="_blank" rel="noreferrer">경찰공제회 기금현황</a></li>
           <li><a href="https://www.pmaa.or.kr/www/1461131407276/content.do" target="_blank" rel="noreferrer">경찰공제회 투자현황</a></li>
           <li><a href="https://www.pmaa.or.kr/www/1715236510528/content.do" target="_blank" rel="noreferrer">경찰공제회 자산운용 계획</a></li>
+          <li><a href="https://www.pmaa.or.kr/www/1461131355094/content.do" target="_blank" rel="noreferrer">경찰공제회 자산운용 원칙</a></li>
           <li><a href="https://www.pmaa.or.kr/www/1461128249370/orgcht.do" target="_blank" rel="noreferrer">경찰공제회 조직도</a></li>
-          <li><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do?bbs_idx=38984&amp;recruitCd=&amp;type=view" target="_blank" rel="noreferrer">경찰공제회 입찰공고</a></li>
       </ul>
     </details>
 
     <p class="ktcu-footer">기준일 2026-05-26 · 최신 공고일 2026-01-12 · 공개자료로 확인되지 않는 실무자명과 최종 선정 GP 히스토리는 추정하지 않습니다.</p>
   </main>
+  <script>
+    (() => {
+      const input = document.getElementById("lpProfileSearch");
+      if (!input) return;
+      const targets = Array.from(document.querySelectorAll(".ktcu-panel, .ktcu-timeline-item, .ktcu-notice, .ktcu-peer-row:not(.ktcu-peer-head), .ktcu-news-row, .ktcu-gp-tags span"));
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        targets.forEach((node) => {
+          const visible = !query || node.innerText.toLowerCase().includes(query);
+          node.style.display = visible ? "" : "none";
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
