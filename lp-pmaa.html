@@ -6,38 +6,40 @@
   <title>경찰공제회 LP 프로필</title>
   <link rel="stylesheet" href="assets/service.css">
   <style>
-    body { background: #f7f8fa; }
-    .ktcu-shell { width: min(1180px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 44px; }
+    body { background: #f5f7fa; }
+    .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 48px; }
     .ktcu-top { display: grid; gap: 14px; padding: 14px 0 12px; }
     .ktcu-nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
     .ktcu-nav strong { color: var(--text); font-size: 13px; }
+    .ktcu-nav span { display: flex; flex-wrap: wrap; gap: 7px; }
     .ktcu-nav a { min-height: 34px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 7px 11px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; font-weight: 700; }
+    .ktcu-nav .ktcu-profile-link.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
     .ktcu-hero { display: grid; gap: 18px; padding: 18px 0 8px; }
     .ktcu-title { display: grid; gap: 10px; }
-    .ktcu-title span { width: fit-content; border-left: 3px solid #2f6fbc; padding-left: 8px; color: #24598d; font-size: 12px; font-weight: 800; }
+    .ktcu-title span { width: fit-content; border-left: 3px solid #1f6b63; padding-left: 8px; color: #164c46; font-size: 12px; font-weight: 800; }
     .ktcu-title h1 { margin: 0; color: var(--text); font-size: clamp(32px, 5vw, 62px); line-height: 1.02; letter-spacing: 0; }
     .ktcu-title p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 15px; line-height: 1.68; }
     .ktcu-quick { display: grid; gap: 8px; }
-    .ktcu-quick-item { border-left: 3px solid #d0a33c; padding-left: 10px; color: var(--text); font-size: 13px; line-height: 1.5; }
+    .ktcu-quick-item { border-left: 3px solid #c6923b; padding-left: 10px; color: var(--text); font-size: 13px; line-height: 1.5; }
     .ktcu-quick-item strong { display: block; margin-bottom: 2px; font-size: 13px; }
     .ktcu-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 6px; }
-    .ktcu-kpi { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 12px; background: #fff; }
+    .ktcu-kpi { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
     .ktcu-kpi span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 700; }
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
     .ktcu-highlight-panel { margin-top: 10px; }
     .ktcu-panel-head { display: flex; gap: 10px; align-items: start; justify-content: space-between; margin-bottom: 12px; }
     .ktcu-panel-head h2 { margin-bottom: 4px; }
     .ktcu-panel-head p { margin: 0; color: var(--secondary); font-size: 13px; line-height: 1.5; }
-    .ktcu-panel-head > strong { flex: 0 0 auto; color: #15407d; font-size: 18px; line-height: 1.25; text-align: right; }
+    .ktcu-panel-head > strong { flex: 0 0 auto; color: #164c46; font-size: 18px; line-height: 1.25; text-align: right; }
     .ktcu-highlight-list { display: grid; gap: 8px; }
     .ktcu-highlight-row { display: grid; grid-template-columns: minmax(86px, 0.28fr) minmax(74px, auto) minmax(0, 1fr); gap: 9px; align-items: center; border-top: 1px solid var(--separator); padding-top: 9px; font-size: 13px; }
     .ktcu-highlight-row:first-child { border-top: 0; padding-top: 0; }
     .ktcu-highlight-row span { color: var(--secondary); font-weight: 800; }
-    .ktcu-highlight-row strong { color: #15407d; white-space: nowrap; }
+    .ktcu-highlight-row strong { color: #164c46; white-space: nowrap; }
     .ktcu-highlight-row em { color: var(--text); font-style: normal; font-weight: 700; line-height: 1.4; }
     .ktcu-empty-note { margin: 0; color: var(--secondary); font-size: 13px; }
     .ktcu-section-grid { display: grid; gap: 10px; margin-top: 12px; }
-    .ktcu-panel { border: 1px solid var(--separator); border-radius: 8px; padding: 15px; background: #fff; }
+    .ktcu-panel { border: 1px solid var(--separator); border-radius: 8px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
     .ktcu-panel h2 { margin: 0 0 11px; color: var(--text); font-size: 17px; line-height: 1.35; }
     .ktcu-panel > p { margin: 0 0 12px; color: var(--secondary); font-size: 13px; line-height: 1.58; }
     .ktcu-facts { display: grid; gap: 9px; margin: 0; }
@@ -54,7 +56,7 @@
     .ktcu-mix-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px; align-items: center; border-top: 1px solid var(--separator); padding-top: 8px; font-size: 13px; }
     .ktcu-mix-row:first-child { border-top: 0; padding-top: 0; }
     .ktcu-mix-row span { font-weight: 800; }
-    .ktcu-mix-row strong { color: #24598d; }
+    .ktcu-mix-row strong { color: #164c46; }
     .ktcu-mix-row em { color: var(--secondary); font-style: normal; }
     .ktcu-lower { display: grid; gap: 10px; margin-top: 10px; }
     .ktcu-notices { display: grid; gap: 8px; }
@@ -64,12 +66,12 @@
     .ktcu-notice h3 { margin: 4px 0; font-size: 14px; line-height: 1.42; }
     .ktcu-notice h3 a { color: var(--text); text-decoration: none; }
     .ktcu-notice p { margin: 0; color: var(--secondary); font-size: 12px; line-height: 1.4; }
-    .ktcu-notice strong { white-space: nowrap; color: #15407d; font-size: 14px; }
+    .ktcu-notice strong { white-space: nowrap; color: #164c46; font-size: 14px; }
     .ktcu-years { display: grid; gap: 8px; }
     .ktcu-year-row { display: grid; grid-template-columns: 44px minmax(0, 1fr) 68px; gap: 8px; align-items: center; font-size: 12px; }
     .ktcu-year-row span { color: var(--secondary); font-weight: 800; }
     .ktcu-year-row div { height: 9px; border-radius: 999px; background: #edf0f4; overflow: hidden; }
-    .ktcu-year-row i { display: block; height: 100%; border-radius: inherit; background: #2f6fbc; }
+    .ktcu-year-row i { display: block; height: 100%; border-radius: inherit; background: #1f6b63; }
     .ktcu-year-row strong { text-align: right; font-size: 12px; }
     .ktcu-evidence { margin-top: 10px; border: 1px solid var(--separator); border-radius: 8px; background: #fff; }
     .ktcu-evidence summary { cursor: pointer; padding: 12px 14px; color: var(--text); font-size: 13px; font-weight: 800; }
@@ -95,9 +97,11 @@
         <span>
           <a href="index.html">Daily Brief</a>
           <a href="lp-notices.html">LP 공고</a>
-          <a href="lp-ktcu.html">교공</a>
-          <a href="lp-pmaa.html">경공</a>
-          <a href="lp-cu.html">신협</a>
+          <a class="ktcu-profile-link" href="lp-ktcu.html">교공</a>
+          <a class="ktcu-profile-link active" href="lp-pmaa.html">경공</a>
+          <a class="ktcu-profile-link" href="lp-cu.html">신협</a>
+          <a class="ktcu-profile-link" href="lp-kfcc.html">새마을금고</a>
+          <a class="ktcu-profile-link" href="lp-kexim.html">수은</a>
         </span>
       </nav>
       <section class="ktcu-hero" aria-label="경찰공제회 요약">
@@ -108,7 +112,7 @@
           <div class="ktcu-quick">
             <div class="ktcu-quick-item"><strong>핵심 창구</strong>대체투자본부/기업투자팀</div>
             <div class="ktcu-quick-item"><strong>2026년 활동</strong>공식 공고 1건, 공고 기준 출자규모 1,800억입니다.</div>
-            <div class="ktcu-quick-item"><strong>검증 범위</strong>공고와 공식 조직은 확인됐고, 최종 선정 GP는 별도 검증 대상입니다.</div>
+            <div class="ktcu-quick-item"><strong>공개자료 기준</strong>공식 조직과 공고를 먼저 반영하고, 최종 선정 GP는 출처가 확인되는 순서대로 추가합니다.</div>
           </div>
         </div>
         <div class="ktcu-kpis">
@@ -202,6 +206,7 @@
           </div>
         </dl>
       </section>
+
     </section>
 
     <section class="ktcu-lower" aria-label="출자공고 히스토리">
