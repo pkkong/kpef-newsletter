@@ -26,6 +26,15 @@
     .ktcu-kpi { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
     .ktcu-kpi span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 700; }
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
+    .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    .ktcu-tabbar a { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .ktcu-intel-grid { display: grid; gap: 10px; margin-top: 10px; }
+    .ktcu-coverage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .ktcu-coverage div { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
+    .ktcu-coverage span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-coverage strong { display: block; margin-top: 4px; color: var(--text); font-size: 18px; line-height: 1.2; }
+    .ktcu-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-chips span { border: 1px solid #cfe2de; border-radius: 999px; padding: 6px 9px; background: #f2faf8; color: #164c46; font-size: 12px; font-weight: 800; }
     .ktcu-highlight-panel { margin-top: 10px; }
     .ktcu-panel-head { display: flex; gap: 10px; align-items: start; justify-content: space-between; margin-bottom: 12px; }
     .ktcu-panel-head h2 { margin-bottom: 4px; }
@@ -47,6 +56,8 @@
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
     .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
+    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -59,6 +70,15 @@
     .ktcu-mix-row strong { color: #164c46; }
     .ktcu-mix-row em { color: var(--secondary); font-style: normal; }
     .ktcu-lower { display: grid; gap: 10px; margin-top: 10px; }
+    .ktcu-timeline { display: grid; gap: 9px; }
+    .ktcu-timeline-item { display: grid; gap: 5px; border-top: 1px solid var(--separator); padding-top: 10px; }
+    .ktcu-timeline-item:first-child { border-top: 0; padding-top: 0; }
+    .ktcu-timeline-item div { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+    .ktcu-timeline-item time { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-timeline-item span { border-radius: 999px; padding: 3px 7px; background: #edf4f2; color: #164c46; font-size: 11px; font-weight: 800; }
+    .ktcu-timeline-item h3 { margin: 0; font-size: 14px; line-height: 1.4; }
+    .ktcu-timeline-item h3 a { color: var(--text); text-decoration: none; }
+    .ktcu-timeline-item p { margin: 0; color: var(--secondary); font-size: 12.5px; line-height: 1.45; }
     .ktcu-notices { display: grid; gap: 8px; }
     .ktcu-notice { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; border-top: 1px solid var(--separator); padding-top: 10px; }
     .ktcu-notice:first-child { border-top: 0; padding-top: 0; }
@@ -79,13 +99,25 @@
     .ktcu-evidence-body p { margin: 0 0 10px; color: var(--secondary); font-size: 13px; line-height: 1.55; }
     .ktcu-evidence ul { display: grid; gap: 8px; margin: 0; padding: 0 14px 14px 28px; }
     .ktcu-evidence a { color: var(--secondary); font-size: 12px; text-decoration: none; }
+    .ktcu-peer-table { display: grid; gap: 7px; }
+    .ktcu-peer-row { display: grid; grid-template-columns: minmax(112px, 1.2fr) minmax(78px, 0.9fr) 44px 68px 74px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
+    .ktcu-peer-row.active { border-color: #1f6b63; background: #f0faf7; }
+    .ktcu-peer-row strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; }
+    .ktcu-peer-row span { min-width: 0; color: var(--secondary); overflow-wrap: anywhere; }
+    .ktcu-gp-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-gp-tags span { border: 1px solid var(--separator); border-radius: 999px; padding: 6px 9px; background: #fbfcfd; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-footer { margin-top: 14px; color: var(--secondary); font-size: 11.5px; line-height: 1.45; }
     @media (min-width: 760px) {
       .ktcu-shell { padding-top: 22px; }
       .ktcu-hero { grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr); align-items: end; }
+      .ktcu-intel-grid { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); }
       .ktcu-section-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
       .ktcu-org-split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .ktcu-lower { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr); }
+    }
+    @media (max-width: 620px) {
+      .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
+      .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
     }
   </style>
 </head>
@@ -114,6 +146,13 @@
             <div class="ktcu-quick-item"><strong>2025년 활동</strong>공식 공고 3건을 확인했습니다.</div>
             <div class="ktcu-quick-item"><strong>공개자료 기준</strong>공식 조직과 공고를 먼저 반영하고, 최종 선정 GP는 출처가 확인되는 순서대로 추가합니다.</div>
           </div>
+          <nav class="ktcu-tabbar" aria-label="프로필 섹션">
+            <a href="#overview">Overview</a>
+            <a href="#activity">Activity</a>
+            <a href="#relationships">Network</a>
+            <a href="#peers">Peers</a>
+            <a href="#sources">Sources</a>
+          </nav>
         </div>
         <div class="ktcu-kpis">
           <div class="ktcu-kpi"><span>기관 규모</span><strong>866개 조합</strong></div>
@@ -123,6 +162,26 @@
         </div>
       </section>
     </header>
+
+    <section class="ktcu-intel-grid" aria-label="프로필 데이터 커버리지">
+      <section class="ktcu-panel">
+        <h2>데이터 커버리지</h2>
+        <div class="ktcu-coverage">
+          <div><span>프로필 팩트</span><strong>11개</strong></div>
+          <div><span>공개 출처</span><strong>4개</strong></div>
+          <div><span>공식 공고</span><strong>3건</strong></div>
+          <div><span>공식 확인</span><strong>10개</strong></div>
+        </div>
+      </section>
+      <section class="ktcu-panel">
+        <h2>관심 자산군</h2>
+        <p>공식 공고, 기관 소개, 공개 뉴스에서 반복적으로 확인되는 투자 영역입니다.</p>
+        <div class="ktcu-chips">
+            <span>PEF</span>
+            <span>VC</span>
+        </div>
+      </section>
+    </section>
 
     <section class="ktcu-panel ktcu-highlight-panel" aria-label="2025년 출자 하이라이트">
       <div class="ktcu-panel-head">
@@ -151,14 +210,14 @@
       </div>
     </section>
 
-    <section class="ktcu-section-grid" aria-label="사용자용 LP 요약">
+    <section class="ktcu-section-grid" id="overview" aria-label="사용자용 LP 요약">
       <section class="ktcu-panel">
         <h2>투자 현황</h2>
         <p>조합 여유자금을 예탁받아 대출과 자금운용 시장에 참여</p>
         <dl class="ktcu-facts">
           <div>
             <dt>자금운용 역할</dt>
-            <dd>조합 여유자금 예탁·대출·자금운용 시장 참여</dd>
+            <dd>조합 여유자금 예탁·대출·자금운용 시장 참여<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · high</a></small></dd>
           </div>
         </dl>
       </section>
@@ -169,15 +228,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>핵심 의사결정 축</dt>
-            <dd>사업대표이사 산하 자금기획본부·유가증권운용본부·투자금융본부</dd>
+            <dd>사업대표이사 산하 자금기획본부·유가증권운용본부·투자금융본부<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · 2026-03-16 · high</a></small></dd>
           </div>
           <div>
             <dt>투자금융본부</dt>
-            <dd>부동산금융팀·기업인프라금융팀·연계대출1팀·연계대출2팀</dd>
+            <dd>부동산금융팀·기업인프라금융팀·연계대출1팀·연계대출2팀<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · 2026-03-16 · high</a></small></dd>
           </div>
           <div>
             <dt>리스크관리부문</dt>
-            <dd>리스크전략팀·리스크관리팀·투자감리팀</dd>
+            <dd>리스크전략팀·리스크관리팀·투자감리팀<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · 2026-03-16 · high</a></small></dd>
           </div>
         </dl>
       </section>
@@ -205,26 +264,85 @@
         <dl class="ktcu-facts">
           <div>
             <dt>회원조합</dt>
-            <dd>866개 조합</dd>
+            <dd>866개 조합<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · 2024-12-31 · high</a></small></dd>
           </div>
           <div>
             <dt>주요 기능</dt>
-            <dd>지도·검사·교육·홍보 지원 및 공제업무</dd>
+            <dd>지도·검사·교육·홍보 지원 및 공제업무<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · high</a></small></dd>
           </div>
           <div>
             <dt>자금운용 역할</dt>
-            <dd>조합 여유자금을 예탁받아 대출과 자금운용 시장에 참여</dd>
+            <dd>조합 여유자금을 예탁받아 대출과 자금운용 시장에 참여<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · high</a></small></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>대전광역시 서구 한밭대로 745</dd>
+            <dd>대전광역시 서구 한밭대로 745<small><a href="https://cu.co.kr/cu/cm/cntnts/cntntsView.do?cntntsId=1009&amp;mi=100026" target="_blank" rel="noreferrer">신협중앙회 조직구성 · high</a></small></dd>
           </div>
         </dl>
       </section>
 
     </section>
 
-    <section class="ktcu-lower" aria-label="출자공고 히스토리">
+    <section class="ktcu-lower" id="activity" aria-label="LP 활동 타임라인">
+      <section class="ktcu-panel">
+        <h2>활동 타임라인</h2>
+        <p>공식 공고, 선정 히스토리, 최근 동향을 시간순으로 묶었습니다.</p>
+        <div class="ktcu-timeline">
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-07-14</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111681&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(중형PE) 선정 공고</a></h3>
+            <p>PEF · 블라인드</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-07-14</time>
+              <span>출자공고 히스토리</span>
+            </div>
+            <h3><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111681&amp;mi=100007" target="_blank" rel="noreferrer">2025년 국내 기업형 블라인드 공고</a></h3>
+            <p>소형PE·중형PE 위탁운용사 선정 공고</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-06-09</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111581&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(소형PE) 선정 공고</a></h3>
+            <p>PEF · 블라인드</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-02-03</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111261&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 VC 블라인드펀드 선정 공고</a></h3>
+            <p>VC · 블라인드</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-02-03</time>
+              <span>출자공고 히스토리</span>
+            </div>
+            <h3><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111261&amp;mi=100007" target="_blank" rel="noreferrer">2025년 국내 VC 블라인드 공고</a></h3>
+            <p>국내 VC 블라인드펀드 선정 공고</p>
+          </article>
+        </div>
+      </section>
+      <section class="ktcu-panel">
+        <h2>연도별 공식 공고 규모</h2>
+        <div class="ktcu-years">
+        <div class="ktcu-year-row">
+          <span>2025</span>
+          <div><i style="width: 0.0%"></i></div>
+          <strong>-</strong>
+        </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="ktcu-lower" id="relationships" aria-label="공고와 GP 관계">
       <section class="ktcu-panel">
         <h2>과거 출자공고</h2>
         <div class="ktcu-notices">
@@ -255,25 +373,68 @@
         </div>
       </section>
       <section class="ktcu-panel">
-        <h2>연도별 공식 공고 규모</h2>
-        <div class="ktcu-years">
-        <div class="ktcu-year-row">
-          <span>2025</span>
-          <div><i style="width: 0.0%"></i></div>
-          <strong>-</strong>
-        </div>
+        <h2>선정 GP 신호</h2>
+        <p>공개 공고나 뉴스에서 확인된 GP명만 표시합니다.</p>
+        <div class="ktcu-gp-tags">
+          <p class="ktcu-empty-note">공개 공고에서 확인된 선정 GP가 아직 없습니다.</p>
         </div>
       </section>
     </section>
 
-    <details class="ktcu-evidence">
+    <section class="ktcu-panel ktcu-highlight-panel" id="peers" aria-label="LP 피어 비교">
+      <div class="ktcu-panel-head">
+        <div>
+          <h2>LP 피어 비교</h2>
+          <p>현재 구축 중인 5개 LP의 공개 공고 수, 공고 기준 출자규모, 최신 공고일을 같은 기준으로 비교합니다.</p>
+        </div>
+      </div>
+      <div class="ktcu-peer-table">
+          <a class="ktcu-peer-row active" href="lp-cu.html">
+            <strong>신협중앙회</strong>
+            <span>Mutual Finance</span>
+            <span>3건</span>
+            <span>-</span>
+            <span>2025-07-14</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-ktcu.html">
+            <strong>한국교직원공제회</strong>
+            <span>Mutual Aid Association</span>
+            <span>9건</span>
+            <span>3.59조</span>
+            <span>2025-07-02</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-pmaa.html">
+            <strong>경찰공제회</strong>
+            <span>Mutual Aid Association</span>
+            <span>1건</span>
+            <span>1,800억</span>
+            <span>2026-01-12</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kfcc.html">
+            <strong>새마을금고중앙회</strong>
+            <span>Mutual Finance</span>
+            <span>0건</span>
+            <span>-</span>
+            <span>-</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kexim.html">
+            <strong>한국수출입은행</strong>
+            <span>Policy Bank</span>
+            <span>0건</span>
+            <span>-</span>
+            <span>-</span>
+          </a>
+      </div>
+    </section>
+
+    <details class="ktcu-evidence" id="sources">
       <summary>공개자료 한계</summary>
       <div class="ktcu-evidence-body">
         <p>공개 공고와 공식 조직도 기준의 프로필입니다. 최종 선정 GP, 실제 약정·집행액, 실무 담당자명은 공개자료만으로 확정하지 않습니다.</p>
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 한계</dt>
-            <dd>공식 조직도와 공고는 확인되나 자금운용 AUM·대체투자 잔액·선정 GP 히스토리는 별도 검증 필요</dd>
+            <dd>공식 조직도와 공고는 확인되나 자금운용 AUM·대체투자 잔액·선정 GP 히스토리는 별도 검증 필요<small><a href="https://cu.co.kr/cu/na/ntt/selectNttList.do?bbsId=1020&amp;mi=100007" target="_blank" rel="noreferrer">신협중앙회 공지사항 · 2026-05-26 · medium</a></small></dd>
           </div>
         </dl>
       </div>

@@ -26,6 +26,15 @@
     .ktcu-kpi { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
     .ktcu-kpi span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 700; }
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
+    .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    .ktcu-tabbar a { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .ktcu-intel-grid { display: grid; gap: 10px; margin-top: 10px; }
+    .ktcu-coverage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .ktcu-coverage div { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
+    .ktcu-coverage span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-coverage strong { display: block; margin-top: 4px; color: var(--text); font-size: 18px; line-height: 1.2; }
+    .ktcu-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-chips span { border: 1px solid #cfe2de; border-radius: 999px; padding: 6px 9px; background: #f2faf8; color: #164c46; font-size: 12px; font-weight: 800; }
     .ktcu-highlight-panel { margin-top: 10px; }
     .ktcu-panel-head { display: flex; gap: 10px; align-items: start; justify-content: space-between; margin-bottom: 12px; }
     .ktcu-panel-head h2 { margin-bottom: 4px; }
@@ -47,6 +56,8 @@
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
     .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
+    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -59,6 +70,15 @@
     .ktcu-mix-row strong { color: #164c46; }
     .ktcu-mix-row em { color: var(--secondary); font-style: normal; }
     .ktcu-lower { display: grid; gap: 10px; margin-top: 10px; }
+    .ktcu-timeline { display: grid; gap: 9px; }
+    .ktcu-timeline-item { display: grid; gap: 5px; border-top: 1px solid var(--separator); padding-top: 10px; }
+    .ktcu-timeline-item:first-child { border-top: 0; padding-top: 0; }
+    .ktcu-timeline-item div { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+    .ktcu-timeline-item time { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .ktcu-timeline-item span { border-radius: 999px; padding: 3px 7px; background: #edf4f2; color: #164c46; font-size: 11px; font-weight: 800; }
+    .ktcu-timeline-item h3 { margin: 0; font-size: 14px; line-height: 1.4; }
+    .ktcu-timeline-item h3 a { color: var(--text); text-decoration: none; }
+    .ktcu-timeline-item p { margin: 0; color: var(--secondary); font-size: 12.5px; line-height: 1.45; }
     .ktcu-notices { display: grid; gap: 8px; }
     .ktcu-notice { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; border-top: 1px solid var(--separator); padding-top: 10px; }
     .ktcu-notice:first-child { border-top: 0; padding-top: 0; }
@@ -79,13 +99,25 @@
     .ktcu-evidence-body p { margin: 0 0 10px; color: var(--secondary); font-size: 13px; line-height: 1.55; }
     .ktcu-evidence ul { display: grid; gap: 8px; margin: 0; padding: 0 14px 14px 28px; }
     .ktcu-evidence a { color: var(--secondary); font-size: 12px; text-decoration: none; }
+    .ktcu-peer-table { display: grid; gap: 7px; }
+    .ktcu-peer-row { display: grid; grid-template-columns: minmax(112px, 1.2fr) minmax(78px, 0.9fr) 44px 68px 74px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
+    .ktcu-peer-row.active { border-color: #1f6b63; background: #f0faf7; }
+    .ktcu-peer-row strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; }
+    .ktcu-peer-row span { min-width: 0; color: var(--secondary); overflow-wrap: anywhere; }
+    .ktcu-gp-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-gp-tags span { border: 1px solid var(--separator); border-radius: 999px; padding: 6px 9px; background: #fbfcfd; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-footer { margin-top: 14px; color: var(--secondary); font-size: 11.5px; line-height: 1.45; }
     @media (min-width: 760px) {
       .ktcu-shell { padding-top: 22px; }
       .ktcu-hero { grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr); align-items: end; }
+      .ktcu-intel-grid { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); }
       .ktcu-section-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
       .ktcu-org-split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .ktcu-lower { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr); }
+    }
+    @media (max-width: 620px) {
+      .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
+      .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
     }
   </style>
 </head>
@@ -114,6 +146,13 @@
             <div class="ktcu-quick-item"><strong>2025년 활동</strong>공식 공고 3건, 공고 기준 출자규모 1.35조입니다.</div>
             <div class="ktcu-quick-item"><strong>공개자료 기준</strong>공식 조직과 공고를 먼저 반영하고, 최종 선정 GP는 출처가 확인되는 순서대로 추가합니다.</div>
           </div>
+          <nav class="ktcu-tabbar" aria-label="프로필 섹션">
+            <a href="#overview">Overview</a>
+            <a href="#activity">Activity</a>
+            <a href="#relationships">Network</a>
+            <a href="#peers">Peers</a>
+            <a href="#sources">Sources</a>
+          </nav>
         </div>
         <div class="ktcu-kpis">
           <div class="ktcu-kpi"><span>총자산</span><strong>85조 8,938억원</strong></div>
@@ -123,6 +162,28 @@
         </div>
       </section>
     </header>
+
+    <section class="ktcu-intel-grid" aria-label="프로필 데이터 커버리지">
+      <section class="ktcu-panel">
+        <h2>데이터 커버리지</h2>
+        <div class="ktcu-coverage">
+          <div><span>프로필 팩트</span><strong>25개</strong></div>
+          <div><span>공개 출처</span><strong>12개</strong></div>
+          <div><span>공식 공고</span><strong>9건</strong></div>
+          <div><span>공식 확인</span><strong>24개</strong></div>
+        </div>
+      </section>
+      <section class="ktcu-panel">
+        <h2>관심 자산군</h2>
+        <p>공식 공고, 기관 소개, 공개 뉴스에서 반복적으로 확인되는 투자 영역입니다.</p>
+        <div class="ktcu-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            <span>Real Estate</span>
+        </div>
+      </section>
+    </section>
 
     <section class="ktcu-panel ktcu-highlight-panel" aria-label="2025년 출자 하이라이트">
       <div class="ktcu-panel-head">
@@ -151,22 +212,22 @@
       </div>
     </section>
 
-    <section class="ktcu-section-grid" aria-label="사용자용 LP 요약">
+    <section class="ktcu-section-grid" id="overview" aria-label="사용자용 LP 요약">
       <section class="ktcu-panel">
         <h2>투자 현황</h2>
         <p>73조 2,883억원·대체투자 45조 4,724억원(62.1%)</p>
         <dl class="ktcu-facts">
           <div>
             <dt>2025년말 보유자산</dt>
-            <dd>85조 8,938억원</dd>
+            <dd>85조 8,938억원<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=QxJvTBd2nafjwUzK2ER94w==&amp;fileTy=ATTACH&amp;fileNo=sW069xsGkF_cG0wtJaCXWA==" target="_blank" rel="noreferrer">KTCU 자산운용개요 · 2025-12-31 · high</a></small></dd>
           </div>
           <div>
             <dt>2026년 자산운용 목표</dt>
-            <dd>총자산 88.0조원·목표수익률 4.5%</dd>
+            <dd>총자산 88.0조원·목표수익률 4.5%<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=W7Sxd0F06xpQAZxcaE-_3vg==&amp;fileTy=ATTACH&amp;fileNo=S2_dCpscb6mgOardowp9ww==" target="_blank" rel="noreferrer">KTCU 자산운용목표 및 자산배분계획 · 2026 · high</a></small></dd>
           </div>
           <div>
             <dt>2025년 투자자산</dt>
-            <dd>73조 2,883억원·대체투자 45조 4,724억원(62.1%)</dd>
+            <dd>73조 2,883억원·대체투자 45조 4,724억원(62.1%)<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=yvu7N03YhCjnAQrG2mugAg==&amp;fileTy=ATTACH&amp;fileNo=D5wfgzP7KOkiC45AP_GcfA==" target="_blank" rel="noreferrer">KTCU 투자자산 투자 및 수익현황 · 2025-12-31 · high</a></small></dd>
           </div>
         </dl>
       </section>
@@ -177,31 +238,31 @@
         <dl class="ktcu-facts">
           <div>
             <dt>기금운용 조직</dt>
-            <dd>이사(기금운용) 산하 기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부</dd>
+            <dd>이사(기금운용) 산하 기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 · high</a></small></dd>
           </div>
           <div>
             <dt>자산운용 전문 부서</dt>
-            <dd>기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부</dd>
+            <dd>기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INC-300101" target="_blank" rel="noreferrer">KTCU 자산운용 조직도 · high</a></small></dd>
           </div>
           <div>
             <dt>PE 관련 핵심 부서</dt>
-            <dd>기업투자부</dd>
+            <dd>기업투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 · high</a></small></dd>
           </div>
           <div>
             <dt>기업투자1팀</dt>
-            <dd>국내·유라시아 PE 및 기업금융 투자·관리</dd>
+            <dd>국내·유라시아 PE 및 기업금융 투자·관리<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26 · high</a></small></dd>
           </div>
           <div>
             <dt>기업투자2팀</dt>
-            <dd>북미 기업금융 및 국내외 벤처 투자·관리</dd>
+            <dd>북미 기업금융 및 국내외 벤처 투자·관리<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26 · high</a></small></dd>
           </div>
           <div>
             <dt>이사장</dt>
-            <dd>정갑윤</dd>
+            <dd>정갑윤<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · high</a></small></dd>
           </div>
           <div>
             <dt>기금운용이사/CIO</dt>
-            <dd>고재택</dd>
+            <dd>고재택<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-300101" target="_blank" rel="noreferrer">KTCU 임원 관련 현황 · 2025-02-01 · high</a></small></dd>
           </div>
         </dl>
       </section>
@@ -239,38 +300,151 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립</dt>
-            <dd>1971년</dd>
+            <dd>1971년<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · high</a></small></dd>
           </div>
           <div>
             <dt>설립 근거</dt>
-            <dd>한국교직원공제회법</dd>
+            <dd>한국교직원공제회법<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · high</a></small></dd>
           </div>
           <div>
             <dt>주무 부처</dt>
-            <dd>교육부</dd>
+            <dd>교육부<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · high</a></small></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울시 영등포구 여의나루로 50 The-K한국교직원공제회</dd>
+            <dd>서울시 영등포구 여의나루로 50 The-K한국교직원공제회<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · high</a></small></dd>
           </div>
           <div>
             <dt>회원 수</dt>
-            <dd>94만명</dd>
+            <dd>94만명<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · high</a></small></dd>
           </div>
           <div>
             <dt>보유 자산</dt>
-            <dd>85조원</dd>
+            <dd>85조원<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · high</a></small></dd>
           </div>
           <div>
             <dt>주요 기능</dt>
-            <dd>급여·대여·복리후생·기금 조성·수익사업</dd>
+            <dd>급여·대여·복리후생·기금 조성·수익사업<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · high</a></small></dd>
           </div>
         </dl>
       </section>
 
     </section>
 
-    <section class="ktcu-lower" aria-label="출자공고 히스토리">
+    <section class="ktcu-lower" id="activity" aria-label="LP 활동 타임라인">
+      <section class="ktcu-panel">
+        <h2>활동 타임라인</h2>
+        <p>공식 공고, 선정 히스토리, 최근 동향을 시간순으로 묶었습니다.</p>
+        <div class="ktcu-timeline">
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-07-02</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57882" target="_blank" rel="noreferrer">권역별 골프장 투자사업 위탁운용사 선정 공고문</a></h3>
+            <p>Real Estate · 블라인드 · 5,000억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-05-09</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57425" target="_blank" rel="noreferrer">2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고</a></h3>
+            <p>VC · 블라인드 · 1,520억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-03-21</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57104" target="_blank" rel="noreferrer">2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고</a></h3>
+            <p>PEF · 블라인드 · 7,000억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2025-03-21</time>
+              <span>출자공고 히스토리</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57104" target="_blank" rel="noreferrer">2025년 PEF 블라인드 공고</a></h3>
+            <p>총 7,000억원 이내·10개사 이내·펀드별 400억~1,000억원</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2023-08-11</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44724" target="_blank" rel="noreferrer">2023년 한국교직원공제회 PEF 블라인드 펀드 위탁운용사 선정 공고</a></h3>
+            <p>PEF · 블라인드 · 4,000억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2022-05-20</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44652" target="_blank" rel="noreferrer">2022년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고</a></h3>
+            <p>VC · 블라인드 · 2,650억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2021-04-30</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44569" target="_blank" rel="noreferrer">2021년 한국교직원공제회 PEF 블라인드 펀드 위탁운용사 선정 공고</a></h3>
+            <p>PEF · 블라인드 · 4,000억</p>
+          </article>
+          <article class="ktcu-timeline-item">
+            <div>
+              <time>2020-08-26</time>
+              <span>공식 공고</span>
+            </div>
+            <h3><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44507" target="_blank" rel="noreferrer">2020년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고</a></h3>
+            <p>VC · 블라인드 · 1,200억</p>
+          </article>
+        </div>
+      </section>
+      <section class="ktcu-panel">
+        <h2>연도별 공식 공고 규모</h2>
+        <div class="ktcu-years">
+        <div class="ktcu-year-row">
+          <span>2025</span>
+          <div><i style="width: 100.0%"></i></div>
+          <strong>1.35조</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2023</span>
+          <div><i style="width: 29.6%"></i></div>
+          <strong>4,000억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2022</span>
+          <div><i style="width: 19.6%"></i></div>
+          <strong>2,650억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2021</span>
+          <div><i style="width: 29.6%"></i></div>
+          <strong>4,000억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2020</span>
+          <div><i style="width: 8.9%"></i></div>
+          <strong>1,200억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2019</span>
+          <div><i style="width: 48.1%"></i></div>
+          <strong>6,500억</strong>
+        </div>
+        <div class="ktcu-year-row">
+          <span>2017</span>
+          <div><i style="width: 29.6%"></i></div>
+          <strong>4,000억</strong>
+        </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="ktcu-lower" id="relationships" aria-label="공고와 GP 관계">
       <section class="ktcu-panel">
         <h2>과거 출자공고</h2>
         <div class="ktcu-notices">
@@ -349,59 +523,72 @@
         </div>
       </section>
       <section class="ktcu-panel">
-        <h2>연도별 공식 공고 규모</h2>
-        <div class="ktcu-years">
-        <div class="ktcu-year-row">
-          <span>2025</span>
-          <div><i style="width: 100.0%"></i></div>
-          <strong>1.35조</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2023</span>
-          <div><i style="width: 29.6%"></i></div>
-          <strong>4,000억</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2022</span>
-          <div><i style="width: 19.6%"></i></div>
-          <strong>2,650억</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2021</span>
-          <div><i style="width: 29.6%"></i></div>
-          <strong>4,000억</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2020</span>
-          <div><i style="width: 8.9%"></i></div>
-          <strong>1,200억</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2019</span>
-          <div><i style="width: 48.1%"></i></div>
-          <strong>6,500억</strong>
-        </div>
-        <div class="ktcu-year-row">
-          <span>2017</span>
-          <div><i style="width: 29.6%"></i></div>
-          <strong>4,000억</strong>
-        </div>
+        <h2>선정 GP 신호</h2>
+        <p>공개 공고나 뉴스에서 확인된 GP명만 표시합니다.</p>
+        <div class="ktcu-gp-tags">
+          <p class="ktcu-empty-note">공개 공고에서 확인된 선정 GP가 아직 없습니다.</p>
         </div>
       </section>
     </section>
 
-    <details class="ktcu-evidence">
+    <section class="ktcu-panel ktcu-highlight-panel" id="peers" aria-label="LP 피어 비교">
+      <div class="ktcu-panel-head">
+        <div>
+          <h2>LP 피어 비교</h2>
+          <p>현재 구축 중인 5개 LP의 공개 공고 수, 공고 기준 출자규모, 최신 공고일을 같은 기준으로 비교합니다.</p>
+        </div>
+      </div>
+      <div class="ktcu-peer-table">
+          <a class="ktcu-peer-row active" href="lp-ktcu.html">
+            <strong>한국교직원공제회</strong>
+            <span>Mutual Aid Association</span>
+            <span>9건</span>
+            <span>3.59조</span>
+            <span>2025-07-02</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-pmaa.html">
+            <strong>경찰공제회</strong>
+            <span>Mutual Aid Association</span>
+            <span>1건</span>
+            <span>1,800억</span>
+            <span>2026-01-12</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-cu.html">
+            <strong>신협중앙회</strong>
+            <span>Mutual Finance</span>
+            <span>3건</span>
+            <span>-</span>
+            <span>2025-07-14</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kfcc.html">
+            <strong>새마을금고중앙회</strong>
+            <span>Mutual Finance</span>
+            <span>0건</span>
+            <span>-</span>
+            <span>-</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-kexim.html">
+            <strong>한국수출입은행</strong>
+            <span>Policy Bank</span>
+            <span>0건</span>
+            <span>-</span>
+            <span>-</span>
+          </a>
+      </div>
+    </section>
+
+    <details class="ktcu-evidence" id="sources">
       <summary>공개자료 한계</summary>
       <div class="ktcu-evidence-body">
         <p>공개 공고와 공식 조직도 기준의 프로필입니다. 최종 선정 GP, 실제 약정·집행액, 실무 담당자명은 공개자료만으로 확정하지 않습니다.</p>
         <dl class="ktcu-facts">
           <div>
             <dt>기업투자부 실무자명</dt>
-            <dd>기업투자1팀·2팀 직급/업무/전화는 공개되지만 실명은 공개되지 않음</dd>
+            <dd>기업투자1팀·2팀 직급/업무/전화는 공개되지만 실명은 공개되지 않음<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26 · high</a></small></dd>
           </div>
           <div>
             <dt>선정 GP 히스토리</dt>
-            <dd>최종 선정 GP 히스토리는 공식 공고와 별도 자료를 대조해 추가 검증 필요</dd>
+            <dd>최종 선정 GP 히스토리는 공식 공고와 별도 자료를 대조해 추가 검증 필요<small><a href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer">KTCU 공지사항 · 2026-05-26 · medium</a></small></dd>
           </div>
         </dl>
       </div>
