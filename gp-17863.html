@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>아이엠엠크레딧앤솔루션 GP Profile</title>
+    <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --surface-muted: #f8fafb;
+      --text: #15202b;
+      --secondary: #52616f;
+      --tertiary: #7c8792;
+      --line: #dce3e8;
+      --accent: #1f6b63;
+      --accent-soft: #e7f4f1;
+      --gold: #aa7b26;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+    a { color: inherit; }
+    .gp-shell {
+      width: min(1240px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 18px 0 52px;
+    }
+    .gp-top-nav {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .gp-top-nav strong { font-size: 13px; }
+    .gp-top-nav span { display: flex; flex-wrap: wrap; gap: 7px; }
+    .gp-top-nav a {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 7px 11px;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .gp-top-nav a.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: #164c46;
+    }
+    .gp-hero {
+      display: grid;
+      gap: 18px;
+      align-items: end;
+      margin: 10px 0 12px;
+    }
+    .gp-hero-copy, .gp-detail-hero > div { display: grid; gap: 10px; }
+    .gp-hero-copy > span,
+    .gp-detail-hero > div > span,
+    .gp-empty > span {
+      width: fit-content;
+      border-left: 3px solid var(--accent);
+      padding-left: 8px;
+      color: #164c46;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+    .gp-hero-copy p,
+    .gp-detail-hero p {
+      max-width: 780px;
+      margin: 0;
+      color: var(--secondary);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .gp-kpis,
+    .gp-detail-kpis {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-kpis div,
+    .gp-detail-kpis div,
+    .gp-detail-card,
+    .gp-control-panel,
+    .gp-card,
+    .gp-panel,
+    .gp-disclaimer,
+    .gp-empty {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .gp-kpis div,
+    .gp-detail-kpis div {
+      min-width: 0;
+      padding: 12px;
+    }
+    .gp-kpis span,
+    .gp-detail-kpis span,
+    .gp-fact-list dt {
+      display: block;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+    }
+    .gp-kpis strong,
+    .gp-detail-kpis strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+    .gp-control-panel {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0;
+      padding: 14px;
+    }
+    .gp-control-head {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .gp-controls {
+      display: grid;
+      gap: 8px;
+    }
+    .gp-controls input,
+    .gp-controls select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 11px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+    }
+    .gp-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .gp-filter-row button {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: var(--surface);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .gp-filter-row button.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: #164c46;
+    }
+    .gp-control-panel p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .gp-directory {
+      display: grid;
+      gap: 10px;
+    }
+    .gp-card {
+      display: grid;
+      gap: 11px;
+      padding: 14px;
+    }
+    .gp-card[hidden] { display: none; }
+    .gp-card-main {
+      display: grid;
+      gap: 8px;
+    }
+    .gp-card-title {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+    }
+    .gp-card-title > span {
+      color: var(--tertiary);
+      font-size: 11px;
+      font-weight: 850;
+    }
+    .gp-card h2 {
+      margin: 0;
+      color: var(--text);
+      font-size: 18px;
+      line-height: 1.34;
+      overflow-wrap: anywhere;
+    }
+    .gp-card h2 a { text-decoration: none; }
+    .gp-card h2 a:hover { color: var(--accent); }
+    .gp-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .gp-chips span {
+      border: 1px solid #d7e6e3;
+      border-radius: 999px;
+      padding: 4px 7px;
+      background: #f2faf8;
+      color: #164c46;
+      font-size: 11px;
+      font-weight: 850;
+    }
+    .gp-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 7px;
+      margin: 0;
+    }
+    .gp-metrics div {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: var(--surface-muted);
+    }
+    .gp-metrics dt {
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .gp-metrics dd {
+      margin: 4px 0 0;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+    .gp-meta-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.4;
+    }
+    .gp-meta-line a,
+    .gp-detail-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 850;
+    }
+    .gp-news-mini {
+      display: grid;
+      gap: 6px;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .gp-news-mini > strong {
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+    }
+    .gp-news-mini p,
+    .gp-no-news,
+    .gp-limit-note,
+    .gp-empty-note {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .gp-news-mini p span {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--tertiary);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .gp-news-mini a,
+    .gp-news-row a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .gp-limit-note {
+      border-left: 3px solid #e4c88a;
+      padding-left: 8px;
+    }
+    .gp-disclaimer {
+      margin-top: 12px;
+      padding: 14px;
+    }
+    .gp-disclaimer h2,
+    .gp-panel h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .gp-disclaimer p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 13px;
+      line-height: 1.58;
+    }
+    .gp-disclaimer p + p { margin-top: 8px; }
+    .gp-breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 12px;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .gp-breadcrumb a { color: var(--accent); text-decoration: none; }
+    .gp-breadcrumb span::before { content: "/"; margin-right: 7px; color: var(--tertiary); }
+    .gp-detail-hero {
+      display: grid;
+      gap: 14px;
+      align-items: end;
+      margin: 10px 0 12px;
+    }
+    .gp-detail-card {
+      display: grid;
+      gap: 7px;
+      padding: 14px;
+      color: var(--secondary);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gp-detail-card strong {
+      color: var(--accent);
+      font-size: 17px;
+    }
+    .gp-detail-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .gp-panel {
+      min-width: 0;
+      padding: 15px;
+    }
+    .gp-fact-list {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+    }
+    .gp-fact-list div {
+      min-width: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 9px;
+    }
+    .gp-fact-list div:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .gp-fact-list dd {
+      margin: 4px 0 0;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.48;
+      overflow-wrap: anywhere;
+    }
+    .gp-news-list {
+      display: grid;
+      gap: 10px;
+    }
+    .gp-news-row {
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .gp-news-row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .gp-news-row span {
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+    }
+    .gp-news-row h3 {
+      margin: 4px 0;
+      font-size: 14px;
+      line-height: 1.42;
+    }
+    .gp-news-row p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.48;
+    }
+    .gp-peer-list {
+      display: grid;
+      gap: 7px;
+    }
+    .gp-peer-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 64px 86px;
+      gap: 8px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px;
+      background: var(--surface-muted);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .gp-peer-row strong {
+      min-width: 0;
+      overflow-wrap: anywhere;
+      font-size: 13px;
+    }
+    .gp-peer-row span {
+      color: var(--secondary);
+      text-align: right;
+      font-weight: 850;
+    }
+    .gp-alias-box {
+      margin-top: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .gp-alias-box strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+    }
+    .gp-alias-box p {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .gp-alias-box span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 7px;
+      background: var(--surface-muted);
+      color: var(--text);
+      font-weight: 800;
+    }
+    .gp-empty {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 24px;
+    }
+    .gp-empty p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .gp-empty small {
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    @media (min-width: 720px) {
+      .gp-hero { grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr); }
+      .gp-controls { grid-template-columns: minmax(0, 1fr) 210px; }
+      .gp-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gp-card-main { grid-template-columns: minmax(0, 1fr) auto; align-items: start; }
+      .gp-detail-hero { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); }
+      .gp-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gp-detail-lower { grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr); }
+    }
+    @media (min-width: 1120px) {
+      .gp-directory { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      .gp-shell { width: min(100% - 20px, 1240px); padding-top: 12px; }
+      .gp-top-nav { align-items: start; flex-direction: column; }
+      .gp-top-nav span,
+      .gp-filter-row {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 3px;
+      }
+      .gp-top-nav a,
+      .gp-filter-row button { flex: 0 0 auto; }
+      .gp-kpis,
+      .gp-detail-kpis,
+      .gp-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gp-peer-row { grid-template-columns: minmax(0, 1fr) 56px; }
+      .gp-peer-row span:last-child { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="gp-shell">
+        <nav class="gp-top-nav" aria-label="서비스 이동">
+      <strong>Korea PEF Intelligence</strong>
+      <span>
+        <a href="index.html">Daily Brief</a>
+        <a href="lp-notices.html">LP 공고</a>
+        <a class="active" href="gps.html">GP Directory</a>
+      </span>
+    </nav>
+    <nav class="gp-breadcrumb" aria-label="경로">
+      <a href="gps.html">GP Directory</a>
+      <span>아이엠엠크레딧앤솔루션</span>
+    </nav>
+
+    <header class="gp-detail-hero">
+      <div>
+        <span>GP Profile</span>
+        <h1>아이엠엠크레딧앤솔루션</h1>
+        <p>Korea&#x27;s largest private credit and capital solutions firm focused on stable cashflow-generating assets and sector solutions.</p>
+      </div>
+      <aside class="gp-detail-card" aria-label="핵심 정보">
+        <strong>공식 출처 검증</strong>
+        <span>Private Credit Manager</span>
+        <span>대표 박찬우</span>
+        <a href="https://www.immholdings.co.kr/" target="_blank" rel="noreferrer">immholdings.co.kr</a>
+      </aside>
+    </header>
+
+    <section class="gp-detail-kpis" aria-label="운용 지표">
+      <div><span>최신 순위</span><strong>15위</strong></div>
+      <div><span>Active fund count</span><strong>3</strong></div>
+      <div><span>AUM proxy</span><strong>1.7조</strong></div>
+      <div><span>Cumulative fund count</span><strong>6</strong></div>
+    </section>
+
+    <section class="gp-detail-grid">
+      <article class="gp-panel">
+        <h2>회사 프로필</h2>
+        <dl class="gp-fact-list">
+          <div>
+            <dt>표준 운용사명</dt>
+            <dd>아이엠엠크레딧앤솔루션</dd>
+          </div>
+          <div>
+            <dt>법인명</dt>
+            <dd>아이엠엠크레딧앤솔루션 주식회사</dd>
+          </div>
+          <div>
+            <dt>대표</dt>
+            <dd>박찬우</dd>
+          </div>
+          <div>
+            <dt>홈페이지</dt>
+            <dd><a href="https://www.immholdings.co.kr/" target="_blank" rel="noreferrer">immholdings.co.kr</a></dd>
+          </div>
+          <div>
+            <dt>설립</dt>
+            <dd>2020</dd>
+          </div>
+          <div>
+            <dt>본점/주소</dt>
+            <dd>서울시 강남구 테헤란로152, 강남파이낸스센터12층, IMM Credit &amp; Solutions</dd>
+          </div>
+          <div>
+            <dt>라이선스</dt>
+            <dd>-</dd>
+          </div>
+          <div>
+            <dt>최신 관측 기간</dt>
+            <dd>2024Q4</dd>
+          </div>
+        </dl>
+      </article>
+      <article class="gp-panel">
+        <h2>검증수준과 커버리지</h2>
+        <dl class="gp-fact-list">
+          <div>
+            <dt>검증수준</dt>
+            <dd>공식 출처 검증</dd>
+          </div>
+          <div>
+            <dt>프로필 상태</dt>
+            <dd>official_source_partial</dd>
+          </div>
+          <div>
+            <dt>최신 랭킹</dt>
+            <dd>15위</dd>
+          </div>
+          <div>
+            <dt>누적 랭킹</dt>
+            <dd>29위</dd>
+          </div>
+          <div>
+            <dt>시장점유율 proxy</dt>
+            <dd>1.08%</dd>
+          </div>
+          <div>
+            <dt>첫 관측</dt>
+            <dd>2021Q3</dd>
+          </div>
+          <div>
+            <dt>마지막 관측</dt>
+            <dd>2024Q4</dd>
+          </div>
+          <div>
+            <dt>출처 기준</dt>
+            <dd>FSS quarterly PEF status for GP name, fund linkage, and commitment AUM proxy only; legal identifiers require separate external evidence.</dd>
+          </div>
+          <div>
+            <dt>리서치 메모</dt>
+            <dd>latest_15_and_cumulative_29 · Updated from source-backed gp_profile_evidence.csv</dd>
+          </div>
+        </dl>
+      </article>
+    </section>
+
+    <section class="gp-detail-grid gp-detail-lower">
+      <article class="gp-panel">
+        <h2>최신 뉴스 링크</h2>
+        <div class="gp-news-list">
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-05-15</span>
+            <h3><a href="https://dealsite.co.kr/articles/161962" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] PT 대진 윤곽…7개 분야 운용사 2...</a></h3>
+            <p>서류심사 결과 발표…내주 PT 거쳐 이달 말 최종 GP 확정</p>
+          </article>
+          <article class="gp-news-row">
+            <span>블로터 · 2026-05-15</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=662521" target="_blank" rel="noreferrer">3.9조 국민성장펀드 빅매치 개막…대형·중견PE 진검승부</a></h3>
+            <p>3조9000억원 규모의 국민성장펀드 1차 출자사업이 서류심사를 마치고 본선 경쟁의 막을 올렸다. 고금리와 펀딩 가뭄으로 위축됐던 사모펀드(PEF)와 벤처캐피털(VC) 업계에 대규모 정책자금이 투입되면서 시장 활성화에 대한 기대감이 높아졌다는 평가가 나온다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-05-15</span>
+            <h3><a href="https://dealsite.co.kr/articles/161731" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] 코스닥 리그 6대 1…IRR 최소 20% 넘...</a></h3>
+            <p>한자리 GP 놓고 치열한 경합…상장-비상장 넘나드는 딜소싱에 성장보육 역량이 관건</p>
+          </article>
+        </div>
+      </article>
+      <article class="gp-panel">
+        <h2>같이 볼 상위 GP</h2>
+        <div class="gp-peer-list">
+          <a class="gp-peer-row" href="gp-2.html">
+            <strong>엠비케이파트너스</strong>
+            <span>1위</span>
+            <span>17.3조</span>
+          </a>
+          <a class="gp-peer-row" href="gp-60.html">
+            <strong>한앤컴퍼니</strong>
+            <span>2위</span>
+            <span>16.5조</span>
+          </a>
+          <a class="gp-peer-row" href="gp-10.html">
+            <strong>아이엠엠프라이빗에쿼티</strong>
+            <span>3위</span>
+            <span>7.3조</span>
+          </a>
+          <a class="gp-peer-row" href="gp-44.html">
+            <strong>아이엠엠인베스트먼트</strong>
+            <span>4위</span>
+            <span>6.4조</span>
+          </a>
+          <a class="gp-peer-row" href="gp-23.html">
+            <strong>스틱인베스트먼트</strong>
+            <span>5위</span>
+            <span>5.5조</span>
+          </a>
+          <a class="gp-peer-row" href="gp-72.html">
+            <strong>연합자산관리</strong>
+            <span>6위</span>
+            <span>4.5조</span>
+          </a>
+        </div>
+        <div class="gp-alias-box">
+          <strong>관측 별칭</strong>
+          <p><span>아이엠엠크레딧솔루션</span></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="gp-disclaimer" aria-label="데이터 한계">
+      <h2>데이터 한계</h2>
+      <p>FSS quarterly PEF status for GP name, fund linkage, and commitment AUM proxy only; legal identifiers require separate external evidence. AUM proxy는 실제 NAV/AUM이 아니라 공개 운용 현황 기반 대용치입니다. 뉴스 링크는 자동 매칭 결과라 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
+      <p>기준일 2026-05-26 · source_gp_id 17863 · 개별 페이지는 최신 순위/AUM/뉴스 기준 상위 120개 GP에 한해 생성됩니다.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -9,24 +9,48 @@
     body.lp-notices-page .content-area { display: block; width: min(1180px, calc(100% - 28px)); margin: 0 auto; }
     .lp-profile-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .lp-profile-nav a { display: inline-flex; min-height: 32px; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--surface-muted); color: var(--text); font-size: 12px; font-weight: 750; text-decoration: none; }
+    .lp-directory-hero { display: grid; gap: 14px; margin-bottom: 14px; padding: 6px 0 4px; }
+    .lp-directory-hero h1 { margin: 0; color: var(--text); font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: 0; }
+    .lp-directory-hero p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 14px; line-height: 1.65; }
+    .lp-directory-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .lp-directory-kpis div { border: 1px solid var(--separator); border-radius: 8px; padding: 11px; background: var(--surface); }
+    .lp-directory-kpis span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
+    .lp-directory-kpis strong { display: block; margin-top: 4px; color: var(--text); font-size: 20px; line-height: 1.2; }
+    .lp-directory-grid { display: grid; gap: 10px; margin-bottom: 16px; }
+    .lp-directory-card { display: grid; gap: 10px; border: 1px solid var(--separator); border-radius: 8px; padding: 14px; background: var(--surface); box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
+    .lp-directory-card-head { display: grid; gap: 4px; }
+    .lp-directory-card-head span { width: fit-content; border-radius: 999px; padding: 4px 8px; background: #e7f4f1; color: #164c46; font-size: 11px; font-weight: 800; }
+    .lp-directory-card-head strong { color: var(--text); font-size: 18px; line-height: 1.25; }
+    .lp-directory-card p { margin: 0; color: var(--secondary); font-size: 13px; line-height: 1.5; }
+    .lp-directory-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .lp-directory-chips span { border: 1px solid var(--separator); border-radius: 999px; padding: 5px 8px; background: #fbfcfd; color: var(--text); font-size: 11.5px; font-weight: 750; }
+    .lp-directory-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; margin: 0; }
+    .lp-directory-metrics div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 8px; }
+    .lp-directory-metrics dt { color: var(--secondary); font-size: 11px; font-weight: 800; }
+    .lp-directory-metrics dd { margin: 3px 0 0; color: var(--text); font-size: 13px; font-weight: 800; overflow-wrap: anywhere; }
     .lp-notice-toolbar { display: grid; gap: 9px; margin-bottom: 12px; }
     .lp-notice-toolbar input { width: 100%; min-height: 42px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: var(--surface); color: var(--text); font-size: 14px; }
     .lp-filter-row { display: flex; flex-wrap: wrap; gap: 7px; }
     .lp-filter-row button { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: var(--surface); color: var(--secondary); font-size: 12px; font-weight: 800; cursor: pointer; }
     .lp-filter-row button.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
     .lp-page-list { display: grid; gap: 10px; }
-    .lp-page-card { display: grid; gap: 8px; padding: 14px; border: 1px solid var(--separator); border-radius: 14px; background: var(--surface); }
+    .lp-page-card { display: grid; gap: 8px; padding: 14px; border: 1px solid var(--separator); border-radius: 8px; background: var(--surface); }
     .lp-page-card h2 { margin: 0; font-size: 15px; line-height: 1.38; }
     .lp-page-card h2 a { color: inherit; text-decoration: none; }
     .lp-page-meta { display: flex; flex-wrap: wrap; gap: 6px; color: var(--secondary); font-size: 12px; line-height: 1.35; }
     .lp-page-meta span + span::before { content: "·"; margin-right: 6px; color: var(--tertiary); }
     .lp-page-actions { display: flex; flex-wrap: wrap; gap: 8px; }
     .lp-page-actions a { display: inline-flex; min-height: 32px; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--surface-muted); color: var(--text); font-size: 12px; font-weight: 650; text-decoration: none; }
-    @media (min-width: 960px) { .lp-page-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 760px) {
+      .lp-directory-hero { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr); align-items: end; }
+      .lp-directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 960px) { .lp-page-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .lp-directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
     @media (max-width: 620px) {
       .lp-profile-nav { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
       .lp-profile-nav a { flex: 0 0 auto; }
       .lp-page-card h2 { overflow-wrap: anywhere; }
+      .lp-directory-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
   </style>
 </head>
@@ -36,16 +60,29 @@
       <div class="header-topline">
         <div>
           <p>Korea PEF Intelligence</p>
-          <strong>LP 공고</strong>
+          <strong>LP Directory</strong>
         </div>
         <div class="header-actions">
           <a class="header-action" href="index.html" aria-label="뉴스 브리프 열기">브리프</a>
+          <a class="header-action" href="gps.html" aria-label="GP 디렉토리 열기">GP</a>
         </div>
       </div>
-      <div class="brief-meta">공식 공고 8건 · 기준일 2026-05-26</div>
+      <div class="brief-meta">추적 LP 13개 · 공식 공고 8건 · 기준일 2026-05-26</div>
     </header>
 
     <main class="content-area">
+      <section class="lp-directory-hero" aria-label="LP 디렉토리 요약">
+        <div>
+          <h1>LP Directory</h1>
+          <p>국내 주요 출자기관의 기본 현황, 관심 자산군, 최근 출자공고를 한 곳에서 봅니다. 공식 공고와 공개자료를 우선 반영하고, 뉴스 기반 신호는 구분해 표시합니다.</p>
+        </div>
+        <div class="lp-directory-kpis">
+          <div><span>추적 기관</span><strong>13개</strong></div>
+          <div><span>최근 공고 보유</span><strong>13개</strong></div>
+          <div><span>공고 기준 규모</span><strong>12.44조</strong></div>
+          <div><span>공개 출처</span><strong>43개</strong></div>
+        </div>
+      </section>
       <nav class="lp-profile-nav" aria-label="LP 프로필">
         <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
           <a class="ktcu-profile-link" href="lp-kvic.html">벤처투자</a>
@@ -61,57 +98,316 @@
           <a class="ktcu-profile-link" href="lp-kbiz.html">중기중앙</a>
           <a class="ktcu-profile-link" href="lp-ibk.html">IBK</a>
       </nav>
-      <section class="section-block" aria-label="LP 공식 공고">
+      <section class="section-block" aria-label="LP 디렉토리">
         <div class="lp-notice-toolbar">
-          <input type="search" id="lpNoticeSearch" placeholder="LP, 자산군, 공고명, GP 검색">
-          <div class="lp-filter-row" aria-label="LP 공고 필터">
+          <input type="search" id="lpNoticeSearch" placeholder="LP명, 유형, 자산군, 공고명, GP 검색">
+          <div class="lp-filter-row" aria-label="LP 디렉토리 필터">
             <button class="active" type="button" data-filter="all">전체</button>
+            <button type="button" data-filter="public">공적 LP</button>
+            <button type="button" data-filter="mutual_aid">공제회</button>
             <button type="button" data-filter="PEF">PEF</button>
             <button type="button" data-filter="VC">VC</button>
-            <button type="button" data-filter="new_notice">신규</button>
+            <button type="button" data-filter="new_notice">신규 공고</button>
             <button type="button" data-filter="final_selection">선정</button>
           </div>
         </div>
+        <div class="lp-directory-grid">
+          <article class="lp-directory-card" data-search="국민연금기금 Public Pension public 아시아사모투자팀 PEF · VC · Private Credit · Real Estate · Infrastructure" data-lp="nps" data-asset="PEF · VC · Private Credit · Real Estate · Infrastructure" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Public Pension</span>
+              <strong>국민연금기금</strong>
+            </div>
+            <p>아시아사모투자팀 · PEF · VC · Private Credit · Real Estate · Infrastructure</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            <span>Real Estate</span>
+            <span>Infrastructure</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>1건</dd></div>
+              <div><dt>출자규모</dt><dd>4,000억</dd></div>
+              <div><dt>최신</dt><dd>2026-05-20</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-nps.html">프로필 보기</a><a href="https://fund.nps.or.kr/impa/dlnginstslctnpbanclist/getOHEF0017M0.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="한국벤처투자 Fund of Funds public 투자운용본부 VC · PEF · Mother Fund" data-lp="kvic" data-asset="VC · PEF · Mother Fund" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Fund of Funds</span>
+              <strong>한국벤처투자</strong>
+            </div>
+            <p>투자운용본부 · VC · PEF · Mother Fund</p>
+            <div class="lp-directory-chips">
+            <span>VC</span>
+            <span>PEF</span>
+            <span>Mother Fund</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>1건</dd></div>
+              <div><dt>출자규모</dt><dd>-</dd></div>
+              <div><dt>최신</dt><dd>2026-05-15</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kvic.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="한국성장금융 Policy Fund of Funds public 출자사업 담당 PEF · VC · Private Credit · Policy Fund" data-lp="kgrowth" data-asset="PEF · VC · Private Credit · Policy Fund" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Policy Fund of Funds</span>
+              <strong>한국성장금융</strong>
+            </div>
+            <p>출자사업 담당 · PEF · VC · Private Credit · Policy Fund</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            <span>Policy Fund</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>1건</dd></div>
+              <div><dt>출자규모</dt><dd>520억</dd></div>
+              <div><dt>최신</dt><dd>2026-04-29</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kgrowth.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="한국산업은행 Policy Bank public 간접투자/혁신성장펀드 담당 PEF · VC · Policy Fund" data-lp="kdb" data-asset="PEF · VC · Policy Fund" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Policy Bank</span>
+              <strong>한국산업은행</strong>
+            </div>
+            <p>간접투자/혁신성장펀드 담당 · PEF · VC · Policy Fund</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Policy Fund</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>5건</dd></div>
+              <div><dt>출자규모</dt><dd>5.53조</dd></div>
+              <div><dt>최신</dt><dd>2026-05-17</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kdb.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="농업정책보험금융원 Policy Fund of Funds public 농식품모태펀드 담당 VC · PEF · Mother Fund" data-lp="kafi" data-asset="VC · PEF · Mother Fund" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Policy Fund of Funds</span>
+              <strong>농업정책보험금융원</strong>
+            </div>
+            <p>농식품모태펀드 담당 · VC · PEF · Mother Fund</p>
+            <div class="lp-directory-chips">
+            <span>VC</span>
+            <span>PEF</span>
+            <span>Mother Fund</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>38건</dd></div>
+              <div><dt>출자규모</dt><dd>3,375억</dd></div>
+              <div><dt>최신</dt><dd>2026-05-18</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kafi.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="우정사업본부 Public Fund public 예금대체투자과 PEF · VC · Private Credit" data-lp="koreapost" data-asset="PEF · VC · Private Credit" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Public Fund</span>
+              <strong>우정사업본부</strong>
+            </div>
+            <p>예금대체투자과 · PEF · VC · Private Credit</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>6건</dd></div>
+              <div><dt>출자규모</dt><dd>8,000억</dd></div>
+              <div><dt>최신</dt><dd>2026-05-26</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-koreapost.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="한국교직원공제회 Mutual Aid Association mutual_aid 대체투자 담당 PEF · VC · Private Credit · Real Estate" data-lp="ktcu" data-asset="PEF · VC · Private Credit · Real Estate" data-kind="mutual_aid">
+            <div class="lp-directory-card-head">
+              <span>Mutual Aid Association</span>
+              <strong>한국교직원공제회</strong>
+            </div>
+            <p>대체투자 담당 · PEF · VC · Private Credit · Real Estate</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            <span>Real Estate</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>9건</dd></div>
+              <div><dt>출자규모</dt><dd>3.59조</dd></div>
+              <div><dt>최신</dt><dd>2025-07-02</dd></div>
+              <div><dt>리서치</dt><dd>27/14</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-ktcu.html">프로필 보기</a><a href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="경찰공제회 Mutual Aid Association mutual_aid 대체투자본부/기업투자팀 PEF · VC · Private Credit" data-lp="pmaa" data-asset="PEF · VC · Private Credit" data-kind="mutual_aid">
+            <div class="lp-directory-card-head">
+              <span>Mutual Aid Association</span>
+              <strong>경찰공제회</strong>
+            </div>
+            <p>대체투자본부/기업투자팀 · PEF · VC · Private Credit</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>1건</dd></div>
+              <div><dt>출자규모</dt><dd>1,800억</dd></div>
+              <div><dt>최신</dt><dd>2026-01-12</dd></div>
+              <div><dt>리서치</dt><dd>14/13</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-pmaa.html">프로필 보기</a><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="신협중앙회 Mutual Finance private 자금운용/대체투자 담당 PEF · VC" data-lp="cu" data-asset="PEF · VC" data-kind="private">
+            <div class="lp-directory-card-head">
+              <span>Mutual Finance</span>
+              <strong>신협중앙회</strong>
+            </div>
+            <p>자금운용/대체투자 담당 · PEF · VC</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>3건</dd></div>
+              <div><dt>출자규모</dt><dd>-</dd></div>
+              <div><dt>최신</dt><dd>2025-07-14</dd></div>
+              <div><dt>리서치</dt><dd>15/6</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-cu.html">프로필 보기</a><a href="https://cu.co.kr/cu/na/ntt/selectNttList.do?bbsId=1020&amp;mi=100007" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="새마을금고중앙회 Mutual Finance private 신용공제대표이사/대체운용본부 PEF · VC · Private Credit · Real Estate" data-lp="kfcc" data-asset="PEF · VC · Private Credit · Real Estate" data-kind="private">
+            <div class="lp-directory-card-head">
+              <span>Mutual Finance</span>
+              <strong>새마을금고중앙회</strong>
+            </div>
+            <p>신용공제대표이사/대체운용본부 · PEF · VC · Private Credit · Real Estate</p>
+            <div class="lp-directory-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Private Credit</span>
+            <span>Real Estate</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>3건</dd></div>
+              <div><dt>출자규모</dt><dd>1.00조</dd></div>
+              <div><dt>최신</dt><dd>2025-07-25</dd></div>
+              <div><dt>리서치</dt><dd>13/7</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kfcc.html">프로필 보기</a><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="한국수출입은행 Policy Bank public 공급망안정화기금/기업금융 담당 Policy Fund · PEF · VC · Infrastructure · Supply Chain" data-lp="kexim" data-asset="Policy Fund · PEF · VC · Infrastructure · Supply Chain" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Policy Bank</span>
+              <strong>한국수출입은행</strong>
+            </div>
+            <p>공급망안정화기금/기업금융 담당 · Policy Fund · PEF · VC · Infrastructure · Supply Chain</p>
+            <div class="lp-directory-chips">
+            <span>Policy Fund</span>
+            <span>PEF</span>
+            <span>VC</span>
+            <span>Infrastructure</span>
+            <span>Supply Chain</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>2건</dd></div>
+              <div><dt>출자규모</dt><dd>3,500억</dd></div>
+              <div><dt>최신</dt><dd>2026-04-10</dd></div>
+              <div><dt>리서치</dt><dd>11/3</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kexim.html">프로필 보기</a><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="중소기업중앙회 Mutual Aid/Industry Association private 공제기금/투자 담당 VC · PEF" data-lp="kbiz" data-asset="VC · PEF" data-kind="private">
+            <div class="lp-directory-card-head">
+              <span>Mutual Aid/Industry Association</span>
+              <strong>중소기업중앙회</strong>
+            </div>
+            <p>공제기금/투자 담당 · VC · PEF</p>
+            <div class="lp-directory-chips">
+            <span>VC</span>
+            <span>PEF</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>3건</dd></div>
+              <div><dt>출자규모</dt><dd>2,000억</dd></div>
+              <div><dt>최신</dt><dd>2026-05-22</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kbiz.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+          <article class="lp-directory-card" data-search="IBK기업은행 Policy Bank public 모험자본/혁신금융 담당 VC · PEF · Policy Fund" data-lp="ibk" data-asset="VC · PEF · Policy Fund" data-kind="public">
+            <div class="lp-directory-card-head">
+              <span>Policy Bank</span>
+              <strong>IBK기업은행</strong>
+            </div>
+            <p>모험자본/혁신금융 담당 · VC · PEF · Policy Fund</p>
+            <div class="lp-directory-chips">
+            <span>VC</span>
+            <span>PEF</span>
+            <span>Policy Fund</span>
+            </div>
+            <dl class="lp-directory-metrics">
+              <div><dt>공고</dt><dd>1건</dd></div>
+              <div><dt>출자규모</dt><dd>-</dd></div>
+              <div><dt>최신</dt><dd>2026-05-18</dd></div>
+              <div><dt>리서치</dt><dd>0/0</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-ibk.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
+          </article>
+        </div>
+      </section>
+      <section class="section-block" aria-label="LP 공식 공고">
+        <h2 class="section-title">최근 공식 공고</h2>
         <div class="lp-page-list">
-          <article class="lp-page-card" data-search="(우정사업본부 공고 2026-63호) 2026년도 우체국보험 해외 인프라 대출전략 펀드 위탁운용사 선정 공고 우정사업본부 Infrastructure new_notice " data-lp="" data-asset="Infrastructure" data-event="new_notice" data-deadline="2026-06-12">
+          <article class="lp-page-card" data-search="(우정사업본부 공고 2026-63호) 2026년도 우체국보험 해외 인프라 대출전략 펀드 위탁운용사 선정 공고 우정사업본부 Infrastructure new_notice " data-lp="koreapost" data-asset="Infrastructure" data-event="new_notice" data-deadline="2026-06-12">
             <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=404&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">(우정사업본부 공고 2026-63호) 2026년도 우체국보험 해외 인프라 대출전략 펀드 위탁운용사 선정 공고</a></h2>
             <div class="lp-page-meta"><span>우정사업본부</span><span>신규 공고</span><span>Infrastructure</span><span>마감 2026-06-12</span></div>
-            <div class="lp-page-actions"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=404&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kpasset.go.kr/download.es?filename=1779786207796.hwp&amp;amp;filenameOrg=2026년도 우체국보험 해외인프라 대출전략 펀드 위탁운용사 선정 공고문(국문).hwp&amp;amp;f_path=board&amp;amp;bid=0042&amp;amp;type=board&amp;amp;bid=0042&amp;amp;list_no=404&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-koreapost.html">LP 프로필</a><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=404&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kpasset.go.kr/download.es?filename=1779786207796.hwp&amp;amp;filenameOrg=2026년도 우체국보험 해외인프라 대출전략 펀드 위탁운용사 선정 공고문(국문).hwp&amp;amp;f_path=board&amp;amp;bid=0042&amp;amp;type=board&amp;amp;bid=0042&amp;amp;list_no=404&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC new_notice " data-lp="" data-asset="PEF/VC" data-event="new_notice" data-deadline="2026-05-29">
+          <article class="lp-page-card" data-search="농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC new_notice " data-lp="kafi" data-asset="PEF/VC" data-event="new_notice" data-deadline="2026-05-29">
             <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15099&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             <div class="lp-page-meta"><span>농업정책보험금융원</span><span>신규 공고</span><span>PEF/VC</span><span>마감 2026-05-29</span></div>
-            <div class="lp-page-actions"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15099&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216822&amp;attachId=e521d9527ceb46f9939f51a450e76ea1" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-kafi.html">LP 프로필</a><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15099&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216822&amp;attachId=e521d9527ceb46f9939f51a450e76ea1" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC deadline_soon " data-lp="" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-06-05">
+          <article class="lp-page-card" data-search="모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC deadline_soon " data-lp="kvic" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-06-05">
             <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고</a></h2>
             <div class="lp-page-meta"><span>한국벤처투자</span><span>마감 임박</span><span>PEF/VC</span><span>마감 2026-06-05</span></div>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf&amp;name=%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-kvic.html">LP 프로필</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf&amp;name=%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고 중소기업중앙회 PEF/VC deadline_soon " data-lp="" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-06-05">
+          <article class="lp-page-card" data-search="2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고 중소기업중앙회 PEF/VC deadline_soon " data-lp="kbiz" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-06-05">
             <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130336?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고</a></h2>
             <div class="lp-page-meta"><span>중소기업중앙회</span><span>마감 임박</span><span>PEF/VC</span><span>마감 2026-06-05</span></div>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130336?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_1-%28%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D%29+%E3%80%8E2026%EB%85%84+%EA%B5%AD%EB%82%B4+%EB%B8%94%EB%9D%BC%EC%9D%B8%EB%93%9C+VC+%ED%8E%80%EB%93%9C+%EA%B3%B5%EB%AA%A8%E3%80%8F_%EC%B5%9C%EC%A2%85.hwp&amp;name=1-%28%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D%29+%E3%80%8E2026%EB%85%84+%EA%B5%AD%EB%82%B4+%EB%B8%94%EB%9D%BC%EC%9D%B8%EB%93%9C+VC+%ED%8E%80%EB%93%9C+%EA%B3%B5%EB%AA%A8%E3%80%8F_%EC%B5%9C%EC%A2%85.hwp" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-kbiz.html">LP 프로필</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130336?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_1-%28%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D%29+%E3%80%8E2026%EB%85%84+%EA%B5%AD%EB%82%B4+%EB%B8%94%EB%9D%BC%EC%9D%B8%EB%93%9C+VC+%ED%8E%80%EB%93%9C+%EA%B3%B5%EB%AA%A8%E3%80%8F_%EC%B5%9C%EC%A2%85.hwp&amp;name=1-%28%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D%29+%E3%80%8E2026%EB%85%84+%EA%B5%AD%EB%82%B4+%EB%B8%94%EB%9D%BC%EC%9D%B8%EB%93%9C+VC+%ED%8E%80%EB%93%9C+%EA%B3%B5%EB%AA%A8%E3%80%8F_%EC%B5%9C%EC%A2%85.hwp" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고 IBK기업은행 PEF/VC deadline_soon " data-lp="" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-05-29">
+          <article class="lp-page-card" data-search="「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고 IBK기업은행 PEF/VC deadline_soon " data-lp="ibk" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-05-29">
             <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130341?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고</a></h2>
             <div class="lp-page-meta"><span>IBK기업은행</span><span>마감 임박</span><span>PEF/VC</span><span>마감 2026-05-29</span></div>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130341?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-ibk.html">LP 프로필</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130341?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고 한국산업은행 PEF/VC deadline_soon " data-lp="" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-05-29">
+          <article class="lp-page-card" data-search="『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고 한국산업은행 PEF/VC deadline_soon " data-lp="kdb" data-asset="PEF/VC" data-event="deadline_soon" data-deadline="2026-05-29">
             <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130335?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고</a></h2>
             <div class="lp-page-meta"><span>한국산업은행</span><span>마감 임박</span><span>PEF/VC</span><span>마감 2026-05-29</span></div>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130335?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-kdb.html">LP 프로필</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130335?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고 우정사업본부 Real Estate deadline_soon " data-lp="" data-asset="Real Estate" data-event="deadline_soon" data-deadline="2026-05-28">
+          <article class="lp-page-card" data-search="2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고 우정사업본부 Real Estate deadline_soon " data-lp="koreapost" data-asset="Real Estate" data-event="deadline_soon" data-deadline="2026-05-28">
             <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=403&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고</a></h2>
             <div class="lp-page-meta"><span>우정사업본부</span><span>마감 임박</span><span>Real Estate</span><span>마감 2026-05-28</span><span>1,500억</span></div>
-            <div class="lp-page-actions"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=403&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kpasset.go.kr/download.es?filename=1778567198922.pdf&amp;amp;filenameOrg=2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고문.pdf&amp;amp;f_path=board&amp;amp;bid=0042&amp;amp;type=board&amp;amp;bid=0042&amp;amp;list_no=403&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-koreapost.html">LP 프로필</a><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0042&amp;list_no=403&amp;act=view&amp;intro_yn=Y" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.kpasset.go.kr/download.es?filename=1778567198922.pdf&amp;amp;filenameOrg=2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고문.pdf&amp;amp;f_path=board&amp;amp;bid=0042&amp;amp;type=board&amp;amp;bid=0042&amp;amp;list_no=403&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
-          <article class="lp-page-card" data-search="농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC new_notice " data-lp="" data-asset="PEF/VC" data-event="new_notice" data-deadline="">
+          <article class="lp-page-card" data-search="농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC new_notice " data-lp="kafi" data-asset="PEF/VC" data-event="new_notice" data-deadline="">
             <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15018&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고</a></h2>
             <div class="lp-page-meta"><span>농업정책보험금융원</span><span>신규 공고</span><span>PEF/VC</span></div>
-            <div class="lp-page-actions"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15018&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216748&amp;attachId=4244d3681385431c9def4fa58de6ccb8" target="_blank" rel="noreferrer">첨부파일</a></div>
+            <div class="lp-page-actions"><a href="lp-kafi.html">LP 프로필</a><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15018&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공식 공고 보기</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216748&amp;attachId=4244d3681385431c9def4fa58de6ccb8" target="_blank" rel="noreferrer">첨부파일</a></div>
           </article>
         </div>
       </section>
@@ -136,13 +432,14 @@
     (() => {
       const input = document.getElementById("lpNoticeSearch");
       const buttons = Array.from(document.querySelectorAll("[data-filter]"));
-      const cards = Array.from(document.querySelectorAll(".lp-page-card"));
+      const cards = Array.from(document.querySelectorAll(".lp-directory-card, .lp-page-card"));
       let active = "all";
       const apply = () => {
         const query = (input?.value || "").trim().toLowerCase();
         cards.forEach((card) => {
           const haystack = (card.dataset.search || card.innerText).toLowerCase();
-          const filterHit = active === "all" || [card.dataset.asset, card.dataset.event, card.dataset.lp].includes(active);
+          const fields = [card.dataset.asset, card.dataset.event, card.dataset.lp, card.dataset.kind].filter(Boolean);
+          const filterHit = active === "all" || fields.includes(active) || fields.some((field) => field.includes(active));
           const queryHit = !query || haystack.includes(query);
           card.style.display = filterHit && queryHit ? "" : "none";
         });
