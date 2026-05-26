@@ -1,5 +1,462 @@
 [
   {
+    "reportDate": "2026-05-27",
+    "visibleDate": "2026.05.27",
+    "basis": "",
+    "countLabel": "주요 뉴스 22건",
+    "articles": [
+      {
+        "id": "clip-20260527-0",
+        "rank": 0,
+        "section": "AI & PE",
+        "subCategory": "AI 전략·운영",
+        "rawSection": "AI & PE",
+        "title": "롯데에너지머티리얼즈, 자회사 '롯데에코월' 매각…첨단 소재 중심 사업...",
+        "titleBadges": [],
+        "source": "조세일보",
+        "sourceBadge": "세",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=joseilbo.com&sz=64",
+        "url": "http://www.joseilbo.com/news/htmls/2026/05/20260526568908.html",
+        "sectionOrder": 0,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-1",
+        "rank": 1,
+        "section": "AI & PE",
+        "subCategory": "AI 전략·운영",
+        "rawSection": "AI & PE",
+        "title": "[국민성장펀드] 중소형 GP도 각축...AI·코스닥 리그 승자는?",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=newstopkorea.com&sz=64",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45146",
+        "sectionOrder": 0,
+        "gpNames": [
+          "오픈워터인베스트먼트",
+          "파라투스인베스트먼트",
+          "SBI인베스트먼트",
+          "대신프라이빗에쿼티",
+          "삼호그린인베스트먼트",
+          "우리프라이빗에퀴티자산운용",
+          "미래에셋벤처투자",
+          "미래에셋자산운용"
+        ],
+        "peopleCount": 9,
+        "searchTerms": [
+          "오픈워터인베스트먼트",
+          "파라투스인베스트먼트",
+          "SBI인베스트먼트",
+          "대신프라이빗에쿼티",
+          "삼호그린인베스트먼트",
+          "우리프라이빗에퀴티자산운용",
+          "우리프라이빗에퀴티",
+          "미래에셋벤처투자",
+          "미래에셋자산운용"
+        ]
+      },
+      {
+        "id": "clip-20260527-2",
+        "rank": 2,
+        "section": "Market",
+        "subCategory": "Data",
+        "rawSection": "AI & PE",
+        "title": "글로벌 사모펀드들, 中 데이터센터 시장 철수 막바지",
+        "titleBadges": [],
+        "source": "파이낸셜뉴스",
+        "sourceBadge": "파",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=fnnews.com&sz=64",
+        "url": "https://www.fnnews.com/news/202605260937364544",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-3",
+        "rank": 3,
+        "section": "AI & PE",
+        "subCategory": "AI 투자·인프라",
+        "rawSection": "AI & PE",
+        "title": "글로벌 사모펀드, 中데이터센터 잇따라 철수",
+        "titleBadges": [],
+        "source": "파이낸셜뉴스",
+        "sourceBadge": "파",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=fnnews.com&sz=64",
+        "url": "https://www.fnnews.com/news/202605261814029296",
+        "sectionOrder": 0,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[딜 인사이드] 에이팩트, 경영권 펀드 변경…효성·제주반도체 참여 눈...",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=bloter.net&sz=64",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=663372",
+        "sectionOrder": 1,
+        "gpNames": [
+          "오로라파트너스"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "오로라파트너스"
+        ]
+      },
+      {
+        "id": "clip-20260527-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "서울전선 우협 잡은 헬리오스PE, 10호 M&A 펀드 집행 본격화",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=newstopkorea.com&sz=64",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45154",
+        "sectionOrder": 1,
+        "gpNames": [
+          "헬리오스프라이빗에쿼티",
+          "유진프라이빗에쿼티"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "헬리오스프라이빗에쿼티",
+          "헬리오스PE",
+          "유진프라이빗에쿼티"
+        ]
+      },
+      {
+        "id": "clip-20260527-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "현정은, H&Q서 지분 전량 회수…빨라지는 정지이 승계",
+        "titleBadges": [],
+        "source": "파이낸셜뉴스",
+        "sourceBadge": "파",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=fnnews.com&sz=64",
+        "url": "https://www.fnnews.com/news/202605260801532396",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "KKR의 한·일 탱크터미널 매각전, EQT 유력 후보 부상하나",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605261445086800109061",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Financing",
+        "rawSection": "Deal",
+        "title": "E&F PE, KES환경개발 인수 마무리… 인수금융 셀다운 진행",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.chosun.com&sz=64",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/05/26/KNDOS4HEJRFNDM6QAPFPFNT5NY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "sectionOrder": 1,
+        "gpNames": [
+          "이앤에프프라이빗에퀴티"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "이앤에프프라이빗에퀴티",
+          "E&F PE"
+        ]
+      },
+      {
+        "id": "clip-20260527-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "'7500억 몸값' 엑소코바이오, IPO냐 M&A냐 '그것이 문제'",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=edaily.co.kr&sz=64",
+        "url": "https://www.edaily.co.kr/News/Read?newsId=03378406645452856&mediaCodeNo=257",
+        "sectionOrder": 1,
+        "gpNames": [
+          "한국투자증권"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국투자증권"
+        ]
+      },
+      {
+        "id": "clip-20260527-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "VIP자산운용, 롯데렌탈 지분 7.33%로 확대…\"밸류업 재개 촉구\"",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.einfomax.co.kr&sz=64",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416661",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "홈플러스, 잔존사업부문 M&A 추진…벼랑 끝 승부수",
+        "titleBadges": [],
+        "source": "뉴스토마토",
+        "sourceBadge": "토",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=newstomato.com&sz=64",
+        "url": "http://www.newstomato.com/ReadNews.aspx?no=1302017&inflow=N",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-12",
+        "rank": 12,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "민주 ‘코스피 8000’에 금융 공약 전면…“페어 펀드 도입”",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=sedaily.com&sz=64",
+        "url": "https://www.sedaily.com/article/20048136?ref=naver",
+        "sectionOrder": 1,
+        "gpNames": [
+          "라임자산운용"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "라임자산운용"
+        ]
+      },
+      {
+        "id": "clip-20260527-13",
+        "rank": 13,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "새 주인 되어달라 '러브콜'…日 기업들 한국에 몰려드는 이유",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=hankyung.com&sz=64",
+        "url": "https://www.hankyung.com/article/2026052600771",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-14",
+        "rank": 14,
+        "section": "LP",
+        "subCategory": "Mandate",
+        "rawSection": "LP",
+        "title": "하나벤처스, 200억 출자사업 개시…올해 600억 이상 쏜...",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605211802436600105523",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-15",
+        "rank": 15,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "[취재수첩] 국부펀드·국민성장펀드 '두 토끼' 잡으려면",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=hankyung.com&sz=64",
+        "url": "https://www.hankyung.com/article/2026052699101",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-16",
+        "rank": 16,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "[국민성장펀드] 최종 GP 발표 임박...박현주·서정진 픽은?",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=newstopkorea.com&sz=64",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45145",
+        "sectionOrder": 2,
+        "gpNames": [
+          "신한자산운용",
+          "한국투자파트너스",
+          "웰투시인베스트먼트",
+          "도미누스에쿼티파트너스",
+          "케이엘앤파트너스",
+          "키움프라이빗에쿼티",
+          "스카이레이크에쿼티파트너스",
+          "미래에셋자산운용"
+        ],
+        "peopleCount": 1,
+        "searchTerms": [
+          "신한자산운용",
+          "한국투자파트너스",
+          "웰투시인베스트먼트",
+          "도미누스에쿼티파트너스",
+          "케이엘앤파트너스",
+          "키움프라이빗에쿼티",
+          "스카이레이크에쿼티파트너스",
+          "미래에셋자산운용"
+        ]
+      },
+      {
+        "id": "clip-20260527-17",
+        "rank": 17,
+        "section": "LP",
+        "subCategory": "Portfolio Review",
+        "rawSection": "LP",
+        "title": "국민연금, 글로벌 연기금 중 수익률 '1위'…정통·방통기금 통합권고",
+        "titleBadges": [],
+        "source": "머니투데이",
+        "sourceBadge": "머",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=mt.co.kr&sz=64",
+        "url": "https://www.mt.co.kr/economy/2026/05/26/2026052608263652635",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-18",
+        "rank": 18,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "이정우-이진하 이름값 5000억…고도의 첫 발",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
+        "url": "https://dealsite.co.kr/articles/162393",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "peopleCount": 13,
+        "searchTerms": [
+          "엠비케이파트너스",
+          "MBK"
+        ]
+      },
+      {
+        "id": "clip-20260527-19",
+        "rank": 19,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "신한벤처투자, 펀드본부 확대…모펀드 운용 대응",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605221631505840104387",
+        "sectionOrder": 2,
+        "gpNames": [
+          "신한벤처투자"
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "신한벤처투자"
+        ]
+      },
+      {
+        "id": "clip-20260527-20",
+        "rank": 20,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "[데스크 시각] ‘물꼬’ 없는 저수지는 썩는다",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=etoday.co.kr&sz=64",
+        "url": "https://www.etoday.co.kr/news/view/2587942",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260527-21",
+        "rank": 21,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "이테크시스템, 최대 3000억 투자 유치 추진",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605221417061160106819",
+        "sectionOrder": 3,
+        "gpNames": [
+          "에스지프라이빗에쿼티"
+        ],
+        "peopleCount": 2,
+        "searchTerms": [
+          "에스지프라이빗에쿼티",
+          "SG PE"
+        ]
+      }
+    ]
+  },
+  {
     "reportDate": "2026-05-26",
     "visibleDate": "2026.05.26",
     "basis": "",
@@ -200,15 +657,14 @@
         "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45125",
         "sectionOrder": 1,
         "gpNames": [
-          "엠비케이파트너스",
-          "유씨케이파트너스"
-        ],
-        "peopleCount": 16,
-        "searchTerms": [
-          "엠비케이파트너스",
-          "MBK",
           "유씨케이파트너스",
-          "UCK"
+          "엠비케이파트너스"
+        ],
+        "peopleCount": 3,
+        "searchTerms": [
+          "유씨케이파트너스",
+          "UCK",
+          "엠비케이파트너스"
         ]
       },
       {
@@ -617,14 +1073,13 @@
         "url": "https://view.asiae.co.kr/article/2026052015543671412",
         "sectionOrder": 1,
         "gpNames": [
-          "에스케이에스프라이빗에쿼티",
-          "미래에셋캐피탈"
+          "미래에셋캐피탈",
+          "에스케이에스프라이빗에쿼티"
         ],
-        "peopleCount": 1,
+        "peopleCount": 0,
         "searchTerms": [
-          "에스케이에스프라이빗에쿼티",
-          "SKS PE",
-          "미래에셋캐피탈"
+          "미래에셋캐피탈",
+          "에스케이에스프라이빗에쿼티"
         ]
       },
       {
@@ -2847,48 +3302,6 @@
         "sourceBadge": "이",
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS3c3T0trM1o1YktXTUhyWHRfMnpBbVBhQkdTY3NxX2Y1MFEzaFhQQ2g0aHl1bl9SLVo3OV9vOURuZ3owYVZnSVpfMjdsanZIUmszbnJVSVNxYjZOMHBsWVJQcGozWjBuMWVlZ1NHd2VMdnBGUXBNTjVhUTl2b1pXUg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      }
-    ]
-  },
-  {
-    "reportDate": "2026-04-27",
-    "visibleDate": "2026.04.27",
-    "basis": "",
-    "countLabel": "주요 뉴스 2건",
-    "articles": [
-      {
-        "id": "clip-20260427-0",
-        "rank": 0,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "금투협 \"PEF·일반 사모펀드 구분해야\"..용어 혼선 주의",
-        "titleBadges": [],
-        "source": "포쓰저널",
-        "sourceBadge": "포",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Bc0lvMzdnRDZ0ZXlIRnN0eUstNFFxZmpmZFgxRnZjalE0am5VU0N0MkdvRWxranJWbG9NZm5YenBKTENaTXlFMWVGMGh4bjQ4Z1VTSGFEdUtyN3dlTUtxSzNBeFk?oc=5&hl=ko&gl=KR&ceid=KR:ko",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260427-1",
-        "rank": 1,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Market",
-        "title": "한앤코 자산운용업으로 사업 다변화…PEF협의회 탈출",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
-        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HeGl2eVp4dmRMbkhlVnhnenF2SFVTeXpaczJNWDB4R3d5a3ZoM0d0ZDdEWGE1djJGM2V5OWpQMWdGcmYxR2oxdURzLW05SHc?oc=5&hl=ko&gl=KR&ceid=KR:ko",
         "sectionOrder": 1,
         "gpNames": [],
         "peopleCount": 0,
