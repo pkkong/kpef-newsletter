@@ -549,7 +549,9 @@
     if (!items.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state visible";
-      empty.innerHTML = "<strong>결과가 없습니다</strong><span>검색어를 줄여 다시 확인합니다.</span>";
+      empty.innerHTML = queryText()
+        ? "<strong>결과가 없습니다</strong><span>검색어를 줄여 다시 확인합니다.</span>"
+        : "<strong>선정된 뉴스가 없습니다</strong><span>이 날짜에는 공개 기준을 통과한 기사가 없습니다.</span>";
       target.append(empty);
       return;
     }

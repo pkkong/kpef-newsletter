@@ -427,6 +427,38 @@
     ]
   },
   {
+    "reportDate": "2026-05-24",
+    "visibleDate": "2026.05.24",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
+    "reportDate": "2026-05-23",
+    "visibleDate": "2026.05.23",
+    "basis": "",
+    "countLabel": "주요 뉴스 1건",
+    "articles": [
+      {
+        "id": "clip-20260523-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "울산GPS 품는 스틱·한투PE…1.2조 인프라 딜 본계약 체결",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE12MUNYbVktM3hIT0g0TGN0WDJSYjZORmNHTURHdzVhcDJqdzFyV0RrUmNta1hTb2sxaFpCcFhoY3ZXUFd4T1NseEtsZG1sZkg0d29rUGtUcXdDWUFBdWhYSXo0N3BVd2xMZWFkb3ZrTQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-05-22",
     "visibleDate": "2026.05.22",
     "basis": "",
@@ -784,6 +816,45 @@
     ]
   },
   {
+    "reportDate": "2026-05-18",
+    "visibleDate": "2026.05.18",
+    "basis": "",
+    "countLabel": "주요 뉴스 1건",
+    "articles": [
+      {
+        "id": "clip-20260518-0",
+        "rank": 0,
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Deal",
+        "title": "[IB토마토](PEF 생존법)①고금리·규제 이중고…바이아웃 공식 '흔들'",
+        "titleBadges": [],
+        "source": "뉴스토마토",
+        "sourceBadge": "토",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XU1RSdTV6VFJpbWUxcUl1dC02RjZrcEFqQ0Z1czZ6aHFXQ0ZuUGp3TFFKUHpWVkFicXNnTGhCYmo4OXRWdzdiMWVGZXVld1J1UlRQaW5QVklUZ2xBLVFvRw?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-05-17",
+    "visibleDate": "2026.05.17",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
+    "reportDate": "2026-05-16",
+    "visibleDate": "2026.05.16",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
     "reportDate": "2026-05-15",
     "visibleDate": "2026.05.15",
     "basis": "",
@@ -938,6 +1009,48 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
         "url": "https://dealsite.co.kr/articles/161695",
         "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-05-14",
+    "visibleDate": "2026.05.14",
+    "basis": "",
+    "countLabel": "주요 뉴스 2건",
+    "articles": [
+      {
+        "id": "clip-20260514-0",
+        "rank": 0,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "코스닥 국민성장펀드 GP 각축전…산은 평가기준 '주목'",
+        "titleBadges": [],
+        "source": "머니투데이",
+        "sourceBadge": "머",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XbnowUlpfYnZPVUg2cVhIU05IaE14R3BMRm5xeEdNQU1kckxLUVhBNUxaTG43ZWtxb29fWGRFTnQzOG0yelh5Tkk2UzZhMF9ZWENwMjRaMk5GZGQ5c1VlNUJwRmROWHU30gFuQVVfeXFMTTlibXpQMGJGTEhrOFpjMEhyNDloa1pGOUFMR2RDSURMY3hCWGZHUnNtSllTa1NQc1M3SmFWNnB1TGRjc0JhSG1fZUpkaVoxT0twcm1pc3B2MWhId3o1R3BxMGdSdmZpX3ZQNUZaSUE?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260514-1",
+        "rank": 1,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "(사모펀드발 '자본의 역습')①프랜차이즈 새 주인은 '투자자본'…수익성 '올인'",
+        "titleBadges": [],
+        "source": "뉴스토마토",
+        "sourceBadge": "토",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzM0RYUnhDa1ZxaG9Lejh4RWlCc2NRYS12QzYta2xWWmNSUkwtbFpMVWN0ejFCOThsZDNCUmI1eE1ZZjMzWmRNRTBQNUkzR2VWMEpKd0pUT1lpUDNMTDNSZg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 4,
         "gpNames": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1513,6 +1626,72 @@
     ]
   },
   {
+    "reportDate": "2026-05-10",
+    "visibleDate": "2026.05.10",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
+    "reportDate": "2026-05-09",
+    "visibleDate": "2026.05.09",
+    "basis": "",
+    "countLabel": "주요 뉴스 3건",
+    "articles": [
+      {
+        "id": "clip-20260509-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "아크앤파트너스, IBK 성장 M&A펀드 운용사 선정…성장형 바이아웃 확대",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yTVZGRHU0aktqN0NTdGMwQzd4THdqRUxOVll5cXdSTl9kYzB6ZTFzdTJMbXJSLU5IU2VKN0ltSTF0Q19ZNTNGS0RLbGMwMHBvU0t3cHp3ZGQwZ9IBVEFVX3lxTE9kYnFRaTRfWnZ0OTN3d0pGd2VfbmViSy1ZakNjVU1SMnJtbW1Ld1FXSmNIRTFxanB1Q3lEVjVkZ2hzeW9GeE5QdDVNemxmWVVLSEFRNg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260509-1",
+        "rank": 1,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "얼머스인베스트, 1000억 세컨더리펀드 결성 초읽기",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9kbzlaelI3MEtXeFRYZjBmd0M0LW9LWmNsVnNJRG54emNaVnFCaFhocHhsNTh0VTFWVFgzc2U2Q2tfTmF2Y0FKTklwaHJHTi1SRnB3emNZbzZoXzRibmZCZTF6NG1CTlMtT05WZ21rRQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260509-2",
+        "rank": 2,
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Market",
+        "title": "PEF협회 올 10월 출범 목표…정부에 자본시장법 개정도 건의[시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jYWdPdXF5MGsyc3BWMmNSVWJHMmgwYlpSWDdKV2htdTBVSElmZS1uOEppYWJrUE9qZVVzd1NwaDRSZmlBVXFMWUtYX1NkU3M3VXfSAVNBVV95cUxNVHN1YXVEUW55aFU2YWF0Ymg1U1FDczVteEZybHFxY1NNRkppTktVazgwRFJBRFVqV2RRUmJ5QXVkN3dXMWw0Nk5paXhOb09ITk5sVQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-05-08",
     "visibleDate": "2026.05.08",
     "basis": "",
@@ -1937,6 +2116,205 @@
     ]
   },
   {
+    "reportDate": "2026-05-06",
+    "visibleDate": "2026.05.06",
+    "basis": "",
+    "countLabel": "주요 뉴스 2건",
+    "articles": [
+      {
+        "id": "clip-20260506-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "'캐시카우' 배당 규모 더 커졌다…F&B로 배불리는 사모펀드",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45S2tSUTZWOFVUbzVaeXVycy1Wb2ZaaEZxMzMwMk5UMjdlNU9VODROUE5YcC1rSWt0YWQwanVRRmRoQm4zTkNIRkVzMVdWLXZjNUNHNE9fek5LSTNudGdTMg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260506-1",
+        "rank": 1,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "[PEF열전] 150조 국민성장펀드 시대…첨단산업 투자",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KZktDR09OTE5jU3VFelZSb0JrM09haWNYMVhaeHVTYWlJakNvb1ppb0dUMjV3UUtkbzdxRFM1eHpQTlloRkItYS1qQUgxRU9zVEE?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-05-05",
+    "visibleDate": "2026.05.05",
+    "basis": "",
+    "countLabel": "주요 뉴스 2건",
+    "articles": [
+      {
+        "id": "clip-20260505-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Financing",
+        "rawSection": "Deal",
+        "title": "IMM PE, 8000억 한샘 인수금융 연장 논의 돌입",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNc0k5ektpX3BPd1Y1dlFaSlBGQi1Rdkg4UXlmdmUtQUR0dDh5cmZWU3pucUZLWlotWlk3WDR6cnQ2eWNpaW1mdk1acE5JQUxTaU14aldJOGZ0Yk9hTlg4WHBrSFhOYzlPX0hjSGU5TExzRnhYT2czNmtJVmJyOVJWcThnZw?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260505-1",
+        "rank": 1,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "사학연금, VC 출자…GP 5곳에 1000억 쏜다",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zeUhQUVdRYjgzcHRHOFhpS296bEduYzBRd1FGSGV2OG1nR1R5QWdEczZ2d1l4YjZVODZUQmtNLW55dml2UTRpcjc5QnNEcjQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-05-04",
+    "visibleDate": "2026.05.04",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
+    "reportDate": "2026-05-03",
+    "visibleDate": "2026.05.03",
+    "basis": "",
+    "countLabel": "주요 뉴스 0건",
+    "articles": []
+  },
+  {
+    "reportDate": "2026-05-02",
+    "visibleDate": "2026.05.02",
+    "basis": "",
+    "countLabel": "주요 뉴스 3건",
+    "articles": [
+      {
+        "id": "clip-20260502-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "[이지스자산운용 M&A] 5년 만에 왕의 귀환…국민연금 달래고 매각 재시도",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1tWHpvT184alZMQkRVckcxUnhxay02MUxSUlhRMUhBcVBXRWQ4NFpINGI2VFM2T2pmanFSZG9ma0FRM0p0OGRDTnAtM1o5bGs?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260502-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "실탄은 넘치는데 살 매물이 없다…PEF 업계, 딜 가뭄에 '아우성'",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0Sm1CTGRNYkFoWXp5QkNWYnhlVFJVZzhDLTlBUnFneGFtdzlXY2dPSmZPUXQ1d1JYdkdWMzkxZlJIMF9sODFJTEc3QTItWlFwTC1sSw?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260502-2",
+        "rank": 2,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "IMM, 사모펀드 최초 기업 장기경영 추진",
+        "titleBadges": [],
+        "source": "매일경제 마켓",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1SZEhlZkFydTlvVDBwazh2aW9mVzhRQVprNU1BZnIwVEtDQmQ0LTFnUU1rQS1HLTZRUXNKVDZYSEhTMUNyQWgxaWtkVWJwaWl6Wmc?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-05-01",
+    "visibleDate": "2026.05.01",
+    "basis": "",
+    "countLabel": "주요 뉴스 2건",
+    "articles": [
+      {
+        "id": "clip-20260501-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[주총 포커스] 공구우먼, PEF 인수 후 사명 변경…패션테크 전환",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SRFFUa3ZoUjA2R1E4MER1emh1U0hzd21XbWRob3phWmFZdFRqOWJTcDlyOUdJWGtnUjZYWVkxTEY1aTlNdnROcDhLczlSaEJTZVNYbXh1MEJaTS1PZDZzR0FOb2p6aUlu0gFsQVVfeXFMTmpGaHFGOE1Ha2p3dFRlME95eXBMVU1rbUw2OUhYR2duMXZvRGJHX0loMHI0TktnWDB1UGlvUldJeW5peFZPaXROcHNVZ3RsZDlSMGpZZTdyRjg0WGlqMDJPVC1CTm1oeTBCMktS?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260501-1",
+        "rank": 1,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "국민성장펀드 쏠림현상에…VC들 \"펀드 결성 문턱은 되레 높아졌다\"",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcFJnRzdXTldmREZuRFNkRmp6X1NkdGRNYmhOcWNESU9jekFUS2N3a0pXNHdpNkJ0RWpaRG1hV3hHRWZ0MEd5d1BrcnEtdklpcW5rMHptaHRaNHotanl2MXlDampzeWZEWlZqbFpQX3VDcUZWU2Fmd01lTXlpVzR5YlFHTQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-04-30",
     "visibleDate": "2026.04.30",
     "basis": "",
@@ -2167,6 +2545,107 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202604270755551100102513",
         "sectionOrder": 3,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-04-28",
+    "visibleDate": "2026.04.28",
+    "basis": "",
+    "countLabel": "주요 뉴스 3건",
+    "articles": [
+      {
+        "id": "clip-20260428-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "KFC코리아, 美 사모펀드 칼라일에 인수…“공격적 매장 확대 나서”",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hc3BMYVhCUEtjajZTZDhvdl9RWkd0MjR5andzX1FETWhWaEFvSi1Lcm9qWGo0TS1IQUFnVUdBcV92dkloRVlHRlZNMU9EY1hDU3pYeA?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260428-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "이지스자산운용, 조갑주 복귀 카드…'LP 민심 수습'이 매각 변수로",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUF9hcnlleHVVWWtRLXZ6QnlfSEhIX0wxTU1jR05NTUU4UTB0MnFtSXF0X2x4d2RGNF83em5MOWpZRHNSdEdwdTI2TnJKdXdVQ2xQX0JRTVZnY2VCVVZ3VGtFOEUwamxSN29yNEsyZUlNU3VoMmtKVHM4bFNrbDhnYzc5QQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260428-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "커피와 닭강정…사모펀드 밸류업 공식이 바꾼 메뉴판[마켓인]",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS3c3T0trM1o1YktXTUhyWHRfMnpBbVBhQkdTY3NxX2Y1MFEzaFhQQ2g0aHl1bl9SLVo3OV9vOURuZ3owYVZnSVpfMjdsanZIUmszbnJVSVNxYjZOMHBsWVJQcGozWjBuMWVlZ1NHd2VMdnBGUXBNTjVhUTl2b1pXUg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
+    "reportDate": "2026-04-27",
+    "visibleDate": "2026.04.27",
+    "basis": "",
+    "countLabel": "주요 뉴스 2건",
+    "articles": [
+      {
+        "id": "clip-20260427-0",
+        "rank": 0,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "금투협 \"PEF·일반 사모펀드 구분해야\"..용어 혼선 주의",
+        "titleBadges": [],
+        "source": "포쓰저널",
+        "sourceBadge": "포",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Bc0lvMzdnRDZ0ZXlIRnN0eUstNFFxZmpmZFgxRnZjalE0am5VU0N0MkdvRWxranJWbG9NZm5YenBKTENaTXlFMWVGMGh4bjQ4Z1VTSGFEdUtyN3dlTUtxSzNBeFk?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260427-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Market",
+        "title": "한앤코 자산운용업으로 사업 다변화…PEF협의회 탈출",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HeGl2eVp4dmRMbkhlVnhnenF2SFVTeXpaczJNWDB4R3d5a3ZoM0d0ZDdEWGE1djJGM2V5OWpQMWdGcmYxR2oxdURzLW05SHc?oc=5&hl=ko&gl=KR&ceid=KR:ko",
+        "sectionOrder": 1,
         "gpNames": [],
         "peopleCount": 0,
         "searchTerms": []
