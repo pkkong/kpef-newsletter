@@ -499,7 +499,7 @@
     meta.className = "cell-meta";
     const taxonomy = document.createElement("span");
     taxonomy.className = "taxonomy-meta";
-    taxonomy.textContent = article.subCategory ? `${article.section} · ${article.subCategory}` : (article.section || "");
+    taxonomy.textContent = article.subCategory || "";
     const source = document.createElement("span");
     source.textContent = article.source || "출처 미확인";
     const articleDate = article.visibleDate || article.reportDate || "";
