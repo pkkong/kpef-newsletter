@@ -14,13 +14,16 @@
   <link rel="stylesheet" href="assets/service.css">
   <style>
     body { background: #f5f7fa; }
-    .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 48px; }
+    .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 calc(100px + env(safe-area-inset-bottom)); }
     .ktcu-top { display: grid; gap: 14px; padding: 14px 0 12px; }
     .ktcu-nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
     .ktcu-nav strong { color: var(--text); font-size: 13px; }
     .ktcu-nav span { display: flex; flex-wrap: wrap; gap: 7px; }
     .ktcu-nav a { min-height: 34px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 7px 11px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; font-weight: 700; }
-    .ktcu-nav .ktcu-profile-link.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
+    .ktcu-nav a.active,
+    .ktcu-profile-nav .ktcu-profile-link.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
+    .ktcu-profile-nav { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-profile-nav a { min-height: 32px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 999px; padding: 6px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
     .ktcu-hero { display: grid; gap: 18px; padding: 18px 0 8px; }
     .ktcu-title { display: grid; gap: 10px; }
     .ktcu-title span { width: fit-content; border-left: 3px solid #1f6b63; padding-left: 8px; color: #164c46; font-size: 12px; font-weight: 800; }
@@ -133,8 +136,8 @@
       .ktcu-lower { grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr); }
     }
     @media (max-width: 620px) {
-      .ktcu-nav span, .ktcu-tabbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
-      .ktcu-nav a, .ktcu-tabbar a { flex: 0 0 auto; }
+      .ktcu-nav span, .ktcu-profile-nav, .ktcu-tabbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
+      .ktcu-nav a, .ktcu-profile-nav a, .ktcu-tabbar a { flex: 0 0 auto; }
       .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
       .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
       .ktcu-peer-head { display: none; }
@@ -147,10 +150,14 @@
       <nav class="ktcu-nav" aria-label="페이지 이동">
         <strong>Korea PEF Intelligence</strong>
         <span>
-          <a href="index.html">Daily Brief</a>
-          <a href="lp-notices.html">LP Directory</a>
-          <a href="gps.html">GP Directory</a>
-          <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
+          <a href="index.html">브리프</a>
+          <a class="active" href="lp-notices.html">LP</a>
+          <a href="gps.html">GP</a>
+          <a href="pef-wiki.html">PEF Wiki</a>
+        </span>
+      </nav>
+      <nav class="ktcu-profile-nav" aria-label="LP 프로필">
+        <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
           <a class="ktcu-profile-link active" href="lp-kvic.html">벤처투자</a>
           <a class="ktcu-profile-link" href="lp-kgrowth.html">성장금융</a>
           <a class="ktcu-profile-link" href="lp-kdb.html">산은</a>
@@ -168,7 +175,6 @@
           <a class="ktcu-profile-link" href="lp-cwma.html">건설근로자공제회</a>
           <a class="ktcu-profile-link" href="lp-kbiz.html">중기중앙</a>
           <a class="ktcu-profile-link" href="lp-ibk.html">IBK</a>
-        </span>
       </nav>
       <section class="ktcu-hero" aria-label="한국벤처투자 요약">
         <div class="ktcu-title">
@@ -530,6 +536,28 @@
 
     <p class="ktcu-footer">기준일 2026-05-27 · 최신 공고일 2026-05-27 · 공개자료로 확인되지 않는 실무자명과 최종 선정 GP 히스토리는 추정하지 않습니다.</p>
   </main>
+  <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
+    <a href="index.html">
+      <span aria-hidden="true" class="nav-dot nav-icon-brief"></span>
+      <strong>브리프</strong>
+    </a>
+    <a class="active" href="lp-notices.html">
+      <span aria-hidden="true" class="nav-dot nav-icon-lp"></span>
+      <strong>LP</strong>
+    </a>
+    <a href="gps.html">
+      <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
+      <strong>GP</strong>
+    </a>
+    <a href="pef-wiki.html">
+      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
+      <strong>Wiki</strong>
+    </a>
+    <a href="index.html#saved">
+      <span aria-hidden="true" class="nav-dot nav-icon-saved"></span>
+      <strong>저장</strong>
+    </a>
+  </nav>
   <script>
     (() => {
       const input = document.getElementById("lpProfileSearch");

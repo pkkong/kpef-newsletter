@@ -48,7 +48,7 @@
   };
   let articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
   let saved = loadSaved();
-  let currentView = "today";
+  let currentView = window.location.hash === "#saved" ? "saved" : "today";
 
   const persistSaved = () => {
     localStorage.setItem(storageKey, JSON.stringify([...saved]));
@@ -744,4 +744,5 @@
     tagResizeTimer = window.setTimeout(updateTagGroups, 90);
   });
   render();
+  setView(currentView);
 })(); 
