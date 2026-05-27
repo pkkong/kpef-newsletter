@@ -18,7 +18,7 @@
     .ktcu-top { display: grid; gap: 14px; padding: 14px 0 12px; }
     .ktcu-nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
     .ktcu-nav strong { color: var(--text); font-size: 13px; }
-    .ktcu-nav span { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ktcu-nav span { display: flex; flex-wrap: wrap; gap: 7px; color: var(--secondary); font-size: 12px; font-weight: 750; }
     .ktcu-nav a { min-height: 34px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 7px 11px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; font-weight: 700; }
     .ktcu-nav a.active,
     .ktcu-profile-nav .ktcu-profile-link.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
@@ -147,34 +147,29 @@
 <body>
   <main class="ktcu-shell">
     <header class="ktcu-top">
-      <nav class="ktcu-nav" aria-label="페이지 이동">
+      <nav class="ktcu-nav" aria-label="LP 내부 이동">
         <strong>Korea PEF Intelligence</strong>
-        <span>
-          <a href="index.html">브리프</a>
-          <a class="active" href="lp-notices.html">LP</a>
-          <a href="gps.html">GP</a>
-          <a href="pef-wiki.html">PEF Wiki</a>
-        </span>
+        <span>LP Profile</span>
       </nav>
       <nav class="ktcu-profile-nav" aria-label="LP 프로필">
-        <a class="ktcu-profile-link" href="lp-nps.html">국민연금</a>
-          <a class="ktcu-profile-link" href="lp-kvic.html">벤처투자</a>
-          <a class="ktcu-profile-link" href="lp-kgrowth.html">성장금융</a>
-          <a class="ktcu-profile-link" href="lp-kdb.html">산은</a>
-          <a class="ktcu-profile-link" href="lp-kafi.html">농금원</a>
-          <a class="ktcu-profile-link" href="lp-koreapost.html">우본</a>
-          <a class="ktcu-profile-link" href="lp-poba.html">지방행공</a>
-          <a class="ktcu-profile-link" href="lp-ktcu.html">교공</a>
-          <a class="ktcu-profile-link" href="lp-pmaa.html">경공</a>
-          <a class="ktcu-profile-link" href="lp-cu.html">신협</a>
-          <a class="ktcu-profile-link" href="lp-kfcc.html">새마을금고</a>
+        <a class="ktcu-profile-link" href="lp-nps.html">국민연금기금</a>
+          <a class="ktcu-profile-link" href="lp-kvic.html">한국벤처투자</a>
+          <a class="ktcu-profile-link" href="lp-kgrowth.html">한국성장금융</a>
+          <a class="ktcu-profile-link" href="lp-kdb.html">한국산업은행</a>
+          <a class="ktcu-profile-link" href="lp-kafi.html">농업정책보험금융원</a>
+          <a class="ktcu-profile-link" href="lp-koreapost.html">우정사업본부</a>
+          <a class="ktcu-profile-link" href="lp-poba.html">대한지방행정공제회</a>
+          <a class="ktcu-profile-link" href="lp-ktcu.html">한국교직원공제회</a>
+          <a class="ktcu-profile-link" href="lp-pmaa.html">경찰공제회</a>
+          <a class="ktcu-profile-link" href="lp-cu.html">신협중앙회</a>
+          <a class="ktcu-profile-link" href="lp-kfcc.html">새마을금고중앙회</a>
           <a class="ktcu-profile-link" href="lp-tp.html">사립학교교직원연금공단</a>
-          <a class="ktcu-profile-link" href="lp-kexim.html">수은</a>
+          <a class="ktcu-profile-link" href="lp-kexim.html">한국수출입은행</a>
           <a class="ktcu-profile-link" href="lp-geps.html">공무원연금공단</a>
           <a class="ktcu-profile-link" href="lp-mmaa.html">군인공제회</a>
           <a class="ktcu-profile-link active" href="lp-cwma.html">건설근로자공제회</a>
-          <a class="ktcu-profile-link" href="lp-kbiz.html">중기중앙</a>
-          <a class="ktcu-profile-link" href="lp-ibk.html">IBK</a>
+          <a class="ktcu-profile-link" href="lp-kbiz.html">중소기업중앙회</a>
+          <a class="ktcu-profile-link" href="lp-ibk.html">IBK기업은행</a>
       </nav>
       <section class="ktcu-hero" aria-label="건설근로자공제회 요약">
         <div class="ktcu-title">
