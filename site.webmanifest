@@ -1,0 +1,17 @@
+{
+  "name": "Korea PEF Intelligence",
+  "short_name": "KPEF Brief",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
