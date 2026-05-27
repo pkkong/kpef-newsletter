@@ -32,11 +32,17 @@
       padding: 18px 0 52px;
     }
     .gp-top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
       display: flex;
       gap: 12px;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
+      padding: 8px 0;
+      background: rgba(244, 246, 248, 0.92);
+      backdrop-filter: blur(14px);
     }
     .gp-top-nav strong { font-size: 13px; }
     .gp-top-nav span { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -194,8 +200,8 @@
     }
     .gp-card {
       display: grid;
-      gap: 11px;
-      padding: 14px;
+      gap: 9px;
+      padding: 12px;
     }
     .gp-card[hidden] { display: none; }
     .gp-card-main {
@@ -217,7 +223,8 @@
       color: var(--text);
       font-size: 18px;
       line-height: 1.34;
-      overflow-wrap: anywhere;
+      overflow-wrap: break-word;
+      word-break: keep-all;
     }
     .gp-card h2 a { text-decoration: none; }
     .gp-card h2 a:hover { color: var(--accent); }
@@ -235,6 +242,11 @@
       font-size: 11px;
       font-weight: 850;
     }
+    .gp-chips span.strong {
+      border-color: #d7bd78;
+      background: #fff7dd;
+      color: #725313;
+    }
     .gp-metrics {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -245,7 +257,7 @@
       min-width: 0;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 8px;
+      padding: 7px 8px;
       background: var(--surface-muted);
     }
     .gp-metrics dt {
@@ -261,6 +273,27 @@
       font-weight: 850;
       line-height: 1.2;
       overflow-wrap: anywhere;
+    }
+    .gp-signal-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 6px;
+    }
+    .gp-signal-strip span {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 6px 7px;
+      background: var(--surface-muted);
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 850;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+    .gp-signal-strip strong {
+      color: var(--text);
+      font-size: 12px;
     }
     .gp-meta-line {
       display: flex;
@@ -280,9 +313,32 @@
     .gp-news-mini {
       display: grid;
       gap: 6px;
-      border-top: 1px solid var(--line);
-      padding-top: 10px;
     }
+    .gp-card-extra {
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+    }
+    .gp-card-extra summary {
+      display: flex;
+      min-height: 28px;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .gp-card-extra summary::-webkit-details-marker { display: none; }
+    .gp-card-extra summary::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+    }
+    .gp-card-extra[open] summary { margin-bottom: 8px; }
+    .gp-card-extra[open] summary::after { transform: rotate(225deg) translateY(-2px); }
     .gp-news-mini > strong {
       color: var(--secondary);
       font-size: 11.5px;
@@ -313,6 +369,7 @@
     .gp-limit-note {
       border-left: 3px solid #e4c88a;
       padding-left: 8px;
+      margin-top: 8px;
     }
     .gp-disclaimer {
       margin-top: 12px;
@@ -360,6 +417,36 @@
       color: var(--accent);
       font-size: 17px;
     }
+    .gp-signal-bar {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 10px 0;
+    }
+    .gp-signal-bar div {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px;
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .gp-signal-bar span,
+    .gp-signal-bar em {
+      display: block;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-style: normal;
+      font-weight: 850;
+      line-height: 1.35;
+    }
+    .gp-signal-bar strong {
+      display: block;
+      margin: 4px 0;
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1.1;
+    }
     .gp-detail-grid {
       display: grid;
       gap: 10px;
@@ -394,6 +481,48 @@
     .gp-news-list {
       display: grid;
       gap: 10px;
+    }
+    .gp-fund-list,
+    .gp-lp-list {
+      display: grid;
+      gap: 8px;
+    }
+    .gp-fund-row,
+    .gp-lp-row {
+      border-top: 1px solid var(--line);
+      padding-top: 9px;
+    }
+    .gp-fund-row:first-child,
+    .gp-lp-row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .gp-fund-row h3,
+    .gp-lp-row h3 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      line-height: 1.42;
+      overflow-wrap: anywhere;
+    }
+    .gp-fund-row a,
+    .gp-lp-row a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 850;
+    }
+    .gp-fund-row span,
+    .gp-lp-row span {
+      display: block;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 850;
+      line-height: 1.4;
+    }
+    .gp-fund-row p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.45;
     }
     .gp-news-row {
       border-top: 1px solid var(--line);
@@ -496,7 +625,7 @@
       .gp-hero { grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr); }
       .gp-controls { grid-template-columns: minmax(0, 1fr) 210px; }
       .gp-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .gp-card-main { grid-template-columns: minmax(0, 1fr) auto; align-items: start; }
+      .gp-card-main { grid-template-columns: minmax(0, 1fr); align-items: start; }
       .gp-detail-hero { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); }
       .gp-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .gp-detail-lower { grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr); }
@@ -507,6 +636,9 @@
     @media (max-width: 620px) {
       .gp-shell { width: min(100% - 20px, 1240px); padding-top: 12px; }
       .gp-top-nav { align-items: start; flex-direction: column; }
+      h1 { font-size: 30px; line-height: 1.08; }
+      .gp-hero-copy p,
+      .gp-detail-hero p { font-size: 14px; line-height: 1.58; }
       .gp-top-nav span,
       .gp-filter-row {
         width: 100%;
@@ -518,7 +650,9 @@
       .gp-filter-row button { flex: 0 0 auto; }
       .gp-kpis,
       .gp-detail-kpis,
-      .gp-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gp-metrics,
+      .gp-signal-strip,
+      .gp-signal-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .gp-peer-row { grid-template-columns: minmax(0, 1fr) 56px; }
       .gp-peer-row span:last-child { display: none; }
     }
@@ -555,9 +689,18 @@
 
     <section class="gp-detail-kpis" aria-label="운용 지표">
       <div><span>최신 순위</span><strong>52위</strong></div>
-      <div><span>Active fund count</span><strong>7</strong></div>
-      <div><span>AUM proxy</span><strong>6,209억</strong></div>
-      <div><span>Cumulative fund count</span><strong>10</strong></div>
+      <div><span>운용중 펀드</span><strong>7</strong></div>
+      <div><span>약정액 proxy</span><strong>6,209억</strong></div>
+      <div><span>시장점유율 proxy</span><strong>0.40%</strong></div>
+      <div><span>누적 펀드</span><strong>10</strong></div>
+      <div><span>누적 약정액 proxy</span><strong>6,954억</strong></div>
+    </section>
+
+        <section class="gp-signal-bar" aria-label="관계 신호 요약">
+      <div><span>운용 펀드</span><strong>8</strong><em>최신 활동 기준</em></div>
+      <div><span>LP 신호</span><strong>0</strong><em>공고·선정 링크</em></div>
+      <div><span>딜 신호</span><strong>0</strong><em>뉴스 태그 기준</em></div>
+      <div><span>뉴스 링크</span><strong>0</strong><em>자동 GP 매칭</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -643,9 +786,68 @@
 
     <section class="gp-detail-grid gp-detail-lower">
       <article class="gp-panel">
+        <h2>운용중 펀드</h2>
+        <div class="gp-fund-list">
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤씨엘오노트제1호</a></h3>
+            <span>2,940억</span>
+            <p>active_in_latest_fss · 2024-05-09</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤제1호</a></h3>
+            <span>1,078억</span>
+            <p>active_in_latest_fss · 2020-05-15</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤베인제1호</a></h3>
+            <span>736억</span>
+            <p>active_in_latest_fss · 2022-03-18</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤매그2호</a></h3>
+            <span>607억</span>
+            <p>active_in_latest_fss · 2020-03-16</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">제니타스앰버스톤제1차</a></h3>
+            <span>459억</span>
+            <p>active_in_latest_fss · 2018-04-26</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤제2호</a></h3>
+            <span>368억</span>
+            <p>active_in_latest_fss · 2022-12-16</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">앰버스톤제3호</a></h3>
+            <span>259억</span>
+            <p>active_in_latest_fss · 2024-04-25</p>
+          </article>
+          <article class="gp-fund-row">
+            <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">피씨씨앰버스톤제2차</a></h3>
+            <span>221억</span>
+            <p>active_in_latest_fss · 2018-11-21</p>
+          </article>
+        </div>
+      </article>
+      <article class="gp-panel">
+        <h2>LP 출자·선정 신호</h2>
+        <p class="gp-empty-note">이 GP와 직접 연결된 공개 LP 공고·선정 신호는 아직 없습니다.</p>
+      </article>
+    </section>
+
+    <section class="gp-detail-grid gp-detail-lower">
+      <article class="gp-panel">
+        <h2>딜 뉴스 신호</h2>
+        <p class="gp-empty-note">딜로 분류된 연결 뉴스가 없습니다.</p>
+      </article>
+      <article class="gp-panel">
         <h2>최신 뉴스 링크</h2>
         <p class="gp-empty-note">연결된 최신 뉴스가 없습니다.</p>
       </article>
+    </section>
+
+    <section class="gp-detail-grid gp-detail-lower">
       <article class="gp-panel">
         <h2>같이 볼 상위 GP</h2>
         <div class="gp-peer-list">
@@ -680,6 +882,9 @@
             <span>4.5조</span>
           </a>
         </div>
+      </article>
+      <article class="gp-panel">
+        <h2>식별 보조 정보</h2>
         <div class="gp-alias-box">
           <strong>관측 별칭</strong>
           <p><span>앰버스톤</span></p>

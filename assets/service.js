@@ -168,6 +168,7 @@
     article.visibleDate,
     article.reportDate,
     Array.isArray(article.gpNames) ? article.gpNames.join(" ") : "",
+    Array.isArray(article.lpNames) ? article.lpNames.join(" ") : "",
     Array.isArray(article.searchTerms) ? article.searchTerms.join(" ") : ""
   ];
 
@@ -211,7 +212,8 @@
   const issueTokens = (article) => {
     const text = [
       article.title,
-      Array.isArray(article.gpNames) ? article.gpNames.join(" ") : ""
+      Array.isArray(article.gpNames) ? article.gpNames.join(" ") : "",
+      Array.isArray(article.lpNames) ? article.lpNames.join(" ") : ""
     ].join(" ");
     return new Set(
       text
@@ -523,6 +525,16 @@
       chip.textContent = label;
       chips.append(chip);
     };
+    const appendLinkChip = (label, href, extraClass = "") => {
+      if (!label || !href) return;
+      const chip = document.createElement("a");
+      chip.className = `context-chip ${extraClass}`.trim();
+      chip.href = href;
+      chip.textContent = label;
+      chips.append(chip);
+    };
+    const lpLinks = Array.isArray(article.lpProfileLinks) ? article.lpProfileLinks.filter((item) => item && item.name && item.url) : [];
+    lpLinks.forEach((item) => appendLinkChip(item.name, item.url, "lp-chip"));
     const gpNames = Array.isArray(article.gpNames) ? article.gpNames.filter(Boolean) : [];
     gpNames.forEach((name) => appendChip(name));
     if (chips.childElementCount) main.append(chips);
