@@ -584,7 +584,7 @@
     group.classList.add("collapsible", expanded ? "expanded" : "collapsed");
     toggle.hidden = false;
     toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
-    toggle.textContent = expanded ? "접기" : `+${hiddenCount}`;
+    toggle.textContent = expanded ? "접기" : `더보기 ${hiddenCount}`;
     toggle.setAttribute("aria-label", expanded ? "태그 접기" : `숨긴 태그 ${hiddenCount}개 더 보기`);
   };
 
@@ -600,7 +600,7 @@
       empty.className = "empty-state visible";
       empty.innerHTML = queryText()
         ? "<strong>결과가 없습니다</strong><span>검색어를 줄여 다시 확인합니다.</span>"
-        : "<strong>선정된 뉴스가 없습니다</strong><span>이 날짜에는 공개 기준을 통과한 기사가 없습니다.</span>";
+        : "<strong>발행된 뉴스가 없습니다</strong><span>이 날짜에는 아직 표시할 뉴스가 없습니다.</span>";
       target.append(empty);
       return;
     }
