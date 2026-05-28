@@ -270,7 +270,7 @@
     revision: "정정",
     cancellation: "취소",
     performance_update: "성과"
-  }[value] || "후보");
+  }[value] || "공고");
 
   const amountLabel = (value) => {
     const parsed = Number(value);
@@ -534,7 +534,10 @@
       chips.append(chip);
     };
     const lpLinks = Array.isArray(article.lpProfileLinks) ? article.lpProfileLinks.filter((item) => item && item.name && item.url) : [];
+    const lpLinkedNames = new Set(lpLinks.map((item) => item.name));
     lpLinks.forEach((item) => appendLinkChip(item.name, item.url, "lp-chip"));
+    const lpNames = Array.isArray(article.lpNames) ? article.lpNames.filter(Boolean) : [];
+    lpNames.filter((name) => !lpLinkedNames.has(name)).forEach((name) => appendChip(name, "lp-chip"));
     const gpNames = Array.isArray(article.gpNames) ? article.gpNames.filter(Boolean) : [];
     gpNames.forEach((name) => appendChip(name));
     if (chips.childElementCount) {
