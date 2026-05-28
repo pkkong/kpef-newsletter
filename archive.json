@@ -3,7 +3,7 @@
     "reportDate": "2026-05-28",
     "visibleDate": "2026.05.28",
     "basis": "",
-    "countLabel": "주요 뉴스 30건",
+    "countLabel": "주요 뉴스 29건",
     "articles": [
       {
         "id": "clip-20260528-0",
@@ -306,41 +306,6 @@
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
-        "title": "[2026 모태펀드] [2차] 부방 이대희의 와이앤아처…중기부 제재 정면돌파",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
-        "url": "https://dealsite.co.kr/articles/162472",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "lpNames": [
-          "한국벤처투자"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kvic",
-            "name": "한국벤처투자",
-            "url": "lp-kvic.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국벤처투자",
-          "kvic",
-          "벤처투자종합포털",
-          "한국모태펀드",
-          "벤처투자",
-          "모태펀드",
-          "KVIC"
-        ]
-      },
-      {
-        "id": "clip-20260528-13",
-        "rank": 13,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
         "title": "KIC, 350조 운용 사령탑 새로 뽑는다…28일 CIO 공모",
         "titleBadges": [],
         "source": "한국경제",
@@ -362,8 +327,8 @@
         ]
       },
       {
-        "id": "clip-20260528-14",
-        "rank": 14,
+        "id": "clip-20260528-13",
+        "rank": 13,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -381,50 +346,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-15",
-        "rank": 15,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "LP",
-        "title": "키움인베 600억 벤처모펀드 출격",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
-        "url": "https://dealsite.co.kr/articles/162594",
-        "sectionOrder": 5,
-        "gpNames": [
-          "키움인베스트먼트"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 7,
-        "searchTerms": [
-          "키움인베스트먼트"
-        ]
-      },
-      {
-        "id": "clip-20260528-16",
-        "rank": 16,
-        "section": "LP",
-        "subCategory": "Allocation",
-        "rawSection": "LP",
-        "title": "먼로캐피탈 \"자산유동화대출은 일시적 유행 아닌 대체투자 핵심 대안\"[...",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=marketinsight.hankyung.com&sz=64",
-        "url": "https://marketinsight.hankyung.com/article/202605271565r",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-17",
-        "rank": 17,
+        "id": "clip-20260528-14",
+        "rank": 14,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -456,8 +379,8 @@
         ]
       },
       {
-        "id": "clip-20260528-18",
-        "rank": 18,
+        "id": "clip-20260528-15",
+        "rank": 15,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -480,8 +403,8 @@
         ]
       },
       {
-        "id": "clip-20260528-19",
-        "rank": 19,
+        "id": "clip-20260528-16",
+        "rank": 16,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -514,8 +437,8 @@
         ]
       },
       {
-        "id": "clip-20260528-20",
-        "rank": 20,
+        "id": "clip-20260528-17",
+        "rank": 17,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -538,10 +461,33 @@
         ]
       },
       {
-        "id": "clip-20260528-21",
-        "rank": 21,
-        "section": "Deal",
-        "subCategory": "Acquisition",
+        "id": "clip-20260528-18",
+        "rank": 18,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "키움인베 600억 벤처모펀드 출격",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
+        "url": "https://dealsite.co.kr/articles/162594",
+        "sectionOrder": 4,
+        "gpNames": [
+          "키움인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 7,
+        "searchTerms": [
+          "키움인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260528-19",
+        "rank": 19,
+        "section": "GP",
+        "subCategory": "Strategy",
         "rawSection": "GP",
         "title": "“법률 너머 비즈니스까지 읽는다”…M&A ‘거래 종결성’ 두각",
         "titleBadges": [],
@@ -549,7 +495,7 @@
         "sourceBadge": "헤",
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.heraldcorp.com&sz=64",
         "url": "https://biz.heraldcorp.com/article/10756964",
-        "sectionOrder": 2,
+        "sectionOrder": 4,
         "gpNames": [
           "알케미스트캐피탈파트너스코리아"
         ],
@@ -561,10 +507,10 @@
         ]
       },
       {
-        "id": "clip-20260528-22",
-        "rank": 22,
-        "section": "Deal",
-        "subCategory": "Financing",
+        "id": "clip-20260528-20",
+        "rank": 20,
+        "section": "Market",
+        "subCategory": "Market View",
         "rawSection": "Market",
         "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
         "titleBadges": [],
@@ -572,7 +518,7 @@
         "sourceBadge": "아",
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
         "url": "https://view.asiae.co.kr/article/2026052611385718194",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -580,8 +526,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-23",
-        "rank": 23,
+        "id": "clip-20260528-21",
+        "rank": 21,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -599,8 +545,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-24",
-        "rank": 24,
+        "id": "clip-20260528-22",
+        "rank": 22,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -618,8 +564,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-25",
-        "rank": 25,
+        "id": "clip-20260528-23",
+        "rank": 23,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -637,8 +583,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-26",
-        "rank": 26,
+        "id": "clip-20260528-24",
+        "rank": 24,
         "section": "Market",
         "subCategory": "Capital Market",
         "rawSection": "Market",
@@ -656,8 +602,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-27",
-        "rank": 27,
+        "id": "clip-20260528-25",
+        "rank": 25,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -675,8 +621,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-28",
-        "rank": 28,
+        "id": "clip-20260528-26",
+        "rank": 26,
         "section": "Market",
         "subCategory": "Capital Market",
         "rawSection": "Market",
@@ -694,10 +640,10 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260528-29",
-        "rank": 29,
-        "section": "Deal",
-        "subCategory": "Acquisition",
+        "id": "clip-20260528-27",
+        "rank": 27,
+        "section": "Market",
+        "subCategory": "Regulation",
         "rawSection": "Market",
         "title": "[롯데렌탈 M&A] \"롯데만 챙기려던 프리미엄, 공정위가 막은 것\"",
         "titleBadges": [],
@@ -705,7 +651,7 @@
         "sourceBadge": "딜",
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
         "url": "https://dealsite.co.kr/articles/162480",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [
           "한앤컴퍼니"
         ],
@@ -715,6 +661,25 @@
         "searchTerms": [
           "한앤컴퍼니"
         ]
+      },
+      {
+        "id": "clip-20260528-28",
+        "rank": 28,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "먼로캐피탈 \"자산유동화대출은 일시적 유행 아닌 대체투자 핵심 대안\"[...",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=marketinsight.hankyung.com&sz=64",
+        "url": "https://marketinsight.hankyung.com/article/202605271565r",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
       }
     ]
   },
@@ -1217,8 +1182,8 @@
           "벤처투자종합포털",
           "한국모태펀드",
           "벤처투자",
-          "모태펀드",
-          "KVIC"
+          "KVIC",
+          "모태펀드"
         ]
       },
       {
@@ -1839,8 +1804,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "KBIZ",
-          "중기중앙"
+          "중기중앙",
+          "KBIZ"
         ]
       },
       {
