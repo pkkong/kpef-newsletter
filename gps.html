@@ -34,6 +34,117 @@
       letter-spacing: 0;
     }
     a { color: inherit; }
+    .kpef-product-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 58px;
+      margin: -18px calc((100vw - min(1440px, calc(100vw - 44px))) / -2) 0;
+      padding: calc(max(14px, env(safe-area-inset-top)) + 8px) max(16px, calc((100vw - 1440px) / 2 + 16px)) 12px;
+      background: #1d2130;
+      color: #fff;
+    }
+    .kpef-product-brand {
+      display: inline-flex;
+      min-width: 0;
+      align-items: center;
+      gap: 9px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .kpef-product-brand strong {
+      overflow: hidden;
+      color: inherit;
+      font-size: 16px;
+      font-weight: 850;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .kpef-brand-mark {
+      display: inline-grid;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.24);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .kpef-product-actions {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .kpef-icon-link {
+      position: relative;
+      display: inline-grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 0;
+      border-radius: 8px;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+    .kpef-icon-search::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+    }
+    .kpef-icon-search::after {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      width: 8px;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+      content: "";
+      transform: rotate(45deg);
+    }
+    .kpef-icon-menu::before,
+    .kpef-icon-menu::after {
+      position: absolute;
+      left: 8px;
+      width: 18px;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+      content: "";
+    }
+    .kpef-icon-menu::before { top: 11px; box-shadow: 0 6px 0 currentColor; }
+    .kpef-icon-menu::after { top: 23px; }
+    .kpef-service-tabs {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin: 0 calc((100vw - min(1440px, calc(100vw - 44px))) / -2) 18px;
+      padding: 0 max(0px, calc((100vw - 1440px) / 2));
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .kpef-service-tabs a {
+      display: grid;
+      min-height: 46px;
+      place-items: center;
+      border-bottom: 3px solid transparent;
+      color: var(--tertiary);
+      font-size: 13px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+    .kpef-service-tabs a.active {
+      border-bottom-color: #8a6a52;
+      color: #6d543f;
+    }
     .gp-shell {
       width: min(1440px, calc(100% - 44px));
       margin: 0 auto;
@@ -186,6 +297,7 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
     }
+    .gp-hero .gp-kpis { display: none; }
     .gp-kpis div,
     .gp-detail-kpis div,
     .gp-detail-card,
@@ -236,7 +348,13 @@
       display: grid;
       gap: 10px;
       margin: 12px 0;
-      padding: 14px;
+      border: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      padding: 14px 0;
+      background: transparent;
+      box-shadow: none;
     }
     .gp-control-head {
       display: flex;
@@ -298,7 +416,7 @@
     }
     .gp-directory-head {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 132px;
+      grid-template-columns: 44px minmax(0, 1fr) 132px;
       gap: 10px;
       align-items: center;
       min-height: 44px;
@@ -311,15 +429,15 @@
       text-align: right;
     }
     .gp-directory-head span:first-child { text-align: center; }
-    .gp-directory-head span:nth-child(2),
-    .gp-directory-head span:nth-child(4),
-    .gp-directory-head span:nth-child(5) {
+    .gp-directory-head span:nth-child(3),
+    .gp-directory-head span:nth-child(5),
+    .gp-directory-head span:nth-child(6) {
       display: none;
     }
-    .gp-directory-head span:nth-child(3) {
+    .gp-directory-head span:nth-child(4) {
       font-size: 0;
     }
-    .gp-directory-head span:nth-child(3)::after {
+    .gp-directory-head span:nth-child(4)::after {
       content: "순위 / 약정액";
       font-size: 12px;
     }
@@ -329,7 +447,7 @@
     }
     .gp-card {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 132px;
+      grid-template-columns: 44px minmax(0, 1fr) 132px;
       gap: 10px;
       align-items: center;
       min-height: 82px;
@@ -339,11 +457,25 @@
       padding: 12px 10px;
       box-shadow: none;
     }
+    .gp-avatar {
+      display: inline-grid;
+      width: 38px;
+      height: 38px;
+      grid-column: 1;
+      grid-row: 1;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #fff;
+      color: var(--text);
+      font-size: 11px;
+      font-weight: 900;
+    }
     .gp-card:last-child { border-bottom: 0; }
     .gp-card[hidden] { display: none; }
     .gp-card-main {
       display: grid;
-      grid-column: 1;
+      grid-column: 2;
       grid-row: 1;
       gap: 8px;
     }
@@ -388,7 +520,7 @@
     }
     .gp-metrics {
       display: grid;
-      grid-column: 2;
+      grid-column: 3;
       grid-row: 1;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
@@ -818,6 +950,13 @@
       .gp-detail-hero { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); }
       .gp-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .gp-detail-lower { grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr); }
+      .gp-fact-list div {
+        display: grid;
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 14px;
+        align-items: start;
+      }
+      .gp-fact-list dd { margin-top: 0; }
     }
     @media (min-width: 960px) {
       .gp-shell {
@@ -861,7 +1000,7 @@
       }
       .gp-directory-head {
         display: grid;
-        grid-template-columns: minmax(240px, 1.2fr) minmax(130px, 0.62fr) minmax(340px, 1.45fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
+        grid-template-columns: 52px minmax(240px, 1.15fr) minmax(130px, 0.58fr) minmax(340px, 1.42fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
         gap: 18px;
         align-items: center;
         min-height: 48px;
@@ -877,10 +1016,10 @@
         display: block;
         font-size: 12px;
       }
-      .gp-directory-head span:first-child {
+      .gp-directory-head span:nth-child(2) {
         text-align: left;
       }
-      .gp-directory-head span:nth-child(3)::after {
+      .gp-directory-head span:nth-child(4)::after {
         content: none;
       }
       .gp-directory {
@@ -892,7 +1031,7 @@
         box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
       }
       .gp-card {
-        grid-template-columns: minmax(240px, 1.2fr) minmax(130px, 0.62fr) minmax(340px, 1.45fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
+        grid-template-columns: 52px minmax(240px, 1.15fr) minmax(130px, 0.58fr) minmax(340px, 1.42fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
         gap: 18px;
         align-items: center;
         border: 0;
@@ -905,25 +1044,29 @@
         border-bottom: 0;
       }
       .gp-card-main {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 1;
       }
+      .gp-avatar {
+        width: 42px;
+        height: 42px;
+      }
       .gp-meta-line {
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 1;
         display: grid;
         gap: 4px;
       }
       .gp-metrics {
-        grid-column: 3;
-        grid-row: 1;
-      }
-      .gp-signal-strip {
         grid-column: 4;
         grid-row: 1;
       }
-      .gp-card-extra {
+      .gp-signal-strip {
         grid-column: 5;
+        grid-row: 1;
+      }
+      .gp-card-extra {
+        grid-column: 6;
         grid-row: 1;
         border-top: 0;
         padding-top: 0;
@@ -981,6 +1124,16 @@
         padding-top: 12px;
         padding-bottom: calc(116px + env(safe-area-inset-bottom));
       }
+      .kpef-product-header {
+        margin: -12px -10px 0;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+      .kpef-service-tabs {
+        margin-right: -10px;
+        margin-left: -10px;
+        padding: 0;
+      }
       .gp-top-nav { align-items: start; flex-direction: column; }
       h1 { font-size: 30px; line-height: 1.08; }
       .gp-hero-copy p,
@@ -1024,13 +1177,22 @@
 </head>
 <body>
   <main class="gp-shell">
-        <nav class="gp-top-nav" aria-label="GP 페이지 이동">
-      <strong>Korea PEF Intelligence</strong>
-      <span>
-        <a class="active" href="gps.html">디렉토리</a>
-        <a href="gps.html#gpDirectory">GP 목록</a>
-        <a href="gps.html#gpSearch">검색</a>
-      </span>
+        <header class="kpef-product-header" aria-label="Korea PEF Intelligence">
+      <a class="kpef-product-brand" href="index.html">
+        <span class="kpef-brand-mark" aria-hidden="true">K</span>
+        <strong>Korea PEF Intelligence</strong>
+      </a>
+      <div class="kpef-product-actions">
+        <a class="kpef-icon-link kpef-icon-search" href="#gpSearch" aria-label="검색"></a>
+        <a class="kpef-icon-link kpef-icon-menu" href="index.html" aria-label="홈"></a>
+      </div>
+    </header>
+    <nav class="kpef-service-tabs" aria-label="서비스 메뉴">
+      <a href="index.html">브리프</a>
+      <a href="lp-notices.html">LP</a>
+      <a class="active" href="gps.html">GP</a>
+      <a href="pef-wiki.html">Wiki</a>
+      <a href="index.html#saved">저장</a>
     </nav>
     <header class="gp-hero">
       <div class="gp-hero-copy">
@@ -1079,6 +1241,7 @@
 
     <section class="gp-directory-table" aria-label="GP 목록">
       <div class="gp-directory-head" aria-hidden="true">
+        <span></span>
         <span>운용사명</span>
         <span>대표/홈페이지</span>
         <span>운용 현황</span>
@@ -1101,6 +1264,7 @@
         data-cumulative="36"
         data-news-count="130"
         data-signals="220">
+        <span class="gp-avatar" aria-hidden="true">엠비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1154,6 +1318,7 @@
         data-cumulative="23"
         data-news-count="25"
         data-signals="44">
+        <span class="gp-avatar" aria-hidden="true">한앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1207,6 +1372,7 @@
         data-cumulative="33"
         data-news-count="44"
         data-signals="79">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1260,6 +1426,7 @@
         data-cumulative="48"
         data-news-count="10"
         data-signals="15">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1313,6 +1480,7 @@
         data-cumulative="25"
         data-news-count="20"
         data-signals="33">
+        <span class="gp-avatar" aria-hidden="true">스틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1366,6 +1534,7 @@
         data-cumulative="44"
         data-news-count="4"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">연합</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1419,6 +1588,7 @@
         data-cumulative="33"
         data-news-count="22"
         data-signals="30">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1472,6 +1642,7 @@
         data-cumulative="8"
         data-news-count="25"
         data-signals="38">
+        <span class="gp-avatar" aria-hidden="true">스카</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1525,6 +1696,7 @@
         data-cumulative="25"
         data-news-count="28"
         data-signals="46">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1578,6 +1750,7 @@
         data-cumulative="24"
         data-news-count="3"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1631,6 +1804,7 @@
         data-cumulative="13"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">맥쿼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1684,6 +1858,7 @@
         data-cumulative="20"
         data-news-count="11"
         data-signals="18">
+        <span class="gp-avatar" aria-hidden="true">유씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1737,6 +1912,7 @@
         data-cumulative="10"
         data-news-count="5"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">도미</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1790,6 +1966,7 @@
         data-cumulative="9"
         data-news-count="5"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1843,6 +2020,7 @@
         data-cumulative="6"
         data-news-count="3"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1896,6 +2074,7 @@
         data-cumulative="10"
         data-news-count="13"
         data-signals="23">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -1949,6 +2128,7 @@
         data-cumulative="11"
         data-news-count="13"
         data-signals="17">
+        <span class="gp-avatar" aria-hidden="true">어펄</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2002,6 +2182,7 @@
         data-cumulative="18"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">크레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2054,6 +2235,7 @@
         data-cumulative="17"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2107,6 +2289,7 @@
         data-cumulative="9"
         data-news-count="6"
         data-signals="11">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2160,6 +2343,7 @@
         data-cumulative="17"
         data-news-count="9"
         data-signals="18">
+        <span class="gp-avatar" aria-hidden="true">이앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2213,6 +2397,7 @@
         data-cumulative="14"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2265,6 +2450,7 @@
         data-cumulative="15"
         data-news-count="12"
         data-signals="17">
+        <span class="gp-avatar" aria-hidden="true">스톤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2318,6 +2504,7 @@
         data-cumulative="9"
         data-news-count="14"
         data-signals="26">
+        <span class="gp-avatar" aria-hidden="true">센트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2371,6 +2558,7 @@
         data-cumulative="7"
         data-news-count="11"
         data-signals="17">
+        <span class="gp-avatar" aria-hidden="true">프리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2424,6 +2612,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2476,6 +2665,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2528,6 +2718,7 @@
         data-cumulative="22"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2580,6 +2771,7 @@
         data-cumulative="20"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">중소</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2632,6 +2824,7 @@
         data-cumulative="10"
         data-news-count="23"
         data-signals="39">
+        <span class="gp-avatar" aria-hidden="true">대신</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2685,6 +2878,7 @@
         data-cumulative="7"
         data-news-count="15"
         data-signals="24">
+        <span class="gp-avatar" aria-hidden="true">글랜</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2738,6 +2932,7 @@
         data-cumulative="13"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2790,6 +2985,7 @@
         data-cumulative="3"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2843,6 +3039,7 @@
         data-cumulative="17"
         data-news-count="0"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">큐리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2895,6 +3092,7 @@
         data-cumulative="11"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -2947,6 +3145,7 @@
         data-cumulative="11"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">프랙</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3000,6 +3199,7 @@
         data-cumulative="16"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">제네</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3052,6 +3252,7 @@
         data-cumulative="2"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">미래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3105,6 +3306,7 @@
         data-cumulative="4"
         data-news-count="2"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">글랜</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3158,6 +3360,7 @@
         data-cumulative="11"
         data-news-count="7"
         data-signals="12">
+        <span class="gp-avatar" aria-hidden="true">큐캐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3211,6 +3414,7 @@
         data-cumulative="4"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">산은</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3264,6 +3468,7 @@
         data-cumulative="8"
         data-news-count="30"
         data-signals="43">
+        <span class="gp-avatar" aria-hidden="true">미래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3317,6 +3522,7 @@
         data-cumulative="2"
         data-news-count="16"
         data-signals="23">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3370,6 +3576,7 @@
         data-cumulative="9"
         data-news-count="10"
         data-signals="16">
+        <span class="gp-avatar" aria-hidden="true">우리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3423,6 +3630,7 @@
         data-cumulative="20"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3472,6 +3680,7 @@
         data-cumulative="13"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">이음</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3522,6 +3731,7 @@
         data-cumulative="12"
         data-news-count="0"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">비엔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3571,6 +3781,7 @@
         data-cumulative="5"
         data-news-count="7"
         data-signals="13">
+        <span class="gp-avatar" aria-hidden="true">이스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3621,6 +3832,7 @@
         data-cumulative="13"
         data-news-count="13"
         data-signals="18">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3671,6 +3883,7 @@
         data-cumulative="10"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3720,6 +3933,7 @@
         data-cumulative="7"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3772,6 +3986,7 @@
         data-cumulative="10"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">앰버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3821,6 +4036,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3870,6 +4086,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3919,6 +4136,7 @@
         data-cumulative="14"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">캑터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -3969,6 +4187,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하나</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4018,6 +4237,7 @@
         data-cumulative="9"
         data-news-count="19"
         data-signals="31">
+        <span class="gp-avatar" aria-hidden="true">웰투</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4068,6 +4288,7 @@
         data-cumulative="13"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">코스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4118,6 +4339,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4167,6 +4389,7 @@
         data-cumulative="17"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4216,6 +4439,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다올</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4265,6 +4489,7 @@
         data-cumulative="7"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">칼리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4314,6 +4539,7 @@
         data-cumulative="6"
         data-news-count="8"
         data-signals="11">
+        <span class="gp-avatar" aria-hidden="true">원익</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4364,6 +4590,7 @@
         data-cumulative="13"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4413,6 +4640,7 @@
         data-cumulative="9"
         data-news-count="17"
         data-signals="27">
+        <span class="gp-avatar" aria-hidden="true">파라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4466,6 +4694,7 @@
         data-cumulative="7"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">팩텀</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4515,6 +4744,7 @@
         data-cumulative="14"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4564,6 +4794,7 @@
         data-cumulative="5"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">아주</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4613,6 +4844,7 @@
         data-cumulative="4"
         data-news-count="20"
         data-signals="29">
+        <span class="gp-avatar" aria-hidden="true">미래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4663,6 +4895,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">헤임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4712,6 +4945,7 @@
         data-cumulative="18"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">노앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4761,6 +4995,7 @@
         data-cumulative="8"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">아크</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4811,6 +5046,7 @@
         data-cumulative="2"
         data-news-count="4"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">유안</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4861,6 +5097,7 @@
         data-cumulative="13"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4911,6 +5148,7 @@
         data-cumulative="5"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">소시</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -4961,6 +5199,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5010,6 +5249,7 @@
         data-cumulative="13"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">스카</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5063,6 +5303,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘엑</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5112,6 +5353,7 @@
         data-cumulative="8"
         data-news-count="27"
         data-signals="42">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5162,6 +5404,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이엠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5211,6 +5454,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에코</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5260,6 +5504,7 @@
         data-cumulative="10"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">유진</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5310,6 +5555,7 @@
         data-cumulative="3"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">유진</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5360,6 +5606,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5409,6 +5656,7 @@
         data-cumulative="10"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">하일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5458,6 +5706,7 @@
         data-cumulative="6"
         data-news-count="2"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5508,6 +5757,7 @@
         data-cumulative="14"
         data-news-count="4"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">포레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5558,6 +5808,7 @@
         data-cumulative="7"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5607,6 +5858,7 @@
         data-cumulative="8"
         data-news-count="4"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">노틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5657,6 +5909,7 @@
         data-cumulative="5"
         data-news-count="1"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">이상</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5706,6 +5959,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">루터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5755,6 +6009,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨엘</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5804,6 +6059,7 @@
         data-cumulative="5"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">엘비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5853,6 +6109,7 @@
         data-cumulative="10"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5902,6 +6159,7 @@
         data-cumulative="4"
         data-news-count="4"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">카무</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -5952,6 +6210,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시냅</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6001,6 +6260,7 @@
         data-cumulative="6"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">뉴레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6050,6 +6310,7 @@
         data-cumulative="18"
         data-news-count="5"
         data-signals="10">
+        <span class="gp-avatar" aria-hidden="true">키스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6100,6 +6361,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6149,6 +6411,7 @@
         data-cumulative="9"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">베이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6198,6 +6461,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6247,6 +6511,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">삼천</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6296,6 +6561,7 @@
         data-cumulative="4"
         data-news-count="13"
         data-signals="18">
+        <span class="gp-avatar" aria-hidden="true">신영</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6346,6 +6612,7 @@
         data-cumulative="1"
         data-news-count="9"
         data-signals="12">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6396,6 +6663,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엑셀</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6445,6 +6713,7 @@
         data-cumulative="1"
         data-news-count="5"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">인터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6495,6 +6764,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">어펄</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6544,6 +6814,7 @@
         data-cumulative="2"
         data-news-count="15"
         data-signals="20">
+        <span class="gp-avatar" aria-hidden="true">유안</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6594,6 +6865,7 @@
         data-cumulative="8"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">알케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6644,6 +6916,7 @@
         data-cumulative="5"
         data-news-count="6"
         data-signals="11">
+        <span class="gp-avatar" aria-hidden="true">헬리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6694,6 +6967,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">나우</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6743,6 +7017,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6792,6 +7067,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스텔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6841,6 +7117,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그린</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6890,6 +7167,7 @@
         data-cumulative="21"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">산은</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6940,6 +7218,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">린드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -6989,6 +7268,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지오</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7038,6 +7318,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">리오</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7087,6 +7368,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7136,6 +7418,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7185,6 +7468,7 @@
         data-cumulative="8"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">마이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7234,6 +7518,7 @@
         data-cumulative="8"
         data-news-count="15"
         data-signals="27">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7287,6 +7572,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7336,6 +7622,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">포어</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7385,6 +7672,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7434,6 +7722,7 @@
         data-cumulative="4"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">그래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7484,6 +7773,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아든</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7533,6 +7823,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">모하</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7582,6 +7873,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7631,6 +7923,7 @@
         data-cumulative="2"
         data-news-count="3"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">라데</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7681,6 +7974,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7730,6 +8024,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하나</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7779,6 +8074,7 @@
         data-cumulative="4"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7828,6 +8124,7 @@
         data-cumulative="9"
         data-news-count="36"
         data-signals="51">
+        <span class="gp-avatar" aria-hidden="true">미래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7881,6 +8178,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7930,6 +8228,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">차파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -7979,6 +8278,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8028,6 +8328,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">어센</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8077,6 +8378,7 @@
         data-cumulative="6"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">피에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8126,6 +8428,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">이앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8176,6 +8479,7 @@
         data-cumulative="3"
         data-news-count="15"
         data-signals="23">
+        <span class="gp-avatar" aria-hidden="true">하나</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8226,6 +8530,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메타</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8275,6 +8580,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이지</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8324,6 +8630,7 @@
         data-cumulative="4"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">메티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8373,6 +8680,7 @@
         data-cumulative="3"
         data-news-count="16"
         data-signals="19">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8423,6 +8731,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8472,6 +8781,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스타</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8521,6 +8831,7 @@
         data-cumulative="3"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">유티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8570,6 +8881,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아르</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8619,6 +8931,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8668,6 +8981,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8717,6 +9031,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8766,6 +9081,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8815,6 +9131,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">젠파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8864,6 +9181,7 @@
         data-cumulative="2"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">오로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8914,6 +9232,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">골든</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -8963,6 +9282,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">랜턴</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9012,6 +9332,7 @@
         data-cumulative="6"
         data-news-count="7"
         data-signals="9">
+        <span class="gp-avatar" aria-hidden="true">농협</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9062,6 +9383,7 @@
         data-cumulative="12"
         data-news-count="10"
         data-signals="14">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9112,6 +9434,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">나이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9161,6 +9484,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">세븐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9210,6 +9534,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더블</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9259,6 +9584,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">루하</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9308,6 +9634,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">웨일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9357,6 +9684,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">리드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9406,6 +9734,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9455,6 +9784,7 @@
         data-cumulative="2"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">코리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9505,6 +9835,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">와이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9554,6 +9885,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">마스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9603,6 +9935,7 @@
         data-cumulative="3"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">오큘</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9652,6 +9985,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9701,6 +10035,7 @@
         data-cumulative="6"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">레버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9750,6 +10085,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">베이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9799,6 +10135,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">투자</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9848,6 +10185,7 @@
         data-cumulative="1"
         data-news-count="18"
         data-signals="25">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9898,6 +10236,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">팍스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9947,6 +10286,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">천지</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -9996,6 +10336,7 @@
         data-cumulative="1"
         data-news-count="18"
         data-signals="27">
+        <span class="gp-avatar" aria-hidden="true">메리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10049,6 +10390,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파빌</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10098,6 +10440,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">위더</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10147,6 +10490,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10196,6 +10540,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10245,6 +10590,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10294,6 +10640,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10343,6 +10690,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10392,6 +10740,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오션</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10441,6 +10790,7 @@
         data-cumulative="2"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">쿼드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10491,6 +10841,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10540,6 +10891,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10589,6 +10941,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브릭</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10638,6 +10991,7 @@
         data-cumulative="9"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인하</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10687,6 +11041,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">뉴메</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10736,6 +11091,7 @@
         data-cumulative="9"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에벤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10785,6 +11141,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">릴슨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10835,6 +11192,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10884,6 +11242,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10933,6 +11292,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -10982,6 +11342,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">로드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11031,6 +11392,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">원데</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11080,6 +11442,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">원레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11129,6 +11492,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11178,6 +11542,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11227,6 +11592,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">카이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11276,6 +11642,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11325,6 +11692,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11374,6 +11742,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">트루</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11423,6 +11792,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11472,6 +11842,7 @@
         data-cumulative="6"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">크로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11521,6 +11892,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">휘트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11570,6 +11942,7 @@
         data-cumulative="8"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11619,6 +11992,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11668,6 +12042,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11717,6 +12092,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11766,6 +12142,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">스틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11815,6 +12192,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제니</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11864,6 +12242,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11913,6 +12292,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">와이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -11962,6 +12342,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12011,6 +12392,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시몬</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12060,6 +12442,7 @@
         data-cumulative="6"
         data-news-count="6"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">스마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12110,6 +12493,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">쿼크</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12159,6 +12543,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">갤럭</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12208,6 +12593,7 @@
         data-cumulative="2"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">알파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12258,6 +12644,7 @@
         data-cumulative="2"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">더함</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12308,6 +12695,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">디비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12357,6 +12745,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12406,6 +12795,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">골든</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12455,6 +12845,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12504,6 +12895,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">한앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12553,6 +12945,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">투썬</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12602,6 +12995,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인텔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12651,6 +13045,7 @@
         data-cumulative="5"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12701,6 +13096,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다윈</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12750,6 +13146,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12799,6 +13196,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">베어</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12848,6 +13246,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12897,6 +13296,7 @@
         data-cumulative="4"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">옐로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12947,6 +13347,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">퍼즐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -12996,6 +13397,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더블</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13045,6 +13447,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이니</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13094,6 +13497,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13143,6 +13547,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">와이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13192,6 +13597,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨브</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13241,6 +13647,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">알파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13290,6 +13697,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13339,6 +13747,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">뉴아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13388,6 +13797,7 @@
         data-cumulative="2"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">기앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13438,6 +13848,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">크레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13487,6 +13898,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">드림</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13536,6 +13948,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13585,6 +13998,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그루</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13634,6 +14048,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">화인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13683,6 +14098,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13732,6 +14148,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더시</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13781,6 +14198,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13830,6 +14248,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피엔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13879,6 +14298,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">화이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13928,6 +14348,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -13977,6 +14398,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다토</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14026,6 +14448,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">레이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14075,6 +14498,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">로이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14124,6 +14548,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">민트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14173,6 +14598,7 @@
         data-cumulative="3"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">오티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14223,6 +14649,7 @@
         data-cumulative="1"
         data-news-count="17"
         data-signals="25">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14273,6 +14700,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오페</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14322,6 +14750,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14371,6 +14800,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">퀸버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14420,6 +14850,7 @@
         data-cumulative="9"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">고릴</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14469,6 +14900,7 @@
         data-cumulative="3"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">더웰</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14518,6 +14950,7 @@
         data-cumulative="9"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">에임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14568,6 +15001,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14617,6 +15051,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14666,6 +15101,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14715,6 +15151,7 @@
         data-cumulative="8"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">로드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14764,6 +15201,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14813,6 +15251,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">젤코</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14862,6 +15301,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">마일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14911,6 +15351,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">모트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -14960,6 +15401,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">부코</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15009,6 +15451,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15058,6 +15501,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15107,6 +15551,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15156,6 +15601,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15205,6 +15651,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15254,6 +15701,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오엔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15303,6 +15751,7 @@
         data-cumulative="1"
         data-news-count="4"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">얼라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15353,6 +15802,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인커</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15402,6 +15852,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">레드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15451,6 +15902,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15500,6 +15952,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15550,6 +16003,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15599,6 +16053,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">켈비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15648,6 +16103,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15697,6 +16153,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15746,6 +16203,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아틸</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15795,6 +16253,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">포시</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15844,6 +16303,7 @@
         data-cumulative="5"
         data-news-count="6"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15897,6 +16357,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">부산</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15947,6 +16408,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지투</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -15996,6 +16458,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">뱅커</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16045,6 +16508,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16094,6 +16558,7 @@
         data-cumulative="3"
         data-news-count="6"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">스톤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16144,6 +16609,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">클레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16193,6 +16659,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오릭</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16242,6 +16709,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">와디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16291,6 +16759,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">머큐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16340,6 +16809,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16389,6 +16859,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">뉴젠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16438,6 +16909,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">쿨리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16487,6 +16959,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16536,6 +17009,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">크레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16585,6 +17059,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">테넷</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16635,6 +17110,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">타이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16684,6 +17160,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16733,6 +17210,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스탠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16782,6 +17260,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">블랙</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16831,6 +17310,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">윈터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16880,6 +17360,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">마그</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16929,6 +17410,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -16978,6 +17460,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17027,6 +17510,7 @@
         data-cumulative="8"
         data-news-count="2"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">데일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17077,6 +17561,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">노버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17126,6 +17611,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17175,6 +17661,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17224,6 +17711,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17273,6 +17761,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">크레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17322,6 +17811,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17371,6 +17861,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17420,6 +17911,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">포워</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17469,6 +17961,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">서앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17518,6 +18011,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">컴퍼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17567,6 +18061,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비엔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17616,6 +18111,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨제</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17665,6 +18161,7 @@
         data-cumulative="1"
         data-news-count="10"
         data-signals="14">
+        <span class="gp-avatar" aria-hidden="true">오픈</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17718,6 +18215,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17767,6 +18265,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">패스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17816,6 +18315,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17865,6 +18365,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17914,6 +18415,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">펄인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -17963,6 +18465,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18012,6 +18515,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">라이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18061,6 +18565,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18110,6 +18615,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18159,6 +18665,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18208,6 +18715,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">현대</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18257,6 +18765,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18306,6 +18815,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">마이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18355,6 +18865,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18404,6 +18915,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠벤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18453,6 +18965,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">크레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18502,6 +19015,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18551,6 +19065,7 @@
         data-cumulative="2"
         data-news-count="4"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">타임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18601,6 +19116,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">게임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18650,6 +19166,7 @@
         data-cumulative="2"
         data-news-count="2"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">플로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18700,6 +19217,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘엑</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18749,6 +19267,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">위벤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18798,6 +19317,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18847,6 +19367,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18896,6 +19417,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18945,6 +19467,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">코레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -18995,6 +19518,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">우리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19044,6 +19568,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피넛</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19093,6 +19618,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">딥다</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19142,6 +19668,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19191,6 +19718,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">프라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19240,6 +19768,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">크립</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19289,6 +19818,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디랩</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19338,6 +19868,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">블루</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19387,6 +19918,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티더</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19436,6 +19968,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">스틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19485,6 +20018,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19534,6 +20068,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">윈아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19583,6 +20118,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">펄사</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19632,6 +20168,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">로켓</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19681,6 +20218,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스잔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19730,6 +20268,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19779,6 +20318,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19828,6 +20368,7 @@
         data-cumulative="10"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">퀸테</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19877,6 +20418,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">어썸</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19926,6 +20468,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -19975,6 +20518,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠제</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20024,6 +20568,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">맥쿼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20073,6 +20618,7 @@
         data-cumulative="10"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20122,6 +20668,7 @@
         data-cumulative="13"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20171,6 +20718,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20220,6 +20768,7 @@
         data-cumulative="8"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">하나</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20267,6 +20816,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">유니</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20313,6 +20863,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">루터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20359,6 +20910,7 @@
         data-cumulative="8"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">미래</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20405,6 +20957,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">보고</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20451,6 +21004,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스탠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20497,6 +21051,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20543,6 +21098,7 @@
         data-cumulative="7"
         data-news-count="40"
         data-signals="57">
+        <span class="gp-avatar" aria-hidden="true">투자</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20593,6 +21149,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">자베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20639,6 +21196,7 @@
         data-cumulative="8"
         data-news-count="6"
         data-signals="9">
+        <span class="gp-avatar" aria-hidden="true">원아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20686,6 +21244,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">신한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20732,6 +21291,7 @@
         data-cumulative="11"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20778,6 +21338,7 @@
         data-cumulative="13"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제네</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20824,6 +21385,7 @@
         data-cumulative="13"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">카무</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20870,6 +21432,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20916,6 +21479,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -20962,6 +21526,7 @@
         data-cumulative="3"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">투자</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21008,6 +21573,7 @@
         data-cumulative="1"
         data-news-count="8"
         data-signals="14">
+        <span class="gp-avatar" aria-hidden="true">한화</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21055,6 +21621,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하우</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21101,6 +21668,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">보고</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21147,6 +21715,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">보고</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21193,6 +21762,7 @@
         data-cumulative="7"
         data-news-count="4"
         data-signals="7">
+        <span class="gp-avatar" aria-hidden="true">대우</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21240,6 +21810,7 @@
         data-cumulative="3"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">네오</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21287,6 +21858,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21333,6 +21905,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21379,6 +21952,7 @@
         data-cumulative="7"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">폴로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21425,6 +21999,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스텔</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21471,6 +22046,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">칸서</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21517,6 +22093,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21563,6 +22140,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">티스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21609,6 +22187,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21655,6 +22234,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21701,6 +22281,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21747,6 +22328,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21793,6 +22375,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21839,6 +22422,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">카무</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21885,6 +22469,7 @@
         data-cumulative="1"
         data-news-count="20"
         data-signals="31">
+        <span class="gp-avatar" aria-hidden="true">대신</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21935,6 +22520,7 @@
         data-cumulative="1"
         data-news-count="5"
         data-signals="10">
+        <span class="gp-avatar" aria-hidden="true">애큐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -21982,6 +22568,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22028,6 +22615,7 @@
         data-cumulative="4"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">파트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22075,6 +22663,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22121,6 +22710,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">토닉</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22167,6 +22757,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">프론</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22213,6 +22804,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시몬</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22259,6 +22851,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그린</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22305,6 +22898,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22351,6 +22945,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">헤스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22397,6 +22992,7 @@
         data-cumulative="3"
         data-news-count="40"
         data-signals="64">
+        <span class="gp-avatar" aria-hidden="true">증권</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22444,6 +23040,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22490,6 +23087,7 @@
         data-cumulative="2"
         data-news-count="15"
         data-signals="25">
+        <span class="gp-avatar" aria-hidden="true">브레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22537,6 +23135,7 @@
         data-cumulative="3"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22583,6 +23182,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22629,6 +23229,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">새한</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22675,6 +23276,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">포스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22721,6 +23323,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22767,6 +23370,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22813,6 +23417,7 @@
         data-cumulative="1"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">칸서</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22860,6 +23465,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">베이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22906,6 +23512,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22952,6 +23559,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">위드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -22998,6 +23606,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23044,6 +23653,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23090,6 +23700,7 @@
         data-cumulative="1"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">교보</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23137,6 +23748,7 @@
         data-cumulative="3"
         data-news-count="10"
         data-signals="15">
+        <span class="gp-avatar" aria-hidden="true">인베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23184,6 +23796,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">로하</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23230,6 +23843,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">베저</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23276,6 +23890,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">나이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23322,6 +23937,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23368,6 +23984,7 @@
         data-cumulative="5"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23414,6 +24031,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23460,6 +24078,7 @@
         data-cumulative="3"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">오퍼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23507,6 +24126,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">워터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23553,6 +24173,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23599,6 +24220,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23645,6 +24267,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23691,6 +24314,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">옥터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23737,6 +24361,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">폴라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23783,6 +24408,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23829,6 +24455,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">부국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23875,6 +24502,7 @@
         data-cumulative="1"
         data-news-count="6"
         data-signals="12">
+        <span class="gp-avatar" aria-hidden="true">골프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23922,6 +24550,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -23968,6 +24597,7 @@
         data-cumulative="2"
         data-news-count="3"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24015,6 +24645,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24061,6 +24692,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24107,6 +24739,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">리딩</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24153,6 +24786,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24199,6 +24833,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">유일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24245,6 +24880,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24291,6 +24927,7 @@
         data-cumulative="2"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">라임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24338,6 +24975,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비엠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24384,6 +25022,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">서울</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24430,6 +25069,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24476,6 +25116,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24522,6 +25163,7 @@
         data-cumulative="6"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">세븐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24568,6 +25210,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24614,6 +25257,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">한화</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24660,6 +25304,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24706,6 +25351,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">진에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24752,6 +25398,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24798,6 +25445,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">페레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24844,6 +25492,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">화이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24890,6 +25539,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24936,6 +25586,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠지</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -24982,6 +25633,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">벤처</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25028,6 +25680,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25074,6 +25727,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25120,6 +25774,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25166,6 +25821,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다담</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25212,6 +25868,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">무궁</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25258,6 +25915,7 @@
         data-cumulative="2"
         data-news-count="2"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">차파</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25305,6 +25963,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">소울</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25351,6 +26010,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25397,6 +26057,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">레인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25443,6 +26104,7 @@
         data-cumulative="1"
         data-news-count="10"
         data-signals="20">
+        <span class="gp-avatar" aria-hidden="true">현대</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25490,6 +26152,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">글랜</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25536,6 +26199,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">세마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25582,6 +26246,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">트랜</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25628,6 +26293,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">페이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25674,6 +26340,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">글로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25720,6 +26387,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">네트</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25766,6 +26434,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">퀀텀</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25812,6 +26481,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">드림</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25858,6 +26528,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">솔인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25904,6 +26575,7 @@
         data-cumulative="4"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">코링</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25950,6 +26622,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">노틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -25996,6 +26669,7 @@
         data-cumulative="2"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">수앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26042,6 +26716,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26088,6 +26763,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">시리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26134,6 +26810,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26180,6 +26857,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피델</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26226,6 +26904,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">자비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26272,6 +26951,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">자비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26318,6 +26998,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">고든</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26364,6 +27045,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26410,6 +27092,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26456,6 +27139,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26502,6 +27186,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">플랫</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26548,6 +27233,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">유지</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26594,6 +27280,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">멜론</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26640,6 +27327,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아틸</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26686,6 +27374,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26732,6 +27421,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26778,6 +27468,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">웰링</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26824,6 +27515,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이큐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26870,6 +27562,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26916,6 +27609,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -26962,6 +27656,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27008,6 +27703,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">지엠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27054,6 +27750,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">노틱</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27100,6 +27797,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">플루</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27146,6 +27844,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">블랙</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27192,6 +27891,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27238,6 +27938,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27284,6 +27985,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">파인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27330,6 +28032,7 @@
         data-cumulative="1"
         data-news-count="3"
         data-signals="6">
+        <span class="gp-avatar" aria-hidden="true">자산</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27377,6 +28080,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">다올</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27423,6 +28127,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27469,6 +28174,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27515,6 +28221,7 @@
         data-cumulative="3"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27561,6 +28268,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">액시</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27607,6 +28315,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27653,6 +28362,7 @@
         data-cumulative="1"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">뮤렉</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27699,6 +28409,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">라이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27745,6 +28456,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27791,6 +28503,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">프렌</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27837,6 +28550,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27883,6 +28597,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27929,6 +28644,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -27975,6 +28691,7 @@
         data-cumulative="1"
         data-news-count="2"
         data-signals="4">
+        <span class="gp-avatar" aria-hidden="true">다올</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28022,6 +28739,7 @@
         data-cumulative="1"
         data-news-count="11"
         data-signals="15">
+        <span class="gp-avatar" aria-hidden="true">우리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28069,6 +28787,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">뮤젠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28115,6 +28834,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28161,6 +28881,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28207,6 +28928,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">위벤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28253,6 +28975,7 @@
         data-cumulative="2"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">와디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28299,6 +29022,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28345,6 +29069,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28391,6 +29116,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28437,6 +29163,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28483,6 +29210,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">골드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28529,6 +29257,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">유온</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28575,6 +29304,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28621,6 +29351,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">델타</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28667,6 +29398,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비엠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28713,6 +29445,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">더퍼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28759,6 +29492,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">솔리</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28805,6 +29539,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티유</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28851,6 +29586,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28897,6 +29633,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28943,6 +29680,7 @@
         data-cumulative="1"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다토</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -28989,6 +29727,7 @@
         data-cumulative="0"
         data-news-count="15"
         data-signals="23">
+        <span class="gp-avatar" aria-hidden="true">삼호</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29037,6 +29776,7 @@
         data-cumulative="0"
         data-news-count="13"
         data-signals="18">
+        <span class="gp-avatar" aria-hidden="true">도미</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29082,6 +29822,7 @@
         data-cumulative="0"
         data-news-count="4"
         data-signals="5">
+        <span class="gp-avatar" aria-hidden="true">코오</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29127,6 +29868,7 @@
         data-cumulative="0"
         data-news-count="4"
         data-signals="8">
+        <span class="gp-avatar" aria-hidden="true">하이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29172,6 +29914,7 @@
         data-cumulative="0"
         data-news-count="2"
         data-signals="3">
+        <span class="gp-avatar" aria-hidden="true">트러</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29217,6 +29960,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">디인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29261,6 +30005,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">베일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29305,6 +30050,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="1">
+        <span class="gp-avatar" aria-hidden="true">아이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29349,6 +30095,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">앤디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29393,6 +30140,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">지앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29437,6 +30185,7 @@
         data-cumulative="0"
         data-news-count="1"
         data-signals="2">
+        <span class="gp-avatar" aria-hidden="true">타임</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29481,6 +30230,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">글로</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29525,6 +30275,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29569,6 +30320,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에너</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29613,6 +30365,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">그레</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29657,6 +30410,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">뉴마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29701,6 +30455,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">다이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29745,6 +30500,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">동부</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29789,6 +30545,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29833,6 +30590,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">디케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29877,6 +30635,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">로터</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29921,6 +30680,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">메티</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -29965,6 +30725,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">바클</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30009,6 +30770,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">브라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30053,6 +30815,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">블랙</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30097,6 +30860,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">블루</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30141,6 +30905,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30185,6 +30950,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비욘</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30229,6 +30995,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비전</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30273,6 +31040,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30317,6 +31085,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">비하</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30361,6 +31130,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">삼성</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30405,6 +31175,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">세마</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30449,6 +31220,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">송현</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30493,6 +31265,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스톤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30537,6 +31310,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스톤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30581,6 +31355,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">스프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30625,6 +31400,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨앤</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30669,6 +31445,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨엘</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30713,6 +31490,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">씨제</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30757,6 +31535,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">아스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30801,6 +31580,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">어큐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30845,6 +31625,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30889,6 +31670,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30933,6 +31715,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -30977,6 +31760,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31021,6 +31805,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31065,6 +31850,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">에프</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31109,6 +31895,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31153,6 +31940,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31197,6 +31985,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엔엘</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31241,6 +32030,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엘지</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31285,6 +32075,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠디</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31329,6 +32120,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">엠캐</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31373,6 +32165,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">오에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31417,6 +32210,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">올드</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31461,6 +32255,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">윤진</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31505,6 +32300,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이아</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31549,6 +32345,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">이오</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31593,6 +32390,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인베</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31637,6 +32435,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">인빅</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31681,6 +32480,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">자이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31725,6 +32525,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31769,6 +32570,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">제이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31813,6 +32615,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">천일</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31857,6 +32660,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">카무</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31901,6 +32705,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">카펠</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31945,6 +32750,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">칼릭</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -31989,6 +32795,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">캐피</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32033,6 +32840,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">캡스</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32077,6 +32885,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">컴퍼</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32121,6 +32930,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">케이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32165,6 +32975,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">키움</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32209,6 +33020,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">트라</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32253,6 +33065,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티비</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32297,6 +33110,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티에</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32341,6 +33155,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">티케</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32385,6 +33200,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">프린</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32429,6 +33245,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">피씨</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32473,6 +33290,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">하버</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32517,6 +33335,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">한국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32561,6 +33380,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">헤이</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32605,6 +33425,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">현인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32649,6 +33470,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">화인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32693,6 +33515,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">화인</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
@@ -32737,6 +33560,7 @@
         data-cumulative="0"
         data-news-count="0"
         data-signals="0">
+        <span class="gp-avatar" aria-hidden="true">흥국</span>
         <div class="gp-card-main">
           <div class="gp-card-title">
             
