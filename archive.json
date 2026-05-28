@@ -1182,8 +1182,8 @@
           "벤처투자종합포털",
           "한국모태펀드",
           "벤처투자",
-          "KVIC",
-          "모태펀드"
+          "모태펀드",
+          "KVIC"
         ]
       },
       {
@@ -3304,7 +3304,13 @@
         "lpNames": [
           "사립학교교직원연금공단"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "tp",
+            "name": "사립학교교직원연금공단",
+            "url": "lp-tp.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "사립학교교직원연금공단",
@@ -3692,7 +3698,13 @@
         "lpNames": [
           "사립학교교직원연금공단"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "tp",
+            "name": "사립학교교직원연금공단",
+            "url": "lp-tp.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "사립학교교직원연금공단",
