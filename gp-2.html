@@ -21,16 +21,16 @@
       --tertiary: #9aa0a6;
       --line: #e0e3e7;
       --line-strong: #d3d7dc;
-      --accent: #8a6a52;
-      --accent-soft: #f3eee9;
-      --gold: #9a6a2f;
+      --accent: #111111;
+      --accent-soft: #f2f2f7;
+      --gold: #111111;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Pretendard, "Pretendard Variable", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
       letter-spacing: 0;
     }
     a { color: inherit; }
@@ -70,7 +70,7 @@
     .gp-top-nav a.active {
       border-color: var(--accent);
       background: var(--accent-soft);
-      color: #5f4636;
+      color: var(--text);
     }
     .bottom-nav {
       position: fixed;
@@ -161,7 +161,7 @@
       width: fit-content;
       border-left: 3px solid var(--accent);
       padding-left: 8px;
-      color: #5f4636;
+      color: var(--text);
       font-size: 12px;
       font-weight: 850;
     }
@@ -281,7 +281,7 @@
     .gp-filter-row button.active {
       border-color: var(--accent);
       background: var(--accent-soft);
-      color: #5f4636;
+      color: var(--text);
     }
     .gp-control-panel p {
       margin: 0;
@@ -373,18 +373,18 @@
       gap: 6px;
     }
     .gp-chips span {
-      border: 1px solid #d7e6e3;
+      border: 1px solid var(--line);
       border-radius: 999px;
       padding: 4px 7px;
-      background: #f7f4f0;
-      color: #5f4636;
+      background: var(--surface-muted);
+      color: var(--text);
       font-size: 11px;
       font-weight: 850;
     }
     .gp-chips span.strong {
-      border-color: #d7bd78;
-      background: #fff7dd;
-      color: #725313;
+      border-color: var(--line-strong);
+      background: var(--surface-muted);
+      color: var(--text);
     }
     .gp-metrics {
       display: grid;
@@ -484,6 +484,40 @@
     }
     .gp-card-extra[open] summary { margin-bottom: 8px; }
     .gp-card-extra[open] summary::after { transform: rotate(225deg) translateY(-2px); }
+    .gp-pagination {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      margin: 14px 0 4px;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .gp-pagination[hidden] {
+      display: none;
+    }
+    .gp-pagination button {
+      min-width: 70px;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .gp-pagination button:disabled {
+      color: var(--tertiary);
+      background: var(--surface-muted);
+      cursor: default;
+    }
+    .gp-pagination span {
+      min-width: 72px;
+      text-align: center;
+    }
     .gp-news-mini > strong {
       color: var(--secondary);
       font-size: 11.5px;
@@ -813,7 +847,7 @@
       }
       .bottom-nav .active {
         background: var(--accent-soft);
-        color: #5f4636;
+        color: var(--text);
       }
       .nav-dot {
         display: none;
@@ -1068,7 +1102,7 @@
         </dl>
       </article>
       <article class="gp-panel">
-        <h2>확인 자료</h2>
+        <h2>자료</h2>
         <dl class="gp-fact-list">
           <div>
             <dt>근거 수준</dt>

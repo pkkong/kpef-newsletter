@@ -53,7 +53,7 @@
     .lp-directory-card { display: grid; grid-template-columns: minmax(0, 1fr) 82px 74px; gap: 8px; align-items: center; min-height: 78px; border-bottom: 1px solid var(--separator); padding: 11px 10px; background: var(--surface); }
     .lp-directory-card:last-child { border-bottom: 0; }
     .lp-directory-card-head { display: grid; gap: 4px; }
-    .lp-directory-card-head span { width: fit-content; border-radius: 999px; padding: 4px 8px; background: #e7f4f1; color: #164c46; font-size: 11px; font-weight: 800; }
+    .lp-directory-card-head span { width: fit-content; border-radius: 999px; padding: 4px 8px; background: var(--surface-muted); color: var(--text); font-size: 11px; font-weight: 800; }
     .lp-directory-card-head strong { color: var(--text); font-size: 18px; line-height: 1.25; }
     .lp-directory-kind,
     .lp-directory-latest { color: var(--secondary); font-size: 13px; font-weight: 750; line-height: 1.45; }
@@ -77,7 +77,7 @@
     .lp-notice-toolbar select { width: 100%; min-height: 42px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: var(--surface); color: var(--text); font-size: 14px; }
     .lp-filter-row { display: flex; flex-wrap: wrap; gap: 7px; }
     .lp-filter-row button { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: var(--surface); color: var(--secondary); font-size: 12px; font-weight: 800; cursor: pointer; }
-    .lp-filter-row button.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
+    .lp-filter-row button.active { border-color: var(--accent); background: var(--surface-muted); color: var(--text); }
     .lp-page-list { display: grid; gap: 10px; }
     .lp-page-card { display: grid; gap: 8px; padding: 14px; border: 1px solid var(--separator); border-radius: 8px; background: var(--surface); }
     .lp-page-card h2 { margin: 0; font-size: 15px; line-height: 1.38; }
@@ -116,8 +116,8 @@
         font-size: 12px;
       }
       body.lp-notices-page .bottom-nav .active {
-        background: #f3eee9;
-        color: #5f4636;
+        background: var(--surface-muted);
+        color: var(--text);
       }
       body.lp-notices-page .nav-dot {
         display: none;
@@ -227,39 +227,22 @@
           <a class="header-action" href="#lpNotices" aria-label="LP 공식 공고로 이동">공고</a>
         </div>
       </div>
-      <div class="brief-meta">대상 LP 18개 · 공개 프로필 15개 · 표시 공고 0건 · 기준일 2026-05-28</div>
+      <div class="brief-meta">대상 LP 18개 · 기관 프로필 15개 · 표시 공고 0건 · 기준일 2026-05-28</div>
     </header>
 
     <main class="content-area">
       <section class="lp-directory-hero" aria-label="LP 디렉토리 요약">
         <div>
           <h1>출자기관</h1>
-          <p>국내 주요 출자기관의 기본 현황, 관심 자산군, 최근 출자공고를 한 곳에서 봅니다. 공개자료로 표시 가능한 항목을 우선 반영하고, 관련 뉴스는 구분해 표시합니다.</p>
+          <p>국내 주요 출자기관의 기본 현황, 관심 자산군, 최근 출자공고를 한 곳에서 봅니다. 공고와 관련 뉴스는 구분해 표시합니다.</p>
         </div>
         <div class="lp-directory-kpis">
           <div><span>대상 기관</span><strong>18개</strong></div>
-          <div><span>공개 프로필</span><strong>15개</strong></div>
+          <div><span>기관 프로필</span><strong>15개</strong></div>
           <div><span>공고 기준 규모</span><strong>-</strong></div>
           <div><span>표시 공고</span><strong>0건</strong></div>
         </div>
       </section>
-      <nav class="lp-profile-nav" aria-label="LP 프로필">
-        <a class="ktcu-profile-link" href="lp-nps.html">국민연금기금</a>
-          <a class="ktcu-profile-link" href="lp-kvic.html">한국벤처투자</a>
-          <a class="ktcu-profile-link" href="lp-kgrowth.html">한국성장금융</a>
-          <a class="ktcu-profile-link" href="lp-kdb.html">한국산업은행</a>
-          <a class="ktcu-profile-link" href="lp-kafi.html">농업정책보험금융원</a>
-          <a class="ktcu-profile-link" href="lp-koreapost.html">우정사업본부</a>
-          <a class="ktcu-profile-link" href="lp-poba.html">대한지방행정공제회</a>
-          <a class="ktcu-profile-link" href="lp-ktcu.html">한국교직원공제회</a>
-          <a class="ktcu-profile-link" href="lp-pmaa.html">경찰공제회</a>
-          <a class="ktcu-profile-link" href="lp-cu.html">신협중앙회</a>
-          <a class="ktcu-profile-link" href="lp-kfcc.html">새마을금고중앙회</a>
-          <a class="ktcu-profile-link" href="lp-tp.html">사립학교교직원연금공단</a>
-          <a class="ktcu-profile-link" href="lp-kexim.html">한국수출입은행</a>
-          <a class="ktcu-profile-link" href="lp-kbiz.html">중소기업중앙회</a>
-          <a class="ktcu-profile-link" href="lp-ibk.html">IBK기업은행</a>
-      </nav>
       <section class="section-block" id="lpDirectory" aria-label="출자기관 목록">
         <div class="lp-notice-toolbar">
           <div class="lp-control-head">
