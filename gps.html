@@ -13,16 +13,17 @@
   <link rel="manifest" href="site.webmanifest">
     <style>
     :root {
-      --bg: #f4f6f8;
+      --bg: #f7f7f8;
       --surface: #ffffff;
-      --surface-muted: #f8fafb;
-      --text: #15202b;
-      --secondary: #52616f;
-      --tertiary: #7c8792;
-      --line: #dce3e8;
-      --accent: #1f6b63;
-      --accent-soft: #e7f4f1;
-      --gold: #aa7b26;
+      --surface-muted: #f3f4f5;
+      --text: #202124;
+      --secondary: #6b6f76;
+      --tertiary: #9aa0a6;
+      --line: #e0e3e7;
+      --line-strong: #d3d7dc;
+      --accent: #8a6a52;
+      --accent-soft: #f3eee9;
+      --gold: #9a6a2f;
     }
     * { box-sizing: border-box; }
     body {
@@ -34,7 +35,7 @@
     }
     a { color: inherit; }
     .gp-shell {
-      width: min(1240px, calc(100% - 28px));
+      width: min(1440px, calc(100% - 44px));
       margin: 0 auto;
       padding: 18px 0 calc(112px + env(safe-area-inset-bottom));
     }
@@ -48,7 +49,7 @@
       justify-content: space-between;
       margin-bottom: 14px;
       padding: 8px 0;
-      background: rgba(244, 246, 248, 0.92);
+      background: rgba(247, 247, 248, 0.94);
       backdrop-filter: blur(14px);
     }
     .gp-top-nav strong { font-size: 13px; }
@@ -69,7 +70,7 @@
     .gp-top-nav a.active {
       border-color: var(--accent);
       background: var(--accent-soft);
-      color: #164c46;
+      color: #5f4636;
     }
     .bottom-nav {
       position: fixed;
@@ -151,7 +152,7 @@
       display: grid;
       gap: 18px;
       align-items: end;
-      margin: 10px 0 12px;
+      margin: 22px 0 18px;
     }
     .gp-hero-copy, .gp-detail-hero > div { display: grid; gap: 10px; }
     .gp-hero-copy > span,
@@ -160,15 +161,15 @@
       width: fit-content;
       border-left: 3px solid var(--accent);
       padding-left: 8px;
-      color: #164c46;
+      color: #5f4636;
       font-size: 12px;
       font-weight: 850;
     }
     h1 {
       margin: 0;
       color: var(--text);
-      font-size: clamp(34px, 5vw, 62px);
-      line-height: 1.04;
+      font-size: clamp(30px, 3.2vw, 44px);
+      line-height: 1.08;
       letter-spacing: 0;
     }
     .gp-hero-copy p,
@@ -202,6 +203,17 @@
     .gp-detail-kpis div {
       min-width: 0;
       padding: 12px;
+    }
+    .gp-detail-kpis {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .gp-detail-kpis div {
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      padding: 13px 0;
     }
     .gp-kpis span,
     .gp-detail-kpis span,
@@ -269,7 +281,7 @@
     .gp-filter-row button.active {
       border-color: var(--accent);
       background: var(--accent-soft);
-      color: #164c46;
+      color: #5f4636;
     }
     .gp-control-panel p {
       margin: 0;
@@ -277,18 +289,62 @@
       font-size: 12px;
       line-height: 1.45;
     }
+    .gp-directory-table {
+      overflow: hidden;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .gp-directory-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 132px;
+      gap: 10px;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--line-strong);
+      background: #f0f1f2;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 850;
+      text-align: right;
+    }
+    .gp-directory-head span:first-child { text-align: center; }
+    .gp-directory-head span:nth-child(2),
+    .gp-directory-head span:nth-child(4),
+    .gp-directory-head span:nth-child(5) {
+      display: none;
+    }
+    .gp-directory-head span:nth-child(3) {
+      font-size: 0;
+    }
+    .gp-directory-head span:nth-child(3)::after {
+      content: "순위 / 약정액";
+      font-size: 12px;
+    }
     .gp-directory {
       display: grid;
-      gap: 10px;
+      gap: 0;
     }
     .gp-card {
       display: grid;
-      gap: 9px;
-      padding: 12px;
+      grid-template-columns: minmax(0, 1fr) 132px;
+      gap: 10px;
+      align-items: center;
+      min-height: 82px;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      padding: 12px 10px;
+      box-shadow: none;
     }
+    .gp-card:last-child { border-bottom: 0; }
     .gp-card[hidden] { display: none; }
     .gp-card-main {
       display: grid;
+      grid-column: 1;
+      grid-row: 1;
       gap: 8px;
     }
     .gp-card-title {
@@ -312,7 +368,7 @@
     .gp-card h2 a { text-decoration: none; }
     .gp-card h2 a:hover { color: var(--accent); }
     .gp-chips {
-      display: flex;
+      display: none;
       flex-wrap: wrap;
       gap: 6px;
     }
@@ -320,8 +376,8 @@
       border: 1px solid #d7e6e3;
       border-radius: 999px;
       padding: 4px 7px;
-      background: #f2faf8;
-      color: #164c46;
+      background: #f7f4f0;
+      color: #5f4636;
       font-size: 11px;
       font-weight: 850;
     }
@@ -332,17 +388,22 @@
     }
     .gp-metrics {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 7px;
+      grid-column: 2;
+      grid-row: 1;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
       margin: 0;
+      text-align: right;
     }
     .gp-metrics div {
       min-width: 0;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 7px 8px;
-      background: var(--surface-muted);
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      background: transparent;
     }
+    .gp-metrics div:nth-child(2),
+    .gp-metrics div:nth-child(4) { display: none; }
     .gp-metrics dt {
       color: var(--secondary);
       font-size: 10.5px;
@@ -358,7 +419,7 @@
       overflow-wrap: anywhere;
     }
     .gp-signal-strip {
-      display: grid;
+      display: none;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 6px;
     }
@@ -379,7 +440,7 @@
       font-size: 12px;
     }
     .gp-meta-line {
-      display: flex;
+      display: none;
       flex-wrap: wrap;
       gap: 7px;
       color: var(--secondary);
@@ -398,6 +459,7 @@
       gap: 6px;
     }
     .gp-card-extra {
+      display: none;
       border-top: 1px solid var(--line);
       padding-top: 8px;
     }
@@ -491,7 +553,11 @@
     .gp-detail-card {
       display: grid;
       gap: 7px;
-      padding: 14px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
       color: var(--secondary);
       font-size: 13px;
       line-height: 1.45;
@@ -505,14 +571,16 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
       margin: 10px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
     .gp-signal-bar div {
       min-width: 0;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 11px;
-      background: var(--surface);
-      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      border: 0;
+      border-radius: 0;
+      padding: 13px 0;
+      background: transparent;
+      box-shadow: none;
     }
     .gp-signal-bar span,
     .gp-signal-bar em {
@@ -537,7 +605,12 @@
     }
     .gp-panel {
       min-width: 0;
-      padding: 15px;
+      border: 0;
+      border-top: 1px solid var(--line);
+      border-radius: 0;
+      padding: 18px 0;
+      background: transparent;
+      box-shadow: none;
     }
     .gp-fact-list {
       display: grid;
@@ -707,14 +780,166 @@
     @media (min-width: 720px) {
       .gp-hero { grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr); }
       .gp-controls { grid-template-columns: minmax(0, 1fr) 210px; }
-      .gp-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .gp-card-main { grid-template-columns: minmax(0, 1fr); align-items: start; }
       .gp-detail-hero { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); }
       .gp-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .gp-detail-lower { grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr); }
     }
-    @media (min-width: 1120px) {
-      .gp-directory { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (min-width: 960px) {
+      .gp-shell {
+        width: min(1460px, calc(100% - 56px));
+      }
+      .bottom-nav {
+        position: static;
+        width: min(720px, 100%);
+        max-width: 100%;
+        transform: none;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 4px;
+        margin: 28px auto 0;
+        border: 1px solid rgba(21, 32, 43, 0.10);
+        border-radius: 999px;
+        padding: 5px;
+        background: rgba(255,255,255,0.94);
+        box-shadow: 0 12px 34px rgba(15,23,42,0.12);
+      }
+      .bottom-nav a {
+        min-height: 34px;
+        flex-direction: row;
+        gap: 5px;
+        border-radius: 999px;
+        padding: 0 10px;
+        font-size: 12px;
+      }
+      .bottom-nav .active {
+        background: var(--accent-soft);
+        color: #5f4636;
+      }
+      .nav-dot {
+        display: none;
+      }
+      .gp-kpis,
+      .gp-detail-kpis {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .gp-control-panel {
+        margin: 16px 0;
+      }
+      .gp-directory-head {
+        display: grid;
+        grid-template-columns: minmax(240px, 1.2fr) minmax(130px, 0.62fr) minmax(340px, 1.45fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
+        gap: 18px;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 18px;
+        border-bottom: 1px solid var(--line-strong);
+        background: #f0f1f2;
+        color: var(--secondary);
+        font-size: 12px;
+        font-weight: 850;
+        text-align: left;
+      }
+      .gp-directory-head span {
+        display: block;
+        font-size: 12px;
+      }
+      .gp-directory-head span:first-child {
+        text-align: left;
+      }
+      .gp-directory-head span:nth-child(3)::after {
+        content: none;
+      }
+      .gp-directory {
+        gap: 0;
+      }
+      .gp-directory-table {
+        border: 1px solid var(--line-strong);
+        background: var(--surface);
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      }
+      .gp-card {
+        grid-template-columns: minmax(240px, 1.2fr) minmax(130px, 0.62fr) minmax(340px, 1.45fr) minmax(190px, 0.82fr) minmax(150px, 0.62fr);
+        gap: 18px;
+        align-items: center;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 16px 18px;
+        box-shadow: none;
+      }
+      .gp-card:last-child {
+        border-bottom: 0;
+      }
+      .gp-card-main {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .gp-meta-line {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        gap: 4px;
+      }
+      .gp-metrics {
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .gp-signal-strip {
+        grid-column: 4;
+        grid-row: 1;
+      }
+      .gp-card-extra {
+        grid-column: 5;
+        grid-row: 1;
+        border-top: 0;
+        padding-top: 0;
+      }
+      .gp-card h2 {
+        font-size: 16px;
+      }
+      .gp-card-title > span {
+        font-size: 10.5px;
+      }
+      .gp-chips span {
+        background: #f5f5f5;
+        border-color: #e3e3e3;
+        color: var(--secondary);
+      }
+      .gp-chips {
+        display: flex;
+      }
+      .gp-metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        text-align: left;
+      }
+      .gp-metrics div:nth-child(2),
+      .gp-metrics div:nth-child(4) {
+        display: block;
+      }
+      .gp-signal-strip {
+        display: grid;
+      }
+      .gp-card-extra {
+        display: block;
+      }
+      .gp-metrics div,
+      .gp-signal-strip span {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        background: transparent;
+      }
+      .gp-metrics dt,
+      .gp-signal-strip span {
+        font-size: 11px;
+      }
+      .gp-metrics dd {
+        font-size: 13px;
+      }
+      .gp-card-extra summary {
+        justify-content: flex-start;
+        gap: 8px;
+      }
     }
     @media (max-width: 620px) {
       .gp-shell {
@@ -735,6 +960,7 @@
       }
       .gp-top-nav a,
       .gp-filter-row button { flex: 0 0 auto; }
+      .gp-kpis { display: none; }
       .gp-kpis,
       .gp-detail-kpis,
       .gp-metrics,
@@ -817,7 +1043,15 @@
       <p>상위 20 GP 20개 · 개별 프로필 120개 · 공식 근거 59개 · 기준일 2026-05-28</p>
     </section>
 
-    <section class="gp-directory" id="gpDirectory" aria-label="GP 목록">
+    <section class="gp-directory-table" aria-label="GP 목록">
+      <div class="gp-directory-head" aria-hidden="true">
+        <span>운용사명</span>
+        <span>대표/홈페이지</span>
+        <span>운용 현황</span>
+        <span>뉴스·출자</span>
+        <span>확인 자료</span>
+      </div>
+      <div class="gp-directory" id="gpDirectory">
       <article class="gp-card"
         data-search="엠비케이파트너스 엠비케이파트너스 엠비케이파트너스 엠비케이파트너스 유한책임회사 Michael B. Kim  [롯데렌탈 M&amp;A] 어피니티와 결별 후 새 주인 찾기 &#x27;고차방정식&#x27; &quot;이미 5000명 일자리 잃었다&quot;...돈 줄 마른 홈플러스, &#x27;파산 위기&#x27; 증폭 “복잡할수록 광장 찾는다”…‘딜 메이커’ 존재감 키워 고려아연의 원아시아 출자, 법정 공방 본격화 법원, 고려아연에 원아시아 펀드 투자 문서 제출 명령 [시그널] 법원, 고려아연에 원아시아 펀드 투자 관련 문서 제출 명령 이정우-이진하 이름값 5000억…고도의 첫 발 고려아연 주총 소송, 주주 행동 플랫폼 &#x27;액트&#x27;로 번졌다 MBK·UCK, ‘오스템’ 해외사업 키워 몸값 높인다 대형 PEF, 롯데렌탈 눈독…공정위 기조·몸값 격차에 M&amp;A는 안갯속[시그... &quot;밀린 월급, 텅빈 매대&quot;... 돈 줄 마른 홈플러스, 결국 대형마트까지 판... [노트북 너머] 비바람 맞는 리더, 원칙 뒤에 선 리더 금감원 PEF 검사에 로펌도 들썩…법률자문 시장 영업 확대 [기업 이모저모] &#x27;공동의 적&#x27; 앞서 뭉친 고려아연 노사 檢 폐지 D-4개월..기업 범죄 의혹 수사 시동 [서초동 야단법석] &quot;부동산 담보도 개인 보증도 무용지물&quot;…홈플러스 &#x27;연명 금융&#x27;에 MBK 책임... 檢, MBK 수사 속도에…금감원 제재심 시계도 다시 돌아간다 “수출 1000억 달러 회복 청사진 보여달라”…지방선거 앞두고 울산 산... [수탁자책임 레이더] 삼성운용 반대율 9.6%…주주참여 제약에는 반기 다시 도는 골프장 M&amp;A, 새 주인 찾을까 MBK, 테일러메이드 인수 제안 받아...매각가 4조원대 언급 홈플러스 ‘전단채’ 피해 수사 속도낸다 MBK, 테일러메이드 인수 제안 받아...매각가 4조원대 언급 - 인베스트조선 고려아연 노조, 울산시장 후보들에 정책건의…&quot;MBK M&amp;A 막아야&quot; &quot;직원 월급도 못 주는데 보증은 거부&quot;…MBK·채권단 공방 고려아연 노조 &quot;MBK 침탈 막을 정책 마련해달라&quot; 고려아연 노조, 지방선거 울산 후보들에 정책 건의…&quot;MBK 방지 대책&quot; 촉... [6·3지선 우리 동네는]고려아연 노조, 울산시장 후보들에 ‘MBK 방어’... TPG, 카카오모빌리티 엑시트 속도…롯데렌탈·배민 딜 나설까 [단독] 검찰, ‘MBK 홈플러스 사건’ 전단채 피해자 조사…수사 속도 [세... [카카오모빌리티 딜레마]② 반복된 매각 시도·막힌 출구…TPG의 탈출사 [Invest]&quot;금감원 PEF 검사 상반기에 한 곳 더&quot;…VIG 후속타자는 누구? 고려아연 &quot;모든 투자는 적법…영풍·MBK 비방은 여론 호도&quot; 영풍·MBK &quot;원아시아 투자 의혹 규명해야&quot;…고려아연 &quot;악의적 비방&quot; 고려아연 “영풍·MBK, 적대적 M&amp;A 위해 왜곡 반복…적법한 재무적 투자... 영풍 &quot;고려아연, 7년前 &#x27;본업 무관&#x27; 청호컴넷 채권 70억 인수&quot; 영풍 “고려아연, 청호컴넷 사채 인수 의혹 밝혀야” 적대적 M&amp;A의 귀환: 왜 다시 자본시장의 중심에 섰나 홈플러스 전단채 피해자, 메리츠 1000억원 대출 반대…&quot;MBK 책임 회피&quot; MBK “홈플러스 회수 없다” 홈플러스 휴업에 경남 567명 날벼락 … 대책위 &quot;지방선거 전 해결하라&quot; 골프존카운티 예비입찰 29일 마감…원매자 ‘북적’ 흥행 청신호 [시그... MBK, 고려아연 6000억 텀론 리파이낸싱 완료…금리 조건 개선[only 이데일... 분기 순익 1조 증권사, 금융권 지형도 흔들…긴장하는 금융지주 &quot;1등 경... 홈플러스, 37개 점포 운영 중단…민병덕 의원 MBK에 “책임 있는 대책 필... 자사주로 지배력 강화한 NXC…오너 지분 69%→76% MBK, 1.2조원에 日알루미늄 3위 업체 &#x27;아르테미라&#x27; 인수 &quot;홈플 투자 실패&quot; 결국 9000억 날리나...국민연금 &#x27;도돌이표&#x27; 출자 실패 &quot;내가 낸 돈 어디에 썼는데&quot; 아무도 모른다...1610조 &#x27;깜깜이&#x27; 국민연금 두 차례 막힌 방시혁 영장…경찰, 불구속 송치 검토 가능성 [사설]美는 -30%도 공개, 국민연금은 &#x27;깜깜이&#x27; MBK, 日알루미늄 3위 아르테미라 1.3조엔에 인수 MBK파트너스, 日 3위 알루미늄 기업 &#x27;아르테미라&#x27; 인수한다 MBK파트너스, 日 알루미늄 캔 3위 품는다 “MBK, 1.2조원에 日알루미늄 업체 아르테미라 인수” MBK, 日 &#x27;아르테미라&#x27; 인수한다 &quot;MBK파트너스, 日알루미늄 3위 업체 아르테미라 인수&quot;…日 언론 보도 MBK, 日 알루미늄社 알테미라 1.1조에 인수…사전심사 승인 [시그널] MBK, 日 알루미늄업체 1.1조에 인수 &#x27;수익률 VS 리스크&#x27;…딜레마에 빠진 도돌이표 출자실패 사모펀드 출자 내역 공개, 선진국 수준까지 갈 길 멀어 美 연금 &quot;내부수익률 -30%&quot; 밝힐 때 국민연금은 펀드명까지 숨겼다 MBK, 日 알루미늄 제조업체 ‘알테미라’ 1.1조에 인수 MBK, 日 &#x27;아르테미라&#x27; 인수한다 - 뉴스톱 [Invest]선거철 되자 표(票)가루에 또 흔들리는 기업과 자본 MBK 6호 펀드에 제동 건 日정부…’중국자본 출자’ 다시 회자 M&amp;A 원스톱 토털 서비스로 국내외 대형 딜 두각 [더벨]&#x27;글로벌 투자사와 맞손&#x27; 부산EP, 넥스플렉스 인수 재도전 MBK, 미 현지 로비스트 선임…중국 자본 논란 재점화 MBK파트너스, 美 CFIUS 승인 획득…투자 운용 독립성 확인 [시그널] MBK &quot;美 CFIUS 승인 통해 글로벌 투자 적격성 입증&quot; [마켓인]MBK “美 CFIUS 승인으로 독립성 인증…中 자본 논란 사실무근” MBK, CFIUS 승인 앞세워 투자 적법성 부각 - 뉴스톱 [다이닝브랜즈 톺아보기] 13년 PE 체제 몸값 쑥…MBK 잭팟 기대 &#x27;캐시카우&#x27; 배당 규모 더 커졌다…F&amp;B로 배불리는 사모펀드 국민연금, 과도한 차입인수 사모펀드에 출자 축소… 회수전략도 고려 “혁신기업이 가장 먼저 찾는 ‘하우스뱅크’로”[시그널] [박종면칼럼] 홈플러스, &#x27;질서 있는 정리&#x27;가 답이다 한때 잘 나갔는데 어쩌다가…매출 반 토막 난 아웃도어 브랜드 ‘네파’... &quot;MBK 책임은 없이 메리츠만 압박&quot;…홈플러스 자금요청 논란 MBK, 일본 정부의 마키노 인수 중단 권고 수용 MBK, 日 정부 권고 수용해 마키노실링 인수 중단[시그널] [Invest]13년만의 투자등급 디폴트…제이알리츠發 다시 도마 오른 신평사 [지오영 MBK 매각 명암]⑤ 이사회 과반 MBK…경영진 견제 요구도 &quot;고가 인수 무조건 OK 아냐&quot; 日, M&amp;A 기준에 &#x27;경제안보·고용&#x27; 추가 [더벨][코스피5000 설계자들] &quot;국회 내 자본시장 관심도 낮아…하반기 ... [더벨]골프존카운티 IM 발송, 입찰 전부터 &#x27;문전성시&#x27; 홈플러스 피해자들, 이재명 대통령에 SOS…&quot;MBK는 수익, 우리는 파산 위... [지오영 MBK 매각 명암]④ 조선혜지와이, 차입금 1조…지주사 역할론 ‘아직 조사중인데’…MBK 출자자들에게 “당국, MBK 위법 없음 확인”... 2026 대한민국 50대 부자 [더인사이트] &#x27;실적 악화·환경 리스크&#x27; 영풍…고려아연과 경영권 다툼... &#x27;17억 달러 분배&#x27; 성과 내세운 MBK 서한…도의(道義) 잃은 자본의 &#x27;엄이... MBK 김병주 회장 &quot;위법 없었다&quot; 연례서한 논란 [롯데렌탈 M&amp;A] 현대차까지 거론…PEF vs 완성차 &#x27;새 국면&#x27; MBK, 홈플러스 사태 &quot;위법 없다&quot;…당국 심의·수사 진행 속 &#x27;인식&#x27; 논란 LBO의 덫 걸린 네파, 아웃도어 분야 &#x27;홈플러스&#x27; 될까 우려 [지오영 MBK 매각 명암]④ 조선혜지와이, 차입금 1조…지주사 역할론 - 블로터 日 &#x27;안보 위해&#x27; MBK 마키노 인수 제동...&#x27;미국인 딜메이커&#x27; 정체성 논란... 광산·우주정거장·조선소…미국 대상 로비 늘리는 韓 [지오영 MBK 매각 명암]③ &#x27;이례적 고배당&#x27; MBK로 흐르는 현금 자위대 포진도에 독도까지…일본 우경화 유탄 맞은 MBK 자위대 포진도에 독도까지…일본 우경화 유탄 맞은 MBK - 머니투데이 - 머니투데이 영원한 적도, 동지도 없다…홈플러스에서 다시 만난 MBK·하림 - 이데일리 한앤코 자산운용업으로 사업 다변화…PEF협의회 탈출 [단독] MBK, 홈플러스 담은 3호 펀드 수익률 방어 성공 MBK, 홈플러스 담은 3호 펀드 수익률 방어 성공 - 한국경제 홈플러스 담은 MBK펀드…국내 손실, 일본서 메웠다 - 한국경제 日, 안보 이유로 MBK에 마키노 인수 중단 권고 - 한국경제 MBK 일본기업 인수계획에…日정부 &quot;안보상 우려&quot; 제동 - 매일경제 마켓 [Invest]MBK 향했던 금감원 칼이 VIG로…PEF 저승사자로 부상한 금융투자... 日정부, MBK의 공작기계업체 마키노 인수 제동…&quot;군사적 중요&quot; - 파이낸셜뉴스 日, MBK파트너스의 日공작기계 업체 인수 중지 권고 - 뉴스핌 일본정부, MBK의 마키노 인수 막았다···“군사 안보 우려” - 서울경제 MBK 향했던 금감원 칼이 VIG로…PEF 저승사자로 부상한 금융투자검사3국 - 인베스트조선 마키노 인수 연기에도…MBK, 딜 클로징 자신 이유는 - 뉴스톱 [증권사 지분투자]⑧ 삼성, 젠투펀드부터 MBK까지 사모펀드 &#x27;희비&#x27; - 블로터 MBK와 메리츠금융, 홈플러스 이어 고려아연서도 &#x27;불편한 동거&#x27; - 블로터 홈플러스 부실, 롯데카드로 전이되나…MBK 책임론 부상 - 서울경제TV 고려아연·홈플러스 논란 속 김병주 “우리는 북아시아 기업의 파트너” [단독] 사모펀드 ‘포괄적 주식교환→상폐’ 전략 첫 판결, 法 “절차 문... 롯데카드 정상호 대표 시험대…수익성·제재·매각 &#x27;첩첩산중&#x27; 글랜우드PE 웃고, MBK는 울상…표정 갈린 PEF [IB토마토]사법 리스크 커진 MBK…NH투자증권의 셈법은 김병주 영장 심사 따라 금융위 제재·매각 앞날 갈린다 (국감)&quot;&#x27;먹튀&#x27; 사모펀드 MBK, 국민 기만…극약 처방 내려야&quot; 비판 봇물 [팩트체크] 국민연금, MBK에 투자해 정말 손실 입었을까? 새 주인 찾는 홈플러스, 20년 만에 3위로 추락 김태현 국민연금 이사장 “PEF 수익의 질적수준 따지겠다”[ASK 2025] [팩트체크] 대항공개매수, 사례 없었나?   엠비케이파트너스오호 엠비케이파트너스육호 엠비케이파트너스삼호 엠비케이파트너스사호 엠비케이파트너스스페셜시튜에이션이호 엠비케이파트너스오호의이 엠비케이파트너스육호의이 엠비케이파트너스2023의1호 엠비케이파트너스2023의2호 덴티스트리홀딩스2023의3 엠비케이파트너스삼호의이 덴티스트리홀딩스2023 알프스파이낸스2024 덴티스트리홀딩스2023의1 에너자이저2023 덴티스트리홀딩스2023의5 덴티스트리홀딩스2023의2 엠비케이파트너스2019의2 덴티스트리홀딩스2023의4"
         data-active="1"
@@ -32498,6 +32732,7 @@
           <p class="gp-limit-note">약정액 기준 지표와 회사 정보는 공개자료에서 확인되는 항목만 제공합니다.</p>
         </details>
       </article>
+      </div>
     </section>
 
     <section class="gp-disclaimer" aria-label="참고사항">

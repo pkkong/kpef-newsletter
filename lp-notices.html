@@ -13,31 +13,68 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/service.css?v=6d3bce48">
   <style>
-    body.lp-notices-page .app-shell { width: min(100%, 1220px); }
-    body.lp-notices-page .content-area { display: block; width: min(1180px, 100%); margin: 0 auto; }
+    body.lp-notices-page { background: #f7f7f8; }
+    body.lp-notices-page .app-shell { width: min(100%, 1460px); background: #f7f7f8; }
+    body.lp-notices-page .content-area { display: block; width: min(1400px, 100%); margin: 0 auto; }
+    body.lp-notices-page .app-header { width: min(1400px, 100%); margin: 0 auto; }
     .lp-profile-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .lp-profile-nav a { display: inline-flex; min-height: 32px; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--surface-muted); color: var(--text); font-size: 12px; font-weight: 750; text-decoration: none; }
-    .lp-directory-hero { display: grid; gap: 14px; margin-bottom: 14px; padding: 6px 0 4px; }
-    .lp-directory-hero h1 { margin: 0; color: var(--text); font-size: clamp(32px, 5vw, 58px); line-height: 1.02; letter-spacing: 0; }
-    .lp-directory-hero p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 14px; line-height: 1.65; }
+    .lp-directory-hero { display: grid; gap: 18px; margin: 18px 0 18px; padding: 6px 0 4px; }
+    .lp-directory-hero h1 { margin: 0; color: var(--text); font-size: clamp(30px, 3.2vw, 44px); line-height: 1.08; letter-spacing: 0; }
+    .lp-directory-hero p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 14px; line-height: 1.62; }
     .lp-directory-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .lp-directory-kpis div { border: 1px solid var(--separator); border-radius: 8px; padding: 11px; background: var(--surface); }
     .lp-directory-kpis span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
     .lp-directory-kpis strong { display: block; margin-top: 4px; color: var(--text); font-size: 20px; line-height: 1.2; }
-    .lp-directory-grid { display: grid; gap: 10px; margin-bottom: 16px; }
-    .lp-directory-card { display: grid; gap: 10px; border: 1px solid var(--separator); border-radius: 8px; padding: 14px; background: var(--surface); box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
+    .lp-directory-table,
+    .lp-notice-table { overflow: hidden; border: 1px solid var(--separator); border-radius: 8px; background: var(--surface); }
+    .lp-directory-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 82px 74px;
+      gap: 8px;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--separator);
+      background: #f0f1f2;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 850;
+      text-align: right;
+    }
+    .lp-directory-head span:first-child { text-align: center; }
+    .lp-directory-head span:nth-child(2),
+    .lp-directory-head span:nth-child(3),
+    .lp-directory-head span:nth-child(6) { display: none; }
+    .lp-directory-head span:nth-child(5) { font-size: 0; }
+    .lp-directory-head span:nth-child(5)::after { content: "표시 공고"; font-size: 12px; }
+    .lp-notice-head { display: none; }
+    .lp-directory-grid { display: grid; gap: 0; margin-bottom: 16px; }
+    .lp-directory-card { display: grid; grid-template-columns: minmax(0, 1fr) 82px 74px; gap: 8px; align-items: center; min-height: 78px; border-bottom: 1px solid var(--separator); padding: 11px 10px; background: var(--surface); }
+    .lp-directory-card:last-child { border-bottom: 0; }
     .lp-directory-card-head { display: grid; gap: 4px; }
     .lp-directory-card-head span { width: fit-content; border-radius: 999px; padding: 4px 8px; background: #e7f4f1; color: #164c46; font-size: 11px; font-weight: 800; }
     .lp-directory-card-head strong { color: var(--text); font-size: 18px; line-height: 1.25; }
-    .lp-directory-card p { margin: 0; color: var(--secondary); font-size: 13px; line-height: 1.5; }
-    .lp-directory-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .lp-directory-kind,
+    .lp-directory-latest { color: var(--secondary); font-size: 13px; font-weight: 750; line-height: 1.45; }
+    .lp-directory-kind,
+    .lp-directory-focus,
+    .lp-directory-card > .lp-page-actions,
+    .lp-directory-chips { display: none; }
+    .lp-directory-latest { text-align: right; }
+    .lp-directory-card p,
+    .lp-directory-focus { margin: 0; color: var(--secondary); font-size: 13px; line-height: 1.5; }
+    .lp-directory-chips { flex-wrap: wrap; gap: 6px; }
     .lp-directory-chips span { border: 1px solid var(--separator); border-radius: 999px; padding: 5px 8px; background: #fbfcfd; color: var(--text); font-size: 11.5px; font-weight: 750; }
-    .lp-directory-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; margin: 0; }
-    .lp-directory-metrics div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 8px; }
-    .lp-directory-metrics dt { color: var(--secondary); font-size: 11px; font-weight: 800; }
-    .lp-directory-metrics dd { margin: 3px 0 0; color: var(--text); font-size: 13px; font-weight: 800; overflow-wrap: anywhere; }
+    .lp-directory-metrics { display: block; margin: 0; text-align: right; }
+    .lp-directory-metrics div:not(:first-child) { display: none; }
+    .lp-directory-metrics dt { display: none; }
+    .lp-directory-metrics dd { margin: 0; color: var(--text); font-size: 13px; font-weight: 800; overflow-wrap: anywhere; }
     .lp-notice-toolbar { display: grid; gap: 9px; margin-bottom: 12px; }
+    .lp-control-head { display: flex; gap: 10px; align-items: center; justify-content: space-between; color: var(--secondary); font-size: 12px; font-weight: 850; }
+    .lp-control-line { display: grid; gap: 8px; }
     .lp-notice-toolbar input { width: 100%; min-height: 42px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: var(--surface); color: var(--text); font-size: 14px; }
+    .lp-notice-toolbar select { width: 100%; min-height: 42px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: var(--surface); color: var(--text); font-size: 14px; }
     .lp-filter-row { display: flex; flex-wrap: wrap; gap: 7px; }
     .lp-filter-row button { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: var(--surface); color: var(--secondary); font-size: 12px; font-weight: 800; cursor: pointer; }
     .lp-filter-row button.active { border-color: #1f6b63; background: #e7f4f1; color: #164c46; }
@@ -50,11 +87,126 @@
     .lp-page-actions { display: flex; flex-wrap: wrap; gap: 8px; }
     .lp-page-actions a { display: inline-flex; min-height: 32px; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--surface-muted); color: var(--text); font-size: 12px; font-weight: 650; text-decoration: none; }
     @media (min-width: 760px) {
+      body.lp-notices-page .app-shell { margin-top: 0; margin-bottom: 0; min-height: 100vh; border-radius: 0; box-shadow: none; }
       .lp-directory-hero { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr); align-items: end; }
       .lp-directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .lp-control-line { grid-template-columns: minmax(0, 1fr) 210px; }
     }
-    @media (min-width: 960px) { .lp-page-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .lp-directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 960px) {
+      body.lp-notices-page .bottom-nav {
+        position: static;
+        width: min(720px, 100%);
+        max-width: 100%;
+        transform: none;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 4px;
+        margin: 28px auto 0;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 999px;
+        padding: 5px;
+        background: rgba(255,255,255,0.94);
+        box-shadow: 0 12px 34px rgba(15,23,42,0.12);
+      }
+      body.lp-notices-page .bottom-nav a {
+        min-height: 34px;
+        flex-direction: row;
+        gap: 5px;
+        border-radius: 999px;
+        padding: 0 10px;
+        font-size: 12px;
+      }
+      body.lp-notices-page .bottom-nav .active {
+        background: #f3eee9;
+        color: #5f4636;
+      }
+      body.lp-notices-page .nav-dot {
+        display: none;
+      }
+      .lp-directory-table,
+      .lp-notice-table { border: 1px solid var(--separator); background: var(--surface); box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
+      .lp-directory-head {
+        display: grid;
+        grid-template-columns: minmax(220px, 1.15fr) minmax(120px, 0.58fr) minmax(260px, 1.25fr) minmax(92px, 0.42fr) minmax(250px, 1.1fr) minmax(160px, 0.72fr);
+        gap: 18px;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 18px;
+        border-bottom: 1px solid var(--separator);
+        background: #f0f1f2;
+        color: var(--secondary);
+        font-size: 12px;
+        font-weight: 850;
+        text-align: left;
+      }
+      .lp-directory-head span {
+        display: block;
+      }
+      .lp-directory-head span:first-child {
+        text-align: left;
+      }
+      .lp-directory-head span:nth-child(5) {
+        font-size: 12px;
+      }
+      .lp-directory-head span:nth-child(5)::after {
+        content: none;
+      }
+      .lp-directory-grid { grid-template-columns: minmax(0, 1fr); gap: 0; margin-bottom: 0; }
+      .lp-directory-card {
+        grid-template-columns: minmax(220px, 1.15fr) minmax(120px, 0.58fr) minmax(260px, 1.25fr) minmax(92px, 0.42fr) minmax(250px, 1.1fr) minmax(160px, 0.72fr);
+        gap: 18px;
+        align-items: center;
+        border: 0;
+        border-bottom: 1px solid var(--separator);
+        border-radius: 0;
+        padding: 16px 18px;
+        box-shadow: none;
+      }
+      .lp-directory-card:last-child { border-bottom: 0; }
+      .lp-directory-card-head span { background: #f5f5f5; color: var(--secondary); }
+      .lp-directory-card-head strong { font-size: 16px; }
+      .lp-directory-kind { display: inline; text-align: left; }
+      .lp-directory-focus { color: var(--text); }
+      .lp-directory-focus { display: block; }
+      .lp-directory-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        text-align: left;
+      }
+      .lp-directory-metrics div:not(:first-child) { display: block; }
+      .lp-directory-metrics div { border-top: 0; padding-top: 0; }
+      .lp-directory-metrics dt { display: block; }
+      .lp-directory-card > .lp-page-actions { display: flex; }
+      .lp-directory-chips { display: none; }
+      .lp-notice-head {
+        display: grid;
+        grid-template-columns: minmax(360px, 1.4fr) minmax(320px, 1fr) minmax(160px, 0.42fr);
+        gap: 18px;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 18px;
+        border-bottom: 1px solid var(--separator);
+        background: #f0f1f2;
+        color: var(--secondary);
+        font-size: 12px;
+        font-weight: 850;
+      }
+      .lp-page-list { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      .lp-page-card {
+        grid-template-columns: minmax(360px, 1.4fr) minmax(320px, 1fr) minmax(160px, 0.42fr);
+        gap: 18px;
+        align-items: center;
+        border: 0;
+        border-bottom: 1px solid var(--separator);
+        border-radius: 0;
+        padding: 15px 18px;
+      }
+      .lp-page-card:last-child { border-bottom: 0; }
+      .lp-page-card h2 { font-size: 14px; }
+    }
     @media (max-width: 620px) {
+      .lp-directory-hero { margin: 10px 0 14px; }
+      .lp-directory-kpis { display: none; }
       .lp-profile-nav { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
       .lp-profile-nav a { flex: 0 0 auto; }
       .lp-page-card h2 { overflow-wrap: anywhere; }
@@ -110,24 +262,53 @@
       </nav>
       <section class="section-block" id="lpDirectory" aria-label="출자기관 목록">
         <div class="lp-notice-toolbar">
-          <input type="search" id="lpNoticeSearch" placeholder="LP명, 유형, 자산군, 공고명, GP 검색">
+          <div class="lp-control-head">
+            <label for="lpNoticeSearch">출자기관 검색</label>
+            <span id="lpVisibleCount">18개 표시</span>
+          </div>
+          <div class="lp-control-line">
+            <input type="search" id="lpNoticeSearch" placeholder="LP명, 유형, 자산군, 공고명, GP 검색">
+            <select id="lpSort" aria-label="정렬">
+              <option value="latest">최근 공고일순</option>
+              <option value="amount">공고 규모순</option>
+              <option value="notices">표시 공고 많은 순</option>
+              <option value="name">기관명순</option>
+            </select>
+          </div>
           <div class="lp-filter-row" aria-label="LP 디렉토리 필터">
             <button class="active" type="button" data-filter="all">전체</button>
-            <button type="button" data-filter="public">공적 LP</button>
-            <button type="button" data-filter="mutual_aid">공제회</button>
+            <button type="button" data-filter="공공">공공 LP</button>
+            <button type="button" data-filter="공제">공제회</button>
             <button type="button" data-filter="PEF">PEF</button>
             <button type="button" data-filter="VC">VC</button>
             <button type="button" data-filter="new_notice">신규 공고</button>
             <button type="button" data-filter="final_selection">선정</button>
           </div>
         </div>
-        <div class="lp-directory-grid">
-          <article class="lp-directory-card" data-search="국민연금기금 공적연기금 public 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="public">
+        <div class="lp-directory-table">
+          <div class="lp-directory-head" aria-hidden="true">
+            <span>출자기관명</span>
+            <span>유형</span>
+            <span>주요 자산군</span>
+            <span>최근 공고</span>
+            <span>표시 공고</span>
+            <span>이동</span>
+          </div>
+          <div class="lp-directory-grid">
+          <article class="lp-directory-card" data-search="국민연금기금 공적연기금 public 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라" data-name="국민연금기금" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공적연기금</span>
               <strong>국민연금기금</strong>
             </div>
-            <p>아시아사모투자팀 · PEF · VC · 사모대출 · 부동산 · 인프라</p>
+            <span class="lp-directory-kind">공적연기금</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출 · 부동산 · 인프라</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>8개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-nps.html">프로필 보기</a><a href="https://fund.nps.or.kr/impa/dlnginstslctnpbanclist/getOHEF0017M0.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
@@ -135,230 +316,242 @@
             <span>부동산</span>
             <span>인프라</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>8개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-nps.html">프로필 보기</a><a href="https://fund.nps.or.kr/impa/dlnginstslctnpbanclist/getOHEF0017M0.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="한국벤처투자 모태펀드 public 투자운용본부 VC · PEF · 모태펀드" data-lp="kvic" data-asset="VC · PEF · 모태펀드" data-kind="public">
+          <article class="lp-directory-card" data-search="한국벤처투자 모태펀드 public 투자운용본부 VC · PEF · 모태펀드" data-name="한국벤처투자" data-lp="kvic" data-asset="VC · PEF · 모태펀드" data-kind="모태펀드 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>모태펀드</span>
               <strong>한국벤처투자</strong>
             </div>
-            <p>투자운용본부 · VC · PEF · 모태펀드</p>
+            <span class="lp-directory-kind">모태펀드</span>
+            <p class="lp-directory-focus">VC · PEF · 모태펀드</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>8개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kvic.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>VC</span>
             <span>PEF</span>
             <span>모태펀드</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>8개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kvic.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="한국성장금융 정책성 모태펀드 public 출자사업 담당 PEF · VC · 사모대출 · 정책펀드" data-lp="kgrowth" data-asset="PEF · VC · 사모대출 · 정책펀드" data-kind="public">
+          <article class="lp-directory-card" data-search="한국성장금융 정책성 모태펀드 public 출자사업 담당 PEF · VC · 사모대출 · 정책펀드" data-name="한국성장금융" data-lp="kgrowth" data-asset="PEF · VC · 사모대출 · 정책펀드" data-kind="정책성 모태펀드 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>정책성 모태펀드</span>
               <strong>한국성장금융</strong>
             </div>
-            <p>출자사업 담당 · PEF · VC · 사모대출 · 정책펀드</p>
+            <span class="lp-directory-kind">정책성 모태펀드</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출 · 정책펀드</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>7개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kgrowth.html">프로필 보기</a><a href="https://www.kgrowth.or.kr/notice.asp?str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             <span>정책펀드</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>7개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kgrowth.html">프로필 보기</a><a href="https://www.kgrowth.or.kr/notice.asp?str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="한국산업은행 정책금융기관 public 간접투자/혁신성장펀드 담당 PEF · VC · 정책펀드" data-lp="kdb" data-asset="PEF · VC · 정책펀드" data-kind="public">
+          <article class="lp-directory-card" data-search="한국산업은행 정책금융기관 public 간접투자/혁신성장펀드 담당 PEF · VC · 정책펀드" data-name="한국산업은행" data-lp="kdb" data-asset="PEF · VC · 정책펀드" data-kind="정책금융기관 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>정책금융기관</span>
               <strong>한국산업은행</strong>
             </div>
-            <p>간접투자/혁신성장펀드 담당 · PEF · VC · 정책펀드</p>
+            <span class="lp-directory-kind">정책금융기관</span>
+            <p class="lp-directory-focus">PEF · VC · 정책펀드</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>6개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kdb.html">프로필 보기</a><a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>정책펀드</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>6개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kdb.html">프로필 보기</a><a href="https://www.kdb.co.kr/CHBIPR23N00.act?_mnuId=IHIHIR0087" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="농업정책보험금융원 정책성 모태펀드 public 농식품모태펀드 담당 VC · PEF · 모태펀드" data-lp="kafi" data-asset="VC · PEF · 모태펀드" data-kind="public">
+          <article class="lp-directory-card" data-search="농업정책보험금융원 정책성 모태펀드 public 농식품모태펀드 담당 VC · PEF · 모태펀드" data-name="농업정책보험금융원" data-lp="kafi" data-asset="VC · PEF · 모태펀드" data-kind="정책성 모태펀드 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>정책성 모태펀드</span>
               <strong>농업정책보험금융원</strong>
             </div>
-            <p>농식품모태펀드 담당 · VC · PEF · 모태펀드</p>
+            <span class="lp-directory-kind">정책성 모태펀드</span>
+            <p class="lp-directory-focus">VC · PEF · 모태펀드</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>9개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kafi.html">프로필 보기</a><a href="https://www.apfs.kr/front/board/boardContentsListPage.do?boardId=10026&amp;menuId=5386&amp;selTab=1" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>VC</span>
             <span>PEF</span>
             <span>모태펀드</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>9개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kafi.html">프로필 보기</a><a href="https://www.apfs.kr/front/board/boardContentsListPage.do?boardId=10026&amp;menuId=5386&amp;selTab=1" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="우정사업본부 공공기금 public 예금대체투자과 PEF · VC · 사모대출" data-lp="koreapost" data-asset="PEF · VC · 사모대출" data-kind="public">
+          <article class="lp-directory-card" data-search="우정사업본부 공공기금 public 예금대체투자과 PEF · VC · 사모대출" data-name="우정사업본부" data-lp="koreapost" data-asset="PEF · VC · 사모대출" data-kind="공공기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공공기금</span>
               <strong>우정사업본부</strong>
             </div>
-            <p>예금대체투자과 · PEF · VC · 사모대출</p>
+            <span class="lp-directory-kind">공공기금</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>6개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-koreapost.html">프로필 보기</a><a href="https://www.kpasset.go.kr/menu.es?mid=a10510000000" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>6개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-koreapost.html">프로필 보기</a><a href="https://www.kpasset.go.kr/menu.es?mid=a10510000000" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="대한지방행정공제회 공제회 mutual_aid 대체투자 담당 PEF · VC · 사모대출" data-lp="poba" data-asset="PEF · VC · 사모대출" data-kind="mutual_aid">
+          <article class="lp-directory-card" data-search="대한지방행정공제회 공제회 mutual_aid 대체투자 담당 PEF · VC · 사모대출" data-name="대한지방행정공제회" data-lp="poba" data-asset="PEF · VC · 사모대출" data-kind="공제회 mutual_aid" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제회</span>
               <strong>대한지방행정공제회</strong>
             </div>
-            <p>대체투자 담당 · PEF · VC · 사모대출</p>
+            <span class="lp-directory-kind">공제회</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>9개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-poba.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>9개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-poba.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="한국교직원공제회 공제회 mutual_aid 대체투자 담당 PEF · VC · 사모대출 · 부동산" data-lp="ktcu" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="mutual_aid">
+          <article class="lp-directory-card" data-search="한국교직원공제회 공제회 mutual_aid 대체투자 담당 PEF · VC · 사모대출 · 부동산" data-name="한국교직원공제회" data-lp="ktcu" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="공제회 mutual_aid" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제회</span>
               <strong>한국교직원공제회</strong>
             </div>
-            <p>대체투자 담당 · PEF · VC · 사모대출 · 부동산</p>
+            <span class="lp-directory-kind">공제회</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출 · 부동산</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>27개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-ktcu.html">프로필 보기</a><a href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             <span>부동산</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>27개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-ktcu.html">프로필 보기</a><a href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="경찰공제회 공제회 mutual_aid 대체투자본부/기업투자팀 PEF · VC · 사모대출" data-lp="pmaa" data-asset="PEF · VC · 사모대출" data-kind="mutual_aid">
+          <article class="lp-directory-card" data-search="경찰공제회 공제회 mutual_aid 대체투자본부/기업투자팀 PEF · VC · 사모대출" data-name="경찰공제회" data-lp="pmaa" data-asset="PEF · VC · 사모대출" data-kind="공제회 mutual_aid" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제회</span>
               <strong>경찰공제회</strong>
             </div>
-            <p>대체투자본부/기업투자팀 · PEF · VC · 사모대출</p>
+            <span class="lp-directory-kind">공제회</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>14개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-pmaa.html">프로필 보기</a><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>14개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-pmaa.html">프로필 보기</a><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="신협중앙회 상호금융 private 자금운용/대체투자 담당 PEF · VC" data-lp="cu" data-asset="PEF · VC" data-kind="private">
+          <article class="lp-directory-card" data-search="신협중앙회 상호금융 private 자금운용/대체투자 담당 PEF · VC" data-name="신협중앙회" data-lp="cu" data-asset="PEF · VC" data-kind="상호금융 private" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>상호금융</span>
               <strong>신협중앙회</strong>
             </div>
-            <p>자금운용/대체투자 담당 · PEF · VC</p>
+            <span class="lp-directory-kind">상호금융</span>
+            <p class="lp-directory-focus">PEF · VC</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>15개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-cu.html">프로필 보기</a><a href="https://cu.co.kr/cu/na/ntt/selectNttList.do?bbsId=1020&amp;mi=100007" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>15개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-cu.html">프로필 보기</a><a href="https://cu.co.kr/cu/na/ntt/selectNttList.do?bbsId=1020&amp;mi=100007" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="새마을금고중앙회 상호금융 private 신용공제대표이사/대체운용본부 PEF · VC · 사모대출 · 부동산" data-lp="kfcc" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="private">
+          <article class="lp-directory-card" data-search="새마을금고중앙회 상호금융 private 신용공제대표이사/대체운용본부 PEF · VC · 사모대출 · 부동산" data-name="새마을금고중앙회" data-lp="kfcc" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="상호금융 private" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>상호금융</span>
               <strong>새마을금고중앙회</strong>
             </div>
-            <p>신용공제대표이사/대체운용본부 · PEF · VC · 사모대출 · 부동산</p>
+            <span class="lp-directory-kind">상호금융</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출 · 부동산</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>13개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kfcc.html">프로필 보기</a><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             <span>부동산</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>13개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kfcc.html">프로필 보기</a><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="사립학교교직원연금공단 공적연기금 public 대체투자 담당 PEF · VC" data-lp="tp" data-asset="PEF · VC" data-kind="public">
+          <article class="lp-directory-card" data-search="사립학교교직원연금공단 공적연기금 public 대체투자 담당 PEF · VC" data-name="사립학교교직원연금공단" data-lp="tp" data-asset="PEF · VC" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공적연기금</span>
               <strong>사립학교교직원연금공단</strong>
             </div>
-            <p>대체투자 담당 · PEF · VC</p>
+            <span class="lp-directory-kind">공적연기금</span>
+            <p class="lp-directory-focus">PEF · VC</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>7개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-tp.html">프로필 보기</a><a href="https://www.tp.or.kr/tp-kr/bbs/i-151/list.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>7개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-tp.html">프로필 보기</a><a href="https://www.tp.or.kr/tp-kr/bbs/i-151/list.do" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="한국수출입은행 정책금융기관 public 공급망안정화기금/기업금융 담당 정책펀드 · PEF · VC · 인프라 · 공급망" data-lp="kexim" data-asset="정책펀드 · PEF · VC · 인프라 · 공급망" data-kind="public">
+          <article class="lp-directory-card" data-search="한국수출입은행 정책금융기관 public 공급망안정화기금/기업금융 담당 정책펀드 · PEF · VC · 인프라 · 공급망" data-name="한국수출입은행" data-lp="kexim" data-asset="정책펀드 · PEF · VC · 인프라 · 공급망" data-kind="정책금융기관 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>정책금융기관</span>
               <strong>한국수출입은행</strong>
             </div>
-            <p>공급망안정화기금/기업금융 담당 · 정책펀드 · PEF · VC · 인프라 · 공급망</p>
+            <span class="lp-directory-kind">정책금융기관</span>
+            <p class="lp-directory-focus">정책펀드 · PEF · VC · 인프라 · 공급망</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>11개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kexim.html">프로필 보기</a><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>정책펀드</span>
             <span>PEF</span>
@@ -366,115 +559,121 @@
             <span>인프라</span>
             <span>공급망</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>11개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kexim.html">프로필 보기</a><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="공무원연금공단 공적연기금 public 대체투자부 PEF · VC" data-lp="geps" data-asset="PEF · VC" data-kind="public">
+          <article class="lp-directory-card" data-search="공무원연금공단 공적연기금 public 대체투자부 PEF · VC" data-name="공무원연금공단" data-lp="geps" data-asset="PEF · VC" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공적연기금</span>
               <strong>공무원연금공단</strong>
             </div>
-            <p>대체투자부 · PEF · VC</p>
+            <span class="lp-directory-kind">공적연기금</span>
+            <p class="lp-directory-focus">PEF · VC</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>0개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>0개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="군인공제회 공제회 mutual_aid 투자 담당 PEF · VC · 사모대출" data-lp="mmaa" data-asset="PEF · VC · 사모대출" data-kind="mutual_aid">
+          <article class="lp-directory-card" data-search="군인공제회 공제회 mutual_aid 투자 담당 PEF · VC · 사모대출" data-name="군인공제회" data-lp="mmaa" data-asset="PEF · VC · 사모대출" data-kind="공제회 mutual_aid" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제회</span>
               <strong>군인공제회</strong>
             </div>
-            <p>투자 담당 · PEF · VC · 사모대출</p>
+            <span class="lp-directory-kind">공제회</span>
+            <p class="lp-directory-focus">PEF · VC · 사모대출</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>0개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             <span>사모대출</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>0개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="건설근로자공제회 공제회 mutual_aid 자산운용 담당 PEF · VC" data-lp="cwma" data-asset="PEF · VC" data-kind="mutual_aid">
+          <article class="lp-directory-card" data-search="건설근로자공제회 공제회 mutual_aid 자산운용 담당 PEF · VC" data-name="건설근로자공제회" data-lp="cwma" data-asset="PEF · VC" data-kind="공제회 mutual_aid" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제회</span>
               <strong>건설근로자공제회</strong>
             </div>
-            <p>자산운용 담당 · PEF · VC</p>
+            <span class="lp-directory-kind">공제회</span>
+            <p class="lp-directory-focus">PEF · VC</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>0개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>PEF</span>
             <span>VC</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>0개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="중소기업중앙회 공제/경제단체 private 공제기금/투자 담당 VC · PEF" data-lp="kbiz" data-asset="VC · PEF" data-kind="private">
+          <article class="lp-directory-card" data-search="중소기업중앙회 공제/경제단체 private 공제기금/투자 담당 VC · PEF" data-name="중소기업중앙회" data-lp="kbiz" data-asset="VC · PEF" data-kind="공제/경제단체 private" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>공제/경제단체</span>
               <strong>중소기업중앙회</strong>
             </div>
-            <p>공제기금/투자 담당 · VC · PEF</p>
+            <span class="lp-directory-kind">공제/경제단체</span>
+            <p class="lp-directory-focus">VC · PEF</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>5개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-kbiz.html">프로필 보기</a><a href="https://www.kbiz.or.kr/ko/contents/bbs/list.do?mnSeq=211" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>VC</span>
             <span>PEF</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>5개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-kbiz.html">프로필 보기</a><a href="https://www.kbiz.or.kr/ko/contents/bbs/list.do?mnSeq=211" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
-          <article class="lp-directory-card" data-search="IBK기업은행 정책금융기관 public 모험자본/혁신금융 담당 VC · PEF · 정책펀드" data-lp="ibk" data-asset="VC · PEF · 정책펀드" data-kind="public">
+          <article class="lp-directory-card" data-search="IBK기업은행 정책금융기관 public 모험자본/혁신금융 담당 VC · PEF · 정책펀드" data-name="IBK기업은행" data-lp="ibk" data-asset="VC · PEF · 정책펀드" data-kind="정책금융기관 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <div class="lp-directory-card-head">
               <span>정책금융기관</span>
               <strong>IBK기업은행</strong>
             </div>
-            <p>모험자본/혁신금융 담당 · VC · PEF · 정책펀드</p>
+            <span class="lp-directory-kind">정책금융기관</span>
+            <p class="lp-directory-focus">VC · PEF · 정책펀드</p>
+            <span class="lp-directory-latest">-</span>
+            <dl class="lp-directory-metrics">
+              <div><dt>표시 공고</dt><dd>0건</dd></div>
+              <div><dt>공고 규모</dt><dd>-</dd></div>
+              <div><dt>자료 항목</dt><dd>5개</dd></div>
+            </dl>
+            <div class="lp-page-actions"><a href="lp-ibk.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
             <div class="lp-directory-chips">
             <span>VC</span>
             <span>PEF</span>
             <span>정책펀드</span>
             </div>
-            <dl class="lp-directory-metrics">
-              <div><dt>표시 공고</dt><dd>0건</dd></div>
-              <div><dt>공고 규모</dt><dd>-</dd></div>
-              <div><dt>최신</dt><dd>-</dd></div>
-              <div><dt>자료 항목</dt><dd>5개</dd></div>
-            </dl>
-            <div class="lp-page-actions"><a href="lp-ibk.html">프로필 보기</a><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/list?baCommSelec=false&amp;baNotice=false&amp;baOpenDay=false&amp;baUse=true&amp;bcId=invtnotice&amp;pageSize=20" target="_blank" rel="noreferrer">공식 공고 채널</a></div>
           </article>
+          </div>
         </div>
       </section>
       <section class="section-block" id="lpNotices" aria-label="LP 공식 공고">
         <h2 class="section-title">최근 공식 공고</h2>
-        <div class="lp-page-list">
+        <div class="lp-notice-table">
+          <div class="lp-notice-head" aria-hidden="true">
+            <span>공고명</span>
+            <span>기관/조건</span>
+            <span>이동</span>
+          </div>
+          <div class="lp-page-list">
         <div class="empty-state visible">
           <strong>표시할 공식 공고가 없습니다</strong>
           <span>공식 공고가 확인되면 여기에 표시됩니다.</span>
         </div>
+          </div>
         </div>
       </section>
     </main>
@@ -505,20 +704,46 @@
   <script>
     (() => {
       const input = document.getElementById("lpNoticeSearch");
+      const sort = document.getElementById("lpSort");
+      const directory = document.querySelector(".lp-directory-grid");
+      const visible = document.getElementById("lpVisibleCount");
       const buttons = Array.from(document.querySelectorAll("[data-filter]"));
-      const cards = Array.from(document.querySelectorAll(".lp-directory-card, .lp-page-card"));
+      const directoryCards = Array.from(document.querySelectorAll(".lp-directory-card"));
+      const noticeCards = Array.from(document.querySelectorAll(".lp-page-card"));
+      const cards = [...directoryCards, ...noticeCards];
       let active = "all";
+      const num = (card, key) => {
+        const value = Number(card.dataset[key]);
+        return Number.isFinite(value) ? value : 0;
+      };
+      const applySort = () => {
+        const mode = sort?.value || "latest";
+        const sorted = [...directoryCards].sort((a, b) => {
+          if (mode === "amount") return num(b, "amount") - num(a, "amount");
+          if (mode === "notices") return num(b, "notices") - num(a, "notices");
+          if (mode === "name") return (a.dataset.name || "").localeCompare(b.dataset.name || "", "ko");
+          return (b.dataset.latest || "").localeCompare(a.dataset.latest || "");
+        });
+        sorted.forEach((card) => directory?.appendChild(card));
+      };
       const apply = () => {
         const query = (input?.value || "").trim().toLowerCase();
+        let count = 0;
         cards.forEach((card) => {
           const haystack = (card.dataset.search || card.innerText).toLowerCase();
           const fields = [card.dataset.asset, card.dataset.event, card.dataset.lp, card.dataset.kind].filter(Boolean);
           const filterHit = active === "all" || fields.includes(active) || fields.some((field) => field.includes(active));
           const queryHit = !query || haystack.includes(query);
           card.style.display = filterHit && queryHit ? "" : "none";
+          if (card.classList.contains("lp-directory-card") && filterHit && queryHit) count += 1;
         });
+        if (visible) visible.textContent = `${count.toLocaleString("ko-KR")}개 표시`;
       };
       input?.addEventListener("input", apply);
+      sort?.addEventListener("change", () => {
+        applySort();
+        apply();
+      });
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
           active = button.dataset.filter || "all";
@@ -526,6 +751,8 @@
           apply();
         });
       });
+      applySort();
+      apply();
     })();
   </script>
 </body>
