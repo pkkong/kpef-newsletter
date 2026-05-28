@@ -11,10 +11,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=8e1009e4">
+  <link rel="stylesheet" href="assets/service.css?v=191bd861">
   <style>
     body { background: #f7f7f8; }
-    .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 calc(100px + env(safe-area-inset-bottom)); }
+    .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 calc(112px + env(safe-area-inset-bottom)); }
     .ktcu-shell .kpef-product-header { margin: -16px calc((100vw - min(1200px, calc(100vw - 28px))) / -2) 0; padding-left: max(16px, calc((100vw - 1200px) / 2 + 16px)); padding-right: max(16px, calc((100vw - 1200px) / 2 + 16px)); }
     .ktcu-shell .kpef-service-tabs { margin: 0 calc((100vw - min(1200px, calc(100vw - 28px))) / -2) 14px; padding-left: max(0px, calc((100vw - 1200px) / 2)); padding-right: max(0px, calc((100vw - 1200px) / 2)); }
     .ktcu-top { display: grid; gap: 14px; padding: 8px 0 12px; }
@@ -23,8 +23,21 @@
     .ktcu-profile-nav a { min-height: 32px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 999px; padding: 6px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
     .ktcu-hero { display: grid; gap: 18px; padding: 8px 0 8px; }
     .ktcu-title { display: grid; gap: 10px; }
-    .ktcu-title span { width: fit-content; border-left: 3px solid var(--accent); padding-left: 8px; color: var(--text); font-size: 12px; font-weight: 800; }
-    .ktcu-title h1 { margin: 0; color: var(--text); font-size: clamp(30px, 3.2vw, 44px); line-height: 1.08; letter-spacing: 0; }
+    .ktcu-title-head { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 14px; align-items: center; }
+    .ktcu-logo { position: relative; display: inline-grid; width: 54px; height: 54px; place-items: center; overflow: hidden; border: 1px solid var(--separator); border-radius: 50%; background: #fff; color: var(--text); font-size: 12px; font-weight: 900; box-shadow: inset 0 0 0 4px #fff; }
+    .ktcu-logo::after { position: absolute; inset: 9px; border: 1px solid currentColor; border-radius: 50%; opacity: 0.16; content: ""; }
+    .ktcu-logo > span { position: relative; z-index: 1; }
+    .ktcu-logo img { position: relative; z-index: 2; max-width: 38px; max-height: 38px; object-fit: contain; }
+    .ktcu-logo.has-logo > span { display: none; }
+    .ktcu-logo.fallback-only > span { display: inline; }
+    .ktcu-logo[data-tone="1"] { border-color: #d7e0ef; background: #f6f8fc; color: #1f3a5f; }
+    .ktcu-logo[data-tone="2"] { border-color: #d6e6df; background: #f5faf7; color: #1f5a45; }
+    .ktcu-logo[data-tone="3"] { border-color: #e8ddca; background: #fbf8f2; color: #725a32; }
+    .ktcu-logo[data-tone="4"] { border-color: #e1d9eb; background: #f8f5fb; color: #4b3b63; }
+    .ktcu-logo[data-tone="5"] { border-color: #ead8d8; background: #fbf5f5; color: #704044; }
+    .ktcu-logo[data-tone="6"] { border-color: #d9e3e7; background: #f5f9fa; color: #2d5361; }
+    .ktcu-title-head div > span { width: fit-content; border-left: 3px solid var(--accent); padding-left: 8px; color: var(--text); font-size: 12px; font-weight: 800; }
+    .ktcu-title h1 { margin: 0; color: var(--text); font-size: clamp(28px, 3vw, 38px); font-weight: 850; line-height: 1.12; letter-spacing: 0; }
     .ktcu-title p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 15px; line-height: 1.68; }
     .ktcu-quick { display: grid; gap: 8px; }
     .ktcu-quick-item { border-left: 3px solid var(--separator); padding-left: 10px; color: var(--text); font-size: 13px; line-height: 1.5; }
@@ -126,7 +139,7 @@
     .ktcu-gp-tags span { border: 1px solid var(--separator); border-radius: 999px; padding: 6px 9px; background: #fbfcfd; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-footer { margin-top: 14px; color: var(--secondary); font-size: 11.5px; line-height: 1.45; }
     @media (min-width: 760px) {
-      .ktcu-shell { padding-top: 22px; }
+      .ktcu-shell { padding-top: 22px; padding-bottom: 36px; }
       .ktcu-shell .kpef-product-header { margin-top: -22px; }
       .ktcu-hero { grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr); align-items: end; }
       .ktcu-intel-grid { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); }
@@ -172,8 +185,13 @@
     <header class="ktcu-top">
       <section class="ktcu-hero" aria-label="한국벤처투자 요약">
         <div class="ktcu-title">
-          <span>출자기관 프로필</span>
-          <h1>한국벤처투자</h1>
+          <div class="ktcu-title-head">
+            <span class="ktcu-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kvic.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>벤처</span></span>
+            <div>
+              <span>출자기관 프로필</span>
+              <h1>한국벤처투자</h1>
+            </div>
+          </div>
           <p>모태펀드의 일반현황, 투자현황, 담당 조직, 출자공고 흐름을 한 화면에서 봅니다.</p>
           <div class="ktcu-quick">
             <div class="ktcu-quick-item"><strong>핵심 창구</strong>투자운용본부</div>
@@ -474,8 +492,8 @@
 
     <p class="ktcu-footer">기준일 2026-05-28 · 최신 공고일 - · 실무자명과 최종 선정 GP 히스토리는 확인되는 항목만 표시합니다.</p>
   </main>
-  <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
-    <a href="index.html">
+    <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
+    <a class="" href="index.html">
       <span aria-hidden="true" class="nav-dot nav-icon-brief"></span>
       <strong>브리프</strong>
     </a>
@@ -483,15 +501,15 @@
       <span aria-hidden="true" class="nav-dot nav-icon-lp"></span>
       <strong>LP</strong>
     </a>
-    <a href="gps.html">
+    <a class="" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
     </a>
-    <a href="pef-wiki.html">
+    <a class="" href="pef-wiki.html">
       <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
       <strong>Wiki</strong>
     </a>
-    <a href="index.html#saved">
+    <a class="" href="index.html#saved">
       <span aria-hidden="true" class="nav-dot nav-icon-saved"></span>
       <strong>저장</strong>
     </a>

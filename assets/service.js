@@ -27,7 +27,7 @@
   const lpDetailBody = document.getElementById("lpDetailBody");
   const lpDetailClose = document.getElementById("lpDetailClose");
   const skeleton = document.querySelector(".skeleton-list");
-  const navItems = [...document.querySelectorAll(".bottom-nav [data-view]")];
+  const navItems = [...document.querySelectorAll("[data-view]")];
   const showLpMonitor = lpMonitor.length > 0 && Boolean(lpMonitorPanel);
 
   const loadSaved = () => {
@@ -651,6 +651,10 @@
     if (view === "saved") renderSaved();
   };
 
+  const setViewFromHash = () => {
+    setView(window.location.hash === "#saved" ? "saved" : "today");
+  };
+
   document.addEventListener("click", (event) => {
     const dateButton = event.target.closest(".date-pill[data-date]");
     if (dateButton) {
@@ -742,6 +746,7 @@
     window.clearTimeout(tagResizeTimer);
     tagResizeTimer = window.setTimeout(updateTagGroups, 90);
   });
+  window.addEventListener("hashchange", setViewFromHash);
   render();
-  setView(currentView);
+  setViewFromHash();
 })(); 
