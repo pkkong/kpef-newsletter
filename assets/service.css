@@ -33,8 +33,10 @@ button, input { font: inherit; }
   min-height: 58px;
   margin: calc(-1 * max(14px, env(safe-area-inset-top))) -14px 0;
   padding: calc(max(14px, env(safe-area-inset-top)) + 8px) 16px 12px;
-  background: #1d2130;
-  color: #fff;
+  border-bottom: 1px solid var(--separator);
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text);
+  backdrop-filter: blur(18px);
 }
 .kpef-product-brand {
   display: inline-flex;
@@ -59,10 +61,10 @@ button, input { font: inherit; }
   height: 28px;
   flex: 0 0 28px;
   place-items: center;
-  border: 1px solid rgba(255,255,255,0.24);
+  border: 1px solid var(--separator);
   border-radius: 8px;
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+  background: var(--surface);
+  color: var(--text);
   font-size: 13px;
   font-weight: 900;
 }
@@ -81,7 +83,7 @@ button, input { font: inherit; }
   border: 0;
   border-radius: 8px;
   background: transparent;
-  color: #fff;
+  color: var(--text);
   cursor: pointer;
 }
 .kpef-icon-search::before {
@@ -1048,15 +1050,15 @@ button, input { font: inherit; }
   }
 }
 @media (min-width: 760px) {
-  body { background: #ececf1; }
+  body { background: var(--bg); }
   .app-shell {
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
     min-height: calc(100vh - 36px);
-    border-radius: 30px;
+    border-radius: 0;
     padding-bottom: calc(106px + env(safe-area-inset-bottom));
-    box-shadow: 0 24px 80px rgba(0,0,0,0.08);
-    overflow: hidden;
+    box-shadow: none;
+    overflow: visible;
   }
   .kpef-service-tabs {
     display: none;
@@ -1151,6 +1153,10 @@ button, input { font: inherit; }
     min-height: 0;
     flex: initial;
     scroll-snap-align: none;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    background: transparent;
+    padding: 12px 0;
   }
   .newsletter-only .content-area {
     display: block;

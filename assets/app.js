@@ -168,7 +168,7 @@ function sourceLabel(value) {
     "OFFICIAL_SOURCE_VERIFIED": "공식 출처",
     "IDENTIFIER_VERIFIED": "식별자 확인",
     "SUPPORTING_SOURCE_ONLY": "보조 출처",
-    "FSS_NAME_ONLY": "FSS명",
+    "FSS_NAME_ONLY": "신고명",
     verified: "검증",
     source_derived: "출처 기반",
     review_needed: "검토 필요",
@@ -604,7 +604,7 @@ function renderProfile() {
 
   byId("profileName").innerHTML = `<span class="entity-heading">${entityMark(selected, profile?.homepage_url)}<span>${escapeHtml(selected)}</span></span>`;
   byId("profileSubtitle").textContent = profile
-    ? `${categoryLabel(profile.company_category)} · 관측 ${profile.first_seen_period || "-"} ~ ${profile.last_seen_period || "-"}`
+    ? `${categoryLabel(profile.company_category)} · 기준분기 ${profile.first_seen_period || "-"} ~ ${profile.last_seen_period || "-"}`
     : "금감원 공시 기준 GP";
   byId("profileRank").textContent = fmtRank(row?.rank);
   byId("profileAum").textContent = row ? fmtEokFromTrn(row.commitmentTrn ?? gpCommitmentTrn(row)) : "-";
@@ -808,7 +808,7 @@ function renderProfileFunds(precomputedRows) {
       </div>
       <div class="mobile-card-note">${escapeHtml(row.raw_gp_names || row.canonical_gp_names || "-")}</div>
     </article>
-  `).join("") || `<div class="empty">운용중 펀드가 없습니다.</div>`;
+  `).join("") || `<div class="empty">운용 중 펀드가 없습니다.</div>`;
   byId("profileFundBody").innerHTML = rows.map((row) => `
     <tr>
       <td>${escapeHtml(row.fund_name)}</td>
@@ -817,7 +817,7 @@ function renderProfileFunds(precomputedRows) {
       <td>${escapeHtml(row.raw_gp_names || row.canonical_gp_names || "-")}</td>
       <td>${escapeHtml(row.firstSeen || "-")} ~ ${escapeHtml(row.lastSeen || "-")}</td>
     </tr>
-  `).join("") || `<tr><td colspan="5"><div class="empty">운용중 펀드가 없습니다.</div></td></tr>`;
+  `).join("") || `<tr><td colspan="5"><div class="empty">운용 중 펀드가 없습니다.</div></td></tr>`;
 }
 
 function renderFunds() {
@@ -911,6 +911,12 @@ function ownershipLabel(value) {
 function semicolonLabel(value) {
   const values = splitNames(value);
   return values.length ? values.join(" · ") : "-";
+}
+
+function publicFactText(value) {
+  return String(value || "-")
+    .replaceAll("공개 신호 관측", "공개자료 확인")
+    .replaceAll("관측", "확인");
 }
 
 function lpFactSectionLabel(value) {
@@ -1027,7 +1033,7 @@ function renderLp() {
           <div>
             <dt>${escapeHtml(row.label || "-")}</dt>
             <dd>
-              <span>${escapeHtml(row.value || "-")}</span>
+              <span>${escapeHtml(publicFactText(row.value))}</span>
               ${row.source_url ? `<a href="${escapeAttr(row.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(row.source_name || "출처")}</a>` : ""}
             </dd>
           </div>

@@ -56,8 +56,8 @@
         <h1>국내 기관전용 PEF 시장</h1>
       </div>
       <section class="metric-grid" aria-label="시장 지표">
-        <article><span>운용중 약정액</span><strong id="metricAum">-</strong><em>FSS 출자약정액 기준</em></article>
-        <article><span>운용중 PEF</span><strong id="metricFunds">-</strong><em>선택 시점 기준</em></article>
+        <article><span>운용 중 약정액</span><strong id="metricAum">-</strong><em>금감원 신고 약정액</em></article>
+        <article><span>운용 중 PEF</span><strong id="metricFunds">-</strong><em>기준분기 현재</em></article>
         <article><span>활동 GP</span><strong id="metricGps">-</strong><em>대표 GP 기준</em></article>
         <article><span>신규 결성</span><strong id="metricNewFormation">-</strong><em id="metricNewFormationNote">-</em></article>
         <article><span>상위 10 집중도</span><strong id="metricTop10">-</strong><em>선택 시점 비중</em></article>
@@ -121,7 +121,7 @@
         <div class="panel-head">
           <div>
             <h2>약정액 추이</h2>
-            <p>분기별 FSS 출자약정액 기준입니다.</p>
+            <p>분기별 금감원 신고 약정액 기준입니다.</p>
           </div>
         </div>
         <div class="chart" id="profileChart"></div>
@@ -151,7 +151,7 @@
       <section class="panel">
         <div class="panel-head">
           <div>
-            <h2>운용중 펀드</h2>
+            <h2>운용 중 펀드</h2>
             <p id="profileFundNote">선택 GP 기준입니다.</p>
           </div>
           <div class="table-tools single">
@@ -166,8 +166,8 @@
                 <th data-profile-fund-sort="name">펀드</th>
                 <th data-profile-fund-sort="amount">약정액</th>
                 <th data-profile-fund-sort="established">설립일</th>
-                <th>GP 원문</th>
-                <th data-profile-fund-sort="observed">관측</th>
+                <th>신고 GP명</th>
+                <th data-profile-fund-sort="observed">기준분기</th>
               </tr>
             </thead>
             <tbody id="profileFundBody"></tbody>
@@ -179,13 +179,13 @@
     <section class="view-panel" data-view-panel="funds">
       <div class="page-head compact">
         <p>펀드</p>
-        <h1>운용중 펀드 목록</h1>
+        <h1>운용 중 펀드 목록</h1>
       </div>
       <section class="panel">
         <div class="panel-head">
           <div>
             <h2>펀드 목록</h2>
-            <p>선택 시점 기준 운용중 PEF입니다.</p>
+            <p>기준분기 현재 운용 중인 PEF입니다.</p>
           </div>
           <div class="table-tools">
             <input id="fundSearch" placeholder="펀드 또는 GP 검색">
@@ -206,7 +206,7 @@
                 <th data-fund-sort="gp">GP</th>
                 <th data-fund-sort="amount">약정액</th>
                 <th data-fund-sort="established">설립일</th>
-                <th data-fund-sort="observed">관측</th>
+                <th data-fund-sort="observed">기준분기</th>
               </tr>
             </thead>
             <tbody id="fundBody"></tbody>
@@ -330,11 +330,11 @@
   </main>
 
   <nav class="bottom-nav" aria-label="하단 메뉴">
-    <a href="index.html">브리프</a>
-    <button type="button" data-view="lp">LP</button>
-    <button type="button" data-view="profile">GP</button>
-    <a href="pef-wiki.html">Wiki</a>
-    <a href="index.html#saved">저장</a>
+    <a href="index.html"><span class="db-nav-icon db-nav-brief" aria-hidden="true"></span><strong>브리프</strong></a>
+    <button type="button" data-view="lp"><span class="db-nav-icon db-nav-lp" aria-hidden="true"></span><strong>LP</strong></button>
+    <button type="button" data-view="profile"><span class="db-nav-icon db-nav-gp" aria-hidden="true"></span><strong>GP</strong></button>
+    <a href="pef-wiki.html"><span class="db-nav-icon db-nav-wiki" aria-hidden="true"></span><strong>Wiki</strong></a>
+    <a href="index.html#saved"><span class="db-nav-icon db-nav-saved" aria-hidden="true"></span><strong>저장</strong></a>
   </nav>
 
   <script src="assets/app.js"></script>

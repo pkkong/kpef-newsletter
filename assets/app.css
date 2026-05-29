@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: #f5f5f7;
   color: var(--ink);
   font-family: var(--font-main);
   font-size: 15px;
@@ -45,9 +45,9 @@ button {
 }
 
 .site-shell {
-  width: min(100% - 20px, 1180px);
+  width: min(100%, 1180px);
   margin: 0 auto;
-  padding: 8px 0 76px;
+  padding: 0 10px 76px;
 }
 
 .site-header {
@@ -56,11 +56,13 @@ button {
   z-index: 20;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 8px 12px;
+  gap: 2px 12px;
   align-items: center;
-  padding: 9px 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  margin: 0 -10px;
+  padding: max(10px, env(safe-area-inset-top)) 14px 10px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
 }
@@ -79,38 +81,50 @@ button {
 
 .logo span {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   place-items: center;
-  border: 1px solid var(--ink);
-  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--fill);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0;
 }
 
 .logo strong {
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 1.25;
-  font-weight: 750;
+  font-weight: 850;
   letter-spacing: 0;
 }
 
 .data-pill {
-  grid-column: 1 / -1;
+  grid-column: 2;
+  min-width: 0;
+  justify-self: end;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11.5px;
   line-height: 1.35;
   font-weight: 650;
   font-variant-numeric: tabular-nums;
+  text-align: right;
 }
 
 .control-bar {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-  margin: 10px 0;
-  padding: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin: 10px 0 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.control-bar > div {
+  min-width: 0;
+  padding: 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -118,10 +132,10 @@ button {
 
 .view-tabs {
   display: flex;
-  gap: 4px;
-  margin: 0 0 10px;
+  gap: 3px;
+  margin: 0 0 12px;
   overflow-x: auto;
-  padding: 4px;
+  padding: 3px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -134,12 +148,13 @@ button {
 
 .view-tabs button {
   flex: 1 0 auto;
-  min-height: 36px;
+  min-height: 34px;
   border-radius: 6px;
   background: transparent;
   color: var(--muted);
-  padding: 0 12px;
-  font-size: 13px;
+  padding: 0 10px;
+  font-size: 12.5px;
+  font-weight: 800;
 }
 
 .view-tabs button.active {
@@ -153,9 +168,9 @@ button {
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 11px;
   line-height: 1.35;
   font-weight: 700;
 }
@@ -164,14 +179,14 @@ input,
 select {
   width: 100%;
   min-width: 0;
-  height: 42px;
-  border: 1px solid var(--line-strong);
-  border-radius: 8px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
   background: #fff;
   color: var(--ink);
   outline: none;
-  padding: 0 11px;
-  font-size: 14.5px;
+  padding: 0 10px;
+  font-size: 14px;
   line-height: 1.35;
 }
 
@@ -181,9 +196,9 @@ select:focus {
 }
 
 button {
-  min-height: 42px;
+  min-height: 38px;
   border: 0;
-  border-radius: 8px;
+  border-radius: 7px;
   background: var(--ink);
   color: #fff;
   font-weight: 750;
@@ -193,8 +208,8 @@ button {
 .global-search > div,
 .compare-add {
   display: grid;
-  grid-template-columns: 1fr 72px;
-  gap: 8px;
+  grid-template-columns: 1fr 64px;
+  gap: 7px;
 }
 
 .view-panel {
@@ -217,11 +232,11 @@ button {
 }
 
 .page-head {
-  padding: 12px 2px 8px;
+  padding: 8px 2px 8px;
 }
 
 .page-head.compact {
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .page-head p,
@@ -243,9 +258,9 @@ p {
 
 h1 {
   margin-top: 4px;
-  font-size: 32px;
-  line-height: 1.12;
-  font-weight: 750;
+  font-size: 29px;
+  line-height: 1.13;
+  font-weight: 850;
   letter-spacing: 0;
 }
 
@@ -272,8 +287,8 @@ h2 {
 }
 
 .metric-grid article {
-  min-height: 94px;
-  padding: 12px;
+  min-height: 86px;
+  padding: 11px;
 }
 
 .metric-grid article:first-child {
@@ -292,8 +307,8 @@ h2 {
 .metric-grid strong,
 .profile-kpis strong {
   display: block;
-  margin-top: 8px;
-  font-size: 27px;
+  margin-top: 6px;
+  font-size: 25px;
   line-height: 1.05;
   font-weight: 750;
   letter-spacing: 0;
@@ -302,7 +317,7 @@ h2 {
 
 .metric-grid em {
   display: block;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .panel {
@@ -711,6 +726,7 @@ a:hover {
 
 .lp-metrics {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  order: 2;
 }
 
 .lp-card-grid {
@@ -727,11 +743,11 @@ a:hover {
 }
 
 .lp-profile-panel {
-  order: 2;
+  order: 3;
 }
 
 .lp-notice-panel {
-  order: 3;
+  order: 4;
 }
 
 .lp-institution-panel {
@@ -867,15 +883,15 @@ a:hover {
 
 .lp-card {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 10px;
+  grid-template-columns: minmax(0, 1fr) 46px 46px 76px;
+  gap: 4px 8px;
   width: 100%;
   min-height: 0;
   border: 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
   background: #fff;
-  padding: 11px 12px;
+  padding: 10px 11px;
   color: inherit;
   cursor: pointer;
   text-align: left;
@@ -892,12 +908,23 @@ a:hover {
 
 .lp-card-main,
 .lp-card-focus {
-  grid-column: 1 / -1;
   min-width: 0;
 }
 
 .lp-card-main {
+  grid-column: 1 / -1;
   align-items: center;
+}
+
+.lp-card .entity-mark {
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+  font-size: 9px;
+}
+
+.lp-card-focus {
+  grid-column: 1;
 }
 
 .lp-card-main strong,
@@ -906,8 +933,8 @@ a:hover {
 .lp-card-date b {
   display: block;
   color: var(--ink);
-  font-size: 14px;
-  line-height: 1.36;
+  font-size: 13.5px;
+  line-height: 1.32;
   font-weight: 750;
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
@@ -920,8 +947,8 @@ a:hover {
   display: block;
   margin-top: 2px;
   color: var(--muted);
-  font-size: 11.5px;
-  line-height: 1.35;
+  font-size: 10.5px;
+  line-height: 1.25;
   font-weight: 650;
   overflow-wrap: anywhere;
 }
@@ -929,8 +956,10 @@ a:hover {
 .lp-card-stat,
 .lp-card-date {
   min-width: 0;
-  padding-top: 8px;
-  border-top: 1px solid var(--line);
+  padding-top: 0;
+  border-top: 0;
+  justify-items: end;
+  text-align: right;
 }
 
 .chart {
@@ -1163,6 +1192,8 @@ a:hover {
   min-height: 38px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 3px;
   border-radius: 0;
   background: transparent;
   color: var(--muted);
@@ -1170,6 +1201,50 @@ a:hover {
   line-height: 1.2;
   font-weight: 650;
   text-decoration: none;
+}
+
+.bottom-nav strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.1;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.db-nav-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  background: currentColor;
+  opacity: 0.72;
+}
+
+.db-nav-brief {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 5.5h16v13H4v-13Zm3 4h10M7 13h10M7 16h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 5.5h16v13H4v-13Zm3 4h10M7 13h10M7 16h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.db-nav-lp {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 6.5h14M5 12h14M5 17.5h14M7 4.5v15M17 4.5v15' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 6.5h14M5 12h14M5 17.5h14M7 4.5v15M17 4.5v15' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.db-nav-gp {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.db-nav-wiki {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h9.5A3.5 3.5 0 0 1 18 8v11.5H8.5A3.5 3.5 0 0 0 5 23V4.5Zm0 0A3.5 3.5 0 0 1 8.5 1H19v18.5M8 7h6M8 10.5h5' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h9.5A3.5 3.5 0 0 1 18 8v11.5H8.5A3.5 3.5 0 0 0 5 23V4.5Zm0 0A3.5 3.5 0 0 1 8.5 1H19v18.5M8 7h6M8 10.5h5' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.db-nav-saved {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 3.75h12v17l-6-3.6-6 3.6v-17Z' fill='none' stroke='black' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 3.75h12v17l-6-3.6-6 3.6v-17Z' fill='none' stroke='black' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .bottom-nav button:focus {
@@ -1185,6 +1260,11 @@ a:hover {
   background: transparent;
   color: var(--ink);
   font-weight: 750;
+}
+
+.bottom-nav button.active .db-nav-icon,
+.bottom-nav a.active .db-nav-icon {
+  opacity: 1;
 }
 
 .bottom-nav button.active::before {
@@ -1350,7 +1430,15 @@ a:hover {
   .bottom-nav button,
   .bottom-nav a {
     min-height: 36px;
+    flex-direction: row;
+    gap: 6px;
     border-radius: 999px;
+  }
+
+  .db-nav-icon {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
   }
 
   .mobile-list {
