@@ -39,7 +39,8 @@
   };
 
   const queryDate = new URLSearchParams(window.location.search).get("date");
-  let activeBrief = archive.find((brief) => brief.reportDate === queryDate) || archive[0] || {
+  const initialDate = queryDate || (dateSelect && dateSelect.value) || (dateInput && dateInput.value) || "";
+  let activeBrief = archive.find((brief) => brief.reportDate === initialDate) || archive[0] || {
     reportDate: "",
     visibleDate: "",
     basis: "",
