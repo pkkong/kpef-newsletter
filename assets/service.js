@@ -7,6 +7,7 @@
   const searchArea = document.getElementById("searchArea");
   const searchToggle = document.getElementById("searchToggle");
   const searchClose = document.getElementById("searchClose");
+  const serviceBar = document.querySelector(".service-bar");
   const dateSelect = document.getElementById("briefDateSelect");
   const dateInput = document.getElementById("briefDateInput");
   const dateLabel = document.getElementById("briefDateLabel");
@@ -57,6 +58,7 @@
     if (!searchArea) return;
     const shouldOpen = Boolean(open || queryText());
     searchArea.classList.toggle("active", shouldOpen);
+    if (serviceBar) serviceBar.classList.toggle("search-open", shouldOpen);
     if (searchToggle) searchToggle.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
     if (shouldOpen) window.requestAnimationFrame(() => searchInput && searchInput.focus());
   };

@@ -158,6 +158,13 @@ button, input { font: inherit; }
   gap: 12px;
   min-height: 44px;
 }
+.service-bar.search-open {
+  gap: 8px;
+}
+.service-bar.search-open .service-title,
+.service-bar.search-open .search-toggle {
+  display: none;
+}
 .service-title {
   display: block;
   min-width: 0;
@@ -336,13 +343,11 @@ button, input { font: inherit; }
 }
 .search-area {
   display: none;
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  min-width: 0;
+  flex: 1 1 auto;
   gap: 8px;
-  padding: 4px 0 10px;
-  background: rgba(245,245,247,0.92);
-  backdrop-filter: blur(18px);
+  padding: 0;
+  background: transparent;
 }
 .search-area.active { display: flex; }
 .search-box {
