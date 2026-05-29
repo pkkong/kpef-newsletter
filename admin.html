@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=934bcb6d">
+  <link rel="stylesheet" href="assets/service.css?v=15abc66c">
   <style>
     body.admin-page { background: #f7f7f8; }
     .admin-shell { width: min(980px, calc(100% - 28px)); margin: 0 auto; padding: 0 0 calc(112px + env(safe-area-inset-bottom)); }
@@ -36,9 +36,9 @@
     .admin-output textarea { width: 100%; min-height: 96px; border: 1px solid var(--separator); border-radius: 6px; padding: 10px; background: #fbfcfd; color: var(--text); font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
     .admin-note { margin: 0; color: var(--secondary); font-size: 12px; line-height: 1.5; }
     @media (min-width: 760px) {
-      .admin-shell { padding-bottom: 36px; }
-      .admin-shell .kpef-service-tabs { display: grid; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding-left: max(0px, calc((100vw - 980px) / 2)); padding-right: max(0px, calc((100vw - 980px) / 2)); }
-      .admin-page .bottom-nav { display: none; }
+      .admin-shell { padding-bottom: calc(106px + env(safe-area-inset-bottom)); }
+      .admin-shell .kpef-service-tabs { display: none; }
+      .admin-page .bottom-nav { display: grid; }
       .admin-hero h1 { font-size: 36px; }
       .admin-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .admin-field.full { grid-column: 1 / -1; }
@@ -57,13 +57,6 @@
         <a class="kpef-icon-link kpef-icon-menu" href="index.html" aria-label="홈"></a>
       </div>
     </header>
-    <nav class="kpef-service-tabs" aria-label="서비스 메뉴">
-      <a class="active" href="#today" data-view="today">브리프</a>
-      <a class="" href="lp-notices.html">LP</a>
-      <a class="" href="gps.html">GP</a>
-      <a class="" href="pef-wiki.html">Wiki</a>
-      <a class="" href="#saved" data-view="saved">저장</a>
-    </nav>
     <section class="admin-hero" aria-label="분류 보정">
       <span>기준일 2026-05-28</span>
       <h1>뉴스 분류 보정</h1>

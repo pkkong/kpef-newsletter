@@ -979,17 +979,47 @@ button, input { font: inherit; }
     margin-bottom: 18px;
     min-height: calc(100vh - 36px);
     border-radius: 30px;
-    padding-bottom: 24px;
+    padding-bottom: calc(106px + env(safe-area-inset-bottom));
     box-shadow: 0 24px 80px rgba(0,0,0,0.08);
     overflow: hidden;
   }
   .kpef-service-tabs {
-    display: grid;
+    display: none;
   }
   .header-topline { padding-right: 112px; }
   .newsletter-only .header-topline { padding-right: 252px; }
   .header-action { display: inline-flex; }
-  .bottom-nav { display: none; }
+  .bottom-nav {
+    bottom: 18px;
+    display: grid;
+    width: min(720px, calc(100vw - 96px));
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 999px;
+    padding: 5px;
+    background: rgba(255,255,255,0.94);
+    box-shadow: 0 18px 60px rgba(15,23,42,0.15);
+  }
+  .bottom-nav button,
+  .bottom-nav a {
+    min-height: 36px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+  .bottom-nav .active {
+    background: var(--surface-muted);
+  }
+  .nav-dot {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+  .nav-dot::before {
+    width: 17px;
+    height: 17px;
+  }
   .lp-detail-sheet {
     top: 50%;
     bottom: auto;
@@ -1009,7 +1039,7 @@ button, input { font: inherit; }
     width: min(calc(100vw - 48px), 1280px);
   }
   .newsletter-only .kpef-service-tabs {
-    display: grid;
+    display: none;
   }
   .content-area {
     grid-template-columns: minmax(0, 1fr) 340px;
@@ -1071,6 +1101,6 @@ button, input { font: inherit; }
   }
   .newsletter-only .bottom-nav,
   .bottom-nav.newsletter-only {
-    display: none;
+    display: grid;
   }
 }
