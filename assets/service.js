@@ -2,7 +2,6 @@
   const archive = Array.isArray(window.KPEF_DAILY_ARCHIVE) ? window.KPEF_DAILY_ARCHIVE : [];
   const lpMonitor = Array.isArray(window.KPEF_LP_MONITOR) ? window.KPEF_LP_MONITOR : [];
   const legacyArticles = Array.isArray(window.KPEF_ARTICLES) ? window.KPEF_ARTICLES : [];
-  const storageKey = "kpef.saved.urls";
   const searchInput = document.getElementById("clipSearch");
   const searchArea = document.getElementById("searchArea");
   const searchToggle = document.getElementById("searchToggle");
@@ -16,10 +15,7 @@
   const dateNext = document.getElementById("dateNext");
   const dateRail = document.getElementById("briefDateRail");
   const todayList = document.getElementById("todayList");
-  const savedList = document.getElementById("savedList");
-  const savedEmpty = document.getElementById("savedEmpty");
   const todayView = document.getElementById("todayView");
-  const savedView = document.getElementById("savedView");
   const lpMonitorPanel = document.getElementById("lpMonitorPanel");
   const lpMonitorList = document.getElementById("lpMonitorList");
   const lpDetailBackdrop = document.getElementById("lpDetailBackdrop");
@@ -30,14 +26,6 @@
   const navItems = [...document.querySelectorAll("[data-view]")];
   const showLpMonitor = lpMonitor.length > 0 && Boolean(lpMonitorPanel);
 
-  const loadSaved = () => {
-    try {
-      return new Set(JSON.parse(localStorage.getItem(storageKey) || "[]"));
-    } catch {
-      return new Set();
-    }
-  };
-
   const queryDate = new URLSearchParams(window.location.search).get("date");
   const initialDate = queryDate || (dateSelect && dateSelect.value) || (dateInput && dateInput.value) || "";
   let activeBrief = archive.find((brief) => brief.reportDate === initialDate) || archive[0] || {
@@ -47,12 +35,6 @@
     articles: legacyArticles
   };
   let articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
-  let saved = loadSaved();
-  let currentView = window.location.hash === "#saved" ? "saved" : "today";
-
-  const persistSaved = () => {
-    localStorage.setItem(storageKey, JSON.stringify([...saved]));
-  };
 
   const setSearchOpen = (open) => {
     if (!searchArea) return;
@@ -532,19 +514,7 @@
       main.append(chips);
     }
 
-    const save = document.createElement("button");
-    save.className = "save-button";
-    save.type = "button";
-    save.dataset.url = article.url;
-    const updateSaveState = () => {
-      const isSaved = saved.has(article.url);
-      save.classList.toggle("saved", isSaved);
-      save.setAttribute("aria-label", isSaved ? "저장 해제" : "저장");
-      save.title = isSaved ? "저장 해제" : "저장";
-    };
-    updateSaveState();
-
-    item.append(mark, main, save);
+    item.append(mark, main);
     return item;
   };
 
@@ -605,21 +575,6 @@
     requestAnimationFrame(updateTagGroups);
   };
 
-  const renderSaved = () => {
-    const query = queryText();
-    const savedItems = allArchiveArticles().filter((article) => saved.has(article.url));
-    const items = query ? savedItems.filter((article) => articleMatches(article, query)) : savedItems;
-    savedList.replaceChildren();
-    savedEmpty.classList.toggle("visible", !items.length);
-    if (!items.length) {
-      const title = savedEmpty.querySelector("strong");
-      const body = savedEmpty.querySelector("span");
-      if (title) title.textContent = query && savedItems.length ? "저장한 기사 중 검색 결과가 없습니다" : "저장한 기사가 없습니다";
-      if (body) body.textContent = query && savedItems.length ? "검색어를 줄여 다시 확인합니다." : "나중에 볼 기사는 오른쪽 버튼으로 저장합니다.";
-    }
-    if (items.length) renderGrouped(savedList, items);
-  };
-
   const render = () => {
     if (skeleton) skeleton.classList.add("hidden");
     const newsItems = filtered();
@@ -627,22 +582,17 @@
     updateBriefChrome();
     renderLpMonitor(noticeItems);
     renderGrouped(todayList, newsItems);
-    renderSaved();
   };
 
   const setView = (view) => {
-    currentView = view;
-    todayView.classList.toggle("active", view === "today");
-    savedView.classList.toggle("active", view === "saved");
+    todayView.classList.toggle("active", true);
     navItems.forEach((item) => {
-      const isBriefTab = item.dataset.view === "today";
-      item.classList.toggle("active", item.dataset.view === view || (view === "saved" && isBriefTab));
+      item.classList.toggle("active", item.dataset.view === "today");
     });
-    if (view === "saved") renderSaved();
   };
 
   const setViewFromHash = () => {
-    setView(window.location.hash === "#saved" ? "saved" : "today");
+    setView("today");
   };
 
   document.addEventListener("click", (event) => {
@@ -669,21 +619,6 @@
       setView("today");
       render();
       searchInput.focus();
-      return;
-    }
-
-    const saveButton = event.target.closest(".save-button");
-    if (saveButton) {
-      const url = saveButton.dataset.url;
-      if (saved.has(url)) saved.delete(url);
-      else saved.add(url);
-      persistSaved();
-      document.querySelectorAll(`.save-button[data-url="${CSS.escape(url)}"]`).forEach((button) => {
-        button.classList.toggle("saved", saved.has(url));
-        button.setAttribute("aria-label", saved.has(url) ? "저장 해제" : "저장");
-        button.title = saved.has(url) ? "저장 해제" : "저장";
-      });
-      if (currentView === "saved") renderSaved();
       return;
     }
 
