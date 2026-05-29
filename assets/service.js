@@ -637,7 +637,10 @@
     currentView = view;
     todayView.classList.toggle("active", view === "today");
     savedView.classList.toggle("active", view === "saved");
-    navItems.forEach((item) => item.classList.toggle("active", item.dataset.view === view));
+    navItems.forEach((item) => {
+      const isBriefTab = item.dataset.view === "today";
+      item.classList.toggle("active", item.dataset.view === view || (view === "saved" && isBriefTab));
+    });
     if (view === "saved") renderSaved();
   };
 

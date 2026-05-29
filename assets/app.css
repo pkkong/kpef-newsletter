@@ -1175,7 +1175,7 @@ a:hover {
   bottom: 0;
   z-index: 30;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
   padding: 6px 10px calc(6px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--line);
@@ -1315,7 +1315,7 @@ a:hover {
   }
 
   .metric-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lp-metrics {
@@ -1417,7 +1417,7 @@ a:hover {
     left: 50%;
     right: auto;
     width: min(720px, calc(100vw - 96px));
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     transform: translateX(-50%);
     bottom: 14px;
     padding: 5px;
