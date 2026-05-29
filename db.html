@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Korea PEF Intelligence DB</title>
+  <title>Korea PEF Intelligence</title>
   <meta name="theme-color" content="#ffffff">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <nav class="view-tabs" aria-label="DB 화면">
+    <nav class="view-tabs" aria-label="데이터 화면">
       <button class="active" type="button" data-view="ranking">시장</button>
       <button type="button" data-view="profile">GP</button>
       <button type="button" data-view="funds">펀드</button>
@@ -52,7 +52,7 @@
 
     <section class="view-panel active" data-view-panel="ranking">
       <div class="page-head">
-        <p>Korea PEF Intelligence DB</p>
+        <p>시장 데이터</p>
         <h1>국내 기관전용 PEF 시장</h1>
       </div>
       <section class="metric-grid" aria-label="시장 지표">
@@ -103,10 +103,11 @@
     <section class="view-panel" data-view-panel="profile">
       <div class="profile-summary">
         <section class="profile-copy">
-          <p>GP 프로필</p>
+          <p>운용사 프로필</p>
           <h1 id="profileName">-</h1>
           <p id="profileSubtitle">GP를 선택하세요.</p>
           <dl id="profileInfo"></dl>
+          <div class="profile-actions" id="profileActions"></div>
         </section>
         <section class="profile-kpis">
           <article><span>순위</span><strong id="profileRank">-</strong></article>
@@ -177,8 +178,8 @@
 
     <section class="view-panel" data-view-panel="funds">
       <div class="page-head compact">
-        <p>Fund DB</p>
-        <h1>운용중 펀드</h1>
+        <p>펀드</p>
+        <h1>운용중 펀드 목록</h1>
       </div>
       <section class="panel">
         <div class="panel-head">
@@ -216,14 +217,14 @@
 
     <section class="view-panel" data-view-panel="lp">
       <div class="page-head compact">
-        <p>LP Commitment DB</p>
-        <h1>출자사업 현황</h1>
+        <p>출자자</p>
+        <h1>LP 출자사업</h1>
       </div>
       <section class="metric-grid lp-metrics" aria-label="LP 출자사업 지표">
-        <article><span>모니터링 LP</span><strong id="lpMetricInstitutions">-</strong><em>주요 연기금·공제회·정책 FoF</em></article>
-        <article><span>모니터 이벤트</span><strong id="lpMetricNotices">-</strong><em>공고·마감·선정·변경</em></article>
-        <article><span>공식 공고</span><strong id="lpMetricAmount">-</strong><em>공식 소스 기준</em></article>
-        <article><span>선정 GP 식별</span><strong id="lpMetricSelectedGps">-</strong><em>GP alias 매칭 기준</em></article>
+        <article><span>대상 LP</span><strong id="lpMetricInstitutions">-</strong><em>주요 연기금·공제회·정책 FoF</em></article>
+        <article><span>출자 이벤트</span><strong id="lpMetricNotices">-</strong><em>공고·마감·선정·변경</em></article>
+        <article><span>공식 공고</span><strong id="lpMetricAmount">-</strong><em>누적 확인 기준</em></article>
+        <article><span>선정 GP</span><strong id="lpMetricSelectedGps">-</strong><em>공고·뉴스 연결 기준</em></article>
       </section>
 
       <section class="panel lp-profile-panel">
@@ -240,8 +241,8 @@
       <section class="panel lp-institution-panel">
         <div class="panel-head">
           <div>
-            <h2>주요 LP</h2>
-            <p>출자사업 공고와 뉴스 후보가 연결된 LP별 현황입니다.</p>
+            <h2>LP 디렉토리</h2>
+            <p>기관별 담당 조직, 관심 자산군, 최근 출자 이벤트를 한 줄에서 비교합니다.</p>
           </div>
           <div class="table-tools single">
             <input id="lpInstitutionSearch" placeholder="LP, 담당팀, 자산군 검색">
@@ -250,7 +251,7 @@
         <div class="lp-card-grid" id="lpInstitutionCards"></div>
       </section>
 
-      <section class="panel lp-notice-panel">
+      <section class="panel lp-notice-panel" id="lpNotices">
         <div class="panel-head">
           <div>
             <h2>공고·선정·뉴스</h2>
@@ -292,7 +293,7 @@
 
     <section class="view-panel" data-view-panel="compare">
       <div class="page-head compact">
-        <p>Peer Compare</p>
+        <p>운용사 비교</p>
         <h1>GP 비교</h1>
       </div>
       <section class="panel">

@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=10422be7">
+  <link rel="stylesheet" href="assets/service.css?v=ca7e2e9b">
   <style>
     body.admin-page { background: #f7f7f8; }
     .admin-shell { width: min(980px, calc(100% - 28px)); margin: 0 auto; padding: 0 0 calc(112px + env(safe-area-inset-bottom)); }
@@ -58,7 +58,7 @@
       </div>
     </header>
     <section class="admin-hero" aria-label="분류 보정">
-      <span>기준일 2026-05-29</span>
+      <span>기준일 2026-05-28</span>
       <h1>뉴스 분류 보정</h1>
       <p>기사 URL과 보정값을 입력하면 수동 반영 파일에 넣을 CSV 한 줄을 만듭니다. 정적 사이트라 이 화면에서 바로 저장되지는 않습니다.</p>
     </section>
@@ -167,7 +167,7 @@
           forceExclude,
           tags,
           fields.comment.value.trim(),
-          `admin-page 2026-05-29`,
+          `admin-page 2026-05-28`,
         ];
         fields.output.value = row.map(csvCell).join(",");
       };

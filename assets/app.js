@@ -1,6 +1,11 @@
 const DATA_URL = "data/service_data.json";
 const CHART_COLORS = ["#2563eb", "#16a34a", "#f59e0b", "#dc2626", "#7c3aed", "#0891b2"];
 const VIEWS = ["ranking", "profile", "funds", "lp", "compare"];
+const VIEW_ALIASES = {
+  market: "ranking",
+  gp: "profile",
+  lps: "lp"
+};
 
 const state = {
   data: null,
@@ -94,6 +99,41 @@ function sourceConfidence(row) {
 
 function profileSourceUrl(profile) {
   return profile?.source_url || profile?.primary_source_url || "";
+}
+
+function faviconSrc(url) {
+  try {
+    const parsed = new URL(url);
+    return `${parsed.origin}/favicon.ico`;
+  } catch {
+    return "";
+  }
+}
+
+function entityInitials(name) {
+  const chars = Array.from(String(name || "").replace(/\s+/g, ""))
+    .filter((ch) => /[0-9A-Za-z가-힣]/.test(ch));
+  return (chars.slice(0, 2).join("") || "PE").toUpperCase();
+}
+
+function entityMark(name, url = "") {
+  const src = faviconSrc(url);
+  return `
+    <span class="entity-mark ${src ? "" : "fallback-only"}" aria-hidden="true">
+      ${src ? `<img src="${escapeAttr(src)}" alt="" loading="lazy">` : ""}
+      <b>${escapeHtml(entityInitials(name))}</b>
+    </span>
+  `;
+}
+
+function hydrateEntityMarks(root = document) {
+  root.querySelectorAll(".entity-mark img").forEach((img) => {
+    if (img.dataset.bound) return;
+    img.dataset.bound = "1";
+    img.addEventListener("error", () => {
+      img.closest(".entity-mark")?.classList.add("fallback");
+    }, { once: true });
+  });
 }
 
 function fmtChange(value) {
@@ -420,7 +460,23 @@ function selectGp(gpName, options = {}) {
   renderAll();
 }
 
-function setView(view) {
+function showFundsForSelectedGp() {
+  if (!state.selectedGp) return;
+  byId("fundSearch").value = state.selectedGp;
+  setView("funds");
+  renderFunds();
+}
+
+function compareSelectedGp() {
+  if (!state.selectedGp) return;
+  if (!state.compareGps.includes(state.selectedGp)) {
+    state.compareGps = [state.selectedGp, ...state.compareGps].slice(0, 6);
+  }
+  setView("compare");
+  renderCompare();
+}
+
+function setView(view, options = {}) {
   if (!VIEWS.includes(view)) return;
   state.view = view;
   document.querySelectorAll("[data-view-panel]").forEach((panel) => {
@@ -429,15 +485,18 @@ function setView(view) {
   document.querySelectorAll("[data-view]").forEach((button) => {
     button.classList.toggle("active", button.dataset.view === view);
   });
-  if (window.location.hash.replace("#", "") !== view) {
-    window.history.replaceState({}, "", `#${view}`);
+  if (options.updateHash !== false && window.location.hash.replace("#", "") !== view) {
+    const url = new URL(window.location.href);
+    url.hash = view === "ranking" ? "" : view;
+    window.history.replaceState({}, "", url);
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function viewFromHash() {
   const hashView = window.location.hash.replace("#", "");
-  return VIEWS.includes(hashView) ? hashView : "";
+  const view = VIEW_ALIASES[hashView] || hashView;
+  return VIEWS.includes(view) ? view : "";
 }
 
 function renderControls() {
@@ -484,9 +543,12 @@ function renderRanking() {
   byId("rankingCards").innerHTML = rows.map((row) => `
     <article class="mobile-row-card">
       <button class="mobile-card-main gp-link" type="button" data-gp="${escapeAttr(row.gp_name)}">
-        <span>
-          <strong>${escapeHtml(row.gp_name)}</strong>
-          <em>${categoryLabel(profileFor(row.gp_name)?.company_category)}</em>
+        <span class="entity-inline">
+          ${entityMark(row.gp_name, profileFor(row.gp_name)?.homepage_url)}
+          <span>
+            <strong>${escapeHtml(row.gp_name)}</strong>
+            <em>${categoryLabel(profileFor(row.gp_name)?.company_category)}</em>
+          </span>
         </span>
         <b>${fmtRank(row.rank)}</b>
       </button>
@@ -502,8 +564,13 @@ function renderRanking() {
     <tr>
       <td class="numeric">${fmtRank(row.rank)}</td>
       <td>
-        <button class="gp-link" type="button" data-gp="${escapeAttr(row.gp_name)}">${escapeHtml(row.gp_name)}</button>
-        <span class="subtle">${categoryLabel(profileFor(row.gp_name)?.company_category)}</span>
+        <div class="entity-cell">
+          ${entityMark(row.gp_name, profileFor(row.gp_name)?.homepage_url)}
+          <span>
+            <button class="gp-link" type="button" data-gp="${escapeAttr(row.gp_name)}">${escapeHtml(row.gp_name)}</button>
+            <span class="subtle">${categoryLabel(profileFor(row.gp_name)?.company_category)}</span>
+          </span>
+        </div>
       </td>
       <td class="numeric">${fmtEokFromTrn(row.commitmentTrn)}</td>
       <td class="numeric">${row.cumulative ? fmtEokFromTrn(row.cumulative) : "-"}</td>
@@ -519,6 +586,8 @@ function renderRanking() {
   byId("rankingCards").querySelectorAll(".gp-link").forEach((button) => {
     button.addEventListener("click", () => selectGp(button.dataset.gp));
   });
+  hydrateEntityMarks(byId("rankingCards"));
+  hydrateEntityMarks(byId("rankingBody"));
 }
 
 function renderProfile() {
@@ -533,7 +602,7 @@ function renderProfile() {
     state.profileFundSort
   );
 
-  byId("profileName").textContent = selected;
+  byId("profileName").innerHTML = `<span class="entity-heading">${entityMark(selected, profile?.homepage_url)}<span>${escapeHtml(selected)}</span></span>`;
   byId("profileSubtitle").textContent = profile
     ? `${categoryLabel(profile.company_category)} · 관측 ${profile.first_seen_period || "-"} ~ ${profile.last_seen_period || "-"}`
     : "금감원 공시 기준 GP";
@@ -562,7 +631,20 @@ function renderProfile() {
     ["검증", sourceLabel(sourceConfidence(profile))]
   ].map(([key, value]) => `<dt>${escapeHtml(key)}</dt><dd>${String(value).includes("<a ") ? value : escapeHtml(value)}</dd>`).join("");
 
+  byId("profileActions").innerHTML = `
+    <button class="text-button" type="button" data-profile-action="funds">운용 펀드 보기</button>
+    <button class="text-button" type="button" data-profile-action="compare">비교에 추가</button>
+    ${sourceUrl ? `<a class="text-button" href="${escapeAttr(sourceUrl)}" target="_blank" rel="noreferrer">근거 열기</a>` : ""}
+  `;
+  byId("profileActions").querySelectorAll("[data-profile-action]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.profileAction === "funds") showFundsForSelectedGp();
+      if (button.dataset.profileAction === "compare") compareSelectedGp();
+    });
+  });
+
   byId("profileFundNote").textContent = `${state.period} 기준 ${fmtInt.format(funds.length)}개`;
+  hydrateEntityMarks(byId("profileName"));
   renderProfilePeople();
   renderProfileFunds(funds);
   renderLineChart("profileChart", [{ name: selected, color: CHART_COLORS[0], values: gpSeries(selected) }], fmtEokFromTrn);
@@ -885,7 +967,8 @@ function renderLp() {
   const profiles = lpProfiles();
   const notices = state.data.lp_commitment_notices || [];
   const visibleNotices = notices.filter((row) => Number(row.public_visible) !== 0);
-  const officialNoticeCount = visibleNotices.filter((row) => row.source_type === "official").length;
+  const officialNoticeCount = profiles.reduce((sum, row) => sum + num(row.official_notice_count), 0)
+    || visibleNotices.filter((row) => row.source_type === "official").length;
   const gpSet = new Set();
   visibleNotices.forEach((row) => splitNames(row.selected_gp_names).forEach((name) => gpSet.add(name)));
 
@@ -903,10 +986,13 @@ function renderLp() {
   const selectedLp = profiles.find((row) => row.lp_code === state.selectedLpCode) || lpRows[0] || profiles[0];
   byId("lpProfileSummary").innerHTML = selectedLp ? `
     <div class="lp-profile-main">
-      <div>
-        <span class="status">${escapeHtml(ownershipLabel(selectedLp.ownership_type))}</span>
-        <h2>${escapeHtml(selectedLp.lp_name)}</h2>
-        <p>${escapeHtml(selectedLp.lp_name_en || selectedLp.notes || "-")}</p>
+      <div class="lp-profile-heading">
+        ${entityMark(selectedLp.lp_name, selectedLp.homepage_url)}
+        <div>
+          <span class="status">${escapeHtml(ownershipLabel(selectedLp.ownership_type))}</span>
+          <h2>${escapeHtml(selectedLp.lp_name)}</h2>
+          <p>${escapeHtml(selectedLp.lp_name_en || selectedLp.notes || "-")}</p>
+        </div>
       </div>
       <dl>
         <div><dt>기관 유형</dt><dd>${escapeHtml(selectedLp.lp_type || "-")}</dd></div>
@@ -918,6 +1004,7 @@ function renderLp() {
       </dl>
       <p>${escapeHtml(selectedLp.notes || "")}</p>
       <div class="lp-profile-links">
+        <a href="#lpNotices">공고 보기</a>
         ${selectedLp.homepage_url ? `<a href="${escapeAttr(selectedLp.homepage_url)}" target="_blank" rel="noreferrer">홈페이지</a>` : ""}
         ${selectedLp.notice_url ? `<a href="${escapeAttr(selectedLp.notice_url)}" target="_blank" rel="noreferrer">공식 공고 채널</a>` : ""}
         ${selectedLp.latest_notice_url ? `<a href="${escapeAttr(selectedLp.latest_notice_url)}" target="_blank" rel="noreferrer">최근 공고</a>` : ""}
@@ -947,25 +1034,50 @@ function renderLp() {
         `).join("")}
       </dl>
     </article>
-  `).join("") || `<div class="empty">선택 LP의 공개 프로필 팩트가 없습니다.</div>`;
+  `).join("") || `<div class="empty">선택 LP의 공개 확인 항목이 없습니다.</div>`;
 
-  byId("lpInstitutionCards").innerHTML = lpRows.map((row) => `
+  const lpDirectoryRows = lpRows.map((row) => `
     <button class="lp-card ${row.lp_code === state.selectedLpCode ? "active" : ""}" type="button" data-lp-code="${escapeAttr(row.lp_code)}">
-      <div>
-        <strong>${escapeHtml(row.lp_name)}</strong>
-        <span>${escapeHtml(row.lp_type || "-")} · ${escapeHtml(ownershipLabel(row.ownership_type))}</span>
-      </div>
-      <dl>
-        <div><dt>공고/뉴스</dt><dd>${fmtInt.format(num(row.notice_count))}</dd></div>
-        <div><dt>공식</dt><dd>${fmtInt.format(num(row.official_notice_count))}건</dd></div>
-        <div><dt>최근</dt><dd>${escapeHtml(fmtDate(row.latest_event_date || row.latest_announced_date || row.latest_discovered_at))}</dd></div>
-      </dl>
-      <p>${escapeHtml(row.default_team || "-")} · ${escapeHtml(semicolonLabel(row.focus_asset_classes))}</p>
+      <span class="lp-card-main">
+        ${entityMark(row.lp_name, row.homepage_url)}
+        <span>
+          <strong>${escapeHtml(row.lp_name)}</strong>
+          <em>${escapeHtml(row.lp_type || "-")}</em>
+        </span>
+      </span>
+      <span class="lp-card-focus">
+        <b>${escapeHtml(row.default_team || "-")}</b>
+        <span>${escapeHtml(semicolonLabel(row.focus_asset_classes))}</span>
+      </span>
+      <span class="lp-card-stat">
+        <b>${fmtInt.format(num(row.notice_count))}</b>
+        <span>공고/뉴스</span>
+      </span>
+      <span class="lp-card-stat">
+        <b>${fmtInt.format(num(row.official_notice_count))}</b>
+        <span>공식</span>
+      </span>
+      <span class="lp-card-date">
+        <b>${escapeHtml(fmtDate(row.latest_event_date || row.latest_announced_date || row.latest_discovered_at))}</b>
+        <span>최근</span>
+      </span>
     </button>
-  `).join("") || `<div class="empty">검색 결과가 없습니다.</div>`;
+  `).join("");
+  byId("lpInstitutionCards").innerHTML = lpRows.length ? `
+    <div class="lp-directory-head" aria-hidden="true">
+      <span>LP</span>
+      <span>담당/관심</span>
+      <span>이벤트</span>
+      <span>공식</span>
+      <span>최근</span>
+    </div>
+    ${lpDirectoryRows}
+  ` : `<div class="empty">검색 결과가 없습니다.</div>`;
   byId("lpInstitutionCards").querySelectorAll("[data-lp-code]").forEach((button) => {
     button.addEventListener("click", () => selectLp(button.dataset.lpCode));
   });
+  hydrateEntityMarks(byId("lpProfileSummary"));
+  hydrateEntityMarks(byId("lpInstitutionCards"));
 
   const rows = lpNoticeRows();
   byId("lpNoticeCards").innerHTML = rows.map((row) => `
@@ -1086,6 +1198,7 @@ function renderAll() {
   renderFunds();
   renderLp();
   renderCompare();
+  hydrateEntityMarks();
 }
 
 function runGlobalSearch() {
@@ -1162,7 +1275,7 @@ function wireEvents() {
   });
   window.addEventListener("hashchange", () => {
     const hashView = viewFromHash();
-    if (hashView) setView(hashView);
+    if (hashView) setView(hashView, { updateHash: false });
   });
 }
 

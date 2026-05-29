@@ -15,6 +15,7 @@
   const dateNext = document.getElementById("dateNext");
   const dateRail = document.getElementById("briefDateRail");
   const briefMeta = document.getElementById("briefMeta");
+  const briefSummary = document.getElementById("briefSummary");
   const todayList = document.getElementById("todayList");
   const savedList = document.getElementById("savedList");
   const savedEmpty = document.getElementById("savedEmpty");
@@ -262,6 +263,44 @@
     return groups;
   };
 
+  const renderBriefSummary = (newsItems, noticeItems) => {
+    if (!briefSummary) return;
+    const sections = groupBySection(newsItems);
+    const sources = new Set(newsItems.map((article) => article.source).filter(Boolean));
+    const stats = [
+      ["뉴스", `${newsItems.length.toLocaleString("ko-KR")}건`],
+      ["섹션", `${sections.size.toLocaleString("ko-KR")}개`],
+      showLpMonitor
+        ? ["공고", `${noticeItems.length.toLocaleString("ko-KR")}건`]
+        : ["출처", `${sources.size.toLocaleString("ko-KR")}곳`]
+    ];
+    briefSummary.hidden = false;
+    const statGrid = document.createElement("div");
+    statGrid.className = "brief-stat-grid";
+    statGrid.replaceChildren(...stats.map(([label, value]) => {
+      const item = document.createElement("div");
+      item.className = "brief-stat";
+      const statLabel = document.createElement("span");
+      statLabel.textContent = label;
+      const statValue = document.createElement("strong");
+      statValue.textContent = value;
+      item.append(statLabel, statValue);
+      return item;
+    }));
+    const topics = document.createElement("div");
+    topics.className = "brief-topic-row";
+    [...sections.entries()].slice(0, 5).forEach(([section, rows]) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "brief-topic";
+      button.dataset.sectionScroll = section || "뉴스";
+      const count = rows.length.toLocaleString("ko-KR");
+      button.innerHTML = `${section || "뉴스"} <span>${count}</span>`;
+      topics.append(button);
+    });
+    briefSummary.replaceChildren(statGrid, topics);
+  };
+
   const eventLabel = (value) => ({
     new_notice: "신규 공고",
     deadline_soon: "마감 임박",
@@ -507,6 +546,12 @@
       date.textContent = articleDate;
       meta.append(date);
     }
+    const subtype = article.subCategory || article.rawSection || "";
+    if (subtype) {
+      const category = document.createElement("span");
+      category.textContent = subtype;
+      meta.append(category);
+    }
     meta.append(source);
     link.append(title, meta);
     main.append(link);
@@ -607,9 +652,13 @@
     groups.forEach((groupItems, section) => {
       const block = document.createElement("section");
       block.className = "section-block";
+      block.dataset.sectionName = section || "뉴스";
       const title = document.createElement("h2");
       title.className = "section-title";
       title.textContent = section || "뉴스";
+      const count = document.createElement("span");
+      count.textContent = `${groupItems.length.toLocaleString("ko-KR")}건`;
+      title.append(count);
       const list = document.createElement("ul");
       list.className = "cell-list";
       groupItems.forEach((article) => list.append(makeCell(article)));
@@ -639,6 +688,7 @@
     const newsItems = filtered();
     const noticeItems = filteredLpMonitor();
     updateBriefChrome({ newsCount: newsItems.length, noticeCount: noticeItems.length });
+    renderBriefSummary(newsItems, noticeItems);
     renderLpMonitor(noticeItems);
     renderGrouped(todayList, newsItems);
     renderSaved();
@@ -660,6 +710,14 @@
     const dateButton = event.target.closest(".date-pill[data-date]");
     if (dateButton) {
       setActiveBrief(dateButton.dataset.date);
+      return;
+    }
+
+    const sectionJump = event.target.closest("[data-section-scroll]");
+    if (sectionJump) {
+      const sectionName = sectionJump.dataset.sectionScroll || "";
+      const target = [...document.querySelectorAll(".section-block")].find((block) => block.dataset.sectionName === sectionName);
+      if (target) target.scrollIntoView({ block: "start", behavior: "smooth" });
       return;
     }
 
