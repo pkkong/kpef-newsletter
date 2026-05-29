@@ -730,7 +730,7 @@ button, input { font: inherit; }
   width: 26px;
   height: 26px;
   border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 7px;
+  border-radius: 50%;
   background: #fff;
   object-fit: contain;
 }
@@ -741,7 +741,7 @@ button, input { font: inherit; }
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 7px;
+  border-radius: 50%;
   background: #fff;
   font-size: 10px;
   line-height: 1;
