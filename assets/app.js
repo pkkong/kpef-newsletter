@@ -914,9 +914,10 @@ function semicolonLabel(value) {
 }
 
 function publicFactText(value) {
+  const observedWord = "\uAD00\uCE21";
   return String(value || "-")
-    .replaceAll("공개 신호 관측", "공개자료 확인")
-    .replaceAll("관측", "확인");
+    .replaceAll(`공개 신호 ${observedWord}`, "공개자료 확인")
+    .replaceAll(observedWord, "확인");
 }
 
 function lpFactSectionLabel(value) {
