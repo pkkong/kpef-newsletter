@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>스틱인베스트먼트 GP 프로필</title>
+  <title>스틱인베스트먼트 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>스틱인베스트먼트</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=stic.co.kr&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>스틱</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>스틱인베스트먼트</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 5위, 운용 중 펀드 13개, 약정액 기준 5.5조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>13</strong></div>
       <div><span>약정액 기준</span><strong>5.5조</strong></div>
       <div><span>약정액 점유율</span><strong>3.58%</strong></div>
-      <div><span>누적 펀드</span><strong>25</strong></div>
-      <div><span>누적 약정액</span><strong>8.4조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>5위</dd>
@@ -1844,21 +1848,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>매일경제 · 2026-05-25</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12056770" target="_blank" rel="noreferrer">“2.4조 쩐의 전쟁 승자는”…국민성장펀드 운용사 선정 ‘빅매치’ [M&amp;...</a></h3>
-            <p>대형리그 도미누스·스카이레이크 M&amp;A부문 웰투시vs케이엘엔 경쟁 코스닥 리그에선 리턴매치 성사</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-20</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10741394?ref=naver" target="_blank" rel="noreferrer">[단독] ‘1조 대어’ 맘스터치 매각 시동…주관에 씨티·화우·삼정 선정</a></h3>
-            <p>19일 투자은행 업계에 따르면 케이엘앤파트너스가 맘스터치 매각을 위해 매각 주관사와 자문사 선정을 마치고 본격적인 레이스에 나섰다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-18</span>
-            <h3><a href="https://dealsite.co.kr/articles/159608" target="_blank" rel="noreferrer">KG 품은 캑터스PE…도용환 넘어선 정한설</a></h3>
-            <p>KG그룹과 5번째 파트너십 딜…연이은 성공에 친정 스틱 넘어선 청출어람 평가</p>
-          </article>
-          <article class="gp-news-row">
             <span>이투데이 · 2026-05-14</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2583922" target="_blank" rel="noreferrer">대형 리그 10개사 전면전…하이테크 베테랑부터 대형 VC까지 총출동 [국...</a></h3>
             <p>[편집자주] 7조원 규모의 경제 성장 마중물 국민성장펀드 운용사 선정에 81개 자본시장 플레이어들이 줄을 섰다. 운용자산(AUM) 5000억원 미만 벤처캐</p>
@@ -1869,19 +1858,9 @@
             <p>[편집자주] 7조원 규모의 경제 성장 마중물 국민성장펀드 운용사 선정에 81개 자본시장 플레이어들이 줄을 섰다. 운용자산(AUM) 5000억원 미만 벤처캐</p>
           </article>
           <article class="gp-news-row">
-            <span>매일경제 · 2026-05-12</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12044810" target="_blank" rel="noreferrer">[단독] 앵커PE, 항공기 부품사 율곡 인수전 합류…4파전 구도</a></h3>
-            <p>[본 기사는 05월 12일(16:07) 매일경제 자본시장 전문 유료매체인 ‘레이더M’에 보도 된 기사입니다] 홍콩계 사모펀드(PEF) 운용사 앵커에쿼티파트너스(앵커PE)가 항공기 부품사 율곡 인수전에 합류한 것으로 전해졌다. 국내 PEF 운용사인 스틱인베스트먼트와 프리미어파트너스, KCGI에 이어 앵커PE까지 가세하며 4</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-05-12</span>
             <h3><a href="https://dealsite.co.kr/articles/161357" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] 침묵 깬 1세대 거물…스카이레이...</a></h3>
             <p>생태계 대형 분야 스틱·bnw·SG 등 10곳 각축…첨단산업 육성 목적 1조 펀드 조성</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이투데이 · 2026-05-11</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2583246" target="_blank" rel="noreferrer">주주도 챙기는 상장 PE…동전주 탈출 노리는 큐캐피탈</a></h3>
-            <p>감자·주식병합으로 액면가 높인 큐캐피탈당기순이익 40% 주주환원 계획도 공시앞서 자사주 소각 계획 발표한 스틱인베▲여의도 증권가최근 국내 상장</p>
           </article>
           <article class="gp-news-row">
             <span>이투데이 · 2026-05-07</span>
@@ -1894,14 +1873,39 @@
             <p>그로스캐피탈 부문 승격으로 대표 승진…수은 500억 확보, 국내외 트랙레코드 강점</p>
           </article>
           <article class="gp-news-row">
-            <span>이투데이 · 2026-04-28</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2579840" target="_blank" rel="noreferrer">스틱인베, 스페셜시츄에이선펀드 1호 청산… 화려한 투자 성적표</a></h3>
-            <p>2016년 6000억 규모로 결성…지난해 말 청산1000억 투자해 8500억 회수한 하이브 담아&quot;방산·엔터 등 스페셜시츄에이션의 정석&quot;▲스틱인베스트먼트 (스틱</p>
+            <span>이데일리 · 2026-04-27</span>
+            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=03706406645420384&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">&#x27;성장 한계&#x27; 크린토피아, 구조조정 겨냥 조직개편 나서 [only 이데일리]</a></h3>
+            <p>올 초 스틱인베스트먼트로 주인이 바뀐 국내 세탁 1위업체 크린토피아가 체질개선을 시작했다. 직원들은 사실상 구조조정이 시작된 것으로 우려하고 있다.</p>
           </article>
           <article class="gp-news-row">
-            <span>greened.kr · 2026-04-28</span>
-            <h3><a href="https://www.greened.kr/news/articleView.html?idxno=339916" target="_blank" rel="noreferrer">&quot;투자자 보호는 뒷전&quot;…연 200억 적자 뮤직카우, 또 투자 유치 나섰다</a></h3>
-            <p>[녹색경제신문 = 박금재 기자] 음악 저작권 조각투자 플랫폼 뮤직카우가 다시 한 번 자금 수혈에 나섰다. 투자은행(IB) 업계에 따르면 회사는 최근 최소 200억원 규모의 신규 투자 유치를 추진하며 사모펀드(PEF) 등 재무적 투자자(FI)들과 접촉 중이다.</p>
+            <span>헤럴드경제 · 2026-04-10</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10714281?ref=naver" target="_blank" rel="noreferrer">상반기 LP 출자사업 본격화…수은 등 실탄 공급 나서 [주간 ‘딜’리버...</a></h3>
+            <p>올해 상반기 국내 사모펀드(PEF) 시장의 자금 조달을 위해 주요 기관투자자들이 잇따라 출자사업을 재개하며 시장의 ‘마중물’ 역할을 하고 있는 가운데, 10일 투자은행(I</p>
+          </article>
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-04-02</span>
+            <h3><a href="https://dealsite.co.kr/articles/159452" target="_blank" rel="noreferrer">[2026 1Q 리그테이블] [M&amp;A재무자문] 4.7조 DIG에어가스 인수 자문한 도이...</a></h3>
+            <p>메가딜 한 방으로 인수자문 단독 주관해 선두…JP모건 2위, 삼일PwC 3위</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스토마토 · 2026-03-16</span>
+            <h3><a href="http://www.newstomato.com/ReadNews.aspx?no=1294350&amp;inflow=N" target="_blank" rel="noreferrer">STO거래소 예비인가 &#x27;NXT컨소시엄&#x27;, 외국계 최대주주 변경 논란</a></h3>
+            <p>뉴스토마토 = 이지우 기자 | 토큰증권(STO) 장외거래소 인가를 신청한 넥스트레이드(NXT) 컨소시엄이... 특히 뮤직카우 최대주주 스틱뮤즈 유한회사를 운용하는 스틱인베스트먼트의 최대주주가 미국계 사모펀드로...</p>
+          </article>
+          <article class="gp-news-row">
+            <span>서울경제 · 2026-01-05</span>
+            <h3><a href="https://www.sedaily.com/article/14166499" target="_blank" rel="noreferrer">국내 투자 확대 압력받는 국민연금…차기 CIO 하마평만 무성 [시그널]</a></h3>
+            <p>1400조 원을 굴리는 국민연금 기금운용본부장(CIO) 공모가 임박하면서 국민연금 안팎에서 자천타천 후보들의 이름이 오르내린다. 국민연금의 국내 증시 투자 확대 요구가 높은 상황에서 국민 노후 자금을 운용할 ‘선장’ 자리를 놓고 물밑에서 치열한 경쟁이 벌어지고 있다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스톱 · 2025-02-14</span>
+            <h3><a href="http://www.newstopkorea.com/news/articleView.html?idxno=26588" target="_blank" rel="noreferrer">강일성 스틱크레딧 본부장 &quot;중소형 M&amp;A 조력자 될 것&quot;</a></h3>
+            <p>“인수합병(M&amp;A) 시장에서 소외되는 회사들에 자금을 빌려주고 지속 성장 가능한 환경을 만들겠습니다.”강일성 스틱인베스트먼트 크레딧본부(스틱크레딧) 본부장은 최근</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스톱 · 2024-08-09</span>
+            <h3><a href="http://www.newstopkorea.com/news/articleView.html?idxno=23554" target="_blank" rel="noreferrer">[팩트체크] VC협회장社, 펀드레이징 잘 된다고?</a></h3>
+            <p>국내 벤처투자 업계에선 한국벤처캐피탈협회(VC협회) 회장 재임 기간 펀드레이징이 잘 된다는 말이 있다. 오로지 ‘VC협회장’ 타이틀이 신규 펀드 결성에 결정적인</p>
           </article>
         </div>
       </article>
@@ -1954,8 +1958,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

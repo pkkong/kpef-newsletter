@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>큐캐피탈파트너스 GP 프로필</title>
+  <title>큐캐피탈파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>큐캐피탈파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="5" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=qcapital.co.kr&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>큐캐</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>큐캐피탈파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 40위, 운용 중 펀드 3개, 약정액 기준 8,618억으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>3</strong></div>
       <div><span>약정액 기준</span><strong>8,618억</strong></div>
       <div><span>약정액 점유율</span><strong>0.56%</strong></div>
-      <div><span>누적 펀드</span><strong>11</strong></div>
-      <div><span>누적 약정액</span><strong>3.6조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>40위</dd>
@@ -1799,49 +1803,14 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>블로터 · 2026-05-29</span>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=663858" target="_blank" rel="noreferrer">[큐캐피탈 밸류업]① &quot;안 지키면 공시 위반&quot; 고강도 밸류업 플랜 가동</a></h3>
-            <p>44년 업력의 중소형 바이아웃(경영권 인수) 딜에 특화된 사모펀드(PEF) 운용사 큐캐피탈파트너스(QCP)가 중장기적으로 주주 가치를 제고하기 위한 플랜을 가동한다. 현재 1%대인 자기 자본 이익률(ROE)을 오는 2030년까지 10%로 끌어 올리고, 순이익의 40% 이상을 주주에게</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-28</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10758230?ref=naver" target="_blank" rel="noreferrer">[단독] ‘상장 난항’ SK에코플랜트, 내달 사모펀드에 투자금 돌려준다</a></h3>
-            <p>28일 투자은행(IB) 업계에 따르면 SK에코플랜트가 오는 6월 10일 임시 주주총회를 열고 6500억원 규모의 자사주를 매입하는 안건을 결의할 예정이며 다음 날인 11일 잔금</p>
-          </article>
-          <article class="gp-news-row">
             <span>뉴스톱 · 2026-05-28</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45177" target="_blank" rel="noreferrer">큐캐피탈, 광명역 B주차장 ‘장기 캐시카우’로 키운다</a></h3>
             <p>국내 사모펀드(PEF) 운용사 큐캐피탈파트너스가 KTX 광명역 B주차장을 장기 현금흐름 자산으로 키우는 밸류업에 나선다. 2049년 코레일 귀속 전까지 남은 운영</p>
           </article>
           <article class="gp-news-row">
-            <span>아시아경제 · 2026-05-18</span>
-            <h3><a href="https://view.asiae.co.kr/article/2026051515421962522" target="_blank" rel="noreferrer">[PE는 지금]&#x27;매각 재도전&#x27; F&amp;B회사, 딜 성공 방정식은</a></h3>
-            <p>요식업 회사들이 잇따라 인수합병(M&amp;A) 시장에 나오고 있다. 햄버거, 치킨 관련 회사뿐 아니라 디저트 회사 등 분야도 다양하다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-13</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=44921" target="_blank" rel="noreferrer">큐캐피탈, KTX 광명역 B주차장 품었다</a></h3>
-            <p>국내 사모펀드(PEF) 운용사 큐캐피탈파트너스(이하 큐캐피탈)가 KTX 광명역 B주차장 운영사인 ㈜에이치에스홀딩스(이하 HS홀딩스) 경영권을 인수했다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>wikitree.co.kr · 2026-04-28</span>
-            <h3><a href="https://www.wikitree.co.kr/articles/1133899" target="_blank" rel="noreferrer">큐캐피탈, 임원 자사주 매입 확대…감자·병합 병행하며 주가 관리 나서</a></h3>
-            <p>[전국=위키트리 최학봉 선임기자] 국내 사모펀드(PEF) 운용사 큐캐피탈파트너스가 임원진의 자사주 매입과 함께 감자 및 주식 병합을 병행하며 주가 관리와 기업가치 제고에 나섰다.27일 금융감독원 전자공시시스템에 따르면 황희연 대표는 지난 21일과 22일 이틀간 큐캐피탈…</p>
-          </article>
-          <article class="gp-news-row">
             <span>서울경제 · 2026-04-28</span>
             <h3><a href="https://signal.sedaily.com/article/20038183?ref=nate" target="_blank" rel="noreferrer">SK에코플랜트 1조 FI 투자금 상환…IPO 부담 덜었다 [시그널]</a></h3>
             <p>SK(034730)에코플랜트가 보유 자금을 활용해 재무적투자자(FI)들에 1조 500억 원 규모의 투자금을 상환하기로 결정했다. 모회사 SK㈜도 4000억 원을 분담하기로 하면서 SK에코플랜트의 기업공개(IPO) 부담이 한층 낮아졌다는 분석이 나온다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스토마토 · 2026-03-04</span>
-            <h3><a href="http://www.newstomato.com/ReadNews.aspx?no=1292797&amp;inflow=N" target="_blank" rel="noreferrer">[IB토마토]초록뱀미디어, 투자 재원 마련 &#x27;분주&#x27;…M&amp;A 검토</a></h3>
-            <p>뉴스토마토 = 박예진 기자 | 이 기사는 2026년 02월 27일 17:24 IB토마토 유료 페이지에 노출된 기사입니다. 초록뱀미디어(047820)가 국내 사모펀드 운용사 큐캐피탈파트너스(PEF)에 인수된 이후 2년 만에 적자 기조를...</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2024-06-19</span>
-            <h3><a href="http://www.newstopkorea.com/news/articleView.html?idxno=22848" target="_blank" rel="noreferrer">[팩트체크] 초록뱀미디어 기업가치가 5000억?</a></h3>
-            <p>드라마·시트콤 제작사 초록뱀미디어의 기업가치를 두고 논란이 거세다. 국내 사모펀드(PEF) 운용사 큐캐피탈파트너스가 초록뱀미디어 지분 39.33%를 사들이기 위해</p>
           </article>
         </div>
       </article>
@@ -1894,8 +1863,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

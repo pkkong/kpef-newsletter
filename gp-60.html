@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>한앤컴퍼니 GP 프로필</title>
+  <title>한앤컴퍼니 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>한앤컴퍼니</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="5" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=hcompany.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>한앤</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>한앤컴퍼니</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 2위, 운용 중 펀드 18개, 약정액 기준 16.5조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>18</strong></div>
       <div><span>약정액 기준</span><strong>16.5조</strong></div>
       <div><span>약정액 점유율</span><strong>10.72%</strong></div>
-      <div><span>누적 펀드</span><strong>23</strong></div>
-      <div><span>누적 약정액</span><strong>17.6조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>공식 자료</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>2위</dd>
@@ -1839,31 +1843,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-28</span>
-            <h3><a href="https://dealsite.co.kr/articles/162480" target="_blank" rel="noreferrer">[롯데렌탈 M&amp;A] &quot;롯데만 챙기려던 프리미엄, 공정위가 막은 것&quot;</a></h3>
-            <p>VIP운용 지분 6.2%→7.33%로 확대…주주환원율 상향 및 자사주 매입·소각 요구</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-28</span>
-            <h3><a href="https://dealsite.co.kr/articles/162400" target="_blank" rel="noreferrer">한앤코, 케이카 매각 전 마지막 분기 배당…1조 잭팟 완성</a></h3>
-            <p>배당 1711억·구주매출 3065억·매각 대금 5500억…6월말 매매 계약 종결</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-22</span>
-            <h3><a href="https://www.mk.co.kr/news/business/12055428" target="_blank" rel="noreferrer">남양유업 사모펀드 인수되더니 잘나가네...1분기 분유 매출 전년비 10% ...</a></h3>
-            <p>프리미엄 성분 전략 성과 캄보디아·베트남 등 공략 가속</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-18</span>
-            <h3><a href="https://dealsite.co.kr/articles/159608" target="_blank" rel="noreferrer">KG 품은 캑터스PE…도용환 넘어선 정한설</a></h3>
-            <p>KG그룹과 5번째 파트너십 딜…연이은 성공에 친정 스틱 넘어선 청출어람 평가</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-18</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10739890?ref=naver" target="_blank" rel="noreferrer">“안 팔고 더 키운다”…PE업계 장기보유 전략 ‘승부수’</a></h3>
-            <p>국내 사모펀드 운용사들이 수익성 높은 포트폴리오 기업을 매각하지 않고 장기 보유하는 ‘컨티뉴에이션 펀드’ 전략을 잇따라 채택하고 있다.</p>
-          </article>
-          <article class="gp-news-row">
             <span>매일경제 · 2026-05-15</span>
             <h3><a href="https://www.mk.co.kr/news/stock/12049113" target="_blank" rel="noreferrer">부동산펀드 시동 거는 한앤코, 운용 전문가 영입나서</a></h3>
             <p>[본 기사는 05월 15일(14:18) 매일경제 자본시장 전문 유료매체인 ‘레이더M’에 보도 된 기사입니다] 사모펀드(PEF) 운용사 한앤컴퍼니가 신설 자산운용 법인 에이치캠(HCAM)을 앞세워 부동산 펀드 운용 채비에 본격 나섰다. 외국계 운용사에서 부동산 펀드 운용 경험을 갖춘 전문가 영입을 진행 중인 것으로 알려졌다</p>
@@ -1872,11 +1851,6 @@
             <span>연합인포맥스 · 2026-05-15</span>
             <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4414963" target="_blank" rel="noreferrer">한앤컴퍼니의 부동산 펀드, &#x27;에이치캠&#x27;이 운용한다</a></h3>
             <p>국내 대형 사모펀드(PEF) 운용사 한앤컴퍼니가 올해 초 설립한 신규 법인 &#x27;에이치캠(HCAM)&#x27;이 베일을 벗었다.에이치캠은 한앤컴퍼니가 준비 중인 첫 부동산 전용 펀드의 운용을 전담하며 대체투자 확장의 선봉에 선다.15일 투자은행(IB) 업계에 따르면 에이치캠은 한앤컴퍼니가 조성을 추진 중인 부동산 펀드를 운용할 예정이</p>
-          </article>
-          <article class="gp-news-row">
-            <span>인베스트조선 · 2026-05-13</span>
-            <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/12/2026051280159.html" target="_blank" rel="noreferrer">개미들이 주식에 열광할 때…기관들은 일찌감치 부동산 쇼핑중</a></h3>
-            <p>개미들이 주식에 열광할 때…기관들은 일찌감치 부동산 쇼핑중-인베스트조선</p>
           </article>
           <article class="gp-news-row">
             <span>머니투데이 · 2026-05-12</span>
@@ -1889,14 +1863,44 @@
             <p>11일 투자은행(IB) 업계에 따르면 미국 최대 공적연기금 캘리포니아공무원연금 캘퍼스(calPERS)의 최근 2년동안 PE에 투자한 내역을 살펴보면 장부가치와 시장가치가 0인 투자 건이 있다.</p>
           </article>
           <article class="gp-news-row">
-            <span>한국경제 · 2026-05-06</span>
-            <h3><a href="https://www.hankyung.com/article/2026050696431" target="_blank" rel="noreferrer">&#x27;경영권 인수&#x27;론 성장 한계…부동산 투자 늘리는 PEF</a></h3>
-            <p>&#x27;경영권 인수&#x27;론 성장 한계…부동산 투자 늘리는 PEF, 한앤컴퍼니, 5000억 펀드 조성 칼라일은 이지스 인수 검토 중 투자영역 넓혀 수익 다각화 노려</p>
+            <span>서울경제 · 2026-04-25</span>
+            <h3><a href="https://www.sedaily.com/article/20037024?ref=naver" target="_blank" rel="noreferrer">대전·대구·광주·울산, 창업도시 지정…2조 푼다</a></h3>
+            <p>이슈 브리핑] ■ 창업 도시 프로젝트: 정부가 KAIST·DGIST·GIST·UNIST 등 4대 과학기술원 소재 도시를 창업 도시로 선정하고 인재·R&amp;D·투자·공간을 패키지로 지원한다. 창업 승인 절차를 최장 6개월에서 약 2주로 단축하고, 창업 휴직 기간을 3</p>
           </article>
           <article class="gp-news-row">
-            <span>이데일리 · 2026-04-30</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=01843366645421368&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">최우수 ESG에 한앤코·IMM PE…라이징스타에 아크앤파트너스·베일리PE</a></h3>
-            <p>이 기사는 2026년04월29일 23시22분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 금리 변동성과 거래 불확실성이 이어지면서 사모투자 시장의 평가 기준이 빠르게 바뀌고 있다.</p>
+            <span>newstopkorea.com · 2026-04-24</span>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=44610" target="_blank" rel="noreferrer">키스톤PE, &#x27;SI 동맹&#x27;으로 딜 경쟁력 확보</a></h3>
+            <p>국내 사모펀드(PEF) 운용사 키스톤프라이빗에쿼티(PE)가 전략적투자자(SI)를 동반한 바이아웃(Buy-out) 등 주요</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스톱 · 2026-04-24</span>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=44612" target="_blank" rel="noreferrer">한앤코, 대통령 베트남 경제사절단 첫 합류...달라진 PEF 위상</a></h3>
+            <p>한앤컴퍼니(한앤코)가 사모펀드(PEF) 업계 최초로 대통령 순방 경제사절단에 포함됐다. 대기업과 수출 제조업 중심으로 구성되던 경제사절단에 PEF 운용사 인사가</p>
+          </article>
+          <article class="gp-news-row">
+            <span>서울경제 · 2026-04-24</span>
+            <h3><a href="https://www.sedaily.com/article/20036772?ref=naver" target="_blank" rel="noreferrer">글로벌PEF, 韓리더십 세대교체 바람 분다 [시그널INSIDE]</a></h3>
+            <p>글로벌 사모펀드(PEF) 운용사들이 한국 내 리더십을 교체하는 과정에서 공동대표 체제로 속속 전환하고 있다. 기존 핵심 인력 이탈에 따른 키맨 리스크 관리 및 의사 결정 객관성을 확보하는 동시에, 일부 투자 성과 부진과 펀딩 난항을 인적 쇄신으로 정면 돌파하려는 전략으</p>
+          </article>
+          <article class="gp-news-row">
+            <span>헤럴드경제 · 2026-04-24</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10724567?ref=naver" target="_blank" rel="noreferrer">한앤코, 대통령 베트남 경제사절단 포함…‘PEF 업계 최초’</a></h3>
+            <p>한앤컴퍼니가 사모펀드(PEF) 업계 최초로 대통령 순방 경제사절단에 포함되면서 포트폴리오 기업의 글로벌 진출을 돕는 등 기업가치 제고를 위한 선도적인 노력이 인정받은</p>
+          </article>
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-04-24</span>
+            <h3><a href="https://dealsite.co.kr/articles/160612" target="_blank" rel="noreferrer">한앤코 자산운용업으로 사업 다변화…PEF협의회 탈출</a></h3>
+            <p>한상원 대표 글로벌 네트워크 활용…PEF 넘어 운용사로 사업 확장</p>
+          </article>
+          <article class="gp-news-row">
+            <span>헤럴드경제 · 2026-04-13</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10715729?ref=naver" target="_blank" rel="noreferrer">버려진 페트병이 새 라벨로…마이크로웍스, 국내 첫 재생원료 음료 라벨...</a></h3>
+            <p>국내 최대 폴리에스터(PET) 필름 제조사 마이크로웍스(구 SK마이크로웍스)는 PET 수축 라벨에 페트병 재생원료를 10% 적용하는 기술을 국내 최초로 개발 및 상용화했다고 1</p>
+          </article>
+          <article class="gp-news-row">
+            <span>헤럴드경제 · 2026-04-10</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10714289?ref=naver" target="_blank" rel="noreferrer">[단독] 사모펀드 ‘포괄적 주식교환→상폐’ 전략 첫 판결, 法 “절차 문...</a></h3>
+            <p>10일 수원지방법원 평택지원 민사2부는 락앤락 소액주주들이 회사를 상대로 제기한 주식매수가격 결정 사건에서 회사가 1주당 8755원으로 정한 매수가격이 적정하다고 판단</p>
           </article>
         </div>
       </article>
@@ -1949,8 +1953,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

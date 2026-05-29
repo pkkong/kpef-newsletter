@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>글랜우드프라이빗에쿼티 GP 프로필</title>
+  <title>글랜우드프라이빗에쿼티 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>글랜우드프라이빗에쿼티</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=glenwoodpe.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>글랜</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>글랜우드프라이빗에쿼티</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 31위, 운용 중 펀드 2개, 약정액 기준 1.0조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>2</strong></div>
       <div><span>약정액 기준</span><strong>1.0조</strong></div>
       <div><span>약정액 점유율</span><strong>0.67%</strong></div>
-      <div><span>누적 펀드</span><strong>7</strong></div>
-      <div><span>누적 약정액</span><strong>2.2조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>공식 자료</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>31위</dd>
@@ -1799,16 +1803,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>블로터 · 2026-05-28</span>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=663759" target="_blank" rel="noreferrer">[롯데렌탈 M&amp;A] 어피니티와 결별 후 새 주인 찾기 &#x27;고차방정식&#x27;</a></h3>
-            <p>롯데그룹이 사모펀드(PEF) 어피니티에쿼티파트너스에 롯데렌탈을 매각하려던 거래가 무산되면서 새 주인 찾기를 공식화했다. 일부 PEF가 관심을 보인 것으로 알려졌지만, 앞서 공정거래위원회가 PEF의 사업적 특성을 들며 제동을 걸었던 만큼 심사 부담은 상당할 전망이다.여기에 최근 VIP자</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-05-25</span>
-            <h3><a href="https://www.sedaily.com/article/20047971?ref=naver" target="_blank" rel="noreferrer">대형 PEF, 롯데렌탈 눈독…공정위 기조·몸값 격차에 M&amp;A는 안갯속[시그...</a></h3>
-            <p>롯데그룹이 어피니티에쿼티파트너스(어피니티)로의 매각 무산 이후 롯데렌탈의 재매각 추진을 공식화했다. 다만 시장에서는 실제 M&amp;A 성사 가능성을 두고 회의적인 시각도 나온다.</p>
-          </article>
-          <article class="gp-news-row">
             <span>한국경제 · 2026-05-18</span>
             <h3><a href="https://www.hankyung.com/article/202605182739r" target="_blank" rel="noreferrer">[단독] 글랜우드PE 초기 멤버 장성진 전무, 회사 떠난다</a></h3>
             <p>[단독] 글랜우드PE 초기 멤버 장성진 전무, 회사 떠난다, 컬럼비아 MBA 인연으로 글랜우드PE 합류, 한국유리공업 등 주요</p>
@@ -1824,29 +1818,9 @@
             <p>11일 투자은행(IB) 업계에 따르면 미국 최대 공적연기금 캘리포니아공무원연금 캘퍼스(calPERS)의 최근 2년동안 PE에 투자한 내역을 살펴보면 장부가치와 시장가치가 0인 투자 건이 있다.</p>
           </article>
           <article class="gp-news-row">
-            <span>인베스트조선 · 2026-05-08</span>
-            <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/07/2026050780163.html" target="_blank" rel="noreferrer">[Invest]VIG파트너스 신창훈 대표 단독 체제로 전환 추진…&#x27;크레딧 펀드...</a></h3>
-            <p>VIG파트너스 신창훈 대표 단독 체제로 전환 추진…&#x27;크레딧 펀드&#x27; 법인 분리 가닥-인베스트조선</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-04-30</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=01826966645421368&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">&quot;잘 사고 잘 키우고 잘 팔았다&quot;…글랜우드PE, 종합대상 영예</a></h3>
-            <p>이 기사는 2026년04월29일 23시17분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 국내 토종 사모펀드(PEF) 글랜우드프라이빗에쿼티(글랜우드PE)가 국내 기관투자가(LP)들로부터 지난해 가장 성과를 낸 사모펀드로 꼽혔다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-04-30</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=01820406645421368&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">사모투자 성과… 글랜우드, 대상 포함 3관왕</a></h3>
-            <p>이 기사는 2026년04월29일 23시16분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 글랜우드프라이빗에쿼티가 지난해 국내 사모투자 시장에서 기관투자자(LP)들이 꼽은 가장 두드러진 사모펀드(PEF)로 선정됐다.</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-04-29</span>
             <h3><a href="https://dealsite.co.kr/articles/160868" target="_blank" rel="noreferrer">스틱 이경형 4000억 펀딩 착수…국민성장펀드 출사표</a></h3>
             <p>그로스캐피탈 부문 승격으로 대표 승진…수은 500억 확보, 국내외 트랙레코드 강점</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-04-15</span>
-            <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hOHZIbG41U09nME96bG1oWklkeGVNdHRCNnJzb3pjUXhYOVpZaWg0NzhZR0M4cVJhS1NNU2VBenRMLXNFQ1hDTm8zUEd1X2JkTkE?oc=5&amp;hl=ko&amp;gl=KR&amp;ceid=KR:ko" target="_blank" rel="noreferrer">[PEF열전] 글랜우드PE, PI첨단소재·한국유리 &#x27;비핵심&#x27; 인수해 대박 - 매일경제</a></h3>
-            <p>[PEF열전] 글랜우드PE, PI첨단소재·한국유리 &#x27;비핵심&#x27; 인수해 대박 매일경제</p>
           </article>
           <article class="gp-news-row">
             <span>한국경제 · 2026-02-25</span>
@@ -1854,9 +1828,14 @@
             <p>글랜우드PE 웃고, MBK는 울상…표정 갈린 PEF, PEF 하우스 성과 평가 글랜우드 &#x27;사업부 분할거래&#x27; 두각 &#x27;규제 강화&#x27; 낳은 MBK는 감점</p>
           </article>
           <article class="gp-news-row">
-            <span>한국경제 · 2026-02-09</span>
-            <h3><a href="https://www.hankyung.com/article/202602093675r" target="_blank" rel="noreferrer">제17회 한국 IB대상 종합대상에 한국투자증권</a></h3>
-            <p>제17회 한국 IB대상 종합대상에 한국투자증권, ECM NH투자증권, DCM KB증권, IPO 미래에셋증권 각각 최우수상 M&amp;A 시장에선 삼일회계법인 김앤장 KB국민은행 압도적 성과 베스트딜 부문 SK이노베이션 발전자회사 유동화 마무리한 메리츠 UBS 수상 베스트 대체투자 하우스는 KB자산운용, 이노베이션 하우스는 글랜우</p>
+            <span>한국경제 · 2025-08-03</span>
+            <h3><a href="https://www.hankyung.com/article/2025080386561" target="_blank" rel="noreferrer">韓대표 운용사 총출동…싱가포르 패밀리오피스 수십곳 참석</a></h3>
+            <p>韓대표 운용사 총출동…싱가포르 패밀리오피스 수십곳 참석, ASK SINGAPORE 2025 10월 27일 파크로열마리나호텔 글랜우드PE 등 투자비법 공개 한투·LB인베, VC투자기회 발표 1대1 미팅 등 네트워크도 마련 &quot;새로운 기회 목마른 싱가포르 K혁신산업 투자 소개의 장&quot;</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스핌 · 2017-07-20</span>
+            <h3><a href="https://www.newspim.com/news/view/20170720000068" target="_blank" rel="noreferrer">손창배 키스톤PE, 현대자산운용 550억 베팅 속내는?</a></h3>
+            <p>[편집자] 이 기사는 7월 20일 오전 09시33분 프리미엄 뉴스서비스&#x27;ANDA&#x27;에 먼저 출고됐습니다. 몽골어로 의형제를 뜻하는 &#x27;ANDA&#x27;는 국내 기업의 글로벌 성장과 도약, 독자 여러분의 성공적인 자산관리 동반자가 되겠다는 뉴스핌의 약속입니다.[뉴스핌=김지완 기자]</p>
           </article>
         </div>
       </article>
@@ -1909,8 +1888,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

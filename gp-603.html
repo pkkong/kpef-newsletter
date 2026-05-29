@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>이앤에프프라이빗에퀴티 GP 프로필</title>
+  <title>이앤에프프라이빗에퀴티 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>이앤에프프라이빗에퀴티</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=enfpe.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>이앤</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>이앤에프프라이빗에퀴티</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 21위, 운용 중 펀드 9개, 약정액 기준 1.4조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>9</strong></div>
       <div><span>약정액 기준</span><strong>1.4조</strong></div>
       <div><span>약정액 점유율</span><strong>0.94%</strong></div>
-      <div><span>누적 펀드</span><strong>17</strong></div>
-      <div><span>누적 약정액</span><strong>1.8조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>21위</dd>
@@ -1839,54 +1843,14 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>조선비즈 · 2026-05-26</span>
-            <h3><a href="https://biz.chosun.com/stock/market_trend/2026/05/26/KNDOS4HEJRFNDM6QAPFPFNT5NY/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz" target="_blank" rel="noreferrer">E&amp;F PE, KES환경개발 인수 마무리… 인수금융 셀다운 진행</a></h3>
-            <p>E&amp;F PE, KES환경개발 인수 마무리 인수금융 셀다운 진행 이 기사는 2026년 5월 26일 17시 03분 조선비즈 머니무브MM 사이트에 표출됐습니다. 사모펀드PEF 운용사 E&amp;F 프라이빗에쿼티E&amp;F PE가 폐기물 매립장 운영사 KES환경개발 인수</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-21</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45098" target="_blank" rel="noreferrer">코엔텍 회수한 E&amp;F PE, 연내 3000억 펀드 도전</a></h3>
-            <p>국내 사모펀드(PEF) 운용사 E&amp;F프라이빗에쿼티(E&amp;F PE)가 3호 블라인드펀드 조성 준비에 속도를 내고 있다. 올해 초 핵심 투자 자산 중 하나인 폐기물 처</p>
-          </article>
-          <article class="gp-news-row">
             <span>더벨 · 2026-05-21</span>
             <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605151712128720109417" target="_blank" rel="noreferrer">&#x27;산업 조각가&#x27; E&amp;F</a></h3>
             <p>이 기사는 2026년 05월 21일 17시 51분 더벨 무료페이지에 표출된 기사입니다. 자본시장에서 사모펀드(PEF)를 바라보는 시선은 여전히 차갑다.</p>
           </article>
           <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-14</span>
-            <h3><a href="https://dealsite.co.kr/articles/161412" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] M&amp;A 단 한 자리…회수 실적 앞세운...</a></h3>
-            <p>센트로이드·웰투시·E&amp;F 등 5곳 지원…과거 산은 협업 이력·청산 수익률 최대 변수</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이투데이 · 2026-05-14</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2583925" target="_blank" rel="noreferrer">M&amp;A 리그, 진짜 실력의 시험대 [국민성장펀드 운용전쟁] 下-②</a></h3>
-            <p>[편집자주] 7조원 규모의 경제 성장 마중물 국민성장펀드 운용사 선정에 81개 자본시장 플레이어들이 줄을 섰다. 운용자산(AUM) 5000억원 미만 벤처캐</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-08</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10733739?ref=naver" target="_blank" rel="noreferrer">M&amp;A 원스톱 토털 서비스로 국내외 대형 딜 두각</a></h3>
-            <p>인수·합병(M&amp;A)은 더 이상 ‘사고파는 거래’에 머물지 않는다. 매수자와 매도자의 이해관계, 규제와 자본, 산업 전략이 맞물리며 판을 짜는 고도의 설계 작업에 가깝다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>더벨 · 2026-05-08</span>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605061406172040106974" target="_blank" rel="noreferrer">[더벨][PE 포트폴리오 엿보기] E&amp;F의 쎄노텍, 배터리 소재 플랫폼 변신 ...</a></h3>
-            <p>사모펀드(PEF) 운용사 E&amp;F프라이빗에쿼티(이하 E&amp;F PE)가 바이아웃 포트폴리오 기업 쎄노텍 밸류업에 성공했다. 기존 주력 제품인 세라믹 비드에서 안정적인 실적을 내는 동시에 이차전지 소재 시장으로 사업 영역을...</p>
-          </article>
-          <article class="gp-news-row">
             <span>블로터 · 2026-05-06</span>
             <h3><a href="https://www.bloter.net/news/articleView.html?idxno=661417" target="_blank" rel="noreferrer">국민성장펀드 1차 출자사업, 81개사 몰려…경쟁률 7.36대1</a></h3>
             <p>총 3조9000억원 규모로 조성하는 &#x27;2026년 국민성장펀드 1차 위탁운용사(GP)&#x27; 출자사업에 81곳의 사모펀드(PEF) 운용사와 벤처캐피털(VC)이 지원하며 흥행에 성공했다.6일 투자은행(IB) 업계에 따르면 한국산업은행과 신한자산운용이 주관하는 이번 사업에 81곳의 하우스가 출사</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-04-25</span>
-            <h3><a href="https://www.sedaily.com/article/20037024?ref=naver" target="_blank" rel="noreferrer">대전·대구·광주·울산, 창업도시 지정…2조 푼다</a></h3>
-            <p>이슈 브리핑] ■ 창업 도시 프로젝트: 정부가 KAIST·DGIST·GIST·UNIST 등 4대 과학기술원 소재 도시를 창업 도시로 선정하고 인재·R&amp;D·투자·공간을 패키지로 지원한다. 창업 승인 절차를 최장 6개월에서 약 2주로 단축하고, 창업 휴직 기간을 3</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-04-14</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10716356?ref=naver" target="_blank" rel="noreferrer">E&amp;F PE, ‘수도권 매립지’ KES환경개발 인수금융 조달 협상 착수</a></h3>
-            <p>13일 투자은행(IB) 업계에 따르면 E&amp;F 프라이빗에쿼티가 수도권 내 희소가치가 높은 폐기물 매립지인 KES환경개발 인수를 위해 인수금융 조달을 위해 주요</p>
           </article>
           <article class="gp-news-row">
             <span>헤럴드경제 · 2026-04-10</span>
@@ -1949,8 +1913,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

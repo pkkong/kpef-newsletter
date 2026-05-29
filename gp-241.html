@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>한국투자파트너스 GP 프로필</title>
+  <title>한국투자파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>한국투자파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo" data-tone="2" aria-hidden="true"><span>한국</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>한국투자파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 49위, 운용 중 펀드 11개, 약정액 기준 6,326억으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>11</strong></div>
       <div><span>약정액 기준</span><strong>6,326억</strong></div>
       <div><span>약정액 점유율</span><strong>0.41%</strong></div>
-      <div><span>누적 펀드</span><strong>13</strong></div>
-      <div><span>누적 약정액</span><strong>8,826억</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1675,10 +1683,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>운용 현황</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>49위</dd>
@@ -1804,24 +1808,9 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-26</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45145" target="_blank" rel="noreferrer">[국민성장펀드] 최종 GP 발표 임박...박현주·서정진 픽은?</a></h3>
-            <p>국민성장펀드 1차 위탁운용사(GP) 발표가 임박했다. 사모펀드(PE)와 벤처캐피탈(VC)의 대형 리그 경쟁에 더해 M&amp;A·프로젝트 리그까지 맞물리며 민간 성장자본</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-25</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12056770" target="_blank" rel="noreferrer">“2.4조 쩐의 전쟁 승자는”…국민성장펀드 운용사 선정 ‘빅매치’ [M&amp;...</a></h3>
-            <p>대형리그 도미누스·스카이레이크 M&amp;A부문 웰투시vs케이엘엔 경쟁 코스닥 리그에선 리턴매치 성사</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-05-21</span>
             <h3><a href="https://dealsite.co.kr/articles/162179" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] 그로쓰 투자 대가 도미누스…대형...</a></h3>
             <p>대형 리그 숏리스트 안착…SKC·우진산전 등 차세대 산업 중심 포트폴리오 많아</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-21</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45077" target="_blank" rel="noreferrer">방산 수혜 &#x27;엠앤씨솔루션&#x27;, SPA 체결 임박</a></h3>
-            <p>엠앤씨솔루션 경영권 매각 작업이 막바지에 들어섰다. 방산 섹터에 대한 투자심리가 이어지는 가운데 한국투자파트너스가 실사를 마무리하면서 상반기 내 주식매매계약(SP</p>
           </article>
           <article class="gp-news-row">
             <span>블로터 · 2026-05-15</span>
@@ -1847,11 +1836,6 @@
             <span>뉴스톱 · 2026-04-28</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=44661" target="_blank" rel="noreferrer">박상진 산은 회장, VC 40곳 끌고 실리콘밸리行</a></h3>
             <p>한국산업은행이 미국 실리콘밸리에서 대규모 투자자 교류 행사를 열고 국내 벤처기업의 글로벌 진출과 해외 자본 유치를 전폭적으로 지원한다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>더벨 · 2026-04-14</span>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202604091506542600105477" target="_blank" rel="noreferrer">&#x27;엠앤씨솔루션 인수&#x27; 한투파PE, 한투·우리은행과 맞손 유력</a></h3>
-            <p>국내 사모펀드(PEF) 운용사 한국투자파트너스 PE본부(이하 한투파PE)가 방산·우주 부품 기업 엠앤씨솔루션 인수에 속도를 내고 있다. 최근 우선협상대상자로 낙점된 이후 대규모 자금 마련을 위해 인수금융...</p>
           </article>
           <article class="gp-news-row">
             <span>뉴스톱 · 2026-04-13</span>
@@ -1914,8 +1898,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

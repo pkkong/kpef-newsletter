@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>어펄마캐피탈 GP 프로필</title>
+  <title>어펄마캐피탈 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>어펄마캐피탈</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=affirmacapital.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>어펄</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>어펄마캐피탈</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 17위, 운용 중 펀드 6개, 약정액 기준 1.6조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>6</strong></div>
       <div><span>약정액 기준</span><strong>1.6조</strong></div>
       <div><span>약정액 점유율</span><strong>1.07%</strong></div>
-      <div><span>누적 펀드</span><strong>11</strong></div>
-      <div><span>누적 약정액</span><strong>2.7조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>공식 자료</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>17위</dd>
@@ -1799,21 +1803,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>한국경제 · 2026-05-27</span>
-            <h3><a href="https://www.hankyung.com/article/2026052725611" target="_blank" rel="noreferrer">한국펀드파트너스 매물로…ETF 붐에 예상 매각가 &#x27;껑충&#x27;</a></h3>
-            <p>한국펀드파트너스 매물로…ETF 붐에 예상 매각가 &#x27;껑충&#x27;, PTA PE, 내달 매각 예비입찰</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-05-21</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04857686645451216&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">[GAIC 2026]“AI 전쟁 본질은 ‘생산성’…체질 바꿀 인프라에 집중할 때...</a></h3>
-            <p>김세훈 BCC글로벌 한국/동남아 대표와 류 차오 베이징대학교 광화경영대학원 학장 겸 교수, 홍기남 소피노바캐피탈 Crossover Strategy Partner, 제임스 리우 오크캐피탈인베스트먼트 대표, 김태엽 어펄마캐피탈 대표, 김진환 사학연금 기업금융팀장, 마이클...</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-05-21</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04795366645451216&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">[GAIC 2026] “AI 피해입는 기업, 사모펀드엔 인수 기회”</a></h3>
-            <p>김세훈 BCC글로벌 한국·동남아 대표와 류 차오 베이징대학교 광화경영대학원 학장 겸 교수, 홍기남 소피노바캐피탈 크로스오버 스트래티지 파트너, 제임스 리우 오크캐피탈인베스트먼트 대표, 김태엽 어펄마캐피탈 대표, 김진환 사학연금 기업금융팀장, 마이클 반 질 컨트롤리스크스...</p>
-          </article>
-          <article class="gp-news-row">
             <span>이데일리 · 2026-05-21</span>
             <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04106566645451216&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">[GAIC 2026] “생산성 높이지 못하면 도태…AI가 해답 될 것”</a></h3>
             <p>김세훈 BCC글로벌 한국/동남아 대표와 류 차오 베이징대학교 광화경영대학원 학장 겸 교수, 홍기남 소피노바캐피탈 Crossover Strategy Partner, 제임스 리우 오크캐피탈인베스트먼트 대표, 김태엽 어펄마캐피탈 대표, 김진환 사학연금 기업금융팀장, 마이클...</p>
@@ -1909,8 +1898,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

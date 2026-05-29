@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>센트로이드인베스트먼트파트너스 GP 프로필</title>
+  <title>센트로이드인베스트먼트파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>센트로이드인베스트먼트파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=centroidip.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>센트</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>센트로이드인베스트먼트파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 24위, 운용 중 펀드 6개, 약정액 기준 1.4조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>6</strong></div>
       <div><span>약정액 기준</span><strong>1.4조</strong></div>
       <div><span>약정액 점유율</span><strong>0.88%</strong></div>
-      <div><span>누적 펀드</span><strong>9</strong></div>
-      <div><span>누적 약정액</span><strong>1.5조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>공식 자료</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>24위</dd>
@@ -1824,54 +1828,14 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-14</span>
-            <h3><a href="https://dealsite.co.kr/articles/161412" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] M&amp;A 단 한 자리…회수 실적 앞세운...</a></h3>
-            <p>센트로이드·웰투시·E&amp;F 등 5곳 지원…과거 산은 협업 이력·청산 수익률 최대 변수</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이투데이 · 2026-05-14</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2583925" target="_blank" rel="noreferrer">M&amp;A 리그, 진짜 실력의 시험대 [국민성장펀드 운용전쟁] 下-②</a></h3>
-            <p>[편집자주] 7조원 규모의 경제 성장 마중물 국민성장펀드 운용사 선정에 81개 자본시장 플레이어들이 줄을 섰다. 운용자산(AUM) 5000억원 미만 벤처캐</p>
-          </article>
-          <article class="gp-news-row">
-            <span>더벨 · 2026-05-11</span>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605070801462580108656" target="_blank" rel="noreferrer">&#x27;FI인데 SI 시너지 있다&#x27;…더피플라이프, 센트로이드 택한 이유</a></h3>
-            <p>센트로이드인베스트먼트파트너스(이하 센트로이드)가 더피플라이프 인수 우선협상대상자로 선정된... 센트로이드 입장에서는 PE 특유의 자산운용·시스템 고도화 역량에 더피플라이프 경영진의 현장 네트워크를 결합할...</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-08</span>
-            <h3><a href="https://dealsite.co.kr/articles/161410" target="_blank" rel="noreferrer">센트로이드PE 리버티자산운용 품었다</a></h3>
-            <p>기관전용 사모 운용사 한계 너머 신탁형 펀드 등 맞춤형 투자 구조 설계 위한 포석</p>
-          </article>
-          <article class="gp-news-row">
             <span>이투데이 · 2026-05-07</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2582277" target="_blank" rel="noreferrer">국민성장펀드 운용사 모집에 PEF 대거 지원…증권사 컨소 돋보여</a></h3>
             <p>11곳 모집에 81곳 몰려…평균 경쟁률 7.4대 1생태계 전반 소형 리그에 증권사 컨소 &#x27;눈길&#x27;&quot;RWA 100% 적용…민간 모집 난이도 낮아져&quot;▲여의도 증권가국민</p>
           </article>
           <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-06</span>
-            <h3><a href="https://dealsite.co.kr/articles/161345" target="_blank" rel="noreferrer">센트로이드PE, 상조업계 6위 더피플라이프 인수</a></h3>
-            <p>경영권 인수 우선협상대상자 선정…기업가치 2000억 거론</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-06</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12037746" target="_blank" rel="noreferrer">센트로이드, 더피플라이프 품는다</a></h3>
-            <p>경영권 인수 우협 선정상조업계 6위…매출 성장세</p>
-          </article>
-          <article class="gp-news-row">
-            <span>파이낸셜뉴스 · 2026-05-06</span>
-            <h3><a href="https://www.fnnews.com/news/202605061733560401" target="_blank" rel="noreferrer">한화생명이 투자한 센트로이드PE, &#x27;더피플라이프&#x27; 인수 [fn마켓워치]</a></h3>
-            <p>중견 사모펀드 센트로이드인베스트먼트파트너스가 더피플라이프 인수로 상조업계에 진출한다.이번 더피플라이프 인수 역시 이러한 강력한 배경 아래 추진되는 만큼, 향후 시니어 플랫폼 구축 과정에서도 단순한 재무적 투자를 넘어선 차원이 다른 비즈니스 시너지가 창…</p>
-          </article>
-          <article class="gp-news-row">
             <span>블로터 · 2026-05-06</span>
             <h3><a href="https://www.bloter.net/news/articleView.html?idxno=661417" target="_blank" rel="noreferrer">국민성장펀드 1차 출자사업, 81개사 몰려…경쟁률 7.36대1</a></h3>
             <p>총 3조9000억원 규모로 조성하는 &#x27;2026년 국민성장펀드 1차 위탁운용사(GP)&#x27; 출자사업에 81곳의 사모펀드(PEF) 운용사와 벤처캐피털(VC)이 지원하며 흥행에 성공했다.6일 투자은행(IB) 업계에 따르면 한국산업은행과 신한자산운용이 주관하는 이번 사업에 81곳의 하우스가 출사</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-06</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12037621" target="_blank" rel="noreferrer">센트로이드, ‘상조업계 6위’ 더피플라이프 품는다</a></h3>
-            <p>경영권 인수 우협 선정돼 “2대주주 한화생명 시너지”</p>
           </article>
           <article class="gp-news-row">
             <span>서울경제 · 2026-05-06</span>
@@ -1882,6 +1846,16 @@
             <span>인베스트조선 · 2026-05-06</span>
             <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/06/2026050680172.html" target="_blank" rel="noreferrer">센트로이드PE, 상조업체 더피플라이프 인수 우협 선정</a></h3>
             <p>센트로이드PE, 상조업체 더피플라이프 인수 우협 선정-인베스트조선</p>
+          </article>
+          <article class="gp-news-row">
+            <span>이투데이 · 2026-05-06</span>
+            <h3><a href="https://www.etoday.co.kr/news/view/2581998" target="_blank" rel="noreferrer">센트로이드PE, 상조업계 6위 &#x27;더피플라이프&#x27; 품는다…M&amp;A 우협 선정</a></h3>
+            <p>국내 사모펀드운용사(PE) 센트로이드인베스트먼트파트너스(센트로이드PE)가 상조업계 6위 업체 더피플라이프를 품는다.6일 투자은행(IB) 업계에 따르</p>
+          </article>
+          <article class="gp-news-row">
+            <span>조선비즈 · 2026-04-28</span>
+            <h3><a href="https://biz.chosun.com/stock/market_trend/2026/04/29/TYYKF2L7QVAFTCMNXSHWRHF6DA/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz" target="_blank" rel="noreferrer">“챗GPT는 못 믿어”... AI 플랫폼 직접 만들어 쓰는 센트로이드PE</a></h3>
+            <p>AI 플랫폼 직접 만들어 쓰는 센트로이드PE 이 기사는 2026년 4월 28일 16시 47분 조선비즈 머니무브MM 사이트에 표출됐습니다. 국내 사모펀드PEF 운용사 센트로이드인베스트먼트파트너스이하 센트로이드가 투자 검토와 사후 관리 업무에</p>
           </article>
         </div>
       </article>
@@ -1934,8 +1908,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

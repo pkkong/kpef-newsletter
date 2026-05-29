@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>에스지프라이빗에쿼티 GP 프로필</title>
+  <title>에스지프라이빗에쿼티 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>에스지프라이빗에쿼티</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="2" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=sgpef.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>에스</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>에스지프라이빗에쿼티</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 19위, 운용 중 펀드 9개, 약정액 기준 1.5조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>9</strong></div>
       <div><span>약정액 기준</span><strong>1.5조</strong></div>
       <div><span>약정액 점유율</span><strong>0.99%</strong></div>
-      <div><span>누적 펀드</span><strong>17</strong></div>
-      <div><span>누적 약정액</span><strong>1.9조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>19위</dd>
@@ -1817,28 +1821,7 @@
       </article>
       <article class="gp-panel">
         <h2>관련 뉴스</h2>
-        <div class="gp-news-list">
-          <article class="gp-news-row">
-            <span>더벨 · 2026-05-27</span>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605221417061160106819" target="_blank" rel="noreferrer">이테크시스템, 최대 3000억 투자 유치 추진</a></h3>
-            <p>이 기사는 2026년 05월 27일 08시 10분 더벨 무료페이지에 표출된 기사입니다. 이번 딜의 관건은 2대 주주인 사모펀드(PEF) 운용사 SG프라이빗에쿼티(SG PE)의 행보다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-11</span>
-            <h3><a href="https://dealsite.co.kr/articles/161290" target="_blank" rel="noreferrer">[딜메이커] [법무법인 화우] &quot;자문은 답변이 아니라 창의적 영역&quot;</a></h3>
-            <p>김상만 M&amp;A 변호사 &quot;법적 위험 낮다면 과감히 양보…자문은 주장과 갈등의 해결&quot;</p>
-          </article>
-          <article class="gp-news-row">
-            <span>pinpointnews.co.kr · 2026-04-28</span>
-            <h3><a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=449264" target="_blank" rel="noreferrer">SBI 이어 애큐온까지… 저축은행 M&amp;A &#x27;연쇄 재편&#x27; 신호</a></h3>
-            <p>저축은행을 중심으로 한 제2금융권 구조 재편이 본격화되는 모습이다. 업계 1위 SBI저축은행이 교보생명에 매각된 데 이어 애큐온캐피탈 매각 절차가 속도를 내면서 인수합병(M&amp;A) 시장이 다시 달아오르고 있다.28일 금융권에 따르면 최근 글로벌 사모펀드(PEF) EQT파트너스는 애큐온캐피탈 인수 적격 후보(숏리스트)로 메리</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-04-10</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10714281?ref=naver" target="_blank" rel="noreferrer">상반기 LP 출자사업 본격화…수은 등 실탄 공급 나서 [주간 ‘딜’리버...</a></h3>
-            <p>올해 상반기 국내 사모펀드(PEF) 시장의 자금 조달을 위해 주요 기관투자자들이 잇따라 출자사업을 재개하며 시장의 ‘마중물’ 역할을 하고 있는 가운데, 10일 투자은행(I</p>
-          </article>
-        </div>
+        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
       </article>
     </section>
 
@@ -1889,8 +1872,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

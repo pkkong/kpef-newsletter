@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>원익투자파트너스 GP 프로필</title>
+  <title>원익투자파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>원익투자파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo" data-tone="2" aria-hidden="true"><span>원익</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>원익투자파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 63위, 운용 중 펀드 3개, 약정액 기준 5,113억으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>3</strong></div>
       <div><span>약정액 기준</span><strong>5,113억</strong></div>
       <div><span>약정액 점유율</span><strong>0.33%</strong></div>
-      <div><span>누적 펀드</span><strong>6</strong></div>
-      <div><span>누적 약정액</span><strong>7,333억</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1675,10 +1683,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>운용 현황</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>63위</dd>
@@ -1759,11 +1763,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>더벨 · 2026-05-21</span>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605191348545840101457" target="_blank" rel="noreferrer">원익투자파트너스, 오르카운용 인수…운용업...</a></h3>
-            <p>실제 원익투자파트너스는 최근 수년간 블라인드펀드 결성을 확대하며 운용자산(AUM)을 빠르게 늘려왔다.... VC와 PE는 성과보수 비중이 높은 사업인 반면 자산운용업은 공·사모펀드, 투자일임 등을 통한 반복 수익 기반...</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-05-19</span>
             <h3><a href="https://dealsite.co.kr/articles/161900/075023" target="_blank" rel="noreferrer">씨앗 -70% 때문에…최흥순의 서울투자 진퇴양난</a></h3>
             <p>성장금융 펀드로 9년 년 10억 투자했지만 큰 손실…차기 펀딩의 최대 걸림돌 지적</p>
@@ -1774,11 +1773,6 @@
             <p>&quot;첫 번째 블라인드 펀드는 시작, 두 번째는 우리의 길이 옳았다는 증명, 이번 새로 클로징한 3750억원 규모의 블라인드 펀드는 이제 본격적인 성과를 내 더 크게 도약하는 기점입니다.&quot;김동수 원익투자파트너스 PE(Private Equity·사모펀드)부문 대표는 최근 ...</p>
           </article>
           <article class="gp-news-row">
-            <span>이투데이 · 2026-05-01</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2580718" target="_blank" rel="noreferrer">실탄은 넘치는데 살 매물이 없다…PEF 업계, 딜 가뭄에 &#x27;아우성&#x27;</a></h3>
-            <p>▲여의도 증권가국내 사모펀드(PEF) 시장에 &#x27;풍요 조달한 자금은 쌓여가고 있지만, 정작 마땅한 투자처를 찾지 못한 운용</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-04-23</span>
             <h3><a href="https://dealsite.co.kr/articles/160091" target="_blank" rel="noreferrer">[2026 모태펀드] [1차] 농금원 포기했던 원익투자…정책금융 신뢰 회복 ...</a></h3>
             <p>고난도 계정 반납 후 산은·성장금융 등 대형 펀드에만 집중…공적 책임 외면 지적</p>
@@ -1787,11 +1781,6 @@
             <span>딜사이트 · 2025-10-31</span>
             <h3><a href="https://dealsite.co.kr/articles/150505" target="_blank" rel="noreferrer">과기공 1700억 PE 숏리스트에 VIG·H&amp;Q 등 11곳</a></h3>
             <p>케이스톤·KCGI·노앤·어센트·SKS·원익 등…내달 11일 PT 예정</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2025-03-04</span>
-            <h3><a href="https://dealsite.co.kr/articles/137457" target="_blank" rel="noreferrer">RWA 규제에 캐피탈사 위축…스몰딜 사라진다</a></h3>
-            <p>론 위주의 안정적 투자 지침…중소형·신생 PE 펀딩 &#x27;난항&#x27;</p>
           </article>
           <article class="gp-news-row">
             <span>뉴스톱 · 2024-08-09</span>
@@ -1849,8 +1838,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

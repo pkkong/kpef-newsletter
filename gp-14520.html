@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>아크앤파트너스 GP 프로필</title>
+  <title>아크앤파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>아크앤파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo" data-tone="5" aria-hidden="true"><span>아크</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>아크앤파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 72위, 운용 중 펀드 6개, 약정액 기준 3,932억으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>6</strong></div>
       <div><span>약정액 기준</span><strong>3,932억</strong></div>
       <div><span>약정액 점유율</span><strong>0.26%</strong></div>
-      <div><span>누적 펀드</span><strong>8</strong></div>
-      <div><span>누적 약정액</span><strong>4,398억</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1675,10 +1683,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>운용 현황</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>72위</dd>
@@ -1782,28 +1786,7 @@
       </article>
       <article class="gp-panel">
         <h2>관련 뉴스</h2>
-        <div class="gp-news-list">
-          <article class="gp-news-row">
-            <span>한국경제 · 2026-05-08</span>
-            <h3><a href="https://www.hankyung.com/article/202605083842O" target="_blank" rel="noreferrer">아크앤파트너스, IBK 성장 M&amp;A펀드 운용사 선정…성장형 바이아웃 확대</a></h3>
-            <p>아크앤파트너스, IBK 성장 M&amp;A펀드 운용사 선정…성장형 바이아웃 확대, 김성혜 기자, 경제</p>
-          </article>
-          <article class="gp-news-row">
-            <span>인베스트조선 · 2026-05-08</span>
-            <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/07/2026050780163.html" target="_blank" rel="noreferrer">[Invest]VIG파트너스 신창훈 대표 단독 체제로 전환 추진…&#x27;크레딧 펀드...</a></h3>
-            <p>VIG파트너스 신창훈 대표 단독 체제로 전환 추진…&#x27;크레딧 펀드&#x27; 법인 분리 가닥-인베스트조선</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-04-30</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=01843366645421368&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">최우수 ESG에 한앤코·IMM PE…라이징스타에 아크앤파트너스·베일리PE</a></h3>
-            <p>이 기사는 2026년04월29일 23시22분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 금리 변동성과 거래 불확실성이 이어지면서 사모투자 시장의 평가 기준이 빠르게 바뀌고 있다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-04-28</span>
-            <h3><a href="https://www.sedaily.com/article/20038258?ref=naver" target="_blank" rel="noreferrer">‘직장인 커뮤니티’ 블라인드 상장한다…AI 엔진 장착 [시그널]</a></h3>
-            <p>직장인 커뮤니티 ‘블라인드’ 운영사 팀블라인드가 기업공개(IPO)에 나선다. 최근 미래에셋증권과 주관 계약을 체결하고 코스닥 상장을 내부적인 목표로 잡았다.</p>
-          </article>
-        </div>
+        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
       </article>
     </section>
 
@@ -1854,8 +1837,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

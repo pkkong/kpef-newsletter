@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>엠비케이파트너스 GP 프로필</title>
+  <title>엠비케이파트너스 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>엠비케이파트너스</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=mbkpartners.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>엠비</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>엠비케이파트너스</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 1위, 운용 중 펀드 15개, 약정액 기준 17.3조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>15</strong></div>
       <div><span>약정액 기준</span><strong>17.3조</strong></div>
       <div><span>약정액 점유율</span><strong>11.23%</strong></div>
-      <div><span>누적 펀드</span><strong>36</strong></div>
-      <div><span>누적 약정액</span><strong>24.7조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>공식 자료</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>1위</dd>
@@ -1839,16 +1843,6 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>머니투데이 · 2026-05-27</span>
-            <h3><a href="https://www.mt.co.kr/living/2026/05/27/2026052714555156747" target="_blank" rel="noreferrer">&quot;이미 5000명 일자리 잃었다&quot;...돈 줄 마른 홈플러스, &#x27;파산 위기&#x27; 증폭</a></h3>
-            <p>기업회생을 진행 중인 홈플러스에서 이미 5000명가량의 임직원이 일자리를 잃은 것으로 나타났다. 최근 하림그룹과 기업형슈퍼마켓(SSM) 익스프레스 매각 계약을 체결했지만, 대금 납입까지 시간이 걸리면서 자금난은 심화하고 있다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-27</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10756965?ref=naver" target="_blank" rel="noreferrer">“복잡할수록 광장 찾는다”…‘딜 메이커’ 존재감 키워</a></h3>
-            <p>법무법인 광장의 기업인수합병그룹(이하 M&amp;A그룹)은 양적·질적 측면 모두에서 자본시장의 한 축을 담당하는 규모를 구축하고 있다. 현재 M&amp;A그룹에 소속된 변호사만 120여</p>
-          </article>
-          <article class="gp-news-row">
             <span>서울경제 · 2026-05-27</span>
             <h3><a href="https://www.sedaily.com/article/20048680?ref=naver" target="_blank" rel="noreferrer">법원, 고려아연에 원아시아 펀드 투자 문서 제출 명령 [시그널]</a></h3>
             <p>고려아연이 투자한 사모펀드(PEF) 운용사 원아시아파트너스 펀드 관련 문서를 제출하라는 법원 명령이 나왔다. 고려아연은 원아시아파트너스가 운용하는 다수 펀드에 출자했는데, 펀드 자금 일부는 지창배 원아시아파트너스 대표의 친인척이 사실상 지배하는 코스피 상장사 청호컴넷으</p>
@@ -1859,24 +1853,9 @@
             <p>법원이 고려아연이 최윤범 고려아연 회장의 동창이 운영하는 펀드에 최대 출자자로 투자한 경위를 확인할 수 있는 자료를 제출하라고 명령했다.</p>
           </article>
           <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-26</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45125" target="_blank" rel="noreferrer">MBK·UCK, ‘오스템’ 해외사업 키워 몸값 높인다</a></h3>
-            <p>국내 사모펀드(PEF) 운용사 MBK파트너스와 UCK파트너스 컨소시엄이 인수한 오스템임플란트가 상장폐지 이후 해외 사업 확장에 속도를 내고 있다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-05-25</span>
-            <h3><a href="https://m.sedaily.com/amparticle/20047971" target="_blank" rel="noreferrer">대형 PEF, 롯데렌탈 눈독…공정위 기조·몸값 격차에 M&amp;A는 안갯속[시그널]</a></h3>
-            <p>롯데그룹이 어피니티에쿼티파트너스(어피니티)로의 매각 무산 이후 롯데렌탈의 재매각 추진을 공식화했다. 다만 시장에서는 실제 M&amp;A 성사 가능성을 두고 회의적인 시각도 나온다.</p>
-          </article>
-          <article class="gp-news-row">
             <span>이투데이 · 2026-05-25</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2587465" target="_blank" rel="noreferrer">[노트북 너머] 비바람 맞는 리더, 원칙 뒤에 선 리더</a></h3>
             <p>“비바람은 내가 맞겠다.”이재용 삼성전자 회장이 최근 노사 갈등 국면에서 꺼낸 말이다. 짧은 한마디였지만 시장은 이 문장을 단순한 수사가 아니라</p>
-          </article>
-          <article class="gp-news-row">
-            <span>연합인포맥스 · 2026-05-25</span>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4416520" target="_blank" rel="noreferrer">[기업 이모저모] &#x27;공동의 적&#x27; 앞서 뭉친 고려아연 노사</a></h3>
-            <p>○…&quot;고려아연[010130] 수호를 &#x27;제1호 경제 공약&#x27;으로 선언해 주십시오. 고려아연이 무너지면 한·미 산업 동맹의 한 축뿐만 아니라 노동자의 삶도 무너지는 것입니다.&quot;한 기업의 노동조합이 정치권을 향해 &#x27;우리 회사를 지켜달라&#x27;는 내용의 건의서를 냈다.</p>
           </article>
           <article class="gp-news-row">
             <span>서울경제 · 2026-05-23</span>
@@ -1894,9 +1873,34 @@
             <p>금감원 제재심, 4개월째 지지부진 검찰은 홈플러스 사태 관련자 조사 착수 금감원장, 상반기 내 제재심 결론 예고</p>
           </article>
           <article class="gp-news-row">
-            <span>매일경제 · 2026-05-22</span>
-            <h3><a href="https://www.mk.co.kr/news/society/12055384" target="_blank" rel="noreferrer">“수출 1000억 달러 회복 청사진 보여달라”…지방선거 앞두고 울산 산...</a></h3>
-            <p>울산 수출 기업인 100명 설문 조사 물류비 지원 강화 등 요구사항 전달 고려아연 노조, M&amp;A 막아달라 요구</p>
+            <span>딜사이트 · 2026-05-22</span>
+            <h3><a href="https://dealsite.co.kr/articles/161686" target="_blank" rel="noreferrer">[수탁자책임 레이더] 삼성운용 반대율 9.6%…주주참여 제약에는 반기</a></h3>
+            <p>정관변경 반대 126건 중 40건이 전자주총 배제·서면투표 폐지 등…임원보수에도 No</p>
+          </article>
+          <article class="gp-news-row">
+            <span>인베스트조선 · 2026-05-21</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQeGJHTTVLZ1RWTld6QXFXV1QxVVRNTUVhaldpSlM3YU9nRWpVYVhtTmtHbUtwaWNManY1NE9yb1l2SGx6Z2Jhbl9ENnBMNmdVOGlhRXB6eng3R3Jkb0FfTTUwbGtIRzQ1ZmdCYU9Mekl3RUp3X252V0x0YWxiU1JySnNSMA?oc=5&amp;hl=ko&amp;gl=KR&amp;ceid=KR:ko" target="_blank" rel="noreferrer">MBK, 테일러메이드 인수 제안 받아...매각가 4조원대 언급 - 인베스트조선</a></h3>
+            <p>MBK, 테일러메이드 인수 제안 받아...매각가 4조원대 언급 인베스트조선</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스핌 · 2026-05-20</span>
+            <h3><a href="https://www.newspim.com/news/view/20260520001023" target="_blank" rel="noreferrer">고려아연 노조, 울산시장 후보들에 정책건의…&quot;MBK M&amp;A 막아야&quot;</a></h3>
+            <p>[서울=뉴스핌] 이찬우 기자= 고려아연노동조합이 6월 울산시장 선거를 앞두고 유력 후보들에게 정책건의서를 전달했다. 사모펀드 MBK파트너스의 적대적 인수합병(M&amp;A) 시도로부터 국가기간산업을 보호하고 노동자 고용 안정을 지킬 것을 요구했다.국민의힘 김두겸 후보에</p>
+          </article>
+          <article class="gp-news-row">
+            <span>한국경제TV · 2026-05-20</span>
+            <h3><a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605200717&amp;t=NN" target="_blank" rel="noreferrer">&quot;직원 월급도 못 주는데 보증은 거부&quot;…MBK·채권단 공방</a></h3>
+            <p>홈플러스의 최대주주인 MBK파트너스와 채권단간 공방이 격화되고 있다. 홈플러스의 자금난 심화로 수십개 점포 휴업은 물론 임직원 월급조차 제대로 지급하지 못하고 있는 가운데 채권단을 상대로 자금지원을 요청하...</p>
+          </article>
+          <article class="gp-news-row">
+            <span>한국경제TV · 2026-05-20</span>
+            <h3><a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605200668&amp;t=NN" target="_blank" rel="noreferrer">고려아연 노조 &quot;MBK 침탈 막을 정책 마련해달라&quot;</a></h3>
+            <p>고려아연 노동조합이 오는 6월 지방선거를 앞두고 울산의 후보들에게 &quot;사모펀드 MBK파트너스로부터 국가기간산업인 고려아연을 수호하고 노동자의 고용 안정을 지켜달라&quot;고 촉구했다. 고려아연 노조는 20일 울산 시장...</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴시스 · 2026-05-20</span>
+            <h3><a href="https://www.newsis.com/view/NISX20260520_0003637969" target="_blank" rel="noreferrer">고려아연 노조, 지방선거 울산 후보들에 정책 건의…&quot;MBK 방지 대책&quot; 촉...</a></h3>
+            <p>고려아연 수호와 노동자 고용 안정 요구 &quot;정부와 국회에 MBK 방지 대책 요구해야&quot;</p>
           </article>
         </div>
       </article>
@@ -1949,8 +1953,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

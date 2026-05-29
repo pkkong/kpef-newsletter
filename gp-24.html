@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>한국산업은행 GP 프로필</title>
+  <title>한국산업은행 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>한국산업은행</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kdb.co.kr&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>한국</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>한국산업은행</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 7위, 운용 중 펀드 11개, 약정액 기준 3.9조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>11</strong></div>
       <div><span>약정액 기준</span><strong>3.9조</strong></div>
       <div><span>약정액 점유율</span><strong>2.55%</strong></div>
-      <div><span>누적 펀드</span><strong>33</strong></div>
-      <div><span>누적 약정액</span><strong>12.7조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>7위</dd>
@@ -1839,34 +1843,14 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
-            <span>서울경제 · 2026-05-28</span>
-            <h3><a href="https://www.sedaily.com/article/20049287?ref=naver" target="_blank" rel="noreferrer">두산, SK실트론 6월에 인수한다…‘반도체 기업’ 전환 임박 [시그널]</a></h3>
-            <p>두산이 몸값 5조 원에 달하는 SK실트론을 6월 중에 인수할 것으로 관측된다. 두산 전자비즈니스(BG)의 반도체 인쇄회로기판(PCB) 핵심 소재 생산 노하우와 두산테스나가 보유한 후공정 테스트 기술, SK실트론의 웨이퍼 제조 역량까지 결합해 반도체 밸류체인 전반을 아우</p>
-          </article>
-          <article class="gp-news-row">
             <span>딜사이트 · 2026-05-27</span>
             <h3><a href="https://dealsite.co.kr/articles/162599/075023" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 2차] 1차 끝나자마자 1.6조 규모 출자사업 개시</a></h3>
             <p>루키 리그 사라지고 스케일업·지역전용 신설, 총 7000억 출자…내달 10일 접수</p>
           </article>
           <article class="gp-news-row">
-            <span>연합인포맥스 · 2026-05-25</span>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4416535" target="_blank" rel="noreferrer">국민성장펀드 &#x27;코스닥리그&#x27; 막판 격돌…&#x27;트랙레코드·LOC&#x27; 확보 관건</a></h3>
-            <p>국민성장펀드(간접투자분야) 정책성 펀드의 1차 출자사업이 막바지 심사 단계에 접어들었다.여러 리그 중 가장 뜨거운 격전지로 꼽히는 코스닥 부문은 과거 투자 수익률(트랙레코드)과 펀드출자확약(LOC) 확보 여부가 승부를 좌우할 것으로 전망된다.25일 투자은행(IB) 업계에 따르면 이번 출자사업의 공동 모펀드 운용사인 한국산</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-05-24</span>
-            <h3><a href="https://www.sedaily.com/article/20047611?ref=naver" target="_blank" rel="noreferrer">소비재서 중공업, 이젠 AI·반도체로…두산, 5조 빅딜로 DNA 깨웠다[시그...</a></h3>
-            <p>두산(000150)그룹이 세계 3위 반도체 웨이퍼 제조사인 SK(034730)실트론 인수를 사실상 확정 지으며 반도체와 피지컬 AI, 친환경 에너지를 아우르는 ‘AI 인프라 밸류체인’ 구축에 박차를 가하고 있다. 기업가치가 5조 원에 달하는 빅딜인 만큼, 시장의 이목이</p>
-          </article>
-          <article class="gp-news-row">
             <span>블로터 · 2026-05-22</span>
             <h3><a href="https://www.bloter.net/news/articleView.html?idxno=663278" target="_blank" rel="noreferrer">국민성장펀드 실효 관리보수율 0.82%, 민간펀드 절반 수준 [넘버스]</a></h3>
             <p>국민성장펀드 간접투자분야 서류심사 후 숏리스트가 공개되면서 사모펀드(PEF) 운용사와 벤처캐피탈(VC)들의 희비가 갈렸다. 후속 펀딩과 트랙레코드 확보를 목적으로 총 81개사가 지원했지만 나머지 59개사는 탈락의 고배를 마셨다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-21</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45090" target="_blank" rel="noreferrer">[팩트체크] 150조 국민성장펀드, PEF 몫은 얼마</a></h3>
-            <p>국민성장펀드가 사모펀드(PEF) 업계의 주요 150조원이라는 대규모 정책자금이 시장에 공급되는 만큼 운용사들의 관심도 커지고 있다.</p>
           </article>
           <article class="gp-news-row">
             <span>딜사이트 · 2026-05-21</span>
@@ -1889,14 +1873,34 @@
             <p>모펀드 전문 운용사 한국성장금융투자운용(성장금융) 대표 선임 절차가 마무리된다.</p>
           </article>
           <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-18</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10740110?ref=naver" target="_blank" rel="noreferrer">국민성장펀드 숏리스트 발표…은행자금 유입 기대에 사모펀드 ‘촉각’</a></h3>
-            <p>국민성장펀드 간접투자 1차 출자사업의 위탁운용사(GP) 숏리스트가 최근 발표됐다. 이번 출자사업은 금융당국의 파격적인 규제 완화 조치와 맞물려 그동안 보수적이었던 은</p>
-          </article>
-          <article class="gp-news-row">
             <span>조선비즈 · 2026-05-15</span>
             <h3><a href="https://biz.chosun.com/stock/stock_general/2026/05/15/BHJSQNPMWVATNFDMNBQMOI27AQ/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz" target="_blank" rel="noreferrer">‘1.4조 출자’ 국민성장펀드 간접투자 숏리스트 확정… 대형리그 PE·VC...</a></h3>
             <p>1.4조 출자 국민성장펀드 간접투자 숏리스트 확정 대형리그 PE·VC 격돌 국민성장펀드 약 1조4000억원을 배정한 간접투자 1차 출자사업 위탁운용사GP 숏리스트적격 후보가 추려졌다. 15일 투자은행IB 업계에 따르면 한국산업은행과 신한자산운용은 이날 국민성장펀드</p>
+          </article>
+          <article class="gp-news-row">
+            <span>머니투데이 · 2026-05-13</span>
+            <h3><a href="https://www.mt.co.kr/stock/2026/05/13/2026051217044784485" target="_blank" rel="noreferrer">코스닥 국민성장펀드 GP 각축전…산은 평가기준 &#x27;주목&#x27;</a></h3>
+            <p>국민성장펀드 정책성 펀드 1차 자펀드 위탁운용사(GP) 코스닥 리그에 사모펀드(PEF) 운용사 6곳이 지원해 각축전을 펼칠 예정이다. 13일 투자은행(IB) 업계에 따르면 산업은행은 최근 국민성장펀드 간접투자분야 정책성 펀드 2026년 1차 출자사업 접수를 마감했다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-05-08</span>
+            <h3><a href="https://dealsite.co.kr/articles/161350" target="_blank" rel="noreferrer">산은인베스트먼트 차기 대표에…이근환 전 부행장</a></h3>
+            <p>기획관리 부행장 출신으로 주무당국 재가 대기…이사회·주총 거쳐 이르면 이달 선임</p>
+          </article>
+          <article class="gp-news-row">
+            <span>이투데이 · 2026-05-01</span>
+            <h3><a href="https://www.etoday.co.kr/news/view/2580718" target="_blank" rel="noreferrer">실탄은 넘치는데 살 매물이 없다…PEF 업계, 딜 가뭄에 &#x27;아우성&#x27;</a></h3>
+            <p>▲여의도 증권가국내 사모펀드(PEF) 시장에 &#x27;풍요 조달한 자금은 쌓여가고 있지만, 정작 마땅한 투자처를 찾지 못한 운용</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스톱 · 2026-04-28</span>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=44661" target="_blank" rel="noreferrer">박상진 산은 회장, VC 40곳 끌고 실리콘밸리行</a></h3>
+            <p>한국산업은행이 미국 실리콘밸리에서 대규모 투자자 교류 행사를 열고 국내 벤처기업의 글로벌 진출과 해외 자본 유치를 전폭적으로 지원한다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>이투데이 · 2026-04-23</span>
+            <h3><a href="https://www.etoday.co.kr/news/view/2578523" target="_blank" rel="noreferrer">국민성장펀드 PEF 출자 시작했는데…빡빡한 일정에 &#x27;고심&#x27;</a></h3>
+            <p>산은, 국민성장펀드 출자사업 개시…1.4조 규모서류마감 후 한 달 만에 최종 운용사 선정 예정▲여의도 증권가국민성장펀드 간접투자 부문 자펀드 운용</p>
           </article>
         </div>
       </article>
@@ -1949,8 +1953,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">

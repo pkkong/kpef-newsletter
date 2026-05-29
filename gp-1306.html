@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>대신프라이빗에쿼티 GP 프로필</title>
+  <title>대신프라이빗에쿼티 - PEF 운용사</title>
   <meta name="theme-color" content="#111827">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="KPEF Brief">
@@ -1157,33 +1157,40 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .gp-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .gp-controls input {
+      grid-column: 1 / -1;
+    }
     .gp-controls input,
     .gp-controls select {
-      min-height: 42px;
+      min-height: 40px;
       border-color: var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       color: var(--text);
-      font-size: 14px;
+      font-size: 13.5px;
       box-shadow: none;
       outline-color: var(--accent);
     }
     .gp-filter-row {
-      gap: 6px;
+      gap: 5px;
     }
     .gp-filter-row button {
       border-color: var(--line);
       border-radius: 999px;
-      padding: 6px 9px;
+      padding: 5px 9px;
       background: var(--surface);
       color: var(--secondary);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       box-shadow: none;
     }
     .gp-filter-row button.active {
       border-color: var(--text);
-      background: var(--surface);
-      color: var(--text);
+      background: var(--text);
+      color: #fff;
     }
     .gp-control-meta,
     .gp-control-panel p {
@@ -1200,7 +1207,7 @@
     }
     .gp-directory-head {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
-      min-height: 42px;
+      min-height: 38px;
       padding: 0 8px;
       border-bottom: 1px solid var(--line);
       background: var(--surface-muted);
@@ -1232,23 +1239,23 @@
     .gp-card {
       grid-template-columns: 40px minmax(0, 1fr) 90px;
       align-items: start;
-      min-height: 74px;
+      min-height: 68px;
       border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
+      padding: 9px 8px;
       background: var(--surface);
     }
     .gp-card:last-child { border-bottom: 0; }
     .gp-avatar {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: 2px;
       border-color: var(--line);
       font-size: 10px;
       box-shadow: inset 0 0 0 3px #fff;
     }
     .gp-avatar img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 23px;
+      max-height: 23px;
     }
     .gp-card-title {
       gap: 2px;
@@ -1262,7 +1269,7 @@
       display: none !important;
     }
     .gp-card h2 {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       line-height: 1.36;
       letter-spacing: 0;
@@ -1281,7 +1288,7 @@
     }
     .gp-metrics dd {
       color: var(--text);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 740;
     }
     .gp-signal-strip {
@@ -1510,6 +1517,9 @@
       .gp-controls {
         grid-template-columns: minmax(0, 1fr) 190px 140px;
       }
+      .gp-controls input {
+        grid-column: auto;
+      }
       .gp-directory-head {
         grid-template-columns: 48px minmax(230px, 1.15fr) minmax(130px, 0.56fr) minmax(300px, 1.34fr) minmax(170px, 0.74fr);
         gap: 16px;
@@ -1585,7 +1595,7 @@
         grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       }
       .gp-detail-kpis {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .gp-signal-bar {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1623,7 +1633,7 @@
       </a>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP 디렉토리</a>
+      <a href="gps.html">GP</a>
       <span>대신프라이빗에쿼티</span>
     </nav>
 
@@ -1631,7 +1641,7 @@
       <div class="gp-detail-title-head">
         <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=pe.daishin.com&sz=64" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>대신</span></span>
         <div>
-          <span>GP 프로필</span>
+          <span>운용사</span>
           <h1>대신프라이빗에쿼티</h1>
         </div>
         <p>금감원 PEF 운용 현황에서 2024Q4 기준 최신 순위 30위, 운용 중 펀드 7개, 약정액 기준 1.0조으로 확인됩니다.</p>
@@ -1648,8 +1658,6 @@
       <div><span>운용 중 펀드</span><strong>7</strong></div>
       <div><span>약정액 기준</span><strong>1.0조</strong></div>
       <div><span>약정액 점유율</span><strong>0.67%</strong></div>
-      <div><span>누적 펀드</span><strong>10</strong></div>
-      <div><span>누적 약정액</span><strong>1.3조</strong></div>
     </section>
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
@@ -1695,10 +1703,6 @@
       <article class="gp-panel">
         <h2>운용 정보</h2>
         <dl class="gp-fact-list">
-          <div>
-            <dt>자료 확인</dt>
-            <dd>법인정보 확인</dd>
-          </div>
           <div>
             <dt>최신 순위</dt>
             <dd>30위</dd>
@@ -1879,34 +1883,34 @@
             <p>국민성장펀드 간접투자 운용사에 스카이레이크·에이티넘 등 11곳 선정-인베스트조선</p>
           </article>
           <article class="gp-news-row">
-            <span>아시아경제 · 2026-05-27</span>
-            <h3><a href="https://view.asiae.co.kr/article/2026052717332908640" target="_blank" rel="noreferrer">국민성장펀드 간접투자 GP 확정…대형분야에 에이티넘·스카이레이크</a></h3>
-            <p>국민성장펀드 간접 투자를 위한 정책성펀드의 1차 출자사업 위탁운용사(GP)가 선정됐다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>연합인포맥스 · 2026-05-27</span>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4416984" target="_blank" rel="noreferrer">국민성장펀드 간접투자 GP, 11곳 선정…펀드레이징 돌입</a></h3>
-            <p>국민성장펀드 간접투자분야 정책성펀드의 1차 위탁운용사(GP)가 11곳으로 확정됐다.GP들은 곧장 펀드레이징에 돌입할 것으로 전망된다.27일 산업은행과 신한자산운용은 &#x27;2026년 국민성장펀드 간접투자분야 정책성펀드 GP 선정 결과&#x27;를 발표했다. 7개 분야에 11곳의 운용사가 자펀드 운용의 기회를 얻었다.총 1천500억 원</p>
-          </article>
-          <article class="gp-news-row">
             <span>뉴스톱 · 2026-05-26</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45146" target="_blank" rel="noreferrer">[국민성장펀드] 중소형 GP도 각축...AI·코스닥 리그 승자는?</a></h3>
             <p>국민성장펀드 1차 위탁운용사(GP) 선정에서 중소형·테마형 리그 경쟁도 막판까지 치열하다. 인공지능(AI)·반도체, 코스닥, 도전·소형 리그는 기술기업 선별 능력</p>
           </article>
           <article class="gp-news-row">
-            <span>매일경제 · 2026-05-25</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12056770" target="_blank" rel="noreferrer">“2.4조 쩐의 전쟁 승자는”…국민성장펀드 운용사 선정 ‘빅매치’ [M&amp;...</a></h3>
-            <p>대형리그 도미누스·스카이레이크 M&amp;A부문 웰투시vs케이엘엔 경쟁 코스닥 리그에선 리턴매치 성사</p>
+            <span>서울경제 · 2026-05-15</span>
+            <h3><a href="https://www.sedaily.com/article/20044658?ref=naver" target="_blank" rel="noreferrer">국민성장펀드 간접투자 운용사 숏리스트 발표…PE·VC 2배수 선정 [시그...</a></h3>
+            <p>국민성장펀드 간접투자 위탁운용사(GP) 출자 사업의 서류심사 통과 운용사(숏리스트) 명단이 확정됐다. 소형·대형 운용사 등으로 나뉜 리그별로 최종 선정 정원의 2배수가 숏리스트에 올랐다.</p>
           </article>
           <article class="gp-news-row">
-            <span>블로터 · 2026-05-22</span>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=663177" target="_blank" rel="noreferrer">국민성장펀드 자펀드 GP 선정 막바지…&quot;절차적 공정성 중요&quot; 목소리</a></h3>
-            <p>국민성장펀드 자펀드 운용사(GP) 선정 작업이 막바지에 접어들었다. 이번 심사는 단순한 운용 성과를 넘어 정책자금 배분의 공정성과 이해상충 관리 체계까지 함께 점검하는 과정이라는 목소리가 나온다.특히 박현주 미래에셋그룹 회장이 국민성장펀드 전략위원회 공동위원장을 맡고 있는 가운데, 계</p>
+            <span>이투데이 · 2026-05-15</span>
+            <h3><a href="https://www.etoday.co.kr/news/view/2584961" target="_blank" rel="noreferrer">국민성장펀드 간접투자 1차 GP 서류심사 결과 발표…리그별 숏리스트 확...</a></h3>
+            <p>▲여의도 증권가국민성장펀드 간접투자분야 정책성펀드 1차 위탁운용사(GP) 출자 사업 서류심사 통과 운용사(숏리스트) 명단이 확정됐다.</p>
           </article>
           <article class="gp-news-row">
-            <span>딜사이트 · 2026-05-21</span>
-            <h3><a href="https://dealsite.co.kr/articles/162268/075023" target="_blank" rel="noreferrer">[150조 국민성장펀드] [간접투자 1차] UTC 업력에 포레스트의 패기…결승만 남았다</a></h3>
-            <p>지난해 인수합병 이후 운용 규모 및 조직 기반 확대…민간자금 조달도 비교 우위</p>
+            <span>블로터 · 2026-05-15</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=662472" target="_blank" rel="noreferrer">[단독] 국민성장펀드 간접투자분야, 1차 운용사 숏리스트 확정</a></h3>
+            <p>하반기 국내 자본시장 투자 활성화의 핵심 기제로 꼽히는 국민성장펀드 1차 출자사업이 서류 심사를 마치고 본선 경쟁 단계에 진입한다.3조9000억원 규모의 자펀드 조성을 목표로 하는 이번 사업은 81개 운용사가 지원하며 평균 7.4대 1의 높은 경쟁률을 기록했다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>더벨 · 2026-05-14</span>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605120916587900105183" target="_blank" rel="noreferrer">[더벨]대신PE, 배터리 동박 개발 &#x27;CFL&#x27;에 250억 투자</a></h3>
+            <p>사모펀드(PEF) 운용사 대신프라이빗에쿼티(대신PE)가 스카이레이크에쿼티파트너스의 서킷포일룩셈부르크... 대신PE는 최근 ‘국민성장펀드 2026년 1차 자펀드 출자사업’에서 AI·반도체 중형 리그에 지원하는 등...</p>
+          </article>
+          <article class="gp-news-row">
+            <span>블로터 · 2026-05-06</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=661417" target="_blank" rel="noreferrer">국민성장펀드 1차 출자사업, 81개사 몰려…경쟁률 7.36대1</a></h3>
+            <p>총 3조9000억원 규모로 조성하는 &#x27;2026년 국민성장펀드 1차 위탁운용사(GP)&#x27; 출자사업에 81곳의 사모펀드(PEF) 운용사와 벤처캐피털(VC)이 지원하며 흥행에 성공했다.6일 투자은행(IB) 업계에 따르면 한국산업은행과 신한자산운용이 주관하는 이번 사업에 81곳의 하우스가 출사</p>
           </article>
         </div>
       </article>
@@ -1959,8 +1963,7 @@
 
     <section class="gp-disclaimer" aria-label="참고사항">
       <h2>참고사항</h2>
-      <p>공개자료에서 확인되는 항목만 표시합니다. 약정액 기준 지표는 실제 순자산이나 운용자산이 아니라 공개 운용 현황 기반 참고 지표입니다. 관련 뉴스는 운용사명으로 연결해 동일·유사 명칭의 다른 법인이 포함될 수 있습니다.</p>
-      <p>기준일 2026-05-29 · 최신 순위, 약정액 기준 지표, 관련 뉴스가 확인되는 상위 120개 GP의 상세 페이지를 제공합니다.</p>
+      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
     </section>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
