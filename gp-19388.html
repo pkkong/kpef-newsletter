@@ -1759,6 +1759,317 @@
         font-size: 15px;
       }
     }
+    .brief-section-tab {
+      text-decoration: none;
+    }
+    .market-hero .gp-hero-copy p {
+      margin-top: 3px;
+      color: var(--secondary);
+      font-size: 12.5px;
+      font-weight: 650;
+    }
+    .market-kpis {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      margin: 6px 0 14px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .market-kpis div {
+      min-width: 0;
+      padding: 12px 0;
+    }
+    .market-kpis span,
+    .market-kpis em {
+      display: block;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-style: normal;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+    .market-kpis strong {
+      display: block;
+      margin: 4px 0 3px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 780;
+      line-height: 1.15;
+    }
+    .market-section {
+      margin-top: 16px;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+    .market-section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .market-section h2 {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 780;
+      line-height: 1.35;
+    }
+    .market-section-head p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.4;
+      text-align: right;
+    }
+    .market-table {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-head,
+    .market-row {
+      display: grid;
+      gap: 10px;
+      align-items: center;
+      min-height: 40px;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 12.5px;
+      line-height: 1.35;
+    }
+    .market-head {
+      background: var(--surface-muted);
+      color: var(--secondary);
+      font-weight: 720;
+    }
+    .market-row {
+      color: var(--text);
+      font-weight: 650;
+    }
+    .market-row:last-child {
+      border-bottom: 0;
+    }
+    .market-period-row {
+      grid-template-columns: minmax(62px, 0.85fr) minmax(48px, 0.7fr) minmax(42px, 0.6fr) minmax(72px, 0.9fr);
+      text-align: right;
+    }
+    .market-period-row span:first-child {
+      text-align: left;
+    }
+    .market-gp-row {
+      grid-template-columns: 36px minmax(0, 1fr) minmax(72px, 0.72fr) minmax(44px, 0.52fr);
+      text-align: right;
+    }
+    .market-gp-row strong {
+      min-width: 0;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 760;
+      text-align: left;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .market-gp-row span:nth-child(1) {
+      text-align: center;
+    }
+    .market-new-row {
+      grid-template-columns: minmax(72px, 1fr) minmax(48px, 0.7fr) minmax(86px, 0.9fr);
+      text-align: right;
+    }
+    .market-new-row span:first-child {
+      text-align: left;
+    }
+    .market-empty-row {
+      display: block;
+      padding: 12px;
+      color: var(--secondary);
+    }
+    .market-grid {
+      display: grid;
+      gap: 0;
+    }
+    .market-source-note {
+      margin: 16px 0 0;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .market-source-note strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 760;
+    }
+    .market-source-note ul {
+      display: grid;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .market-source-note li {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .market-source-note a {
+      color: var(--text);
+      font-weight: 650;
+    }
+    .gp-directory-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 6px;
+      font-size: 16px !important;
+      line-height: 1.35;
+    }
+    .gp-directory-title strong {
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 820;
+    }
+    .gp-directory-title span {
+      color: var(--text);
+      font-weight: 760;
+    }
+    .gp-directory-title em {
+      color: var(--secondary);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 620;
+    }
+    .gp-controls {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(128px, auto);
+      gap: 8px;
+      align-items: end;
+      margin: 0;
+    }
+    .gp-controls label {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+    .gp-controls label > span {
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .gp-control-head {
+      margin: 8px 0 0;
+      font-size: 11.5px;
+      font-weight: 620;
+    }
+    .gp-directory-head,
+    .gp-card {
+      grid-template-columns: 40px minmax(0, 1fr) minmax(78px, 0.7fr) minmax(48px, 0.46fr) !important;
+      gap: 9px;
+      align-items: center;
+    }
+    .gp-directory-head {
+      min-height: 38px;
+      text-align: right;
+    }
+    .gp-directory-head span {
+      display: block !important;
+      grid-column: auto !important;
+      font-size: 12px !important;
+    }
+    .gp-directory-head span:nth-child(2) {
+      text-align: left;
+    }
+    .gp-directory-head span:nth-child(3),
+    .gp-directory-head span:nth-child(4) {
+      text-align: right;
+    }
+    .gp-card {
+      min-height: 64px;
+      align-items: center;
+    }
+    .gp-card-main {
+      grid-column: 2;
+    }
+    .gp-card h2 {
+      font-size: 14.5px;
+      font-weight: 720;
+      line-height: 1.36;
+    }
+    .gp-metrics {
+      display: contents;
+    }
+    .gp-metrics div {
+      display: block !important;
+      min-width: 0;
+      text-align: right;
+    }
+    .gp-metrics div:first-child {
+      grid-column: 3;
+    }
+    .gp-metrics div:last-child {
+      grid-column: 4;
+    }
+    .gp-metrics dt {
+      display: none;
+    }
+    .gp-metrics dd {
+      margin: 0;
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 740;
+      line-height: 1.25;
+    }
+    .gp-filter-row,
+    .gp-chips,
+    .gp-signal-strip,
+    .gp-meta-line {
+      display: none !important;
+    }
+    @media (min-width: 760px) {
+      .market-kpis {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .market-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .market-section h2 {
+        font-size: 16px;
+      }
+      .market-head,
+      .market-row {
+        min-height: 44px;
+        padding: 0 14px;
+        font-size: 13px;
+      }
+      .gp-controls {
+        grid-template-columns: minmax(190px, 220px) 150px !important;
+        justify-content: space-between;
+      }
+      .gp-directory-head,
+      .gp-card {
+        grid-template-columns: 48px minmax(260px, 1fr) minmax(112px, 0.42fr) minmax(76px, 0.28fr) !important;
+        gap: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+      .gp-card {
+        min-height: 70px;
+      }
+      .gp-card h2 {
+        font-size: 15px;
+      }
+      .gp-metrics dd {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1778,8 +2089,8 @@
         </div>
       </div>
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
-        <button class="brief-section-tab" type="button" disabled>MARKET</button>
-        <button class="brief-section-tab active" type="button" aria-current="page">GP</button>
+        <a class="brief-section-tab" href="market.html">MARKET</a>
+        <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
         <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
