@@ -1,5 +1,549 @@
 [
   {
+    "reportDate": "2026-05-30",
+    "visibleDate": "2026.05.30",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260530-0",
+        "rank": 0,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "국민성장펀드 가입자 10명 중 4명이 '서민'…평균 가입액 보니",
+        "titleBadges": [],
+        "source": "한국경제TV",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=wowtv.co.kr&sz=64",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605290576",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260530-1",
+        "rank": 1,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "삼성자산운용, 연기금투자풀에 국민성장펀드 도입",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.chosun.com&sz=64",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/05/29/AZC24PQWVFCXLP5LGALSZ5SRJ4",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260530-2",
+        "rank": 2,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "삼성운용, '삼성국민참여형 국민성장펀드' 출시",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
+        "url": "https://view.asiae.co.kr/article/2026052209161081160",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260530-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "항공우주 부품업체 율곡, 매각 본입찰 완료...5파전으로",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.chosun.com&sz=64",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/05/29/VUKRRARSGRFBTKH7U2BYO7FJVI",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "오케스트라PE, 매머드커피 인수 완료",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
+        "url": "https://dealsite.co.kr/articles/162754",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "[큐캐피탈 밸류업]① \"안 지키면 공시 위반\" 고강도 밸류업 플랜 가동",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=bloter.net&sz=64",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=663858",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "LB PE, 아이클라우드 경영권 300억에 인수 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=sedaily.com&sz=64",
+        "url": "https://www.sedaily.com/article/20049721",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "오케스트라PE, 1000억원에 매머드커피·서진로스터즈 인수 마무리",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.chosun.com&sz=64",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/05/29/ELCP2V6ZUZCUTIA57CCG3RTXLM",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "‘상장 난항’ SK에코플랜트...6월 사모펀드 투자금 반환",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.heraldcorp.com&sz=64",
+        "url": "https://biz.heraldcorp.com/article/10758711",
+        "sectionOrder": 2,
+        "gpNames": [
+          "이음프라이빗에쿼티",
+          "큐캐피탈파트너스",
+          "프리미어파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 38,
+        "searchTerms": [
+          "이음프라이빗에쿼티",
+          "큐캐피탈파트너스",
+          "프리미어파트너스"
+        ]
+      },
+      {
+        "id": "clip-20260530-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "HD현대오일뱅크·테넷에쿼티, 바이오디젤 원료社 대경오앤티 인수 [시그...",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=sedaily.com&sz=64",
+        "url": "https://www.sedaily.com/article/20049841",
+        "sectionOrder": 2,
+        "gpNames": [
+          "유진프라이빗에쿼티",
+          "테넷에쿼티파트너스",
+          "스틱인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 3,
+        "searchTerms": [
+          "유진프라이빗에쿼티",
+          "테넷에쿼티파트너스",
+          "스틱인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260530-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "오케스트라 PE, 매머드커피·서진로스터즈 인수 완료",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=mk.co.kr&sz=64",
+        "url": "https://www.mk.co.kr/news/stock/12061282",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "시동 걸린 맘스터치 매각…원매자로 글로벌 FI·SI '주목'[마켓인]",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=edaily.co.kr&sz=64",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05405446645453840",
+        "sectionOrder": 2,
+        "gpNames": [
+          "케이엘앤파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "케이엘앤파트너스"
+        ]
+      },
+      {
+        "id": "clip-20260530-12",
+        "rank": 12,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "오케스트라PE, 저가 커피 프랜차이즈 매머드커피 인수 마무리",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=marketinsight.hankyung.com&sz=64",
+        "url": "https://marketinsight.hankyung.com/article/202605296875r",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-13",
+        "rank": 13,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "오케스트라PE, 1000억원에 매머드커피·서진로스터즈 인수 완료",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=bloter.net&sz=64",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=663966",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-14",
+        "rank": 14,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "캐나다 PE, 美 '어센드' 자산 1억불 인수…채권단에 세아홀딩스 투자 자...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
+        "url": "https://view.asiae.co.kr/article/2026052816325442985",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-15",
+        "rank": 15,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "KCGI코리아액티브 2호, 340억 자금몰이",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605270832383800102647",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-16",
+        "rank": 16,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "증권금융 첫 벤처펀드 GP 선정…키움·퀀텀 등 9곳",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
+        "url": "https://dealsite.co.kr/articles/162766",
+        "sectionOrder": 4,
+        "gpNames": [
+          "미래에셋벤처투자",
+          "브레인자산운용",
+          "지앤텍벤처투자",
+          "삼호그린인베스트먼트",
+          "키움인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 8,
+        "searchTerms": [
+          "미래에셋벤처투자",
+          "브레인자산운용",
+          "지앤텍벤처투자",
+          "삼호그린인베스트먼트",
+          "키움인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260530-17",
+        "rank": 17,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "리멤버 '브리스캔영', 창립 30주년…\"'리더십 아키텍처 컴퍼니' 도약\"",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=hankyung.com&sz=64",
+        "url": "https://www.hankyung.com/article/202605297568g",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-18",
+        "rank": 18,
+        "section": "Deal",
+        "subCategory": "Financing",
+        "rawSection": "Market",
+        "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
+        "url": "https://view.asiae.co.kr/article/2026052611385718194",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-19",
+        "rank": 19,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "카카오게임즈 3천억 조달 일정 연기…최대주주 변경 6월로",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
+        "url": "https://dealsite.co.kr/articles/162765",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-20",
+        "rank": 20,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "칼라일그룹 CEO \"방산, 무한한 투자 기회 있어\"",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.einfomax.co.kr&sz=64",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4417419",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-21",
+        "rank": 21,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "1900억 물어준 유안타증권 1심 패소…법원 \"구상권은 있다, 그런데 돌려...",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=hankyung.com&sz=64",
+        "url": "https://www.hankyung.com/article/202605296828i",
+        "sectionOrder": 5,
+        "gpNames": [
+          "유안타증권"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "유안타증권"
+        ]
+      },
+      {
+        "id": "clip-20260530-22",
+        "rank": 22,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "법원, 고려아연에 원아시아 펀드 투자 관련 문서 제출 명령",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
+        "url": "https://view.asiae.co.kr/article/2026052710591847935",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260530-23",
+        "rank": 23,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "“30조 해외 사모대출, 지속 모니터링 필요”",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=sedaily.com&sz=64",
+        "url": "https://www.sedaily.com/article/20049778",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-05-29",
     "visibleDate": "2026.05.29",
     "basis": "",
@@ -107,8 +651,8 @@
           "산은",
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품모태펀드",
           "농림수산식품투자조합",
+          "농림수산식품모태펀드",
           "농식품모태펀드",
           "농금원"
         ]
@@ -127,16 +671,12 @@
         "url": "https://www.bloter.net/news/articleView.html?idxno=663759",
         "sectionOrder": 2,
         "gpNames": [
-          "아이엠엠프라이빗에쿼티",
           "글랜우드프라이빗에쿼티"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 5,
+        "peopleCount": 3,
         "searchTerms": [
-          "아이엠엠프라이빗에쿼티",
-          "IMM PE",
-          "IMM프라이빗에쿼티",
           "글랜우드프라이빗에쿼티"
         ]
       },
@@ -172,17 +712,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.heraldcorp.com&sz=64",
         "url": "https://biz.heraldcorp.com/article/10758230",
         "sectionOrder": 2,
-        "gpNames": [
-          "이음프라이빗에쿼티",
-          "프리미어파트너스"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 38,
-        "searchTerms": [
-          "이음프라이빗에쿼티",
-          "프리미어파트너스"
-        ]
+        "peopleCount": 0,
+        "searchTerms": []
       },
       {
         "id": "clip-20260529-6",
@@ -235,15 +769,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=dealsite.co.kr&sz=64",
         "url": "https://dealsite.co.kr/articles/162620",
         "sectionOrder": 2,
-        "gpNames": [
-          "케이엘앤파트너스"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "케이엘앤파트너스"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260529-9",
@@ -320,15 +850,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=mk.co.kr&sz=64",
         "url": "https://www.mk.co.kr/news/society/12060327",
         "sectionOrder": 2,
-        "gpNames": [
-          "유안타증권"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "유안타증권"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260529-13",
@@ -385,15 +911,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605271623234600105383",
         "sectionOrder": 5,
-        "gpNames": [
-          "키움인베스트먼트"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 7,
-        "searchTerms": [
-          "키움인베스트먼트"
-        ]
+        "peopleCount": 0,
+        "searchTerms": []
       },
       {
         "id": "clip-20260529-16",
@@ -739,8 +1261,7 @@
         "sectionOrder": 1,
         "gpNames": [
           "오픈워터인베스트먼트",
-          "SBI인베스트먼트",
-          "삼호그린인베스트먼트"
+          "SBI인베스트먼트"
         ],
         "lpNames": [
           "한국산업은행"
@@ -752,11 +1273,10 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 2,
+        "peopleCount": 1,
         "searchTerms": [
           "오픈워터인베스트먼트",
           "SBI인베스트먼트",
-          "삼호그린인베스트먼트",
           "한국산업은행",
           "kdb",
           "국민참여형 국민성장펀드",
@@ -789,7 +1309,7 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 3,
+        "peopleCount": 0,
         "searchTerms": [
           "한국산업은행",
           "kdb",
@@ -1509,15 +2029,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=newstopkorea.com&sz=64",
         "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45154",
         "sectionOrder": 2,
-        "gpNames": [
-          "유진프라이빗에쿼티"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "유진프라이빗에쿼티"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260527-6",
@@ -1570,16 +2086,11 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=biz.chosun.com&sz=64",
         "url": "https://biz.chosun.com/stock/market_trend/2026/05/26/KNDOS4HEJRFNDM6QAPFPFNT5NY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "sectionOrder": 2,
-        "gpNames": [
-          "이앤에프프라이빗에퀴티"
-        ],
+        "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "이앤에프프라이빗에퀴티",
-          "E&F프라이빗에쿼티"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260527-9",
@@ -1813,8 +2324,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -1867,8 +2378,8 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
+          "KVIC",
           "벤처투자"
         ]
       },
@@ -2148,9 +2659,7 @@
         "sourceIconUrl": "https://www.google.com/s2/favicons?domain=mk.co.kr&sz=64",
         "url": "https://www.mk.co.kr/news/stock/12056770",
         "sectionOrder": 1,
-        "gpNames": [
-          "스틱인베스트먼트"
-        ],
+        "gpNames": [],
         "lpNames": [
           "한국산업은행"
         ],
@@ -2161,9 +2670,8 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 3,
+        "peopleCount": 0,
         "searchTerms": [
-          "스틱인베스트먼트",
           "한국산업은행",
           "kdb",
           "국민참여형 국민성장펀드",
@@ -2485,8 +2993,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "중기중앙",
-          "KBIZ"
+          "KBIZ",
+          "중기중앙"
         ]
       },
       {
@@ -4424,8 +4932,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -4525,217 +5033,6 @@
           "국민성장펀드",
           "산업은행",
           "산은"
-        ]
-      }
-    ]
-  },
-  {
-    "reportDate": "2026-04-30",
-    "visibleDate": "2026.04.30",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260430-0",
-        "rank": 0,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "옐로씨가 점찍은 제논, '흑자 내는 AI'로 ...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202604281530162280103922",
-        "sectionOrder": 0,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-1",
-        "rank": 1,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "[강소기업 줌인] 세나테크놀로지, 메시 통신으로 피지컬AI 시장 정조준",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=bloter.net&sz=64",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=660880",
-        "sectionOrder": 0,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "[지오영 MBK 매각 명암]⑤ 이사회 과반 MBK…경영진 견제 요구도",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=bloter.net&sz=64",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=660916",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "IMM크레딧앤솔루션, 대주전자재료 '물타기' 통했다…EB 수익률 70%",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=etoday.co.kr&sz=64",
-        "url": "https://www.etoday.co.kr/news/view/2580256",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "사모펀드 품에 안긴 저가커피 브랜드, 배당·본사마진 지속 확대...",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=etoday.co.kr&sz=64",
-        "url": "https://www.etoday.co.kr/news/view/2580041",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-5",
-        "rank": 5,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "“PE 통매각 늘 것”…M&A 간판스타 김상곤 광장 대표가 본 시장 변화[I...",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=view.asiae.co.kr&sz=64",
-        "url": "https://view.asiae.co.kr/article/2026042411373083991",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-6",
-        "rank": 6,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Deal",
-        "title": "\"국회 내 자본시장 관심도 낮아…하반기 ...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=thebell.co.kr&sz=64",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202604271255318840103742",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-7",
-        "rank": 7,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "[중복상장 금지 파장-②] 기업·투자자 '불편한 동거'",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=news.einfomax.co.kr&sz=64",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412273",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-8",
-        "rank": 8,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "LP",
-        "title": "사모투자 성과… 글랜우드, 대상 포함 3관왕",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=edaily.co.kr&sz=64",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=01820406645421368&mediaCodeNo=257",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260430-9",
-        "rank": 9,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "교직원공제회·토스도 대기업집단 편입",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://www.google.com/s2/favicons?domain=hankyung.com&sz=64",
-        "url": "https://www.hankyung.com/article/2026042963851",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "lpNames": [
-          "한국교직원공제회"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "ktcu",
-            "name": "한국교직원공제회",
-            "url": "lp-ktcu.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국교직원공제회",
-          "ktcu",
-          "교직원공제회",
-          "KTCU",
-          "교공"
         ]
       }
     ]
