@@ -20,6 +20,7 @@
     .lp-profile-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .lp-profile-nav a { display: inline-flex; min-height: 32px; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--surface-muted); color: var(--text); font-size: 12px; font-weight: 750; text-decoration: none; }
     .lp-directory-hero { display: grid; gap: 18px; margin: 18px 0 16px; padding: 4px 0 2px; }
+    .lp-directory-meta { margin: 0 0 8px; color: var(--secondary); font-size: 13px; font-weight: 750; line-height: 1.45; }
     .lp-directory-hero h1 { margin: 0; color: var(--text); font-size: 28px; font-weight: 850; line-height: 1.12; letter-spacing: 0; }
     .lp-directory-hero p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 14px; line-height: 1.62; }
     .lp-directory-kpis { display: none; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
@@ -220,23 +221,10 @@
       <a class="" href="pef-wiki.html">Wiki</a>
       <a class="" href="index.html#saved">저장</a>
     </nav>
-    <header class="app-header">
-      <div class="header-topline">
-        <div>
-          <p>데이터룸</p>
-          <strong>출자기관</strong>
-        </div>
-        <div class="header-actions">
-          <a class="header-action active" href="#lpDirectory" aria-label="출자기관 목록으로 이동">기관</a>
-          <a class="header-action" href="#lpNotices" aria-label="LP 공식 공고로 이동">공고</a>
-        </div>
-      </div>
-      <div class="brief-meta">대상 LP 18개 · 기관 프로필 15개 · 표시 공고 56건 · 기준일 2026-05-29</div>
-    </header>
-
     <main class="content-area">
       <section class="lp-directory-hero" aria-label="LP 디렉토리 요약">
         <div>
+          <p class="lp-directory-meta">대상 LP 18개 · 기관 프로필 15개 · 표시 공고 56건 · 기준일 2026-05-28</p>
           <h1>출자기관</h1>
           <p>국내 주요 출자기관의 기본 현황, 관심 자산군, 최근 출자공고를 한 곳에서 비교합니다.</p>
         </div>
@@ -286,7 +274,7 @@
           <article class="lp-directory-card" aria-label="국민연금기금" data-search="국민연금기금 공적연기금 public 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라" data-name="국민연금기금" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=fund.nps.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>국민</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>국민연금기금</strong>
             </div>
             <span class="lp-directory-kind">공적연기금</span>
@@ -302,7 +290,7 @@
           <article class="lp-directory-card" aria-label="한국벤처투자" data-search="한국벤처투자 모태펀드 public 투자운용본부 VC · PEF · 모태펀드" data-name="한국벤처투자" data-lp="kvic" data-asset="VC · PEF · 모태펀드" data-kind="모태펀드 public" data-notices="1" data-amount="0.0000" data-latest="2026-05-15">
             <span class="lp-directory-avatar has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kvic.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>벤처</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>한국벤처투자</strong>
             </div>
             <span class="lp-directory-kind">모태펀드</span>
@@ -318,7 +306,7 @@
           <article class="lp-directory-card" aria-label="한국성장금융" data-search="한국성장금융 정책성 모태펀드 public 출자사업 담당 PEF · VC · 사모대출 · 정책펀드" data-name="한국성장금융" data-lp="kgrowth" data-asset="PEF · VC · 사모대출 · 정책펀드" data-kind="정책성 모태펀드 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kgrowth.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>성장</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>한국성장금융</strong>
             </div>
             <span class="lp-directory-kind">정책성 모태펀드</span>
@@ -334,7 +322,7 @@
           <article class="lp-directory-card" aria-label="한국산업은행" data-search="한국산업은행 정책금융기관 public 간접투자/혁신성장펀드 담당 PEF · VC · 정책펀드" data-name="한국산업은행" data-lp="kdb" data-asset="PEF · VC · 정책펀드" data-kind="정책금융기관 public" data-notices="1" data-amount="0.0000" data-latest="2026-04-30">
             <span class="lp-directory-avatar has-logo" data-tone="6" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kdb.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>산은</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>한국산업은행</strong>
             </div>
             <span class="lp-directory-kind">정책금융기관</span>
@@ -350,7 +338,7 @@
           <article class="lp-directory-card" aria-label="농업정책보험금융원" data-search="농업정책보험금융원 정책성 모태펀드 public 농식품모태펀드 담당 VC · PEF · 모태펀드" data-name="농업정책보험금융원" data-lp="kafi" data-asset="VC · PEF · 모태펀드" data-kind="정책성 모태펀드 public" data-notices="37" data-amount="3065.1000" data-latest="2026-05-28">
             <span class="lp-directory-avatar has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=apfs.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>농금</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>농업정책보험금융원</strong>
             </div>
             <span class="lp-directory-kind">정책성 모태펀드</span>
@@ -366,7 +354,7 @@
           <article class="lp-directory-card" aria-label="우정사업본부" data-search="우정사업본부 공공기금 public 예금대체투자과 PEF · VC · 사모대출" data-name="우정사업본부" data-lp="koreapost" data-asset="PEF · VC · 사모대출" data-kind="공공기금 public" data-notices="9" data-amount="11500.0000" data-latest="2026-05-22">
             <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=koreapost.go.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>우본</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>우정사업본부</strong>
             </div>
             <span class="lp-directory-kind">공공기금</span>
@@ -430,7 +418,7 @@
           <article class="lp-directory-card" aria-label="신협중앙회" data-search="신협중앙회 상호금융 private 자금운용/대체투자 담당 PEF · VC" data-name="신협중앙회" data-lp="cu" data-asset="PEF · VC" data-kind="상호금융 private" data-notices="3" data-amount="0.0000" data-latest="2025-07-14">
             <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=cu.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>신협</span></span>
             <div class="lp-directory-card-head">
-              <span>private</span>
+              <span>민간</span>
               <strong>신협중앙회</strong>
             </div>
             <span class="lp-directory-kind">상호금융</span>
@@ -446,7 +434,7 @@
           <article class="lp-directory-card" aria-label="새마을금고중앙회" data-search="새마을금고중앙회 상호금융 private 신용공제대표이사/대체운용본부 PEF · VC · 사모대출 · 부동산" data-name="새마을금고중앙회" data-lp="kfcc" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="상호금융 private" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="6" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kfcc.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>새마</span></span>
             <div class="lp-directory-card-head">
-              <span>private</span>
+              <span>민간</span>
               <strong>새마을금고중앙회</strong>
             </div>
             <span class="lp-directory-kind">상호금융</span>
@@ -462,7 +450,7 @@
           <article class="lp-directory-card" aria-label="사립학교교직원연금공단" data-search="사립학교교직원연금공단 공적연기금 public 대체투자 담당 PEF · VC" data-name="사립학교교직원연금공단" data-lp="tp" data-asset="PEF · VC" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=tp.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>사립</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>사립학교교직원연금공단</strong>
             </div>
             <span class="lp-directory-kind">공적연기금</span>
@@ -478,7 +466,7 @@
           <article class="lp-directory-card" aria-label="한국수출입은행" data-search="한국수출입은행 정책금융기관 public 공급망안정화기금/기업금융 담당 정책펀드 · PEF · VC · 인프라 · 공급망" data-name="한국수출입은행" data-lp="kexim" data-asset="정책펀드 · PEF · VC · 인프라 · 공급망" data-kind="정책금융기관 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="3" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=koreaexim.go.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>수은</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>한국수출입은행</strong>
             </div>
             <span class="lp-directory-kind">정책금융기관</span>
@@ -494,7 +482,7 @@
           <article class="lp-directory-card" aria-label="공무원연금공단" data-search="공무원연금공단 공적연기금 public 대체투자부 PEF · VC" data-name="공무원연금공단" data-lp="geps" data-asset="PEF · VC" data-kind="공적연기금 public" data-notices="0" data-amount="0.0000" data-latest="-">
             <span class="lp-directory-avatar has-logo" data-tone="6" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=geps.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>공무</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>공무원연금공단</strong>
             </div>
             <span class="lp-directory-kind">공적연기금</span>
@@ -542,7 +530,7 @@
           <article class="lp-directory-card" aria-label="중소기업중앙회" data-search="중소기업중앙회 공제/경제단체 private 공제기금/투자 담당 VC · PEF" data-name="중소기업중앙회" data-lp="kbiz" data-asset="VC · PEF" data-kind="공제/경제단체 private" data-notices="3" data-amount="2000.0000" data-latest="2026-05-22">
             <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kbiz.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>중기</span></span>
             <div class="lp-directory-card-head">
-              <span>private</span>
+              <span>민간</span>
               <strong>중소기업중앙회</strong>
             </div>
             <span class="lp-directory-kind">공제/경제단체</span>
@@ -558,7 +546,7 @@
           <article class="lp-directory-card" aria-label="IBK기업은행" data-search="IBK기업은행 정책금융기관 public 모험자본/혁신금융 담당 VC · PEF · 정책펀드" data-name="IBK기업은행" data-lp="ibk" data-asset="VC · PEF · 정책펀드" data-kind="정책금융기관 public" data-notices="1" data-amount="0.0000" data-latest="2026-05-18">
             <span class="lp-directory-avatar has-logo" data-tone="5" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=ibk.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>IB</span></span>
             <div class="lp-directory-card-head">
-              <span>public</span>
+              <span>공공</span>
               <strong>IBK기업은행</strong>
             </div>
             <span class="lp-directory-kind">정책금융기관</span>
