@@ -1,7 +1,6 @@
 (() => {
   const archive = Array.isArray(window.KPEF_DAILY_ARCHIVE) ? window.KPEF_DAILY_ARCHIVE : [];
   const lpMonitor = Array.isArray(window.KPEF_LP_MONITOR) ? window.KPEF_LP_MONITOR : [];
-  const legacyArticles = Array.isArray(window.KPEF_ARTICLES) ? window.KPEF_ARTICLES : [];
   const searchInput = document.getElementById("clipSearch");
   const searchArea = document.getElementById("searchArea");
   const searchToggle = document.getElementById("searchToggle");
@@ -13,7 +12,6 @@
   const weekdayLabel = document.getElementById("briefWeekday");
   const datePrev = document.getElementById("datePrev");
   const dateNext = document.getElementById("dateNext");
-  const dateRail = document.getElementById("briefDateRail");
   const todayList = document.getElementById("todayList");
   const todayView = document.getElementById("todayView");
   const lpMonitorPanel = document.getElementById("lpMonitorPanel");
@@ -32,7 +30,7 @@
     reportDate: "",
     visibleDate: "",
     basis: "",
-    articles: legacyArticles
+    articles: []
   };
   let articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
 
@@ -61,7 +59,7 @@
     const briefs = archive.length ? archive : [{
       reportDate: activeBrief.reportDate,
       visibleDate: activeBrief.visibleDate,
-      articles: legacyArticles
+      articles: []
     }];
     briefs.forEach((brief) => {
       const rows = Array.isArray(brief.articles) ? brief.articles : [];
@@ -105,13 +103,6 @@
     articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
     if (dateSelect) dateSelect.value = activeBrief.reportDate || "";
     updateDateControl();
-    if (dateRail) {
-      dateRail.querySelectorAll(".date-pill").forEach((button) => {
-        const active = button.dataset.date === activeBrief.reportDate;
-        button.classList.toggle("active", active);
-        if (active) button.scrollIntoView({ block: "nearest", inline: "center" });
-      });
-    }
   };
 
   const setActiveBrief = (reportDate, options = {}) => {
@@ -596,12 +587,6 @@
   };
 
   document.addEventListener("click", (event) => {
-    const dateButton = event.target.closest(".date-pill[data-date]");
-    if (dateButton) {
-      setActiveBrief(dateButton.dataset.date);
-      return;
-    }
-
     const tagToggle = event.target.closest(".tag-toggle");
     if (tagToggle) {
       const group = tagToggle.closest(".cell-tags");
