@@ -596,9 +596,6 @@
       const title = document.createElement("h2");
       title.className = "section-title";
       title.textContent = section || "뉴스";
-      const count = document.createElement("span");
-      count.textContent = `${groupItems.length.toLocaleString("ko-KR")}건`;
-      title.append(count);
       const list = document.createElement("ul");
       list.className = "cell-list";
       groupItems.forEach((article) => list.append(makeCell(article)));
