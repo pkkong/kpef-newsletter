@@ -14,8 +14,6 @@
   const datePrev = document.getElementById("datePrev");
   const dateNext = document.getElementById("dateNext");
   const dateRail = document.getElementById("briefDateRail");
-  const briefMeta = document.getElementById("briefMeta");
-  const briefSummary = document.getElementById("briefSummary");
   const todayList = document.getElementById("todayList");
   const savedList = document.getElementById("savedList");
   const savedEmpty = document.getElementById("savedEmpty");
@@ -45,7 +43,6 @@
     reportDate: "",
     visibleDate: "",
     basis: "",
-    countLabel: `주요 뉴스 ${legacyArticles.length}건`,
     articles: legacyArticles
   };
   let articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
@@ -120,7 +117,7 @@
     if (dateNext) dateNext.disabled = index <= 0;
   };
 
-  const updateBriefChrome = (counts = {}) => {
+  const updateBriefChrome = () => {
     articles = Array.isArray(activeBrief.articles) ? activeBrief.articles : [];
     if (dateSelect) dateSelect.value = activeBrief.reportDate || "";
     updateDateControl();
@@ -130,21 +127,6 @@
         button.classList.toggle("active", active);
         if (active) button.scrollIntoView({ block: "nearest", inline: "center" });
       });
-    }
-    if (briefMeta) {
-      const query = queryText();
-      if (query) {
-        const newsCount = Number.isFinite(counts.newsCount) ? counts.newsCount : filtered().length;
-        if (showLpMonitor) {
-          const noticeCount = Number.isFinite(counts.noticeCount) ? counts.noticeCount : filteredLpMonitor().length;
-          briefMeta.textContent = `전체 아카이브 검색 결과 뉴스 ${newsCount}건 · 공식공고 ${noticeCount}건`;
-        } else {
-          briefMeta.textContent = `전체 아카이브 검색 결과 뉴스 ${newsCount}건`;
-        }
-        return;
-      }
-      const countLabel = activeBrief.countLabel || `주요 뉴스 ${articles.length}건`;
-      briefMeta.textContent = countLabel;
     }
   };
 
@@ -261,44 +243,6 @@
       groups.get(article.section).push(article);
     });
     return groups;
-  };
-
-  const renderBriefSummary = (newsItems, noticeItems) => {
-    if (!briefSummary) return;
-    const sections = groupBySection(newsItems);
-    const sources = new Set(newsItems.map((article) => article.source).filter(Boolean));
-    const stats = [
-      ["뉴스", `${newsItems.length.toLocaleString("ko-KR")}건`],
-      ["섹션", `${sections.size.toLocaleString("ko-KR")}개`],
-      showLpMonitor
-        ? ["공고", `${noticeItems.length.toLocaleString("ko-KR")}건`]
-        : ["출처", `${sources.size.toLocaleString("ko-KR")}곳`]
-    ];
-    briefSummary.hidden = false;
-    const statGrid = document.createElement("div");
-    statGrid.className = "brief-stat-grid";
-    statGrid.replaceChildren(...stats.map(([label, value]) => {
-      const item = document.createElement("div");
-      item.className = "brief-stat";
-      const statLabel = document.createElement("span");
-      statLabel.textContent = label;
-      const statValue = document.createElement("strong");
-      statValue.textContent = value;
-      item.append(statLabel, statValue);
-      return item;
-    }));
-    const topics = document.createElement("div");
-    topics.className = "brief-topic-row";
-    [...sections.entries()].slice(0, 5).forEach(([section, rows]) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "brief-topic";
-      button.dataset.sectionScroll = section || "뉴스";
-      const count = rows.length.toLocaleString("ko-KR");
-      button.innerHTML = `${section || "뉴스"} <span>${count}</span>`;
-      topics.append(button);
-    });
-    briefSummary.replaceChildren(statGrid, topics);
   };
 
   const eventLabel = (value) => ({
@@ -546,12 +490,6 @@
       date.textContent = articleDate;
       meta.append(date);
     }
-    const subtype = article.subCategory || article.rawSection || "";
-    if (subtype) {
-      const category = document.createElement("span");
-      category.textContent = subtype;
-      meta.append(category);
-    }
     meta.append(source);
     link.append(title, meta);
     main.append(link);
@@ -687,8 +625,7 @@
     if (skeleton) skeleton.classList.add("hidden");
     const newsItems = filtered();
     const noticeItems = filteredLpMonitor();
-    updateBriefChrome({ newsCount: newsItems.length, noticeCount: noticeItems.length });
-    renderBriefSummary(newsItems, noticeItems);
+    updateBriefChrome();
     renderLpMonitor(noticeItems);
     renderGrouped(todayList, newsItems);
     renderSaved();
@@ -710,14 +647,6 @@
     const dateButton = event.target.closest(".date-pill[data-date]");
     if (dateButton) {
       setActiveBrief(dateButton.dataset.date);
-      return;
-    }
-
-    const sectionJump = event.target.closest("[data-section-scroll]");
-    if (sectionJump) {
-      const sectionName = sectionJump.dataset.sectionScroll || "";
-      const target = [...document.querySelectorAll(".section-block")].find((block) => block.dataset.sectionName === sectionName);
-      if (target) target.scrollIntoView({ block: "start", behavior: "smooth" });
       return;
     }
 
@@ -781,9 +710,7 @@
         setActiveBrief(next.reportDate);
         return;
       }
-      const missing = dateInput.value;
       updateDateControl();
-      if (briefMeta && missing) briefMeta.textContent = `${missing.replaceAll("-", ".")} 브리프가 아직 없습니다`;
     });
   }
   document.addEventListener("keydown", (event) => {

@@ -3,7 +3,6 @@
     "reportDate": "2026-05-29",
     "visibleDate": "2026.05.29",
     "basis": "",
-    "countLabel": "주요 뉴스 30건",
     "articles": [
       {
         "id": "clip-20260529-0",
@@ -108,8 +107,8 @@
           "산은",
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품투자조합",
           "농림수산식품모태펀드",
+          "농림수산식품투자조합",
           "농식품모태펀드",
           "농금원"
         ]
@@ -705,7 +704,6 @@
     "reportDate": "2026-05-28",
     "visibleDate": "2026.05.28",
     "basis": "",
-    "countLabel": "주요 뉴스 29건",
     "articles": [
       {
         "id": "clip-20260528-0",
@@ -1380,7 +1378,6 @@
     "reportDate": "2026-05-27",
     "visibleDate": "2026.05.27",
     "basis": "",
-    "countLabel": "주요 뉴스 22건",
     "articles": [
       {
         "id": "clip-20260527-0",
@@ -1816,8 +1813,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -1870,9 +1867,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "벤처투자",
           "KVIC",
-          "모태펀드"
+          "모태펀드",
+          "벤처투자"
         ]
       },
       {
@@ -1924,7 +1921,6 @@
     "reportDate": "2026-05-26",
     "visibleDate": "2026.05.26",
     "basis": "",
-    "countLabel": "주요 뉴스 16건",
     "articles": [
       {
         "id": "clip-20260526-0",
@@ -2288,7 +2284,6 @@
     "reportDate": "2026-05-25",
     "visibleDate": "2026.05.25",
     "basis": "",
-    "countLabel": "주요 뉴스 3건",
     "articles": [
       {
         "id": "clip-20260525-0",
@@ -2353,14 +2348,12 @@
     "reportDate": "2026-05-24",
     "visibleDate": "2026.05.24",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-23",
     "visibleDate": "2026.05.23",
     "basis": "",
-    "countLabel": "주요 뉴스 1건",
     "articles": [
       {
         "id": "clip-20260523-0",
@@ -2387,7 +2380,6 @@
     "reportDate": "2026-05-22",
     "visibleDate": "2026.05.22",
     "basis": "",
-    "countLabel": "주요 뉴스 6건",
     "articles": [
       {
         "id": "clip-20260522-0",
@@ -2493,8 +2485,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "중기중앙",
-          "KBIZ"
+          "KBIZ",
+          "중기중앙"
         ]
       },
       {
@@ -2522,7 +2514,6 @@
     "reportDate": "2026-05-21",
     "visibleDate": "2026.05.21",
     "basis": "",
-    "countLabel": "주요 뉴스 3건",
     "articles": [
       {
         "id": "clip-20260521-0",
@@ -2602,7 +2593,6 @@
     "reportDate": "2026-05-20",
     "visibleDate": "2026.05.20",
     "basis": "",
-    "countLabel": "주요 뉴스 2건",
     "articles": [
       {
         "id": "clip-20260520-0",
@@ -2648,7 +2638,6 @@
     "reportDate": "2026-05-19",
     "visibleDate": "2026.05.19",
     "basis": "",
-    "countLabel": "주요 뉴스 7건",
     "articles": [
       {
         "id": "clip-20260519-0",
@@ -2789,7 +2778,6 @@
     "reportDate": "2026-05-18",
     "visibleDate": "2026.05.18",
     "basis": "",
-    "countLabel": "주요 뉴스 1건",
     "articles": [
       {
         "id": "clip-20260518-0",
@@ -2816,21 +2804,18 @@
     "reportDate": "2026-05-17",
     "visibleDate": "2026.05.17",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-16",
     "visibleDate": "2026.05.16",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-15",
     "visibleDate": "2026.05.15",
     "basis": "",
-    "countLabel": "주요 뉴스 9건",
     "articles": [
       {
         "id": "clip-20260515-0",
@@ -3009,7 +2994,6 @@
     "reportDate": "2026-05-14",
     "visibleDate": "2026.05.14",
     "basis": "",
-    "countLabel": "주요 뉴스 2건",
     "articles": [
       {
         "id": "clip-20260514-0",
@@ -3070,7 +3054,6 @@
     "reportDate": "2026-05-13",
     "visibleDate": "2026.05.13",
     "basis": "",
-    "countLabel": "주요 뉴스 12건",
     "articles": [
       {
         "id": "clip-20260513-0",
@@ -3335,7 +3318,6 @@
     "reportDate": "2026-05-12",
     "visibleDate": "2026.05.12",
     "basis": "",
-    "countLabel": "주요 뉴스 12건",
     "articles": [
       {
         "id": "clip-20260512-0",
@@ -3571,7 +3553,6 @@
     "reportDate": "2026-05-11",
     "visibleDate": "2026.05.11",
     "basis": "",
-    "countLabel": "주요 뉴스 8건",
     "articles": [
       {
         "id": "clip-20260511-0",
@@ -3731,14 +3712,12 @@
     "reportDate": "2026-05-10",
     "visibleDate": "2026.05.10",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-09",
     "visibleDate": "2026.05.09",
     "basis": "",
-    "countLabel": "주요 뉴스 3건",
     "articles": [
       {
         "id": "clip-20260509-0",
@@ -3803,7 +3782,6 @@
     "reportDate": "2026-05-08",
     "visibleDate": "2026.05.08",
     "basis": "",
-    "countLabel": "주요 뉴스 12건",
     "articles": [
       {
         "id": "clip-20260508-0",
@@ -4052,7 +4030,6 @@
     "reportDate": "2026-05-07",
     "visibleDate": "2026.05.07",
     "basis": "",
-    "countLabel": "주요 뉴스 12건",
     "articles": [
       {
         "id": "clip-20260507-0",
@@ -4288,7 +4265,6 @@
     "reportDate": "2026-05-06",
     "visibleDate": "2026.05.06",
     "basis": "",
-    "countLabel": "주요 뉴스 2건",
     "articles": [
       {
         "id": "clip-20260506-0",
@@ -4349,7 +4325,6 @@
     "reportDate": "2026-05-05",
     "visibleDate": "2026.05.05",
     "basis": "",
-    "countLabel": "주요 뉴스 2건",
     "articles": [
       {
         "id": "clip-20260505-0",
@@ -4408,21 +4383,18 @@
     "reportDate": "2026-05-04",
     "visibleDate": "2026.05.04",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-03",
     "visibleDate": "2026.05.03",
     "basis": "",
-    "countLabel": "주요 뉴스 0건",
     "articles": []
   },
   {
     "reportDate": "2026-05-02",
     "visibleDate": "2026.05.02",
     "basis": "",
-    "countLabel": "주요 뉴스 3건",
     "articles": [
       {
         "id": "clip-20260502-0",
@@ -4452,8 +4424,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -4501,7 +4473,6 @@
     "reportDate": "2026-05-01",
     "visibleDate": "2026.05.01",
     "basis": "",
-    "countLabel": "주요 뉴스 2건",
     "articles": [
       {
         "id": "clip-20260501-0",
@@ -4562,7 +4533,6 @@
     "reportDate": "2026-04-30",
     "visibleDate": "2026.04.30",
     "basis": "",
-    "countLabel": "주요 뉴스 10건",
     "articles": [
       {
         "id": "clip-20260430-0",
