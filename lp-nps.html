@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=cb630749">
+  <link rel="stylesheet" href="assets/service.css?v=9a2557cf">
   <style>
     body { background: #ffffff; }
     body,
@@ -46,6 +46,11 @@
     .ktcu-title-head div > span { width: fit-content; border-left: 3px solid var(--accent); padding-left: 8px; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-title h1 { margin: 0; color: var(--text); font-size: 28px; font-weight: 850; line-height: 1.12; letter-spacing: 0; }
     .ktcu-title p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 15px; line-height: 1.68; }
+    .ktcu-hero-facts { display: grid; border-top: 1px solid var(--separator); border-bottom: 1px solid var(--separator); }
+    .ktcu-hero-fact { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 10px; align-items: start; border-top: 1px solid var(--separator); padding: 9px 0; }
+    .ktcu-hero-fact:first-child { border-top: 0; }
+    .ktcu-hero-fact span { color: var(--secondary); font-size: 11.5px; font-weight: 850; line-height: 1.35; }
+    .ktcu-hero-fact strong { min-width: 0; color: var(--text); font-size: 13px; font-weight: 760; line-height: 1.42; overflow-wrap: anywhere; }
     .ktcu-quick { display: grid; gap: 8px; }
     .ktcu-quick-item { border-left: 3px solid var(--separator); padding-left: 10px; color: var(--text); font-size: 13px; line-height: 1.5; }
     .ktcu-quick-item strong { display: block; margin-bottom: 2px; font-size: 13px; }
@@ -65,6 +70,7 @@
     .ktcu-coverage div { min-width: 0; border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-coverage span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
     .ktcu-coverage strong { display: block; margin-top: 4px; color: var(--text); font-size: 18px; line-height: 1.2; }
+    .ktcu-source-coverage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .ktcu-chips { display: flex; flex-wrap: wrap; gap: 7px; }
     .ktcu-chips span { border: 1px solid var(--separator); border-radius: 999px; padding: 6px 9px; background: #fbfcfd; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-highlight-panel { margin-top: 10px; }
@@ -135,6 +141,7 @@
     .ktcu-detail summary { cursor: pointer; padding: 12px 14px; color: var(--text); font-size: 13px; font-weight: 800; }
     .ktcu-detail-body { padding: 0 14px 14px; }
     .ktcu-detail-body p { margin: 0 0 10px; color: var(--secondary); font-size: 13px; line-height: 1.55; }
+    .ktcu-detail-body .ktcu-coverage { margin-top: 2px; }
     .ktcu-detail ul { display: grid; gap: 8px; margin: 0; padding: 0 14px 14px 28px; }
     .ktcu-detail a { color: var(--secondary); font-size: 12px; text-decoration: none; }
     .ktcu-peer-table { display: grid; gap: 7px; }
@@ -150,7 +157,7 @@
       .ktcu-shell { padding-top: 22px; padding-bottom: calc(106px + env(safe-area-inset-bottom)); }
       .ktcu-shell .kpef-product-header { margin-top: -22px; }
       .ktcu-title h1 { font-size: 38px; }
-      .ktcu-hero { grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr); align-items: end; }
+      .ktcu-hero { grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr); align-items: start; }
       .ktcu-intel-grid { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); }
       .ktcu-section-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
       .ktcu-org-split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -169,6 +176,7 @@
       .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
       .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
       .ktcu-peer-head { display: none; }
+      .ktcu-source-coverage { grid-template-columns: 1fr; }
     }
     .ktcu-title-head {
       grid-template-columns: 50px minmax(0, 1fr);
@@ -198,6 +206,10 @@
       font-size: 12.5px;
       font-weight: 650;
       line-height: 1.58;
+    }
+    .ktcu-hero-fact strong {
+      font-size: 13px;
+      font-weight: 760;
     }
     .ktcu-quick-item {
       font-size: 12.5px;
@@ -300,77 +312,64 @@
           <div class="ktcu-title-head">
             <span class="ktcu-logo has-logo" data-tone="2" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=fund.nps.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>국민</span></span>
             <div>
-              <span>출자기관 프로필</span>
+              <span>출자기관</span>
               <h1>국민연금기금</h1>
             </div>
           </div>
-          <p>공적연기금의 일반현황, 투자현황, 담당 조직, 출자공고 흐름을 한 화면에서 봅니다.</p>
-          <div class="ktcu-quick">
-            <div class="ktcu-quick-item"><strong>핵심 창구</strong>아시아사모투자팀</div>
-            <div class="ktcu-quick-item"><strong>2026년 활동</strong>표시할 공식 공고가 없습니다.</div>
-            <div class="ktcu-quick-item"><strong>출자 이력</strong>공식 공고와 최종 선정 발표를 기준으로 정리합니다.</div>
+          <p>국민연금기금의 기본 정보, 투자 현황, 공식 출자공고, 관련 GP와 뉴스를 정리합니다.</p>
+          <div class="ktcu-hero-facts" aria-label="핵심 정보">
+            <div class="ktcu-hero-fact"><span>유형</span><strong>공적연기금</strong></div>
+            <div class="ktcu-hero-fact"><span>담당 조직</span><strong>아시아사모투자팀</strong></div>
+            <div class="ktcu-hero-fact"><span>최신 공고</span><strong>-</strong></div>
           </div>
           <nav class="ktcu-tabbar" aria-label="프로필 섹션">
-            <a href="#overview">개요</a>
-            <a href="#activity">출자 활동</a>
-            <a href="#relationships">GP 관계</a>
+            <a href="#overview">기본 정보</a>
+            <a href="#investment">투자 현황</a>
+            <a href="#notices">출자공고</a>
+            <a href="#relationships">관련 GP</a>
+            <a href="#news">뉴스</a>
             <a href="#peers">기관 비교</a>
-            <a href="#notes">참고</a>
             <a href="#sourceLinks">자료</a>
           </nav>
-          <div class="ktcu-profile-toolbar">
-            <p>공식 공고 0건 · 관련 뉴스 0건 · 확인 항목 8개</p>
-          </div>
         </div>
         <div class="ktcu-kpis">
           <div class="ktcu-kpi"><span>총자산</span><strong>-</strong></div>
           <div class="ktcu-kpi"><span>관심 자산군</span><strong>PEF · VC · 사모대출 · 부동산 · 인프라</strong></div>
-          <div class="ktcu-kpi"><span>공식 공고</span><strong>0건</strong></div>
-          <div class="ktcu-kpi"><span>공고 기준 출자규모</span><strong>-</strong></div>
+          <div class="ktcu-kpi"><span>출자공고</span><strong>0건</strong></div>
+          <div class="ktcu-kpi"><span>공고 규모</span><strong>-</strong></div>
         </div>
       </section>
     </header>
 
-    <section class="ktcu-intel-grid" aria-label="프로필 자료 기준">
+    <section class="ktcu-section-grid" id="overview" aria-label="기본 정보">
       <section class="ktcu-panel">
-        <h2>자료 기준</h2>
-        <div class="ktcu-coverage">
-          <div><span>확인 항목</span><strong>8개</strong></div>
-          <div><span>자료 링크</span><strong>3개</strong></div>
-          <div><span>공고·뉴스</span><strong>0건</strong></div>
-          <div><span>자료 성격</span><strong>6개</strong></div>
-        </div>
+        <h2>기관 개요</h2>
+        <dl class="ktcu-facts">
+          <div>
+            <dt>설치</dt>
+            <dd>1988년 국민연금기금 설치<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 1988 · 공식 확인</a></small></dd>
+          </div>
+          <div>
+            <dt>2024년말 기금규모</dt>
+            <dd>1,212조 8천억원<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 2024-12-31 · 공식 확인</a></small></dd>
+          </div>
+        </dl>
       </section>
+
       <section class="ktcu-panel">
-        <h2>관심 자산군</h2>
-        <p>공식 공고, 기관 소개, 공개 뉴스에서 반복적으로 확인되는 투자 영역입니다.</p>
-        <div class="ktcu-chips">
-            <span>PEF</span>
-            <span>VC</span>
-            <span>사모대출</span>
-            <span>부동산</span>
-            <span>인프라</span>
-        </div>
+        <h2>담당 조직</h2>
+        <dl class="ktcu-facts">
+          <div>
+            <dt>PE 관련 핵심 조직</dt>
+            <dd>사모벤처투자실: 아시아사모투자팀·미주사모투자팀·유럽사모투자팀·대체전략투자팀·사모대출투자팀<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 2024-12-31 · 공식 확인</a></small></dd>
+          </div>
+        </dl>
       </section>
     </section>
 
-    <section class="ktcu-panel ktcu-highlight-panel" aria-label="2026년 출자 하이라이트">
-      <div class="ktcu-panel-head">
-        <div>
-          <h2>2026년 출자 하이라이트</h2>
-          <p>공식 공고에 적힌 출자 예정·배정 규모입니다. 최종 선정 또는 실제 집행 금액과는 다를 수 있습니다.</p>
-        </div>
-        <strong>0건<br>-</strong>
-      </div>
-      <div class="ktcu-highlight-list">
-          <p class="ktcu-empty-note">2026년 표시할 공식 공고가 없습니다.</p>
-      </div>
-    </section>
-
-    <section class="ktcu-section-grid" id="overview" aria-label="LP 요약">
+    <section class="ktcu-section-grid" id="investment" aria-label="투자 현황">
       <section class="ktcu-panel">
         <h2>투자 현황</h2>
-        <p>PEF · VC · 사모대출 · 부동산 · 인프라</p>
         <dl class="ktcu-facts">
           <div>
             <dt>2024년 대체투자</dt>
@@ -384,45 +383,47 @@
       </section>
 
       <section class="ktcu-panel">
-        <h2>담당 조직</h2>
-        <p>공식 조직도 기준으로 PE와 기업금융을 담당하는 축만 정리했습니다.</p>
-        <dl class="ktcu-facts">
-          <div>
-            <dt>PE 관련 핵심 조직</dt>
-            <dd>사모벤처투자실: 아시아사모투자팀·미주사모투자팀·유럽사모투자팀·대체전략투자팀·사모대출투자팀<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 2024-12-31 · 공식 확인</a></small></dd>
-          </div>
-        </dl>
+        <h2>관심 자산군</h2>
+        <div class="ktcu-chips">
+            <span>PEF</span>
+            <span>VC</span>
+            <span>사모대출</span>
+            <span>부동산</span>
+            <span>인프라</span>
+        </div>
       </section>
 
       <section class="ktcu-panel">
         <h2>출자 패턴</h2>
-        <p>공개된 공식 공고의 자산군과 공고상 출자 규모를 기준으로 본 패턴입니다.</p>
         <div class="ktcu-mix">
           <p class="ktcu-empty-note">자산군별 출자 패턴은 공식 공고가 추가되면 표시됩니다.</p>
         </div>
       </section>
 
       <section class="ktcu-panel">
-        <h2>기관 개요</h2>
-        <p>공식 기관소개와 경영공시에서 확인되는 기본 정보입니다.</p>
-        <dl class="ktcu-facts">
-          <div>
-            <dt>설치</dt>
-            <dd>1988년 국민연금기금 설치<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 1988 · 공식 확인</a></small></dd>
-          </div>
-          <div>
-            <dt>2024년말 기금규모</dt>
-            <dd>1,212조 8천억원<small><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서 · 2024-12-31 · 공식 확인</a></small></dd>
-          </div>
-        </dl>
+        <h2>연도별 공고 규모</h2>
+        <div class="ktcu-years">
+        <p class="ktcu-empty-note">연도별 공고 규모는 공식 공고가 확인되면 표시됩니다.</p>
+        </div>
       </section>
-
     </section>
 
-    <section class="ktcu-lower" id="activity" aria-label="LP 활동 타임라인">
+    <section class="ktcu-panel ktcu-highlight-panel" aria-label="2026년 출자 하이라이트">
+      <div class="ktcu-panel-head">
+        <div>
+          <h2>2026년 출자 하이라이트</h2>
+          <p>표시할 공식 공고가 없습니다.</p>
+        </div>
+        <strong>0건<br>-</strong>
+      </div>
+      <div class="ktcu-highlight-list">
+          <p class="ktcu-empty-note">2026년 표시할 공식 공고가 없습니다.</p>
+      </div>
+    </section>
+
+    <section class="ktcu-lower" id="notices" aria-label="출자공고">
       <section class="ktcu-panel">
         <h2>활동 타임라인</h2>
-        <p>공식 공고, 선정 히스토리, 최근 동향을 시간순으로 묶었습니다.</p>
         <div class="ktcu-timeline">
           <article class="ktcu-timeline-item" data-kind="notice_history" data-year="2026" data-asset="">
             <div>
@@ -435,30 +436,26 @@
         </div>
       </section>
       <section class="ktcu-panel">
-        <h2>연도별 공식 공고 규모</h2>
-        <div class="ktcu-years">
-        <p class="ktcu-empty-note">연도별 공고 규모는 공식 공고가 확인되면 표시됩니다.</p>
-        </div>
-      </section>
-    </section>
-
-    <section class="ktcu-lower" id="relationships" aria-label="공고와 GP 관계">
-      <section class="ktcu-panel">
         <h2>과거 출자공고</h2>
         <div class="ktcu-notices">
         <p class="ktcu-empty-note">아직 공개 페이지에 표시할 공식 출자공고가 없습니다.</p>
         </div>
       </section>
+    </section>
+
+    <section class="ktcu-section-grid" id="relationships" aria-label="관련 GP">
       <section class="ktcu-panel">
         <h2>선정 GP</h2>
-        <p>공식 공고와 관련 뉴스에서 확인된 GP명입니다.</p>
         <div class="ktcu-gp-tags">
           <p class="ktcu-empty-note">공개 공고에서 확인된 선정 GP가 아직 없습니다.</p>
         </div>
       </section>
+    </section>
+
+    <section class="ktcu-section-grid" id="news" aria-label="관련 뉴스">
+
       <section class="ktcu-panel">
         <h2>관련 뉴스</h2>
-        <p>LP 공고·기관 동향과 직접 관련된 기사입니다.</p>
         <div class="ktcu-news-list">
           <p class="ktcu-empty-note">직접 관련된 뉴스는 아직 없습니다.</p>
         </div>
@@ -591,13 +588,24 @@
     <details class="ktcu-detail" id="notes">
       <summary>참고사항</summary>
       <div class="ktcu-detail-body">
-        <p>공식 공고, 최종 선정 발표, 기관 조직도에 기반한 프로필입니다. 실제 약정·집행액과 실무 담당자명은 확인되는 항목만 표시합니다.</p>
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 기준</dt>
             <dd>첨부파일과 최종 선정 결과는 공식 발표가 확인된 건만 반영합니다.<small><a href="https://fund.nps.or.kr/impa/dlnginstslctnpbanclist/getOHEF0017M0.do" target="_blank" rel="noreferrer">NPS 거래기관 선정공고 · 2026-05-27</a></small></dd>
           </div>
         </dl>
+      </div>
+    </details>
+
+    <details class="ktcu-detail" id="sourceSummary">
+      <summary>자료 기준</summary>
+      <div class="ktcu-detail-body">
+        <div class="ktcu-coverage ktcu-source-coverage">
+          <div><span>프로필 항목</span><strong>8개</strong></div>
+          <div><span>자료 링크</span><strong>3개</strong></div>
+          <div><span>공고·뉴스</span><strong>0건</strong></div>
+          <div><span>자료 성격</span><strong>6개</strong></div>
+        </div>
       </div>
     </details>
 
@@ -611,7 +619,7 @@
     </details>
 
 
-    <p class="ktcu-footer">기준일 2026-05-28 · 최신 공고일 - · 실무자명과 최종 선정 GP 히스토리는 확인되는 항목만 표시합니다.</p>
+    <p class="ktcu-footer">기준일 2026-05-30 · 최신 공고일 -</p>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a class="" href="index.html">
