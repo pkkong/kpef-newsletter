@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,23 +350,23 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립 목적</dt>
-            <dd>경찰공무원의 생활안정과 복지 증진<small><a href="https://www.pmaa.or.kr/www/1461128128029/content.do" target="_blank" rel="noreferrer">경찰공제회 설립목적 및 연혁 · 공식 확인</a></small></dd>
+            <dd><span>경찰공무원의 생활안정과 복지 증진</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461128128029/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>설립 근거</dt>
-            <dd>경찰공제회법<small><a href="https://www.pmaa.or.kr/www/1461128181587/content.do" target="_blank" rel="noreferrer">경찰공제회법 · 공식 확인</a></small></dd>
+            <dd><span>경찰공제회법</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461128181587/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울특별시 마포구 마포대로 78 경찰공제회<small><a href="https://www.pmaa.or.kr/index.do" target="_blank" rel="noreferrer">경찰공제회 홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>서울특별시 마포구 마포대로 78 경찰공제회</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/index.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>회원 수</dt>
-            <dd>135,869명<small><a href="https://www.pmaa.or.kr/www/1461131192010/content.do" target="_blank" rel="noreferrer">경찰공제회 회원현황 · 2025-12-31 · 공식 확인</a></small></dd>
+            <dd><span>135,869명</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461131192010/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>2025년말 총자산</dt>
-            <dd>7조 6,243억원<small><a href="https://www.pmaa.or.kr/www/1461131080634/content.do" target="_blank" rel="noreferrer">경찰공제회 기금현황 · 2025-12-31 · 공식 확인</a></small></dd>
+            <dd><span>7조 6,243억원</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461131080634/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -373,11 +376,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>PE 관련 핵심 부서</dt>
-            <dd>대체투자본부 기업투자팀: 국내외 PEF·PDF·VC 담당<small><a href="https://www.pmaa.or.kr/www/1461128249370/orgcht.do" target="_blank" rel="noreferrer">경찰공제회 조직도 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>대체투자본부 기업투자팀: 국내외 PEF·PDF·VC 담당</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461128249370/orgcht.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>금융이사/CIO</dt>
-            <dd>공석<small><a href="https://www.pmaa.or.kr/www/1474439236504/content.do" target="_blank" rel="noreferrer">경찰공제회 임원현황 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>공석</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1474439236504/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -389,11 +392,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>2025년 투자자산</dt>
-            <dd>6조 8,242억원·대체투자 3조 4,771억원(51.0%)<small><a href="https://www.pmaa.or.kr/www/1461131407276/content.do" target="_blank" rel="noreferrer">경찰공제회 투자현황 · 2025-12-31 · 공식 확인</a></small></dd>
+            <dd><span>6조 8,242억원·대체투자 3조 4,771억원(51.0%)</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1461131407276/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>2026년 자산운용 목표</dt>
-            <dd>투자자산 6조 3,787억원·목표수익률 5.0%·지급준비율 110.0%<small><a href="https://www.pmaa.or.kr/www/1715236510528/content.do" target="_blank" rel="noreferrer">경찰공제회 자산운용 계획 · 2026 · 공식 확인</a></small></dd>
+            <dd><span>투자자산 6조 3,787억원·목표수익률 5.0%·지급준비율 110.0%</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.pmaa.or.kr/www/1715236510528/content.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -605,7 +608,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 기준</dt>
-            <dd>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.<small><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer">경찰공제회 입찰공고 · 2026-05-26</a></small></dd>
+            <dd><span>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
         </dl>
       </div>

@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,15 +350,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>기관 성격</dt>
-            <dd>수출입·해외투자 활동을 지원하는 정책금융기관<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>수출입·해외투자 활동을 지원하는 정책금융기관</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>본점 소재지</dt>
-            <dd>서울특별시 영등포구 은행로 38<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>서울특별시 영등포구 은행로 38</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>해외 네트워크</dt>
-            <dd>대표사무소 25곳·현지법인 5곳·연락사무소 6곳<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>대표사무소 25곳·현지법인 5곳·연락사무소 6곳</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -365,7 +368,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>핵심 창구</dt>
-            <dd>공급망안정화기금과 기업금융 관련 조직·공고를 우선 추적<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 2026-05-26 · 참고 자료</a></small></dd>
+            <dd><span>공급망안정화기금과 기업금융 관련 조직·공고를 우선 추적</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -377,11 +380,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>주요 지원 프로그램</dt>
-            <dd>첨단전략산업·초대형수주·기간산업·ESG금융 프로그램<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>첨단전략산업·초대형수주·기간산업·ESG금융 프로그램</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>공급망안정화기금</dt>
-            <dd>공급망 안정화를 위한 핵심 산업 지원<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 공식 확인</a></small></dd>
+            <dd><span>공급망 안정화를 위한 핵심 산업 지원</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -510,11 +513,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>2026년 상반기 핵심광물·에너지 공급망안정화 펀드</dt>
-            <dd>출자 1,000억원·비엔더블유인베스트먼트 500억원·한국투자프라이빗에쿼티 500억원 선정 보도<small><a href="https://dealsite.co.kr/articles/154841" target="_blank" rel="noreferrer">딜사이트 · 2026-01-09 · 참고 자료</a></small></dd>
+            <dd><span>출자 1,000억원·비엔더블유인베스트먼트 500억원·한국투자프라이빗에쿼티 500억원 선정 보도</span><a class="ktcu-source-icon ktcu-source-article" href="https://dealsite.co.kr/articles/154841" target="_blank" rel="noreferrer" aria-label="출처: 기사" title="기사"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M8 9h8"/><path d="M8 12h8"/><path d="M8 15h5"/></svg></a></dd>
           </div>
           <div>
             <dt>2026년 지역주도성장 펀드 GP 선정</dt>
-            <dd>총 2,500억원 출자·6개 GP·자펀드 1조2,500억원 목표<small><a href="https://dealsite.co.kr/articles/160028" target="_blank" rel="noreferrer">딜사이트 · 2026-04-10 · 참고 자료</a></small></dd>
+            <dd><span>총 2,500억원 출자·6개 GP·자펀드 1조2,500억원 목표</span><a class="ktcu-source-icon ktcu-source-article" href="https://dealsite.co.kr/articles/160028" target="_blank" rel="noreferrer" aria-label="출처: 기사" title="기사"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M8 9h8"/><path d="M8 12h8"/><path d="M8 15h5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -656,7 +659,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 기준</dt>
-            <dd>순수 LP 성격의 PE/VC 출자공고와 정책금융 프로그램 공고를 분리해서 축적 필요<small><a href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer">한국수출입은행 대표홈페이지 · 2026-05-26</a></small></dd>
+            <dd><span>순수 LP 성격의 PE/VC 출자공고와 정책금융 프로그램 공고를 분리해서 축적 필요</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreaexim.go.kr/index" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </div>

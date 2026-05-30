@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,27 +350,27 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립 목적</dt>
-            <dd>새마을금고 경영 지원·감독과 공동이익 추구<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
+            <dd><span>새마을금고 경영 지원·감독과 공동이익 추구</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>자산·거래자</dt>
-            <dd>자산 약 280조원·거래자수 2,355만명<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · 공식 확인</a></small></dd>
+            <dd><span>자산 약 280조원·거래자수 2,355만명</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>금고 수</dt>
-            <dd>1,300여개<small><a href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer">새마을금고 Company Brief · 참고 자료</a></small></dd>
+            <dd><span>1,300여개</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/companyBrief.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울특별시 강남구 봉은사로 114길 20<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · 공식 확인</a></small></dd>
+            <dd><span>서울특별시 강남구 봉은사로 114길 20</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>조직 네트워크</dt>
-            <dd>본부와 전국 13개 지역본부 운영<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
+            <dd><span>본부와 전국 13개 지역본부 운영</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>대표전화</dt>
-            <dd>02-2145-9114<small><a href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer">새마을금고중앙회 위치안내 · 공식 확인</a></small></dd>
+            <dd><span>02-2145-9114</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/federation/fed0701.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -377,11 +380,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>핵심 의사결정 축</dt>
-            <dd>신용공제대표이사 산하 자금운용부문(CIO)·대체운용본부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>신용공제대표이사 산하 자금운용부문(CIO)·대체운용본부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>대체운용본부</dt>
-            <dd>프로젝트운용부·기업운용부<small><a href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer">새마을금고중앙회 조직현황 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>프로젝트운용부·기업운용부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/organizationChart.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -393,15 +396,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>중앙은행 역할</dt>
-            <dd>새마을금고 운용자금 조절과 안정적 자금 운용 지원<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
+            <dd><span>새마을금고 운용자금 조절과 안정적 자금 운용 지원</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>주요 금융 기능</dt>
-            <dd>신용사업·공제사업·예금자보호준비금 관리<small><a href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer">새마을금고중앙회 주요업무 · 공식 확인</a></small></dd>
+            <dd><span>신용사업·공제사업·예금자보호준비금 관리</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/cc/kfccMainRoles.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>신용사업 역할</dt>
-            <dd>안정적 자금 운용과 자금 수급조절을 위해 여·수신업무 수행<small><a href="https://www.kfcc.co.kr/business/creditBusiness.do" target="_blank" rel="noreferrer">새마을금고중앙회 신용사업 · 공식 확인</a></small></dd>
+            <dd><span>안정적 자금 운용과 자금 수급조절을 위해 여·수신업무 수행</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.kfcc.co.kr/business/creditBusiness.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -647,7 +650,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 기준</dt>
-            <dd>입찰공고에는 조달·투자 공고가 함께 게시되므로 PE/VC 관련 공고만 표시합니다.<small><a href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer">새마을금고중앙회 입찰공고 · 2026-05-26</a></small></dd>
+            <dd><span>입찰공고에는 조달·투자 공고가 함께 게시되므로 PE/VC 관련 공고만 표시합니다.</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.kfcc.co.kr/noticeofTender/noticeofTenderList.do" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
         </dl>
       </div>

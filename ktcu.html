@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,31 +350,31 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립</dt>
-            <dd>1971년<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · 공식 확인</a></small></dd>
+            <dd><span>1971년</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>설립 근거</dt>
-            <dd>한국교직원공제회법<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · 공식 확인</a></small></dd>
+            <dd><span>한국교직원공제회법</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>주무 부처</dt>
-            <dd>교육부<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · 공식 확인</a></small></dd>
+            <dd><span>교육부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>본부 소재지</dt>
-            <dd>서울시 영등포구 여의나루로 50 The-K한국교직원공제회<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · 공식 확인</a></small></dd>
+            <dd><span>서울시 영등포구 여의나루로 50 The-K한국교직원공제회</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>회원 수</dt>
-            <dd>94만명<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · 공식 확인</a></small></dd>
+            <dd><span>94만명</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>보유 자산</dt>
-            <dd>85조원<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · 공식 확인</a></small></dd>
+            <dd><span>85조원</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>주요 기능</dt>
-            <dd>급여·대여·복리후생·기금 조성·수익사업<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer">KTCU 기관소개 · 공식 확인</a></small></dd>
+            <dd><span>급여·대여·복리후생·기금 조성·수익사업</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-IND-200100" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -381,31 +384,31 @@
         <dl class="ktcu-facts">
           <div>
             <dt>기금운용 조직</dt>
-            <dd>이사(기금운용) 산하 기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 · 공식 확인</a></small></dd>
+            <dd><span>이사(기금운용) 산하 기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>자산운용 전문 부서</dt>
-            <dd>기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INC-300101" target="_blank" rel="noreferrer">KTCU 자산운용 조직도 · 공식 확인</a></small></dd>
+            <dd><span>기금운용전략실·금융투자부·기업투자부·인프라투자부·부동산투자부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INC-300101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>PE 관련 핵심 부서</dt>
-            <dd>기업투자부<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 · 공식 확인</a></small></dd>
+            <dd><span>기업투자부</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>기업투자1팀</dt>
-            <dd>국내·유라시아 PE 및 기업금융 투자·관리<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>국내·유라시아 PE 및 기업금융 투자·관리</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>기업투자2팀</dt>
-            <dd>북미 기업금융 및 국내외 벤처 투자·관리<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26 · 공식 확인</a></small></dd>
+            <dd><span>북미 기업금융 및 국내외 벤처 투자·관리</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>이사장</dt>
-            <dd>정갑윤<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer">KTCU 인사말 · 공식 확인</a></small></dd>
+            <dd><span>정갑윤</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-100101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>기금운용이사/CIO</dt>
-            <dd>고재택<small><a href="https://www.ktcu.or.kr/IN/IPW-IND-300101" target="_blank" rel="noreferrer">KTCU 임원 관련 현황 · 2025-02-01 · 공식 확인</a></small></dd>
+            <dd><span>고재택</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-IND-300101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -417,15 +420,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>2025년말 보유자산</dt>
-            <dd>85조 8,938억원<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=QxJvTBd2nafjwUzK2ER94w==&amp;fileTy=ATTACH&amp;fileNo=sW069xsGkF_cG0wtJaCXWA==" target="_blank" rel="noreferrer">KTCU 자산운용개요 · 2025-12-31 · 공식 확인</a></small></dd>
+            <dd><span>85조 8,938억원</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=QxJvTBd2nafjwUzK2ER94w==&amp;fileTy=ATTACH&amp;fileNo=sW069xsGkF_cG0wtJaCXWA==" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
           <div>
             <dt>2026년 자산운용 목표</dt>
-            <dd>총자산 88.0조원·목표수익률 4.5%<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=W7Sxd0F06xpQAZxcaE-_3vg==&amp;fileTy=ATTACH&amp;fileNo=S2_dCpscb6mgOardowp9ww==" target="_blank" rel="noreferrer">KTCU 자산운용목표 및 자산배분계획 · 2026 · 공식 확인</a></small></dd>
+            <dd><span>총자산 88.0조원·목표수익률 4.5%</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=W7Sxd0F06xpQAZxcaE-_3vg==&amp;fileTy=ATTACH&amp;fileNo=S2_dCpscb6mgOardowp9ww==" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
           <div>
             <dt>2025년 투자자산</dt>
-            <dd>73조 2,883억원·대체투자 45조 4,724억원(62.1%)<small><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=yvu7N03YhCjnAQrG2mugAg==&amp;fileTy=ATTACH&amp;fileNo=D5wfgzP7KOkiC45AP_GcfA==" target="_blank" rel="noreferrer">KTCU 투자자산 투자 및 수익현황 · 2025-12-31 · 공식 확인</a></small></dd>
+            <dd><span>73조 2,883억원·대체투자 45조 4,724억원(62.1%)</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.ktcu.or.kr/comm/getFile?srvcId=GONGSI&amp;upperNo=yvu7N03YhCjnAQrG2mugAg==&amp;fileTy=ATTACH&amp;fileNo=D5wfgzP7KOkiC45AP_GcfA==" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -654,11 +657,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>기업투자부 담당자</dt>
-            <dd>기업투자1팀·2팀 직급/업무/전화는 공개되지만 실명은 공개되지 않음<small><a href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer">KTCU 조직도 부서 조회 · 2026-05-26</a></small></dd>
+            <dd><span>기업투자1팀·2팀 직급/업무/전화는 공개되지만 실명은 공개되지 않음</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/IN/IPW-INA-200101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>선정 GP 히스토리</dt>
-            <dd>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.<small><a href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer">KTCU 공지사항 · 2026-05-26</a></small></dd>
+            <dd><span>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.ktcu.or.kr/PPW-CSB-000101" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </div>

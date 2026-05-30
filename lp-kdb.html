@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,7 +350,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>성격</dt>
-            <dd>산업 개발과 국민경제 발전을 지원하는 정책금융기관<small><a href="https://www.kdb.co.kr/wcmscontents/pdf/KDB_Investor_Presentation_July_2025.pdf" target="_blank" rel="noreferrer">KDB Investor Presentation · 참고 자료</a></small></dd>
+            <dd><span>산업 개발과 국민경제 발전을 지원하는 정책금융기관</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.kdb.co.kr/wcmscontents/pdf/KDB_Investor_Presentation_July_2025.pdf" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -357,7 +360,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>국민성장펀드부문</dt>
-            <dd>총괄사무국·대출운용국·투자운용국·심사지원국<small><a href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer">국민성장펀드 공식 홈페이지 · 2026-05-27 · 공식 확인</a></small></dd>
+            <dd><span>총괄사무국·대출운용국·투자운용국·심사지원국</span><a class="ktcu-source-icon ktcu-source-home" href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -369,7 +372,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>국민성장펀드</dt>
-            <dd>민관합동 150조원 조성·첨단전략산업 생태계 지원<small><a href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer">국민성장펀드 공식 홈페이지 · 2026-05-27 · 공식 확인</a></small></dd>
+            <dd><span>민관합동 150조원 조성·첨단전략산업 생태계 지원</span><a class="ktcu-source-icon ktcu-source-home" href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -589,7 +592,7 @@
         <dl class="ktcu-facts">
           <div>
             <dt>공개자료 기준</dt>
-            <dd>같은 공고가 여러 공식 채널에 게시될 수 있어 중복 여부를 구분해 봐야 합니다.<small><a href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer">국민성장펀드 공식 홈페이지 · 2026-05-27</a></small></dd>
+            <dd><span>같은 공고가 여러 공식 채널에 게시될 수 있어 중복 여부를 구분해 봐야 합니다.</span><a class="ktcu-source-icon ktcu-source-home" href="https://ngf.kdb.co.kr/GFMNMN00N00.act" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </div>

@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,15 +350,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>우체국예금 연혁</dt>
-            <dd>1905년 7월 우편환·우편저금 최초 시행<small><a href="https://www.koreapost.go.kr/kpost/subIndex/4246.do" target="_blank" rel="noreferrer">우정사업본부 예금 연혁 및 사업목적 · 공식 확인</a></small></dd>
+            <dd><span>1905년 7월 우편환·우편저금 최초 시행</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreapost.go.kr/kpost/subIndex/4246.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>우체국예금 목적</dt>
-            <dd>국민 저축의욕 고취와 보편적 금융서비스 제공을 통한 공공복리 증진<small><a href="https://www.koreapost.go.kr/kpost/subIndex/4246.do" target="_blank" rel="noreferrer">우정사업본부 예금 연혁 및 사업목적 · 공식 확인</a></small></dd>
+            <dd><span>국민 저축의욕 고취와 보편적 금융서비스 제공을 통한 공공복리 증진</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreapost.go.kr/kpost/subIndex/4246.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>우체국보험 연혁</dt>
-            <dd>1929년 10월 보험사업 시작<small><a href="https://www.koreapost.go.kr/kpost/subIndex/4249.do" target="_blank" rel="noreferrer">우정사업본부 보험 연혁 및 사업목적 · 공식 확인</a></small></dd>
+            <dd><span>1929년 10월 보험사업 시작</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreapost.go.kr/kpost/subIndex/4249.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -374,11 +377,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>예금자금 운용 원칙</dt>
-            <dd>상시 원리금 상환 가능성을 위해 안정성을 최우선으로 고려하고 주식·대체투자도 일부 병행<small><a href="https://www.koreapost.go.kr/kpost/subIndex/321.do" target="_blank" rel="noreferrer">우정사업본부 예금자금운용개요 · 공식 확인</a></small></dd>
+            <dd><span>상시 원리금 상환 가능성을 위해 안정성을 최우선으로 고려하고 주식·대체투자도 일부 병행</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreapost.go.kr/kpost/subIndex/321.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>2025년 예금자금 대체투자</dt>
-            <dd>포트폴리오 내 대체투자 10.4%<small><a href="https://www.koreapost.go.kr/kpost/subIndex/322.do" target="_blank" rel="noreferrer">우정사업본부 세부운용현황 · 2025 · 공식 확인</a></small></dd>
+            <dd><span>포트폴리오 내 대체투자 10.4%</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.koreapost.go.kr/kpost/subIndex/322.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>

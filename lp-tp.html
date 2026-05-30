@@ -93,9 +93,12 @@
     .ktcu-facts div { min-width: 0; border-top: 1px solid var(--separator); padding-top: 9px; }
     .ktcu-facts div:first-child { border-top: 0; padding-top: 0; }
     .ktcu-facts dt { color: var(--secondary); font-size: 11.5px; font-weight: 800; }
-    .ktcu-facts dd { margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
-    .ktcu-facts small { display: block; margin-top: 5px; color: var(--secondary); font-size: 11px; font-weight: 700; line-height: 1.35; }
-    .ktcu-facts small a { color: var(--secondary); text-decoration: none; }
+    .ktcu-facts dd { display: flex; min-width: 0; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 0; color: var(--text); font-size: 13px; font-weight: 750; line-height: 1.48; overflow-wrap: anywhere; }
+    .ktcu-facts dd > span { min-width: 0; overflow-wrap: anywhere; }
+    .ktcu-source-icon { display: inline-flex; width: 17px; height: 17px; flex: 0 0 auto; align-items: center; justify-content: center; border: 1px solid var(--separator); border-radius: 50%; color: var(--secondary); text-decoration: none; transform: translateY(1px); }
+    .ktcu-source-icon svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ktcu-source-icon > span { font-size: 8.5px; font-weight: 900; line-height: 1; letter-spacing: 0; }
+    .ktcu-source-icon:hover { border-color: var(--text); color: var(--text); }
     .ktcu-org { display: grid; gap: 8px; }
     .ktcu-org-node { border: 1px solid var(--separator); border-radius: 8px; padding: 10px; background: #fbfcfd; }
     .ktcu-org-node span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 800; }
@@ -347,15 +350,15 @@
         <dl class="ktcu-facts">
           <div>
             <dt>설립목적</dt>
-            <dd>사립학교 교직원과 유족의 경제적 생활 안정 및 복리향상에 기여<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer">사학연금 설립목적 및 체계 · 공식 확인</a></small></dd>
+            <dd><span>사립학교 교직원과 유족의 경제적 생활 안정 및 복리향상에 기여</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>주요 업무</dt>
-            <dd>부담금 징수·급여 결정과 지급·자산운용·교직원 복지사업 수행<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer">사학연금 설립목적 및 체계 · 공식 확인</a></small></dd>
+            <dd><span>부담금 징수·급여 결정과 지급·자산운용·교직원 복지사업 수행</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>소재지</dt>
-            <dd>전라남도 나주시 문화로 245(빛가람동)<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer">사학연금 설립목적 및 체계 · 공식 확인</a></small></dd>
+            <dd><span>전라남도 나주시 문화로 245(빛가람동)</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-732/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -365,11 +368,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>자금운용관리단</dt>
-            <dd>투자전략실·증권운용실·대체투자실로 구성<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-274/web.do" target="_blank" rel="noreferrer">사학연금 기금운용 조직도 · 공식 확인</a></small></dd>
+            <dd><span>투자전략실·증권운용실·대체투자실로 구성</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-274/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>대체투자실</dt>
-            <dd>기업금융팀과 부동산인프라팀으로 구성<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-274/web.do" target="_blank" rel="noreferrer">사학연금 기금운용 조직도 · 공식 확인</a></small></dd>
+            <dd><span>기업금융팀과 부동산인프라팀으로 구성</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-274/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -381,11 +384,11 @@
         <dl class="ktcu-facts">
           <div>
             <dt>기금 운용 목적</dt>
-            <dd>안정적 급여 지급을 위한 책임준비금 확보<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-273/web.do" target="_blank" rel="noreferrer">사학연금 기금운용 소개 · 공식 확인</a></small></dd>
+            <dd><span>안정적 급여 지급을 위한 책임준비금 확보</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-273/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
           <div>
             <dt>2025년 대체투자</dt>
-            <dd>7조 4,336억원·24.9%<small><a href="https://www.tp.or.kr/tp-kr/cntnts/i-273/web.do" target="_blank" rel="noreferrer">사학연금 기금운용 소개 · 2025 · 공식 확인</a></small></dd>
+            <dd><span>7조 4,336억원·24.9%</span><a class="ktcu-source-icon ktcu-source-home" href="https://www.tp.or.kr/tp-kr/cntnts/i-273/web.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
