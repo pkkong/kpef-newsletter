@@ -1235,6 +1235,13 @@
       color: var(--text);
       -webkit-font-smoothing: antialiased;
     }
+    body,
+    button,
+    input,
+    select {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1, "lnum" 1;
+    }
     a { text-decoration: none; }
     .gp-shell {
       width: min(calc(100% - 28px), var(--shell));
@@ -1772,7 +1779,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 0;
-      margin: 6px 0 14px;
+      margin: 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -1798,9 +1805,27 @@
       line-height: 1.15;
     }
     .market-section {
-      margin-top: 16px;
-      border-top: 1px solid var(--line);
-      padding-top: 12px;
+      position: relative;
+      margin: 0 0 18px;
+      border-top: 0;
+      padding-top: 0;
+    }
+    .market-section + .market-section {
+      margin-top: 18px;
+      padding-top: 20px;
+    }
+    .market-section + .market-section::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      height: 8px;
+      transform: translateX(-50%);
+      background: #f7f7f8;
+      content: "";
+    }
+    .market-overview-section {
+      margin-top: 6px;
     }
     .market-section-head {
       display: flex;
@@ -1893,9 +1918,7 @@
       gap: 0;
     }
     .market-source-note {
-      margin: 16px 0 0;
-      border-top: 1px solid var(--line);
-      padding-top: 12px;
+      margin-bottom: 0;
       color: var(--secondary);
       font-size: 12px;
       line-height: 1.5;
@@ -1932,7 +1955,7 @@
       line-height: 1.35;
     }
     .gp-directory-title strong {
-      color: var(--text);
+      color: #8a6a56;
       font-size: 17px;
       font-weight: 820;
     }
@@ -1948,7 +1971,7 @@
     }
     .gp-controls {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(128px, auto);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
       align-items: end;
       margin: 0;
@@ -2050,8 +2073,8 @@
         font-size: 13px;
       }
       .gp-controls {
-        grid-template-columns: minmax(190px, 220px) 150px !important;
-        justify-content: space-between;
+        grid-template-columns: minmax(150px, 1fr) minmax(120px, 0.7fr) minmax(150px, 0.9fr) minmax(130px, 0.7fr) !important;
+        justify-content: stretch;
       }
       .gp-directory-head,
       .gp-card {
@@ -2096,12 +2119,13 @@
     </header>
     <header class="gp-hero market-hero">
       <div class="gp-hero-copy">
-        <h1>PEF 시장 통계</h1>
+        <h1>Overview</h1>
         <p>2024Q4 · 2024.12.31 기준</p>
       </div>
     </header>
 
-    <section class="market-kpis" aria-label="시장 핵심 지표">
+    <section class="market-section market-overview-section" aria-label="Overview">
+      <div class="market-kpis">
         <div>
           <span>펀드 수</span>
           <strong>1,137</strong>
@@ -2122,6 +2146,7 @@
           <strong>45.37%</strong>
           <em>상위 20개 57.27%</em>
         </div>
+      </div>
     </section>
 
     <section class="market-section" aria-label="분기별 시장 추이">
@@ -2262,8 +2287,7 @@
       </div>
     </section>
 
-    <section class="market-grid">
-      <article class="market-section" aria-label="연도별 신규 펀드">
+    <section class="market-section" aria-label="연도별 신규 펀드">
         <div class="market-section-head">
           <h2>연도별 신규 펀드</h2>
         </div>
@@ -2310,8 +2334,8 @@
             <span>10.7조</span>
           </div>
         </div>
-      </article>
-      <article class="market-section" aria-label="분기별 신규 펀드">
+    </section>
+    <section class="market-section" aria-label="분기별 신규 펀드">
         <div class="market-section-head">
           <h2>분기별 신규 펀드</h2>
         </div>
@@ -2358,7 +2382,6 @@
             <span>6.5조</span>
           </div>
         </div>
-      </article>
     </section>
 
     <section class="market-section" aria-label="펀드 이탈 추정">
@@ -2401,7 +2424,7 @@
       </div>
     </section>
 
-    <section class="market-source-note" aria-label="기준 자료">
+    <section class="market-section market-source-note" aria-label="기준 자료">
       <strong>기준 자료</strong>
       <ul>
           <li>
