@@ -13,7 +13,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/service.css?v=cb630749">
   <style>
-    body { background: #f7f7f8; }
+    body { background: #ffffff; }
+    body,
+    button,
+    input,
+    select {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1, "lnum" 1;
+    }
     .ktcu-shell { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 16px 0 calc(112px + env(safe-area-inset-bottom)); }
     .ktcu-shell .kpef-product-header { margin: -16px calc((100vw - min(1200px, calc(100vw - 28px))) / -2) 0; padding-left: max(16px, calc((100vw - 1200px) / 2 + 16px)); padding-right: max(16px, calc((100vw - 1200px) / 2 + 16px)); }
     .ktcu-shell .kpef-service-tabs { margin: 0 calc((100vw - min(1200px, calc(100vw - 28px))) / -2) 14px; padding-left: max(0px, calc((100vw - 1200px) / 2)); padding-right: max(0px, calc((100vw - 1200px) / 2)); }
@@ -47,8 +54,9 @@
     .ktcu-kpi { min-width: 0; border: 0; border-radius: 0; padding: 13px 0; background: transparent; box-shadow: none; }
     .ktcu-kpi span { display: block; color: var(--secondary); font-size: 11.5px; font-weight: 700; }
     .ktcu-kpi strong { display: block; margin-top: 5px; color: var(--text); font-size: 22px; line-height: 1.15; overflow-wrap: anywhere; }
-    .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
-    .ktcu-tabbar a { border: 1px solid var(--separator); border-radius: 999px; padding: 7px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .ktcu-tabbar { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 12px; border-bottom: 1px solid var(--separator); }
+    .ktcu-tabbar a { min-height: 34px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; padding: 0 0 9px; background: transparent; color: var(--secondary); text-decoration: none; font-size: 13px; font-weight: 700; }
+    .ktcu-tabbar a:first-child { border-bottom-color: var(--text); color: var(--text); font-weight: 850; }
     .ktcu-profile-toolbar { display: grid; gap: 8px; margin-top: 10px; }
     .ktcu-profile-toolbar input { width: 100%; min-height: 40px; border: 1px solid var(--separator); border-radius: 8px; padding: 8px 11px; background: #fff; color: var(--text); font-size: 13px; }
     .ktcu-profile-toolbar p { margin: 0; color: var(--secondary); font-size: 12px; line-height: 1.45; }
@@ -166,11 +174,25 @@
 </head>
 <body>
   <main class="ktcu-shell">
-        <header class="kpef-product-header" aria-label="Korea PEF Intelligence">
-      <a class="kpef-product-brand" href="index.html">
-        <span class="kpef-brand-mark" aria-hidden="true">K</span>
-        <strong>Korea PEF Intelligence</strong>
-      </a>
+        <header class="app-header lp-app-header">
+      <div class="service-bar">
+        <strong class="service-title">LP</strong>
+        <section class="search-area" id="searchArea" aria-label="LP 검색">
+          <label class="search-box">
+            <span aria-hidden="true"></span>
+            <input id="lpProfileSearch" type="search" placeholder="한국교직원공제회 페이지 검색" autocomplete="off">
+          </label>
+          <button class="search-close" id="searchClose" type="button" aria-label="검색 닫기"></button>
+        </section>
+        <div class="service-actions" aria-label="LP 도구">
+          <button class="header-icon search-toggle" id="searchToggle" type="button" aria-label="검색 열기" aria-expanded="false"></button>
+        </div>
+      </div>
+      <nav class="brief-section-tabs lp-section-tabs" aria-label="LP 메뉴">
+        <a class="brief-section-tab active" href="lp-notices.html#lpDirectory" aria-current="page">LP</a>
+        <a class="brief-section-tab" href="lp-notices.html#lpNotices">NOTICE</a>
+        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
+      </nav>
     </header>
     <header class="ktcu-top">
       <section class="ktcu-hero" aria-label="한국교직원공제회 요약">
@@ -197,7 +219,6 @@
             <a href="#sourceLinks">자료</a>
           </nav>
           <div class="ktcu-profile-toolbar">
-            <input type="search" id="lpProfileSearch" placeholder="이 LP 페이지에서 공고, 뉴스, GP, 자료 검색">
             <p>공식 공고 0건 · 관련 뉴스 0건 · 확인 항목 27개</p>
           </div>
         </div>
@@ -585,6 +606,26 @@
   </nav>
   <script>
     (() => {
+      const serviceBar = document.querySelector(".service-bar");
+      const searchArea = document.getElementById("searchArea");
+      const searchInput = searchArea?.querySelector("input");
+      const searchToggle = document.getElementById("searchToggle");
+      const searchClose = document.getElementById("searchClose");
+      const setSearchOpen = (open) => {
+        if (!serviceBar || !searchArea || !searchToggle) return;
+        serviceBar.classList.toggle("search-open", open);
+        searchArea.classList.toggle("visible", open);
+        searchToggle.setAttribute("aria-expanded", String(open));
+        if (open) searchInput?.focus();
+      };
+      searchToggle?.addEventListener("click", () => setSearchOpen(true));
+      searchClose?.addEventListener("click", () => {
+        if (searchInput) {
+          searchInput.value = "";
+          searchInput.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        setSearchOpen(false);
+      });
       const input = document.getElementById("lpProfileSearch");
       if (!input) return;
       const targets = Array.from(document.querySelectorAll(".ktcu-panel, .ktcu-timeline-item, .ktcu-notice, .ktcu-peer-row:not(.ktcu-peer-head), .ktcu-news-row, .ktcu-gp-tags span"));
