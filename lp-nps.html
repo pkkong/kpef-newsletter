@@ -30,12 +30,12 @@
     .ktcu-profile-nav a { min-height: 32px; display: inline-flex; align-items: center; border: 1px solid var(--separator); border-radius: 999px; padding: 6px 10px; background: #fff; color: var(--secondary); text-decoration: none; font-size: 12px; font-weight: 800; }
     .ktcu-hero { display: grid; gap: 18px; padding: 8px 0 8px; }
     .ktcu-title { display: grid; gap: 10px; }
-    .ktcu-title-head { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 14px; align-items: center; }
-    .ktcu-logo { position: relative; display: inline-grid; width: 54px; height: 54px; box-sizing: border-box; place-items: center; overflow: hidden; border: 1px solid #dde3ea; border-radius: 50%; background: #f4f6f8; color: var(--text); font-size: 12px; font-weight: 900; box-shadow: none; }
+    .ktcu-title-head { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; align-items: center; }
+    .ktcu-logo { position: relative; display: inline-grid; width: 40px; height: 40px; box-sizing: border-box; place-items: center; overflow: hidden; border: 1px solid #dde3ea; border-radius: 50%; background: #f4f6f8; color: var(--text); font-size: 10px; font-weight: 900; box-shadow: none; }
     .ktcu-logo.has-logo { border-color: var(--logo-border, #e2e5ea); background: var(--logo-bg, #fff); }
     .ktcu-logo.has-logo.fallback-only { border-color: #dde3ea; background: #f4f6f8; }
     .ktcu-logo > span { position: relative; z-index: 1; }
-    .ktcu-logo img { position: relative; z-index: 2; width: var(--logo-detail-img-width, var(--logo-img-width, 38px)); height: var(--logo-detail-img-height, var(--logo-img-height, 38px)); object-fit: contain; mix-blend-mode: normal; }
+    .ktcu-logo img { position: relative; z-index: 2; width: var(--logo-detail-img-width, var(--logo-img-width, 27px)); height: var(--logo-detail-img-height, var(--logo-img-height, 27px)); object-fit: contain; mix-blend-mode: normal; }
     .ktcu-logo.has-logo > span { display: none; }
     .ktcu-logo.fallback-only > span { display: inline; }
     .ktcu-logo[data-tone] { color: var(--text); }
@@ -176,18 +176,6 @@
       .ktcu-peer-row span:nth-of-type(1) { display: none; }
       .ktcu-peer-head { display: none; }
       .ktcu-source-coverage { grid-template-columns: 1fr; }
-    }
-    .ktcu-title-head {
-      grid-template-columns: 50px minmax(0, 1fr);
-      gap: 12px;
-    }
-    .ktcu-logo {
-      width: 50px;
-      height: 50px;
-    }
-    .ktcu-logo img {
-      width: var(--logo-detail-img-width, var(--logo-img-width, 35px));
-      height: var(--logo-detail-img-height, var(--logo-img-height, 35px));
     }
     .ktcu-title-head div > span {
       border-left: 0;
@@ -360,6 +348,14 @@
           <div>
             <dt>PE 관련 핵심 조직</dt>
             <dd><span>사모벤처투자실: 아시아사모투자팀·미주사모투자팀·유럽사모투자팀·대체전략투자팀·사모대출투자팀</span><a class="ktcu-source-icon ktcu-source-document" href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
+          </div>
+          <div>
+            <dt>기금운용본부장</dt>
+            <dd><span>서원주</span><a class="ktcu-source-icon ktcu-source-home" href="https://fund.nps.or.kr/edwmintr/ognzprsn/getOHEB0010M0.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
+          </div>
+          <div>
+            <dt>사모·벤처투자실장</dt>
+            <dd><span>최형돈</span><a class="ktcu-source-icon ktcu-source-home" href="https://fund.nps.or.kr/edwmintr/ognzprsn/getOHEB0010M0.do" target="_blank" rel="noreferrer" aria-label="출처: 홈페이지" title="홈페이지"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6.5 10v9h11v-9"/><path d="M10 19v-5h4v5"/></svg></a></dd>
           </div>
         </dl>
       </section>
@@ -550,6 +546,24 @@
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
           </a>
+          <a class="ktcu-peer-row" href="lp-geps.html">
+            <strong>공무원연금공단</strong>
+            <span data-label="유형">공적연기금</span>
+            <span data-label="표시 공고">0건</span>
+            <span data-label="규모" title="최신 공고일 -">-</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-mmaa.html">
+            <strong>군인공제회</strong>
+            <span data-label="유형">공제회</span>
+            <span data-label="표시 공고">0건</span>
+            <span data-label="규모" title="최신 공고일 -">-</span>
+          </a>
+          <a class="ktcu-peer-row" href="lp-cwma.html">
+            <strong>건설근로자공제회</strong>
+            <span data-label="유형">공제회</span>
+            <span data-label="표시 공고">0건</span>
+            <span data-label="규모" title="최신 공고일 -">-</span>
+          </a>
           <a class="ktcu-peer-row" href="lp-kbiz.html">
             <strong>중소기업중앙회</strong>
             <span data-label="유형">공제/경제단체</span>
@@ -570,6 +584,7 @@
       <summary>자료 링크</summary>
       <ul>
           <li><a href="https://fund.nps.or.kr/fileDown.do?atchFileId=FL25002684&amp;atchFileSn=1" target="_blank" rel="noreferrer">NPS 2024 기금운용보고서</a></li>
+          <li><a href="https://fund.nps.or.kr/edwmintr/ognzprsn/getOHEB0010M0.do" target="_blank" rel="noreferrer">국민연금기금운용본부 조직 및 인력</a></li>
           <li><a href="https://www.etoday.co.kr/news/view/2586421" target="_blank" rel="noreferrer">이투데이</a></li>
           <li><a href="https://fund.nps.or.kr/impa/dlnginstslctnpbanclist/getOHEF0017M0.do" target="_blank" rel="noreferrer">NPS 거래기관 선정공고</a></li>
       </ul>
