@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=58513e37">
+  <link rel="stylesheet" href="assets/service.css?v=e75716b1">
   <style>
     body.lp-notices-page { background: #f7f7f8; }
     body.lp-notices-page .app-shell { width: min(100%, 1460px); background: #f7f7f8; }
@@ -60,7 +60,7 @@
     .lp-directory-avatar.has-logo { border-color: var(--logo-border, #e2e5ea); background: var(--logo-bg, #fff); }
     .lp-directory-avatar.has-logo.fallback-only { border-color: #dde3ea; background: #f4f6f8; }
     .lp-directory-avatar > span { position: relative; z-index: 1; }
-    .lp-directory-avatar img { position: relative; z-index: 2; width: 27px; height: 27px; object-fit: contain; mix-blend-mode: normal; }
+    .lp-directory-avatar img { position: relative; z-index: 2; width: var(--logo-img-width, 27px); height: var(--logo-img-height, 27px); object-fit: contain; mix-blend-mode: normal; }
     .lp-directory-avatar.has-logo > span { display: none; }
     .lp-directory-avatar.fallback-only > span { display: inline; }
     .lp-directory-avatar[data-tone] { color: var(--text); }
@@ -594,7 +594,7 @@
           </div>
           <div class="lp-directory-grid">
           <article class="lp-directory-card" aria-label="국민연금기금" data-search="국민연금기금 공적연기금 공공 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라" data-name="국민연금기금" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="공적연기금 공공" data-notices="0" data-amount="0.0000" data-latest="-">
-            <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=fund.nps.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>국민</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true" style="--logo-img-width: 32px; --logo-img-height: 18px;"><img src="https://www.nps.or.kr/images/contents/ci_logo2.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>국민</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-nps.html">국민연금기금</a></strong>
             </div>
@@ -618,7 +618,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="한국성장금융" data-search="한국성장금융 정책성 모태펀드 공공 출자사업 담당 PEF · VC · 사모대출 · 정책펀드" data-name="한국성장금융" data-lp="kgrowth" data-asset="PEF · VC · 사모대출 · 정책펀드" data-kind="정책성 모태펀드 공공" data-notices="0" data-amount="0.0000" data-latest="-">
-            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kgrowth.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>성장</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.kgrowth.or.kr/favicon.ico" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>성장</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-kgrowth.html">한국성장금융</a></strong>
             </div>
@@ -630,7 +630,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="한국산업은행" data-search="한국산업은행 정책금융기관 공공 간접투자/혁신성장펀드 담당 PEF · VC · 정책펀드" data-name="한국산업은행" data-lp="kdb" data-asset="PEF · VC · 정책펀드" data-kind="정책금융기관 공공" data-notices="1" data-amount="0.0000" data-latest="2026-04-30">
-            <span class="lp-directory-avatar has-logo" data-tone="6" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kdb.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>산은</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="6" aria-hidden="true"><img src="https://www.kdb.co.kr/wcmscontents/hmp/ch/bi/bi/rc/img_symbol_chbi.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>산은</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-kdb.html">한국산업은행</a></strong>
             </div>
@@ -642,7 +642,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="농업정책보험금융원" data-search="농업정책보험금융원 정책성 모태펀드 공공 농식품모태펀드 담당 VC · PEF · 모태펀드" data-name="농업정책보험금융원" data-lp="kafi" data-asset="VC · PEF · 모태펀드" data-kind="정책성 모태펀드 공공" data-notices="37" data-amount="3165.1000" data-latest="2026-05-29">
-            <span class="lp-directory-avatar has-logo" data-tone="4" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=apfs.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>농금</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="4" aria-hidden="true"><img src="https://www.apfs.kr/images/common/kr.ico" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>농금</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-kafi.html">농업정책보험금융원</a></strong>
             </div>
@@ -654,7 +654,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="우정사업본부" data-search="우정사업본부 공공기금 공공 예금대체투자과 PEF · VC · 사모대출" data-name="우정사업본부" data-lp="koreapost" data-asset="PEF · VC · 사모대출" data-kind="공공기금 공공" data-notices="8" data-amount="6500.0000" data-latest="2026-05-22">
-            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=koreapost.go.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>우본</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true" style="--logo-img-width: 32px; --logo-img-height: 18px;"><img src="https://www.koreapost.go.kr/site/kpost/images/bg/cymbol_mark.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>우본</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-koreapost.html">우정사업본부</a></strong>
             </div>
@@ -678,7 +678,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="한국교직원공제회" data-search="한국교직원공제회 공제회 공제 대체투자 담당 PEF · VC · 사모대출 · 부동산" data-name="한국교직원공제회" data-lp="ktcu" data-asset="PEF · VC · 사모대출 · 부동산" data-kind="공제회 공제" data-notices="9" data-amount="35870.0000" data-latest="2025-07-02">
-            <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=ktcu.or.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>교공</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true"><img src="https://www.ktcu.or.kr/humanframe/theme/pc/assets/images/common/favicon.ico" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>교공</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-ktcu.html">한국교직원공제회</a></strong>
             </div>
@@ -702,7 +702,7 @@
             </dl>
           </article>
           <article class="lp-directory-card" aria-label="신협중앙회" data-search="신협중앙회 상호금융 민간 자금운용/대체투자 담당 PEF · VC" data-name="신협중앙회" data-lp="cu" data-asset="PEF · VC" data-kind="상호금융 민간" data-notices="3" data-amount="0.0000" data-latest="2025-07-14">
-            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=cu.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>신협</span></span>
+            <span class="lp-directory-avatar has-logo" data-tone="1" aria-hidden="true"><img src="https://www.cu.co.kr/images/web/cu/layout/logo60.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>신협</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-cu.html">신협중앙회</a></strong>
             </div>

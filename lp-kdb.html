@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=58513e37">
+  <link rel="stylesheet" href="assets/service.css?v=e75716b1">
   <style>
     body { background: #ffffff; }
     body,
@@ -35,7 +35,7 @@
     .ktcu-logo.has-logo { border-color: var(--logo-border, #e2e5ea); background: var(--logo-bg, #fff); }
     .ktcu-logo.has-logo.fallback-only { border-color: #dde3ea; background: #f4f6f8; }
     .ktcu-logo > span { position: relative; z-index: 1; }
-    .ktcu-logo img { position: relative; z-index: 2; width: 38px; height: 38px; object-fit: contain; mix-blend-mode: normal; }
+    .ktcu-logo img { position: relative; z-index: 2; width: var(--logo-detail-img-width, var(--logo-img-width, 38px)); height: var(--logo-detail-img-height, var(--logo-img-height, 38px)); object-fit: contain; mix-blend-mode: normal; }
     .ktcu-logo.has-logo > span { display: none; }
     .ktcu-logo.fallback-only > span { display: inline; }
     .ktcu-logo[data-tone] { color: var(--text); }
@@ -186,8 +186,8 @@
       height: 50px;
     }
     .ktcu-logo img {
-      width: 35px;
-      height: 35px;
+      width: var(--logo-detail-img-width, var(--logo-img-width, 35px));
+      height: var(--logo-detail-img-height, var(--logo-img-height, 35px));
     }
     .ktcu-title-head div > span {
       border-left: 0;
@@ -309,7 +309,7 @@
       <section class="ktcu-hero" aria-label="한국산업은행 요약">
         <div class="ktcu-title">
           <div class="ktcu-title-head">
-            <span class="ktcu-logo has-logo" data-tone="6" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain=kdb.co.kr&sz=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>산은</span></span>
+            <span class="ktcu-logo has-logo" data-tone="6" aria-hidden="true"><img src="https://www.kdb.co.kr/wcmscontents/hmp/ch/bi/bi/rc/img_symbol_chbi.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>산은</span></span>
             <div>
               <span>출자기관</span>
               <h1>한국산업은행</h1>

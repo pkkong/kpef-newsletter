@@ -746,8 +746,8 @@ button, input { font: inherit; }
   margin-top: 1px;
 }
 .publisher-icon img {
-  width: 27px;
-  height: 27px;
+  width: var(--logo-img-width, 27px);
+  height: var(--logo-img-height, 27px);
   border: 0;
   border-radius: 0;
   background: transparent;
