@@ -148,7 +148,7 @@
     .ktcu-detail ul { display: grid; gap: 8px; margin: 0; padding: 0 14px 14px 28px; }
     .ktcu-detail a { color: var(--secondary); font-size: 12px; text-decoration: none; }
     .ktcu-peer-table { display: grid; gap: 7px; }
-    .ktcu-peer-row { display: grid; grid-template-columns: minmax(112px, 1.2fr) minmax(78px, 0.9fr) 44px 68px 74px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
+    .ktcu-peer-row { display: grid; grid-template-columns: minmax(128px, 1.25fr) minmax(82px, 0.8fr) 64px 86px; gap: 8px; align-items: center; border: 1px solid var(--separator); border-radius: 8px; padding: 9px; background: #fff; color: var(--text); text-decoration: none; font-size: 12px; }
     .ktcu-peer-head { background: #f7fafb; color: var(--secondary); font-weight: 800; }
     .ktcu-peer-row.active { border-color: var(--accent); background: var(--surface-muted); }
     .ktcu-peer-row strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; }
@@ -176,8 +176,8 @@
     @media (max-width: 620px) {
       .ktcu-profile-nav, .ktcu-tabbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
       .ktcu-profile-nav a, .ktcu-tabbar a { flex: 0 0 auto; }
-      .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 44px 64px; }
-      .ktcu-peer-row span:nth-of-type(1), .ktcu-peer-row span:nth-of-type(4) { display: none; }
+      .ktcu-peer-row { grid-template-columns: minmax(0, 1fr) 52px 76px; }
+      .ktcu-peer-row span:nth-of-type(1) { display: none; }
       .ktcu-peer-head { display: none; }
       .ktcu-source-coverage { grid-template-columns: 1fr; }
     }
@@ -325,13 +325,13 @@
             <div class="ktcu-hero-fact"><span>최신 공고</span><strong>-</strong></div>
           </div>
           <nav class="ktcu-tabbar" aria-label="프로필 섹션">
-            <a href="#overview">기본 정보</a>
-            <a href="#investment">투자 현황</a>
-            <a href="#notices">출자공고</a>
-            <a href="#relationships">관련 GP</a>
+            <a href="#overview">개요</a>
+            <a href="#investment">배분</a>
+            <a href="#notices">출자</a>
+            <a href="#relationships">GP</a>
             <a href="#news">뉴스</a>
-            <a href="#peers">기관 비교</a>
-            <a href="#sourceLinks">자료</a>
+            <a href="#peers">비교</a>
+            <a href="#resources">자료</a>
           </nav>
         </div>
         <div class="ktcu-kpis">
@@ -345,7 +345,7 @@
 
     <section class="ktcu-section-grid" id="overview" aria-label="기본 정보">
       <section class="ktcu-panel">
-        <h2>기관 개요</h2>
+        <h2>기본 정보</h2>
         <dl class="ktcu-facts">
           <div>
             <dt>설립 목적</dt>
@@ -387,7 +387,7 @@
 
     <section class="ktcu-section-grid" id="investment" aria-label="투자 현황">
       <section class="ktcu-panel">
-        <h2>투자 현황</h2>
+        <h2>운용·배분</h2>
         <dl class="ktcu-facts">
           <div>
             <dt>2025년 투자자산</dt>
@@ -427,8 +427,7 @@
     <section class="ktcu-panel ktcu-highlight-panel" aria-label="2026년 출자 하이라이트">
       <div class="ktcu-panel-head">
         <div>
-          <h2>2026년 출자 하이라이트</h2>
-          <p>표시할 공식 공고가 없습니다.</p>
+          <h2>2026년 출자공고</h2>
         </div>
         <strong>0건<br>-</strong>
       </div>
@@ -439,7 +438,7 @@
 
     <section class="ktcu-lower" id="notices" aria-label="출자공고">
       <section class="ktcu-panel">
-        <h2>활동 타임라인</h2>
+        <h2>타임라인</h2>
         <div class="ktcu-timeline">
           <article class="ktcu-timeline-item" data-kind="notice_history" data-year="2026" data-asset="">
             <div>
@@ -481,8 +480,7 @@
     <section class="ktcu-panel ktcu-highlight-panel" id="peers" aria-label="LP 피어 비교">
       <div class="ktcu-panel-head">
         <div>
-          <h2>LP 피어 비교</h2>
-          <p>현재 제공하는 15개 LP의 공개 공고 수, 공고 기준 출자규모, 최신 공고일을 같은 기준으로 비교합니다.</p>
+          <h2>기관 비교</h2>
         </div>
       </div>
       <div class="ktcu-peer-table">
@@ -491,140 +489,101 @@
             <span>유형</span>
             <span>표시 공고</span>
             <span>규모</span>
-            <span>항목</span>
           </div>
           <a class="ktcu-peer-row active" href="lp-pmaa.html">
             <strong>경찰공제회</strong>
             <span data-label="유형">공제회</span>
             <span data-label="표시 공고">1건</span>
             <span data-label="규모" title="최신 공고일 2026-01-12">1,800억</span>
-            <span data-label="항목">14개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-nps.html">
             <strong>국민연금기금</strong>
             <span data-label="유형">공적연기금</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">8개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kvic.html">
             <strong>한국벤처투자</strong>
             <span data-label="유형">모태펀드</span>
             <span data-label="표시 공고">1건</span>
             <span data-label="규모" title="최신 공고일 2026-05-15">-</span>
-            <span data-label="항목">8개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kgrowth.html">
             <strong>한국성장금융</strong>
             <span data-label="유형">정책성 모태펀드</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">7개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kdb.html">
             <strong>한국산업은행</strong>
             <span data-label="유형">정책금융기관</span>
             <span data-label="표시 공고">1건</span>
             <span data-label="규모" title="최신 공고일 2026-04-30">-</span>
-            <span data-label="항목">6개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kafi.html">
             <strong>농업정책보험금융원</strong>
             <span data-label="유형">정책성 모태펀드</span>
             <span data-label="표시 공고">37건</span>
             <span data-label="규모" title="최신 공고일 2026-05-29">3,165억</span>
-            <span data-label="항목">9개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-koreapost.html">
             <strong>우정사업본부</strong>
             <span data-label="유형">공공기금</span>
             <span data-label="표시 공고">8건</span>
             <span data-label="규모" title="최신 공고일 2026-05-22">6,500억</span>
-            <span data-label="항목">6개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-poba.html">
             <strong>대한지방행정공제회</strong>
             <span data-label="유형">공제회</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">9개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-ktcu.html">
             <strong>한국교직원공제회</strong>
             <span data-label="유형">공제회</span>
             <span data-label="표시 공고">9건</span>
             <span data-label="규모" title="최신 공고일 2025-07-02">3.59조</span>
-            <span data-label="항목">27개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-cu.html">
             <strong>신협중앙회</strong>
             <span data-label="유형">상호금융</span>
             <span data-label="표시 공고">3건</span>
             <span data-label="규모" title="최신 공고일 2025-07-14">-</span>
-            <span data-label="항목">15개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kfcc.html">
             <strong>새마을금고중앙회</strong>
             <span data-label="유형">상호금융</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">13개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-tp.html">
             <strong>사립학교교직원연금공단</strong>
             <span data-label="유형">공적연기금</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">7개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kexim.html">
             <strong>한국수출입은행</strong>
             <span data-label="유형">정책금융기관</span>
             <span data-label="표시 공고">0건</span>
             <span data-label="규모" title="최신 공고일 -">-</span>
-            <span data-label="항목">11개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-kbiz.html">
             <strong>중소기업중앙회</strong>
             <span data-label="유형">공제/경제단체</span>
             <span data-label="표시 공고">3건</span>
             <span data-label="규모" title="최신 공고일 2026-05-22">2,000억</span>
-            <span data-label="항목">5개</span>
           </a>
           <a class="ktcu-peer-row" href="lp-ibk.html">
             <strong>IBK기업은행</strong>
             <span data-label="유형">정책금융기관</span>
             <span data-label="표시 공고">1건</span>
             <span data-label="규모" title="최신 공고일 2026-05-18">-</span>
-            <span data-label="항목">5개</span>
           </a>
       </div>
     </section>
 
-    <details class="ktcu-detail" id="notes">
-      <summary>참고사항</summary>
-      <div class="ktcu-detail-body">
-        <dl class="ktcu-facts">
-          <div>
-            <dt>공개자료 기준</dt>
-            <dd><span>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
-          </div>
-        </dl>
-      </div>
-    </details>
-
-    <details class="ktcu-detail" id="sourceSummary">
-      <summary>자료 기준</summary>
-      <div class="ktcu-detail-body">
-        <div class="ktcu-coverage ktcu-source-coverage">
-          <div><span>프로필 항목</span><strong>14개</strong></div>
-          <div><span>자료 링크</span><strong>13개</strong></div>
-          <div><span>공고·뉴스</span><strong>0건</strong></div>
-          <div><span>자료 성격</span><strong>13개</strong></div>
-        </div>
-      </div>
-    </details>
-
+    <section class="ktcu-section-grid ktcu-resources" id="resources" aria-label="자료">
     <details class="ktcu-detail" id="sourceLinks">
       <summary>자료 링크</summary>
       <ul>
@@ -640,8 +599,20 @@
       </ul>
     </details>
 
+      <details class="ktcu-detail" id="notes">
+        <summary>참고사항</summary>
+        <div class="ktcu-detail-body">
+          <dl class="ktcu-facts">
+          <div>
+            <dt>자료 범위</dt>
+            <dd><span>선정 GP와 개별 펀드 정보는 공식 발표가 확인된 건만 반영합니다.</span><a class="ktcu-source-icon ktcu-source-document" href="https://www.pmaa.or.kr/www/1461128463820/bbs.do" target="_blank" rel="noreferrer" aria-label="출처: 자료" title="자료"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l3 3v13H7z"/><path d="M14 4v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></a></dd>
+          </div>
+          </dl>
+        </div>
+      </details>
+    </section>
 
-    <p class="ktcu-footer">기준일 2026-06-01 · 최신 공고일 -</p>
+    <p class="ktcu-footer">기준일 2026-05-30 · 최신 공고일 -</p>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a class="" href="index.html">
