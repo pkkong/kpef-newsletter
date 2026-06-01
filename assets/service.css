@@ -736,9 +736,9 @@ button, input { font: inherit; }
   justify-content: center;
   overflow: hidden;
   box-sizing: border-box;
-  border: 1px solid #dde3ea;
+  border: 1px solid var(--logo-border, #e2e5ea);
   border-radius: 50%;
-  background: #f4f6f8;
+  background: var(--logo-bg, #fff);
   color: var(--text);
   font-size: 11px;
   font-weight: 760;
@@ -751,8 +751,13 @@ button, input { font: inherit; }
   border: 0;
   border-radius: 0;
   background: transparent;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
   object-fit: contain;
+}
+.publisher-icon.fallback,
+.publisher-icon.fallback-only {
+  --logo-bg: #f4f6f8;
+  --logo-border: #dde3ea;
 }
 .publisher-fallback {
   display: none;

@@ -417,10 +417,12 @@
     const mark = document.createElement("span");
     mark.className = "publisher-icon";
     mark.setAttribute("aria-label", article.source || "언론사");
+    if (article.sourceIconStyle) mark.setAttribute("style", article.sourceIconStyle);
     const fallback = document.createElement("span");
     fallback.className = "publisher-fallback";
     fallback.textContent = article.sourceBadge || "뉴";
     if (article.sourceIconUrl) {
+      mark.classList.add("has-logo");
       const icon = document.createElement("img");
       icon.src = article.sourceIconUrl;
       icon.alt = "";

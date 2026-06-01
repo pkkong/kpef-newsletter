@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/service.css?v=b472eddf">
+  <link rel="stylesheet" href="assets/service.css?v=58513e37">
   <style>
     body { background: #ffffff; }
     body,
@@ -32,11 +32,13 @@
     .ktcu-title { display: grid; gap: 10px; }
     .ktcu-title-head { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 14px; align-items: center; }
     .ktcu-logo { position: relative; display: inline-grid; width: 54px; height: 54px; box-sizing: border-box; place-items: center; overflow: hidden; border: 1px solid #dde3ea; border-radius: 50%; background: #f4f6f8; color: var(--text); font-size: 12px; font-weight: 900; box-shadow: none; }
+    .ktcu-logo.has-logo { border-color: var(--logo-border, #e2e5ea); background: var(--logo-bg, #fff); }
+    .ktcu-logo.has-logo.fallback-only { border-color: #dde3ea; background: #f4f6f8; }
     .ktcu-logo > span { position: relative; z-index: 1; }
-    .ktcu-logo img { position: relative; z-index: 2; width: 38px; height: 38px; object-fit: contain; mix-blend-mode: multiply; }
+    .ktcu-logo img { position: relative; z-index: 2; width: 38px; height: 38px; object-fit: contain; mix-blend-mode: normal; }
     .ktcu-logo.has-logo > span { display: none; }
     .ktcu-logo.fallback-only > span { display: inline; }
-    .ktcu-logo[data-tone] { border-color: #dde3ea; background: #f4f6f8; color: var(--text); }
+    .ktcu-logo[data-tone] { color: var(--text); }
     .ktcu-title-head div > span { width: fit-content; border-left: 3px solid var(--accent); padding-left: 8px; color: var(--text); font-size: 12px; font-weight: 800; }
     .ktcu-title h1 { margin: 0; color: var(--text); font-size: 28px; font-weight: 850; line-height: 1.12; letter-spacing: 0; }
     .ktcu-title p { max-width: 760px; margin: 0; color: var(--secondary); font-size: 15px; line-height: 1.68; }
@@ -184,8 +186,8 @@
       height: 50px;
     }
     .ktcu-logo img {
-      max-width: 35px;
-      max-height: 35px;
+      width: 35px;
+      height: 35px;
     }
     .ktcu-title-head div > span {
       border-left: 0;
