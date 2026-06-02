@@ -1,5 +1,706 @@
 [
   {
+    "reportDate": "2026-06-03",
+    "visibleDate": "2026.06.03",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260603-0",
+        "rank": 0,
+        "section": "국민성장펀드",
+        "subCategory": "출자·선정",
+        "rawSection": "국민성장펀드",
+        "title": "[150조 국민성장펀드] [간접투자 1차] 스카이레이크·웰투시 낙점…결국...",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162650",
+        "sectionOrder": 1,
+        "gpNames": [
+          "웰투시인베스트먼트",
+          "한국투자파트너스",
+          "케이엘앤파트너스",
+          "도미누스인베스트먼트",
+          "스카이레이크에쿼티파트너스"
+        ],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 4,
+        "searchTerms": [
+          "웰투시인베스트먼트",
+          "한국투자파트너스",
+          "케이엘앤파트너스",
+          "도미누스인베스트먼트",
+          "한국산업은행",
+          "스카이레이크에쿼티파트너스",
+          "스카이레이크",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260603-1",
+        "rank": 1,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "미래에셋벤처 김응석 주도 펀드팀 신설…국민연금 도전",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162674",
+        "sectionOrder": 1,
+        "gpNames": [
+          "미래에셋캐피탈",
+          "미래에셋벤처투자",
+          "미래에셋증권"
+        ],
+        "lpNames": [
+          "국민연금기금",
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "nps",
+            "name": "국민연금기금",
+            "url": "lp-nps.html"
+          },
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 1,
+        "searchTerms": [
+          "미래에셋캐피탈",
+          "미래에셋벤처투자",
+          "미래에셋증권",
+          "국민연금기금",
+          "nps",
+          "국민연금공단",
+          "기금운용본부",
+          "국민연금",
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260603-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[엠앤씨솔루션 M&A] 독점 부품사의 딜레마…한투파PE 구조 짜기 막판 장...",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/161980",
+        "sectionOrder": 2,
+        "gpNames": [
+          "한국투자증권",
+          "소시어스",
+          "웰투시인베스트먼트",
+          "한국투자파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국투자증권",
+          "소시어스",
+          "웰투시인베스트먼트",
+          "한국투자파트너스"
+        ]
+      },
+      {
+        "id": "clip-20260603-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "한국펀드파트너스 매각, 다음주 예비입찰...ETF 호황 속 PEF들 군...",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/02/2026060280070.html",
+        "sectionOrder": 2,
+        "gpNames": [
+          "미래에셋자산운용",
+          "스틱인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 2,
+        "searchTerms": [
+          "미래에셋자산운용",
+          "스틱인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260603-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Auction",
+        "rawSection": "Deal",
+        "title": "불붙은 ‘율곡’ 인수전…원매자 ‘북적’에 본입찰 일정 연기",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "assets/brand-marks/biz-heraldcorp-com.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10762607",
+        "sectionOrder": 2,
+        "gpNames": [
+          "스틱인베스트먼트",
+          "브이아이지파트너스",
+          "프리미어파트너스",
+          "제이케이엘파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 46,
+        "searchTerms": [
+          "스틱인베스트먼트",
+          "브이아이지파트너스",
+          "VIG",
+          "프리미어파트너스",
+          "제이케이엘파트너스",
+          "JKL"
+        ]
+      },
+      {
+        "id": "clip-20260603-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Auction",
+        "rawSection": "Deal",
+        "title": "넥스플렉스 인수전 숏리스트에 어펄마·스틱, 부산EP 등 선정",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/02/2026060280133.html",
+        "sectionOrder": 2,
+        "gpNames": [
+          "신한투자증권",
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "어펄마캐피탈매니져스코리아"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "신한투자증권",
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "어펄마캐피탈매니져스코리아"
+        ]
+      },
+      {
+        "id": "clip-20260603-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "넥스플렉스 인수전 후끈…어펄마·스틱에 베인도 가세[시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20051074",
+        "sectionOrder": 2,
+        "gpNames": [
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "어펄마캐피탈매니져스코리아"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "어펄마캐피탈매니져스코리아"
+        ]
+      },
+      {
+        "id": "clip-20260603-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "베인캐피탈, 스마트폰기판 소재기업 넥스플렉스 인수전 참전",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12063978",
+        "sectionOrder": 2,
+        "gpNames": [
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "신한투자증권",
+          "어펄마캐피탈매니져스코리아"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "부산에쿼티파트너스",
+          "스카이레이크에쿼티파트너스",
+          "스틱인베스트먼트",
+          "신한투자증권",
+          "어펄마캐피탈매니져스코리아"
+        ]
+      },
+      {
+        "id": "clip-20260603-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "세아FSI 인수 우협에 성호전자 모회사... 매각가 2000억대",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "assets/brand-marks/biz-chosun-com.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/06/02/BSWONQMWN5D7BOMJFRKX7ZBLAU",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "현대그룹, H&Q로부터 잔여지분 전량 회수…PEF·오너 '윈윈' 마무리",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=664171",
+        "sectionOrder": 2,
+        "gpNames": [
+          "에이치앤큐코리아파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "에이치앤큐코리아파트너스",
+          "H&Q"
+        ]
+      },
+      {
+        "id": "clip-20260603-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Auction",
+        "rawSection": "Deal",
+        "title": "교보생명, 예별손보 인수 검토…30일 본입찰 유효경쟁 성립하나 [시그널...",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20051208",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "얌 브랜즈, '실적 부진' 피자헛 매각 추진…사모펀드와 협상중",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4417897",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-12",
+        "rank": 12,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "영케미칼, 마스크팩 시트 1위 '피앤씨랩스' 품는다",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606021202522120105250",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-13",
+        "rank": 13,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "“한달 남았다” 홈플러스 매각 '험로'…짙어지는 청산 그림자",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01623606645478112",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-14",
+        "rank": 14,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "성장금융, 은행권 기후펀드 3호에 2100억 쏜다",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162943",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "lpNames": [
+          "한국성장금융"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kgrowth",
+            "name": "한국성장금융",
+            "url": "lp-kgrowth.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국성장금융",
+          "kgrowth",
+          "K-Growth Fund",
+          "K-Growth",
+          "성장금융"
+        ]
+      },
+      {
+        "id": "clip-20260603-15",
+        "rank": 15,
+        "section": "AI & PE",
+        "subCategory": "AI 전략·운영",
+        "rawSection": "GP",
+        "title": "모태와 성장금융 쌍끌이…지앤텍 300억 AI펀드",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162881",
+        "sectionOrder": 0,
+        "gpNames": [
+          "미래에셋벤처투자",
+          "대우증권",
+          "지앤텍벤처투자",
+          "새한창업투자"
+        ],
+        "lpNames": [
+          "한국성장금융"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kgrowth",
+            "name": "한국성장금융",
+            "url": "lp-kgrowth.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "미래에셋벤처투자",
+          "대우증권",
+          "지앤텍벤처투자",
+          "새한창업투자",
+          "한국성장금융",
+          "kgrowth",
+          "K-Growth Fund",
+          "K-Growth",
+          "성장금융"
+        ]
+      },
+      {
+        "id": "clip-20260603-16",
+        "rank": 16,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "블랙스톤, 아시아서 19조 실탄 확보…역대 최대 블라인드 펀드 조성",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "assets/brand-marks/etoday-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
+        "url": "https://www.etoday.co.kr/news/view/2589908",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-17",
+        "rank": 17,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "블랙스톤, 131억 달러 ‘캐피탈 파트너스 아시아 3호 펀드’ 클로징 [시...",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20051062",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-18",
+        "rank": 18,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "블랙스톤, 131억달러 아시아 펀드 클로징…역대 최대 규모",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/02/2026060280048.html",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-19",
+        "rank": 19,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "대신PE, 국민성장펀드로 AI·반도체 투자 공략한다",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "assets/brand-marks/newstopkorea-com.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45302",
+        "sectionOrder": 4,
+        "gpNames": [
+          "대신프라이빗에쿼티"
+        ],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "대신프라이빗에쿼티",
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260603-20",
+        "rank": 20,
+        "section": "Deal",
+        "subCategory": "Secondary",
+        "rawSection": "GP",
+        "title": "산은 세컨더리 펀드 출자에 IMM·LB 등 7곳 지원",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162937",
+        "sectionOrder": 2,
+        "gpNames": [
+          "이스트브릿지파트너스",
+          "에스브이인베스트먼트",
+          "엘비인베스트먼트",
+          "브이인베스트먼트",
+          "브이인베스트",
+          "케이앤투자파트너스",
+          "아이엠엠인베스트먼트",
+          "미래에셋벤처투자"
+        ],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 21,
+        "searchTerms": [
+          "이스트브릿지파트너스",
+          "에스브이인베스트먼트",
+          "엘비인베스트먼트",
+          "브이인베스트먼트",
+          "브이인베스트",
+          "케이앤투자파트너스",
+          "아이엠엠인베스트먼트",
+          "미래에셋벤처투자",
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260603-21",
+        "rank": 21,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "블랙스톤, 131억달러 규모 亞펀드 조성…역대 최대",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4418037",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-22",
+        "rank": 22,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "美 블랙스톤, 아시아 펀드 20조원 조성…목표치 초과 달성",
+        "titleBadges": [],
+        "source": "뉴시스",
+        "sourceBadge": "뉴",
+        "sourceIconUrl": "assets/brand-marks/newsis-com.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 11px;",
+        "url": "https://www.newsis.com/view/NISX20260602_0003653971",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260603-23",
+        "rank": 23,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://view.asiae.co.kr/article/2026052611385718194",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-02",
     "visibleDate": "2026.06.02",
     "basis": "",
@@ -399,16 +1100,15 @@
         "url": "https://www.hankyung.com/article/2026060114631",
         "sectionOrder": 2,
         "gpNames": [
-          "한국투자증권",
-          "스카이레이크에쿼티파트너스"
+          "스카이레이크에쿼티파트너스",
+          "한국투자증권"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 1,
+        "peopleCount": 0,
         "searchTerms": [
-          "한국투자증권",
           "스카이레이크에쿼티파트너스",
-          "스카이레이크"
+          "한국투자증권"
         ]
       },
       {
@@ -430,10 +1130,9 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 2,
+        "peopleCount": 0,
         "searchTerms": [
-          "제이케이엘파트너스",
-          "JKL"
+          "제이케이엘파트너스"
         ]
       },
       {
@@ -606,8 +1305,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -1305,11 +2004,11 @@
           "이앤인베스트먼트",
           "한국벤처투자",
           "kvic",
-          "벤처투자종합포털",
-          "한국모태펀드",
+          "KVIC",
           "모태펀드",
-          "벤처투자",
-          "KVIC"
+          "한국모태펀드",
+          "벤처투자종합포털",
+          "벤처투자"
         ]
       },
       {
@@ -1986,7 +2685,7 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 38,
+        "peopleCount": 0,
         "searchTerms": [
           "이음프라이빗에쿼티",
           "큐캐피탈파트너스",
@@ -2160,21 +2859,21 @@
         "url": "https://dealsite.co.kr/articles/162766",
         "sectionOrder": 4,
         "gpNames": [
-          "지앤텍벤처투자",
           "키움인베스트먼트",
           "삼호그린인베스트먼트",
           "미래에셋벤처투자",
-          "브레인자산운용"
+          "브레인자산운용",
+          "지앤텍벤처투자"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 7,
         "searchTerms": [
-          "지앤텍벤처투자",
           "키움인베스트먼트",
           "삼호그린인베스트먼트",
           "미래에셋벤처투자",
-          "브레인자산운용"
+          "브레인자산운용",
+          "지앤텍벤처투자"
         ]
       },
       {
@@ -2647,16 +3346,15 @@
         "url": "https://biz.heraldcorp.com/article/10757779",
         "sectionOrder": 2,
         "gpNames": [
-          "브이아이지파트너스",
-          "한국투자증권"
+          "한국투자증권",
+          "브이아이지파트너스"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 3,
+        "peopleCount": 0,
         "searchTerms": [
-          "브이아이지파트너스",
-          "VIG",
-          "한국투자증권"
+          "한국투자증권",
+          "브이아이지파트너스"
         ]
       },
       {
@@ -3132,13 +3830,13 @@
         "url": "https://dealsite.co.kr/articles/162589",
         "sectionOrder": 1,
         "gpNames": [
-          "키움프라이빗에쿼티",
-          "SBI인베스트먼트",
-          "오픈워터인베스트먼트",
           "삼호그린인베스트먼트",
+          "오픈워터인베스트먼트",
           "파라투스인베스트먼트",
+          "SBI인베스트먼트",
           "대신프라이빗에쿼티",
           "웰투시인베스트먼트",
+          "키움프라이빗에쿼티",
           "미래에셋벤처투자"
         ],
         "lpNames": [
@@ -3151,15 +3849,15 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 1,
+        "peopleCount": 0,
         "searchTerms": [
-          "키움프라이빗에쿼티",
-          "SBI인베스트먼트",
-          "오픈워터인베스트먼트",
           "삼호그린인베스트먼트",
+          "오픈워터인베스트먼트",
           "파라투스인베스트먼트",
+          "SBI인베스트먼트",
           "대신프라이빗에쿼티",
           "웰투시인베스트먼트",
+          "키움프라이빗에쿼티",
           "미래에셋벤처투자",
           "한국산업은행",
           "kdb",
@@ -3357,10 +4055,9 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 5,
+        "peopleCount": 0,
         "searchTerms": [
-          "어펄마캐피탈매니져스코리아",
-          "어펄마캐피탈"
+          "어펄마캐피탈매니져스코리아"
         ]
       },
       {
@@ -3405,11 +4102,10 @@
           "한국투자공사"
         ],
         "lpProfileLinks": [],
-        "peopleCount": 21,
+        "peopleCount": 0,
         "searchTerms": [
           "도미누스인베스트먼트",
           "아이엠엠인베스트먼트",
-          "IMM인베스트먼트",
           "한국투자공사",
           "kic",
           "국부펀드",
@@ -3516,10 +4212,9 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 1,
+        "peopleCount": 0,
         "searchTerms": [
-          "케이비자산운용",
-          "KB자산운용"
+          "케이비자산운용"
         ]
       },
       {
@@ -4317,8 +5012,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -4381,8 +5076,8 @@
           "벤처투자종합포털",
           "한국모태펀드",
           "모태펀드",
-          "벤처투자",
-          "KVIC"
+          "KVIC",
+          "벤처투자"
         ]
       },
       {
@@ -5105,8 +5800,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "중기중앙",
-          "KBIZ"
+          "KBIZ",
+          "중기중앙"
         ]
       },
       {
@@ -7328,11 +8023,5 @@
         ]
       }
     ]
-  },
-  {
-    "reportDate": "2026-05-04",
-    "visibleDate": "2026.05.04",
-    "basis": "",
-    "articles": []
   }
 ]
