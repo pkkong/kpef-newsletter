@@ -519,7 +519,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -546,7 +546,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -573,7 +573,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -1307,9 +1307,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
-          "벤처투자"
+          "벤처투자",
+          "KVIC"
         ]
       },
       {
@@ -1670,7 +1670,8 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행"
+          "한국산업은행",
+          "한국투자공사"
         ],
         "lpProfileLinks": [
           {
@@ -1686,7 +1687,11 @@
           "국민참여형 국민성장펀드",
           "국민성장펀드",
           "산업은행",
-          "산은"
+          "산은",
+          "한국투자공사",
+          "kic",
+          "국부펀드",
+          "KIC"
         ]
       },
       {
@@ -2769,7 +2774,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -2796,7 +2801,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -2823,7 +2828,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -2850,7 +2855,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -3407,7 +3412,7 @@
           "IMM인베스트먼트",
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -3434,7 +3439,7 @@
         "searchTerms": [
           "한국투자공사",
           "kic",
-          "Korea Investment Corporation",
+          "국부펀드",
           "KIC"
         ]
       },
@@ -4207,7 +4212,8 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행"
+          "한국산업은행",
+          "한국투자공사"
         ],
         "lpProfileLinks": [
           {
@@ -4223,7 +4229,11 @@
           "국민참여형 국민성장펀드",
           "국민성장펀드",
           "산업은행",
-          "산은"
+          "산은",
+          "한국투자공사",
+          "kic",
+          "국부펀드",
+          "KIC"
         ]
       },
       {
@@ -4370,9 +4380,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
-          "벤처투자"
+          "벤처투자",
+          "KVIC"
         ]
       },
       {
@@ -4910,10 +4920,17 @@
         "url": "https://www.mk.co.kr/news/world/12056472",
         "sectionOrder": 0,
         "gpNames": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": []
+        "searchTerms": [
+          "한국투자공사",
+          "kic",
+          "국부펀드",
+          "KIC"
+        ]
       },
       {
         "id": "clip-20260525-2",
@@ -5088,8 +5105,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "KBIZ",
-          "중기중앙"
+          "중기중앙",
+          "KBIZ"
         ]
       },
       {
@@ -6645,10 +6662,22 @@
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605070718127620102152",
         "sectionOrder": 2,
         "gpNames": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사",
+          "신용보증기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": []
+        "searchTerms": [
+          "한국투자공사",
+          "kic",
+          "국부펀드",
+          "KIC",
+          "신용보증기금",
+          "kodit",
+          "KODIT",
+          "신보"
+        ]
       },
       {
         "id": "clip-20260508-3",
@@ -7112,10 +7141,17 @@
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605041344174800107816",
         "sectionOrder": 5,
         "gpNames": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": []
+        "searchTerms": [
+          "과학기술인공제회",
+          "sema",
+          "SEMA",
+          "과기공"
+        ]
       },
       {
         "id": "clip-20260507-10",
