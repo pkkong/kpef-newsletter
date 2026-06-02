@@ -644,7 +644,7 @@
       const setSearchOpen = (open) => {
         if (!serviceBar || !searchArea || !searchToggle) return;
         serviceBar.classList.toggle("search-open", open);
-        searchArea.classList.toggle("visible", open);
+        searchArea.classList.toggle("active", open);
         searchToggle.setAttribute("aria-expanded", String(open));
         if (open) searchInput?.focus();
       };
