@@ -584,7 +584,8 @@
       min-width: 0;
       gap: 5px;
     }
-    body.lp-notices-page .lp-notice-eyebrow {
+    body.lp-notices-page .lp-notice-eyebrow,
+    body.lp-notices-page .lp-notice-kicker {
       display: flex;
       flex-wrap: wrap;
       gap: 4px 8px;
@@ -595,25 +596,31 @@
       font-weight: 650;
       line-height: 1.25;
     }
-    body.lp-notices-page .lp-notice-eyebrow span + span::before {
+    body.lp-notices-page .lp-notice-eyebrow span + span::before,
+    body.lp-notices-page .lp-notice-kicker span + span::before {
       color: var(--tertiary);
       content: "·";
       margin-right: 8px;
     }
-    body.lp-notices-page .lp-notice-status {
+    body.lp-notices-page .lp-notice-status,
+    body.lp-notices-page .lp-notice-stage {
       color: #475569;
       font-size: 12px;
       font-weight: 760;
       line-height: 1.2;
     }
-    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-stage {
       color: #047857;
     }
-    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-stage {
       color: #1d4ed8;
     }
     body.lp-notices-page .lp-notice-row[data-status="closed"] .lp-notice-status,
-    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="closed"] .lp-notice-stage,
+    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-stage {
       color: #64748b;
     }
     body.lp-notices-page .lp-notice-main h2 {
@@ -764,14 +771,14 @@
       <section class="lp-directory-hero" aria-label="LP 디렉토리 요약">
         <div>
           <h1 class="lp-directory-title"><strong>52개</strong> 출자기관</h1>
-          <p class="lp-directory-meta">핵심 LP 21개 · OCIO/공적기금 17개 · 정책펀드 14개 · 공식 공고 83건 · 2026-06-03 기준</p>
+          <p class="lp-directory-meta">핵심 LP 21개 · OCIO/공적기금 17개 · 정책펀드 14개 · 공식 공고 80건 · 2026-06-03 기준</p>
         </div>
 
         <div class="lp-directory-kpis">
           <div><span>대상 기관</span><strong>52개</strong></div>
           <div><span>OCIO/공적기금</span><strong>17개</strong></div>
           <div><span>공고 기준 규모</span><strong>5.08조</strong></div>
-          <div><span>출자공고</span><strong>83건</strong></div>
+          <div><span>출자공고</span><strong>80건</strong></div>
         </div>
       </section>
 

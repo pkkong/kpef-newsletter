@@ -584,7 +584,8 @@
       min-width: 0;
       gap: 5px;
     }
-    body.lp-notices-page .lp-notice-eyebrow {
+    body.lp-notices-page .lp-notice-eyebrow,
+    body.lp-notices-page .lp-notice-kicker {
       display: flex;
       flex-wrap: wrap;
       gap: 4px 8px;
@@ -595,25 +596,31 @@
       font-weight: 650;
       line-height: 1.25;
     }
-    body.lp-notices-page .lp-notice-eyebrow span + span::before {
+    body.lp-notices-page .lp-notice-eyebrow span + span::before,
+    body.lp-notices-page .lp-notice-kicker span + span::before {
       color: var(--tertiary);
       content: "·";
       margin-right: 8px;
     }
-    body.lp-notices-page .lp-notice-status {
+    body.lp-notices-page .lp-notice-status,
+    body.lp-notices-page .lp-notice-stage {
       color: #475569;
       font-size: 12px;
       font-weight: 760;
       line-height: 1.2;
     }
-    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="open"] .lp-notice-stage {
       color: #047857;
     }
-    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="result"] .lp-notice-stage {
       color: #1d4ed8;
     }
     body.lp-notices-page .lp-notice-row[data-status="closed"] .lp-notice-status,
-    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-status {
+    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-status,
+    body.lp-notices-page .lp-notice-row[data-status="closed"] .lp-notice-stage,
+    body.lp-notices-page .lp-notice-row[data-status="history"] .lp-notice-stage {
       color: #64748b;
     }
     body.lp-notices-page .lp-notice-main h2 {
@@ -764,7 +771,7 @@
       <section class="lp-directory-hero lp-notice-hero" aria-label="LP 디렉토리 요약">
         <div>
           <h1 class="lp-directory-title">LP 출자공고</h1>
-          <p class="lp-directory-meta">진행중 18건 · 선정 결과 22건 · 전체 83건 · 2026-06-03 기준</p>
+          <p class="lp-directory-meta">2026-06-03 기준 · 진행중 15건 · 선정결과 22건</p>
         </div>
 
       </section>
@@ -773,8 +780,8 @@
       <section class="section-block" id="lpNotices" aria-label="LP 공식 공고">
         <div class="lp-notice-toolbar">
           <div class="lp-control-head">
-            <label for="lpOfficialNoticeSearch">공고 검색</label>
-            <span id="lpNoticeVisibleCount">83건 표시</span>
+            <label for="lpOfficialNoticeSearch">공고 필터</label>
+            <span id="lpNoticeVisibleCount">80건 표시</span>
           </div>
           <div class="lp-control-line lp-notice-controls">
             <select id="lpNoticeFilter" aria-label="필터">
@@ -804,363 +811,303 @@
           <section class="lp-notice-group" data-group="open">
             <h2 class="section-title">진행중 공고</h2>
             <div class="lp-page-list lp-notice-list">
-              <article class="lp-notice-row" data-search="(입찰공고) 예금보험기금 국내채권자산 위탁운용사 Pool 추가 선정 예금보험기금  진행중 2026-06-10 일임 펀드 " data-lp="kdic_dif" data-lp-name="예금보험기금" data-asset="" data-status="open" data-status-group="open" data-date="2026-04-30" data-deadline="2026-06-10">
+              <article class="lp-notice-row" data-search="(입찰공고) 예금보험기금 국내채권자산 위탁운용사 Pool 추가 선정 예금보험기금  진행중 공고 2026-06-10 일임 펀드 " data-lp="kdic_dif" data-lp-name="예금보험기금" data-asset="" data-status="open" data-status-group="open" data-date="2026-04-30" data-deadline="2026-06-10">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>예금보험기금</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.kdic.or.kr/di/pbcr/selectPbcrNtcDtl.do?pstNo=60023&amp;curPage=0" target="_blank" rel="noreferrer">(입찰공고) 예금보험기금 국내채권자산 위탁운용사 Pool 추가 선정</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>일임 펀드</dd>
+                <dt>기관명</dt>
+                <dd>예금보험기금</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-06-10">2026-06-10</time><span class="lp-notice-date-sub">공고 2026-04-30</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>일임 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kdic.or.kr/di/pbcr/selectPbcrNtcDtl.do?pstNo=60023&amp;curPage=0" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【제출서식】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정 제출서류 및 서식(수정본) 한국성장금융  진행중  국민성장펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】「은행권 기후기술펀드 3호」 2026년 위탁운용사 선정계획 공고 한국성장금융  진행중 공고  은행권 기후기술펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
-              <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1042&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【제출서식】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정 제출서류 및 서식(수정본)</a></h2>
-            </div>
-            <dl class="lp-notice-facts">
-              <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
-              </div>
-              <div>
-                <dt>공고일</dt>
-                <dd><time datetime="2026-06-03">2026-06-03</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-            </dl>
-            <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1042&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【제출서식】「K-방산수출펀드(2차)」위탁운용사 선정 제출서류 및 서식 한국성장금융  진행중  K-방산수출펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
-            <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
-              <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1032&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【제출서식】「K-방산수출펀드(2차)」위탁운용사 선정 제출서류 및 서식</a></h2>
-            </div>
-            <dl class="lp-notice-facts">
-              <div>
-                <dt>자산군</dt>
-                <dd>K-방산수출펀드</dd>
-              </div>
-              <div>
-                <dt>공고일</dt>
-                <dd><time datetime="2026-06-03">2026-06-03</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-            </dl>
-            <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1032&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】「은행권 기후기술펀드 3호」 2026년 위탁운용사 선정계획 공고 한국성장금융  진행중  은행권 기후기술펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
-            <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1039&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정공고】「은행권 기후기술펀드 3호」 2026년 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>은행권 기후기술펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>은행권 기후기술펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1039&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고 한국성장금융  진행중  국민성장펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고 한국성장금융  진행중 공고  국민성장펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1035&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정공고】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1035&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고 한국성장금융  진행중  K-콘텐츠 미디어 전략펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고 한국성장금융  진행중 공고  K-콘텐츠 미디어 전략펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1037&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정공고】「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>K-콘텐츠 미디어 전략펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>K-콘텐츠 미디어 전략펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1037&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고 한국성장금융  진행중  K-방산수출펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고 한국성장금융  진행중 공고  K-방산수출펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1030&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정공고】「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
+              </div>
+              <div>
+                <dt>기준일</dt>
+                <dd><time datetime="2026-06-03">2026-06-03</time></dd>
+              </div>
+              <div>
                 <dt>자산군</dt>
                 <dd>K-방산수출펀드</dd>
               </div>
-              <div>
-                <dt>공고일</dt>
-                <dd><time datetime="2026-06-03">2026-06-03</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1030&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【기타】 프로젝트 펀드 담당팀 연락처(상시 게시) 한국성장금융  진행중  프로젝트 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2026년 사학연금 VC 블라인드펀드 위탁운용사 선정 공고 사립학교교직원연금공단 VC 진행중 공고  블라인드 " data-lp="tp" data-lp-name="사립학교교직원연금공단" data-asset="VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국성장금융</span></p>
-              <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=913&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【기타】 프로젝트 펀드 담당팀 연락처(상시 게시)</a></h2>
-            </div>
-            <dl class="lp-notice-facts">
-              <div>
-                <dt>자산군</dt>
-                <dd>프로젝트</dd>
-              </div>
-              <div>
-                <dt>공고일</dt>
-                <dd><time datetime="2026-06-03">2026-06-03</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-            </dl>
-            <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=913&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 사학연금 VC 블라인드펀드 위탁운용사 선정 공고 사립학교교직원연금공단 VC 진행중  블라인드 " data-lp="tp" data-lp-name="사립학교교직원연금공단" data-asset="VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
-            <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>사립학교교직원연금공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.tp.or.kr/tp-kr/bbs/i-151/detail.do?ntt_sn=3781" target="_blank" rel="noreferrer">2026년 사학연금 VC 블라인드펀드 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>사립학교교직원연금공단</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC · 블라인드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.tp.or.kr/tp-kr/bbs/i-151/detail.do?ntt_sn=3781" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고 중소벤처기업진흥공단 PEF/VC 진행중  하나 모두 성장 K-미래전략산업 벤처 모펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고 중소벤처기업진흥공단 PEF/VC 진행중 공고  하나 모두 성장 K-미래전략산업 벤처 모펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>중소벤처기업진흥공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130355?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 하나 모두 성장 K-미래전략산업 벤처 모펀드</dd>
+                <dt>기관명</dt>
+                <dd>중소벤처기업진흥공단</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 하나 모두 성장 K-미래전략산업 벤처 모펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130355?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_1.+%EA%B3%B5%EA%B3%A0%EB%AC%B8_2026%EB%85%84+%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85+%EC%A2%85%ED%95%A9%EA%B3%84%ED%9A%8D_%ED%95%98%EB%82%98+%EB%AA%A8%EB%91%90+%EC%84%B1%EC%9E%A5+K-%EB%AF%B8%EB%9E%98%EC%A0%84%EB%9E%B5%EC%82%B0%EC%97%85+%EB%B2%A4%EC%B2%98+%EB%AA%A8%ED%8E%80%EB%93%9C+2026_F.pdf&amp;name=1.+%EA%B3%B5%EA%B3%A0%EB%AC%B8_2026%EB%85%84+%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85+%EC%A2%85%ED%95%A9%EA%B3%84%ED%9A%8D_%ED%95%98%EB%82%98+%EB%AA%A8%EB%91%90+%EC%84%B1%EC%9E%A5+K-%EB%AF%B8%EB%9E%98%EC%A0%84%EB%9E%B5%EC%82%B0%EC%97%85+%EB%B2%A4%EC%B2%98+%EB%AA%A8%ED%8E%80%EB%93%9C+2026_F.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC 진행중  모태펀드 " data-lp="kvic" data-lp-name="한국벤처투자" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC 진행중 공고  모태펀드 " data-lp="kvic" data-lp-name="한국벤처투자" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국벤처투자</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130369?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국벤처투자</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130369?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EC%A4%91%EA%B8%B0%EB%B6%80%2B%EC%86%8C%EA%B4%80%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0.pdf&amp;name=%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EC%A4%91%EA%B8%B0%EB%B6%80%2B%EC%86%8C%EA%B4%80%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC 진행중  모태펀드 " data-lp="kvic" data-lp-name="한국벤처투자" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고 한국벤처투자 PEF/VC 진행중 공고  모태펀드 " data-lp="kvic" data-lp-name="한국벤처투자" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국벤처투자</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국벤처투자</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf&amp;name=%EB%B6%99%EC%9E%841.%2B%EB%AA%A8%ED%83%9C%ED%8E%80%EB%93%9C%28%EB%AC%B8%ED%99%94%2C%2B%EA%B4%80%EA%B4%91%2C%2B%EC%8A%A4%ED%8F%AC%EC%B8%A0%29%2B2026%EB%85%84%2B5%EC%9B%94%2B%EC%88%98%EC%8B%9C%2B%EC%B6%9C%EC%9E%90%EC%82%AC%EC%97%85%2B%EA%B3%84%ED%9A%8D%2B%EA%B3%B5%EA%B3%A0%28%EC%95%88%29.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고 농업정책보험금융원 PEF/VC 진행중  세컨더리 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고 농업정책보험금융원 PEF/VC 진행중 공고  세컨더리 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130335?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">『2026 회수시장 지원 세컨더리 펀드』 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 세컨더리</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 세컨더리</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130335?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%EB%B6%99%EC%9E%841.+2026+%ED%9A%8C%EC%88%98%EC%8B%9C%EC%9E%A5+%EC%A7%80%EC%9B%90+%EC%84%B8%EC%BB%A8%EB%8D%94%EB%A6%AC+%ED%8E%80%EB%93%9C+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고 중소벤처기업진흥공단 PEF/VC 진행중  국민성장펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고 중소벤처기업진흥공단 PEF/VC 진행중 공고  국민성장펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>중소벤처기업진흥공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130371?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>중소벤처기업진흥공단</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130371?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%EA%B5%AD%EB%AF%BC%EC%84%B1%EC%9E%A5%ED%8E%80%EB%93%9C%28%EA%B0%84%EC%A0%91%ED%88%AC%EC%9E%90%EB%B6%84%EC%95%BC%29+%EC%A0%95%EC%B1%85%EC%84%B1%ED%8E%80%EB%93%9C+2026%EB%85%84+2%EC%B0%A8+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0_vf.hwp&amp;name=%EA%B5%AD%EB%AF%BC%EC%84%B1%EC%9E%A5%ED%8E%80%EB%93%9C%28%EA%B0%84%EC%A0%91%ED%88%AC%EC%9E%90%EB%B6%84%EC%95%BC%29+%EC%A0%95%EC%B1%85%EC%84%B1%ED%8E%80%EB%93%9C+2026%EB%85%84+2%EC%B0%A8+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0_vf.hwp" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고 중소벤처기업진흥공단 PEF/VC 진행중  K-콘텐츠 미디어 전략펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고 중소벤처기업진흥공단 PEF/VC 진행중 공고  K-콘텐츠 미디어 전략펀드 " data-lp="kosme" data-lp-name="중소벤처기업진흥공단" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>중소벤처기업진흥공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130370?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · K-콘텐츠 미디어 전략펀드</dd>
+                <dt>기관명</dt>
+                <dd>중소벤처기업진흥공단</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · K-콘텐츠 미디어 전략펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130370?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%28K-%EC%BD%98%ED%85%90%EC%B8%A0+%EB%AF%B8%EB%94%94%EC%96%B4+%EC%A0%84%EB%9E%B5%ED%8E%80%EB%93%9C+3%ED%98%B8%29%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%B5%9C%EC%A2%85.pdf&amp;name=%28K-%EC%BD%98%ED%85%90%EC%B8%A0+%EB%AF%B8%EB%94%94%EC%96%B4+%EC%A0%84%EB%9E%B5%ED%8E%80%EB%93%9C+3%ED%98%B8%29%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EC%B5%9C%EC%A2%85.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고 IBK기업은행 PEF/VC 진행중  2026 IBK 동행펀드 " data-lp="ibk" data-lp-name="IBK기업은행" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고 IBK기업은행 PEF/VC 진행중 공고  2026 IBK 동행펀드 " data-lp="ibk" data-lp-name="IBK기업은행" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>IBK기업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130341?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 2026 IBK 동행펀드</dd>
+                <dt>기관명</dt>
+                <dd>IBK기업은행</dd>
               </div>
               <div>
-                <dt>공고일</dt>
+                <dt>기준일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 2026 IBK 동행펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130341?cp=1&amp;pageSize=10&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kvca.or.kr/files/download.html?a_gb=lpm&amp;a_cd=1&amp;file=_1_%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf&amp;name=%E3%80%8C2026+IBK+%EB%8F%99%ED%96%89%ED%8E%80%EB%93%9C%E3%80%8D+%EC%9C%84%ED%83%81%EC%9A%B4%EC%9A%A9%EC%82%AC+%EC%84%A0%EC%A0%95%EA%B3%84%ED%9A%8D+%EA%B3%B5%EA%B3%A0.pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 2차 위탁운용사 선정계획 공고 한국산업은행  진행중  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="open" data-status-group="open" data-date="2026-05-27" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 2차 위탁운용사 선정계획 공고 한국산업은행  진행중 공고  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="open" data-status-group="open" data-date="2026-05-27" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>한국산업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22186157%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%2210%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2272185%22%7D" target="_blank" rel="noreferrer">【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 2차 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국산업은행</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-05-27">2026-05-27</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22186157%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%2210%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2272185%22%7D" target="_blank" rel="noreferrer">공고 원문</a><a href="https://file.kdb.co.kr/fileView?groupId=76F59A79-4598-E59E-FDD5-78FA5276265A&amp;fileId=0044949E-6D57-F004-6663-5C129CABBE26" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 진행중  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-05-13" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 진행중 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="open" data-status-group="open" data-date="2026-05-13" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">진행중</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15099&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 2차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-05-13">2026-05-13</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15099&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216822&amp;attachId=e521d9527ceb46f9939f51a450e76ea1" target="_blank" rel="noreferrer">첨부파일</a></div>
@@ -1170,183 +1117,187 @@
           <section class="lp-notice-group" data-group="result">
             <h2 class="section-title">선정 결과</h2>
             <div class="lp-page-list lp-notice-list">
-              <article class="lp-notice-row" data-search="【선정결과】「증권금융 K-Growth 펀드」위탁운용사 선정 결과 한국성장금융  선정결과  증권금융 K-Growth 펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+              <article class="lp-notice-row" data-search="【선정결과】「증권금융 K-Growth 펀드」위탁운용사 선정 결과 한국성장금융  선정결과 최종선정  증권금융 K-Growth 펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1036&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정결과】「증권금융 K-Growth 펀드」위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>증권금융 K-Growth 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>증권금융 K-Growth 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1036&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정결과】「증권금융 K-Growth 펀드」 위탁운용사 서류심사 결과 한국성장금융  선정결과  증권금융 K-Growth 펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정결과】「증권금융 K-Growth 펀드」 위탁운용사 서류심사 결과 한국성장금융  선정결과 서류심사  증권금융 K-Growth 펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">서류심사</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1028&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정결과】「증권금융 K-Growth 펀드」 위탁운용사 서류심사 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>증권금융 K-Growth 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>증권금융 K-Growth 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1028&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정결과】「2기 방산기술혁신펀드」 1차년도 위탁운용사 선정 결과 한국성장금융  선정결과  2기 방산기술혁신펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정결과】「2기 방산기술혁신펀드」 1차년도 위탁운용사 선정 결과 한국성장금융  선정결과 최종선정  2기 방산기술혁신펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1027&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정결과】「2기 방산기술혁신펀드」 1차년도 위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>2기 방산기술혁신펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>2기 방산기술혁신펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1027&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정결과】「2026년 국민성장펀드(국민참여형)」위탁운용사 선정 결과 한국성장금융  선정결과  국민성장펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정결과】「2026년 국민성장펀드(국민참여형)」위탁운용사 선정 결과 한국성장금융  선정결과 최종선정  국민성장펀드 " data-lp="kgrowth" data-lp-name="한국성장금융" data-asset="" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국성장금융</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1029&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">【선정결과】「2026년 국민성장펀드(국민참여형)」위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국성장금융</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1029&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 선정 결과 한국해양진흥공사 인프라 선정결과  지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 선정 결과 한국해양진흥공사 인프라 선정결과 최종선정  지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국해양진흥공사</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97785&amp;ptIdx=326" target="_blank" rel="noreferrer">「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>인프라 · 지역활성화 투자 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국해양진흥공사</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>인프라 · 지역활성화 투자 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97785&amp;ptIdx=326" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2026년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2026-05-28" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2026년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2026-05-28" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15010&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2026년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-05-28">2026-05-28</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15010&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정결과】국민성장펀드(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정 결과 한국산업은행  선정결과  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="result" data-status-group="result" data-date="2026-05-27" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정결과】국민성장펀드(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정 결과 한국산업은행  선정결과 최종선정  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="result" data-status-group="result" data-date="2026-05-27" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국산업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22186155%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%229%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2272184%22%7D" target="_blank" rel="noreferrer">【선정결과】국민성장펀드(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국산업은행</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-05-27">2026-05-27</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22186155%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%229%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2272184%22%7D" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정결과】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정 결과 한국산업은행  선정결과  국민성장펀드 [&#39;디에스자산운용&#39;, &#39;미래에셋자산운용&#39;, &#39;오라이언자산운용&#39;, &#39;케이비자산운용&#39;, &#39;타임폴리오자산운용&#39;]" data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="result" data-status-group="result" data-date="2026-05-06" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정결과】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정 결과 한국산업은행  선정결과 최종선정  국민성장펀드 [&#39;디에스자산운용&#39;, &#39;미래에셋자산운용&#39;, &#39;오라이언자산운용&#39;, &#39;케이비자산운용&#39;, &#39;타임폴리오자산운용&#39;]" data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="result" data-status-group="result" data-date="2026-05-06" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국산업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185954%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%226%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271846%22%7D" target="_blank" rel="noreferrer">【선정결과】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
+                <dt>기관명</dt>
+                <dd>한국산업은행</dd>
+              </div>
+              <div>
+                <dt>결과일</dt>
+                <dd><time datetime="2026-05-06">2026-05-06</time></dd>
+              </div>
+              <div>
                 <dt>자산군</dt>
                 <dd>국민성장펀드</dd>
               </div>
               <div>
-                <dt>선정일</dt>
-                <dd><time datetime="2026-05-06">2026-05-06</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-              <div>
-                <dt>선정 GP</dt>
+                <dt>관련 GP</dt>
                 <dd>디에스자산운용 · 미래에셋자산운용 외 3</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185954%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%226%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271846%22%7D" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2026년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2026-04-30" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2026년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2026-04-30" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15087&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2026년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-04-30">2026-04-30</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1354,91 +1305,95 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15087&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="우체국예금 해외사모펀드 국내재간접 위탁운용사 우선협상대상자 알림 우정사업본부 PEF 선정결과  재간접 [&#39;키움투자자산운용&#39;]" data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="result" data-status-group="result" data-date="2026-04-22" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="우체국예금 해외사모펀드 국내재간접 위탁운용사 우선협상대상자 알림 우정사업본부 PEF 선정결과 최종선정  재간접 [&#39;키움투자자산운용&#39;]" data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="result" data-status-group="result" data-date="2026-04-22" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=352&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">우체국예금 해외사모펀드 국내재간접 위탁운용사 우선협상대상자 알림</a></h2>
             </div>
             <dl class="lp-notice-facts">
+              <div>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
+              </div>
+              <div>
+                <dt>결과일</dt>
+                <dd><time datetime="2026-04-22">2026-04-22</time></dd>
+              </div>
               <div>
                 <dt>자산군</dt>
                 <dd>PEF · 재간접</dd>
               </div>
               <div>
-                <dt>선정일</dt>
-                <dd><time datetime="2026-04-22">2026-04-22</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-              <div>
-                <dt>선정 GP</dt>
+                <dt>관련 GP</dt>
                 <dd>키움투자자산운용</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=352&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="우체국예금 국내 공동투자전략 펀드 위탁운용사 선정 우선협상대상자 선정 안내 우정사업본부  선정결과  우체국예금 국내 공동투자전략 펀드 [&#39;대신프라이빗에쿼티&#39;]" data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="result" data-status-group="result" data-date="2026-04-21" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="우체국예금 국내 공동투자전략 펀드 위탁운용사 선정 우선협상대상자 선정 안내 우정사업본부  선정결과 최종선정  우체국예금 국내 공동투자전략 펀드 [&#39;대신프라이빗에쿼티&#39;]" data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="result" data-status-group="result" data-date="2026-04-21" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=351&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">우체국예금 국내 공동투자전략 펀드 위탁운용사 선정 우선협상대상자 선정 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
+              <div>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
+              </div>
+              <div>
+                <dt>결과일</dt>
+                <dd><time datetime="2026-04-21">2026-04-21</time></dd>
+              </div>
               <div>
                 <dt>자산군</dt>
                 <dd>우체국예금 국내 공동투자전략 펀드</dd>
               </div>
               <div>
-                <dt>선정일</dt>
-                <dd><time datetime="2026-04-21">2026-04-21</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-              <div>
-                <dt>선정 GP</dt>
+                <dt>관련 GP</dt>
                 <dd>대신프라이빗에쿼티</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=351&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="공무원연금공단 위탁운용사 선정결과 공무원연금공단 PEF/VC 선정결과  블라인드 [&#39;트러스톤자산운용&#39;]" data-lp="geps" data-lp-name="공무원연금공단" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2026-03-31" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="공무원연금공단 위탁운용사 선정결과 공무원연금공단 PEF/VC 선정결과 최종선정  블라인드 [&#39;트러스톤자산운용&#39;]" data-lp="geps" data-lp-name="공무원연금공단" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2026-03-31" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>공무원연금공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.geps.or.kr/mgtNotice_financialAsset_financialCondition_tradingInstitution_selectionCmc" target="_blank" rel="noreferrer">공무원연금공단 위탁운용사 선정결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
+              <div>
+                <dt>기관명</dt>
+                <dd>공무원연금공단</dd>
+              </div>
+              <div>
+                <dt>결과일</dt>
+                <dd><time datetime="2026-03-31">2026-03-31</time></dd>
+              </div>
               <div>
                 <dt>자산군</dt>
                 <dd>PEF/VC · 블라인드</dd>
               </div>
               <div>
-                <dt>선정일</dt>
-                <dd><time datetime="2026-03-31">2026-03-31</time></dd>
-              </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
-              <div>
-                <dt>선정 GP</dt>
+                <dt>관련 GP</dt>
                 <dd>트러스톤자산운용</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.geps.or.kr/mgtNotice_financialAsset_financialCondition_tradingInstitution_selectionCmc" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 5차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-11-27" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 5차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-11-27" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14825&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 5차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-11-27">2025-11-27</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1446,19 +1401,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14825&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 4차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-11-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 4차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-11-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14786&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 4차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-11-03">2025-11-03</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1466,19 +1425,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14786&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 3차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-09-30" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 3차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-09-30" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14757&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 3차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-09-30">2025-09-30</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1486,19 +1449,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14757&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 2차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-08-27" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 2차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-08-27" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14713&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 2차 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-08-27">2025-08-27</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1506,19 +1473,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14713&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-06-23" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-06-23" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14623&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 추가 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-06-23">2025-06-23</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1526,19 +1497,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14623&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-04-08" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2025-04-08" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14465&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 정기 출자사업(수산 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-04-08">2025-04-08</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1546,19 +1521,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14465&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 정기 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-03-21" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2025년 정기 출자사업(농식품 계정) 업무집행조합원 선정 결과 농업정책보험금융원 PEF/VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="result" data-status-group="result" data-date="2025-03-21" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14438&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2025년 정기 출자사업(농식품 계정) 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2025-03-21">2025-03-21</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1566,19 +1545,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14438&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216043&amp;attachId=02e8fdd28325435a9b179cce2db61944" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2024년 2차 추가 출자사업(농식품 계정) 신규 자펀드 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2024-11-11" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 2024년 2차 추가 출자사업(농식품 계정) 신규 자펀드 업무집행조합원 선정 결과 농업정책보험금융원 VC 선정결과 최종선정  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="result" data-status-group="result" data-date="2024-11-11" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">최종선정</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14245&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 2024년 2차 추가 출자사업(농식품 계정) 신규 자펀드 업무집행조합원 선정 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2024-11-11">2024-11-11</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1586,43 +1569,43 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14245&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 서류심사 결과 한국해양진흥공사 인프라 선정결과  지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 서류심사 결과 한국해양진흥공사 인프라 선정결과 서류심사  지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="result" data-status-group="result" data-date="2026-06-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>한국해양진흥공사</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">서류심사</span></p>
               <h2><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97765&amp;ptIdx=326" target="_blank" rel="noreferrer">「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 서류심사 결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>인프라 · 지역활성화 투자 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국해양진흥공사</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-06-03">2026-06-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>인프라 · 지역활성화 투자 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97765&amp;ptIdx=326" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="우체국예금 해외사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 정량평가 결과 안내 우정사업본부 PEF 선정결과  재간접 " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="result" data-status-group="result" data-date="2026-04-15" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="우체국예금 해외사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 정량평가 결과 안내 우정사업본부 PEF 선정결과 서류심사  재간접 " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="result" data-status-group="result" data-date="2026-04-15" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">선정결과</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">서류심사</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=350&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">우체국예금 해외사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 정량평가 결과 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 재간접</dd>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
               </div>
               <div>
-                <dt>선정일</dt>
+                <dt>결과일</dt>
                 <dd><time datetime="2026-04-15">2026-04-15</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF · 재간접</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=350&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a></div>
@@ -1632,159 +1615,163 @@
           <section class="lp-notice-group" data-group="history">
             <h2 class="section-title">공고 히스토리</h2>
             <div class="lp-page-list lp-notice-list">
-              <article class="lp-notice-row" data-search="【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 1차 위탁운용사 선정계획 공고 한국산업은행  히스토리  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="history" data-status-group="history" data-date="2026-04-15" data-deadline="">
+              <article class="lp-notice-row" data-search="【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 1차 위탁운용사 선정계획 공고 한국산업은행  히스토리 공고  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="history" data-status-group="history" data-date="2026-04-15" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>한국산업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185747%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%224%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271619%22%7D" target="_blank" rel="noreferrer">【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 1차 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국산업은행</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-04-15">2026-04-15</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185747%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%224%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271619%22%7D" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="【선정공고】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정계획 공고 한국산업은행  히스토리  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="history" data-status-group="history" data-date="2026-04-10" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="【선정공고】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정계획 공고 한국산업은행  히스토리 공고  국민성장펀드 " data-lp="kdb" data-lp-name="한국산업은행" data-asset="" data-status="history" data-status-group="history" data-date="2026-04-10" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>한국산업은행</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185671%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%222%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271572%22%7D" target="_blank" rel="noreferrer">【선정공고】「2026년 국민성장펀드(국민참여형)」 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>국민성장펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국산업은행</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-04-10">2026-04-10</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>국민성장펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22185671%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%222%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2271572%22%7D" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-04-01" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-04-01" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15018&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-04-01">2026-04-01</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15018&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216748&amp;attachId=4244d3681385431c9def4fa58de6ccb8" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 정기 출자사업(수산투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-03-04" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 정기 출자사업(수산투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-03-04" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14951&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 정기 출자사업(수산투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-03-04">2026-03-04</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14951&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216711&amp;attachId=e7bf18051e854ac790fb9223d0120b21" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 고용보험기금 운용현황 공지 고용보험기금 VC 히스토리   " data-lp="moel_eif" data-lp-name="고용보험기금" data-asset="VC" data-status="history" data-status-group="history" data-date="2026-02-13" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2025년 고용보험기금 운용현황 공지 고용보험기금 VC 히스토리 공고   " data-lp="moel_eif" data-lp-name="고용보험기금" data-asset="VC" data-status="history" data-status-group="history" data-date="2026-02-13" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>고용보험기금</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20260200674" target="_blank" rel="noreferrer">2025년 고용보험기금 운용현황 공지</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC</dd>
+                <dt>기관명</dt>
+                <dd>고용보험기금</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-02-13">2026-02-13</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20260200674" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.moel.go.kr/common/downloadFile.do?file_seq=20260201204&amp;amp;bbs_seq=20260200674&amp;amp;bbs_id=27&amp;amp;file_ext=pdf" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-02-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-02-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14902&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2026년 농림수산식품모태펀드 정기 출자사업 설명회 개최 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-02-03">2026-02-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14902&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 정기 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-02-02" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;26년 정기 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2026-02-02" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14900&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;26년 정기 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2026-02-02">2026-02-02</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14900&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216651&amp;attachId=d7bf40cb95e3459f842dfc97eb69228f" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 5차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-11-04" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 5차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-11-04" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14797&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 5차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-11-04">2025-11-04</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1792,19 +1779,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14797&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216505&amp;attachId=ab5dd1e7888848f19a966ab2c4430d7a" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 4차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-09-26" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 4차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-09-26" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14754&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 4차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-09-26">2025-09-26</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1812,19 +1803,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14754&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216460&amp;attachId=2bc919b714b34df1b6328f6d28f7d59a" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 3차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-09-01" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 3차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-09-01" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14716&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 3차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-09-01">2025-09-01</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1832,99 +1827,103 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14716&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216386&amp;attachId=d0031f4bca6f4a159bd3808d8f461974" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(중형PE) 선정 공고 신협중앙회 PEF 히스토리  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="PEF" data-status="history" data-status-group="history" data-date="2025-07-14" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(중형PE) 선정 공고 신협중앙회 PEF 히스토리 공고  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="PEF" data-status="history" data-status-group="history" data-date="2025-07-14" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>신협중앙회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111681&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(중형PE) 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>신협중앙회</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-07-14">2025-07-14</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF · 블라인드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111681&amp;mi=100007" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-06-25" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 2차 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-06-25" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14626&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 2차 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-06-25">2025-06-25</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14626&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216267&amp;attachId=f55f15e8150e4a1f938fbf1d7925b606" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(소형PE) 선정 공고 신협중앙회 PEF 히스토리  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="PEF" data-status="history" data-status-group="history" data-date="2025-06-09" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(소형PE) 선정 공고 신협중앙회 PEF 히스토리 공고  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="PEF" data-status="history" data-status-group="history" data-date="2025-06-09" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>신협중앙회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111581&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 기업형 블라인드펀드 위탁운용사(소형PE) 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>신협중앙회</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-06-09">2025-06-09</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF · 블라인드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111581&amp;mi=100007" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 `25년 상반기 추가 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-05-07" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 `25년 상반기 추가 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-05-07" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14511&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 `25년 상반기 추가 출자사업 설명회 개최 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-05-07">2025-05-07</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14511&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-05-02" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 추가 출자사업(농식품투자 계정) 공고 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-05-02" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14508&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 추가 출자사업(농식품투자 계정) 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-05-02">2025-05-02</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1932,19 +1931,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14508&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003216108&amp;attachId=6cc91eb822b4450d9f48bea17b04f06d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 산재보험기금 대체투자상품(PEF) 선정 공고 근로복지공단 PEF/VC 히스토리  블라인드 " data-lp="comwel" data-lp-name="근로복지공단" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-04-01" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2025년 산재보험기금 대체투자상품(PEF) 선정 공고 근로복지공단 PEF/VC 히스토리 공고  블라인드 " data-lp="comwel" data-lp-name="근로복지공단" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-04-01" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>근로복지공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20250400085" target="_blank" rel="noreferrer">2025년 산재보험기금 대체투자상품(PEF) 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>근로복지공단</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-04-01">2025-04-01</time></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -1952,159 +1955,163 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20250400085" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.moel.go.kr/common/downloadFile.do?file_seq=20250400127&amp;amp;bbs_seq=20250400085&amp;amp;bbs_id=27&amp;amp;file_ext=hwp" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 VC 블라인드펀드 선정 공고 신협중앙회 VC 히스토리  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-02-03" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="2025년 신협중앙회 국내 VC 블라인드펀드 선정 공고 신협중앙회 VC 히스토리 공고  블라인드 " data-lp="cu" data-lp-name="신협중앙회" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-02-03" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>신협중앙회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111261&amp;mi=100007" target="_blank" rel="noreferrer">2025년 신협중앙회 국내 VC 블라인드펀드 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>신협중앙회</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-02-03">2025-02-03</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC · 블라인드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://cu.co.kr/cu/na/ntt/selectNttInfo.do?nttSn=111261&amp;mi=100007" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 정기 출자사업(수산투자 계정) 공고(첨부수정_별첨) 농업정책보험금융원 VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-01-31" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 정기 출자사업(수산투자 계정) 공고(첨부수정_별첨) 농업정책보험금융원 VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="history" data-status-group="history" data-date="2025-01-31" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14344&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 정기 출자사업(수산투자 계정) 공고(첨부수정_별첨)</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-01-31">2025-01-31</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14344&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003215939&amp;attachId=2158090b727f47aaa0543913c3677b85" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 `25년 정기 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-01-22" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 `25년 정기 출자사업 설명회 개최 안내 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-01-22" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14336&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 `25년 정기 출자사업 설명회 개최 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-01-22">2025-01-22</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14336&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 정기 출자사업(농식품투자 계정) 공고(첨부수정_별첨) 농업정책보험금융원 PEF/VC 히스토리  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-01-21" data-deadline="">
+          </article>              <article class="lp-notice-row" data-search="농림수산식품모태펀드 &#39;25년 정기 출자사업(농식품투자 계정) 공고(첨부수정_별첨) 농업정책보험금융원 PEF/VC 히스토리 공고  모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="history" data-status-group="history" data-date="2025-01-21" data-deadline="">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">히스토리</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">공고</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14335&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">농림수산식품모태펀드 &#39;25년 정기 출자사업(농식품투자 계정) 공고(첨부수정_별첨)</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>공고일</dt>
                 <dd><time datetime="2025-01-21">2025-01-21</time></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14335&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.apfs.kr/commonfile/fileidDownLoad.do?fileId=2003215923&amp;attachId=26b8dece093b4d7e9d442a643a0f7e1a" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="(수정공고)2025년 산재보험기금 하위운용사 유니버스 선정공고 근로복지공단 PEF/VC 마감 2025-08-14 - 한국펀드 " data-lp="comwel" data-lp-name="근로복지공단" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-08-08" data-deadline="2025-08-14">
+          </article>              <article class="lp-notice-row" data-search="(수정공고)2025년 산재보험기금 하위운용사 유니버스 선정공고 근로복지공단 PEF/VC 마감 변경/정정 2025-08-14 - 한국펀드 " data-lp="comwel" data-lp-name="근로복지공단" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-08-08" data-deadline="2025-08-14">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>근로복지공단</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">변경/정정</span></p>
               <h2><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20250800362" target="_blank" rel="noreferrer">(수정공고)2025년 산재보험기금 하위운용사 유니버스 선정공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · - 한국펀드</dd>
+                <dt>기관명</dt>
+                <dd>근로복지공단</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-08-14">2025-08-14</time><span class="lp-notice-date-sub">공고 2025-08-08</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · - 한국펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.moel.go.kr/info/astmgmt/employ/imchaeBbsView.do?bbs_seq=20250800362" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.moel.go.kr/common/downloadFile.do?file_seq=20250800603&amp;amp;bbs_seq=20250800362&amp;amp;bbs_id=27&amp;amp;file_ext=hwp" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 제안서 접수결과 한국해양진흥공사 인프라 마감 2026-04-16 지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-04-16">
+          </article>              <article class="lp-notice-row" data-search="「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 제안서 접수결과 한국해양진흥공사 인프라 마감 접수 2026-04-16 지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-04-16">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국해양진흥공사</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97750&amp;ptIdx=326" target="_blank" rel="noreferrer">「지역활성화 투자 펀드」2026년 모펀드 위탁운용사 제안서 접수결과</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>인프라 · 지역활성화 투자 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국해양진흥공사</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-04-16">2026-04-16</time><span class="lp-notice-date-sub">공고 2026-06-03</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>인프라 · 지역활성화 투자 펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97750&amp;ptIdx=326" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 해운산업 ESG지원펀드 사업 공모 시행 안내 한국해양진흥공사 인프라 마감 2026-05-18 2026년 해운산업 ESG지원펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-05-18">
+          </article>              <article class="lp-notice-row" data-search="2026년 해운산업 ESG지원펀드 사업 공모 시행 안내 한국해양진흥공사 인프라 마감 마감 2026-05-18 2026년 해운산업 ESG지원펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-05-18">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국해양진흥공사</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97805&amp;ptIdx=326" target="_blank" rel="noreferrer">2026년 해운산업 ESG지원펀드 사업 공모 시행 안내</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>인프라 · 2026년 해운산업 ESG지원펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국해양진흥공사</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-05-18">2026-05-18</time><span class="lp-notice-date-sub">공고 2026-06-03</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>인프라 · 2026년 해운산업 ESG지원펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97805&amp;ptIdx=326" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="(수정) 「지역활성화 투자 펀드」 2026년 모펀드 위탁운용사 선정계획 공고 한국해양진흥공사 인프라 마감 2026-04-10 지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-04-10">
+          </article>              <article class="lp-notice-row" data-search="(수정) 「지역활성화 투자 펀드」 2026년 모펀드 위탁운용사 선정계획 공고 한국해양진흥공사 인프라 마감 마감 2026-04-10 지역활성화 투자 펀드 " data-lp="kobc" data-lp-name="한국해양진흥공사" data-asset="인프라" data-status="closed" data-status-group="history" data-date="2026-06-03" data-deadline="2026-04-10">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국해양진흥공사</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97699&amp;ptIdx=326" target="_blank" rel="noreferrer">(수정) 「지역활성화 투자 펀드」 2026년 모펀드 위탁운용사 선정계획 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>인프라 · 지역활성화 투자 펀드</dd>
+                <dt>기관명</dt>
+                <dd>한국해양진흥공사</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-04-10">2026-04-10</time><span class="lp-notice-date-sub">공고 2026-06-03</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>인프라 · 지역활성화 투자 펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2112,19 +2119,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kobc.or.kr/ebz/kor/bbs/view.do?mId=0201000000&amp;bIdx=97699&amp;ptIdx=326" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 2차 추가 출자사업(농식품 계정) 접수현황 농업정책보험금융원 PEF/VC 마감 2026-05-29 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-05-29" data-deadline="2026-05-29">
+          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 2차 추가 출자사업(농식품 계정) 접수현황 농업정책보험금융원 PEF/VC 마감 접수 2026-05-29 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-05-29" data-deadline="2026-05-29">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15109&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2026년 농림수산식품모태펀드 2차 추가 출자사업(농식품 계정) 접수현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-05-29">2026-05-29</time><span class="lp-notice-date-sub">공고 2026-05-29</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2132,59 +2143,55 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15109&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="(우정사업본부 공고 제2026-62호)2026년 우체국예금 해외주식 신흥국형 신규 운용사 선정 공고 우정사업본부  마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="closed" data-status-group="history" data-date="2026-05-22" data-deadline="2026-05-22">
+          </article>              <article class="lp-notice-row" data-search="(우정사업본부 공고 제2026-62호)2026년 우체국예금 해외주식 신흥국형 신규 운용사 선정 공고 우정사업본부  마감 마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="closed" data-status-group="history" data-date="2026-05-22" data-deadline="2026-05-22">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=355&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">(우정사업본부 공고 제2026-62호)2026년 우체국예금 해외주식 신흥국형 신규 운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>-</dd>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-05-22">2026-05-22</time><span class="lp-notice-date-sub">공고 2026-05-22</span></dd>
               </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=355&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kpasset.go.kr/download.es?filename=1779410963955.hwp&amp;amp;filenameOrg=1. (우정사업본부 공고 제2026-62호)2026년 우체국예금 해외주식 신흥국형 신규 운용사 선정 공고문.hwp&amp;amp;f_path=board&amp;amp;bid=0041&amp;amp;type=board&amp;amp;bid=0041&amp;amp;list_no=355&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="(우정사업본부 공고 제2026-61호)2026년 우체국예금 해외주식 글로벌배당형 신규 운용사 선정 공고 우정사업본부  마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="closed" data-status-group="history" data-date="2026-05-22" data-deadline="2026-05-22">
+          </article>              <article class="lp-notice-row" data-search="(우정사업본부 공고 제2026-61호)2026년 우체국예금 해외주식 글로벌배당형 신규 운용사 선정 공고 우정사업본부  마감 마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="" data-status="closed" data-status-group="history" data-date="2026-05-22" data-deadline="2026-05-22">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=354&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">(우정사업본부 공고 제2026-61호)2026년 우체국예금 해외주식 글로벌배당형 신규 운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>-</dd>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-05-22">2026-05-22</time><span class="lp-notice-date-sub">공고 2026-05-22</span></dd>
               </div>
-              <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
-              </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=354&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kpasset.go.kr/download.es?filename=1779410864385.hwp&amp;amp;filenameOrg=1. (우정사업본부 공고 제2026-61호)2026년 우체국예금 해외주식 글로벌배당형 신규 운용사 선정 공고문.hwp&amp;amp;f_path=board&amp;amp;bid=0041&amp;amp;type=board&amp;amp;bid=0041&amp;amp;list_no=354&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고 중소기업중앙회 VC 마감 2024-06-05 블라인드 " data-lp="kbiz" data-lp-name="중소기업중앙회" data-asset="VC" data-status="closed" data-status-group="history" data-date="2026-05-15" data-deadline="2024-06-05">
+          </article>              <article class="lp-notice-row" data-search="2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고 중소기업중앙회 VC 마감 마감 2024-06-05 블라인드 " data-lp="kbiz" data-lp-name="중소기업중앙회" data-asset="VC" data-status="closed" data-status-group="history" data-date="2026-05-15" data-deadline="2024-06-05">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>중소기업중앙회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kofia.or.kr/brd/m_212/view.do?seq=282&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=" target="_blank" rel="noreferrer">2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>중소기업중앙회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2024-06-05">2024-06-05</time><span class="lp-notice-date-sub">공고 2026-05-15</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2192,19 +2199,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kofia.or.kr/brd/m_212/view.do?seq=282&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kofia.or.kr/brd/m_212/down.do?brd_id=www_member_notice&amp;amp;seq=282&amp;amp;data_tp=A&amp;amp;file_seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 우체국금융 국내부동산 리츠 위탁운용사 모집공고 우정사업본부 부동산 마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="부동산" data-status="closed" data-status-group="history" data-date="2026-05-08" data-deadline="2026-05-22">
+          </article>              <article class="lp-notice-row" data-search="2026년 우체국금융 국내부동산 리츠 위탁운용사 모집공고 우정사업본부 부동산 마감 마감 2026-05-22  " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="부동산" data-status="closed" data-status-group="history" data-date="2026-05-08" data-deadline="2026-05-22">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=353&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">2026년 우체국금융 국내부동산 리츠 위탁운용사 모집공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>부동산</dd>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-05-22">2026-05-22</time><span class="lp-notice-date-sub">공고 2026-05-08</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>부동산</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2212,19 +2223,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=353&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kpasset.go.kr/download.es?filename=1778227248130.pdf&amp;amp;filenameOrg=2026년 우체국금융 국내부동산 리츠 위탁운용사 모집 공고문.pdf&amp;amp;f_path=board&amp;amp;bid=0041&amp;amp;type=board&amp;amp;bid=0041&amp;amp;list_no=353&amp;amp;seq=4" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 추가 출자사업(농식품 계정) 접수현황 농업정책보험금융원 PEF/VC 마감 2026-04-30 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-04-30" data-deadline="2026-04-30">
+          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 추가 출자사업(농식품 계정) 접수현황 농업정책보험금융원 PEF/VC 마감 접수 2026-04-30 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-04-30" data-deadline="2026-04-30">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15088&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2026년 농림수산식품모태펀드 추가 출자사업(농식품 계정) 접수현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-04-30">2026-04-30</time><span class="lp-notice-date-sub">공고 2026-04-30</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2232,79 +2247,83 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15088&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업(수산 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 2026-04-01 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-04-01" data-deadline="2026-04-01">
+          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업(수산 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 접수 2026-04-01 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-04-01" data-deadline="2026-04-01">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15034&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2026년 농림수산식품모태펀드 정기 출자사업(수산 계정) 접수 현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-04-01">2026-04-01</time><span class="lp-notice-date-sub">공고 2026-04-01</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15034&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="우체국예금 해외 사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 공고 우정사업본부 PEF 마감 2026-04-06 재간접 " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2026-03-30" data-deadline="2026-04-06">
+          </article>              <article class="lp-notice-row" data-search="우체국예금 해외 사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 공고 우정사업본부 PEF 마감 마감 2026-04-06 재간접 " data-lp="koreapost" data-lp-name="우정사업본부" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2026-03-30" data-deadline="2026-04-06">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>우정사업본부</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=348&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">우체국예금 해외 사모펀드 운용을 위한 국내 재간접 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 재간접</dd>
+                <dt>기관명</dt>
+                <dd>우정사업본부</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-04-06">2026-04-06</time><span class="lp-notice-date-sub">공고 2026-03-30</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF · 재간접</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.kpasset.go.kr/board.es?mid=a10510000000&amp;bid=0041&amp;bid2=&amp;bid3=&amp;act=view&amp;list_no=348&amp;tag=&amp;nPage=1" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.kpasset.go.kr/download.es?filename=1774856110366.hwp&amp;amp;filenameOrg=우체국예금 해외사모 위탁운용사선정 공고문.hwp&amp;amp;f_path=board&amp;amp;bid=0041&amp;amp;type=board&amp;amp;bid=0041&amp;amp;list_no=348&amp;amp;seq=1" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 VC 마감 2026-03-03 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="closed" data-status-group="history" data-date="2026-03-03" data-deadline="2026-03-03">
+          </article>              <article class="lp-notice-row" data-search="2026년 농림수산식품모태펀드 정기 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 VC 마감 접수 2026-03-03 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="closed" data-status-group="history" data-date="2026-03-03" data-deadline="2026-03-03">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14945&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2026년 농림수산식품모태펀드 정기 출자사업(농식품 계정) 접수 현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-03-03">2026-03-03</time><span class="lp-notice-date-sub">공고 2026-03-03</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14945&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="경찰공제회 국내 PE·VC 위탁 운용사 선정 공고 경찰공제회 PEF/VC 마감 2026-01-26 블라인드 " data-lp="pmaa" data-lp-name="경찰공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-01-12" data-deadline="2026-01-26">
+          </article>              <article class="lp-notice-row" data-search="경찰공제회 국내 PE·VC 위탁 운용사 선정 공고 경찰공제회 PEF/VC 마감 마감 2026-01-26 블라인드 " data-lp="pmaa" data-lp-name="경찰공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2026-01-12" data-deadline="2026-01-26">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>경찰공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do?bbs_idx=38984&amp;recruitCd=&amp;type=view" target="_blank" rel="noreferrer">경찰공제회 국내 PE·VC 위탁 운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>경찰공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2026-01-26">2026-01-26</time><span class="lp-notice-date-sub">공고 2026-01-12</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2312,79 +2331,83 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.pmaa.or.kr/www/1461128463820/bbs.do?bbs_idx=38984&amp;recruitCd=&amp;type=view" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 5차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 2025-11-17 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-11-17" data-deadline="2025-11-17">
+          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 5차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 접수 2025-11-17 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-11-17" data-deadline="2025-11-17">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14809&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2025년 농림수산식품모태펀드 5차 추가 출자사업(농식품 계정) 접수 현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-11-17">2025-11-17</time><span class="lp-notice-date-sub">공고 2025-11-17</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14809&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 4차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 VC 마감 2025-10-16 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="closed" data-status-group="history" data-date="2025-10-16" data-deadline="2025-10-16">
+          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 4차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 VC 마감 접수 2025-10-16 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="VC" data-status="closed" data-status-group="history" data-date="2025-10-16" data-deadline="2025-10-16">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14769&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2025년 농림수산식품모태펀드 4차 추가 출자사업(농식품 계정) 접수 현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-10-16">2025-10-16</time><span class="lp-notice-date-sub">공고 2025-10-16</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14769&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 3차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 2025-09-16 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-09-16" data-deadline="2025-09-16">
+          </article>              <article class="lp-notice-row" data-search="2025년 농림수산식품모태펀드 3차 추가 출자사업(농식품 계정) 접수 현황 농업정책보험금융원 PEF/VC 마감 접수 2025-09-16 모태펀드 " data-lp="kafi" data-lp-name="농업정책보험금융원" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2025-09-16" data-deadline="2025-09-16">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>농업정책보험금융원</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">접수</span></p>
               <h2><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14745&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">2025년 농림수산식품모태펀드 3차 추가 출자사업(농식품 계정) 접수 현황</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 모태펀드</dd>
+                <dt>기관명</dt>
+                <dd>농업정책보험금융원</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-09-16">2025-09-16</time><span class="lp-notice-date-sub">공고 2025-09-16</span></dd>
               </div>
               <div>
-                <dt>출자규모</dt>
-                <dd>-</dd>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 모태펀드</dd>
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=14745&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">공고 원문</a></div>
-          </article>              <article class="lp-notice-row" data-search="권역별 골프장 투자사업 위탁운용사 선정 공고문 한국교직원공제회 부동산 마감 2025-08-04 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="부동산" data-status="closed" data-status-group="history" data-date="2025-07-02" data-deadline="2025-08-04">
+          </article>              <article class="lp-notice-row" data-search="권역별 골프장 투자사업 위탁운용사 선정 공고문 한국교직원공제회 부동산 마감 마감 2025-08-04 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="부동산" data-status="closed" data-status-group="history" data-date="2025-07-02" data-deadline="2025-08-04">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57882" target="_blank" rel="noreferrer">권역별 골프장 투자사업 위탁운용사 선정 공고문</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>부동산 · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-08-04">2025-08-04</time><span class="lp-notice-date-sub">공고 2025-07-02</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>부동산 · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2392,19 +2415,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57882" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=kzb7-_Otp0gFbDw2jIFhrlA%3d%3d&amp;fileTy=ATTACH&amp;fileNo=gaRh_XUkjkrTOVEshGiKLw%3d%3d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 VC 마감 2025-05-26 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="VC" data-status="closed" data-status-group="history" data-date="2025-05-09" data-deadline="2025-05-26">
+          </article>              <article class="lp-notice-row" data-search="2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 VC 마감 마감 2025-05-26 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="VC" data-status="closed" data-status-group="history" data-date="2025-05-09" data-deadline="2025-05-26">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57425" target="_blank" rel="noreferrer">2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-05-26">2025-05-26</time><span class="lp-notice-date-sub">공고 2025-05-09</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2412,19 +2439,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57425" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=06NjLOiBt0_3SDuZNf2bnA%3d%3d&amp;fileTy=ATTACH&amp;fileNo=Mctn-_p9o9IYlVidy-_cY3BQ%3d%3d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고 한국교직원공제회 PEF 마감 2025-04-04 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2025-03-21" data-deadline="2025-04-04">
+          </article>              <article class="lp-notice-row" data-search="2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고 한국교직원공제회 PEF 마감 마감 2025-04-04 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2025-03-21" data-deadline="2025-04-04">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57104" target="_blank" rel="noreferrer">2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2025-04-04">2025-04-04</time><span class="lp-notice-date-sub">공고 2025-03-21</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2432,19 +2463,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.ktcu.or.kr/PPW-CSB-000101/57104" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=cRiH8ejCqT2mM1F5l9eiPQ%3d%3d&amp;fileTy=ATTACH&amp;fileNo=ofotcQfnTTBoHx7LB5ttZA%3d%3d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2023년 한국교직원공제회 PEF 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 PEF 마감 2023-08-25 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2023-08-11" data-deadline="2023-08-25">
+          </article>              <article class="lp-notice-row" data-search="2023년 한국교직원공제회 PEF 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 PEF 마감 마감 2023-08-25 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF" data-status="closed" data-status-group="history" data-date="2023-08-11" data-deadline="2023-08-25">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44724" target="_blank" rel="noreferrer">2023년 한국교직원공제회 PEF 블라인드 펀드 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2023-08-25">2023-08-25</time><span class="lp-notice-date-sub">공고 2023-08-11</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2452,19 +2487,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44724" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=yYBcfm8TdhnuxJKxko2noA%3d%3d&amp;fileTy=ATTACH&amp;fileNo=V6U2X1YSWctLk8oe9yzZrQ%3d%3d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2019년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 PEF/VC 마감 2019-05-10 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2019-04-05" data-deadline="2019-05-10">
+          </article>              <article class="lp-notice-row" data-search="2019년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 공고 한국교직원공제회 PEF/VC 마감 마감 2019-05-10 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2019-04-05" data-deadline="2019-05-10">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44367" target="_blank" rel="noreferrer">2019년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 공고</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2019-05-10">2019-05-10</time><span class="lp-notice-date-sub">공고 2019-04-05</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
@@ -2472,19 +2511,23 @@
               </div>
             </dl>
             <div class="lp-page-actions lp-notice-actions" aria-label="공고 자료"><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44367" target="_blank" rel="noreferrer">공고 원문</a><a href="https://www.ktcu.or.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=uqw4D317cF8tNfpT9gLTqQ%3d%3d&amp;fileTy=ATTACH&amp;fileNo=OhHlnS_cAonfxafNI9wEbw%3d%3d" target="_blank" rel="noreferrer">첨부파일</a></div>
-          </article>              <article class="lp-notice-row" data-search="2017년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 계획 한국교직원공제회 PEF/VC 마감 2017-10-13 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2017-09-22" data-deadline="2017-10-13">
+          </article>              <article class="lp-notice-row" data-search="2017년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 계획 한국교직원공제회 PEF/VC 마감 마감 2017-10-13 블라인드 " data-lp="ktcu" data-lp-name="한국교직원공제회" data-asset="PEF/VC" data-status="closed" data-status-group="history" data-date="2017-09-22" data-deadline="2017-10-13">
             <div class="lp-notice-main">
-              <p class="lp-notice-eyebrow"><span class="lp-notice-status">마감</span><span>한국교직원공제회</span></p>
+              <p class="lp-notice-kicker"><span class="lp-notice-stage">마감</span></p>
               <h2><a href="https://www.ktcu.or.kr/PPW-CSB-000101/44261" target="_blank" rel="noreferrer">2017년 한국교직원공제회 블라인드 펀드 위탁운용사 선정 계획</a></h2>
             </div>
             <dl class="lp-notice-facts">
               <div>
-                <dt>자산군</dt>
-                <dd>PEF/VC · 블라인드</dd>
+                <dt>기관명</dt>
+                <dd>한국교직원공제회</dd>
               </div>
               <div>
                 <dt>마감</dt>
                 <dd><time datetime="2017-10-13">2017-10-13</time><span class="lp-notice-date-sub">공고 2017-09-22</span></dd>
+              </div>
+              <div>
+                <dt>자산군</dt>
+                <dd>PEF/VC · 블라인드</dd>
               </div>
               <div>
                 <dt>출자규모</dt>
