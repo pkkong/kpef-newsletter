@@ -535,6 +535,98 @@
     body.lp-notices-page .lp-notice-controls {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    body.lp-notices-page .lp-lifecycle-summary {
+      margin: 0 0 14px;
+    }
+    body.lp-notices-page .lp-lifecycle-title {
+      display: grid;
+      gap: 3px;
+      margin: 0 0 8px;
+    }
+    body.lp-notices-page .lp-lifecycle-title h2 {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 780;
+      line-height: 1.35;
+    }
+    body.lp-notices-page .lp-lifecycle-title p {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 620;
+      line-height: 1.42;
+    }
+    body.lp-notices-page .lp-lifecycle-table {
+      overflow: hidden;
+      border: 1px solid var(--separator);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    body.lp-notices-page .lp-lifecycle-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) 34px 34px 34px 34px 34px 58px minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--separator);
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 660;
+      text-decoration: none;
+    }
+    body.lp-notices-page .lp-lifecycle-row:last-child {
+      border-bottom: 0;
+    }
+    body.lp-notices-page a.lp-lifecycle-row:hover {
+      background: #fafafa;
+    }
+    body.lp-notices-page .lp-lifecycle-row.is-head {
+      min-height: 36px;
+      background: var(--surface-strong);
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 760;
+    }
+    body.lp-notices-page .lp-lifecycle-row span {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    body.lp-notices-page .lp-lifecycle-row span:not(:first-child) {
+      text-align: right;
+    }
+    body.lp-notices-page .lp-lifecycle-program {
+      display: grid;
+      gap: 2px;
+      text-align: left !important;
+    }
+    body.lp-notices-page .lp-lifecycle-program strong {
+      min-width: 0;
+      overflow: hidden;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 760;
+      line-height: 1.3;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    body.lp-notices-page .lp-lifecycle-program em {
+      min-width: 0;
+      overflow: hidden;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-style: normal;
+      font-weight: 620;
+      line-height: 1.3;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    body.lp-notices-page .lp-lifecycle-latest {
+      text-align: left !important;
+    }
     body.lp-notices-page .lp-notice-year-summary {
       margin: 0 0 14px;
       border: 1px solid var(--separator);
@@ -762,6 +854,11 @@
         grid-template-columns: 90px 80px 80px 80px minmax(180px, 1fr);
         padding: 0 14px;
       }
+      body.lp-notices-page .lp-lifecycle-row {
+        grid-template-columns: minmax(230px, 1.5fr) 54px 54px 54px 54px 54px 86px minmax(250px, 1.2fr);
+        gap: 10px;
+        padding: 0 14px;
+      }
       body.lp-notices-page .lp-notice-groups {
         gap: 18px;
       }
@@ -835,6 +932,128 @@
 
 
       <section class="section-block" id="lpNotices" aria-label="LP 공식 공고">
+        <section class="lp-lifecycle-summary" aria-label="출자 진행 현황">
+          <div class="lp-lifecycle-title">
+            <h2>출자 진행 현황</h2>
+            <p>프로그램 158개 · 단계 기록 311건 · 진행중 16건 · 서류 4건 · 최종 24건 · GP 연결 138건 · 30.09조</p>
+          </div>
+          <div class="lp-lifecycle-table" role="table" aria-label="프로그램별 출자 진행 현황">
+            <div class="lp-lifecycle-row is-head" role="row">
+              <span>프로그램</span>
+              <span>기록</span>
+              <span>진행</span>
+              <span>서류</span>
+              <span>최종</span>
+              <span>GP</span>
+              <span>규모</span>
+              <span>최근 공고</span>
+            </div>
+          <a class="lp-lifecycle-row"  href="https://www.kgrowth.or.kr/notice_view.asp?page=1&amp;search_colume=&amp;search_text=&amp;idx=1039&amp;str_type=1&amp;tab=1" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>국민성장펀드 2차</strong>
+              <em>한국성장금융 · 국민성장펀드 · 진행중</em>
+            </span>
+            <span>7</span>
+            <span>3</span>
+            <span>0</span>
+            <span>1</span>
+            <span>5</span>
+            <span>1.40조</span>
+            <span class="lp-lifecycle-latest">2026-06-01 · 【선정공고】「은행권 기후기술펀드 3호」 2026년 위탁운용사 선정계획 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.apfs.kr/front/board/boardContentsView.do?miv_pageNo=1&amp;miv_pageSize=50&amp;total_cnt=&amp;LISTOP=&amp;mode=W&amp;contId=15109&amp;delYn=N&amp;menuId=5386&amp;boardId=10026&amp;selTab=1&amp;requestUrl=&amp;searchKey=A&amp;searchTxt=" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>농식품모태펀드 2차</strong>
+              <em>농업정책보험금융원 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>14</span>
+            <span>1</span>
+            <span>0</span>
+            <span>4</span>
+            <span>10</span>
+            <span>1,609억</span>
+            <span class="lp-lifecycle-latest">2026-05-29 · 2026년 농림수산식품모태펀드 2차 추가 출자사업(농식품 계정) 접수현황</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130369?cp=1&amp;pageSize=500&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>모태펀드 1차 출자</strong>
+              <em>한국벤처투자 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>1</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>-</span>
+            <span class="lp-lifecycle-latest">2026-05-29 · 모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://ngf.kdb.co.kr/BOUBUF02N00.act?_mnuId=WBGFGF0007&amp;_PARAM_NAME=NEXT_DATA&amp;_PARM_DATA=%7B%22ITR_NAC_ID_MNG_SNO%22%3A%22186157%22%2C%22ITR_BLB_ID%22%3A%22PDS463%22%2C%22NAC_SNO%22%3A%2210%22%2C%22FIRST_MENU_ID%22%3A%22GFIMMG01N00%22%2C%22CTG_C%22%3A%2201%22%2C%22DCD_SNO%22%3A%2272185%22%7D" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>국민성장펀드 2차</strong>
+              <em>한국벤처투자 · PEF/VC · 국민성장펀드 · 진행중</em>
+            </span>
+            <span>1</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>6,950억</span>
+            <span class="lp-lifecycle-latest">2026-05-27 · 【선정공고】『국민성장펀드(간접투자분야) 정책성 펀드』2026년 2차 위탁운용사 선정계획 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130355?cp=1&amp;pageSize=500&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>모태펀드 1차 출자</strong>
+              <em>중소벤처기업진흥공단 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>1</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>600억</span>
+            <span class="lp-lifecycle-latest">2026-05-22 · 하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130340?cp=1&amp;pageSize=500&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>모태펀드 수시</strong>
+              <em>한국벤처투자 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>25</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>1.95조</span>
+            <span class="lp-lifecycle-latest">2026-05-15 · 모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130298?cp=1&amp;pageSize=500&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>농식품모태펀드 2차</strong>
+              <em>한국성장금융 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>2</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>880억</span>
+            <span class="lp-lifecycle-latest">2026-05-13 · 「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고</span>
+          </a>
+          <a class="lp-lifecycle-row"  href="https://www.vcs.go.kr/web/portal/bbs/invtnotice/130297?cp=1&amp;pageSize=500&amp;bcId=invtnotice&amp;baNotice=false&amp;baCommSelec=false&amp;baOpenDay=false&amp;baUse=true" target="_blank" rel="noreferrer">
+            <span class="lp-lifecycle-program">
+              <strong>농식품모태펀드 2차</strong>
+              <em>한국벤처투자 · PEF/VC · 모태펀드 · 진행중</em>
+            </span>
+            <span>6</span>
+            <span>1</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>6,275억</span>
+            <span class="lp-lifecycle-latest">2026-05-11 · 모태펀드(보건복지부) 2026년 5월 수시 출자사업 계획 공고</span>
+          </a>
+          </div>
+        </section>
         <div class="lp-notice-year-summary" aria-label="연도별 출자공고 요약">
           <div class="lp-year-row is-head" aria-hidden="true">
             <span>연도</span>
