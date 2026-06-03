@@ -1213,7 +1213,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -1240,7 +1246,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -1267,7 +1279,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -2377,6 +2395,11 @@
             "code": "kdb",
             "name": "한국산업은행",
             "url": "lp-kdb.html"
+          },
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
           }
         ],
         "peopleCount": 0,
@@ -3467,7 +3490,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -3494,7 +3523,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -3521,7 +3556,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -3548,7 +3589,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -4101,7 +4148,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "도미누스인베스트먼트",
@@ -4130,7 +4183,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -4915,6 +4974,11 @@
             "code": "kdb",
             "name": "한국산업은행",
             "url": "lp-kdb.html"
+          },
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
           }
         ],
         "peopleCount": 0,
@@ -5075,9 +5139,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
+          "모태펀드",
           "벤처투자",
-          "KVIC",
-          "모태펀드"
+          "KVIC"
         ]
       },
       {
@@ -5618,7 +5682,13 @@
         "lpNames": [
           "한국투자공사"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -7361,7 +7431,18 @@
           "한국투자공사",
           "신용보증기금"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          },
+          {
+            "code": "kodit",
+            "name": "신용보증기금",
+            "url": "lp-kodit.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자공사",
@@ -7839,7 +7920,13 @@
         "lpNames": [
           "과학기술인공제회"
         ],
-        "lpProfileLinks": [],
+        "lpProfileLinks": [
+          {
+            "code": "sema",
+            "name": "과학기술인공제회",
+            "url": "lp-sema.html"
+          }
+        ],
         "peopleCount": 0,
         "searchTerms": [
           "과학기술인공제회",
