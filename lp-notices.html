@@ -811,6 +811,26 @@
     body.lp-notices-page .lp-notice-facts time {
       color: inherit;
     }
+    body.lp-notices-page .lp-notice-materials {
+      grid-column: 1 / -1;
+    }
+    body.lp-notices-page .lp-notice-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    body.lp-notices-page .lp-notice-links a {
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 680;
+      text-decoration: none;
+    }
+    body.lp-notices-page .lp-notice-links a:hover {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
     body.lp-notices-page .lp-notice-date-sub {
       display: block;
       margin-top: 2px;
@@ -846,7 +866,12 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    @media (min-width: 760px) {
+    @media (max-width: 620px) {
+      body.lp-notices-page .lp-lifecycle-table {
+        display: none;
+      }
+    }
+    @media (min-width: 960px) {
       body.lp-notices-page .lp-notice-controls {
         grid-template-columns: 140px 130px 160px minmax(180px, 1fr) 150px;
       }
@@ -855,7 +880,7 @@
         padding: 0 14px;
       }
       body.lp-notices-page .lp-lifecycle-row {
-        grid-template-columns: minmax(230px, 1.5fr) 54px 54px 54px 54px 54px 86px minmax(250px, 1.2fr);
+        grid-template-columns: minmax(180px, 1.5fr) repeat(5, minmax(42px, 54px)) minmax(68px, 86px) minmax(180px, 1.2fr);
         gap: 10px;
         padding: 0 14px;
       }
@@ -884,11 +909,14 @@
         font-size: 15.5px;
       }
       body.lp-notices-page .lp-notice-facts {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 8px 16px;
       }
       body.lp-notices-page .lp-notice-facts div {
         grid-template-columns: minmax(0, 1fr);
+      }
+      body.lp-notices-page .lp-notice-materials {
+        grid-column: auto;
       }
       body.lp-notices-page .lp-notice-actions {
         grid-column: 2;
@@ -925,14 +953,14 @@
       <section class="lp-directory-hero" aria-label="LP 디렉토리 요약">
         <div>
           <h1 class="lp-directory-title"><strong>52개</strong> 출자기관</h1>
-          <p class="lp-directory-meta">핵심 LP 21개 · OCIO/공적기금 17개 · 정책펀드 14개 · 공식 공고 250건 · 2026-06-03 기준</p>
+          <p class="lp-directory-meta">핵심 LP 21개 · OCIO/공적기금 17개 · 정책펀드 14개 · 공식 공고 255건 · 2026-06-03 기준</p>
         </div>
 
         <div class="lp-directory-kpis">
           <div><span>대상 기관</span><strong>52개</strong></div>
           <div><span>OCIO/공적기금</span><strong>17개</strong></div>
           <div><span>공고 기준 규모</span><strong>30.39조</strong></div>
-          <div><span>출자공고</span><strong>250건</strong></div>
+          <div><span>출자공고</span><strong>255건</strong></div>
         </div>
       </section>
 
@@ -968,15 +996,15 @@
             <span>공고 규모</span>
           </div>
           <div class="lp-directory-grid">
-          <article class="lp-directory-card" aria-label="국민연금기금" data-search="국민연금기금 공적연기금 공공 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라 core" data-name="국민연금기금" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="공적연기금 공공" data-tier="core" data-tracking="1" data-notices="7" data-amount="0.0000" data-latest="2021-07-29">
+          <article class="lp-directory-card" aria-label="국민연금기금" data-search="국민연금기금 공적연기금 공공 아시아사모투자팀 PEF · VC · 사모대출 · 부동산 · 인프라 core" data-name="국민연금기금" data-lp="nps" data-asset="PEF · VC · 사모대출 · 부동산 · 인프라" data-kind="공적연기금 공공" data-tier="core" data-tracking="1" data-notices="30" data-amount="0.0000" data-latest="2026-04-03">
             <span class="lp-directory-avatar has-logo" data-tone="2" aria-hidden="true" style="--logo-img-width: 30px; --logo-img-height: 24px;"><img src="assets/brand-marks/fund-nps-or-kr.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>국민</span></span>
             <div class="lp-directory-card-head">
               <strong><a href="lp-nps.html">국민연금기금</a></strong>
             </div>
             <p class="lp-directory-focus">PEF · VC · 사모대출 · 부동산 · 인프라</p>
-            <span class="lp-directory-latest">2021-07-29</span>
+            <span class="lp-directory-latest">2026-04-03</span>
             <dl class="lp-directory-metrics">
-              <div><dt>출자공고</dt><dd>7건</dd></div>
+              <div><dt>출자공고</dt><dd>30건</dd></div>
               <div><dt>공고 규모</dt><dd>-</dd></div>
             </dl>
           </article>
