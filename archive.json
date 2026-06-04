@@ -1,5 +1,758 @@
 [
   {
+    "reportDate": "2026-06-05",
+    "visibleDate": "2026.06.05",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260605-0",
+        "rank": 0,
+        "section": "AI & PE",
+        "subCategory": "AI 투자·인프라",
+        "rawSection": "AI & PE",
+        "title": "‘2조원대’ SK 울산 AI 데이터센터 지분 매각, 이달 말 본계약",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "assets/brand-marks/biz-chosun-com.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/06/04/T7LNRT5EIJEX3EYDYMQ4PIUC3I",
+        "sectionOrder": 0,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-1",
+        "rank": 1,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "산재기금, VC 출자 임박…역대급 경쟁률 예고",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606020900497520104368",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260605-2",
+        "rank": 2,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "[150조 국민성장펀드] 1000억 못 모은 퓨리오사에…나랏돈 4000억 집행",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162800",
+        "sectionOrder": 1,
+        "gpNames": [
+          "한국투자파트너스",
+          "산은캐피탈",
+          "한화자산운용"
+        ],
+        "lpNames": [
+          "한국산업은행"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kdb",
+            "name": "한국산업은행",
+            "url": "lp-kdb.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국투자파트너스",
+          "산은캐피탈",
+          "한화자산운용",
+          "한국산업은행",
+          "kdb",
+          "국민참여형 국민성장펀드",
+          "국민성장펀드",
+          "산업은행",
+          "산은"
+        ]
+      },
+      {
+        "id": "clip-20260605-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "[KDB생명 매각] 생보 빅3 첫 등판 …'실리 셈법' 분주",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162941",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[마켓인]“우린 일반 사모펀드와 달라”…브룩필드가 밝힌 韓 M&A 청사진",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03955686645478440",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-5",
+        "rank": 5,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "Deal",
+        "title": "판 커진 KDB생명 매각전…연내 딜클로징 나설까",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606020504210220103771",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "이음PE, 태웅로직스와 이투마스 매각 MOU…지분 86% 771억원 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20051845",
+        "sectionOrder": 2,
+        "gpNames": [
+          "이음프라이빗에쿼티"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "이음프라이빗에쿼티"
+        ]
+      },
+      {
+        "id": "clip-20260605-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "이음PE, 역직구 플랫폼 이투마스 4년만 회수…태웅로직스에 경영권 매각",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "assets/brand-marks/etoday-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
+        "url": "https://www.etoday.co.kr/news/view/2590587",
+        "sectionOrder": 2,
+        "gpNames": [
+          "이음프라이빗에쿼티"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "이음프라이빗에쿼티"
+        ]
+      },
+      {
+        "id": "clip-20260605-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Auction",
+        "rawSection": "Deal",
+        "title": "불붙은 ‘율곡’ 인수전…흥행 분위기 속 본입찰 연기",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "assets/brand-marks/biz-heraldcorp-com.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10763553",
+        "sectionOrder": 2,
+        "gpNames": [
+          "케이씨지아이",
+          "제이케이엘파트너스",
+          "프리미어파트너스",
+          "스틱인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 40,
+        "searchTerms": [
+          "케이씨지아이",
+          "KCGI",
+          "제이케이엘파트너스",
+          "JKL",
+          "JKL파트너스",
+          "프리미어파트너스",
+          "스틱인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260605-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[SK 도시가스 리밸런싱] \"제2의 MBK 사태 터지나\"…외국계 사모펀드에 팔...",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/162867",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 13,
+        "searchTerms": [
+          "엠비케이파트너스",
+          "MBK"
+        ]
+      },
+      {
+        "id": "clip-20260605-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "그린에코솔루션 인수전, 최종 제안서 접수…복수 업체 참여",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "assets/brand-marks/etoday-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
+        "url": "https://www.etoday.co.kr/news/view/2590479",
+        "sectionOrder": 2,
+        "gpNames": [
+          "한앤컴퍼니"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한앤컴퍼니"
+        ]
+      },
+      {
+        "id": "clip-20260605-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "신생 PE 블루리프, 제노에너지 인수 마무리…1100억 규모[마켓인]",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05690806645478440",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-12",
+        "rank": 12,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "닥터멜락신 운영사 '브랜드501', 3조 밸류 투자유치 추진",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606011128284000103623",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-13",
+        "rank": 13,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "칼라일, 청호나이스 인수 계약 체결…매각가 1조원대",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/04/2026060480206.html",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-14",
+        "rank": 14,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "PEF 케이스톤 품에 안겼더니…‘핌즈’, 이커머스 필수 인프라로 도약",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12065531",
+        "sectionOrder": 2,
+        "gpNames": [
+          "SK에너지",
+          "케이스톤파트너스"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 5,
+        "searchTerms": [
+          "SK에너지",
+          "케이스톤파트너스"
+        ]
+      },
+      {
+        "id": "clip-20260605-15",
+        "rank": 15,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "성장금융, 은행권 중견기업 밸류업펀드 3차 출항…1천500억 배정",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4418305",
+        "sectionOrder": 3,
+        "gpNames": [
+          "웰투시인베스트먼트",
+          "유진프라이빗에쿼티",
+          "아이엠엠크레딧앤솔루션",
+          "제이앤프라이빗에쿼티",
+          "아주아이비투자"
+        ],
+        "lpNames": [
+          "한국성장금융"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kgrowth",
+            "name": "한국성장금융",
+            "url": "lp-kgrowth.html"
+          }
+        ],
+        "peopleCount": 3,
+        "searchTerms": [
+          "웰투시인베스트먼트",
+          "유진프라이빗에쿼티",
+          "아이엠엠크레딧앤솔루션",
+          "IMM크레딧앤솔루션",
+          "제이앤프라이빗에쿼티",
+          "아주아이비투자",
+          "한국성장금융",
+          "kgrowth",
+          "성장금융",
+          "K-Growth",
+          "K-Growth Fund"
+        ]
+      },
+      {
+        "id": "clip-20260605-16",
+        "rank": 16,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "KIC 도쿄지사 7월 7일 개소 유력…\"아태지역 투자 주도 기대\"",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4418252",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "kic",
+            "name": "한국투자공사",
+            "url": "lp-kic.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한국투자공사",
+          "kic",
+          "국부펀드",
+          "KIC"
+        ]
+      },
+      {
+        "id": "clip-20260605-17",
+        "rank": 17,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "대체투자 강자 브룩필드운용 국내 임대주택시장 진출 타진",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12065999",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-18",
+        "rank": 18,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "LP",
+        "title": "\"국감 방어용?\"…보수적 잣대에 신생사 추풍낙엽",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=664406",
+        "sectionOrder": 5,
+        "gpNames": [
+          "파라투스인베스트먼트",
+          "오픈워터인베스트먼트",
+          "삼호그린인베스트먼트",
+          "아주아이비투자",
+          "웰투시인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 5,
+        "searchTerms": [
+          "파라투스인베스트먼트",
+          "오픈워터인베스트먼트",
+          "삼호그린인베스트먼트",
+          "아주아이비투자",
+          "웰투시인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260605-19",
+        "rank": 19,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "국민연금, 90년대생 실무진 전면 등장…LP 영업 문화도 바뀐다",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/04/2026060480195.html",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
+        "lpProfileLinks": [
+          {
+            "code": "nps",
+            "name": "국민연금기금",
+            "url": "lp-nps.html"
+          }
+        ],
+        "peopleCount": 0,
+        "searchTerms": [
+          "국민연금기금",
+          "nps",
+          "기금운용본부",
+          "국민연금공단",
+          "국민연금"
+        ]
+      },
+      {
+        "id": "clip-20260605-20",
+        "rank": 20,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "스틱 첫 사모채 200억 발행…1.6조 '울산GPS' 투자재원 확보",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=664355",
+        "sectionOrder": 4,
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "스틱인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260605-21",
+        "rank": 21,
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
+        "title": "한앤코, ‘부동산 전문가’ 이형섭 하인즈코리아 대표 영입 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20051679",
+        "sectionOrder": 4,
+        "gpNames": [
+          "한앤컴퍼니"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "한앤컴퍼니"
+        ]
+      },
+      {
+        "id": "clip-20260605-22",
+        "rank": 22,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://view.asiae.co.kr/article/2026052611385718194",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-23",
+        "rank": 23,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "IMM희망재단, ﻿2026 정기 수여식 성료…3회 연속 참석인원 증가세",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "assets/brand-marks/marketinsight-hankyung-com.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202606047748r",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-24",
+        "rank": 24,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "사모대출 리스크, 사모펀드로 전이되나…스위스 파트너스그룹 환매제한",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4418259",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-25",
+        "rank": 25,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Market",
+        "title": "인력교체 이어 국장 공백까지…공정위發 대형 M&A 지연 우려",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/04/2026060480193.html",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-26",
+        "rank": 26,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "블랙스톤도 사모대출펀드 환매 5%로 제한",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02551846645478768",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-27",
+        "rank": 27,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "[미국 특징주] 사모대출 '환매 불안' 재발…블랙스톤마저 빗장",
+        "titleBadges": [],
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "assets/brand-marks/newspim-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.newspim.com/news/view/20260605000056",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-28",
+        "rank": 28,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "블랙스톤, 사모대출펀드 환매 5%로 제한…부실화 우려 지속",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=664495",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260605-29",
+        "rank": 29,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "블랙스톤도 손 들었다…사모대출 펀드 첫 인출 제한",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://view.asiae.co.kr/article/2026060423544652824",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-04",
     "visibleDate": "2026.06.04",
     "basis": "",
@@ -164,7 +917,7 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 38,
+        "peopleCount": 0,
         "searchTerms": [
           "프리미어파트너스"
         ]
@@ -232,7 +985,7 @@
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 5,
+        "peopleCount": 0,
         "searchTerms": [
           "케이스톤파트너스"
         ]
@@ -278,8 +1031,7 @@
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "케이씨지아이",
-          "KCGI"
+          "케이씨지아이"
         ]
       },
       {
@@ -292,7 +1044,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162823",
         "sectionOrder": 2,
@@ -507,16 +1259,16 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162650",
         "sectionOrder": 1,
         "gpNames": [
-          "웰투시인베스트먼트",
-          "한국투자파트너스",
           "도미누스인베스트먼트",
           "스카이레이크에쿼티파트너스",
-          "케이엘앤파트너스"
+          "웰투시인베스트먼트",
+          "케이엘앤파트너스",
+          "한국투자파트너스"
         ],
         "lpNames": [
           "한국산업은행"
@@ -528,15 +1280,15 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 4,
+        "peopleCount": 1,
         "searchTerms": [
-          "웰투시인베스트먼트",
-          "한국투자파트너스",
           "도미누스인베스트먼트",
-          "한국산업은행",
           "스카이레이크에쿼티파트너스",
           "스카이레이크",
+          "웰투시인베스트먼트",
           "케이엘앤파트너스",
+          "한국산업은행",
+          "한국투자파트너스",
           "kdb",
           "국민참여형 국민성장펀드",
           "국민성장펀드",
@@ -554,7 +1306,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162674",
         "sectionOrder": 1,
@@ -607,7 +1359,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161980",
         "sectionOrder": 2,
@@ -668,21 +1420,19 @@
         "url": "https://biz.heraldcorp.com/article/10762607",
         "sectionOrder": 2,
         "gpNames": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스",
           "브이아이지파트너스",
+          "제이케이엘파트너스",
+          "스틱인베스트먼트",
           "프리미어파트너스"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 8,
+        "peopleCount": 3,
         "searchTerms": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스",
-          "JKL",
-          "JKL파트너스",
           "브이아이지파트너스",
           "VIG",
+          "제이케이엘파트너스",
+          "스틱인베스트먼트",
           "프리미어파트너스"
         ]
       },
@@ -701,20 +1451,20 @@
         "url": "https://www.investchosun.com/site/data/html_dir/2026/06/02/2026060280133.html",
         "sectionOrder": 2,
         "gpNames": [
-          "신한투자증권",
           "부산에쿼티파트너스",
           "스카이레이크에쿼티파트너스",
           "스틱인베스트먼트",
+          "신한투자증권",
           "어펄마캐피탈매니져스코리아"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "신한투자증권",
           "부산에쿼티파트너스",
           "스카이레이크에쿼티파트너스",
           "스틱인베스트먼트",
+          "신한투자증권",
           "어펄마캐피탈매니져스코리아"
         ]
       },
@@ -914,7 +1664,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162943",
         "sectionOrder": 3,
@@ -948,14 +1698,14 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162881",
         "sectionOrder": 0,
         "gpNames": [
           "대우증권",
-          "지앤텍벤처투자",
           "새한창업투자",
+          "지앤텍벤처투자",
           "미래에셋벤처투자"
         ],
         "lpNames": [
@@ -971,8 +1721,8 @@
         "peopleCount": 0,
         "searchTerms": [
           "대우증권",
-          "지앤텍벤처투자",
           "새한창업투자",
+          "지앤텍벤처투자",
           "미래에셋벤처투자",
           "한국성장금융",
           "kgrowth",
@@ -1089,7 +1839,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162937",
         "sectionOrder": 2,
@@ -1098,8 +1848,8 @@
           "브이인베스트먼트",
           "브이인베스트",
           "케이앤투자파트너스",
-          "아이엠엠인베스트먼트",
           "미래에셋벤처투자",
+          "아이엠엠인베스트먼트",
           "에스브이인베스트먼트",
           "이스트브릿지파트너스"
         ],
@@ -1113,14 +1863,14 @@
             "url": "lp-kdb.html"
           }
         ],
-        "peopleCount": 21,
+        "peopleCount": 0,
         "searchTerms": [
           "엘비인베스트먼트",
           "브이인베스트먼트",
           "브이인베스트",
           "케이앤투자파트너스",
-          "아이엠엠인베스트먼트",
           "미래에셋벤처투자",
+          "아이엠엠인베스트먼트",
           "에스브이인베스트먼트",
           "이스트브릿지파트너스",
           "한국산업은행",
@@ -1208,14 +1958,14 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162787",
         "sectionOrder": 1,
         "gpNames": [
           "산은캐피탈",
-          "한화자산운용",
-          "한국투자파트너스"
+          "한국투자파트너스",
+          "한화자산운용"
         ],
         "lpNames": [
           "한국산업은행"
@@ -1230,9 +1980,9 @@
         "peopleCount": 0,
         "searchTerms": [
           "산은캐피탈",
-          "한화자산운용",
           "한국산업은행",
           "한국투자파트너스",
+          "한화자산운용",
           "kdb",
           "국민참여형 국민성장펀드",
           "국민성장펀드",
@@ -1520,7 +2270,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162700",
         "sectionOrder": 2,
@@ -1614,7 +2364,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162470",
         "sectionOrder": 2,
@@ -2210,8 +2960,8 @@
         "searchTerms": [
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품모태펀드",
           "농림수산식품투자조합",
+          "농림수산식품모태펀드",
           "농식품모태펀드",
           "농금원"
         ]
@@ -2250,7 +3000,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162595",
         "sectionOrder": 2,
@@ -2435,8 +3185,7 @@
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "이앤에프프라이빗에퀴티",
-          "E&F프라이빗에쿼티"
+          "이앤에프프라이빗에퀴티"
         ]
       },
       {
@@ -2493,7 +3242,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161523",
         "sectionOrder": 3,
@@ -3106,7 +3855,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162754",
         "sectionOrder": 2,
@@ -3223,16 +3972,16 @@
         "url": "https://www.sedaily.com/article/20049841",
         "sectionOrder": 2,
         "gpNames": [
-          "테넷에쿼티파트너스",
           "유진프라이빗에쿼티",
+          "테넷에쿼티파트너스",
           "스틱인베스트먼트"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "테넷에쿼티파트너스",
           "유진프라이빗에쿼티",
+          "테넷에쿼티파트너스",
           "스틱인베스트먼트"
         ]
       },
@@ -3370,24 +4119,24 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162766",
         "sectionOrder": 4,
         "gpNames": [
-          "키움인베스트먼트",
           "삼호그린인베스트먼트",
           "미래에셋벤처투자",
+          "키움인베스트먼트",
           "브레인자산운용",
           "지앤텍벤처투자"
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 7,
+        "peopleCount": 0,
         "searchTerms": [
-          "키움인베스트먼트",
           "삼호그린인베스트먼트",
           "미래에셋벤처투자",
+          "키움인베스트먼트",
           "브레인자산운용",
           "지앤텍벤처투자"
         ]
@@ -3442,7 +4191,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162765",
         "sectionOrder": 5,
@@ -3655,8 +4404,8 @@
           "산은",
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품모태펀드",
           "농림수산식품투자조합",
+          "농림수산식품모태펀드",
           "농식품모태펀드",
           "농금원"
         ]
@@ -3789,7 +4538,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162620",
         "sectionOrder": 2,
@@ -3813,7 +4562,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162516",
         "sectionOrder": 2,
@@ -3837,7 +4586,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162503",
         "sectionOrder": 2,
@@ -3931,7 +4680,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162555",
         "sectionOrder": 3,
@@ -4107,7 +4856,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162433",
         "sectionOrder": 0,
@@ -4364,7 +5113,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162589",
         "sectionOrder": 1,
@@ -4416,7 +5165,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162599",
         "sectionOrder": 1,
@@ -4451,7 +5200,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162388",
         "sectionOrder": 2,
@@ -4519,7 +5268,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162400",
         "sectionOrder": 2,
@@ -4778,7 +5527,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162427",
         "sectionOrder": 4,
@@ -4840,7 +5589,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162594",
         "sectionOrder": 4,
@@ -5032,7 +5781,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162480",
         "sectionOrder": 5,
@@ -5583,7 +6332,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162393",
         "sectionOrder": 5,
@@ -5631,9 +6380,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
-          "벤처투자"
+          "벤처투자",
+          "KVIC"
         ]
       },
       {
@@ -6362,8 +7111,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "KBIZ",
-          "중기중앙"
+          "중기중앙",
+          "KBIZ"
         ]
       },
       {
@@ -6457,7 +7206,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162181",
         "sectionOrder": 5,
@@ -6583,7 +7332,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162021",
         "sectionOrder": 2,
@@ -6935,7 +7684,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161695",
         "sectionOrder": 2,
@@ -7314,7 +8063,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161629",
         "sectionOrder": 4,
@@ -8045,7 +8794,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161410",
         "sectionOrder": 4,
@@ -8268,7 +9017,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161345",
         "sectionOrder": 2,
@@ -8437,7 +9186,7 @@
         "titleBadges": [],
         "source": "딜사이트",
         "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/161255",
         "sectionOrder": 4,
@@ -8473,68 +9222,6 @@
         "peopleCount": 0,
         "searchTerms": [
           "얼라인파트너스자산운용"
-        ]
-      }
-    ]
-  },
-  {
-    "reportDate": "2026-05-06",
-    "visibleDate": "2026.05.06",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260506-0",
-        "rank": 0,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "'캐시카우' 배당 규모 더 커졌다…F&B로 배불리는 사모펀드",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45S2tSUTZWOFVUbzVaeXVycy1Wb2ZaaEZxMzMwMk5UMjdlNU9VODROUE5YcC1rSWt0YWQwanVRRmRoQm4zTkNIRkVzMVdWLXZjNUNHNE9fek5LSTNudGdTMg?oc=5&hl=ko&gl=KR&ceid=KR:ko",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260506-1",
-        "rank": 1,
-        "section": "국민성장펀드",
-        "subCategory": "정책펀드",
-        "rawSection": "LP",
-        "title": "[PEF열전] 150조 국민성장펀드 시대…첨단산업 투자",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KZktDR09OTE5jU3VFelZSb0JrM09haWNYMVhaeHVTYWlJakNvb1ppb0dUMjV3UUtkbzdxRFM1eHpQTlloRkItYS1qQUgxRU9zVEE?oc=5&hl=ko&gl=KR&ceid=KR:ko",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
         ]
       }
     ]
