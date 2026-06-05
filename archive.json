@@ -40,23 +40,23 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행"
+          "산재보험기금"
         ],
         "lpProfileLinks": [
           {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
+            "code": "moel_iaci",
+            "name": "산재보험기금",
+            "url": "lp-moel_iaci.html"
           }
         ],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "산재보험기금",
+          "moel_iaci",
+          "Industrial Accident Compensation Insurance Fund",
+          "산업재해보상보험및예방기금",
+          "고용노동부 산재보험기금",
+          "산재기금"
         ]
       },
       {
@@ -78,27 +78,13 @@
           "산은캐피탈",
           "한화자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "한국투자파트너스",
           "산은캐피탈",
-          "한화자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한화자산운용"
         ]
       },
       {
@@ -537,8 +523,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -792,25 +778,10 @@
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605290844561840104266",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260604-2",
@@ -892,8 +863,6 @@
           "이스트브릿지파트너스",
           "한국산업은행",
           "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
           "산업은행",
           "산은"
         ]
@@ -1140,26 +1109,12 @@
         "gpNames": [
           "에스브이인베스트먼트"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "에스브이인베스트먼트",
-          "SV인베스트먼트",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "SV인베스트먼트"
         ]
       },
       {
@@ -1268,18 +1223,11 @@
           "스카이레이크에쿼티파트너스",
           "웰투시인베스트먼트",
           "케이엘앤파트너스",
+          "한국산업은행",
           "한국투자파트너스"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 1,
         "searchTerms": [
           "도미누스인베스트먼트",
@@ -1288,12 +1236,7 @@
           "웰투시인베스트먼트",
           "케이엘앤파트너스",
           "한국산업은행",
-          "한국투자파트너스",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한국투자파트너스"
         ]
       },
       {
@@ -1316,19 +1259,13 @@
           "미래에셋증권"
         ],
         "lpNames": [
-          "국민연금기금",
-          "한국산업은행"
+          "국민연금기금"
         ],
         "lpProfileLinks": [
           {
             "code": "nps",
             "name": "국민연금기금",
             "url": "lp-nps.html"
-          },
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
           }
         ],
         "peopleCount": 1,
@@ -1338,15 +1275,9 @@
           "미래에셋증권",
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
-          "국민연금",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "기금운용본부",
+          "국민연금"
         ]
       },
       {
@@ -1808,25 +1739,11 @@
         "gpNames": [
           "대신프라이빗에쿼티"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "대신프라이빗에쿼티",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "대신프라이빗에쿼티"
         ]
       },
       {
@@ -1875,8 +1792,6 @@
           "이스트브릿지파트너스",
           "한국산업은행",
           "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
           "산업은행",
           "산은"
         ]
@@ -1964,30 +1879,18 @@
         "sectionOrder": 1,
         "gpNames": [
           "산은캐피탈",
+          "한국산업은행",
           "한국투자파트너스",
           "한화자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "산은캐피탈",
           "한국산업은행",
           "한국투자파트너스",
-          "한화자산운용",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한화자산운용"
         ]
       },
       {
@@ -2005,25 +1908,10 @@
         "url": "https://www.thebell.co.kr/front/newsview.asp?key=202605280804092160101895",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260602-2",
@@ -2042,25 +1930,11 @@
         "gpNames": [
           "파라투스인베스트먼트"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "파라투스인베스트먼트",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "파라투스인베스트먼트"
         ]
       },
       {
@@ -2078,25 +1952,10 @@
         "url": "https://www.etoday.co.kr/news/view/2588898",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260602-4",
@@ -2113,25 +1972,10 @@
         "url": "https://www.thebell.co.kr/front/newsview.asp?key=202605280841565440103110",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260602-5",
@@ -2148,25 +1992,10 @@
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605281007101320103958",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260602-6",
@@ -2566,8 +2395,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -2794,28 +2623,14 @@
           "웰투시인베스트먼트",
           "소시어스"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "이스트브릿지파트너스",
           "이앤에프프라이빗에퀴티",
           "웰투시인베스트먼트",
-          "소시어스",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "소시어스"
         ]
       },
       {
@@ -2837,27 +2652,13 @@
           "웰투시인베스트먼트",
           "신한자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "스카이레이크에쿼티파트너스",
           "웰투시인베스트먼트",
-          "신한자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "신한자산운용"
         ]
       },
       {
@@ -2891,9 +2692,7 @@
           "kdb",
           "산업은행",
           "KDB",
-          "산은",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드"
+          "산은"
         ]
       },
       {
@@ -2911,25 +2710,10 @@
         "url": "https://magazine.hankyung.com/money/article/202605209937c",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260601-5",
@@ -2960,8 +2744,8 @@
         "searchTerms": [
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품모태펀드",
           "농림수산식품투자조합",
+          "농림수산식품모태펀드",
           "농식품모태펀드",
           "농금원"
         ]
@@ -3393,25 +3177,10 @@
         "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605280804092160101895",
         "sectionOrder": 4,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260601-24",
@@ -3593,25 +3362,10 @@
         "url": "https://www.hankyung.com/article/2026053082977",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260531-3",
@@ -3629,15 +3383,9 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행",
           "한국투자공사"
         ],
         "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          },
           {
             "code": "kic",
             "name": "한국투자공사",
@@ -3646,12 +3394,6 @@
         ],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은",
           "한국투자공사",
           "kic",
           "국부펀드",
@@ -3726,25 +3468,10 @@
         "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605290576",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260530-1",
@@ -3761,25 +3488,10 @@
         "url": "https://biz.chosun.com/stock/stock_general/2026/05/29/AZC24PQWVFCXLP5LGALSZ5SRJ4",
         "sectionOrder": 1,
         "gpNames": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
-        ]
+        "searchTerms": []
       },
       {
         "id": "clip-20260530-2",
@@ -3801,28 +3513,14 @@
           "농협은행",
           "하나증권"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "신한투자증권",
           "메리츠증권",
           "농협은행",
-          "하나증권",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "하나증권"
         ]
       },
       {
@@ -4334,15 +4032,9 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행",
           "사립학교교직원연금공단"
         ],
         "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          },
           {
             "code": "tp",
             "name": "사립학교교직원연금공단",
@@ -4351,12 +4043,6 @@
         ],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은",
           "사립학교교직원연금공단",
           "tp",
           "사립학교교직원연금",
@@ -4379,15 +4065,9 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행",
           "농업정책보험금융원"
         ],
         "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          },
           {
             "code": "kafi",
             "name": "농업정책보험금융원",
@@ -4396,16 +4076,10 @@
         ],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은",
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품모태펀드",
           "농림수산식품투자조합",
+          "농림수산식품모태펀드",
           "농식품모태펀드",
           "농금원"
         ]
@@ -5127,16 +4801,8 @@
           "키움프라이빗에쿼티",
           "미래에셋벤처투자"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "삼호그린인베스트먼트",
@@ -5146,13 +4812,7 @@
           "대신프라이빗에쿼티",
           "웰투시인베스트먼트",
           "키움프라이빗에쿼티",
-          "미래에셋벤처투자",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "미래에셋벤처투자"
         ]
       },
       {
@@ -5169,25 +4829,14 @@
         "sourceIconStyle": "",
         "url": "https://dealsite.co.kr/articles/162599",
         "sectionOrder": 1,
-        "gpNames": [],
-        "lpNames": [
+        "gpNames": [
           "한국산업은행"
         ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한국산업은행"
         ]
       },
       {
@@ -5534,25 +5183,11 @@
         "gpNames": [
           "아이엠엠프라이빗에쿼티"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
-          "아이엠엠프라이빗에쿼티",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "아이엠엠프라이빗에쿼티"
         ]
       },
       {
@@ -5866,16 +5501,8 @@
           "미래에셋벤처투자",
           "미래에셋자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "우리프라이빗에퀴티자산운용",
@@ -5885,13 +5512,7 @@
           "SBI인베스트먼트",
           "대신프라이빗에쿼티",
           "미래에셋벤처투자",
-          "미래에셋자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "미래에셋자산운용"
         ]
       },
       {
@@ -6207,15 +5828,9 @@
         "sectionOrder": 1,
         "gpNames": [],
         "lpNames": [
-          "한국산업은행",
           "한국투자공사"
         ],
         "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          },
           {
             "code": "kic",
             "name": "한국투자공사",
@@ -6224,12 +5839,6 @@
         ],
         "peopleCount": 0,
         "searchTerms": [
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은",
           "한국투자공사",
           "kic",
           "국부펀드",
@@ -6260,16 +5869,8 @@
           "한국투자파트너스",
           "신한자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "스카이레이크에쿼티파트너스",
@@ -6279,13 +5880,7 @@
           "미래에셋자산운용",
           "케이엘앤파트너스",
           "한국투자파트너스",
-          "신한자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "신한자산운용"
         ]
       },
       {
@@ -6317,8 +5912,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -6380,8 +5975,8 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "벤처투자",
+          "KVIC",
           "모태펀드"
         ]
       },
@@ -6712,16 +6307,8 @@
           "한국투자파트너스",
           "브레인자산운용"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "스카이레이크에쿼티파트너스",
@@ -6731,13 +6318,7 @@
           "미래에셋벤처투자",
           "스틱인베스트먼트",
           "한국투자파트너스",
-          "브레인자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "브레인자산운용"
         ]
       },
       {
@@ -6778,30 +6359,18 @@
           "미래에셋벤처투자",
           "미래에셋자산운용",
           "브레인자산운용",
-          "신한자산운용"
-        ],
-        "lpNames": [
+          "신한자산운용",
           "한국산업은행"
         ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "미래에셋벤처투자",
           "미래에셋자산운용",
           "브레인자산운용",
           "신한자산운용",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한국산업은행"
         ]
       },
       {
@@ -6825,29 +6394,15 @@
           "KB증권",
           "신영증권"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "신한투자증권",
           "메리츠증권",
           "유안타증권",
           "KB증권",
-          "신영증권",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "신영증권"
         ]
       },
       {
@@ -7111,8 +6666,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "중기중앙",
-          "KBIZ"
+          "KBIZ",
+          "중기중앙"
         ]
       },
       {
@@ -7232,8 +6787,6 @@
           "연합자산관리",
           "한국산업은행",
           "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
           "산업은행",
           "산은"
         ]
@@ -7734,8 +7287,6 @@
         "searchTerms": [
           "한국산업은행",
           "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
           "산업은행",
           "산은"
         ]
@@ -8010,27 +7561,13 @@
           "스틱인베스트먼트",
           "한국투자파트너스"
         ],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": [
           "도미누스에쿼티파트너스",
           "스틱인베스트먼트",
-          "한국투자파트너스",
-          "한국산업은행",
-          "kdb",
-          "국민참여형 국민성장펀드",
-          "국민성장펀드",
-          "산업은행",
-          "산은"
+          "한국투자파트너스"
         ]
       },
       {
