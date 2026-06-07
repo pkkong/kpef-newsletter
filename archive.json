@@ -1,5 +1,181 @@
 [
   {
+    "reportDate": "2026-06-07",
+    "visibleDate": "2026.06.07",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260607-0",
+        "rank": 0,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "[주간금융이슈] 국민성장펀드 막판 취소분 잡아라…11일 판매 마감",
+        "titleBadges": [],
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "assets/brand-marks/newspim-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.newspim.com/news/view/20260605000446",
+        "sectionOrder": 1,
+        "gpNames": [
+          "미래에셋증권"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "미래에셋증권"
+        ]
+      },
+      {
+        "id": "clip-20260607-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "트럼프식 '투자의 민주화'...퇴직연금을 사모펀드에 개방하면?",
+        "titleBadges": [],
+        "source": "머니투데이",
+        "sourceBadge": "머",
+        "sourceIconUrl": "assets/brand-marks/mt-co-kr.ico",
+        "sourceIconStyle": "",
+        "url": "https://www.mt.co.kr/world/2026/06/07/2026060115404184841",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260607-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "멈춰선 SK실트론 매각…M&A 시장에 ‘새드 엔딩’은 없다",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02102486645479096",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260607-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "한국펀드파트너스 매각 흥행할까…일각에선 '꼭지' 우려도",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://view.asiae.co.kr/article/2026060416374734132",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260607-4",
+        "rank": 4,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "LP",
+        "title": "[150조 머니무브] 에이티넘, '1조 펀드' 도전…관건은 하드캡",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=664531",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260607-5",
+        "rank": 5,
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
+        "title": "美 VC 500글로벌, 韓 총괄에 안성우 미래에셋PE 대표 선임",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20052488",
+        "sectionOrder": 4,
+        "gpNames": [
+          "미래에셋자산운용"
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 2,
+        "searchTerms": [
+          "미래에셋자산운용",
+          "미래에셋자산운용(주)"
+        ]
+      },
+      {
+        "id": "clip-20260607-6",
+        "rank": 6,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "“이제 가입 못하나요?”…닷새만에 6000억 완판된 ‘국민참여펀드’ 추...",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20052540",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260607-7",
+        "rank": 7,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://view.asiae.co.kr/article/2026052611385718194",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-06",
     "visibleDate": "2026.06.06",
     "basis": "",
@@ -334,9 +510,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "벤처투자",
-          "모태펀드"
+          "모태펀드",
+          "KVIC"
         ]
       },
       {
@@ -3388,8 +3564,8 @@
         "searchTerms": [
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품투자조합",
           "농림수산식품모태펀드",
+          "농림수산식품투자조합",
           "농식품모태펀드",
           "농금원"
         ]
@@ -4722,8 +4898,8 @@
         "searchTerms": [
           "농업정책보험금융원",
           "kafi",
-          "농림수산식품투자조합",
           "농림수산식품모태펀드",
+          "농림수산식품투자조합",
           "농식품모태펀드",
           "농금원"
         ]
@@ -6619,9 +6795,9 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "벤처투자",
-          "모태펀드"
+          "모태펀드",
+          "KVIC"
         ]
       },
       {
@@ -7310,8 +7486,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "KBIZ",
-          "중기중앙"
+          "중기중앙",
+          "KBIZ"
         ]
       },
       {
@@ -8777,332 +8953,6 @@
         "sourceIconStyle": "",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jYWdPdXF5MGsyc3BWMmNSVWJHMmgwYlpSWDdKV2htdTBVSElmZS1uOEppYWJrUE9qZVVzd1NwaDRSZmlBVXFMWUtYX1NkU3M3VXfSAVNBVV95cUxNVHN1YXVEUW55aFU2YWF0Ymg1U1FDczVteEZybHFxY1NNRkppTktVazgwRFJBRFVqV2RRUmJ5QXVkN3dXMWw0Nk5paXhOb09ITk5sVQ?oc=5&hl=ko&gl=KR&ceid=KR:ko",
         "sectionOrder": 5,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      }
-    ]
-  },
-  {
-    "reportDate": "2026-05-08",
-    "visibleDate": "2026.05.08",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260508-0",
-        "rank": 0,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "골프존카운티 매각 흥행 청신호…맥쿼리·워버그 등 글로벌 큰손 가세[...",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=06740406645446624&mediaCodeNo=257",
-        "sectionOrder": 2,
-        "gpNames": [
-          "골프존카운티"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "골프존카운티"
-        ]
-      },
-      {
-        "id": "clip-20260508-1",
-        "rank": 1,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "기획·유통 다 하는 ‘K뷰티 유망주’ 아이리스브라이트... 큐캐피탈, 장...",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "assets/brand-marks/biz-chosun-com.png",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/market_trend/2026/05/08/FPK7PM3STNCQXO7K4VSYDKK5NA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260508-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "중동 국부펀드가 본 K-바이오 \"혁신보다 글로...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605070718127620102152",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "lpNames": [
-          "한국투자공사",
-          "신용보증기금"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kic",
-            "name": "한국투자공사",
-            "url": "lp-kic.html"
-          },
-          {
-            "code": "kodit",
-            "name": "신용보증기금",
-            "url": "lp-kodit.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국투자공사",
-          "kic",
-          "국부펀드",
-          "KIC",
-          "신용보증기금",
-          "kodit",
-          "KODIT",
-          "신보"
-        ]
-      },
-      {
-        "id": "clip-20260508-3",
-        "rank": 3,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Deal",
-        "title": "아이티센글로벌, 400억 CB발행 차입구조...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605061446385600102327",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260508-4",
-        "rank": 4,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "LP",
-        "title": "MBK \"美 CFIUS 승인 통해 글로벌 투자 적격성 입증\"",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "assets/brand-marks/bloter-net.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=661478",
-        "sectionOrder": 5,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260508-5",
-        "rank": 5,
-        "section": "LP",
-        "subCategory": "Portfolio Review",
-        "rawSection": "LP",
-        "title": "두 달 만에 100조 벌었다…불장에 연기금은 '수익률 풍년', 공제회는 '자...",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://view.asiae.co.kr/article/2026050716025305802",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260508-6",
-        "rank": 6,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "[마켓인]MBK “美 CFIUS 승인으로 독립성 인증…中 자본 논란 사실무근”",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=05270966645446624&mediaCodeNo=257",
-        "sectionOrder": 3,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260508-7",
-        "rank": 7,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "센트로이드PE 리버티자산운용 품었다",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/161410",
-        "sectionOrder": 4,
-        "gpNames": [
-          "센트로이드인베스트먼트파트너스"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "센트로이드인베스트먼트파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260508-8",
-        "rank": 8,
-        "section": "GP",
-        "subCategory": "People",
-        "rawSection": "GP",
-        "title": "VIG파트너스 신창훈 대표 단독 체제로 전환 추진…'크레딧 펀드...",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/05/07/2026050780163.html",
-        "sectionOrder": 4,
-        "gpNames": [
-          "보고인베스트먼트",
-          "보고펀드자산운용",
-          "글랜우드크레딧",
-          "아크앤파트너스",
-          "글랜우드프라이빗에쿼티",
-          "아이엠엠프라이빗에쿼티",
-          "브이아이지파트너스"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "보고인베스트먼트",
-          "보고펀드자산운용",
-          "글랜우드크레딧",
-          "아크앤파트너스",
-          "글랜우드프라이빗에쿼티",
-          "아이엠엠프라이빗에쿼티",
-          "브이아이지파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260508-9",
-        "rank": 9,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "GP",
-        "title": "사학연금, IFC 1000억 투자…브룩필드, 1.2조 컨티뉴에이션 펀드 클로징",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20041344?ref=naver",
-        "sectionOrder": 3,
-        "gpNames": [
-          "미래에셋자산운용",
-          "NH투자증권",
-          "신한자산운용"
-        ],
-        "lpNames": [
-          "사립학교교직원연금공단"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "tp",
-            "name": "사립학교교직원연금공단",
-            "url": "lp-tp.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "미래에셋자산운용",
-          "NH투자증권",
-          "신한자산운용",
-          "사립학교교직원연금공단",
-          "tp",
-          "사립학교교직원연금",
-          "사학연금"
-        ]
-      },
-      {
-        "id": "clip-20260508-10",
-        "rank": 10,
-        "section": "GP",
-        "subCategory": "People",
-        "rawSection": "GP",
-        "title": "MBK, 미 현지 로비스트 선임…중국 자본 논란 재점화",
-        "titleBadges": [],
-        "source": "한국경제TV",
-        "sourceBadge": "한",
-        "sourceIconUrl": "assets/brand-marks/wowtv-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605070627&t=NN",
-        "sectionOrder": 4,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260508-11",
-        "rank": 11,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "GP",
-        "title": "베인캐피탈, 에코마케팅 지분 95% 확보…상폐 절차 속도",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "assets/brand-marks/view-asiae-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://view.asiae.co.kr/article/2026050716381204138",
-        "sectionOrder": 2,
         "gpNames": [],
         "lpNames": [],
         "lpProfileLinks": [],
