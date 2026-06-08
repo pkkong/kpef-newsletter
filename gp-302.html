@@ -237,7 +237,7 @@
       bottom: 0;
       z-index: 30;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 1180px);
       max-width: 100vw;
       transform: translateX(-50%);
@@ -297,10 +297,6 @@
     .nav-icon-gp::before {
       -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
       mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .nav-icon-wiki::before {
-      -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     .bottom-nav .active .nav-dot { opacity: 1; }
     .gp-hero {
@@ -1592,7 +1588,7 @@
       line-height: 1.58;
     }
     .bottom-nav {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 520px);
       padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
       border-top: 1px solid rgba(0,0,0,0.08);
@@ -2151,8 +2147,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>35</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>55</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>37</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>57</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2237,6 +2233,16 @@
         <h2>관련 딜</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>한국경제 · 2026-06-08</span>
+            <h3><a href="https://www.hankyung.com/article/2026060840731" target="_blank" rel="noreferrer">&quot;계약 맺은후가 더 무서워&quot;…M&amp;A 보험 시장 커진다</a></h3>
+            <p>&quot;계약 맺은후가 더 무서워&quot;…M&amp;A 보험 시장 커진다, 매도인 진술·보장 내용 허위땐 보험사가 배상…의뢰건수 급증</p>
+          </article>
+          <article class="gp-news-row">
+            <span>블로터 · 2026-06-08</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=664742" target="_blank" rel="noreferrer">칼라일, 청호나이스 품고 이지스운용까지 &#x27;눈독&#x27;…잇단 대형 딜 &#x27;눈길&#x27;</a></h3>
+            <p>글로벌 사모펀드(PEF) 운용사 칼라일그룹이 국내 생활가전 기업 청호나이스를 인수한 데 이어, 국내 최대 부동산 운용사인 이지스자산운용까지 눈독을 들이고 있다. 그간 국내에서 소수지분 투자에 주로 머물렀던 칼라일이 최근 경영권 인수(바이아웃) 딜에 연이어 참여 타진하면서 시장의 주목을</p>
+          </article>
+          <article class="gp-news-row">
             <span>서울경제 · 2026-06-07</span>
             <h3><a href="https://www.sedaily.com/article/20052704?ref=naver" target="_blank" rel="noreferrer">칼라일, 청호나이스 경영권 인수 본계약…거래규모 약 1조 원 [시그널]</a></h3>
             <p>생활가전 기업 청호나이스 경영권을 글로벌 사모펀드(PEF) 운용사 칼라일이 약 1조 원에 품는다. 창업주인 고(故) 정휘동 전 회장의 친족은 3000억 원 상당의 상속세 재원을 마련하기 위해 올 초 보유 지분을 시장에 내놨다.</p>
@@ -2266,16 +2272,6 @@
             <h3><a href="https://www.hankyung.com/article/2026060114631" target="_blank" rel="noreferrer">韓 M&amp;A 가뭄에…한투, 해외서 &#x27;돌파구&#x27;</a></h3>
             <p>韓 M&amp;A 가뭄에…한투, 해외서 &#x27;돌파구&#x27;, 글로벌 인수금융 광폭행보 칼라일의 바스프 딜 공동주관 5년간 27건, 총 4조원 실적 쌓아</p>
           </article>
-          <article class="gp-news-row">
-            <span>블로터 · 2026-05-31</span>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=664024" target="_blank" rel="noreferrer">건설사 PF, 5월 만기 유동화 차환 &#x27;신용보강 의존&#x27;</a></h3>
-            <p>건설사 부동산 프로젝트파이낸싱(PF) 만기가 5월에도 차환과 만기 연장으로 처리됐다. 대우건설 동탄, 서희건설 양지7지구, 호반건설 자양동, 롯데건설 갈현1구역에서 기존 대출 상환, 신규 대출 실행, 만기 조정이 이뤄졌다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-31</span>
-            <h3><a href="https://www.mk.co.kr/news/stock/12062133" target="_blank" rel="noreferrer">‘매각 7수’ KDB생명…한투 vs 태광 맞대결 성사되나 [M&amp;A복덕방]</a></h3>
-            <p>2014년부터 12년간 매각 추진 하나금융그룹 등 물망 올랐지만 최종 단계서 번번이 고배</p>
-          </article>
         </div>
       </article>
       <article class="gp-panel">
@@ -2295,6 +2291,16 @@
             <span>조선비즈 · 2026-06-04</span>
             <h3><a href="https://biz.chosun.com/stock/stock_general/2026/06/07/43S4TAHFZFDQFLLZ7FLKXV6S3M/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz" target="_blank" rel="noreferrer">“IMA 승기 잡아라”… NH투자증권, 4000억 장전하고 IMA 돌격</a></h3>
             <p>IMA 승기 잡아라 NH투자증권, 4000억 장전하고 IMA 돌격 한국투자증권·미래에셋증권, IMA 시장 선점 NH투자증권, 접근성·안전성 위주 전략으로 도전장 4000억원 유상증자로 재무건전성 확보 NH투자증권005940이 4000억원 유상증자에 나서며 종합투자계좌I</p>
+          </article>
+          <article class="gp-news-row">
+            <span>블로터 · 2026-05-31</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=664024" target="_blank" rel="noreferrer">건설사 PF, 5월 만기 유동화 차환 &#x27;신용보강 의존&#x27;</a></h3>
+            <p>건설사 부동산 프로젝트파이낸싱(PF) 만기가 5월에도 차환과 만기 연장으로 처리됐다. 대우건설 동탄, 서희건설 양지7지구, 호반건설 자양동, 롯데건설 갈현1구역에서 기존 대출 상환, 신규 대출 실행, 만기 조정이 이뤄졌다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>매일경제 · 2026-05-31</span>
+            <h3><a href="https://www.mk.co.kr/news/stock/12062133" target="_blank" rel="noreferrer">‘매각 7수’ KDB생명…한투 vs 태광 맞대결 성사되나 [M&amp;A복덕방]</a></h3>
+            <p>2014년부터 12년간 매각 추진 하나금융그룹 등 물망 올랐지만 최종 단계서 번번이 고배</p>
           </article>
           <article class="gp-news-row">
             <span>헤럴드경제 · 2026-05-30</span>
@@ -2330,16 +2336,6 @@
             <span>헤럴드경제 · 2026-05-29</span>
             <h3><a href="https://biz.heraldcorp.com/article/10758351?ref=naver" target="_blank" rel="noreferrer">국민성장펀드, 메타 ‘1.2조’ 인수 거절했던 퓨리오사AI에 8000억 투자</a></h3>
             <p>[헤럴드경제=김은희 기자] 국민성장펀드가 인공지능(AI)반도체(NPU) 개발기업 퓨리오사 AI에 첨단전략산업기금 3700억원 포함해 총 8000억원을 직접투자한다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-28</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10758230?ref=naver" target="_blank" rel="noreferrer">[단독] ‘상장 난항’ SK에코플랜트, 내달 사모펀드에 투자금 돌려준다</a></h3>
-            <p>28일 투자은행(IB) 업계에 따르면 SK에코플랜트가 오는 6월 10일 임시 주주총회를 열고 6500억원 규모의 자사주를 매입하는 안건을 결의할 예정이며 다음 날인 11일 잔금</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-28</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10758142?ref=naver" target="_blank" rel="noreferrer">‘주가조작 패가망신 1호’ 검찰 칼 빼들었다…강제수사 돌입 [세상&amp;]</a></h3>
-            <p>[헤럴드경제=전새날 기자] 검찰이 1000억원 이상의 시세조종 자금을 조달해 가장·통정매매 수법으로 주가를 조작한 세력에 대해 강제 수사에 나섰다.</p>
           </article>
         </div>
       </article>
@@ -2407,10 +2403,6 @@
     <a class="active" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
-    </a>
-    <a href="pef-wiki.html">
-      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
-      <strong>Wiki</strong>
     </a>
   </nav>
     <script>

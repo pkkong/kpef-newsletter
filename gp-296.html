@@ -237,7 +237,7 @@
       bottom: 0;
       z-index: 30;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 1180px);
       max-width: 100vw;
       transform: translateX(-50%);
@@ -297,10 +297,6 @@
     .nav-icon-gp::before {
       -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
       mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .nav-icon-wiki::before {
-      -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     .bottom-nav .active .nav-dot { opacity: 1; }
     .gp-hero {
@@ -1592,7 +1588,7 @@
       line-height: 1.58;
     }
     .bottom-nav {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 520px);
       padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
       border-top: 1px solid rgba(0,0,0,0.08);
@@ -2152,7 +2148,7 @@
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
       <div><span>딜 관련</span><strong>15</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>29</strong><em>관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>30</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2267,6 +2263,11 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>머니투데이 · 2026-06-08</span>
+            <h3><a href="https://www.mt.co.kr/stock/2026/06/08/2026060815443273596" target="_blank" rel="noreferrer">25% 빠졌는데 &quot;삼전닉스 싸게 살 기회&quot;...반도체 아직 튼튼</a></h3>
+            <p>한동희 SK증권 연구원은 이날 리포트에서 &quot;AI(인공지능) 기업들의 상장, 하이퍼스케일러들의 자금 조달 등을 감안하면 거시경제 대비 AI 투자에 대한 당위성, 독립성은 여전히 확고하고, AI 시대 메모리의 구조적 병목, 위상 제고, 메모리 업체들의 실적 강세는 단기에 변하는 가치가 아니다&quot;며 &quot;삼성전자 61만원, SK하이</p>
+          </article>
+          <article class="gp-news-row">
             <span>서울경제 · 2026-06-07</span>
             <h3><a href="https://www.sedaily.com/article/20052666?ref=naver" target="_blank" rel="noreferrer">자금 반도체 쏠림에…새내기株 절반 공모가 밑돌아</a></h3>
             <p>올해 기업공개(IPO) 시장에 입성한 새내기주들이 부진한 주가 흐름을 이어가고 있다. 인공지능(AI)과 반도체 대형주 중심으로 증시 자금이 집중되면서 신규 상장 종목 절반 가량이 공모가를 밑돌았다.</p>
@@ -2320,11 +2321,6 @@
             <span>포쓰저널 · 2026-05-22</span>
             <h3><a href="http://www.4th.kr/news/articleView.html?idxno=2112146" target="_blank" rel="noreferrer">국민성장펀드 출시 첫날 은행·증권사 줄줄이 완판</a></h3>
             <p>국민참여형 국민성장펀드가 판매 첫날부터 은행과 증권사에서 잇따라 완판되며 흥행에 성공했다.일부 증권사에서는 온라인 판매 개시 10분 만에 배정 물량이 모두 소진됐고, 주요 시중은행의 비대면·대면 판매 물량도 첫날 모두 팔렸다.22일 금융권에 따르면 KB국민·신한·우리·하나·NH농협 등 5대 시중은행에 배정된 국민참여성장펀</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-22</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45117" target="_blank" rel="noreferrer">국민성장펀드 전격 출시...6000억 선착순 공모 개시</a></h3>
-            <p>대한민국 미래 성장동력이 될 첨단전략산업에 투자하는 정책형 상품인 &#x27;국민참여형 국민성장펀드&#x27;가 22일 본격 출시됐다. 정부 재정 지원과 강력한 세제 혜택을 결합한</p>
           </article>
         </div>
       </article>
@@ -2392,10 +2388,6 @@
     <a class="active" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
-    </a>
-    <a href="pef-wiki.html">
-      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
-      <strong>Wiki</strong>
     </a>
   </nav>
     <script>

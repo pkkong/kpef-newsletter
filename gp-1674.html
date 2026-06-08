@@ -237,7 +237,7 @@
       bottom: 0;
       z-index: 30;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 1180px);
       max-width: 100vw;
       transform: translateX(-50%);
@@ -297,10 +297,6 @@
     .nav-icon-gp::before {
       -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
       mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .nav-icon-wiki::before {
-      -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     .bottom-nav .active .nav-dot { opacity: 1; }
     .gp-hero {
@@ -1592,7 +1588,7 @@
       line-height: 1.58;
     }
     .bottom-nav {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 520px);
       padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
       border-top: 1px solid rgba(0,0,0,0.08);
@@ -2151,8 +2147,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>14</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>23</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>15</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>24</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2292,6 +2288,11 @@
             <p>지난달 29일에 항공기 부품 제조사 율곡 매각전 본입찰이 마감될 예정이었으나, 매각 측이 원매자들의 내부 투자심의위원회 일정 조율을 고려해 본입찰 일정을 일주일 가량</p>
           </article>
           <article class="gp-news-row">
+            <span>한국경제 · 2026-06-02</span>
+            <h3><a href="https://www.hankyung.com/article/202606023230r" target="_blank" rel="noreferrer">&#x27;붙이는 화장품 1위&#x27; 피앤씨랩스, 반창고 회사에 팔렸다</a></h3>
+            <p>&#x27;붙이는 화장품 1위&#x27; 피앤씨랩스, 반창고 회사에 팔렸다, 몸값 1000억원 수준…VIG, 3호 펀드 포폴사 잇따라 엑싯</p>
+          </article>
+          <article class="gp-news-row">
             <span>헤럴드경제 · 2026-05-28</span>
             <h3><a href="https://biz.heraldcorp.com/article/10757779?ref=naver" target="_blank" rel="noreferrer">사모펀드 VIG, 헬스테크기업 미니쉬에 300억 투자</a></h3>
             <p>사모펀드(PEF) 운용사 VIG파트너스가 헬스테크 기업 미니쉬테크놀로지(미니쉬)에 투자했다. 28일 투자은행(IB)업계에 따르면 VIG파트너스는 미니쉬 지분 약 20%를 300억원</p>
@@ -2321,11 +2322,6 @@
             <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/15/2026051580191.html" target="_blank" rel="noreferrer">[Invest]매물 쏟아지는 F&amp;B…PE업계 &quot;가맹법 개정도 투자에 부담&quot;</a></h3>
             <p>매물 쏟아지는 F&amp;B…PE업계 &quot;가맹법 개정도 투자에 부담&quot;-인베스트조선</p>
           </article>
-          <article class="gp-news-row">
-            <span>아시아경제 · 2026-05-18</span>
-            <h3><a href="https://view.asiae.co.kr/article/2026051515421962522" target="_blank" rel="noreferrer">[PE는 지금]&#x27;매각 재도전&#x27; F&amp;B회사, 딜 성공 방정식은</a></h3>
-            <p>요식업 회사들이 잇따라 인수합병(M&amp;A) 시장에 나오고 있다. 햄버거, 치킨 관련 회사뿐 아니라 디저트 회사 등 분야도 다양하다.</p>
-          </article>
         </div>
       </article>
       <article class="gp-panel">
@@ -2335,6 +2331,11 @@
             <span>인베스트조선 · 2026-05-19</span>
             <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/05/18/2026051880093.html" target="_blank" rel="noreferrer">[Invest]&quot;금감원 PEF 검사 상반기에 한 곳 더&quot;…VIG 후속타자는 누구?</a></h3>
             <p>&quot;금감원 PEF 검사 상반기에 한 곳 더&quot;…VIG 후속타자는 누구?-인베스트조선</p>
+          </article>
+          <article class="gp-news-row">
+            <span>아시아경제 · 2026-05-18</span>
+            <h3><a href="https://view.asiae.co.kr/article/2026051515421962522" target="_blank" rel="noreferrer">[PE는 지금]&#x27;매각 재도전&#x27; F&amp;B회사, 딜 성공 방정식은</a></h3>
+            <p>요식업 회사들이 잇따라 인수합병(M&amp;A) 시장에 나오고 있다. 햄버거, 치킨 관련 회사뿐 아니라 디저트 회사 등 분야도 다양하다.</p>
           </article>
           <article class="gp-news-row">
             <span>인베스트조선 · 2026-05-18</span>
@@ -2385,11 +2386,6 @@
             <span>딜사이트 · 2026-05-07</span>
             <h3><a href="https://dealsite.co.kr/articles/161255" target="_blank" rel="noreferrer">[LCC 비상경영 점검] 이스타항공 정상화 &#x27;난기류&#x27;…VIG 출구전략 &#x27;흔들&#x27;</a></h3>
             <p>부채비율 2443.4% 재무 부담 여전…고유가·고환율에 비용 압박 확대</p>
-          </article>
-          <article class="gp-news-row">
-            <span>딜사이트 · 2026-04-27</span>
-            <h3><a href="https://dealsite.co.kr/articles/160709" target="_blank" rel="noreferrer">수출입은행 대신PE에 500억…8호 블라인드 조성</a></h3>
-            <p>7호 드라이파우더 60% 소진 임박…VIG와 LG화학 에스테틱 사업부 등 공동인수</p>
           </article>
         </div>
       </article>
@@ -2457,10 +2453,6 @@
     <a class="active" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
-    </a>
-    <a href="pef-wiki.html">
-      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
-      <strong>Wiki</strong>
     </a>
   </nav>
     <script>

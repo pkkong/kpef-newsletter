@@ -237,7 +237,7 @@
       bottom: 0;
       z-index: 30;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 1180px);
       max-width: 100vw;
       transform: translateX(-50%);
@@ -297,10 +297,6 @@
     .nav-icon-gp::before {
       -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
       mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .nav-icon-wiki::before {
-      -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     .bottom-nav .active .nav-dot { opacity: 1; }
     .gp-hero {
@@ -1592,7 +1588,7 @@
       line-height: 1.58;
     }
     .bottom-nav {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 520px);
       padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
       border-top: 1px solid rgba(0,0,0,0.08);
@@ -2152,7 +2148,7 @@
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>2</strong><em>공고·선정 이력</em></div>
       <div><span>딜 관련</span><strong>18</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>29</strong><em>관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>30</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2341,6 +2337,11 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>딜사이트 · 2026-06-08</span>
+            <h3><a href="https://dealsite.co.kr/articles/163014" target="_blank" rel="noreferrer">[국민성장펀드] [간접투자 1차] 에이티넘에 밀린 한투파…VC 1등도 넘지...</a></h3>
+            <p>대형 부문서 탈락…5000억 이상 펀드 운용해본 노하우 없고 잦은 인력이탈에 뒷덜미</p>
+          </article>
+          <article class="gp-news-row">
             <span>딜사이트 · 2026-06-05</span>
             <h3><a href="https://dealsite.co.kr/articles/162993" target="_blank" rel="noreferrer">창업주 떠나자…채권 찍어 의무출자금 대는 스틱</a></h3>
             <p>사모사채 200억 조달해 울산GPS 보통주 출자 재원 활용…파트너 아닌 회사가 리스크</p>
@@ -2394,11 +2395,6 @@
             <span>딜사이트 · 2026-04-29</span>
             <h3><a href="https://dealsite.co.kr/articles/160868" target="_blank" rel="noreferrer">스틱 이경형 4000억 펀딩 착수…국민성장펀드 출사표</a></h3>
             <p>그로스캐피탈 부문 승격으로 대표 승진…수은 500억 확보, 국내외 트랙레코드 강점</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이투데이 · 2026-04-28</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2579840" target="_blank" rel="noreferrer">스틱인베, 스페셜시츄에이선펀드 1호 청산… 화려한 투자 성적표</a></h3>
-            <p>2016년 6000억 규모로 결성…지난해 말 청산1000억 투자해 8500억 회수한 하이브 담아&quot;방산·엔터 등 스페셜시츄에이션의 정석&quot;▲스틱인베스트먼트 (스틱</p>
           </article>
         </div>
       </article>
@@ -2466,10 +2462,6 @@
     <a class="active" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
-    </a>
-    <a href="pef-wiki.html">
-      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
-      <strong>Wiki</strong>
     </a>
   </nav>
     <script>

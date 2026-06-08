@@ -237,7 +237,7 @@
       bottom: 0;
       z-index: 30;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 1180px);
       max-width: 100vw;
       transform: translateX(-50%);
@@ -297,10 +297,6 @@
     .nav-icon-gp::before {
       -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
       mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18.5 9.5 13l3 3L20 7.5M14 7.5h6v6' fill='none' stroke='black' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .nav-icon-wiki::before {
-      -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5Zm4 4h6M9 12h6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     .bottom-nav .active .nav-dot { opacity: 1; }
     .gp-hero {
@@ -1592,7 +1588,7 @@
       line-height: 1.58;
     }
     .bottom-nav {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       width: min(100vw, 520px);
       padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
       border-top: 1px solid rgba(0,0,0,0.08);
@@ -2151,8 +2147,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>87</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>127</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>88</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>128</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2342,6 +2338,11 @@
             <p>고려아연 최대주주인 영풍·MBK파트너스가 고려아연의 분리선출 감사위원 사외이사 추천 절차에 문제를 제기했다. 자체 후보를 내지 않고 공개추천 방식으로 대응하겠다는</p>
           </article>
           <article class="gp-news-row">
+            <span>한국경제 · 2026-06-04</span>
+            <h3><a href="https://www.hankyung.com/article/202606047055r" target="_blank" rel="noreferrer">MBK, 日 알루미늄업체 아르테미라 인수 완료</a></h3>
+            <p>MBK, 日 알루미늄업체 아르테미라 인수 완료, 美 아폴로 &quot;매각 완료&quot; 발표…거래가격 1.1조</p>
+          </article>
+          <article class="gp-news-row">
             <span>뉴스토마토 · 2026-06-04</span>
             <h3><a href="https://www.newstomato.com/ReadNews.aspx?no=1302702" target="_blank" rel="noreferrer">[IB토마토](홈플러스 회생기로)③MBK 책임론 확산…PEF 투명성 도마</a></h3>
             <p>익스프레스·점포 매각으로 유동성 확보에 사활</p>
@@ -2385,11 +2386,6 @@
             <span>이투데이 · 2026-05-25</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2587465" target="_blank" rel="noreferrer">[노트북 너머] 비바람 맞는 리더, 원칙 뒤에 선 리더</a></h3>
             <p>“비바람은 내가 맞겠다.”이재용 삼성전자 회장이 최근 노사 갈등 국면에서 꺼낸 말이다. 짧은 한마디였지만 시장은 이 문장을 단순한 수사가 아니라</p>
-          </article>
-          <article class="gp-news-row">
-            <span>연합인포맥스 · 2026-05-25</span>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4416520" target="_blank" rel="noreferrer">[기업 이모저모] &#x27;공동의 적&#x27; 앞서 뭉친 고려아연 노사</a></h3>
-            <p>○…&quot;고려아연[010130] 수호를 &#x27;제1호 경제 공약&#x27;으로 선언해 주십시오. 고려아연이 무너지면 한·미 산업 동맹의 한 축뿐만 아니라 노동자의 삶도 무너지는 것입니다.&quot;한 기업의 노동조합이 정치권을 향해 &#x27;우리 회사를 지켜달라&#x27;는 내용의 건의서를 냈다.</p>
           </article>
         </div>
       </article>
@@ -2457,10 +2453,6 @@
     <a class="active" href="gps.html">
       <span aria-hidden="true" class="nav-dot nav-icon-gp"></span>
       <strong>GP</strong>
-    </a>
-    <a href="pef-wiki.html">
-      <span aria-hidden="true" class="nav-dot nav-icon-wiki"></span>
-      <strong>Wiki</strong>
     </a>
   </nav>
     <script>
