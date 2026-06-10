@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2147,8 +2245,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>88</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>128</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>96</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>136</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2283,6 +2381,56 @@
         <h2>관련 딜</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>헤럴드경제 · 2026-06-10</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10768246?ref=naver" target="_blank" rel="noreferrer">MBK 겨냥한 고려아연 노조, 홈플러스와 연대 선언</a></h3>
+            <p>한국노총 전국금속노동조합연맹 고려아연 노동조합이 홈플러스 노동조합과의 연대를 선언하며 MBK파트너스를 강도 높게 비판했다. 홈플러스 사태를 계기로 사모펀드의 기업</p>
+          </article>
+          <article class="gp-news-row">
+            <span>헤럴드경제 · 2026-06-10</span>
+            <h3><a href="https://biz.heraldcorp.com/article/10767750?ref=naver" target="_blank" rel="noreferrer">“홈플러스의 눈물 잊지 않겠다”…고려아연 노조, 연대 투쟁 선언</a></h3>
+            <p>한국노총 전국금속노동조합연맹 고려아연 노동조합이 홈플러스 사태를 계기로 사모펀드의 기업 인수와 구조조정 방식이 노동자 고용과 지역경제를 위협하고 있다고 주장하</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴시스 · 2026-06-09</span>
+            <h3><a href="https://www.newsis.com/view/NISX20260609_0003662485" target="_blank" rel="noreferrer">고려아연 노조, 홈플러스 노조와 이례적 연대 &quot;MBK의 국가기간산업 인수...</a></h3>
+            <p>고려아연 노조, 연대 투쟁 성명 발표 이종업종 노조 간 이례적 연대 선언 MBK 경영진 대상 구속 수사 요구도 &quot;김상욱 시장, 고려아연 수호해야&quot;</p>
+          </article>
+          <article class="gp-news-row">
+            <span>한국경제TV · 2026-06-09</span>
+            <h3><a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202606090446&amp;t=NN" target="_blank" rel="noreferrer">고려아연 노조 &quot;MBK 저지…홈플러스 비극, 반복 안 된다&quot;</a></h3>
+            <p>고려아연 노동조합이 홈플러스 노동자들과의 연대를 선언하고, MBK파트너스의 적대적 인수합병(M A)을 저지하겠다는 입장을 밝혔다. 한국노총 전국금속노동조합연맹 산하 고려아연 노조는 9일 성명서를 내고 &quot;MBK의 ...</p>
+          </article>
+          <article class="gp-news-row">
+            <span>이투데이 · 2026-06-09</span>
+            <h3><a href="https://www.etoday.co.kr/news/view/2591964" target="_blank" rel="noreferrer">고려아연 노조 “홈플러스 사태 남 일 아냐”…김상욱 울산시장에 MBK 대...</a></h3>
+            <p>“홈플러스 구조조정, 사모펀드식 경영 폐해” 비판사모펀드 기간산업 인수 제한·LBO 규제 대책 요구김상욱 신임 울산시장에 고용 안정·고려아연 M&amp;A 차</p>
+          </article>
+          <article class="gp-news-row">
+            <span>서울경제 · 2026-06-09</span>
+            <h3><a href="https://www.sedaily.com/article/20053600?ref=naver" target="_blank" rel="noreferrer">고려아연 노조 “홈플러스 눈물이 우리의 미래 될 수 없다”</a></h3>
+            <p>고려아연 노조가 홈플러스 노조와 연대하며 MBK파트너스를 향한 전면 투쟁을 선언했다. 최근 홈플러스에서 벌어진 대규모 구조조정과 점포 폐점 사태를 ‘약탈 경영’으로 규정하고, 국가 기간산업인 고려아연에서 재현되는 것을 결코 좌시하지 않겠다는 선언이다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>머니투데이 · 2026-06-09</span>
+            <h3><a href="https://www.mt.co.kr/living/2026/06/09/2026060914023178713" target="_blank" rel="noreferrer">[단독]대량 실업 우려에…민주당, MBK·메리츠 경영진과 비공개 회동</a></h3>
+            <p>간담회에서 오간 구체적인 내용은 확인되지 않았지만 업계에서는 홈플러스의 자금난 해소 방안과 회생계획 연장안 등 핵심 쟁점에 대해 관계자들의 의견을 교환했을 것으로 보고 있다. 약 2만명이었던 홈플러스 직원이 1만5000명으로 감소한 상황에서 최근 희망퇴직으로 인한 대량해고 우려도 테이블 위에 올랐을 것으로 분석된다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>조선비즈 · 2026-06-09</span>
+            <h3><a href="https://biz.chosun.com/industry/company/2026/06/09/EPGWZIYQ6JEXZLNFZVXZDNTGRA/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz" target="_blank" rel="noreferrer">고려아연 노조, 홈플러스 노조와 연대… “MBK 구조조정에 맞서 투쟁”</a></h3>
+            <p>고려아연 노조, 홈플러스 노조와 연대 MBK 구조조정에 맞서 투쟁 고려아연 노동조합이 홈플러스 구조조정 사태와 관련해 홈플러스 노동조합과 연대하겠다고 밝혔다. 홈플러스 최대 주주인 MBK파트너스는 고려아연과 경영권 분쟁을 벌이고 있다.</p>
+          </article>
+        </div>
+      </article>
+      <article class="gp-panel">
+        <h2>관련 뉴스</h2>
+        <div class="gp-news-list">
+          <article class="gp-news-row">
+            <span>한겨레 · 2026-06-05</span>
+            <h3><a href="https://www.hani.co.kr/arti/society/labor/1262172.html" target="_blank" rel="noreferrer">민주노총 “MBK ‘홈플러스 먹튀 경영’에 2만명 일자리 잃어”…정부 ...</a></h3>
+            <p>전국민주노동조합총연맹(민주노총)이 임시휴점중인 37개 점포 폐점 결정으로 노동자 2만명이 일자리를 잃는다며 대주주인 엠비케이(MBK)파트너스와 정부가 정상화를 위한 대책을 마련할 것을 요구했다. 5일 민주노총은 ‘홈플러스 37개 점포 폐점 결정 규탄, 엠비케이는 책임지</p>
+          </article>
+          <article class="gp-news-row">
             <span>뉴스톱 · 2026-06-05</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45370" target="_blank" rel="noreferrer">영풍·MBK, 고려아연 감사위에 원아시아 펀드 전면 조사 요구</a></h3>
             <p>영풍·MBK파트너스가 고려아연 감사위원회에 원아시아파트너스 펀드 투자 전반에 대한 내부 조사를 요구했다. 경영권 분쟁의 초점이 투자 의사결정과 감사위원회 감시 기</p>
@@ -2301,6 +2449,11 @@
             <span>블로터 · 2026-06-05</span>
             <h3><a href="https://www.bloter.net/news/articleView.html?idxno=664575" target="_blank" rel="noreferrer">MBK·영풍 &quot;고려아연 감사위, 원아시아 투자 의혹 직접 조사해야&quot;</a></h3>
             <p>고려아연 최대주주인 영풍·MBK파트너스가 ﻿감사위원회에 원아시아파트너스 펀드 투자와 청호컴넷 관련 자금 흐름 전반에 대한 독립적인 조사를 공식 요구했다.영풍·MBK는 5일 입장문을 통해 ﻿</p>
+          </article>
+          <article class="gp-news-row">
+            <span>뉴스톱 · 2026-06-05</span>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45354" target="_blank" rel="noreferrer">영풍·MBK, 고려아연 &#x27;독립 사외이사 공개추천&#x27; 절차 추진</a></h3>
+            <p>고려아연 최대주주인 영풍·MBK파트너스가 고려아연의 분리선출 감사위원 사외이사 추천 절차에 문제를 제기했다. 자체 후보를 내지 않고 공개추천 방식으로 대응하겠다는</p>
           </article>
           <article class="gp-news-row">
             <span>조선비즈 · 2026-06-05</span>
@@ -2322,21 +2475,6 @@
             <h3><a href="http://www.4th.kr/news/articleView.html?idxno=2112714" target="_blank" rel="noreferrer">홈플러스, 휴업 점포 37곳 전격 폐점..노조 노조 &quot;MBK 먹튀 경영이 부른...</a></h3>
             <p>홈플러스가 지난달부터 잠정 휴업에 들어갔던 전국 37개 매장의 문을 완전히 닫기로 확정하고 인력 감축 절차에 돌입했다.마트산업노동조합 따르면 홈플러스는 4일 마트산업노동조합 홈플러스지부와 일반노조 측에 휴업 점포 37곳에 대한 폐점 결정을 공문으로 통보했다.홈플러스측은 슈퍼마켓 사업부인 홈플러스 익스프레스의 매각 추진 직</p>
           </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>관련 뉴스</h2>
-        <div class="gp-news-list">
-          <article class="gp-news-row">
-            <span>한겨레 · 2026-06-05</span>
-            <h3><a href="https://www.hani.co.kr/arti/society/labor/1262172.html" target="_blank" rel="noreferrer">민주노총 “MBK ‘홈플러스 먹튀 경영’에 2만명 일자리 잃어”…정부 ...</a></h3>
-            <p>전국민주노동조합총연맹(민주노총)이 임시휴점중인 37개 점포 폐점 결정으로 노동자 2만명이 일자리를 잃는다며 대주주인 엠비케이(MBK)파트너스와 정부가 정상화를 위한 대책을 마련할 것을 요구했다. 5일 민주노총은 ‘홈플러스 37개 점포 폐점 결정 규탄, 엠비케이는 책임지</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-06-05</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45354" target="_blank" rel="noreferrer">영풍·MBK, 고려아연 &#x27;독립 사외이사 공개추천&#x27; 절차 추진</a></h3>
-            <p>고려아연 최대주주인 영풍·MBK파트너스가 고려아연의 분리선출 감사위원 사외이사 추천 절차에 문제를 제기했다. 자체 후보를 내지 않고 공개추천 방식으로 대응하겠다는</p>
-          </article>
           <article class="gp-news-row">
             <span>한국경제 · 2026-06-04</span>
             <h3><a href="https://www.hankyung.com/article/202606047055r" target="_blank" rel="noreferrer">MBK, 日 알루미늄업체 아르테미라 인수 완료</a></h3>
@@ -2346,46 +2484,6 @@
             <span>뉴스토마토 · 2026-06-04</span>
             <h3><a href="https://www.newstomato.com/ReadNews.aspx?no=1302702" target="_blank" rel="noreferrer">[IB토마토](홈플러스 회생기로)③MBK 책임론 확산…PEF 투명성 도마</a></h3>
             <p>익스프레스·점포 매각으로 유동성 확보에 사활</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-06-02</span>
-            <h3><a href="https://signal.sedaily.com/article/20051074?ref=nate" target="_blank" rel="noreferrer">넥스플렉스 인수전 후끈…어펄마·스틱에 베인도 가세[시그널]</a></h3>
-            <p>국내 1위 연성동박적층판(FCCL) 제조사 넥스플렉스 인수를 둘러싸고 대형 사모펀드(PEF) 운용사 간 경쟁이 본격적으로 불붙기 시작했다. 국내 대형 PEF 뿐 아니라 막강한 자금력을 갖춘 글로벌 PEF 베인캐피털이 등판하면서 인수전 열기가 고조되는 양상이다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>매일경제 · 2026-05-29</span>
-            <h3><a href="https://www.mk.co.kr/news/business/12061140" target="_blank" rel="noreferrer">메리츠 vs MBK…악연의 골이 더 깊어졌다</a></h3>
-            <p>고려아연·홈플러스 두고 팽팽 메리츠금융그룹(이하 메리츠)과 사모펀드(PEF) 운용사 MBK파트너스(이하 MBK) 사이 긴장감이 고조되고 있다. 고려아연 경영권 분쟁에서 메리츠가 베인캐피탈 지분 인수에 이어 한화그룹...</p>
-          </article>
-          <article class="gp-news-row">
-            <span>머니투데이 · 2026-05-27</span>
-            <h3><a href="https://www.mt.co.kr/living/2026/05/27/2026052714555156747" target="_blank" rel="noreferrer">&quot;이미 5000명 일자리 잃었다&quot;...돈 줄 마른 홈플러스, &#x27;파산 위기&#x27; 증폭</a></h3>
-            <p>기업회생을 진행 중인 홈플러스에서 이미 5000명가량의 임직원이 일자리를 잃은 것으로 나타났다. 최근 하림그룹과 기업형슈퍼마켓(SSM) 익스프레스 매각 계약을 체결했지만, 대금 납입까지 시간이 걸리면서 자금난은 심화하고 있다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>헤럴드경제 · 2026-05-27</span>
-            <h3><a href="https://biz.heraldcorp.com/article/10756965?ref=naver" target="_blank" rel="noreferrer">“복잡할수록 광장 찾는다”…‘딜 메이커’ 존재감 키워</a></h3>
-            <p>법무법인 광장의 기업인수합병그룹(이하 M&amp;A그룹)은 양적·질적 측면 모두에서 자본시장의 한 축을 담당하는 규모를 구축하고 있다. 현재 M&amp;A그룹에 소속된 변호사만 120여</p>
-          </article>
-          <article class="gp-news-row">
-            <span>아시아경제 · 2026-05-27</span>
-            <h3><a href="https://view.asiae.co.kr/article/2026052710591847935" target="_blank" rel="noreferrer">법원, 고려아연에 원아시아 펀드 투자 관련 문서 제출 명령</a></h3>
-            <p>법원이 고려아연이 최윤범 고려아연 회장의 동창이 운영하는 펀드에 최대 출자자로 투자한 경위를 확인할 수 있는 자료를 제출하라고 명령했다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>뉴스톱 · 2026-05-26</span>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45125" target="_blank" rel="noreferrer">MBK·UCK, ‘오스템’ 해외사업 키워 몸값 높인다</a></h3>
-            <p>국내 사모펀드(PEF) 운용사 MBK파트너스와 UCK파트너스 컨소시엄이 인수한 오스템임플란트가 상장폐지 이후 해외 사업 확장에 속도를 내고 있다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-05-25</span>
-            <h3><a href="https://m.sedaily.com/amparticle/20047971" target="_blank" rel="noreferrer">대형 PEF, 롯데렌탈 눈독…공정위 기조·몸값 격차에 M&amp;A는 안갯속[시그널]</a></h3>
-            <p>롯데그룹이 어피니티에쿼티파트너스(어피니티)로의 매각 무산 이후 롯데렌탈의 재매각 추진을 공식화했다. 다만 시장에서는 실제 M&amp;A 성사 가능성을 두고 회의적인 시각도 나온다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이투데이 · 2026-05-25</span>
-            <h3><a href="https://www.etoday.co.kr/news/view/2587465" target="_blank" rel="noreferrer">[노트북 너머] 비바람 맞는 리더, 원칙 뒤에 선 리더</a></h3>
-            <p>“비바람은 내가 맞겠다.”이재용 삼성전자 회장이 최근 노사 갈등 국면에서 꺼낸 말이다. 짧은 한마디였지만 시장은 이 문장을 단순한 수사가 아니라</p>
           </article>
         </div>
       </article>

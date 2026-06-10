@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2147,8 +2245,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>3</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>7</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>4</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>8</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2242,6 +2340,11 @@
       <article class="gp-panel">
         <h2>관련 딜</h2>
         <div class="gp-news-list">
+          <article class="gp-news-row">
+            <span>딜사이트 · 2026-06-09</span>
+            <h3><a href="https://dealsite.co.kr/articles/163269" target="_blank" rel="noreferrer">스페이스X 잭팟 시즌2…박현주 또 7000억 베팅</a></h3>
+            <p>에이펙스펀드에 증권 4994억·생명 1967억 출자…스페이스X보다</p>
+          </article>
           <article class="gp-news-row">
             <span>서울경제TV · 2026-06-09</span>
             <h3><a href="https://www.sentv.co.kr/article/view/sentv202605290001" target="_blank" rel="noreferrer">[기획] 리벨리온에 몰린 금융권 자금…생산적 금융 사례? 정책 압박 산물...</a></h3>

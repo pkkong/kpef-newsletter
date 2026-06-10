@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2147,8 +2245,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>1</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>23</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>51</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>24</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>52</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2248,6 +2346,11 @@
         <h2>관련 딜</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>딜사이트 · 2026-06-09</span>
+            <h3><a href="https://dealsite.co.kr/articles/163269" target="_blank" rel="noreferrer">스페이스X 잭팟 시즌2…박현주 또 7000억 베팅</a></h3>
+            <p>에이펙스펀드에 증권 4994억·생명 1967억 출자…스페이스X보다</p>
+          </article>
+          <article class="gp-news-row">
             <span>매일경제 · 2026-06-08</span>
             <h3><a href="https://www.mk.co.kr/news/stock/12068011" target="_blank" rel="noreferrer">“한국 반도체 문의가 너무 많이와요”...캐나다에서도 ‘삼전닉스’ 붐</a></h3>
             <p>CEO 인터뷰 亞 반도체 투자 문의 급증 커버드콜 접목한 ETF 검토 AI 최대 수혜처는 ‘원자재’ 구리·우라늄 저평가 구간</p>
@@ -2282,11 +2385,6 @@
             <h3><a href="https://www.mk.co.kr/news/stock/12065419" target="_blank" rel="noreferrer">“코스닥 죽쑨다? 하반기에 봅시다”…ETF들의 ‘근거있는 자신감’</a></h3>
             <p>증시 랠리서 소외됐던 코스닥 2차 국민성장펀드·승강제 등 잇단 호재로 반등 기대감 커져 운용사들 벌써부터 선점 경쟁 올해 들어 ETF상품 8종 출시</p>
           </article>
-          <article class="gp-news-row">
-            <span>서울경제 · 2026-06-03</span>
-            <h3><a href="https://www.sedaily.com/article/20051504?ref=naver" target="_blank" rel="noreferrer">ETF 수탁액 3000억을 2년 반만에 4兆로…친정 재건 이끈 30년 베테랑 [CE...</a></h3>
-            <p>“31년 전 하나은행에서 금융인의 자세와 마음가짐, 조직 생활과 인간관계 기본기를 배웠던 27세 청년이 24년 만에 돌아왔습니다. 새롭게 출발하는 하나자산운용의 토대를 마련하는 것이 제 마지막 소명이라는 마음가짐으로 이 자리에 섰습니다.” 하나UBS자산운용이 외국계 금</p>
-          </article>
         </div>
       </article>
       <article class="gp-panel">
@@ -2311,6 +2409,11 @@
             <span>뉴스톱 · 2026-06-04</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45308" target="_blank" rel="noreferrer">아직 승자 없는 휴머노이드…로봇 투자 전쟁 점화</a></h3>
             <p>테슬라는 프리몬트 공장의 모델S·X 생산라인을 옵티머스 생산 확대에 활용하기 시작했다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>서울경제 · 2026-06-03</span>
+            <h3><a href="https://www.sedaily.com/article/20051504?ref=naver" target="_blank" rel="noreferrer">ETF 수탁액 3000억을 2년 반만에 4兆로…친정 재건 이끈 30년 베테랑 [CE...</a></h3>
+            <p>“31년 전 하나은행에서 금융인의 자세와 마음가짐, 조직 생활과 인간관계 기본기를 배웠던 27세 청년이 24년 만에 돌아왔습니다. 새롭게 출발하는 하나자산운용의 토대를 마련하는 것이 제 마지막 소명이라는 마음가짐으로 이 자리에 섰습니다.” 하나UBS자산운용이 외국계 금</p>
           </article>
           <article class="gp-news-row">
             <span>딜사이트 · 2026-06-03</span>
@@ -2346,11 +2449,6 @@
             <span>매일경제 · 2026-05-29</span>
             <h3><a href="https://www.mk.co.kr/news/economy/12061114" target="_blank" rel="noreferrer">전기·SDI·SDS…질주하는 삼성後자</a></h3>
             <p>이를 활용해 국내 데이터센터 투자를 확대하고 국내외 AI·IT 서비스 기업 인수·합병(M&amp;A)을 추진할... 대표 상품으로는 삼성자산운용의 ‘KODEX 삼성그룹’, 미래에셋자산운용의 ‘TIGER 삼성그룹’, 한국투자신탁운용의...</p>
-          </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-05-28</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04227926645453512&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">미래운용, &#x27;미래에셋 코어테크&#x27; 순자산 3조원 돌파</a></h3>
-            <p>미래에셋자산운용은 국내 핵심 성장산업에 투자하는 ‘미래에셋코어테크 펀드’의 순자산이 3조원을 넘어섰다고 28일 밝혔다.(자료 제공=미래에셋자산운용)한국펀드파트너스에 따르면 지난 27일 기준 ‘미래에셋코어테크증권투자신탁(주식)’의 순자산은 3조2445억원으로 집계됐다....</p>
           </article>
         </div>
       </article>

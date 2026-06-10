@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab active" href="market.html" aria-current="page">MARKET</a>
         <a class="brief-section-tab" href="gps.html">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <header class="gp-hero market-hero">
@@ -2147,11 +2245,57 @@
           <em>상위 20개 57.27%</em>
         </div>
       </div>
+      <p class="market-metric-note">
+        운용 GP는 2024Q4 기준 각 펀드의 대표 운용사 집계입니다.
+        프로필/제휴 기준의 전체 GP 수와 다를 수 있습니다.
+      </p>
     </section>
 
     <section class="market-section" aria-label="분기별 시장 추이">
       <div class="market-section-head">
         <h2>분기별 시장 추이</h2>
+      </div>
+      <div class="market-chart market-trend-chart" aria-label="출자약정액 추이">
+          <div class="market-chart-bar">
+            <span>2022Q2</span>
+            <i style="height:80.0%"></i>
+            <strong>122.9조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2022Q3</span>
+            <i style="height:80.9%"></i>
+            <strong>124.4조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2022Q4</span>
+            <i style="height:81.9%"></i>
+            <strong>125.8조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2023Q1</span>
+            <i style="height:85.2%"></i>
+            <strong>131.0조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2023Q2</span>
+            <i style="height:87.5%"></i>
+            <strong>134.4조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2023Q3</span>
+            <i style="height:90.3%"></i>
+            <strong>138.8조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2023Q4</span>
+            <i style="height:88.8%"></i>
+            <strong>136.4조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2024Q4</span>
+            <i style="height:100.0%"></i>
+            <strong>153.6조</strong>
+          </div>
       </div>
       <div class="market-table">
         <div class="market-head market-period-row"><span>기준</span><span>펀드</span><span>GP</span><span>약정액</span></div>
@@ -2221,6 +2365,48 @@
     <section class="market-section" aria-label="상위 GP">
       <div class="market-section-head">
         <h2>상위 GP</h2>
+      </div>
+      <div class="market-chart market-rank-chart" aria-label="상위 GP 약정액">
+          <div class="market-rank-bar">
+            <span>엠비케이파트너스</span>
+            <i><b style="width:100.0%"></b></i>
+            <strong>17.3조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>한앤컴퍼니</span>
+            <i><b style="width:95.4%"></b></i>
+            <strong>16.5조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>아이엠엠프라이빗에쿼티</span>
+            <i><b style="width:42.4%"></b></i>
+            <strong>7.3조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>아이엠엠인베스트먼트</span>
+            <i><b style="width:36.8%"></b></i>
+            <strong>6.4조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>스틱인베스트먼트</span>
+            <i><b style="width:31.9%"></b></i>
+            <strong>5.5조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>연합자산관리</span>
+            <i><b style="width:25.9%"></b></i>
+            <strong>4.5조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>한국산업은행</span>
+            <i><b style="width:22.7%"></b></i>
+            <strong>3.9조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>스카이레이크에쿼티파트너스</span>
+            <i><b style="width:16.4%"></b></i>
+            <strong>2.8조</strong>
+          </div>
       </div>
       <div class="market-table">
         <div class="market-head market-gp-row"><span>순위</span><span>운용사</span><span>약정액</span><span>펀드</span></div>

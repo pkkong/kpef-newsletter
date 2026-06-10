@@ -495,8 +495,11 @@
     lpLinks.forEach((item) => appendLinkChip(item.name, item.url, "lp-chip"));
     const lpNames = Array.isArray(article.lpNames) ? article.lpNames.filter(Boolean) : [];
     lpNames.filter((name) => !lpLinkedNames.has(name)).forEach((name) => appendChip(name, "lp-chip"));
+    const gpLinks = Array.isArray(article.gpProfileLinks) ? article.gpProfileLinks.filter((item) => item && item.name && item.url) : [];
+    const gpLinkedNames = new Set(gpLinks.map((item) => item.name));
+    gpLinks.forEach((item) => appendLinkChip(item.name, item.url, "gp-chip"));
     const gpNames = Array.isArray(article.gpNames) ? article.gpNames.filter(Boolean) : [];
-    gpNames.forEach((name) => appendChip(name));
+    gpNames.filter((name) => !gpLinkedNames.has(name)).forEach((name) => appendChip(name, "gp-chip"));
     if (chips.childElementCount) {
       const toggle = document.createElement("button");
       toggle.type = "button";

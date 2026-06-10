@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2124,7 +2222,7 @@
 
     <header class="gp-detail-hero">
       <div class="gp-detail-title-head">
-        <span class="gp-detail-logo has-logo" data-tone="6" aria-hidden="true" style="--logo-img-width: 32px; --logo-img-height: 7px;"><img src="assets/brand-marks/keistone-co-kr.svg" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>키스</span></span>
+        <span class="gp-detail-logo has-logo" data-tone="6" aria-hidden="true" style="--logo-img-width: 32px; --logo-img-height: 7px;"><img src="assets/brand-marks/keistone-co-kr.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>키스</span></span>
         <div>
           <span>운용사</span>
           <h1>키스톤프라이빗에쿼티</h1>

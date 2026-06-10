@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2148,7 +2246,7 @@
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>7</strong><em>공고·선정 이력</em></div>
       <div><span>딜 관련</span><strong>10</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>26</strong><em>관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>27</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2342,6 +2440,11 @@
         <h2>관련 뉴스</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>블로터 · 2026-06-10</span>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=664729" target="_blank" rel="noreferrer">[150조 머니무브] &#x27;테크명가&#x27; 대신PE, AX·지역 반도체 투자</a></h3>
+            <p>대신프라이빗에쿼티(PE)가 국민성장펀드 운용사로 선정되며 인공지능(AI)과 반도체 등 첨단 기술 분야로 투자 보폭을 넓히고 있다. 기술 투자 전문가로 불리는 박병건 대신PE 대표의 투자 전문성을 바탕으로 AX(인공지능 전환)와 지역 반도체 기업에 투자한다는 구상이다.</p>
+          </article>
+          <article class="gp-news-row">
             <span>뉴스톱 · 2026-06-02</span>
             <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=45302" target="_blank" rel="noreferrer">대신PE, 국민성장펀드로 AI·반도체 투자 공략한다</a></h3>
             <p>국내 사모펀드(PEF) 운용사 대신프라이빗에쿼티(대신PE)가 국민성장펀드 출자사업을 시작으로 AI·반도체 투자 재원 확대에 나선다.</p>
@@ -2395,11 +2498,6 @@
             <span>이투데이 · 2026-05-15</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2584961" target="_blank" rel="noreferrer">국민성장펀드 간접투자 1차 GP 서류심사 결과 발표…리그별 숏리스트 확...</a></h3>
             <p>▲여의도 증권가국민성장펀드 간접투자분야 정책성펀드 1차 위탁운용사(GP) 출자 사업 서류심사 통과 운용사(숏리스트) 명단이 확정됐다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>블로터 · 2026-05-15</span>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=662472" target="_blank" rel="noreferrer">[단독] 국민성장펀드 간접투자분야, 1차 운용사 숏리스트 확정</a></h3>
-            <p>하반기 국내 자본시장 투자 활성화의 핵심 기제로 꼽히는 국민성장펀드 1차 출자사업이 서류 심사를 마치고 본선 경쟁 단계에 진입한다.3조9000억원 규모의 자펀드 조성을 목표로 하는 이번 사업은 81개 운용사가 지원하며 평균 7.4대 1의 높은 경쟁률을 기록했다.</p>
           </article>
         </div>
       </article>

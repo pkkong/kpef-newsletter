@@ -1804,6 +1804,93 @@
       font-weight: 780;
       line-height: 1.15;
     }
+    .market-metric-note {
+      margin: 10px 0 0;
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+    .market-chart {
+      margin: 0 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .market-trend-chart {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      align-items: end;
+      gap: 8px;
+      min-height: 164px;
+      padding: 12px;
+    }
+    .market-chart-bar {
+      display: grid;
+      grid-template-rows: 18px minmax(48px, 1fr) 18px;
+      gap: 6px;
+      align-items: end;
+      min-width: 0;
+      height: 136px;
+      color: var(--secondary);
+      font-size: 10.5px;
+      font-weight: 650;
+      text-align: center;
+    }
+    .market-chart-bar i {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      border-radius: 4px 4px 0 0;
+      background: #2f6f66;
+    }
+    .market-chart-bar strong {
+      overflow: hidden;
+      color: var(--text);
+      font-size: 10.5px;
+      font-weight: 720;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-chart {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+    .market-rank-bar {
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) minmax(90px, 2fr) 70px;
+      gap: 8px;
+      align-items: center;
+      min-height: 24px;
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .market-rank-bar span {
+      overflow: hidden;
+      color: var(--text);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .market-rank-bar i {
+      display: block;
+      overflow: hidden;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--surface-muted);
+    }
+    .market-rank-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #2f6f66;
+    }
+    .market-rank-bar strong {
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 720;
+      text-align: right;
+    }
     .market-section {
       position: relative;
       margin: 0 0 18px;
@@ -2055,6 +2142,18 @@
     .gp-meta-line {
       display: none !important;
     }
+    @media (max-width: 620px) {
+      .market-trend-chart {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        min-height: 220px;
+      }
+      .market-chart-bar {
+        height: 96px;
+      }
+      .market-rank-bar {
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1.4fr) 60px;
+      }
+    }
     @media (min-width: 760px) {
       .market-kpis {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2114,7 +2213,6 @@
       <nav class="brief-section-tabs gp-section-tabs" aria-label="GP 메뉴">
         <a class="brief-section-tab" href="market.html">MARKET</a>
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
-        <button class="brief-section-tab" type="button" disabled>PEOPLE</button>
       </nav>
     </header>
     <nav class="gp-breadcrumb" aria-label="경로">
@@ -2147,8 +2245,8 @@
 
         <section class="gp-signal-bar" aria-label="관련 정보 요약">
       <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>13</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>30</strong><em>관련 기사</em></div>
+      <div><span>딜 관련</span><strong>14</strong><em>딜 관련 기사</em></div>
+      <div><span>관련 뉴스</span><strong>31</strong><em>관련 기사</em></div>
     </section>
 
     <section class="gp-detail-grid">
@@ -2218,6 +2316,11 @@
         <h2>관련 딜</h2>
         <div class="gp-news-list">
           <article class="gp-news-row">
+            <span>딜사이트 · 2026-06-10</span>
+            <h3><a href="https://dealsite.co.kr/articles/163284" target="_blank" rel="noreferrer">곳간 파먹는 금융비용, 자산 경량화 한계</a></h3>
+            <p>②에셋라이트 전략, 장기간 유지 불가 전망…스페셜티 포트폴리오 전환 &#x27;관건&#x27;</p>
+          </article>
+          <article class="gp-news-row">
             <span>이투데이 · 2026-06-04</span>
             <h3><a href="https://www.etoday.co.kr/news/view/2590064" target="_blank" rel="noreferrer">5월 &#x27;하루평균 거래대금 100조&#x27; 돌파했는데… 거꾸로 가는 증권사 주가</a></h3>
             <p>(출처=챗GPT)5월 국내 증시의 일평균 거래대금이 사상 처음으로 100조원을 돌파했다. 시장 유동성이 크게 확대되며 증권사 실적 기대감도 높아지고 있</p>
@@ -2252,11 +2355,6 @@
             <h3><a href="https://www.fnnews.com/news/202605281641108778" target="_blank" rel="noreferrer">유안타증권, &#x27;동양생명 매각 손해배상금 분담&#x27; 1300억원대 소송 패소</a></h3>
             <p>유안타증권이 과거 동양생명 매각 과정에서 발생한 손해배상금 분담을 요구하며 VIG파트너스 측을 상대로 제기한 소송에서 패소했다.유안타증권은 VIG파트너스 SPC가 청산돼 책임 주체와 책임 비율 산정이 어려워지자, 소송 비용 등을 포함한 1910억원을 안방보험 측에 …</p>
           </article>
-          <article class="gp-news-row">
-            <span>이데일리 · 2026-05-28</span>
-            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04775686645453512&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">유안타, &#x27;동양생명 매각 배상금 분담&#x27; 1300억대 소송 1심 패소</a></h3>
-            <p>유안타증권이 과거 동양생명 매각 과정에 함께 참여했던 사모펀드 운용사 VIG파트너스 등을 상대로 공동 배상 책임을 지라며 제기한 1300억원대 반환 소송 1심에서 패소했다. (사진=유안타증권)서울중앙지법 민사30부(부장판사 김석범)는 28일...</p>
-          </article>
         </div>
       </article>
       <article class="gp-panel">
@@ -2281,6 +2379,11 @@
             <span>서울경제 · 2026-06-01</span>
             <h3><a href="https://www.sedaily.com/article/20050315?ref=naver" target="_blank" rel="noreferrer">반도체 훈풍 계속될까…물가 3% 전망도 등장</a></h3>
             <p>이슈 브리핑] ■ 글로벌 금리 재인상: 코로나 이후 2년간 아래를 향하던 전 세계 기준금리의 화살표가 방향을 바꾸고 있다. 유럽중앙은행(ECB)은 6월 금리 인상을 예고했고, 일본은행(BOJ)도 6월 0.75%에서 1.0%로 올릴 것이라는 전망이 지배적이다.</p>
+          </article>
+          <article class="gp-news-row">
+            <span>이데일리 · 2026-05-28</span>
+            <h3><a href="https://www.edaily.co.kr/News/Read?newsId=04775686645453512&amp;mediaCodeNo=257" target="_blank" rel="noreferrer">유안타, &#x27;동양생명 매각 배상금 분담&#x27; 1300억대 소송 1심 패소</a></h3>
+            <p>유안타증권이 과거 동양생명 매각 과정에 함께 참여했던 사모펀드 운용사 VIG파트너스 등을 상대로 공동 배상 책임을 지라며 제기한 1300억원대 반환 소송 1심에서 패소했다. (사진=유안타증권)서울중앙지법 민사30부(부장판사 김석범)는 28일...</p>
           </article>
           <article class="gp-news-row">
             <span>한국경제 · 2026-05-28</span>
@@ -2316,11 +2419,6 @@
             <span>머니투데이 · 2026-05-25</span>
             <h3><a href="https://www.mt.co.kr/finance/2026/05/25/2026052510433923772" target="_blank" rel="noreferrer">&#x27;영업일 이틀 만에&#x27;..내일 완판 예감 국민성장펀드, 추가물량 검토</a></h3>
             <p>국민참여형 국민성장펀드(국민참여성장펀드)가 판매 첫날 대부분 한도를 소진하면서 금융당국이 추가 물량 공급 검토에 나섰다. 증권사 오프라인 물량은 삼성증권 262억원, KB증권 97억원, 한화투자증권 83억원, 유안타증권 78억원 등이 남았다.</p>
-          </article>
-          <article class="gp-news-row">
-            <span>포쓰저널 · 2026-05-22</span>
-            <h3><a href="http://www.4th.kr/news/articleView.html?idxno=2112146" target="_blank" rel="noreferrer">국민성장펀드 출시 첫날 은행·증권사 줄줄이 완판</a></h3>
-            <p>국민참여형 국민성장펀드가 판매 첫날부터 은행과 증권사에서 잇따라 완판되며 흥행에 성공했다.일부 증권사에서는 온라인 판매 개시 10분 만에 배정 물량이 모두 소진됐고, 주요 시중은행의 비대면·대면 판매 물량도 첫날 모두 팔렸다.22일 금융권에 따르면 KB국민·신한·우리·하나·NH농협 등 5대 시중은행에 배정된 국민참여성장펀</p>
           </article>
         </div>
       </article>
