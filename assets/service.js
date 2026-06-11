@@ -120,6 +120,7 @@
 
   const articleSearchValues = (article) => [
     article.title,
+    article.summaryText,
     article.source,
     article.section,
     article.subCategory,
@@ -456,6 +457,14 @@
     titleText.textContent = article.title;
     title.append(titleText);
 
+    const summaryText = String(article.summaryText || "").trim();
+    let summary = null;
+    if (summaryText) {
+      summary = document.createElement("span");
+      summary.className = "cell-summary";
+      summary.textContent = summaryText;
+    }
+
     const meta = document.createElement("span");
     meta.className = "cell-meta";
     const source = document.createElement("span");
@@ -468,7 +477,9 @@
       meta.append(date);
     }
     meta.append(source);
-    link.append(title, meta);
+    link.append(title);
+    if (summary) link.append(summary);
+    link.append(meta);
     main.append(link);
 
     const chips = document.createElement("span");

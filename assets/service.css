@@ -788,6 +788,18 @@ button, input { font: inherit; }
   font-weight: 600;
   letter-spacing: 0;
 }
+.cell-summary {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 5px 0 0;
+  color: #4f4f52;
+  font-size: 12.5px;
+  line-height: 1.48;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 .title-badge {
   display: inline-flex;
   min-height: 18px;
