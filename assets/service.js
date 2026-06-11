@@ -457,12 +457,24 @@
     titleText.textContent = article.title;
     title.append(titleText);
 
-    const summaryText = String(article.summaryText || "").trim();
+    const summaryLines = Array.isArray(article.summaryLines)
+      ? article.summaryLines.map((line) => String(line || "").trim()).filter(Boolean).slice(0, 3)
+      : [];
+    const summaryText = summaryLines.length ? "" : String(article.summaryText || "").trim();
     let summary = null;
-    if (summaryText) {
+    if (summaryLines.length || summaryText) {
       summary = document.createElement("span");
       summary.className = "cell-summary";
-      summary.textContent = summaryText;
+      if (summaryLines.length) {
+        summaryLines.forEach((line) => {
+          const item = document.createElement("span");
+          item.className = "cell-summary-line";
+          item.textContent = line;
+          summary.append(item);
+        });
+      } else {
+        summary.textContent = summaryText;
+      }
     }
 
     const meta = document.createElement("span");

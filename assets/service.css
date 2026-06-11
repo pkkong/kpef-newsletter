@@ -789,16 +789,21 @@ button, input { font: inherit; }
   letter-spacing: 0;
 }
 .cell-summary {
-  display: -webkit-box;
+  display: grid;
   overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  gap: 2px;
   margin: 5px 0 0;
   color: #4f4f52;
   font-size: 12.5px;
   line-height: 1.48;
   font-weight: 400;
   letter-spacing: 0;
+}
+.cell-summary-line {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .title-badge {
   display: inline-flex;
