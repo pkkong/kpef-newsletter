@@ -8,20 +8,19 @@
         "id": "clip-20260612-0",
         "rank": 0,
         "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
+        "subCategory": "AI 투자·인프라",
         "rawSection": "AI & PE",
-        "title": "“베타 장세 끝났다…AI 시대에도 결국 알파는 실행력”",
+        "title": "[미국 특징주] KKR, 엔비디아·비스트라와 100억달러 AI 인프라 기업 출...",
         "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "assets/brand-marks/newspim-com.png",
         "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03473526645480736",
-        "summaryText": "\"AI 시대의 승자가 반드시 AI 기업일 필요는 없다. 결국 중요한 것은 기술을 실제 성과로 연결하는 실행력이다.\"이데일리와 최근 만난 브라이언 루더(Brian Ruder) 퍼미라 프라이빗에쿼티(PE) 부문 대표는 다음 투자 사이클의 변화를 이같이 진단했다.",
+        "url": "https://www.newspim.com/news/view/20260612000007",
+        "summaryText": "이 기사는 인공지능(AI) 번역으로 생산된 콘텐츠로, 원문은 6월 11일자 로이터 기사(KKR launches $10 billion AI infrastructure company with Nvidia, Vistra)입니다.[서울=뉴스핌] 김현영 기자 = KKR",
         "summaryLines": [
-          "AI 시대의 승자가 반드시 AI 기업일 필요는 없다",
-          "결국 중요한 것은 기술을 실제 성과로 연결하는 실행력이다",
-          "이데일리와 최근 만난 브라이언 루더(Brian Ruder) 퍼미라 프라이빗에쿼티(PE) 부문 대표는 다음 투자 사…"
+          "이 기사는 인공지능(AI) 번역으로 생산된 콘텐츠로",
+          "원문은 6월 11일자 로이터 기사(KKR launches $10 billion AI infrastructure…"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 0,
@@ -99,6 +98,162 @@
       {
         "id": "clip-20260612-3",
         "rank": 3,
+        "section": "국민성장펀드",
+        "subCategory": "출자·선정",
+        "rawSection": "국민성장펀드",
+        "title": "국민성장펀드 2차 출자사업, VC·PE 등 65곳 몰렸다",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "assets/brand-marks/newstopkorea-com.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45475",
+        "summaryText": "국민성장펀드 2026년 2차 출자사업에 65곳의 운용사와 컨소시엄이 몰렸다. 최대 위탁운용사(GP) 10곳 선정 기준 단순 경쟁률은 6.5대 1이다.",
+        "summaryLines": [
+          "국민성장펀드 2026년 2차 출자사업에 65곳의 운용사와 컨소시엄이 몰렸다",
+          "최대 위탁운용사(GP) 10곳 선정 기준 단순 경쟁률은 6.5대 1이다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [
+          "한국투자파트너스",
+          "도미누스에쿼티파트너스",
+          "스틱인베스트먼트",
+          "한국산업은행",
+          "어펄마캐피탈매니져스코리아",
+          "제이앤프라이빗에쿼티",
+          "도미누스인베스트먼트",
+          "케이비인베스트먼트"
+        ],
+        "gpProfileLinks": [
+          {
+            "id": "241",
+            "name": "한국투자파트너스",
+            "url": "gp-241.html"
+          },
+          {
+            "id": "23",
+            "name": "스틱인베스트먼트",
+            "url": "gp-23.html"
+          },
+          {
+            "id": "24",
+            "name": "한국산업은행",
+            "url": "gp-24.html"
+          },
+          {
+            "id": "7987",
+            "name": "어펄마캐피탈매니져스코리아",
+            "url": "gp-7987.html"
+          },
+          {
+            "id": "7909",
+            "name": "제이앤프라이빗에쿼티",
+            "url": "gp-7909.html"
+          }
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 14,
+        "searchTerms": [
+          "한국투자파트너스",
+          "도미누스에쿼티파트너스",
+          "스틱인베스트먼트",
+          "한국산업은행",
+          "어펄마캐피탈매니져스코리아",
+          "어펄마캐피탈",
+          "제이앤프라이빗에쿼티",
+          "도미누스인베스트먼트",
+          "케이비인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260612-4",
+        "rank": 4,
+        "section": "국민성장펀드",
+        "subCategory": "출자·선정",
+        "rawSection": "국민성장펀드",
+        "title": "[150조 국민성장펀드] [간접투자 2차] 독립 못하는 카카오벤처스…1차 낙...",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/163442",
+        "summaryText": "AI·반도체 소형 분야 1000억 지원…잊혀져 가는 두나무 신화에 모회사 의존도 높아",
+        "summaryLines": [
+          "AI·반도체 소형 분야 1000억 지원",
+          "잊혀져 가는 두나무 신화에 모회사 의존도 높아"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [
+          "아주아이비투자",
+          "케이비인베스트먼트",
+          "파라투스인베스트먼트"
+        ],
+        "gpProfileLinks": [
+          {
+            "id": "62",
+            "name": "아주아이비투자",
+            "url": "gp-62.html"
+          },
+          {
+            "id": "42",
+            "name": "케이비인베스트먼트",
+            "url": "gp-42.html"
+          },
+          {
+            "id": "229",
+            "name": "파라투스인베스트먼트",
+            "url": "gp-229.html"
+          }
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 3,
+        "searchTerms": [
+          "아주아이비투자",
+          "아주IB투자",
+          "케이비인베스트먼트",
+          "KB인베스트먼트",
+          "파라투스인베스트먼트"
+        ]
+      },
+      {
+        "id": "clip-20260612-5",
+        "rank": 5,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "승강제에 국민성장펀드까지…대책 총집합에도 멀어지는 '코스닥...",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/11/2026061180134.html",
+        "summaryText": "승강제에 국민성장펀드까지…대책 총집합에도 멀어지는 '코스닥 3000'-인베스트조선",
+        "summaryLines": [
+          "승강제에 국민성장펀드까지",
+          "대책 총집합에도 멀어지는 '코스닥 3000'"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [
+          "미래에셋증권"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "미래에셋증권"
+        ]
+      },
+      {
+        "id": "clip-20260612-6",
+        "rank": 6,
         "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
@@ -124,8 +279,46 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-4",
-        "rank": 4,
+        "id": "clip-20260612-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "한국타이어, 롯데렌탈 인수 물밑 검토…어피너티 가격 본 롯데 ...",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/11/2026061180163.html",
+        "summaryText": "한국타이어, 롯데렌탈 인수 물밑 검토…어피너티 가격 본 롯데 눈높이가 관건-인베스트조선",
+        "summaryLines": [
+          "한국타이어, 롯데렌탈 인수 물밑 검토",
+          "어피너티 가격 본 롯데 눈높이가 관건"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "한앤컴퍼니"
+        ],
+        "gpProfileLinks": [
+          {
+            "id": "60",
+            "name": "한앤컴퍼니",
+            "url": "gp-60.html"
+          }
+        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 2,
+        "searchTerms": [
+          "한앤컴퍼니",
+          "한앤코"
+        ]
+      },
+      {
+        "id": "clip-20260612-8",
+        "rank": 8,
         "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
@@ -163,8 +356,89 @@
         ]
       },
       {
-        "id": "clip-20260612-5",
-        "rank": 5,
+        "id": "clip-20260612-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "율곡, KAI에 방산 부품 납품하는데...홍콩계 사모펀드 인수 가능성은",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "assets/brand-marks/biz-chosun-com.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/06/12/OPFFB3ELRNAVTEWDZQ266TQXWU",
+        "summaryText": "율곡, KAI에 방산 부품 납품하는데...홍콩계 사모펀드 인수 가능성은 이 기사는 2026년 6월 11일 18시 16분 조선비즈 머니무브MM 사이트에 표출됐습니다. 항공우주 부품업체 율곡 인수전에 홍콩계 사모펀드 앵커에쿼티파트너스앵커PE가 뛰어든 것으로 알려지면서,",
+        "summaryLines": [
+          "율곡, KAI에 방산 부품 납품하는데",
+          "홍콩계 사모펀드 인수 가능성은",
+          "항공우주 부품업체 율곡 인수전에 홍콩계 사모펀드 앵커에쿼티파트너스앵커PE가 뛰어든 것으로 알려지면서"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[마켓인]리걸테크 군침 흘리는 글로벌 사모펀드…국내선 VC가 눈독",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02046726645481064",
+        "summaryText": "글로벌 사모펀드(PEF) 운용사들이 법률 시장 투자를 늘리고 있다. PE가 로펌을 인수하는 움직임도 포착된다.",
+        "summaryLines": [
+          "글로벌 사모펀드(PEF) 운용사들이 법률 시장 투자를 늘리고 있다",
+          "PE가 로펌을 인수하는 움직임도 포착"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "늘어지는 이지스운용 매각…관건은 돌고 돌아 '가격'",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "assets/brand-marks/asiae-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026061116002152959",
+        "summaryText": "이지스자산운용 매각 작업이 좀처럼 속도를 내지 못하고 있다.",
+        "summaryLines": [
+          "이지스자산운용 매각 작업이 좀처럼 속도를 내지 못하고 있다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-12",
+        "rank": 12,
         "section": "Deal",
         "subCategory": "Ownership",
         "rawSection": "Deal",
@@ -184,28 +458,48 @@
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
         "gpNames": [
-          "한앤컴퍼니",
-          "아이엠엠프라이빗에쿼티"
+          "아이엠엠프라이빗에쿼티",
+          "한앤컴퍼니"
         ],
-        "gpProfileLinks": [
-          {
-            "id": "60",
-            "name": "한앤컴퍼니",
-            "url": "gp-60.html"
-          }
-        ],
+        "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 2,
+        "peopleCount": 0,
         "searchTerms": [
-          "한앤컴퍼니",
-          "한앤코",
-          "아이엠엠프라이빗에쿼티"
+          "아이엠엠프라이빗에쿼티",
+          "한앤컴퍼니"
         ]
       },
       {
-        "id": "clip-20260612-6",
-        "rank": 6,
+        "id": "clip-20260612-13",
+        "rank": 13,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "'7000억 밸류' 엑소코바이오 매각 추진, BofA증권 주관",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606101035457480101888",
+        "summaryText": "국내외 전략적 투자자(SI)는 물론 헬스케어·소비재 분야에 관심이 있는 사모펀드(PEF) 운용사도 인수후보로 거론될 수 있다. 엑소코바이오는 이미 7000억원 안팎의 기업가치가 거론돼왔다....",
+        "summaryLines": [
+          "국내외 전략적 투자자(SI)는 물론 헬스케어·소비재 분야에 관심이 있는 사모펀드(PEF) 운용사도 인수후보로…",
+          "엑소코바이오는 이미 7000억원 안팎의 기업가치가 거론돼왔다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-14",
+        "rank": 14,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -232,8 +526,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-7",
-        "rank": 7,
+        "id": "clip-20260612-15",
+        "rank": 15,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -259,8 +553,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-8",
-        "rank": 8,
+        "id": "clip-20260612-16",
+        "rank": 16,
         "section": "Deal",
         "subCategory": "Ownership",
         "rawSection": "Deal",
@@ -287,8 +581,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-9",
-        "rank": 9,
+        "id": "clip-20260612-17",
+        "rank": 17,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -317,157 +611,8 @@
         ]
       },
       {
-        "id": "clip-20260612-10",
-        "rank": 10,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "KKR “韓 아시아 최고 저평가 투자처…추가 상승여력 충분”",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/stock/12071576",
-        "summaryText": "2026 하반기 전망 보고서 발간 ‘코리아 디스카운트’ 일부 해소 여전히 70%는 장부가치 이하 거래 카브아웃 등으로 기업구조 개편해야",
-        "summaryLines": [
-          "2026 하반기 전망 보고서 발간 ‘코리아 디스카운트’ 일부 해소 여전히 70%는 장부가치 이하 거래 카브아웃 등…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260612-11",
-        "rank": 11,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "한화갤러리아, 파이브가이즈 매각 고삐…H&Q와 MOU 재체결",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05822006645480736",
-        "summaryText": "한화갤러리아(452260)가 수제버거 브랜드 파이브가이즈 지분 매각 절차를 이어간다. 지난해 사모펀드 운용사 에이치앤큐(H&Q)에쿼티파트너스와 체결한 양해각서(MOU)의 우선협상기간이 만료되면서 양측은 MOU를 다시 체결하고 협상 기한을 연장했다.",
-        "summaryLines": [
-          "한화갤러리아(452260)가 수제버거 브랜드 파이브가이즈 지분 매각 절차를 이어간다",
-          "지난해 사모펀드 운용사 에이치앤큐(H&Q)에쿼티파트너스와 체결한 양해각서(MOU)의 우선협상기간이 만료되면서 양측…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "에이치앤큐코리아파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "에이치앤큐코리아파트너스",
-          "H&Q"
-        ]
-      },
-      {
-        "id": "clip-20260612-12",
-        "rank": 12,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "태광산업 컨소시엄, 케이조선 인수 우협 선정 탈락",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/11/2026061180016.html",
-        "summaryText": "태광산업 컨소시엄, 케이조선 인수 우협 선정 탈락-인베스트조선",
-        "summaryLines": [
-          "태광산업 컨소시엄",
-          "케이조선 인수 우협 선정 탈락-인베스트조선"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "그린하버"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "27569",
-            "name": "그린하버",
-            "url": "gp-27569.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "그린하버"
-        ]
-      },
-      {
-        "id": "clip-20260612-13",
-        "rank": 13,
-        "section": "Deal",
-        "subCategory": "Signing·Closing",
-        "rawSection": "Deal",
-        "title": "SK에코플랜트, 프리IPO 투자금 반환 마무리…6500억 규모 CPS 취득",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "assets/brand-marks/biz-chosun-com.png",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/stock_general/2026/06/11/RNXI4SVFJZHRFIC3IU65ZW2WVE",
-        "summaryText": "SK에코플랜트, 프리IPO 투자금 반환 마무리6500억 규모 CPS 취득 SK에코플랜트가 재무적투자자FI들이 보유한 전환우선주CPS를 자사주로 취득하며 2022년 유치한 프리IPO 투자금 반환 작업을 마무리한다. 11일 금융감독원 전자공시시스템에 따르면 SK에코플랜트",
-        "summaryLines": [
-          "SK에코플랜트, 프리IPO 투자금 반환 마무리6500억 규모 CPS 취득 SK에코플랜트가 재무적투자자FI들이 보유…",
-          "11일 금융감독원 전자공시시스템에 따르면 SK에코플랜트"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260612-14",
-        "rank": 14,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "‘제작사 고가 인수 배임’ 김성수 전 카카오엔터 대표, 2심도 무죄",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20054493",
-        "summaryText": "드라마 제작사 바람픽쳐스를 고가에 인수해 회사에 손해를 끼친 혐의로 기소된 김성수 전 카카오엔터테인먼트 대표가 항소심에서도 무죄를 선고받았다. 서울고법 형사3부(재판장 이승한 부장판사)는 11일 특정경제범죄가중처벌등에관한법률위반(배임) 등 혐의로 기소된 김 전 대표에",
-        "summaryLines": [
-          "드라마 제작사 바람픽쳐스를 고가에 인수해 회사에 손해를 끼친 혐의로 기소된 김성수 전 카카오엔터테인먼트 대표가 항…",
-          "서울고법 형사3부(재판장 이승한 부장판사)는 11일 특정경제범죄가중처벌등에관한법률위반(배임) 등 혐의로 기소된 김…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260612-15",
-        "rank": 15,
+        "id": "clip-20260612-18",
+        "rank": 18,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -506,8 +651,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금",
           "한국투자공사",
           "kic",
@@ -516,8 +661,8 @@
         ]
       },
       {
-        "id": "clip-20260612-16",
-        "rank": 16,
+        "id": "clip-20260612-19",
+        "rank": 19,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -536,36 +681,26 @@
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
         "gpNames": [
-          "헬리오스프라이빗에쿼티",
-          "대우증권",
-          "NH투자증권",
-          "미래에셋자산운용"
+          "헬리오스프라이빗에쿼티"
         ],
         "gpProfileLinks": [
           {
             "id": "6358",
             "name": "헬리오스프라이빗에쿼티",
             "url": "gp-6358.html"
-          },
-          {
-            "id": "5",
-            "name": "미래에셋자산운용",
-            "url": "gp-5.html"
           }
         ],
         "lpNames": [],
         "lpProfileLinks": [],
-        "peopleCount": 2,
+        "peopleCount": 0,
         "searchTerms": [
           "헬리오스프라이빗에쿼티",
-          "대우증권",
-          "NH투자증권",
-          "미래에셋자산운용"
+          "헬리오스"
         ]
       },
       {
-        "id": "clip-20260612-17",
-        "rank": 17,
+        "id": "clip-20260612-20",
+        "rank": 20,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -591,8 +726,39 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-18",
-        "rank": 18,
+        "id": "clip-20260612-21",
+        "rank": 21,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "신한운용, 과기혁신펀드 GP 8곳에 1163억 쏜다",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/163416",
+        "summaryText": "첨단로봇·모빌리티 등 7개 분야로 진행…오는 26일 제안서 접수",
+        "summaryLines": [
+          "첨단로봇·모빌리티 등 7개 분야로 진행",
+          "오는 26일 제안서 접수"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [
+          "신한자산운용"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": [
+          "신한자산운용"
+        ]
+      },
+      {
+        "id": "clip-20260612-22",
+        "rank": 22,
         "section": "GP",
         "subCategory": "People",
         "rawSection": "GP",
@@ -610,20 +776,16 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [
-          "브레인자산운용"
-        ],
+        "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "브레인자산운용"
-        ]
+        "searchTerms": []
       },
       {
-        "id": "clip-20260612-19",
-        "rank": 19,
+        "id": "clip-20260612-23",
+        "rank": 23,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -653,8 +815,8 @@
         ]
       },
       {
-        "id": "clip-20260612-20",
-        "rank": 20,
+        "id": "clip-20260612-24",
+        "rank": 24,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -679,8 +841,35 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-21",
-        "rank": 21,
+        "id": "clip-20260612-25",
+        "rank": 25,
+        "section": "Market",
+        "subCategory": "Capital Market",
+        "rawSection": "Market",
+        "title": "환율 1500원대 뉴노멀…외국계PE 투자 셈법도 복잡해졌다",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/11/2026061180145.html",
+        "summaryText": "환율 1500원대 뉴노멀…외국계PE 투자 셈법도 복잡해졌다-인베스트조선",
+        "summaryLines": [
+          "환율 1500원대 뉴노멀",
+          "외국계PE 투자 셈법도 복잡해졌다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-26",
+        "rank": 26,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -706,8 +895,34 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260612-22",
-        "rank": 22,
+        "id": "clip-20260612-27",
+        "rank": 27,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "KKR “韓 아시아 최고 저평가 투자처…추가 상승여력 충분”",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "assets/brand-marks/mk-co-kr.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12071576",
+        "summaryText": "2026 하반기 전망 보고서 발간 ‘코리아 디스카운트’ 일부 해소 여전히 70%는 장부가치 이하 거래 카브아웃 등으로 기업구조 개편해야",
+        "summaryLines": [
+          "2026 하반기 전망 보고서 발간 ‘코리아 디스카운트’ 일부 해소 여전히 70%는 장부가치 이하 거래 카브아웃 등…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260612-28",
+        "rank": 28,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -736,44 +951,31 @@
         ]
       },
       {
-        "id": "clip-20260612-23",
-        "rank": 23,
+        "id": "clip-20260612-29",
+        "rank": 29,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
-        "title": "중기중앙회 추가 출자…마이다스보다 'NH아문디'",
+        "title": "\"회사 안 물려받아요\"…'제2의 청호나이스' 찾아나선 PEF들",
         "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606091650172280109136",
-        "summaryText": "중소기업중앙회는 공제회 중 위탁사들과 적극적인 소통을 이어가는 곳으로 알려져 있다. 중기중앙회는 지난달 8일 NH노란우산에 약 225억원을, 마이다스노란우산1에는 같은 날 약 108억원을 추가 출자했다.",
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "assets/brand-marks/investchosun-com.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/11/2026061180153.html",
+        "summaryText": "\"회사 안 물려받아요\"…'제2의 청호나이스' 찾아나선 PEF들-인베스트조선",
         "summaryLines": [
-          "중소기업중앙회는 공제회 중 위탁사들과 적극적인 소통을 이어가는 곳으로 알려져 있다",
-          "중기중앙회는 지난달 8일 NH노란우산에 약 225억원을, 마이다스노란우산1에는 같은 날 약 108억원을 추가 출자"
+          "회사 안 물려받아요",
+          "'제2의 청호나이스' 찾아나선 PEF들"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [
-          "중소기업중앙회"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kbiz",
-            "name": "중소기업중앙회",
-            "url": "lp-kbiz.html"
-          }
-        ],
+        "lpNames": [],
+        "lpProfileLinks": [],
         "peopleCount": 0,
-        "searchTerms": [
-          "중소기업중앙회",
-          "kbiz",
-          "중기중앙",
-          "KBIZ"
-        ]
+        "searchTerms": []
       }
     ]
   },
@@ -2229,8 +2431,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -3083,8 +3285,8 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
+          "KVIC",
           "벤처투자",
           "농업정책보험금융원",
           "kafi",
@@ -3135,8 +3337,8 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
+          "KVIC",
           "벤처투자"
         ]
       },
@@ -5114,8 +5316,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -6726,8 +6928,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -11199,8 +11401,8 @@
         "searchTerms": [
           "국민연금기금",
           "nps",
-          "기금운용본부",
           "국민연금공단",
+          "기금운용본부",
           "국민연금"
         ]
       },
@@ -11276,8 +11478,8 @@
           "kvic",
           "벤처투자종합포털",
           "한국모태펀드",
-          "KVIC",
           "모태펀드",
+          "KVIC",
           "벤처투자"
         ]
       },
@@ -12114,8 +12316,8 @@
         "searchTerms": [
           "중소기업중앙회",
           "kbiz",
-          "중기중앙",
-          "KBIZ"
+          "KBIZ",
+          "중기중앙"
         ]
       },
       {

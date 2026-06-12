@@ -1,16 +1,16 @@
 {
   "service": "kpef-newsletter",
   "status": "ok",
-  "built_at": "2026-06-11T22:04:17+00:00",
+  "built_at": "2026-06-12T22:29:21+00:00",
   "report_date": "2026-06-12",
-  "article_count": 24,
-  "lp_monitor_count": 84,
+  "article_count": 30,
+  "lp_monitor_count": 83,
   "ktcu_fact_count": 31,
   "lp_profile_fact_count": 293,
   "lp_profile_page_count": 25,
   "gp_count": 661,
   "gp_active_count": 437,
   "gp_profile_page_count": 120,
-  "gp_news_link_count": 1944,
+  "gp_news_link_count": 1963,
   "public_db_page": true
 }
