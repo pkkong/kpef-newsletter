@@ -1,5 +1,66 @@
 [
   {
+    "reportDate": "2026-06-14",
+    "visibleDate": "2026.06.14",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260614-0",
+        "rank": 0,
+        "section": "AI & PE",
+        "subCategory": "AI 투자·인프라",
+        "rawSection": "AI & PE",
+        "title": "\"이건 AI가 못 할걸요\"…남들 반도체·데이터센터 몰려갈 때 큰 손들이 ...",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026061211064410472",
+        "summaryText": "사모펀드 운용사(PE) 센트로이드인베스트먼트는 지난달 상조업체 더피플라이프 매각 우선협상대상자로 선정됐다. 선수금 4000억원 규모, 상조업계 6위 사업자다.",
+        "summaryLines": [
+          "사모펀드 운용사(PE) 센트로이드인베스트먼트는 지난달 상조업체 더피플라이프 매각 우선협상대상자로 선정",
+          "선수금 4000억원 규모, 상조업계 6위 사업자다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 0,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260614-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "율곡 인수전, 스틱·앵커·KCGI·VIG 등 4파전 압축",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=665302",
+        "summaryText": "항공기 조립, 부품 제조 업체인 율곡 인수전이 스틱인베스트먼트와 앵커에쿼티파트너스 등이 참여하며 '4파전'으로 좁혀졌다. 5곳의 사모펀드(PEF) 운용사가 본입찰에 참여하면서 흥행에는 성공했지만, 이중 프리미어파트너스는 인수 의사를 철회한 것으로 확인됐다.4곳의 후보들은 전략적 투자자",
+        "summaryLines": [
+          "항공기 조립, 부품 제조 업체인 율곡 인수전이 스틱인베스트먼트와 앵커에쿼티파트너스 등이 참여하며 '4파전'으로 좁…",
+          "5곳의 사모펀드(PEF) 운용사가 본입찰에 참여하면서 흥행에는 성공했지만, 이중 프리미어파트너스는 인수 의사를 철…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-13",
     "visibleDate": "2026.06.13",
     "basis": "",
@@ -13896,266 +13957,5 @@
     "visibleDate": "2026.05.16",
     "basis": "",
     "articles": []
-  },
-  {
-    "reportDate": "2026-05-15",
-    "visibleDate": "2026.05.15",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260515-0",
-        "rank": 0,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "'8조 빅딜' 배달의민족 M&A 제 값 받을까…'AI 전환 리스크' 돌출",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "assets/brand-marks/news-einfomax-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4414959",
-        "summaryText": "배달의민족을 둘러싼 전략적·재무적투자자(SI·FI)들의 셈법이 복잡해지고 있다.역대 최고 수준인 8조원대 매각가(價)가 예고된 만큼 원매자들의 '결단'이 필요한 상황인데, 최근 플랫폼 비즈니스를 중심으로 회의론이 확산되고 있는 점이 발목을 잡고 있다.15일 투자은행(IB)업계에 따르면 배달의민족 모회사인 독일 딜리버리히어로(DH)는 최근 JP모건을 주관사로 선정하고 국내외 대기업(SI)과 사모펀드운용사(FI)에 투자안내서를 배포했다.업계에선 배달의민족이 전략적 가치와 업계 1위 입지, 캐시 플로우를 고려하면 여전히 매력적인 매물이",
-        "summaryLines": [
-          "배달의민족을 둘러싼 전략적·재무적투자자(SI·FI)들의 셈법이 복잡해지고 있다",
-          "역대 최고 수준인 8조원대 매각가(價)가 예고된 만큼 원매자들의 '결단'이 필요한 상황인데, 최근 플랫폼 비즈…",
-          "업계에선 배달의민족이 전략적 가치와 업계 1위 입지, 캐시 플로우를 고려하면 여전히 매력적인 매물이"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 0,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-1",
-        "rank": 1,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "김종원 디오 대표 \"AI 플랫폼 기업으로 사업구조 전환 시동…기업가치 ...",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=03116006645449248&mediaCodeNo=257",
-        "summaryText": "\"수금이 되는 매출만 남기면서 부실을 털어내고 지난해 사상 최대 매출을 달성했다. 이제 인공지능(AI) 플랫폼을 통해 사업구조를 전환해 기업가치를 높일 것이다.\"김종원 디오 대표가 취임 직후 관행처럼 이어져온 영업 방식을 과감히 걷어내며 디오의 체질 개선에 나섰다.",
-        "summaryLines": [
-          "수금이 되는 매출만 남기면서 부실을 털어내고 지난해 사상 최대 매출을 달성",
-          "이제 인공지능(AI) 플랫폼을 통해 사업구조를 전환해 기업가치를 높일 것이다",
-          "김종원 디오 대표가 취임 직후 관행처럼 이어져온 영업 방식을 과감히 걷어내며 디오의 체질 개선에"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 0,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "신창에프에이, 미국발 훈풍 덕 흑자…자...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605131442219200102413",
-        "summaryText": "2024년 말에는 창사 이래 첫 외부 펀딩에 나서 사모펀드(PEF) 운용사 로드스톤프라이빗에쿼티로(PE)부터 100억원을 투자받았다. 해당 투자로 로드스톤PE는 신창에프에이 우선주 12.5%를 보유한 2대 주주에 올랐으며, 50억원...",
-        "summaryLines": [
-          "2024년 말에는 창사 이래 첫 외부 펀딩에 나서 사모펀드(PEF) 운용사 로드스톤프라이빗에쿼티로(PE)부터…",
-          "해당 투자로 로드스톤PE는 신창에프에이 우선주 12.5%를 보유한 2대 주주에 올랐으며, 50억원"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "로드스톤프라이빗에쿼티"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "로드스톤프라이빗에쿼티"
-        ]
-      },
-      {
-        "id": "clip-20260515-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "율촌, M&A 4본부 체제 개편…신현화·이수연·황규상·이태혁 전면에[마...",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "assets/brand-marks/edaily-co-kr.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?newsId=06455046645448920&mediaCodeNo=257",
-        "summaryText": "법무법인 율촌이 인수합병(M&A) 그룹을 4개 본부 체제로 개편하고 검증된 딜메이커들을 각 본부장에 앉혔다. 박재현 대표 변호사 체제가 자리를 잡아가는 가운데, 기존 세대교체 기조를 조직 구조에까지 고착시킨 전략적 포석으로 풀이된다.왼쪽 상단부터 시계방향으로 신현화·...",
-        "summaryLines": [
-          "법무법인 율촌이 인수합병(M&A) 그룹을 4개 본부 체제로 개편하고 검증된 딜메이커들을 각 본부장에 앉혔다",
-          "박재현 대표 변호사 체제가 자리를 잡아가는 가운데, 기존 세대교체 기조를 조직 구조에까지 고착시킨 전략적 포석…",
-          "왼쪽 상단부터 시계방향으로 신현화"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "우아한형제들 매각전 막 올랐다…'8조 빅딜' 향방은",
-        "titleBadges": [],
-        "source": "뉴스핌",
-        "sourceBadge": "핌",
-        "sourceIconUrl": "assets/brand-marks/newspim-com.png",
-        "sourceIconStyle": "",
-        "url": "https://www.newspim.com/news/view/20260514000930",
-        "summaryText": "기자 = 독일 딜리버리히어로(Delivery Hero·DH)가 국내 배달 플랫폼 1위 우아한형제들 매각 작업에 본격 착수했다.인수 후보군으로는 중국 알리바바그룹(Alibaba Group)과 미국 우버(Uber)-네이버(NAV",
-        "summaryLines": [
-          "기자 = 독일 딜리버리히어로(Delivery Hero·DH)가 국내 배달 플랫폼 1위 우아한형제들 매각 작업에…",
-          "인수 후보군으로는 중국 알리바바그룹(Alibaba Group)과 미국 우버(Uber)-네이버(NAV"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-5",
-        "rank": 5,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "글로벌세아, 영업익 85%를 이자로…유동성 위기에도 오너家에 배당[재무...",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20044236?ref=naver",
-        "summaryText": "글로벌세아가 공격적인 인수합병(M&A) 후폭풍에 따른 유동성 압박과 계열사 부실 리스크라는 이중고에 직면했다. 영업이익 대부분으로 이자를 상환한 가운데 세아STX엔테크, 쌍용건설 등 자회사의 현금 흐름까지 악화되며 곳곳에서 위험 신호가 감지되고 있다.",
-        "summaryLines": [
-          "글로벌세아가 공격적인 인수합병(M&A) 후폭풍에 따른 유동성 압박과 계열사 부실 리스크라는 이중고에 직면",
-          "영업이익 대부분으로 이자를 상환한 가운데 세아STX엔테크, 쌍용건설 등 자회사의 현금 흐름까지 악화되며 곳곳에…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-6",
-        "rank": 6,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "빚으로 키운 몸집 ‘부메랑’…글로벌세아, 오너일가 배당·대여는 계속",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "assets/brand-marks/sedaily-com.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20044354?ref=naver",
-        "summaryText": "글로벌세아가 공격적인 인수합병(M&A) 이후 커진 재무 부담으로 유동성 압박이 심화되고 있다. 영업이익 대부분이 금융비용으로 빠져나가는 가운데 주요",
-        "summaryLines": [
-          "글로벌세아가 공격적인 인수합병(M&A) 이후 커진 재무 부담으로 유동성 압박이 심화되고 있다",
-          "영업이익 대부분이 금융비용으로 빠져나가는 가운데 주요"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-7",
-        "rank": 7,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
-        "title": "IB 호실적, 빅딜·구조화 금융 쌍끌이 ...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605130622258860107717",
-        "summaryText": "M&A 자문과 인수금융 분야의 활약도 상당했다. 사모펀드(PEF) 운용사들이 주도하는 바이아웃 시장에서 화성코스메틱스 인수금융을 성공적으로 주선했다.",
-        "summaryLines": [
-          "M&A 자문과 인수금융 분야의 활약도 상당",
-          "사모펀드(PEF) 운용사들이 주도하는 바이아웃 시장에서 화성코스메틱스 인수금융을 성공적으로 주선"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260515-8",
-        "rank": 8,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "컴포즈 품은 졸리비…배당·유상감자로 현금 회수 속도전",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "assets/brand-marks/dealsite-co-kr.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/161695",
-        "summaryText": "인수 2년도 안돼 투자금 20% 회수...수익성 둔화 속 현금유출 가속",
-        "summaryLines": [
-          "인수 2년도 안돼 투자금 20% 회수",
-          "수익성 둔화 속 현금유출 가속"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "프리미어파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "프리미어파트너스"
-        ]
-      }
-    ]
   }
 ]

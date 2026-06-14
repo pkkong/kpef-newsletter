@@ -1,16 +1,15 @@
 {
   "service": "kpef-newsletter",
   "status": "ok",
-  "built_at": "2026-06-13T13:42:18+00:00",
-  "report_date": "2026-06-13",
-  "article_count": 30,
-  "lp_monitor_count": 8,
-  "ktcu_fact_count": 31,
-  "lp_profile_fact_count": 293,
-  "lp_profile_page_count": 25,
-  "gp_count": 661,
-  "gp_active_count": 437,
-  "gp_profile_page_count": 120,
-  "gp_news_link_count": 1963,
-  "public_db_page": true
+  "built_at": "2026-06-14T01:33:04+00:00",
+  "report_date": "2026-06-14",
+  "article_count": 2,
+  "lp_monitor_count": 0,
+  "ktcu_fact_count": 0,
+  "lp_profile_fact_count": 0,
+  "lp_profile_page_count": 0,
+  "gp_count": 0,
+  "gp_active_count": 0,
+  "gp_profile_page_count": 0,
+  "gp_news_link_count": 0
 }
