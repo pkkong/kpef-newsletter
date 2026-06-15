@@ -36,58 +36,6 @@
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
-        "title": "증시 몰린 개인자금…돈줄 마른 기관, PEF 출자 속속 닫는다 [시그널]",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20055461",
-        "summaryText": "개인 투자자들의 자금이 증시로 이동하는 ‘머니무브’ 현상이 가속화되자 국내 주요 기관투자가(LP)들의 자산 포트폴리오 재조정 움직임이 분주해졌다.",
-        "summaryLines": [
-          "개인 투자자들의 자금이 증시로 이동하는 ‘머니무브’ 현상이 가속화되자 국내 주요 기관투자가(LP)들의 자산 포트폴…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260615-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "상장사 M&A 도중 깜짝 무증…주가 25% 급등한 엠앤씨솔루션[이충희의 쓰...",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20055592",
-        "summaryText": "올해 국내 인수합병(M&A) 시장에 나온 주요 빅딜 가운데 하나인 엠앤씨솔루션(484870)이 매각 측·인수 측 간의 주식매매계약(SPA) 체결을 앞두고 전격적인 무상증자 카드를 꺼내 들었습니다.",
-        "summaryLines": [
-          "올해 국내 인수합병(M&A) 시장에 나온 주요 빅딜 가운데 하나인 엠앤씨솔루션(484870)이 매각 측·인수 측…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260615-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
         "title": "7조 빅딜에서 회생까지…홈플러...",
         "titleBadges": [],
         "source": "더벨",
@@ -109,8 +57,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260615-4",
-        "rank": 4,
+        "id": "clip-20260615-2",
+        "rank": 2,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -135,8 +83,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260615-5",
-        "rank": 5,
+        "id": "clip-20260615-3",
+        "rank": 3,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -161,8 +109,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260615-6",
-        "rank": 6,
+        "id": "clip-20260615-4",
+        "rank": 4,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -187,8 +135,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260615-7",
-        "rank": 7,
+        "id": "clip-20260615-5",
+        "rank": 5,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -8196,37 +8144,6 @@
           "국민연금공단",
           "기금운용본부",
           "국민연금"
-        ]
-      },
-      {
-        "id": "clip-20260602-15",
-        "rank": 15,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "웰투시인베, 6000억 규모 블라인드펀드 조성 추진",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "assets/brand-marks/thebell-co-kr.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/front/newsview.asp?key=202605281525477600107393",
-        "summaryText": "사모펀드(PEF) 운용사 웰투시인베스트먼트가 신규 블라인드펀드 조성에 나선다. 국민성장펀드 위탁운용사로 선정된 것을 계기로 국내 첨단 제조업과 산업재 투자에 속도를 낼 전망이다.",
-        "summaryLines": [
-          "사모펀드(PEF) 운용사 웰투시인베스트먼트가 신규 블라인드펀드 조성에 나선다",
-          "국민성장펀드 위탁운용사로 선정된 것을 계기로 국내 첨단 제조업과 산업재 투자에 속도를 낼 전망"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "웰투시인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "웰투시인베스트먼트"
         ]
       },
       {
