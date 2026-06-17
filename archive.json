@@ -63,6 +63,33 @@
         "id": "clip-20260617-2",
         "rank": 2,
         "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "아모레퍼시픽, 비올메디컬 투자…최종인수 노린 '빅픽처'",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/163604",
+        "summaryText": "VIG파트너스 펀드에 800억 베팅…의료미용 영역 사업 확장 포석",
+        "summaryLines": [
+          "VIG파트너스 펀드에 800억 베팅",
+          "의료미용 영역 사업 확장 포석"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260617-3",
+        "rank": 3,
+        "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
         "title": "박병건 PEF협의회장 \"VC회수 활성화, 제도개선·기업경쟁력 제고 병행돼...",
@@ -88,8 +115,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-3",
-        "rank": 3,
+        "id": "clip-20260617-4",
+        "rank": 4,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -115,8 +142,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-4",
-        "rank": 4,
+        "id": "clip-20260617-5",
+        "rank": 5,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -142,8 +169,35 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-5",
-        "rank": 5,
+        "id": "clip-20260617-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "[JTBC 회생신청] 중앙그룹 회생 폭탄…JKL·프랙시스 회수 비상",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/163634",
+        "summaryText": "담보 없는 CB 투자사 원금 손실 위험, 한투PE 등 FI 투자금만 4300억 규모",
+        "summaryLines": [
+          "담보 없는 CB 투자사 원금 손실 위험",
+          "한투PE 등 FI 투자금만 4300억 규모"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260617-7",
+        "rank": 7,
         "section": "Deal",
         "subCategory": "Auction",
         "rawSection": "Deal",
@@ -169,8 +223,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-6",
-        "rank": 6,
+        "id": "clip-20260617-8",
+        "rank": 8,
         "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
@@ -195,8 +249,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-7",
-        "rank": 7,
+        "id": "clip-20260617-9",
+        "rank": 9,
         "section": "Deal",
         "subCategory": "Financing",
         "rawSection": "Deal",
@@ -222,8 +276,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-8",
-        "rank": 8,
+        "id": "clip-20260617-10",
+        "rank": 10,
         "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
@@ -249,8 +303,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-9",
-        "rank": 9,
+        "id": "clip-20260617-11",
+        "rank": 11,
         "section": "Deal",
         "subCategory": "Issue",
         "rawSection": "Deal",
@@ -275,8 +329,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-10",
-        "rank": 10,
+        "id": "clip-20260617-12",
+        "rank": 12,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -301,8 +355,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260617-11",
-        "rank": 11,
+        "id": "clip-20260617-13",
+        "rank": 13,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -317,60 +371,6 @@
         "summaryLines": [
           "최근 아시아 자본시장에서 행동주의 펀드 공세가 거세지고 있는 가운데, 일본경제단체연합회의 핵심 인사가 “국가 안보…",
           "마사키 요시히사 경단련 소셜 커뮤니케이션국 본부장은 한국경제인협회가 주최한 경영권 방어 아카데미의 연사로 나서 ‘…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260617-12",
-        "rank": 12,
-        "section": "Deal",
-        "subCategory": "Auction",
-        "rawSection": "Deal",
-        "title": "'한국 버거킹' 3년 만에 매각 재시동...매각 주관사에 도이치證 [fn마켓워치]",
-        "titleBadges": [],
-        "source": "파이낸셜뉴스",
-        "sourceBadge": "파",
-        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
-        "sourceIconStyle": "",
-        "url": "https://www.fnnews.com/news/202606162016298856",
-        "summaryText": "글로벌 사모펀드인 어피니티에쿼티파트너스가 유명 햄버거 프랜차이즈 업체인 버거킹 운영사 BKR 매각에 돌입했다.어피니티는 올 초 일본 버거킹 재팬을 골드만삭스 대체투자사업부에 엑시트 했다.IB업계 관계자는 \"어피니티가 최근 버거킹재팬 지분을 7500억원 매각하..",
-        "summaryLines": [
-          "글로벌 사모펀드인 어피니티에쿼티파트너스가 유명 햄버거 프랜차이즈 업체인 버거킹 운영사 BKR 매각에 돌입",
-          "어피니티는 올 초 일본 버거킹 재팬을 골드만삭스 대체투자사업부에 엑시트",
-          "IB업계 관계자는 \"어피니티가 최근 버거킹재팬 지분을 7500억원 매각하"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260617-13",
-        "rank": 13,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "일본 경단련 \"국가 안보 위협하는 행동주의 펀드 개입에는 정부 대응 필...",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026061608492918964",
-        "summaryText": "일본 재계가 최근 아시아 자본시장에서 영향력을 확대하고 있는 행동주의 펀드에 대해 우려를 나타냈다.",
-        "summaryLines": [
-          "일본 재계가 최근 아시아 자본시장에서 영향력을 확대하고 있는 행동주의 펀드에 대해 우려를 나타냈다"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
