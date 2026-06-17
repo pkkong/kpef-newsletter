@@ -24,7 +24,10 @@
   const navItems = [...document.querySelectorAll("[data-view]")];
   const showLpMonitor = lpMonitor.length > 0 && Boolean(lpMonitorPanel);
 
-  const queryDate = new URLSearchParams(window.location.search).get("date");
+  const initialParams = new URLSearchParams(window.location.search);
+  const queryDate = initialParams.get("date");
+  const initialQuery = initialParams.get("q") || "";
+  if (searchInput && initialQuery) searchInput.value = initialQuery;
   const initialDate = queryDate || (dateSelect && dateSelect.value) || (dateInput && dateInput.value) || "";
   let activeBrief = archive.find((brief) => brief.reportDate === initialDate) || archive[0] || {
     reportDate: "",
