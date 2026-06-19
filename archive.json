@@ -64,6 +64,33 @@
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
+        "title": "IMM PE, 시지바이오 1.1조에 인수 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20057522",
+        "summaryText": "국내 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE)가 대웅그룹 계열 시지바이오를 약 1조 1000억 원에 품는다. 시지바이오는 바이오 재생의료 사업을 영위하는 기업으로 2040년까지 존슨앤드존슨 계열사에 2조 5000억 원 상당의 제품을 납품하는 독점 계약을 맺었",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE)가 대웅그룹 계열 시지바이오를 약 1조 1000억 원에 품…",
+          "시지바이오는 바이오 재생의료 사업을 영위하는 기업으로 2040년까지 존슨앤드존슨 계열사에 2조 5000억 원 상당…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260619-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
         "title": "'美 시장 수혜' 척추치료재 1위 기업에 1.1조 배팅한 IMM PE",
         "titleBadges": [],
         "source": "한국경제",
@@ -86,8 +113,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-3",
-        "rank": 3,
+        "id": "clip-20260619-4",
+        "rank": 4,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -114,8 +141,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-4",
-        "rank": 4,
+        "id": "clip-20260619-5",
+        "rank": 5,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -141,8 +168,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-5",
-        "rank": 5,
+        "id": "clip-20260619-6",
+        "rank": 6,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -167,8 +194,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-6",
-        "rank": 6,
+        "id": "clip-20260619-7",
+        "rank": 7,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -194,8 +221,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-7",
-        "rank": 7,
+        "id": "clip-20260619-8",
+        "rank": 8,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -221,8 +248,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-8",
-        "rank": 8,
+        "id": "clip-20260619-9",
+        "rank": 9,
         "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
@@ -248,8 +275,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-9",
-        "rank": 9,
+        "id": "clip-20260619-10",
+        "rank": 10,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -275,8 +302,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-10",
-        "rank": 10,
+        "id": "clip-20260619-11",
+        "rank": 11,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -302,8 +329,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-11",
-        "rank": 11,
+        "id": "clip-20260619-12",
+        "rank": 12,
         "section": "Deal",
         "subCategory": "Financing",
         "rawSection": "Deal",
@@ -330,8 +357,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-12",
-        "rank": 12,
+        "id": "clip-20260619-13",
+        "rank": 13,
         "section": "LP",
         "subCategory": "Portfolio Review",
         "rawSection": "LP",
@@ -357,8 +384,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-13",
-        "rank": 13,
+        "id": "clip-20260619-14",
+        "rank": 14,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -385,8 +412,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260619-14",
-        "rank": 14,
+        "id": "clip-20260619-15",
+        "rank": 15,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -400,33 +427,6 @@
         "summaryText": "상반기 출자금액 2조에 육박 국내 주요 연기금·공제회가 올해 부동산블라인드펀드 출자에 잇달아 나서며 규모가 2조원에 근접했다.",
         "summaryLines": [
           "상반기 출자금액 2조에 육박 국내 주요 연기금·공제회가 올해 부동산블라인드펀드 출자에 잇달아 나서며 규모가 2조원…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260619-15",
-        "rank": 15,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "“증시로 떠나는 돈 붙잡아라”…공제회, 4%대 금리로 회원 자금 방어",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202606184447r",
-        "summaryText": "“증시로 떠나는 돈 붙잡아라”…공제회, 4%대 금리로 회원 자금 방어, 군공, 만기·월지급식 금리 0.4%P 인상 성과 환원 목적이라지만 \"회원 붙잡기 성격도\"",
-        "summaryLines": [
-          "증시로 떠나는 돈 붙잡아라",
-          "공제회, 4%대 금리로 회원 자금 방어, 군공, 만기·월지급식 금리 0.4%P 인상 성과 환원 목적이라지만 \"회원…"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
