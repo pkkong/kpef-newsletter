@@ -1,5 +1,120 @@
 [
   {
+    "reportDate": "2026-06-21",
+    "visibleDate": "2026.06.21",
+    "basis": "",
+    "articles": [
+      {
+        "id": "clip-20260621-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "사모펀드 인수전의 새 계산법…율곡 매각 변수 된 고용안정[위클리IB]",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01387446645483688",
+        "summaryText": "사모펀드(PEF) 인수전에서 고용승계가 더 이상 부수적 조건에 머물지 않는 분위기다. 비용 효율화와 기업가치 제고를 앞세우는 PEF가 모든 인수전에서 고용안정을 약속할 수는 없다.",
+        "summaryLines": [
+          "사모펀드(PEF) 인수전에서 고용승계가 더 이상 부수적 조건에 머물지 않는 분위기다",
+          "비용 효율화와 기업가치 제고를 앞세우는 PEF가 모든 인수전에서 고용안정을 약속할 수는 없다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260621-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "MBK-메리츠 벼랑끝 대치, 사줄 곳 찾을까…홈플러스 운명의 2주 돌입 [M&A복덕방]",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12078899",
+        "summaryText": "DIP 두고 MBK·메리츠 갈등 격화 회생계획안 가결 가능성 높이려면 대형 유통사 등 인수의사 확인해야 광화문 더케이트윈타워 매각 시동",
+        "summaryLines": [
+          "DIP 두고 MBK·메리츠 갈등 격화 회생계획안 가결 가능성 높이려면 대형 유통사 등 인수의사 확인해야 광화문 더…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260621-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "‘1조 몸값’ 꿈꿨던 토종 앱마켓…원스토어의 10년 잔혹사",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01259526645483688",
+        "summaryText": "국내 토종 앱마켓의 자존심이었던 원스토어가 결국 블록체인 게임사에 매각됐다. 10년 전 구글과 애플에 맞서 야심차게 출범한 원스토어는 투자유치를 통해 몸집을 키웠지만, 상장과 매각이 모두 난항을 겪으며 SK그룹의 아픈 손가락으로 전락했다.",
+        "summaryLines": [
+          "국내 토종 앱마켓의 자존심이었던 원스토어가 결국 블록체인 게임사에 매각",
+          "10년 전 구글과 애플에 맞서 야심차게 출범한 원스토어는 투자유치를 통해 몸집을 키웠지만, 상장과 매각이 모두 난…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260621-3",
+        "rank": 3,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "이번주 국내 주요 금융일정(6.22~6.26)",
+        "titleBadges": [],
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "https://img.newspim.com/m/mweb/favicon_144X144V2.png",
+        "sourceIconStyle": "",
+        "url": "https://www.newspim.com/news/view/20260619000885",
+        "summaryText": "왼쪽부터 이찬진 금감원장, 구 부총리,신현송 한국은행 총재, 이억원 금감위원장.[사진=뉴스핌DB]6월 21일(일요일)금융위원회, 청년미래적금 출시 안내(12시)금융위원회, 금융규제 샌드박스 제도개선 발표행사주재(12시)금융감독원, 대형 여전사·저축은행 책무",
+        "summaryLines": [
+          "왼쪽부터 이찬진 금감원장, 구 부총리",
+          "신현송 한국은행 총재",
+          "이억원 금감위원장.[사진=뉴스핌DB]6월 21일(일요일)금융위원회"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-20",
     "visibleDate": "2026.06.20",
     "basis": "",
@@ -15923,192 +16038,5 @@
     "visibleDate": "2026.05.23",
     "basis": "",
     "articles": []
-  },
-  {
-    "reportDate": "2026-05-22",
-    "visibleDate": "2026.05.22",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260522-0",
-        "rank": 0,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "나노캠텍 회장 \"과거 편견 말고 성과로 판단해달라…오너 결단으로 체질...",
-        "titleBadges": [],
-        "source": "머니투데이",
-        "sourceBadge": "머",
-        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.mt.co.kr/stock/2026/05/22/2026052008124937894",
-        "summaryText": "이상규 회장은 최근 머니투데이와의 인터뷰에서 \"간단히 말해 내 이름 석 자 내걸고 경영하겠다는 의지 표명\"이라며 \"그간 전문 경영인 체제로 안정화에는 성공했으나 소재 산업의 성장성 한계를 극복하기 위해 유망 사업인 AI 기반 로봇 소프트웨어를 선택했다\"고 밝혔다.",
-        "summaryLines": [
-          "이상규 회장은 최근 머니투데이와의 인터뷰에서 \"간단히 말해 내 이름 석 자 내걸고 경영하겠다는 의지 표명\"이라…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 0,
-        "gpNames": [
-          "디비프라이빗에쿼티"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "디비프라이빗에쿼티"
-        ]
-      },
-      {
-        "id": "clip-20260522-1",
-        "rank": 1,
-        "section": "Deal",
-        "subCategory": "Financing",
-        "rawSection": "Deal",
-        "title": "UCK파트너스, 설빙 인수금융 2차 리캡... 원금 대부분 회수 전망",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/market_trend/2026/05/22/Z53CBREKEZFDBFZ6KX42DHB5LQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-        "summaryText": "단독 UCK파트너스, 설빙 인수금융 2차 리캡... 원금 대부분 회수 전망 이 기사는 2026년 5월 21일 15시 46분 조선비즈 머니무브MM 사이트에 표출됐습니다.",
-        "summaryLines": [
-          "단독 UCK파트너스, 설빙 인수금융 2차 리캡",
-          "원금 대부분 회수 전망"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260522-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Issue",
-        "rawSection": "Deal",
-        "title": "본계약 체결 놓고 막판 장고 들어간 이지스자산운용 M&A",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://www.hankyung.com/article/202605210963r",
-        "summaryText": "본계약 체결 놓고 막판 장고 들어간 이지스자산운용 M&A, 가격·조건 입장 차에 지난주부터 협상 중단 상황 차순위 협상 대상 흥국으로 넘어갈 가능성은 희박",
-        "summaryLines": [
-          "가격·조건 입장 차에 지난주부터 협상 중단 상황 차순위 협상 대상 흥국으로 넘어갈 가능성은 희박"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260522-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "페트리코, 카카오게임즈 인수금 펀딩 속도…'0%' 프리미엄 강조",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605191607378520109420",
-        "summaryText": "진행해왔지만 이번 카카오게임즈 거래는 단일 기준 최대 규모다. IB 업계에서는 신생 PEF가 시가 수준 매각 구조와 전략적 투자자 참여를 결합해 대형 거래 클로징 단계까지 진입한 사례라는 점에서 의미를 두고 있다.",
-        "summaryLines": [
-          "진행해왔지만 이번 카카오게임즈 거래는 단일 기준 최대 규모다",
-          "IB 업계에서는 신생 PEF가 시가 수준 매각 구조와 전략적 투자자 참여를 결합해 대형 거래 클로징 단계까지…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260522-4",
-        "rank": 4,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "중소기업중앙회 자산운용본부장 공개 모집… 내달 8일 마감",
-        "titleBadges": [],
-        "source": "경기신문",
-        "sourceBadge": "경",
-        "sourceIconUrl": "https://www.kgnews.co.kr/data/skin/layout/1/m19/images/favicon144.png",
-        "sourceIconStyle": "",
-        "url": "https://www.kgnews.co.kr/news/article.html?no=896874",
-        "summaryText": "경기도를 대표하는 경기신문은 정직하고 바른·사람을 존중하는 신문을 추구합니다.",
-        "summaryLines": [
-          "경기도를 대표하는 경기신문은 정직하고 바른·사람을 존중하는 신문을 추구"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "중소기업중앙회"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kbiz",
-            "name": "중소기업중앙회",
-            "url": "lp-kbiz.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "중소기업중앙회",
-          "kbiz",
-          "중기중앙",
-          "KBIZ"
-        ]
-      },
-      {
-        "id": "clip-20260522-5",
-        "rank": 5,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "얼라인, 덴티움 주총 무효소 '쉽지 않네' [넘버스]",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=663173",
-        "summaryText": "행동주의 사모펀드 운용사(PEF)인 얼라인파트너스자산운용이 국내 2위 치과용 의료 기기 업체 덴티움의 '의결권 조작' 의혹을 제기, 예고한대로 법적 조치를 시작한 가운데 향후 행보와 진의에 이목이 집중된다. 주총 무효소까진 힘들어도 사문서 위조를 증명할 경우 취소 소송을 제기해 볼만하",
-        "summaryLines": [
-          "행동주의 사모펀드 운용사(PEF)인 얼라인파트너스자산운용이 국내 2위 치과용 의료 기기 업체 덴티움의 '의결권…",
-          "주총 무효소까진 힘들어도 사문서 위조를 증명할 경우 취소 소송을 제기해 볼만하"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "얼라인파트너스자산운용"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "얼라인파트너스자산운용"
-        ]
-      }
-    ]
   }
 ]
