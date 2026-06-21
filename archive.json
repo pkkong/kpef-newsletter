@@ -56,61 +56,6 @@
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
-      },
-      {
-        "id": "clip-20260621-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "‘1조 몸값’ 꿈꿨던 토종 앱마켓…원스토어의 10년 잔혹사",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01259526645483688",
-        "summaryText": "국내 토종 앱마켓의 자존심이었던 원스토어가 결국 블록체인 게임사에 매각됐다. 10년 전 구글과 애플에 맞서 야심차게 출범한 원스토어는 투자유치를 통해 몸집을 키웠지만, 상장과 매각이 모두 난항을 겪으며 SK그룹의 아픈 손가락으로 전락했다.",
-        "summaryLines": [
-          "국내 토종 앱마켓의 자존심이었던 원스토어가 결국 블록체인 게임사에 매각",
-          "10년 전 구글과 애플에 맞서 야심차게 출범한 원스토어는 투자유치를 통해 몸집을 키웠지만, 상장과 매각이 모두 난…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260621-3",
-        "rank": 3,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "이번주 국내 주요 금융일정(6.22~6.26)",
-        "titleBadges": [],
-        "source": "뉴스핌",
-        "sourceBadge": "핌",
-        "sourceIconUrl": "https://img.newspim.com/m/mweb/favicon_144X144V2.png",
-        "sourceIconStyle": "",
-        "url": "https://www.newspim.com/news/view/20260619000885",
-        "summaryText": "왼쪽부터 이찬진 금감원장, 구 부총리,신현송 한국은행 총재, 이억원 금감위원장.[사진=뉴스핌DB]6월 21일(일요일)금융위원회, 청년미래적금 출시 안내(12시)금융위원회, 금융규제 샌드박스 제도개선 발표행사주재(12시)금융감독원, 대형 여전사·저축은행 책무",
-        "summaryLines": [
-          "왼쪽부터 이찬진 금감원장, 구 부총리",
-          "신현송 한국은행 총재",
-          "이억원 금감위원장.[사진=뉴스핌DB]6월 21일(일요일)금융위원회"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
       }
     ]
   },
