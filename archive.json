@@ -3,6 +3,7 @@
     "reportDate": "2026-06-23",
     "visibleDate": "2026.06.23",
     "basis": "",
+    "articleCount": 23,
     "articles": [
       {
         "id": "clip-20260623-0",
@@ -35,56 +36,6 @@
         "id": "clip-20260623-1",
         "rank": 1,
         "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "시지메드텍, 최대주주 PE 인수에 ‘上’…탈모주 삼익제약·JW신약도↑[바이오맥짚기]",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02689606645484672",
-        "summaryText": "이 기사는 2026년06월22일 08시00분에 팜이데일리 프리미엄 콘텐츠로 선공개 되었습니다. 19일 국내 제약·바이오 종목 중에는 시지메드텍(056090)과 삼익제약(014950), JW신약(067290)의 주가가 크게 상승했다.",
-        "summaryLines": [
-          "19일 국내 제약·바이오 종목 중에는 시지메드텍(056090)과 삼익제약(014950), JW신약(067290)의…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "한국타이어는 롯데렌탈 인수전 완주할 수 있을까",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/22/2026062280189.html",
-        "summaryText": "한국타이어는 롯데렌탈 인수전 완주할 수 있을까-인베스트조선",
-        "summaryLines": [],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-3",
-        "rank": 3,
-        "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
         "title": "아르게스PE, 아쉬움 남긴 팅크웨어 투자금 회수",
@@ -109,35 +60,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "VIG 피앤씨랩스 반값에…파이어세일 2가지 이유",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/163896",
-        "summaryText": "2000억에 사서 1000억에 밑지고 급매...뜨는 K뷰티 속 지는 마스크팩, 3호 블라인드 청산으로 분배 이슈",
-        "summaryLines": [
-          "2000억에 사서 1000억에 밑지고 급매",
-          "뜨는 K뷰티 속 지는 마스크팩, 3호 블라인드 청산으로 분배 이슈"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-5",
-        "rank": 5,
+        "id": "clip-20260623-2",
+        "rank": 2,
         "section": "Deal",
         "subCategory": "Ownership",
         "rawSection": "Deal",
@@ -163,35 +87,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-6",
-        "rank": 6,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "'F2텔레콤 맞손' KCA파트너스, SK TNS 인수전 부상 배경은",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606181353522000108580",
-        "summaryText": "SK TNS 인수전에 참여한 KCA파트너스가 SK텔레콤 협력사 F2텔레콤을 전략적투자자(SI)로 확보하며 시장의 이목을 끌고 있다. F2텔레콤은 최태원 SK그룹 회장의 고종사촌인 이인환 회장이 최대주주인 회사이기도 하다.",
-        "summaryLines": [
-          "SK TNS 인수전에 참여한 KCA파트너스가 SK텔레콤 협력사 F2텔레콤을 전략적투자자(SI)로 확보하며 시장의…",
-          "F2텔레콤은 최태원 SK그룹 회장의 고종사촌인 이인환 회장이 최대주주인 회사이기도 하다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-7",
-        "rank": 7,
+        "id": "clip-20260623-3",
+        "rank": 3,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -217,8 +114,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-8",
-        "rank": 8,
+        "id": "clip-20260623-4",
+        "rank": 4,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -243,22 +140,22 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-9",
-        "rank": 9,
+        "id": "clip-20260623-5",
+        "rank": 5,
         "section": "Deal",
-        "subCategory": "Exit",
+        "subCategory": "Acquisition",
         "rawSection": "Deal",
-        "title": "[위기의 스팩②]IPO 심사 강화에 스팩도 '병목'…회수시장 다각화 필요",
+        "title": "'F2텔레콤 맞손' KCA파트너스, SK TNS 인수전 부상 배경은",
         "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026062216221832972",
-        "summaryText": "편집자주기업인수목적회사(SPAC·스팩)는 한때 비상장기업의 새로운 상장 통로이자 벤처투자 회수시장 보완재로 주목받았지만, 최근 들어 합병 실패와 상장폐지가.",
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606181353522000108580",
+        "summaryText": "SK TNS 인수전에 참여한 KCA파트너스가 SK텔레콤 협력사 F2텔레콤을 전략적투자자(SI)로 확보하며 시장의 이목을 끌고 있다. F2텔레콤은 최태원 SK그룹 회장의 고종사촌인 이인환 회장이 최대주주인 회사이기도 하다.",
         "summaryLines": [
-          "편집자주기업인수목적회사(SPAC·스팩)는 한때 비상장기업의 새로운 상장 통로이자 벤처투자 회수시장 보완재로 주목받…",
-          "최근 들어 합병 실패와 상장폐지가"
+          "SK TNS 인수전에 참여한 KCA파트너스가 SK텔레콤 협력사 F2텔레콤을 전략적투자자(SI)로 확보하며 시장의…",
+          "F2텔레콤은 최태원 SK그룹 회장의 고종사촌인 이인환 회장이 최대주주인 회사이기도 하다"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
@@ -270,8 +167,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-10",
-        "rank": 10,
+        "id": "clip-20260623-6",
+        "rank": 6,
         "section": "Deal",
         "subCategory": "Ownership",
         "rawSection": "Deal",
@@ -296,8 +193,35 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-11",
-        "rank": 11,
+        "id": "clip-20260623-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "VIG 피앤씨랩스 반값에…파이어세일 2가지 이유",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/163896",
+        "summaryText": "2000억에 사서 1000억에 밑지고 급매...뜨는 K뷰티 속 지는 마스크팩, 3호 블라인드 청산으로 분배 이슈",
+        "summaryLines": [
+          "2000억에 사서 1000억에 밑지고 급매",
+          "뜨는 K뷰티 속 지는 마스크팩, 3호 블라인드 청산으로 분배 이슈"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260623-8",
+        "rank": 8,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -323,8 +247,32 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-12",
-        "rank": 12,
+        "id": "clip-20260623-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "한국타이어는 롯데렌탈 인수전 완주할 수 있을까",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/22/2026062280189.html",
+        "summaryText": "한국타이어는 롯데렌탈 인수전 완주할 수 있을까-인베스트조선",
+        "summaryLines": [],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260623-10",
+        "rank": 10,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -350,8 +298,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-13",
-        "rank": 13,
+        "id": "clip-20260623-11",
+        "rank": 11,
         "section": "LP",
         "subCategory": "Mandate",
         "rawSection": "LP",
@@ -376,8 +324,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-14",
-        "rank": 14,
+        "id": "clip-20260623-12",
+        "rank": 12,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -402,8 +350,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-15",
-        "rank": 15,
+        "id": "clip-20260623-13",
+        "rank": 13,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -429,8 +377,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-16",
-        "rank": 16,
+        "id": "clip-20260623-14",
+        "rank": 14,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -457,36 +405,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-17",
-        "rank": 17,
-        "section": "LP",
-        "subCategory": "Allocation",
-        "rawSection": "LP",
-        "title": "[미리보는 이데일리 신문]퇴직연금 위험자산 100% 허용 급물살",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05359526645484344",
-        "summaryText": "△1면 -퇴직연금 위험자산 100% 허용 급물살 -하청까지 원청에 성과급 요구… 파업 새 불씨로 -G7 희토류 공급망 동맹 韓도 정책 대응 서둘러야 -26년 만에 시총 순위 대격변… SK하이닉스 1위 등극 -부동...",
-        "summaryLines": [
-          "△1면 -퇴직연금 위험자산 100% 허용 급물살 -하청까지 원청에 성과급 요구",
-          "파업 새 불씨로 -G7 희토류 공급망 동맹 韓도 정책 대응 서둘러야 -26년 만에 시총 순위 대격변",
-          "SK하이닉스 1위 등극 -부동"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-18",
-        "rank": 18,
+        "id": "clip-20260623-15",
+        "rank": 15,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -512,8 +432,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-19",
-        "rank": 19,
+        "id": "clip-20260623-16",
+        "rank": 16,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -539,8 +459,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-20",
-        "rank": 20,
+        "id": "clip-20260623-17",
+        "rank": 17,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -566,8 +486,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-21",
-        "rank": 21,
+        "id": "clip-20260623-18",
+        "rank": 18,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -593,8 +513,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-22",
-        "rank": 22,
+        "id": "clip-20260623-19",
+        "rank": 19,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -621,35 +541,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-23",
-        "rank": 23,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "'꿈의 직장' SK하이닉스, 전략 짤 선수 뽑는다…\"리서치·IB·PE 우대\"",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4421301",
-        "summaryText": "수억 원에 달하는 성과급 지급으로 꿈의 직장이 된 SK하이닉스가 성장전략을 짜는 조직을 신설한 뒤 경력자를 채용 중이다. 반도체·인공지능(AI)을 이해하는 투자은행(IB)·사모펀드(PE)·벤처캐피탈(VC)·리서치하우스 출신을 우대한다는 방침이다.23일 업계에 따르면 SK하이닉스[000660]가 지난 4월 성장전략이라는 조직을 신설했다.",
-        "summaryLines": [
-          "수억 원에 달하는 성과급 지급으로 꿈의 직장이 된 SK하이닉스가 성장전략을 짜는 조직을 신설한 뒤 경력자를 채용…",
-          "반도체·인공지능(AI)을 이해하는 투자은행(IB)·사모펀드(PE)·벤처캐피탈(VC)·리서치하우스 출신을 우대한다는…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-24",
-        "rank": 24,
+        "id": "clip-20260623-20",
+        "rank": 20,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -675,35 +568,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-25",
-        "rank": 25,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "홈플러스 운영자금 책임공방…대주주 MBK냐, 주채권사 메리츠금융이냐",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04060646645484344",
-        "summaryText": "홈플러스가 기업회생 절차를 밟고 있는 가운데, 회생의 성패를 좌우할 긴급 운영자금(DIP 금융)을 둘러싸고 최대주주 MBK파트너스와 최대 채권자인 메리츠금융그룹의 신경전이 격화하고 있다. 메리츠금융은 연일 공개 입장문을 내며 MBK 책임론을 부각하고 있고, MBK는 ...",
-        "summaryLines": [
-          "홈플러스가 기업회생 절차를 밟고 있는 가운데, 회생의 성패를 좌우할 긴급 운영자금(DIP 금융)을 둘러싸고 최대주…",
-          "메리츠금융은 연일 공개 입장문을 내며 MBK 책임론을 부각하고 있고, MBK는"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-26",
-        "rank": 26,
+        "id": "clip-20260623-21",
+        "rank": 21,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -729,35 +595,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260623-27",
-        "rank": 27,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "점검 필요한 美사모대출…비상장 BDC 환매 정점은 언제",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026062216332509407",
-        "summaryText": "기관이 아닌 일반투자자도 받는 비상장 기업성장집합투자기구(BDC)의 환매 요청률이 2분기에 더 높아졌지만, 환매 압력은 정점에 다가왔다는 전망이 나온다.",
-        "summaryLines": [
-          "기관이 아닌 일반투자자도 받는 비상장 기업성장집합투자기구(BDC)의 환매 요청률이 2분기에 더 높아졌지만",
-          "환매 압력은 정점에 다가왔다는 전망이 나온다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260623-28",
-        "rank": 28,
+        "id": "clip-20260623-22",
+        "rank": 22,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -1137,7 +976,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 13
   },
   {
     "reportDate": "2026-06-21",
@@ -1197,7 +1037,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 2
   },
   {
     "reportDate": "2026-06-20",
@@ -1928,7 +1769,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 27
   },
   {
     "reportDate": "2026-06-19",
@@ -2555,7 +2397,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 23
   },
   {
     "reportDate": "2026-06-18",
@@ -2992,7 +2835,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 16
   },
   {
     "reportDate": "2026-06-17",
@@ -3457,7 +3301,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 17
   },
   {
     "reportDate": "2026-06-16",
@@ -3916,7 +3761,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 17
   },
   {
     "reportDate": "2026-06-15",
@@ -4079,7 +3925,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 6
   },
   {
     "reportDate": "2026-06-14",
@@ -4113,7 +3960,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 1
   },
   {
     "reportDate": "2026-06-13",
@@ -5138,7 +4986,8 @@
           "엠비케이파트너스"
         ]
       }
-    ]
+    ],
+    "articleCount": 30
   },
   {
     "reportDate": "2026-06-12",
@@ -6093,7 +5942,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 30
   },
   {
     "reportDate": "2026-06-11",
@@ -7145,7 +6995,8 @@
           "스틱인베스트먼트"
         ]
       }
-    ]
+    ],
+    "articleCount": 30
   },
   {
     "reportDate": "2026-06-10",
@@ -7775,7 +7626,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 20
   },
   {
     "reportDate": "2026-06-09",
@@ -8633,7 +8485,8 @@
           "리드캐피탈매니지먼트"
         ]
       }
-    ]
+    ],
+    "articleCount": 25
   },
   {
     "reportDate": "2026-06-08",
@@ -9012,7 +8865,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 12
   },
   {
     "reportDate": "2026-06-07",
@@ -9159,7 +9013,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 5
   },
   {
     "reportDate": "2026-06-06",
@@ -9982,7 +9837,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 27
   },
   {
     "reportDate": "2026-06-05",
@@ -10801,7 +10657,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 25
   },
   {
     "reportDate": "2026-06-04",
@@ -11056,7 +10913,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 8
   },
   {
     "reportDate": "2026-06-03",
@@ -11588,7 +11446,8 @@
           "KB증권"
         ]
       }
-    ]
+    ],
+    "articleCount": 16
   },
   {
     "reportDate": "2026-06-02",
@@ -12231,7 +12090,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 21
   },
   {
     "reportDate": "2026-06-01",
@@ -13109,7 +12969,8 @@
           "스틱인베스트먼트"
         ]
       }
-    ]
+    ],
+    "articleCount": 28
   },
   {
     "reportDate": "2026-05-31",
@@ -13268,7 +13129,8 @@
           "테넷에쿼티파트너스"
         ]
       }
-    ]
+    ],
+    "articleCount": 5
   },
   {
     "reportDate": "2026-05-30",
@@ -13944,7 +13806,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 23
   },
   {
     "reportDate": "2026-05-29",
@@ -14885,7 +14748,8 @@
           "브이아이지파트너스"
         ]
       }
-    ]
+    ],
+    "articleCount": 29
   },
   {
     "reportDate": "2026-05-28",
@@ -15787,7 +15651,8 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 29
   },
   {
     "reportDate": "2026-05-27",
@@ -16498,7 +16363,8 @@
           "에스지프라이빗에쿼티"
         ]
       }
-    ]
+    ],
+    "articleCount": 22
   },
   {
     "reportDate": "2026-05-26",
@@ -17010,7 +16876,8 @@
           "브이아이지파트너스"
         ]
       }
-    ]
+    ],
+    "articleCount": 16
   },
   {
     "reportDate": "2026-05-25",
@@ -17110,6 +16977,7 @@
         "peopleCount": 0,
         "searchTerms": []
       }
-    ]
+    ],
+    "articleCount": 3
   }
 ]

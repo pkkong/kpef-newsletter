@@ -21,6 +21,7 @@
   const lpDetailBody = document.getElementById("lpDetailBody");
   const lpDetailClose = document.getElementById("lpDetailClose");
   const skeleton = document.querySelector(".skeleton-list");
+  const resultSummary = document.getElementById("resultSummary");
   const navItems = [...document.querySelectorAll("[data-view]")];
   const showLpMonitor = lpMonitor.length > 0 && Boolean(lpMonitorPanel);
 
@@ -47,6 +48,24 @@
   };
 
   const queryText = () => (searchInput ? searchInput.value.trim().toLowerCase() : "");
+
+  const formatCount = (value) => Number(value || 0).toLocaleString("ko-KR");
+
+  const issueArticleCount = (brief) => {
+    const rows = Array.isArray(brief?.articles) ? brief.articles : [];
+    if (rows.length) return rows.length;
+    const count = Number(brief?.articleCount);
+    return Number.isFinite(count) && count > 0 ? count : 0;
+  };
+
+  const syncSearchUrl = () => {
+    const url = new URL(window.location.href);
+    const value = searchInput ? searchInput.value.trim() : "";
+    if (value) url.searchParams.set("q", value);
+    else url.searchParams.delete("q");
+    if (activeBrief.reportDate) url.searchParams.set("date", activeBrief.reportDate);
+    window.history.replaceState({}, "", url);
+  };
 
   const textMatches = (values, query) => {
     if (!query) return true;
@@ -95,9 +114,10 @@
 
   const updateDateControl = () => {
     const index = activeBriefIndex();
+    const activeCount = issueArticleCount(activeBrief);
     if (dateInput) dateInput.value = activeBrief.reportDate || "";
     if (dateLabel) dateLabel.textContent = activeBrief.visibleDate || activeBrief.reportDate || "";
-    if (weekdayLabel) weekdayLabel.textContent = activeBrief.reportDate ? weekdayName(activeBrief.reportDate) : "";
+    if (weekdayLabel) weekdayLabel.textContent = activeBrief.reportDate ? (activeCount > 0 ? weekdayName(activeBrief.reportDate) : "발행 없음") : "";
     if (datePrev) datePrev.disabled = index < 0 || index >= archive.length - 1;
     if (dateNext) dateNext.disabled = index <= 0;
   };
@@ -142,6 +162,22 @@
     const sourceRows = query ? allArchiveArticles() : articles;
     if (!query) return sourceRows;
     return sourceRows.filter((article) => articleMatches(article, query));
+  };
+
+  const updateResultSummary = (items) => {
+    if (!resultSummary) return;
+    const query = queryText();
+    const visibleDate = activeBrief.visibleDate || activeBrief.reportDate || "";
+    if (query) {
+      resultSummary.textContent = `전체 아카이브 검색 · ${formatCount(items.length)}건`;
+      return;
+    }
+    const activeCount = issueArticleCount(activeBrief);
+    if (activeCount > 0) {
+      resultSummary.textContent = `${visibleDate} · 기사 ${formatCount(activeCount)}건`;
+      return;
+    }
+    resultSummary.textContent = visibleDate ? `${visibleDate} · 발행 없음` : "브리프 준비 중";
   };
 
   const filteredLpMonitor = () => {
@@ -575,9 +611,10 @@
     if (!items.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state visible";
+      const visibleDate = activeBrief.visibleDate || activeBrief.reportDate || "선택한 날짜";
       empty.innerHTML = queryText()
-        ? "<strong>결과가 없습니다</strong><span>검색어를 줄여 다시 확인합니다.</span>"
-        : "<strong>발행된 뉴스가 없습니다</strong><span>이 날짜에는 아직 표시할 뉴스가 없습니다.</span>";
+        ? "<strong>검색 결과가 없습니다</strong><span>다른 기관명, 운용사명, 기사 키워드로 확인합니다.</span>"
+        : `<strong>발행 없음</strong><span>${visibleDate}에는 공개된 브리프가 없습니다.</span>`;
       target.append(empty);
       return;
     }
@@ -602,6 +639,7 @@
     const newsItems = filtered();
     const noticeItems = filteredLpMonitor();
     updateBriefChrome();
+    updateResultSummary(newsItems);
     renderLpMonitor(noticeItems);
     renderGrouped(todayList, newsItems);
   };
@@ -633,6 +671,7 @@
       searchInput.value = filterChip.dataset.filter || "";
       setSearchOpen(true);
       setView("today");
+      syncSearchUrl();
       render();
       searchInput.focus();
       return;
@@ -649,6 +688,7 @@
     searchClose.addEventListener("click", () => {
       if (searchInput && searchInput.value) {
         searchInput.value = "";
+        syncSearchUrl();
         render();
       }
       setSearchOpen(false);
@@ -675,6 +715,7 @@
 
   if (searchInput) searchInput.addEventListener("input", () => {
     setSearchOpen(true);
+    syncSearchUrl();
     render();
   });
   if (dateSelect) {

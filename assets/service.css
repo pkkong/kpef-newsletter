@@ -421,6 +421,17 @@ button, input { font: inherit; }
 .search-close::before { transform: rotate(45deg); }
 .search-close::after { transform: rotate(-45deg); }
 .content-area { display: grid; gap: 14px; }
+.result-summary {
+  min-height: 18px;
+  margin: 0 0 8px;
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.newsletter-only .result-summary {
+  margin: 0 0 6px;
+}
 .lp-monitor-panel {
   display: grid;
   gap: 8px;
