@@ -1,5 +1,440 @@
 [
   {
+    "reportDate": "2026-06-27",
+    "visibleDate": "2026.06.27",
+    "basis": "",
+    "articleCount": 16,
+    "articles": [
+      {
+        "id": "clip-20260627-0",
+        "rank": 0,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "특정 산업 쏠림에 밸류거품 우려…국민성장펀드 4조 집행 시험대",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/26/2026062680082.html",
+        "summaryText": "특정 산업 쏠림에 밸류거품 우려…국민성장펀드 4조 집행 시험대-인베스트조선",
+        "summaryLines": [
+          "특정 산업 쏠림에 밸류거품 우려",
+          "국민성장펀드 4조 집행 시험대-인베스트조선"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-1",
+        "rank": 1,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "국민성장펀드 1호 리가켐바이오, 바이오 훈풍 불까",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45841",
+        "summaryText": "국민성장펀드가 헬스케어 직접투자 1호로 신약개발 기업 리가켐바이오를 택했다. 5000억원을 조달하면 현금 보유만 1조원에 가까워진다.",
+        "summaryLines": [
+          "국민성장펀드가 헬스케어 직접투자 1호로 신약개발 기업 리가켐바이오를 택",
+          "5000억원을 조달하면 현금 보유만 1조원에 가까워진다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "MBK, 日 요양기업 美 사모펀드로 2조에 매각",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/164351",
+        "summaryText": "노인 요양서비스 재팬웰빙 인수 4년 만에 엑시트",
+        "summaryLines": [
+          "노인 요양서비스 재팬웰빙 인수 4년 만에 엑시트"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "MBK, 日 요양기업 재팬웰빙 2조 원에 미국 사모펀드로 매각 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20060648",
+        "summaryText": "사모펀드(PEF) 운용사 MBK파트너스가 일본 시니어케어 기업 재팬웰빙을 미국 PEF 운용사 어드벤트인터내셔널에 매각했다. 26일 투자은행(IB) 업계에 따르면 MBK는 현재 보유한 재팬웰빙 경영권 지분을 어드벤트인터내셔널에 매각하기로 합",
+        "summaryLines": [
+          "사모펀드(PEF) 운용사 MBK파트너스가 일본 시니어케어 기업 재팬웰빙을 미국 PEF 운용사 어드벤트인터내셔널에…",
+          "26일 투자은행(IB) 업계에 따르면 MBK는 현재 보유한 재팬웰빙 경영권 지분을 어드벤트인터내셔널에 매각하기로 합"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "MBK, 日 요양기업 ‘재팬웰빙’ 2조원에 매각",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/06/26/TUPTM5CHOBBQPBBKMCCCWOARZM",
+        "summaryText": "MBK, 日 요양기업 재팬웰빙 2조원에 매각 사모펀드PEF 운용사 MBK파트너스가 일본 노인 요양 서비스 기업 재팬웰빙 경영권 지분을 약 2조원에 매각했다. 26일 투자은행IB 업계에 따르면 재팬웰빙은 MBK가 가진 경영권 지분을 어드벤트인터내셔널이 인...",
+        "summaryLines": [
+          "MBK, 日 요양기업 재팬웰빙 2조원에 매각 사모펀드PEF 운용사 MBK파트너스가 일본 노인 요양 서비스 기업 재…",
+          "26일 투자은행IB 업계에 따르면 재팬웰빙은 MBK가 가진 경영권 지분을 어드벤트인터내셔널이 인"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "크레센도, 알파플러스 경영권 매각 착수 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20060606",
+        "summaryText": "사모펀드(PEF) 운용사 크레센도에쿼티파트너스가 디스플레이 장비사인 알파플러스의 경영권 매각에 착수했다. 알파플러스는 수년간 적자가 발생했지만 지난해 흑자전환에 성공하면서 실적이 본궤도에 올랐다.",
+        "summaryLines": [
+          "사모펀드(PEF) 운용사 크레센도에쿼티파트너스가 디스플레이 장비사인 알파플러스의 경영권 매각에 착수",
+          "알파플러스는 수년간 적자가 발생했지만 지난해 흑자전환에 성공하면서 실적이 본궤도에 올랐다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "매각 접고 밸류업 선언…크레센도, HPSP 직접 경영 나선다[시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20060609",
+        "summaryText": "사모펀드(PEF) 운용사 크레센도에쿼티파트너스가 핵심 포트폴리오사인 HPSP(403870)의 직접 경영 체제에 돌입했다. 경영권 매각 작업을 접어두고 중장기 보유를 통한 기업가치 제고 전략으로 방향을 본격 선회했다는 분석이 나온다.",
+        "summaryLines": [
+          "사모펀드(PEF) 운용사 크레센도에쿼티파트너스가 핵심 포트폴리오사인 HPSP(403870)의 직접 경영 체제에 돌입",
+          "경영권 매각 작업을 접어두고 중장기 보유를 통한 기업가치 제고 전략으로 방향을 본격 선회했다는 분석이 나온다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "펫 장례 시장 커진다... 프랙시스캐피탈, 수협과 21그램에 추가 투자",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/06/27/D3BD6HBK3JBNHP3242O7YO553Y",
+        "summaryText": "프랙시스캐피탈, 수협과 21그램에 추가 투자 수협중앙회와 총 800억원 투입 인수 5개월 만에 6개 지점 확장 반려동물 장례식장 통합 정조준 이 기사는 2026년 6월 26일 15시 38분 조선비즈 머니무브MM 사이트에 표출됐습니다.",
+        "summaryLines": [
+          "수협과 21그램에 추가 투자 수협중앙회와 총 800억원 투입 인수 5개월 만에 6개 지점 확장 반려동물 장례식장…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "\"유니레버, 美 보충제 업체 쏜 인수 검토\"…뷰티·웰빙 확장 가속",
+        "titleBadges": [],
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "https://img.newspim.com/m/mweb/favicon_144X144V2.png",
+        "sourceIconStyle": "",
+        "url": "https://www.newspim.com/news/view/20260626000987",
+        "summaryText": "[뉴욕=뉴스핌] 김민정 특파원 = 유니레버가 미국 건강기능식품(보충제) 업체 쏜(Thorne) 인수를 검토하고 있다고 26일(현지시간) 파이낸셜타임스(FT)가 보도했다. 도브 비누로 잘 알려진 유니레버가 페르난도 페르난데스 최고경영자(CEO) 체제에서 뷰티·",
+        "summaryLines": [
+          "김민정 특파원 = 유니레버가 미국 건강기능식품(보충제) 업체 쏜(Thorne) 인수를 검토하고 있다고 26일(현지…",
+          "도브 비누로 잘 알려진 유니레버가 페르난도 페르난데스 최고경영자(CEO) 체제에서 뷰티"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-9",
+        "rank": 9,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "9천피 넘었다 하면 \"국민연금 수천억씩 던져\"...이제 매도 끝?",
+        "titleBadges": [],
+        "source": "머니투데이",
+        "sourceBadge": "머",
+        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
+        "url": "https://www.mt.co.kr/stock/2026/06/27/2026062617220820041",
+        "summaryText": "국민연금이 다음달 국내주식 리밸런싱(자산 재분배)을 앞둔 가운데 이달 코스피가 9000을 넘은 구간마다 국민연금이 국내 연기금 수급의 핵심으로 꼽혀 온 만큼 시장에서는 이같은 연기금 순매도에 국민연금 매도분이 상당 부분 포함됐을 것이란 관측이 나온다.",
+        "summaryLines": [
+          "국민연금이 다음달 국내주식 리밸런싱(자산 재분배)을 앞둔 가운데 이달 코스피가 9000을 넘은 구간마다 국민연금이…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-10",
+        "rank": 10,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "머스트 원앤온리, 퇴직연금 편입 가능성 열렸다",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606240944040640102983",
+        "summaryText": "타임폴리오자산운용의 '위드타임' 펀드가 사모재간접 공모펀드 중 처음으로 퇴직연금 클래스를 갖추면서, 같은 유형인 다른 펀드들도 퇴직연금 시장에 진입할 수 있을지 관심이 모인다. 그 중심에 있는 게 머스트자산운용의 '머스트 원앤온리' 펀드다.",
+        "summaryLines": [
+          "타임폴리오자산운용의 '위드타임' 펀드가 사모재간접 공모펀드 중 처음으로 퇴직연금 클래스를 갖추면서, 같은 유형인…",
+          "그 중심에 있는 게 머스트자산운용의 '머스트 원앤온리' 펀드다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-11",
+        "rank": 11,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "방산 새싹 정조준하는 한화자산운용, 660억 펀드 출격",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4421968",
+        "summaryText": "한화자산운용이 방위산업 관련 스타트업 발굴과 육성을 위한 펀드 결성을 완료했다. 펀드를 통해 민간 비군수와 군수의 가교 구실을 하겠다는 구상이다.26일 투자(IB)업계에 따르면 한화자산운용은 이달 30일 방산수출 기업 투자를 위한 펀드를 설정한다.",
+        "summaryLines": [
+          "한화자산운용이 방위산업 관련 스타트업 발굴과 육성을 위한 펀드 결성을 완료",
+          "펀드를 통해 민간 비군수와 군수의 가교 구실을 하겠다는 구상이다.26일 투자(IB)업계에 따르면 한화자산운용은 이…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-12",
+        "rank": 12,
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
+        "title": "크레센도PE, HPSP '직접 경영' 굳히기…이기두 대표가 키 잡았다",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026062613375609545",
+        "summaryText": "반도체 전공정 장비업체 HPSP가 사모투자펀드(PEF) 운용사 크레센도에쿼티파트너스(이하 크레센도)의 이기두 대표를 신임 대표이사로 선임했다.",
+        "summaryLines": [
+          "반도체 전공정 장비업체 HPSP가 사모투자펀드(PEF) 운용사 크레센도에쿼티파트너스(이하 크레센도)의 이기두 대표…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-13",
+        "rank": 13,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "하나벤처스, K-미래전략산업 모펀드 GP 7곳 낙점",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45847",
+        "summaryText": "하나금융그룹 계열 벤처캐피탈 하나벤처스가 운용하는 하나 모두 성장 K-미래전략산업 벤처 모펀드 출자사업에서 ▲스마일게이트인베스트먼트 ▲지앤텍벤처투자 ▲코메스인베스",
+        "summaryLines": [
+          "하나금융그룹 계열 벤처캐피탈 하나벤처스가 운용하는 하나 모두 성장 K-미래전략산업 벤처 모펀드 출자사업에서"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-14",
+        "rank": 14,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "글로벌 PE라는 명함",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606191556221400106944",
+        "summaryText": "블랙스톤, KKR, 아폴로, 칼라일, TPG, 베인캐피탈 등 내로라하는 글로벌 사모펀드(PEF)들이 한국 시장을 노리고 있다. 이들은 아시아 시장을 겨냥한 수조원 규모의 펀드를 운용하고 있다.",
+        "summaryLines": [
+          "블랙스톤, KKR, 아폴로, 칼라일, TPG, 베인캐피탈 등 내로라하는 글로벌 사모펀드(PEF)들이 한국 시장을…",
+          "이들은 아시아 시장을 겨냥한 수조원 규모의 펀드를 운용하고 있다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260627-15",
+        "rank": 15,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "한국캐피탈, 고수익 성장 전략의...",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606240823232100105845",
+        "summaryText": "한국캐피탈이 투자금융 육성에 힘을 실으며 고수익 성장 기반을 넓히고 있다. 투자조합과 사모펀드(PEF)를 중심으로 투자 부문을 확대하며 수익원 다변화에 속도를 내는 모습이다.",
+        "summaryLines": [
+          "한국캐피탈이 투자금융 육성에 힘을 실으며 고수익 성장 기반을 넓히고 있다",
+          "투자조합과 사모펀드(PEF)를 중심으로 투자 부문을 확대하며 수익원 다변화에 속도를 내는 모습이다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-06-26",
     "visibleDate": "2026.06.26",
     "basis": "",
@@ -16413,909 +16848,6 @@
           "유안타증권",
           "브이아이지파트너스"
         ]
-      }
-    ],
-    "articleCount": 29
-  },
-  {
-    "reportDate": "2026-05-28",
-    "visibleDate": "2026.05.28",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260528-0",
-        "rank": 0,
-        "section": "AI & PE",
-        "subCategory": "AI 전략·운영",
-        "rawSection": "AI & PE",
-        "title": "[포토] \"AI 확산·지정학 갈등…대체투자 공식이 바뀐다\"",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://www.hankyung.com/article/2026052725801",
-        "summaryText": "[포토] \"AI 확산·지정학 갈등…대체투자 공식이 바뀐다\", ASK 2026 글로벌 대체투자 콘퍼런스",
-        "summaryLines": [
-          "AI 확산·지정학 갈등",
-          "대체투자 공식이 바뀐다\", ASK 2026 글로벌 대체투자 콘퍼런스"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 0,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-1",
-        "rank": 1,
-        "section": "국민성장펀드",
-        "subCategory": "출자·선정",
-        "rawSection": "국민성장펀드",
-        "title": "[150조 국민성장펀드] [간접투자 1차] 2.4조 운용할 GP 선정…에이티넘·...",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162589",
-        "summaryText": "올해 말까지 자펀드 조성…생산적 금융 총력에 매칭 무난할 듯",
-        "summaryLines": [
-          "올해 말까지 자펀드 조성",
-          "생산적 금융 총력에 매칭 무난할 듯"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [
-          "삼호그린인베스트먼트",
-          "오픈워터인베스트먼트",
-          "파라투스인베스트먼트",
-          "SBI인베스트먼트",
-          "대신프라이빗에쿼티",
-          "웰투시인베스트먼트",
-          "키움프라이빗에쿼티",
-          "미래에셋벤처투자"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "삼호그린인베스트먼트",
-          "오픈워터인베스트먼트",
-          "파라투스인베스트먼트",
-          "SBI인베스트먼트",
-          "대신프라이빗에쿼티",
-          "웰투시인베스트먼트",
-          "키움프라이빗에쿼티",
-          "미래에셋벤처투자"
-        ]
-      },
-      {
-        "id": "clip-20260528-2",
-        "rank": 2,
-        "section": "국민성장펀드",
-        "subCategory": "출자·선정",
-        "rawSection": "국민성장펀드",
-        "title": "[150조 국민성장펀드] [간접투자 2차] 1차 끝나자마자 1.6조 규모 출자사업 개시",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162599",
-        "summaryText": "루키 리그 사라지고 스케일업·지역전용 신설, 총 7000억 출자…내달 10일 접수",
-        "summaryLines": [
-          "루키 리그 사라지고 스케일업·지역전용 신설, 총 7000억 출자",
-          "내달 10일 접수"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [
-          "한국산업은행"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국산업은행"
-        ]
-      },
-      {
-        "id": "clip-20260528-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "[맘스터치 M&A] 99%가 가맹점인데…李정부 보호법이 걸림돌",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162388",
-        "summaryText": "가맹사업법 개정으로 점주 교섭력 확대...2년 전 갈등으로 시정조치·과징금 3억 이력",
-        "summaryLines": [
-          "가맹사업법 개정으로 점주 교섭력 확대...2년 전 갈등으로 시정조치·과징금 3억 이력"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "케이엘앤파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "케이엘앤파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260528-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "SK지오센트릭, 폐플라스틱 재활용 자회사 사모펀드에 매각… 친환경 투...",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/market_trend/2026/05/28/AAXJRDPJZZHYREMCJCD3KT4G5I",
-        "summaryText": "SK지오센트릭, 폐플라스틱 재활용 자회사 사모펀드에 매각 친환경 투자 재정비 이 기사는 2026년 5월 27일 16시 27분 조선비즈 머니무브MM 사이트에 표출됐습니다. SK지오센트릭이 폐플라스틱 재활용 자회사 원폴을 매각했다.",
-        "summaryLines": [
-          "SK지오센트릭, 폐플라스틱 재활용 자회사 사모펀드에 매각 친환경 투자 재정비",
-          "SK지오센트릭이 폐플라스틱 재활용 자회사 원폴을 매각"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-5",
-        "rank": 5,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "피자헛 품는 前 현대차 부사장…\"마케팅 경험 살려 승부할 것\"",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/stock/12059131",
-        "summaryText": "조원홍 윈터골드PE 대표과거 브랜드 파워 회복시켜가맹점 수익 정상화 포부",
-        "summaryLines": [
-          "조원홍 윈터골드PE 대표과거 브랜드 파워 회복시켜가맹점 수익 정상화 포부"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "윈터골드"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "윈터골드"
-        ]
-      },
-      {
-        "id": "clip-20260528-6",
-        "rank": 6,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "한앤코, 케이카 매각 전 마지막 분기 배당…1조 잭팟 완성",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162400",
-        "summaryText": "배당 1711억·구주매출 3065억·매각 대금 5500억…6월말 매매 계약 종결",
-        "summaryLines": [
-          "배당 1711억·구주매출 3065억·매각 대금 5500억",
-          "6월말 매매 계약 종결"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "캑터스프라이빗에쿼티",
-          "한앤컴퍼니"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "캑터스프라이빗에쿼티",
-          "한앤컴퍼니"
-        ]
-      },
-      {
-        "id": "clip-20260528-7",
-        "rank": 7,
-        "section": "Deal",
-        "subCategory": "Financing",
-        "rawSection": "Deal",
-        "title": "VAC, ‘기회추구형’ 투자 속도… 회생기업 코다코에 500억 DIP 대...",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/market_trend/2026/05/27/FGAU27BZHBEK7M7JR2BCXH7EAU",
-        "summaryText": "단독 VAC, 기회추구형 투자 속도 회생기업 코다코에 500억 DIP 대출 VAC·한투PE, 500억 규모 DIP 대출 계약 천안·안성공장 담보 금리 연 10% 초반 회생 졸업 후 은행권 대환으로 회수 계획 VAC, 펀드 결성 5개월여 만에 절반 집행 이 기사는 20",
-        "summaryLines": [
-          "기회추구형 투자 속도 회생기업 코다코에 500억 DIP 대출 VAC·한투PE",
-          "500억 규모 DIP 대출 계약 천안·안성공장 담보 금리 연 10% 초반 회생 졸업 후 은행권 대환으로 회수…",
-          "펀드 결성 5개월여 만에 절반 집행 이 기사는 20"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-8",
-        "rank": 8,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "'사모펀드 그늘' 벗어난 현정은… 현대그룹 지배력 강화",
-        "titleBadges": [],
-        "source": "파이낸셜뉴스",
-        "sourceBadge": "파",
-        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
-        "sourceIconStyle": "",
-        "url": "https://www.fnnews.com/news/202605271808093040",
-        "summaryText": "현정은 현대그룹 회장이 백기사로 불린 사모펀드 운용사 H&Q코리아파트너스로부터 지분 전량을 회수했다.지난 22일 기준 현대엘리베이터의 최대주주는 지분 20.13%를 보유한 현대홀딩스컴퍼니이며, 정 전무 개인 명의 3.01%, 임당장학문화재단 1.48% 등으로 구성돼 있다…",
-        "summaryLines": [
-          "현정은 현대그룹 회장이 백기사로 불린 사모펀드 운용사 H&Q코리아파트너스로부터 지분 전량을 회수",
-          "지난 22일 기준 현대엘리베이터의 최대주주는 지분 20.13%를 보유한 현대홀딩스컴퍼니이며, 정 전무 개인 명…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-9",
-        "rank": 9,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "한국펀드파트너스 매물로…ETF 붐에 예상 매각가 '껑충'",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://www.hankyung.com/article/2026052725611",
-        "summaryText": "한국펀드파트너스 매물로…ETF 붐에 예상 매각가 '껑충', PTA PE, 내달 매각 예비입찰",
-        "summaryLines": [
-          "한국펀드파트너스 매물로",
-          "ETF 붐에 예상 매각가 '껑충', PTA PE, 내달 매각 예비입찰"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "어펄마캐피탈매니져스코리아"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "어펄마캐피탈매니져스코리아"
-        ]
-      },
-      {
-        "id": "clip-20260528-10",
-        "rank": 10,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "'자본시장 큰손들' 거취 촉각…하반기 CIO인선 큰장 열린다 [fn마켓워치...",
-        "titleBadges": [],
-        "source": "파이낸셜뉴스",
-        "sourceBadge": "파",
-        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
-        "sourceIconStyle": "",
-        "url": "https://www.fnnews.com/news/202605271026381801",
-        "summaryText": "올 하반기 자본시장 큰손들인 연기금·공제회 최고 운용 총괄 책임자들의 임기 만료가 도래하면서 후임 인선 거취에 관심이 쏠리고 있다.사학연금 CIO의 임기는 2년이며 지난해 말 운용 자산 규모는 30조원에 달한다.중기중앙회 산하 노란우산공제회도 서원철 현 CIO의 …",
-        "summaryLines": [
-          "올 하반기 자본시장 큰손들인 연기금·공제회 최고 운용 총괄 책임자들의 임기 만료가 도래하면서 후임 인선 거취에…",
-          "사학연금 CIO의 임기는 2년이며 지난해 말 운용 자산 규모는 30조원에 달",
-          "중기중앙회 산하 노란우산공제회도 서원철 현 CIO의"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-11",
-        "rank": 11,
-        "section": "LP",
-        "subCategory": "Allocation",
-        "rawSection": "LP",
-        "title": "KIC 첫 국내 출자 펀드, 내달 베일 벗는다[시그널]",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20048749",
-        "summaryText": "한국투자공사(KIC)가 사상 처음으로 추진하는 국내 사모펀드(PEF) 운용사 대상 출자 사업이 베일을 벗고 있다. KIC는 IMM인베스트먼트·도미누스인베스트먼트와 손잡고 올 상반기 중 펀드 조성을 완료해 글로벌 첨단산업 공략을 위한 시동을 걸 예정이다.",
-        "summaryLines": [
-          "한국투자공사(KIC)가 사상 처음으로 추진하는 국내 사모펀드(PEF) 운용사 대상 출자 사업이 베일을 벗고 있다",
-          "KIC는 IMM인베스트먼트·도미누스인베스트먼트와 손잡고 올 상반기 중 펀드 조성을 완료해 글로벌 첨단산업 공략…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [
-          "도미누스인베스트먼트",
-          "아이엠엠인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "한국투자공사"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kic",
-            "name": "한국투자공사",
-            "url": "lp-kic.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "도미누스인베스트먼트",
-          "아이엠엠인베스트먼트",
-          "한국투자공사",
-          "kic",
-          "국부펀드",
-          "KIC"
-        ]
-      },
-      {
-        "id": "clip-20260528-12",
-        "rank": 12,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "KIC, 350조 운용 사령탑 새로 뽑는다…28일 CIO 공모",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605272034r",
-        "summaryText": "[단독] KIC, 350조 운용 사령탑 새로 뽑는다…28일 CIO 공모, 이훈 CIO 임기 만료 10개월 만에 내부 승진·외부 전문가 모두 가능성",
-        "summaryLines": [
-          "KIC, 350조 운용 사령탑 새로 뽑는다",
-          "28일 CIO 공모, 이훈 CIO 임기 만료 10개월 만에 내부 승진·외부 전문가 모두 가능성"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "한국투자공사"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kic",
-            "name": "한국투자공사",
-            "url": "lp-kic.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국투자공사",
-          "kic",
-          "국부펀드",
-          "KIC"
-        ]
-      },
-      {
-        "id": "clip-20260528-13",
-        "rank": 13,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "수십조 굴리는 ‘큰 손’ 연기금·공제회 수장 누가 될까",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://view.asiae.co.kr/article/2026021015281322391",
-        "summaryText": "출자자(LP)로서 사모펀드(PEF)나 벤처캐피탈(VC)에 투자하는 등 자본시장의 '큰손'으로 꼽히는 연기금과 공제회의 일부 이사장 및 최고투자책임자(CIO) 임기가 만.",
-        "summaryLines": [
-          "출자자(LP)로서 사모펀드(PEF)나 벤처캐피탈(VC)에 투자하는 등 자본시장의 '큰손'으로 꼽히는 연기금과…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-14",
-        "rank": 14,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "H&Q ‘5호 블라인드펀드’ 1차 클로징…교공 앵커로 4000억 확보",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2588314",
-        "summaryText": "사모펀드운용사(PE) H&Q코리아가 5호 블라인드펀드(투자처를 정하지 않은 펀드) 1차 클로징을 완료했다. 한국교직원공제회가 앵커 출자자(LP)로 참여",
-        "summaryLines": [
-          "사모펀드운용사(PE) H&Q코리아가 5호 블라인드펀드(투자처를 정하지 않은 펀드) 1차 클로징을 완료",
-          "한국교직원공제회가 앵커 출자자(LP)로 참여"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "한국교직원공제회"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "ktcu",
-            "name": "한국교직원공제회",
-            "url": "lp-ktcu.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국교직원공제회",
-          "ktcu",
-          "교직원공제회",
-          "KTCU",
-          "교공"
-        ]
-      },
-      {
-        "id": "clip-20260528-15",
-        "rank": 15,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "'고위드' 업은 고넥스PE, 500억 펀드 시동",
-        "titleBadges": [],
-        "source": "뉴스톱",
-        "sourceBadge": "톱",
-        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
-        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45169",
-        "summaryText": "신생 사모펀드(PEF) 운용사 고넥스프라이빗에쿼티가 기관전용 사모펀드 운용업 라이선스를 확보하고 마수걸이 펀드 조성에 나섰다.",
-        "summaryLines": [
-          "신생 사모펀드(PEF) 운용사 고넥스프라이빗에쿼티가 기관전용 사모펀드 운용업 라이선스를 확보하고 마수걸이 펀드…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "케이비자산운용"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "케이비자산운용"
-        ]
-      },
-      {
-        "id": "clip-20260528-16",
-        "rank": 16,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "국민성장펀드 노리는 IMM…레버리지는 없다",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162427",
-        "summaryText": "시지바이오·이화다이아몬드 인수에 금융 없는 에쿼티 구조…드라이 파우더 전략",
-        "summaryLines": [
-          "시지바이오·이화다이아몬드 인수에 금융 없는 에쿼티 구조",
-          "드라이 파우더 전략"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "아이엠엠프라이빗에쿼티"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "아이엠엠프라이빗에쿼티"
-        ]
-      },
-      {
-        "id": "clip-20260528-17",
-        "rank": 17,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "‘몸값 1조원’ 세라젬, 침대·정수기에 도전장",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20048886",
-        "summaryText": "세라젬이 척추 온열 마사지기와 안마의자를 넘어 침대, 정수기까지 사업 영역 확장을 추진한다. 적극적인 연구·개발(R&D)을 기반으로 제품군을 다변화해 종합 생활가전 기업으로 도약한다는 전략이다.",
-        "summaryLines": [
-          "세라젬이 척추 온열 마사지기와 안마의자를 넘어 침대, 정수기까지 사업 영역 확장을 추진",
-          "적극적인 연구·개발(R&D)을 기반으로 제품군을 다변화해 종합 생활가전 기업으로 도약한다는 전략이다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "헬리오스프라이빗에쿼티"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "헬리오스프라이빗에쿼티"
-        ]
-      },
-      {
-        "id": "clip-20260528-18",
-        "rank": 18,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "키움인베 600억 벤처모펀드 출격",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162594",
-        "summaryText": "12개 GP에 600억 중 400억 출자…200억은 수시 접수 방식으로 프로젝트펀드 할애",
-        "summaryLines": [
-          "12개 GP에 600억 중 400억 출자",
-          "200억은 수시 접수 방식으로 프로젝트펀드 할애"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "키움인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "키움인베스트먼트"
-        ]
-      },
-      {
-        "id": "clip-20260528-19",
-        "rank": 19,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "“법률 너머 비즈니스까지 읽는다”…M&A ‘거래 종결성’ 두각",
-        "titleBadges": [],
-        "source": "헤럴드경제",
-        "sourceBadge": "헤",
-        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
-        "sourceIconStyle": "",
-        "url": "https://biz.heraldcorp.com/article/10756964",
-        "summaryText": "최근 인수·합병(M&A) 시장에서는 거래 구조가 복잡해지고 이해관계자가 다층화하면서 ‘거래 종결성(deal certainty)’이 핵심 경쟁력으로 떠오르고 있다.",
-        "summaryLines": [
-          "최근 인수·합병(M&A) 시장에서는 거래 구조가 복잡해지고 이해관계자가 다층화하면서 ‘거래 종결성(deal c…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "알케미스트캐피탈파트너스코리아"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "알케미스트캐피탈파트너스코리아"
-        ]
-      },
-      {
-        "id": "clip-20260528-20",
-        "rank": 20,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "국내 금융권 등 해외 사모대출 56조…당국 \"시스템 리스크 가능성 낮아...",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://view.asiae.co.kr/article/2026052611385718194",
-        "summaryText": "미국발 사모대출 부실에 대한 우려가 지속되고 있는 가운데 국내 금융권과 연기금 등이 투자한 해외 사모대출 규모가 약 56조원에 이르는 것으로 나타났다.",
-        "summaryLines": [
-          "국내 금융권 및 연기금의 해외 사모대출(PD) 투자 규모 약 56조 원 수준",
-          "금융당국, 글로벌 부실 우려 대비 국내 시스템 리스크 전이 가능성 낮음 판단",
-          "해외 대체자산 건전성 모니터링 강화 및 기관별 리스크 관리 주의 필요"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-21",
-        "rank": 21,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "\"은행이 못 채운 공백, 사모대출이 메울 것\"",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://www.hankyung.com/article/2026052724901",
-        "summaryText": "\"은행이 못 채운 공백, 사모대출이 메울 것\", ASK 2026 글로벌 대체투자 콘퍼런스 글로벌운용사, 韓 '틈새 공략'",
-        "summaryLines": [
-          "은행이 못 채운 공백",
-          "사모대출이 메울 것",
-          "ASK 2026 글로벌 대체투자 콘퍼런스 글로벌운용사, 韓 '틈새 공략'"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-22",
-        "rank": 22,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "사모대출은 불안하다? 파트너스그룹 \"구조와 투자자를 봐야\"[ASK 2026]",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605272024r",
-        "summaryText": "파트너스그룹 \"구조와 투자자를 봐야\"[ASK 2026], 기관 전용 사모대출 펀드, 환매 논란 불거진 BDC와 구분해야",
-        "summaryLines": [
-          "파트너스그룹 \"구조와 투자자를 봐야\"[ASK 2026]",
-          "기관 전용 사모대출 펀드",
-          "환매 논란 불거진 BDC와 구분해야"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-23",
-        "rank": 23,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "세 불리는 PEF협의회 … 웰투시 등 7곳 승선",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/stock/12059126",
-        "summaryText": "올들어 대형사 중심 벗어나중견·소형사까지 외연 확대10월 협회로 전환 추진",
-        "summaryLines": [
-          "올들어 대형사 중심 벗어나중견·소형사까지 외연 확대10월 협회로 전환 추진"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "웰투시인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "웰투시인베스트먼트"
-        ]
-      },
-      {
-        "id": "clip-20260528-24",
-        "rank": 24,
-        "section": "Market",
-        "subCategory": "Capital Market",
-        "rawSection": "Market",
-        "title": "김성주 “레버리지 의존 PE 시대 한계”…80조 사모펀드 전략 바꾼다 [A...",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605271009r",
-        "summaryText": "김성주 “레버리지 의존 PE 시대 한계”…80조 사모펀드 전략 바꾼다 [ASK 2026], 한경 ASK 2026 기조연설 AI 확산·시장 변동성에 대체투자 고도화 \"산업 이해·기업 펀더멘털 개선 역량 중요\" 국내 벤처펀드엔 역대 최대 4000억 배정",
-        "summaryLines": [
-          "김성주 “레버리지 의존 PE 시대 한계",
-          "80조 사모펀드 전략 바꾼다 [ASK 2026], 한경 ASK 2026 기조연설 AI 확산·시장 변동성에 대체…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-25",
-        "rank": 25,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "美보다 수요 크고 경쟁 덜해…아시아는 사모대출 '기회의 땅'[ASK 2026]",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605271044r",
-        "summaryText": "크고 경쟁 덜해…아시아는 사모대출 '기회의 땅'[ASK 2026], 안대규 기자, 증권",
-        "summaryLines": [
-          "크고 경쟁 덜해",
-          "아시아는 사모대출 '기회의 땅'[ASK 2026], 안대규 기자, 증권"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-26",
-        "rank": 26,
-        "section": "Market",
-        "subCategory": "Capital Market",
-        "rawSection": "Market",
-        "title": "고금리 뉴노멀 시대…오크트리 \"위기 속 스페셜 시추에이션이 기회\" [AS...",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605270939r",
-        "summaryText": "고금리 뉴노멀 시대…오크트리 \"위기 속 스페셜 시추에이션이 기회\" [ASK 2026], 불확실성 큰 거시 상황, 스페셜 시추에이션 투자에는 적기 사모크레딧 부실, PEF 유동성 부족 등에서 기회 찾아",
-        "summaryLines": [
-          "고금리 뉴노멀 시대",
-          "오크트리 \"위기 속 스페셜 시추에이션이 기회\" [ASK 2026], 불확실성 큰 거시 상황, 스페셜 시추에이션…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260528-27",
-        "rank": 27,
-        "section": "Market",
-        "subCategory": "Regulation",
-        "rawSection": "Market",
-        "title": "[롯데렌탈 M&A] \"롯데만 챙기려던 프리미엄, 공정위가 막은 것\"",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/162480",
-        "summaryText": "VIP운용 지분 6.2%→7.33%로 확대…주주환원율 상향 및 자사주 매입·소각 요구",
-        "summaryLines": [
-          "VIP운용 지분 6.2%→7.33%로 확대",
-          "주주환원율 상향 및 자사주 매입·소각 요구"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "한앤컴퍼니"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한앤컴퍼니"
-        ]
-      },
-      {
-        "id": "clip-20260528-28",
-        "rank": 28,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "먼로캐피탈 \"자산유동화대출은 일시적 유행 아닌 대체투자 핵심 대안\"[...",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202605271565r",
-        "summaryText": "먼로캐피탈 \"자산유동화대출은 일시적 유행 아닌 대체투자 핵심 대안\"[ASK 2026], 아론 펙 먼로캐피탈 매니징 디렉터 \"자산 담보로 하방 위험 방어…중소형 상업용 부동산·AI 인프라 주목\" \"글로벌 운용사 무분별한 저신용자 소비자금융 투자는 경계해야\"",
-        "summaryLines": [
-          "먼로캐피탈 \"자산유동화대출은 일시적 유행 아닌 대체투자 핵심 대안\"[ASK 2026], 아론 펙 먼로캐피탈 매…",
-          "중소형 상업용 부동산·AI 인프라 주목\" \"글로벌 운용사 무분별한 저신용자 소비자금융 투자는 경계해야"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
       }
     ],
     "articleCount": 29
