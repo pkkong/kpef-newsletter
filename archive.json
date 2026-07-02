@@ -3,7 +3,7 @@
     "reportDate": "2026-07-02",
     "visibleDate": "2026.07.02",
     "basis": "",
-    "articleCount": 22,
+    "articleCount": 18,
     "articles": [
       {
         "id": "clip-20260702-0",
@@ -89,33 +89,6 @@
         "id": "clip-20260702-3",
         "rank": 3,
         "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "[기자수첩] K푸드 M&A 생존 공식",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/164535",
-        "summaryText": "내수침체 속 쏟아지는 조단위 매물…해외 확장성 증명해야 딜 성사",
-        "summaryLines": [
-          "내수침체 속 쏟아지는 조단위 매물",
-          "해외 확장성 증명해야 딜 성사"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260702-4",
-        "rank": 4,
-        "section": "Deal",
         "subCategory": "Exit",
         "rawSection": "Deal",
         "title": "코오롱인더 스페셜티 매각 속도…IMM PE 우협 선정, 10월 계약 목표",
@@ -140,8 +113,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-5",
-        "rank": 5,
+        "id": "clip-20260702-4",
+        "rank": 4,
         "section": "Deal",
         "subCategory": "Signing·Closing",
         "rawSection": "Deal",
@@ -168,8 +141,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-6",
-        "rank": 6,
+        "id": "clip-20260702-5",
+        "rank": 5,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -195,8 +168,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-7",
-        "rank": 7,
+        "id": "clip-20260702-6",
+        "rank": 6,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -222,8 +195,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-8",
-        "rank": 8,
+        "id": "clip-20260702-7",
+        "rank": 7,
         "section": "Deal",
         "subCategory": "Ownership",
         "rawSection": "Deal",
@@ -249,36 +222,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-9",
-        "rank": 9,
-        "section": "Deal",
-        "subCategory": "Financing",
-        "rawSection": "Deal",
-        "title": "[시사금융용어] NAV 파이낸싱",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4422953",
-        "summaryText": "◆ 순자산가치(NAV) 파이내싱은 펀드가 보유한 포트폴리오 기업들의 가치를 담보로 크레딧 펀드나 은행에서 대출을 받는 구조를 말한다.개별 포트폴리오 기업이 아닌 펀드 전체를 담보로 잡는 것이 핵심이다.사모펀드(PEF) 입장에서 펀드 만기가 다가오는데 엑시트 타이밍이 맞지 않을 때 시간을 벌기 위해 사용된다. 추가 투자 기회가 생겼을 시 유동성 공급자(LP)에게 콜 없이 빠르게 자금을 조달할 수 있다.LTV(담보인정비율)는 보통 NAV의 15~25% 수준으로 보수적으로 설정되는 것이 일반적이다.다만, LP 입장에서는 자신들 모르게 펀",
-        "summaryLines": [
-          "◆ 순자산가치(NAV) 파이내싱은 펀드가 보유한 포트폴리오 기업들의 가치를 담보로 크레딧 펀드나 은행에서 대출을…",
-          "개별 포트폴리오 기업이 아닌 펀드 전체를 담보로 잡는 것이 핵심이다",
-          "사모펀드(PEF) 입장에서 펀드 만기가 다가오는데 엑시트 타이밍이 맞지 않을 때 시간을 벌기 위해 사용"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260702-10",
-        "rank": 10,
+        "id": "clip-20260702-8",
+        "rank": 8,
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
@@ -304,35 +249,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-11",
-        "rank": 11,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "반도체·AI만 보인 자본시장…'삼전닉스'에 달린 IB 성적표",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/07/01/2026070180181.html",
-        "summaryText": "반도체·AI만 보인 자본시장…'삼전닉스'에 달린 IB 성적표-인베스트조선",
-        "summaryLines": [
-          "반도체·AI만 보인 자본시장",
-          "'삼전닉스'에 달린 IB 성적표-인베스트조선"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260702-12",
-        "rank": 12,
+        "id": "clip-20260702-9",
+        "rank": 9,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -357,8 +275,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-13",
-        "rank": 13,
+        "id": "clip-20260702-10",
+        "rank": 10,
         "section": "LP",
         "subCategory": "Mandate",
         "rawSection": "LP",
@@ -384,8 +302,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-14",
-        "rank": 14,
+        "id": "clip-20260702-11",
+        "rank": 11,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -411,8 +329,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-15",
-        "rank": 15,
+        "id": "clip-20260702-12",
+        "rank": 12,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -438,8 +356,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-16",
-        "rank": 16,
+        "id": "clip-20260702-13",
+        "rank": 13,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -465,8 +383,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-17",
-        "rank": 17,
+        "id": "clip-20260702-14",
+        "rank": 14,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -492,8 +410,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-18",
-        "rank": 18,
+        "id": "clip-20260702-15",
+        "rank": 15,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -519,35 +437,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-19",
-        "rank": 19,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "오라이언운용 'AUM 1조' 돌파…헤지펀드본부 선전",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606291537099800106238",
-        "summaryText": "오라이언자산운용이 순자산규모(AUM) 1조원을 돌파했다. 리테일·기관 투자자들의 투심이 국내주식으로 쏠린 가운데 그간 쌓아온 안정적인 트랙레코드가 빛을 발했다는 평가다.",
-        "summaryLines": [
-          "오라이언자산운용이 순자산규모(AUM) 1조원을 돌파",
-          "리테일·기관 투자자들의 투심이 국내주식으로 쏠린 가운데 그간 쌓아온 안정적인 트랙레코드가 빛을 발했다는 평가다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260702-20",
-        "rank": 20,
+        "id": "clip-20260702-16",
+        "rank": 16,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -573,8 +464,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260702-21",
-        "rank": 21,
+        "id": "clip-20260702-17",
+        "rank": 17,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
