@@ -1,5 +1,468 @@
 [
   {
+    "reportDate": "2026-07-04",
+    "visibleDate": "2026.07.04",
+    "basis": "",
+    "articleCount": 17,
+    "articles": [
+      {
+        "id": "clip-20260704-0",
+        "rank": 0,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "이화다이아 이어 코오롱인더 소재사업부까지…IMM PE ‘연승 행진’ 비결은",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10797450",
+        "summaryText": "국내 사모펀드 운용사 IMM 프라이빗에쿼티(IMM PE)가 코오롱인더스트리의 반도체·디스플레이 소재 사업부 인수 우선협상대상자로 선정됐다.",
+        "summaryLines": [
+          "국내 사모펀드 운용사 IMM 프라이빗에쿼티(IMM PE)가 코오롱인더스트리의 반도체·디스플레이 소재 사업부 인수…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Secondary",
+        "rawSection": "Deal",
+        "title": "망고스·버그 바운티·컨티뉴에이션 비히클 [This Week 경제용어]- 매경ECONOMY",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/business/12089977",
+        "summaryText": "사모펀드(PEF) 운용사(GP)가 기존 펀드의 자산을 새로운 투자기구(비히클)로 이전해 일부 투자자에게는... PEF의 엑시트 수단은 주로 상장(IPO), 인수합병(M&A), 배당 세 가지다.",
+        "summaryLines": [
+          "사모펀드(PEF) 운용사(GP)가 기존 펀드의 자산을 새로운 투자기구(비히클)로 이전해 일부 투자자에게는",
+          "PEF의 엑시트 수단은 주로 상장(IPO), 인수합병(M&A), 배당 세 가지다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "롯데렌탈 눈독 들이는 TPG…그룹 유동성 위기 해결될까",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423210",
+        "summaryText": "글로벌 사모펀드(PEF) 운용사 텍사스퍼시픽그룹(TPG)이 롯데렌탈 인수 논의에 나섰다고 알려지면서 딜 무산 이후 재매각이 성사될 수 있을지 시장의 관심이 집중됐다.지난 2015년 롯데그룹이 1조200억 원을 주고 KT렌탈을 사들인 지 11년이 된 현재 알짜 캐시카우로 거듭난 롯데렌탈을 매각해 그룹 전반의 유동성 부담을 줄여나갈 수 있을지가 관건으로 부각됐다.3일 금융감독원 전자공시시스템에 따르면 호텔롯데 등 롯데렌탈 최대주주가 보유 롯데렌탈 지분 61.18% 매각을 위해 TPG와 관련 실사 등 논의를 진행했다.",
+        "summaryLines": [
+          "글로벌 사모펀드(PEF) 운용사 텍사스퍼시픽그룹(TPG)이 롯데렌탈 인수 논의에 나섰다고 알려지면서 딜 무산 이후…",
+          "지난 2015년 롯데그룹이 1조200억 원을 주고 KT렌탈을 사들인 지 11년이 된 현재 알짜 캐시카우로 거듭난…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "홈플 익스프레스 팔고 37곳 폐점 배수진에도…메리츠·MBK 기싸움에 벼랑 끝",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20063644",
+        "summaryText": "법원이 1년 4개월을 끌어온 홈플러스의 회생절차 폐지를 결정하면서 회사가 결국 파산이라는 최악의 시나리오를 맞이하게 됐다. 수십 개 점포의 문을 닫고 알짜 자산인 익스프레스까지 매각하며 버텼으나 2000억 원 규모의 긴급운영자금(DIP금융) 지원을 두고 메리츠금융지주(",
+        "summaryLines": [
+          "법원이 1년 4개월을 끌어온 홈플러스의 회생절차 폐지를 결정하면서 회사가 결국 파산이라는 최악의 시나리오를 맞이하게",
+          "수십 개 점포의 문을 닫고 알짜 자산인 익스프레스까지 매각하며 버텼으나 2000억 원 규모의 긴급운영자금(DIP금…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "HD현대오일뱅크 컨소, 대경오앤티 ‘속전속결’ 인수 완료",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10797616",
+        "summaryText": "HD현대오일뱅크·테넷EP 컨소시엄은 지난 6월 말께 국내 최대 바이오디젤 원료 생산기업 대경오앤티 인수 잔금 납입을 완료하고 거래를 끝냈다.",
+        "summaryLines": [
+          "HD현대오일뱅크·테넷EP 컨소시엄은 지난 6월 말께 국내 최대 바이오디젤 원료 생산기업 대경오앤티 인수 잔금 납입…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "e커머스 뜨는데 무대책 일관…실패로 끝난 韓 최대 '메가 딜'",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://www.hankyung.com/article/2026070349701",
+        "summaryText": "e커머스 뜨는데 무대책 일관…실패로 끝난 韓 최대 '메가 딜', MBK, 글로벌 PEF 명성에 균열 금감원은 직무정지 중징계 결론",
+        "summaryLines": [
+          "e커머스 뜨는데 무대책 일관",
+          "실패로 끝난 韓 최대 '메가 딜', MBK, 글로벌 PEF 명성에 균열 금감원은 직무정지 중징계 결론"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "박관호 떠나는 위메이드…9200억 매각의 그늘",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/164627",
+        "summaryText": "창업주는 3배 이상 챙겼는데 주주 보호 장치 無…의무공개매수제도 논의 단계",
+        "summaryLines": [
+          "창업주는 3배 이상 챙겼는데 주주 보호 장치 無",
+          "의무공개매수제도 논의 단계"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-7",
+        "rank": 7,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "\"CIO공모 없던 일로…\" KIC, 이훈 CIO 체제 당분간 유지될 듯 [fn마켓워치]",
+        "titleBadges": [],
+        "source": "파이낸셜뉴스",
+        "sourceBadge": "파",
+        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
+        "sourceIconStyle": "",
+        "url": "https://www.fnnews.com/news/202607032113447142",
+        "summaryText": "국내 국부펀드인 한국투자공사의 차기 최고투자책임자 선임 절차가 결국 원점으로 돌아갔다.면접도 치르기 전에 특정 후보의 '사전 내정설'이 시장에 확산되며 공정성 논란이 불거졌지만, 최종적으로는 이번 공모를 통한 선임이 이뤄지지 않으면서 당분간 이훈 CIO 체제..",
+        "summaryLines": [
+          "국내 국부펀드인 한국투자공사의 차기 최고투자책임자 선임 절차가 결국 원점으로 돌아갔다",
+          "면접도 치르기 전에 특정 후보의 '사전 내정설'이 시장에 확산되며 공정성 논란이 불거졌지만, 최종적으로는 이번 공…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-8",
+        "rank": 8,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "홈플러스 파산 후폭풍…사모펀드 신뢰 시험대",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10797388",
+        "summaryText": "[헤럴드경제=박지영 기자]홈플러스가 사실상 파산 수순에 접어들면서 최대주주인 MBK파트너스는 물론 국내 사모펀드(PEF) 운용사 전반이 시험대에 올랐다.",
+        "summaryLines": [
+          "홈플러스가 사실상 파산 수순에 접어들면서 최대주주인 MBK파트너스는 물론 국내 사모펀드(PEF) 운용사 전반이 시…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-9",
+        "rank": 9,
+        "section": "GP",
+        "subCategory": "Organization",
+        "rawSection": "GP",
+        "title": "IMM PE, 이화다이아몬드 ‘반도체 소부장 플랫폼’으로 키운다",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=46008",
+        "summaryText": "국내 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE)가 이화다이아몬드공업의 밸류업 방향을 반도체용 다이아몬드 공구 매출 확대와 글로벌 고객망 확장으로 잡았다.",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE)가 이화다이아몬드공업의 밸류업 방향을 반도체용 다이아몬드…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-10",
+        "rank": 10,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "투자 적극적인 켄코아에어로, 재무 버팀목 IMM인베",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606301744571320103822",
+        "summaryText": "켄코아에어로스페이스는 미국 생산거점 확보와 항공우주 투자에 속도를 내면서도 재무 안정성을 유지하고 있다. 국내 사모투자펀드(PEF) 운용사 IMM인베스트먼트를 장기 성장 파트너로 확보하면서 외부 자금을 자기자본 성격으로 조달해 사업 리스크를 최소화한 것으로 해석된다.",
+        "summaryLines": [
+          "켄코아에어로스페이스는 미국 생산거점 확보와 항공우주 투자에 속도를 내면서도 재무 안정성을 유지하고 있다",
+          "국내 사모투자펀드(PEF) 운용사 IMM인베스트먼트를 장기 성장 파트너로 확보하면서 외부 자금을 자기자본 성격으로…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-11",
+        "rank": 11,
+        "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "‘한국카본 신기사’ 블루캐스트, 첫 펀드 결성 물꼬",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=46021",
+        "summaryText": "한국카본 계열 신기술사업금융회사(신기사) 블루캐스트인베스트먼트가 마수걸이 블라인드펀드 결성 기회를 잡았다. 지난해 7월 법인을 설립한 지 1년 만이다.",
+        "summaryLines": [
+          "한국카본 계열 신기술사업금융회사(신기사) 블루캐스트인베스트먼트가 마수걸이 블라인드펀드 결성 기회를 잡았다",
+          "지난해 7월 법인을 설립한 지 1년 만이다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-12",
+        "rank": 12,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "백지 상태서 시니어로…'자체 육성 인재' 키워 쓰는 UCK의 상생 경영",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=667129",
+        "summaryText": "사모펀드(PEF) 업계의 전통적인 채용 공식은 '경력직 영입'이다. 회계법인이나 외국계 투자은행(IB), 증권사를 거친 인력을 흡수해 즉시 전력감으로 활용하는 게 일반적이다.",
+        "summaryLines": [
+          "사모펀드(PEF) 업계의 전통적인 채용 공식은 '경력직 영입'이다",
+          "회계법인이나 외국계 투자은행(IB), 증권사를 거친 인력을 흡수해 즉시 전력감으로 활용하는 게 일반적이다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-13",
+        "rank": 13,
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Market",
+        "title": "금감원, MBK에 '직무정지' 중징계…홈플러스는 파산 수순",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423283",
+        "summaryText": "금융감독원이 홈플러스의 최대주주인 MBK파트너스에 '직무정지'를 포함한 중징계 원안을 유지한 것으로 전해졌다.이런 가운데 법원은 홈플러스 기업회생절차(법정관리) 폐지를 결정했다. 홈플러스는 극적으로 자금 조달의 돌파구를 마련하지 못할 경우 사실상 파산 수순을 밟을 것으로 전망된다.3일 금융투자 업계에 따르면 금감원은 전날 오후 열린 3차 제재심의의원회에서 MBK파트너스 검사 결과 조치안을 논의했다.",
+        "summaryLines": [
+          "금융감독원이 홈플러스의 최대주주인 MBK파트너스에 '직무정지'를 포함한 중징계 원안을 유지한 것으로 전해졌다",
+          "이런 가운데 법원은 홈플러스 기업회생절차(법정관리) 폐지를 결정",
+          "홈플러스는 극적으로 자금 조달의 돌파구를 마련하지 못할 경우 사실상 파산 수순을 밟을 것으로 전망된다.3일 금융투…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-14",
+        "rank": 14,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "MBK “RCPS 조건변경은 합리적…성실히 소명할 것”",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12089647",
+        "summaryText": "관련 쟁점에 관한 당사의 입장을 성실히 소명할 것”이라고 밝혔다. 직무정지가 최종 의결될 경우 MBK는 국내 연기금, 공제회 등 주요",
+        "summaryLines": [
+          "관련 쟁점에 관한 당사의 입장을 성실히 소명할 것”이라고",
+          "직무정지가 최종 의결될 경우 MBK는 국내 연기금, 공제회 등 주요"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-15",
+        "rank": 15,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "김병주 회장 개인 보증까지 감수했지만...회생은 불발",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026070317113847878",
+        "summaryText": "김병주 MBK파트너스 회장이 홈플러스의 긴급운영자금(DIP) 조달을 위해 개인 연대 보증까지 받아들인 것으로 확인됐다.",
+        "summaryLines": [
+          "김병주 MBK파트너스 회장이 홈플러스의 긴급운영자금(DIP) 조달을 위해 개인 연대 보증까지 받아들인 것으로 확인"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260704-16",
+        "rank": 16,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "블루아울 2분기 7조원대 환매 접수 … 美 사모대출펀드 부실 리스크 여전",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/world/12090055",
+        "summaryText": "사모대출펀드 운용사 블루아울캐피털이 올해 2분기 총 7조원대 투자자 환매 요청을 받은 것으로 나타났다. 2일(현지시간) 블룸버그에 따르면 블루아울은 투자자 서한에서 대표 사모대출펀드인 '블루아울크레디트인컴 코프'가 2분기 중 지분의 18.8%에 해당하는 36억달러(약 5조5000억원) 규모의 환매 요청을 접수했다고 밝혔다.",
+        "summaryLines": [
+          "사모대출펀드 운용사 블루아울캐피털이 올해 2분기 총 7조원대 투자자 환매 요청을 받은 것으로 나타났다",
+          "2일(현지시간) 블룸버그에 따르면 블루아울은 투자자 서한에서 대표 사모대출펀드인 '블루아울크레디트인컴 코프'가 2…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-07-03",
     "visibleDate": "2026.07.03",
     "basis": "",
@@ -15959,261 +16422,5 @@
       }
     ],
     "articleCount": 25
-  },
-  {
-    "reportDate": "2026-06-04",
-    "visibleDate": "2026.06.04",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260604-0",
-        "rank": 0,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "'맘스터치 1조' 매각설…케이엘앤파트너스 표정 관리",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=664168",
-        "summaryText": "국내 사모펀드(PEF) 운용사 케이엘앤파트너스가 버거 프랜차이즈 맘스터치앤컴퍼니(맘스터치)의 지분 전량 매각을 위해 주관사를 선정하고 매각 절차에 돌입했다.일각에서는 글로벌 진출 성과와 실적 개선을 기반으로 1조원 이상 매각가를 거론했지만 외식업계는 원가 부담과 소비 위축이라는 악재가",
-        "summaryLines": [
-          "국내 사모펀드(PEF) 운용사 케이엘앤파트너스가 버거 프랜차이즈 맘스터치앤컴퍼니(맘스터치)의 지분 전량 매각을…",
-          "일각에서는 글로벌 진출 성과와 실적 개선을 기반으로 1조원 이상 매각가를 거론했지만 외식업계는 원가 부담과 소…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "케이엘앤파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "케이엘앤파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260604-1",
-        "rank": 1,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "바임, PE 품에서 키운 체급…매각...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606011047489280102472",
-        "summaryText": "국내 사모펀드(PEF) 운용사 프리미어파트너스가 품은 바임은 비상장 에스테틱 기업으로는 이례적으로... ◇프리미어 인수 후 매출 6.5배 확대…영업이익률 63.7% 달성 바임의 대표 제품인 쥬베룩은 폴리디엘락타이드...",
-        "summaryLines": [
-          "국내 사모펀드(PEF) 운용사 프리미어파트너스가 품은 바임은 비상장 에스테틱 기업으로는 이례적으로... ◇프리…",
-          "영업이익률 63.7% 달성 바임의 대표 제품인 쥬베룩은 폴리디엘락타이드"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "프리미어파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "프리미어파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260604-2",
-        "rank": 2,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
-        "title": "리버티자산운용 인수한 센트로이드…재무구조 먼저 손본다",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2589865",
-        "summaryText": "사모펀드운용사(PE) 센트로이드인베스트먼트파트너스가 리버티자산운용을 인수하며, 일반 사모집합투자업 시장에 진출했다.",
-        "summaryLines": [
-          "사모펀드운용사(PE) 센트로이드인베스트먼트파트너스가 리버티자산운용을 인수하며",
-          "일반 사모집합투자업 시장에 진출"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "센트로이드인베스트먼트파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "센트로이드인베스트먼트파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260604-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "KCGI, '알짜 MSP' 스마일샤크 경영권 인수 추진",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606011010383200104634",
-        "summaryText": "이 기사는 2026년 06월 04일 08시 05분 더벨 무료페이지에 표출된 기사입니다. 국내 사모투자펀드(PEF) 운용사 KCGI가 클라우드 관리 서비스(MSP) 전문기업 스마일샤크 경영권 인수를 추진한다.",
-        "summaryLines": [
-          "국내 사모투자펀드(PEF) 운용사 KCGI가 클라우드 관리 서비스(MSP) 전문기업 스마일샤크 경영권 인수를…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "케이씨지아이"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "케이씨지아이"
-        ]
-      },
-      {
-        "id": "clip-20260604-4",
-        "rank": 4,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "산은 회수시장지원펀드, IMM·LB 등 대형사 접전",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606011424594200108867",
-        "summaryText": "이 기사는 2026년 06월 04일 07시 00분 더벨 무료페이지에 표출된 기사입니다. 사모펀드운용사(PE)인 이스트브릿지파트너스는 이번 출자사업에서 유일한 PE 참가자다.",
-        "summaryLines": [
-          "사모펀드운용사(PE)인 이스트브릿지파트너스는 이번 출자사업에서 유일한 PE 참가자다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [
-          "이스트브릿지파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "한국산업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kdb",
-            "name": "한국산업은행",
-            "url": "lp-kdb.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "이스트브릿지파트너스",
-          "한국산업은행",
-          "kdb",
-          "산업은행",
-          "산은"
-        ]
-      },
-      {
-        "id": "clip-20260604-5",
-        "rank": 5,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "[마켓인]데이터센터보다 전력망…韓 LP, 실물자산 투자 ‘선별 모드’",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02079526645478112",
-        "summaryText": "이 기사는 2026년06월03일 08시00분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 한국 기관투자가(LP)들이 글로벌 실물자산 시장에서 데이터센터와 전력망, 시니어하우징 등 구조적 수요가 뒷받침되는 자산을 주목하고 있다.",
-        "summaryLines": [
-          "한국 기관투자가(LP)들이 글로벌 실물자산 시장에서 데이터센터와 전력망, 시니어하우징 등 구조적 수요가 뒷받침…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260604-6",
-        "rank": 6,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "H&Q, 5호 펀드 4000억 첫 클로징…후속 모...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606010936116880105144",
-        "summaryText": "사모투자펀드(PEF) 운용사 H&Q코리아(이하 H&Q)가 5호 블라인드펀드의 1차 클로징을 마쳤다.... H&Q가 신규 블라인드펀드 조성에 나선 것은 2020년 4호 펀드 결성 이후 처음이다.",
-        "summaryLines": [
-          "사모투자펀드(PEF) 운용사 H&Q코리아(이하 H&Q)가 5호 블라인드펀드의 1차 클로징을 마쳤다",
-          "H&Q가 신규 블라인드펀드 조성에 나선 것은 2020년 4호 펀드 결성 이후 처음이다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "에이치앤큐코리아파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "에이치앤큐코리아파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260604-7",
-        "rank": 7,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "위탁사 일찌감치 '오버부킹', 펀딩 목표액 줄...",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202605290844561840104266",
-        "summaryText": "국민성장펀드 1차 위탁운용사(GP) 선정이 확정되자마자 주요 기관투자자(LP)들의 출자 요청이 쏟아지며 대다수 위탁사가 일찌감치 오버부킹 구간에 진입했다.",
-        "summaryLines": [
-          "국민성장펀드 1차 위탁운용사(GP) 선정이 확정되자마자 주요 기관투자자(LP)들의 출자 요청이 쏟아지며 대다수…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      }
-    ],
-    "articleCount": 8
   }
 ]
