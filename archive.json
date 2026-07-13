@@ -1,5 +1,414 @@
 [
   {
+    "reportDate": "2026-07-13",
+    "visibleDate": "2026.07.13",
+    "basis": "",
+    "articleCount": 15,
+    "articles": [
+      {
+        "id": "clip-20260713-0",
+        "rank": 0,
+        "section": "국민성장펀드",
+        "subCategory": "정책펀드",
+        "rawSection": "국민성장펀드",
+        "title": "5대 금융, '국민성장펀드 매칭' 리가켐바이오에 1000억 투자한다",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607091046283320101013",
+        "summaryText": "5대 금융지주(KB금융·신한금융·하나금융·우리금융·NH농협금융)가 리가켐바이오사이언스에 대규모 투자를 단행한다. 국민성장펀드 매칭에 참여해 리가켐바이오가 모집하는 민간 자금 2500억원 가운데 40%를 분담한다.",
+        "summaryLines": [
+          "5대 금융지주(KB금융·신한금융·하나금융·우리금융·NH농협금융)가 리가켐바이오사이언스에 대규모 투자를 단행",
+          "국민성장펀드 매칭에 참여해 리가켐바이오가 모집하는 민간 자금 2500억원 가운데 40%를 분담"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 1,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[매경데스크] 토종 PEF 역차별의 그늘",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/columnists/12096465",
+        "summaryText": "쏟아지는 규제 법안에위축되는 국내 사모펀드해외PEF, 韓 M&A 독식토종자본 역차별 논란 커져'기울어진 운동장' 막아야",
+        "summaryLines": [
+          "쏟아지는 규제 법안에위축되는 국내 사모펀드해외PEF, 韓 M&A 독식토종자본 역차별 논란 커져'기울어진 운동장'…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "수천억 '큰 손' 사모펀드가 하늘 쳐다보는 이유는",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026071014344968556",
+        "summaryText": "글로벌 사모펀드(PEF) 운용사 EQT는 2024년 국내 한 폐기물 처리업체 인수를 검토하면서 재무제표보다",
+        "summaryLines": [
+          "글로벌 사모펀드(PEF) 운용사 EQT는 2024년 국내 한 폐기물 처리업체 인수를 검토하면서 재무제표보다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "현대LNG해운 매각, 산기위·공정위 심사 넘었다",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://www.hankyung.com/article/2026071201801",
+        "summaryText": "현대LNG해운 매각, 산기위·공정위 심사 넘었다, 인니 시나르마스에 매각 승인 \"국내 에너지 안보 영향\" 우려",
+        "summaryLines": [
+          "현대LNG해운 매각",
+          "산기위·공정위 심사 넘었다",
+          "인니 시나르마스에 매각 승인 \"국내 에너지 안보 영향\" 우려"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "\"환율 믿고 싹쓸이?\" 돈다발 들고 한국 왔다…알짜기업 노리는 외국계 큰손 [PE는 지금]",
+        "titleBadges": [],
+        "source": "아시아경제",
+        "sourceBadge": "아",
+        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+        "sourceIconStyle": "",
+        "url": "https://www.asiae.co.kr/article/2026071016160017709",
+        "summaryText": "5000억원 이상 대형 인수합병(M&A) 시장에서 외국계 사모펀드(PEF) 운용사가 강세를 보이고 있다.",
+        "summaryLines": [
+          "5000억원 이상 대형 인수합병(M&A) 시장에서 외국계 사모펀드(PEF) 운용사가 강세를 보이고 있다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "리멤버 자회사 브리스캔영, 사모펀드 M&A '경영진 실사' 지원",
+        "titleBadges": [],
+        "source": "블로터",
+        "sourceBadge": "블",
+        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
+        "sourceIconStyle": "",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=667859",
+        "summaryText": "리멤버의 자회사인 임원급 헤드헌팅 전문기업 브리스캔영어쏘시에이츠(브리스캔영)가 사모펀드(PE) 투자 대상 기업 경영진의 실행 역량을 검증·개선하는 맞춤형 솔루션 'PE 익스큐션 알파'를 출시했다고 12일 밝혔다.​통상적으로 사모펀드가 기업에 투자할 때 재무, 사업, 법률 등 다방면에",
+        "summaryLines": [
+          "리멤버의 자회사인 임원급 헤드헌팅 전문기업 브리스캔영어쏘시에이츠(브리스캔영)가 사모펀드(PE) 투자 대상 기업 경…",
+          "법률 등 다방면에"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "프리미어파트너스, 투자사 성장 지원 강화…회수 경쟁력 눈길",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607101522420760106411",
+        "summaryText": "프리미어파트너스가 포트폴리오 기업의 성장과 기업가치 제고를 지원하는 전략을 강화하고 있다. 최근 생성형 인공지능(AI) 활용 세미나를 개최한 데 이어 후속 네트워킹 프로그램도 준비하는 등 투자 이후 지원 범위를 넓히며 회수 경쟁력을 끌어올리는 모습이다.",
+        "summaryLines": [
+          "프리미어파트너스가 포트폴리오 기업의 성장과 기업가치 제고를 지원하는 전략을 강화하고 있다",
+          "최근 생성형 인공지능(AI) 활용 세미나를 개최한 데 이어 후속 네트워킹 프로그램도 준비하는 등 투자 이후 지원…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "삼천리운용, 대명에너지 정리…신재생 1호 펀드 청산 가시화",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607091102492480109413",
+        "summaryText": "삼천리자산운용이 대명에너지 보유 지분을 전량 처분하며 투자금 회수를 마무리했다. 신재생에너지 블라인드펀드를 통해 2021년 프리IPO 단계에서 투자한 지 약 5년 만이다.",
+        "summaryLines": [
+          "삼천리자산운용이 대명에너지 보유 지분을 전량 처분하며 투자금 회수를 마무리",
+          "신재생에너지 블라인드펀드를 통해 2021년 프리IPO 단계에서 투자한 지 약 5년 만이다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "한국콜마, 미국공장 가동률에 달린 투자 성과",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607071446149200102916",
+        "summaryText": "한국콜마의 국내외 실적이 극과 극으로 엇갈리고 있다. 국내 화장품 법인은 수익성 고공행진을 이어가는 반면, 미국과 캐나다",
+        "summaryLines": [
+          "한국콜마의 국내외 실적이 극과 극으로 엇갈리고 있다",
+          "국내 화장품 법인은 수익성 고공행진을 이어가는 반면, 미국과 캐나다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "[데스크 칼럼] 아무도 살리지 않는 홈플러스",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://www.hankyung.com/article/2026071201991",
+        "summaryText": "[데스크 칼럼] 아무도 살리지 않는 홈플러스, 조진형 정치부장",
+        "summaryLines": [
+          "아무도 살리지 않는 홈플러스",
+          "조진형 정치부장"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "JP모간 조솔로 체제 2년, '꾸준한 강자' 자리매김",
+        "titleBadges": [],
+        "source": "더벨",
+        "sourceBadge": "더",
+        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
+        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607081513068480109188",
+        "summaryText": "조솔로 한국 IB(투자금융) 대표가 이끄는 JP모간이 국내 인수합병(M&A) 자문시장에서 견고한 리더십을 이어가고 있다. 지난 2024년 조 대표가 1980년생의 젊은 리더로서 대표 자리에 오른 지 약 2년이 흘렀다.",
+        "summaryLines": [
+          "조솔로 한국 IB(투자금융) 대표가 이끄는 JP모간이 국내 인수합병(M&A) 자문시장에서 견고한 리더십을 이어가고…",
+          "지난 2024년 조 대표가 1980년생의 젊은 리더로서 대표 자리에 오른 지 약 2년이 흘렀다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-11",
+        "rank": 11,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "대체투자 '큰손' 공제회, 하반기에도 실탄 부족",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12096584",
+        "summaryText": "증시 자금탈출 양상에도공제회 '자금가뭄' 여전국민연금·KIC 등판 주목",
+        "summaryLines": [
+          "증시 자금탈출 양상에도공제회 '자금가뭄' 여전국민연금·KIC 등판 주목"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-12",
+        "rank": 12,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "JB인베스트 포기한 ‘기후펀드’, 인라이트 홀로 재도전",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=46197",
+        "summaryText": "국내 벤처캐피탈 인라이트벤처스가 신규 펀드 조성에 시동을 걸었다. 지난해 JB인베스트먼트가 결성을 추진하다가 실패한 ‘성장사다리펀드2 기후대응 자펀드’의 바통을",
+        "summaryLines": [
+          "국내 벤처캐피탈 인라이트벤처스가 신규 펀드 조성에 시동을 걸었다",
+          "지난해 JB인베스트먼트가 결성을 추진하다가 실패한 ‘성장사다리펀드2 기후대응 자펀드’의 바통을"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-13",
+        "rank": 13,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "\"평가차익 2000억도 못 건질 수도\"…앞 안 보이는 MBK의 고려아연 출구전략",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/07/10/2026071080057.html",
+        "summaryText": "\"평가차익 2000억도 못 건질 수도\"…앞 안 보이는 MBK의 고려아연 출구전략-인베스트조선",
+        "summaryLines": [
+          "평가차익 2000억도 못 건질 수도",
+          "앞 안 보이는 MBK의 고려아연 출구전략-인베스트조선"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20260713-14",
+        "rank": 14,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "[교원 세대교체 빌드업] '오너 2세' 남매, 금융 투자판 키운다",
+        "titleBadges": [],
+        "source": "딜사이트",
+        "sourceBadge": "딜",
+        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
+        "sourceIconStyle": "",
+        "url": "https://dealsite.co.kr/articles/165024",
+        "summaryText": "③교원라이프·알렌바이오 자금 활용 몸집 불리기",
+        "summaryLines": [
+          "③교원라이프·알렌바이오 자금 활용 몸집 불리기"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-07-12",
     "visibleDate": "2026.07.12",
     "basis": "",
@@ -13395,1031 +13804,5 @@
       }
     ],
     "articleCount": 1
-  },
-  {
-    "reportDate": "2026-06-13",
-    "visibleDate": "2026.06.13",
-    "basis": "",
-    "articles": [
-      {
-        "id": "clip-20260613-0",
-        "rank": 0,
-        "section": "AI & PE",
-        "subCategory": "AI 투자·인프라",
-        "rawSection": "AI & PE",
-        "title": "\"이건 AI가 못 할걸요\"…남들 반도체·데이터센터 몰려갈 때 큰 손들이 ...",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026061211064410472",
-        "summaryText": "사모펀드 운용사(PE) 센트로이드인베스트먼트는 지난달 상조업체 더피플라이프 매각 우선협상대상자로 선정됐다. 선수금 4000억원 규모, 상조업계 6위 사업자다.",
-        "summaryLines": [
-          "사모펀드 운용사(PE) 센트로이드인베스트먼트는 지난달 상조업체 더피플라이프 매각 우선협상대상자로 선정",
-          "선수금 4000억원 규모, 상조업계 6위 사업자다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 0,
-        "gpNames": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스",
-          "프랙시스캐피탈파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스",
-          "프랙시스캐피탈파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-1",
-        "rank": 1,
-        "section": "국민성장펀드",
-        "subCategory": "정책펀드",
-        "rawSection": "국민성장펀드",
-        "title": "\"LP 줄섰다\"…국민성장펀드 정책펀드 2차, 증권사도 5곳 출사표",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419669",
-        "summaryText": "산업은행과 한국성장금융투자운용이 진행하는 국민성장펀드 간접투자 분야에 국내 내로라하는 투자사들이 대거 출사표를 던졌다. 벤처캐피탈(VC)과 사모펀드(PE) 외 증권사에서도 5개사가 도전했다.12일 관련업계에 따르면 산업은행과 한국성장금융투자운용은 전날 국민성장펀드 간접투자분야 정책성펀드 2차 출자사업의 접수 결과를 발표했다.",
-        "summaryLines": [
-          "산업은행과 한국성장금융투자운용이 진행하는 국민성장펀드 간접투자 분야에 국내 내로라하는 투자사들이 대거 출사표를 던…",
-          "벤처캐피탈(VC)과 사모펀드(PE) 외 증권사에서도 5개사가 도전했다.12일 관련업계에 따르면 산업은행과 한국성장…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [
-          "에스브이인베스트먼트",
-          "신영증권",
-          "KB증권",
-          "NH투자증권"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "97",
-            "name": "에스브이인베스트먼트",
-            "url": "gp-97.html"
-          },
-          {
-            "id": "82",
-            "name": "신영증권",
-            "url": "gp-82.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "에스브이인베스트먼트",
-          "SV인베스트먼트",
-          "신영증권",
-          "KB증권",
-          "NH투자증권"
-        ]
-      },
-      {
-        "id": "clip-20260613-2",
-        "rank": 2,
-        "section": "국민성장펀드",
-        "subCategory": "정책펀드",
-        "rawSection": "국민성장펀드",
-        "title": "정책자금 따라 VC도 지역으로…국민성장펀드 지역전용 리그에 집중",
-        "titleBadges": [],
-        "source": "뉴스토마토",
-        "sourceBadge": "토",
-        "sourceIconUrl": "https://www.newstomato.com/images/logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 11px;",
-        "url": "https://www.newstomato.com/ReadNews.aspx?inflow=N&no=1303828",
-        "summaryText": "정책출자 비중 높은 지역전용에 지원 집중",
-        "summaryLines": [
-          "정책출자 비중 높은 지역전용에 지원 집중"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260613-3",
-        "rank": 3,
-        "section": "국민성장펀드",
-        "subCategory": "출자·선정",
-        "rawSection": "국민성장펀드",
-        "title": "국민성장펀드 선정돼도 고민...“GP커밋 대출 빗장 풀어야”",
-        "titleBadges": [],
-        "source": "뉴스톱",
-        "sourceBadge": "톱",
-        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
-        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=45500",
-        "summaryText": "국민성장펀드 출자사업에 도전 중인 국내 중소형 벤처캐피탈들이 복병을 맞닥뜨렸다. 그동안 신용보증기금(신보) 보증 상품을 통해 운용사출자금(GP커밋)을 조달하곤 했",
-        "summaryLines": [
-          "국민성장펀드 출자사업에 도전 중인 국내 중소형 벤처캐피탈들이 복병을 맞닥뜨렸다",
-          "그동안 신용보증기금(신보) 보증 상품을 통해 운용사출자금(GP커밋)을 조달하곤 했"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [
-          "한국산업은행"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "24",
-            "name": "한국산업은행",
-            "url": "gp-24.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 3,
-        "searchTerms": [
-          "한국산업은행"
-        ]
-      },
-      {
-        "id": "clip-20260613-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Financing",
-        "rawSection": "Deal",
-        "title": "휴젤 투자 CBC그룹, 한국서 GP 등록…바이오텍 추가 M&A 나선다 [시그널...",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20054928",
-        "summaryText": "아시아 최대 헬스케어 전문 사모펀드(PEF) 운용사 CBC그룹이 국내에서 업무집행조합원(GP)으로 등록하고 장기 투자를 위한 채비를 마쳤다. CBC그룹은 의약·헬스케어·의료기기 등 다양한 분야에 걸쳐 바이오 기술기업에 투자하는 운용사로 국내에서는 휴젤에 투자한 이력을",
-        "summaryLines": [
-          "아시아 최대 헬스케어 전문 사모펀드(PEF) 운용사 CBC그룹이 국내에서 업무집행조합원(GP)으로 등록하고 장기…",
-          "CBC그룹은 의약·헬스케어·의료기기 등 다양한 분야에 걸쳐 바이오 기술기업에 투자하는 운용사로 국내에서는 휴젤에…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "아이엠엠인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "아이엠엠인베스트먼트"
-        ]
-      },
-      {
-        "id": "clip-20260613-5",
-        "rank": 5,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
-        "title": "[PEF 머니맵] '실적 체력' 갖춘 크린토피아, 이젠 스틱인베의 시간",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=665268",
-        "summaryText": "크린토피아가 벌어들인 이익이 1년 새 100억원 넘게 늘어난 것으로 나타났다. 앞서 사모펀드(PEF) 운용사 JKL파트너스의 품에서 외형 확대와 수익성 개선을 거치며 4년여 만에 기업가치를 3배 넘게 끌어올린 후 스틱인베스트먼트를 새 주인으로 맞는 와중에도 실적 체력을 더욱 단단히 다",
-        "summaryLines": [
-          "크린토피아가 벌어들인 이익이 1년 새 100억원 넘게 늘어난 것으로 나타났다",
-          "앞서 사모펀드(PEF) 운용사 JKL파트너스의 품에서 외형 확대와 수익성 개선을 거치며 4년여 만에 기업가치를 3…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "23",
-            "name": "스틱인베스트먼트",
-            "url": "gp-23.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 3,
-        "searchTerms": [
-          "스틱인베스트먼트",
-          "제이케이엘파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-6",
-        "rank": 6,
-        "section": "Deal",
-        "subCategory": "Auction",
-        "rawSection": "Deal",
-        "title": "한국펀드파트너스 매각 예비입찰, 하나금융·대형 PEF 등 참여",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/12/2026061280161.html",
-        "summaryText": "한국펀드파트너스 매각 예비입찰, 하나금융·대형 PEF 등 참여-인베스트조선",
-        "summaryLines": [
-          "한국펀드파트너스 매각 예비입찰",
-          "하나금융·대형 PEF 등 참여-인베스트조선"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "제이케이엘파트너스",
-          "스카이레이크에쿼티파트너스",
-          "마스턴파트너스"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "99",
-            "name": "제이케이엘파트너스",
-            "url": "gp-99.html"
-          },
-          {
-            "id": "13432",
-            "name": "스카이레이크에쿼티파트너스",
-            "url": "gp-13432.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 3,
-        "searchTerms": [
-          "제이케이엘파트너스",
-          "JKL파트너스",
-          "스카이레이크에쿼티파트너스",
-          "마스턴파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-7",
-        "rank": 7,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "성호전자, 반도체 장비업체 인티맥스 인수…PEF 크레센도와 동맹",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202606122357r",
-        "summaryText": "성호전자, 반도체 장비업체 인티맥스 인수…PEF 크레센도와 동맹, 성호전자, ADS테크 이어 인티맥스까지…반도체 밸류체인 잇달아 인수",
-        "summaryLines": [
-          "성호전자, 반도체 장비업체 인티맥스 인수",
-          "PEF 크레센도와 동맹, 성호전자, ADS테크 이어 인티맥스까지",
-          "반도체 밸류체인 잇달아 인수"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "미래에셋증권"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "미래에셋증권"
-        ]
-      },
-      {
-        "id": "clip-20260613-8",
-        "rank": 8,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "M&A 불붙은 금융지주…하나, 한국펀드파트너스 인수 추진 [시그널...",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20055103",
-        "summaryText": "하나금융그룹이 국내 선두권 펀드 사무관리 회사 한국펀드파트너스 인수를 추진하고 있다. 펀드 사무관리 회사는 상장지수펀드(ETF) 등 펀드의 자산가치(NAV)를 산정하고 이외 회계·행정 업무를 도맡는 기업이다.",
-        "summaryLines": [
-          "하나금융그룹이 국내 선두권 펀드 사무관리 회사 한국펀드파트너스 인수를 추진하고 있다",
-          "펀드 사무관리 회사는 상장지수펀드(ETF) 등 펀드의 자산가치(NAV)를 산정하고 이외 회계·행정 업무를 도맡는…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "애큐온캐피탈",
-          "타임폴리오자산운용",
-          "마스턴파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "애큐온캐피탈",
-          "타임폴리오자산운용",
-          "마스턴파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-9",
-        "rank": 9,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "성호전자, 인티맥스 인수로 반도체 장비 시너지 본격화…크레센도는 주...",
-        "titleBadges": [],
-        "source": "머니투데이",
-        "sourceBadge": "머",
-        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.mt.co.kr/stock/2026/06/12/2026061208582169787",
-        "summaryText": "성호전자는 반도체 핸들러 및 검사장비 전문기업 인티맥스를 인수한다고 12일 밝혔다. 삼성전자와 SK하이닉스, 미국 마이크론테크놀로지 등 글로벌 메모리 반도체 3사를 모두 고객사로 확보하고 있다.",
-        "summaryLines": [
-          "성호전자는 반도체 핸들러 및 검사장비 전문기업 인티맥스를 인수한다고 12일",
-          "삼성전자와 SK하이닉스, 미국 마이크론테크놀로지 등 글로벌 메모리 반도체 3사를 모두 고객사로 확보하고 있다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "크레센도에쿼티파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "크레센도에쿼티파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-10",
-        "rank": 10,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "성호전자 '반도체 장비社' 인티맥스 인수",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://www.hankyung.com/article/2026061237251",
-        "summaryText": "성호전자 '반도체 장비社' 인티맥스 인수, 지분 90% 640억원에 사들여",
-        "summaryLines": [
-          "지분 90% 640억원에 사들여"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "NH투자증권"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "NH투자증권"
-        ]
-      },
-      {
-        "id": "clip-20260613-11",
-        "rank": 11,
-        "section": "Deal",
-        "subCategory": "Financing",
-        "rawSection": "Deal",
-        "title": "“제2의 휴젤 찾는다”… CBC그룹, 韓바이오에 ‘러브콜’",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/stock/12072388",
-        "summaryText": "GHO캐피탈 결합 후 첫 간담회 3억弗 규모 펀드 KIC와 조성 제약사 통인수 대신 IP 가져와 펀드 산하 운영법인 설립 계획",
-        "summaryLines": [
-          "GHO캐피탈 결합 후 첫 간담회 3억弗 규모 펀드 KIC와 조성 제약사 통인수 대신 IP 가져와 펀드 산하 운영법…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "아이엠엠인베스트먼트"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "아이엠엠인베스트먼트"
-        ]
-      },
-      {
-        "id": "clip-20260613-12",
-        "rank": 12,
-        "section": "Deal",
-        "subCategory": "Auction",
-        "rawSection": "Deal",
-        "title": "하나금융, 한국펀드파트너스 인수 추진…예비입찰 참여",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419762",
-        "summaryText": "하나금융그룹이 국내 펀드 사무관리 회사인 한국펀드파트너스의 인수전에 뛰어들었다. 하나펀드서비스의 뒤를 이어 3위권 회사인만큼, 인수 후 시너지를 기대한 것으로 보인다.12일 금융권에 따르면 하나금융은 한국펀드파트너스 매각 예비입찰에 참여한 것으로 알려졌다.한국펀드파트너스의 최대주주인 국내 사모펀드 운용사 PTA에쿼티파트너스는 올해 초 주관사를 선정하고 본격적인 매각 작업에 착수했다.거래 대상은 PTA PE의 지분을 포함한 80% 안팎의 경영권 지분이다.",
-        "summaryLines": [
-          "하나금융그룹이 국내 펀드 사무관리 회사인 한국펀드파트너스의 인수전에 뛰어들었다",
-          "하나펀드서비스의 뒤를 이어 3위권 회사인만큼, 인수 후 시너지를 기대한 것으로 보인다.12일 금융권에 따르면 하나…",
-          "한국펀드파트너스의 최대주주인 국내 사모펀드 운용사 PTA에쿼티파트너스는 올해 초 주관사를 선정하고 본격적인 매각…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "마스턴파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "마스턴파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-13",
-        "rank": 13,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "김성수 전 카카오엔터 대표 2심 무죄 이유…엔터사 M&A엔 다른 잣대",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=665208",
-        "summaryText": "드라마 제작사 바람픽쳐스 고가 인수 혐의로 재판을 받은 김성수 전 카카오엔터테인먼트(카카오엔터) 대표가 1심에 이어 2심에서도 무죄를 선고받은 것은 인기 작가, 콘텐츠 등 무형가치가 중요한 엔터테인먼트 기업의 특성이 고려됐다는 분석이다. 서울고법 형사3부(이승한 부장판사)는 이달 11",
-        "summaryLines": [
-          "드라마 제작사 바람픽쳐스 고가 인수 혐의로 재판을 받은 김성수 전 카카오엔터테인먼트(카카오엔터) 대표가 1심에 이…",
-          "서울고법 형사3부(이승한 부장판사)는 이달 11"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260613-14",
-        "rank": 14,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "“딜 가뭄에도 기회는 있다…K-뷰티·푸드 주목”",
-        "titleBadges": [],
-        "source": "헤럴드경제",
-        "sourceBadge": "헤",
-        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
-        "sourceIconStyle": "",
-        "url": "https://biz.heraldcorp.com/article/10770428",
-        "summaryText": "“하반기는 금리 인상 우려와 한국 증시 강세에 따른 밸류에이션 부담으로 인수·합병(M&A) 업계에 도전적인 시간이 될 것입니다. EY-파르테논은 글로벌 진출 가능성이 있",
-        "summaryLines": [
-          "EY-파르테논은 글로벌 진출 가능성이 있"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [
-          "아이엠엠프라이빗에쿼티",
-          "유씨케이파트너스"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "10",
-            "name": "아이엠엠프라이빗에쿼티",
-            "url": "gp-10.html"
-          },
-          {
-            "id": "22079",
-            "name": "유씨케이파트너스",
-            "url": "gp-22079.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 5,
-        "searchTerms": [
-          "아이엠엠프라이빗에쿼티",
-          "IMM PE",
-          "IMM프라이빗에쿼티",
-          "유씨케이파트너스",
-          "UCK"
-        ]
-      },
-      {
-        "id": "clip-20260613-15",
-        "rank": 15,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "“급할 때만 주주환원?”…한샘 500억 자사주의 속사정",
-        "titleBadges": [],
-        "source": "서울경제TV",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://www.sentv.co.kr/data/sentv/upload/save/company/sentv17605930367478.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.sentv.co.kr/article/view/sentv202606120051",
-        "summaryText": "코리아 밸류업 지수에서 편출된 한샘이 뒤늦게 500억 원 규모의 자사주 매입 카드를 꺼내 들었습니다. 회사는 주주가치 제고를 강조하고 있지만, 업계",
-        "summaryLines": [
-          "코리아 밸류업 지수에서 편출된 한샘이 뒤늦게 500억 원 규모의 자사주 매입 카드를 꺼내 들었습니다",
-          "회사는 주주가치 제고를 강조하고 있지만, 업계"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260613-16",
-        "rank": 16,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "KIC와 손잡은 CBC그룹, 3억弗 펀드로 \"글로벌 韓바이오텍 키운다\"",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419674",
-        "summaryText": "세계 최대 헬스케어 전문 투자 운용사 CBC그룹이 국내에 유일한 국부펀드인 한국투자공사(KIC)와 글로벌 성장 잠재력을 갖춘 국내 바이오텍 발굴에 나선다.KIC와 글로벌 전략적 투자자(SI) 등이 참여하는 3억 달러 규모의 펀드 조성을 시작으로 전문사모집합투자업(PE) 라이선스를 획득하는 등 한국 바이오 시장 투자를 선도하겠다는 구상이다.CBC그룹은 지난 10일 서울 포시즌스호텔에서 열린 기자 간담회에서 KIC와 공동 조성하는 '뉴 브릿지'(가칭) 펀드가 올해 여름 내로 출범할 것이라고 12일 밝혔다.싱가포르에 본사를 둔 CBC그",
-        "summaryLines": [
-          "세계 최대 헬스케어 전문 투자 운용사 CBC그룹이 국내에 유일한 국부펀드인 한국투자공사(KIC)와 글로벌 성장 잠…",
-          "KIC와 글로벌 전략적 투자자(SI) 등이 참여하는 3억 달러 규모의 펀드 조성을 시작으로 전문사모집합투자업(PE…",
-          "CBC그룹은 지난 10일 서울 포시즌스호텔에서 열린 기자 간담회에서 KIC와 공동 조성하는 '뉴 브릿지'(가칭)…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "한국투자공사"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "kic",
-            "name": "한국투자공사",
-            "url": "lp-kic.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "한국투자공사",
-          "kic",
-          "국부펀드",
-          "KIC"
-        ]
-      },
-      {
-        "id": "clip-20260613-17",
-        "rank": 17,
-        "section": "LP",
-        "subCategory": "Allocation",
-        "rawSection": "LP",
-        "title": "신한자산운용, 과학기술혁신펀드 7개 분야에 1163억원 출자",
-        "titleBadges": [],
-        "source": "머니투데이",
-        "sourceBadge": "머",
-        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.mt.co.kr/stock/2026/06/12/2026061214334666698",
-        "summaryText": "총 1163억원을 출자해 8개 위탁운용사를 선정하고, 3191억원 이상 규모의 벤처펀드를 조성할 계획이다. 과학기술혁신펀드는 국가연구개발사업의 연구개발 자금을 예치·관리하는 신한은행, IBK기업은행, 우리은행의 자금으로 조성된 민·관 협력 펀드다.",
-        "summaryLines": [
-          "총 1163억원을 출자해 8개 위탁운용사를 선정하고, 3191억원 이상 규모의 벤처펀드를 조성할 계획이다",
-          "과학기술혁신펀드는 국가연구개발사업의 연구개발 자금을 예치·관리하는 신한은행, IBK기업은행, 우리은행의 자금으로…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [
-          "신한자산운용"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [
-          "IBK기업은행"
-        ],
-        "lpProfileLinks": [
-          {
-            "code": "ibk",
-            "name": "IBK기업은행",
-            "url": "lp-ibk.html"
-          }
-        ],
-        "peopleCount": 0,
-        "searchTerms": [
-          "신한자산운용",
-          "IBK기업은행",
-          "ibk",
-          "기업은행",
-          "중소기업은행",
-          "IBK"
-        ]
-      },
-      {
-        "id": "clip-20260613-18",
-        "rank": 18,
-        "section": "GP",
-        "subCategory": "Fundraising",
-        "rawSection": "GP",
-        "title": "휴젤 키운 ‘30조’ 헬스케어 사모펀드 공룡 \"K바이오 특화 펀드 조성\"",
-        "titleBadges": [],
-        "source": "한국경제",
-        "sourceBadge": "한",
-        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
-        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
-        "url": "https://marketinsight.hankyung.com/article/202606122175r",
-        "summaryText": "휴젤 키운 ‘30조’ 헬스케어 사모펀드 공룡 \"K바이오 특화 펀드 조성\", 헬스케어 투자사 CBC그룹 기자간담회 KIC 1.5억달러 앵커 LP 참여 올 여름 1차 클로징 목표 신약 IP 인수하는 '뉴코' 전략 GHO캐피탈과 결합…AUM 210억달러 아시아·미국·유럽 잇는 네트워크 구축",
-        "summaryLines": [
-          "휴젤 키운 ‘30조’ 헬스케어 사모펀드 공룡 \"K바이오 특화 펀드 조성\", 헬스케어 투자사 CBC그룹 기자간담회…",
-          "AUM 210억달러 아시아·미국·유럽 잇는 네트워크 구축"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "미래에셋증권"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "미래에셋증권"
-        ]
-      },
-      {
-        "id": "clip-20260613-19",
-        "rank": 19,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "KB PE-마크-플로우, 1000억 크레딧 펀드 LP 모집 완료",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202606101349589080106629",
-        "summaryText": "KB증권 PE성장투자본부(전 KB증권 PE신기사본부)가 1000억원 규모 신규 크레딧 펀드 결성을 사실상 완료했다.... 플로우파트너스는 교원그룹 계열의 사모펀드(PEF) 운용사다.",
-        "summaryLines": [
-          "KB증권 PE성장투자본부(전 KB증권 PE신기사본부)가 1000억원 규모 신규 크레딧 펀드 결성을 사실상 완료",
-          "플로우파트너스는 교원그룹 계열의 사모펀드(PEF) 운용사다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "KB증권",
-          "플로우파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "KB증권",
-          "플로우파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-20",
-        "rank": 20,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "MBK \"고려아연 감사위, 원아시아·이그니오 투자 독립 조사 촉구\"",
-        "titleBadges": [],
-        "source": "블로터",
-        "sourceBadge": "블",
-        "sourceIconUrl": "https://www.bloter.net/image/logo/snslogo_20240118025249.png",
-        "sourceIconStyle": "",
-        "url": "https://www.bloter.net/news/articleView.html?idxno=665231",
-        "summaryText": "MBK파트너스가 고려아연 감사위원회에 대해 원아시아파트너스 펀드 투자, 이그니오홀딩스 투자 및 대규모 손실 처리 등에 대한 독립적인 조사를 공식 요구했다.MBK는 12일 입장문을 통해 ﻿",
-        "summaryLines": [
-          "MBK파트너스가 고려아연 감사위원회에 대해 원아시아파트너스 펀드 투자, 이그니오홀딩스 투자 및 대규모 손실 처리…",
-          "MBK는 12일 입장문을 통해 ﻿"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "엠비케이파트너스",
-          "원아시아파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스",
-          "원아시아파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-21",
-        "rank": 21,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "고려아연, MBK 향해 “기업가치 훼손 행위 중단” 거듭 촉구",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/business/12072881",
-        "summaryText": "대표이사 해임권고 상당 징계 영풍에 MBK ‘침묵’ “홈플러스 대주주로서 사회적 책임에 충실할 때”",
-        "summaryLines": [
-          "대표이사 해임권고 상당 징계 영풍에 MBK ‘침묵’ “홈플러스 대주주로서 사회적 책임에 충실할 때"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "2",
-            "name": "엠비케이파트너스",
-            "url": "gp-2.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 13,
-        "searchTerms": [
-          "엠비케이파트너스",
-          "MBK"
-        ]
-      },
-      {
-        "id": "clip-20260613-22",
-        "rank": 22,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "'휴젤 최대주주' CBC 그룹 \"4500억 펀드 만들어 국내 IP로 뉴코 만들겠다...",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03207846645481064",
-        "summaryText": "\"CBC 그룹의 목표는 로컬 기업을 글로벌 시장플레이어로 성장시키는 데에 있다. 휴젤(145020)에 투자한 것도 그러한 맥락이며 앞으로 더 많은 한국기업의 글로벌 진출을 지원하겠다.\"(경한수 CBC그룹 북미 총괄 대표·글로벌 프라이빗 크레딧 및 로열티 부문 대표)\"...",
-        "summaryLines": [
-          "CBC 그룹의 목표는 로컬 기업을 글로벌 시장플레이어로 성장시키는 데에 있다",
-          "휴젤(145020)에 투자한 것도 그러한 맥락이며 앞으로 더 많은 한국기업의 글로벌 진출을 지원하겠다",
-          "(경한수 CBC그룹 북미 총괄 대표·글로벌 프라이빗 크레딧 및 로열티 부문 대표)"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [
-          "아이엠엠프라이빗에쿼티"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "아이엠엠프라이빗에쿼티"
-        ]
-      },
-      {
-        "id": "clip-20260613-23",
-        "rank": 23,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "쿠팡 개인정보 유출 후폭풍…과징금 6247억",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20054953",
-        "summaryText": "이슈 브리핑] ■ VC의 AI 전환: 더벤처스가 AI 심사역 ‘비키’와 LP 대시보드를 국내 VC 업계 최초로 자체 구축하며 투자 심사·LP 소통 업무를 전면 자동화했다. 기존 분기별 문서 보고 방식에서 벗어나 LP가 실시간으로 펀드 운용 현황과 피투자 기업 경",
-        "summaryLines": [
-          "이슈 브리핑] ■ VC의 AI 전환: 더벤처스가 AI 심사역 ‘비키’와 LP 대시보드를 국내 VC 업계 최초로 자…",
-          "기존 분기별 문서 보고 방식에서 벗어나 LP가 실시간으로 펀드 운용 현황과 피투자 기업 경"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260613-24",
-        "rank": 24,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "증선위 중징계에…MBK \"고려아연 내부통제 붕괴, 감사위 독립 조사해야...",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2592970",
-        "summaryText": "(MBK파트너스)금융위원회 증권선물위원회가 고려아연에 대해 회계처리기준 위반을 이유로 중징계 조치를 의결한 가운데, 사모펀드(P",
-        "summaryLines": [
-          "(MBK파트너스)금융위원회 증권선물위원회가 고려아연에 대해 회계처리기준 위반을 이유로 중징계 조치를 의결한 가운데"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-25",
-        "rank": 25,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "블랙록, 사모대출 펀드 환매 2분기 연속 5% 제한",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20055304",
-        "summaryText": "세계 최대 자산운용사인 블랙록이 최근 인출 요구가 거세게 일고 있는 사모대출 펀드의 환매를 2분기 연속 제한했다. 블랙록의 자회사인 HPS인베스트먼트는 12일(현지 시간) 대표 사모대출 펀드인 ‘HPS기업대출펀드’가 직전 분기 발행주식 수의 13.3%에 달하는 환매 요",
-        "summaryLines": [
-          "세계 최대 자산운용사인 블랙록이 최근 인출 요구가 거세게 일고 있는 사모대출 펀드의 환매를 2분기 연속 제한",
-          "블랙록의 자회사인 HPS인베스트먼트는 12일(현지 시간) 대표 사모대출 펀드인 ‘HPS기업대출펀드’가 직전 분기…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260613-26",
-        "rank": 26,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "MBK \"고려아연 내부통제 붕괴…감사위 즉각 나서야\"",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026061210433114982",
-        "summaryText": "MBK파트너스가 금융위원회 증권선물위원회(증선위)의 고려아연 회계처리기준 위반 중징계 의결과 관련해 \"회사의 회계·감사·내부통제 시스템 전반이 제대로 작.",
-        "summaryLines": [
-          "MBK파트너스가 금융위원회 증권선물위원회(증선위)의 고려아연 회계처리기준 위반 중징계 의결과 관련해 \"회사의 회계…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-27",
-        "rank": 27,
-        "section": "Market",
-        "subCategory": "Capital Market",
-        "rawSection": "Market",
-        "title": "경제사절단 남양유업도 환율 타격?…최대주주는 '유통물량 관리' 매도",
-        "titleBadges": [],
-        "source": "머니투데이",
-        "sourceBadge": "머",
-        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.mt.co.kr/stock/2026/06/13/2026061216490943509",
-        "summaryText": "남양유업이 이재명 대통령의 베트남 순방에 경제사절단으로 참여하며 동남아시아 판로 개척을 예고한 이후 주가가 16% 내린 것으로 나타났다. 남양유업이 부각시킨 한국-베트남 경제협력 가능성에 시장이 회의적 시각을 보낸 셈이다.",
-        "summaryLines": [
-          "남양유업이 이재명 대통령의 베트남 순방에 경제사절단으로 참여하며 동남아시아 판로 개척을 예고한 이후 주가가 16%…",
-          "남양유업이 부각시킨 한국-베트남 경제협력 가능성에 시장이 회의적 시각을 보낸 셈이다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "한앤컴퍼니"
-        ],
-        "gpProfileLinks": [
-          {
-            "id": "60",
-            "name": "한앤컴퍼니",
-            "url": "gp-60.html"
-          }
-        ],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 2,
-        "searchTerms": [
-          "한앤컴퍼니",
-          "한앤코"
-        ]
-      },
-      {
-        "id": "clip-20260613-28",
-        "rank": 28,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "MBK파트너스, 고려아연 중징계에 \"감사위 독립 조사해야\"",
-        "titleBadges": [],
-        "source": "머니투데이",
-        "sourceBadge": "머",
-        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
-        "url": "https://www.mt.co.kr/stock/2026/06/12/2026061209262213798",
-        "summaryText": "MBK파트너스가 금융위원회의 고려아연 중징계 결정과 관련, \"고려아연 감사위원회가 즉각 독립적 조사에 착수해야 한다\"는 입장을 냈다. MBK파트너스는 12일 입장문에서 \"최근 국세청 특별세무조사, 금융당국 감리 및 증선위 조치의 공통 분모가 결국 특정 개인을 중심으로 한 법인자금 부당유출 의혹으로 수렴하고 있다는 사실에 주목하고 있다\"며 이같이 요구했다.",
-        "summaryLines": [
-          "MBK파트너스가 금융위원회의 고려아연 중징계 결정과 관련, \"고려아연 감사위원회가 즉각 독립적 조사에 착수해야 한…",
-          "MBK파트너스는 12일 입장문에서 \"최근 국세청 특별세무조사, 금융당국 감리 및 증선위 조치의 공통 분모가 결국…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "원아시아파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "원아시아파트너스"
-        ]
-      },
-      {
-        "id": "clip-20260613-29",
-        "rank": 29,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "MBK \"고려아연 내부통제 붕괴…감사위 독립 조사 착수해야\"",
-        "titleBadges": [],
-        "source": "뉴시스",
-        "sourceBadge": "뉴",
-        "sourceIconUrl": "https://img1.newsis.com/n_www/images/ci/2024/logo2024.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 11px;",
-        "url": "https://www.newsis.com/view/NISX20260612_0003666705",
-        "summaryText": "증선위, 고려아연 회계처리 기준 위반 중징계",
-        "summaryLines": [
-          "고려아연 회계처리 기준 위반 중징계"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [
-          "엠비케이파트너스"
-        ],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": [
-          "엠비케이파트너스"
-        ]
-      }
-    ],
-    "articleCount": 30
   }
 ]
