@@ -3,7 +3,7 @@
     "reportDate": "2026-07-28",
     "visibleDate": "2026.07.28",
     "basis": "",
-    "articleCount": 16,
+    "articleCount": 14,
     "articles": [
       {
         "id": "clip-20260728-0",
@@ -169,33 +169,6 @@
       {
         "id": "clip-20260728-6",
         "rank": 6,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "순천향병원 30년 간접납품사 동하메디칼, 매물로",
-        "titleBadges": [],
-        "source": "매일경제",
-        "sourceBadge": "매",
-        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.mk.co.kr/news/stock/12108540",
-        "summaryText": "[본 기사는 07월 27일(15:22) 매일경제 자본시장 전문 유료매체인 ‘레이더M’에 보도 된 기사입니다] 순천향대학교 부속병원에 진료재료를 납품하는 간접납품회사(간납사) 동하메디칼이 인수·합병(M&A) 시장에 매물로 나왔다. 내년 말 개정 의료기기법 시행을 앞두고 전국 간납사들이 잇따라 경영권을 매각하는 가운데 나온 매물이다.",
-        "summaryLines": [
-          "순천향대학교 부속병원에 진료재료를 납품하는 간접납품회사(간납사) 동하메디칼이 인수·합병(M&A) 시장에 매물로 나…",
-          "내년 말 개정 의료기기법 시행을 앞두고 전국 간납사들이 잇따라 경영권을 매각하는 가운데 나온 매물이다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260728-7",
-        "rank": 7,
         "section": "LP",
         "subCategory": "Mandate",
         "rawSection": "LP",
@@ -220,8 +193,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-8",
-        "rank": 8,
+        "id": "clip-20260728-7",
+        "rank": 7,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -247,8 +220,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-9",
-        "rank": 9,
+        "id": "clip-20260728-8",
+        "rank": 8,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -274,8 +247,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-10",
-        "rank": 10,
+        "id": "clip-20260728-9",
+        "rank": 9,
         "section": "LP",
         "subCategory": "Mandate",
         "rawSection": "LP",
@@ -300,8 +273,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-11",
-        "rank": 11,
+        "id": "clip-20260728-10",
+        "rank": 10,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -327,8 +300,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-12",
-        "rank": 12,
+        "id": "clip-20260728-11",
+        "rank": 11,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -353,8 +326,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-13",
-        "rank": 13,
+        "id": "clip-20260728-12",
+        "rank": 12,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -380,8 +353,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260728-14",
-        "rank": 14,
+        "id": "clip-20260728-13",
+        "rank": 13,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -397,33 +370,6 @@
           "세계 최대 대체투자 운용사인 블랙스톤이 기관투자자 중심이던 사모시장 문턱을 개인투자자에게 본격적으로 낮춘다",
           "최근 기관 자금 유입이 둔화하자 개인투자자를 새로운 성장축으로 삼아 리테일 시장 공략에 나선 것이다",
           "과거 기관투자자의 전유물이었던 사모시장에 개인도 접근할 기"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260728-15",
-        "rank": 15,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "'글로벌 연대' 4세대 K-주주행동주의 본격화",
-        "titleBadges": [],
-        "source": "뉴스토마토",
-        "sourceBadge": "토",
-        "sourceIconUrl": "https://www.newstomato.com/images/logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 11px;",
-        "url": "https://www.newstomato.com/ReadNews.aspx?inflow=N&no=1308329",
-        "summaryText": "국내 소액주주들이 온라인 플랫폼을 통해 결집하는 수준을 넘어 해외 행동주의 펀드와 직접 손잡는 새로운 주주행동주의 국면에 진입하고 있습니다. 기업 지배구조 개선과 주주가치 제고를 목표로 국내 주주가 글로벌 투자자에게 먼저 협력을 제안하는 사례가 등장하면서 한국형 행동주의가 '국내 ...",
-        "summaryLines": [
-          "국내 소액주주들이 온라인 플랫폼을 통해 결집하는 수준을 넘어 해외 행동주의 펀드와 직접 손잡는 새로운 주주행동주의…",
-          "기업 지배구조 개선과 주주가치 제고를 목표로 국내 주주가 글로벌 투자자에게 먼저 협력을 제안하는 사례가 등장하면서…"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
