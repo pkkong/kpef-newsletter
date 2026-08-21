@@ -606,6 +606,12 @@
     }
     .gp-card h2 a { text-decoration: none; }
     .gp-card h2 a:hover { color: var(--accent); }
+    .gp-empty-row-copy {
+      margin: 4px 0 0;
+      color: var(--secondary);
+      font-size: 12px;
+      line-height: 1.4;
+    }
     .gp-chips {
       display: none;
       flex-wrap: wrap;
@@ -1852,6 +1858,16 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    .market-chart-empty {
+      display: grid;
+      grid-column: 1 / -1;
+      min-height: 120px;
+      place-items: center;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 650;
+      text-align: center;
+    }
     .market-rank-chart {
       display: grid;
       gap: 8px;
@@ -2218,7 +2234,7 @@
     <header class="gp-hero market-hero">
       <div class="gp-hero-copy">
         <h1>Overview</h1>
-        <p>2024Q4 · 2024.12.31 기준</p>
+        <p>2025Q4 · 2025.12.31 기준</p>
       </div>
     </header>
 
@@ -2226,27 +2242,27 @@
       <div class="market-kpis">
         <div>
           <span>펀드 수</span>
-          <strong>1,137</strong>
-          <em>전년 대비 +11개</em>
+          <strong>1,195</strong>
+          <em>전년 대비 +58개</em>
         </div>
         <div>
           <span>운용 GP</span>
-          <strong>381</strong>
-          <em>전년 대비 +11개</em>
+          <strong>397</strong>
+          <em>전년 대비 +16개</em>
         </div>
         <div>
           <span>출자약정액</span>
-          <strong>153.6조</strong>
-          <em>전년 대비 +17.2조</em>
+          <strong>167.5조</strong>
+          <em>전년 대비 +13.9조</em>
         </div>
         <div>
           <span>상위 10개 비중</span>
-          <strong>45.37%</strong>
-          <em>상위 20개 57.27%</em>
+          <strong>42.84%</strong>
+          <em>상위 20개 56.11%</em>
         </div>
       </div>
       <p class="market-metric-note">
-        운용 GP는 2024Q4 기준 각 펀드의 대표 운용사 집계입니다.
+        운용 GP는 2025Q4 기준 각 펀드의 대표 운용사 집계입니다.
         프로필/제휴 기준의 전체 GP 수와 다를 수 있습니다.
       </p>
     </section>
@@ -2257,48 +2273,54 @@
       </div>
       <div class="market-chart market-trend-chart" aria-label="출자약정액 추이">
           <div class="market-chart-bar">
-            <span>2022Q2</span>
-            <i style="height:80.0%"></i>
-            <strong>122.9조</strong>
-          </div>
-          <div class="market-chart-bar">
             <span>2022Q3</span>
-            <i style="height:80.9%"></i>
+            <i style="height:74.2%"></i>
             <strong>124.4조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2022Q4</span>
-            <i style="height:81.9%"></i>
+            <i style="height:75.1%"></i>
             <strong>125.8조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2023Q1</span>
-            <i style="height:85.2%"></i>
+            <i style="height:78.2%"></i>
             <strong>131.0조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2023Q2</span>
-            <i style="height:87.5%"></i>
+            <i style="height:80.2%"></i>
             <strong>134.4조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2023Q3</span>
-            <i style="height:90.3%"></i>
+            <i style="height:82.8%"></i>
             <strong>138.8조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2023Q4</span>
-            <i style="height:88.8%"></i>
+            <i style="height:81.5%"></i>
             <strong>136.4조</strong>
           </div>
           <div class="market-chart-bar">
             <span>2024Q4</span>
-            <i style="height:100.0%"></i>
+            <i style="height:91.7%"></i>
             <strong>153.6조</strong>
+          </div>
+          <div class="market-chart-bar">
+            <span>2025Q4</span>
+            <i style="height:100.0%"></i>
+            <strong>167.5조</strong>
           </div>
       </div>
       <div class="market-table">
         <div class="market-head market-period-row"><span>기준</span><span>펀드</span><span>GP</span><span>약정액</span></div>
+          <div class="market-row market-period-row">
+            <span>2025Q4</span>
+            <span>1,195</span>
+            <span>397</span>
+            <span>167.5조</span>
+          </div>
           <div class="market-row market-period-row">
             <span>2024Q4</span>
             <span>1,137</span>
@@ -2353,12 +2375,6 @@
             <span>359</span>
             <span>118.8조</span>
           </div>
-          <div class="market-row market-period-row">
-            <span>2021Q3</span>
-            <span>981</span>
-            <span>340</span>
-            <span>107.9조</span>
-          </div>
       </div>
     </section>
 
@@ -2370,42 +2386,42 @@
           <div class="market-rank-bar">
             <span>엠비케이파트너스</span>
             <i><b style="width:100.0%"></b></i>
-            <strong>17.3조</strong>
+            <strong>17.8조</strong>
           </div>
           <div class="market-rank-bar">
             <span>한앤컴퍼니</span>
-            <i><b style="width:95.4%"></b></i>
-            <strong>16.5조</strong>
-          </div>
-          <div class="market-rank-bar">
-            <span>아이엠엠프라이빗에쿼티</span>
-            <i><b style="width:42.4%"></b></i>
-            <strong>7.3조</strong>
+            <i><b style="width:90.7%"></b></i>
+            <strong>16.1조</strong>
           </div>
           <div class="market-rank-bar">
             <span>아이엠엠인베스트먼트</span>
-            <i><b style="width:36.8%"></b></i>
-            <strong>6.4조</strong>
+            <i><b style="width:40.3%"></b></i>
+            <strong>7.2조</strong>
+          </div>
+          <div class="market-rank-bar">
+            <span>아이엠엠프라이빗에쿼티</span>
+            <i><b style="width:39.2%"></b></i>
+            <strong>7.0조</strong>
           </div>
           <div class="market-rank-bar">
             <span>스틱인베스트먼트</span>
-            <i><b style="width:31.9%"></b></i>
-            <strong>5.5조</strong>
+            <i><b style="width:34.0%"></b></i>
+            <strong>6.0조</strong>
           </div>
           <div class="market-rank-bar">
             <span>연합자산관리</span>
-            <i><b style="width:25.9%"></b></i>
-            <strong>4.5조</strong>
+            <i><b style="width:25.8%"></b></i>
+            <strong>4.6조</strong>
           </div>
           <div class="market-rank-bar">
-            <span>한국산업은행</span>
-            <i><b style="width:22.7%"></b></i>
-            <strong>3.9조</strong>
+            <span>한국투자프라이빗에쿼티</span>
+            <i><b style="width:20.0%"></b></i>
+            <strong>3.5조</strong>
           </div>
           <div class="market-rank-bar">
-            <span>스카이레이크에쿼티파트너스</span>
-            <i><b style="width:16.4%"></b></i>
-            <strong>2.8조</strong>
+            <span>글랜우드프라이빗에쿼티</span>
+            <i><b style="width:19.3%"></b></i>
+            <strong>3.4조</strong>
           </div>
       </div>
       <div class="market-table">
@@ -2413,62 +2429,62 @@
           <div class="market-row market-gp-row">
             <span>1</span>
             <strong>엠비케이파트너스</strong>
-            <span>17.3조</span>
-            <span>15</span>
+            <span>17.8조</span>
+            <span>16</span>
           </div>
           <div class="market-row market-gp-row">
             <span>2</span>
             <strong>한앤컴퍼니</strong>
-            <span>16.5조</span>
-            <span>18</span>
+            <span>16.1조</span>
+            <span>19</span>
           </div>
           <div class="market-row market-gp-row">
             <span>3</span>
-            <strong>아이엠엠프라이빗에쿼티</strong>
-            <span>7.3조</span>
-            <span>21</span>
+            <strong>아이엠엠인베스트먼트</strong>
+            <span>7.2조</span>
+            <span>31</span>
           </div>
           <div class="market-row market-gp-row">
             <span>4</span>
-            <strong>아이엠엠인베스트먼트</strong>
-            <span>6.4조</span>
-            <span>26</span>
+            <strong>아이엠엠프라이빗에쿼티</strong>
+            <span>7.0조</span>
+            <span>20</span>
           </div>
           <div class="market-row market-gp-row">
             <span>5</span>
             <strong>스틱인베스트먼트</strong>
-            <span>5.5조</span>
-            <span>13</span>
+            <span>6.0조</span>
+            <span>18</span>
           </div>
           <div class="market-row market-gp-row">
             <span>6</span>
             <strong>연합자산관리</strong>
-            <span>4.5조</span>
-            <span>23</span>
+            <span>4.6조</span>
+            <span>22</span>
           </div>
           <div class="market-row market-gp-row">
             <span>7</span>
-            <strong>한국산업은행</strong>
-            <span>3.9조</span>
-            <span>11</span>
+            <strong>한국투자프라이빗에쿼티</strong>
+            <span>3.5조</span>
+            <span>13</span>
           </div>
           <div class="market-row market-gp-row">
             <span>8</span>
-            <strong>스카이레이크에쿼티파트너스</strong>
-            <span>2.8조</span>
-            <span>6</span>
+            <strong>글랜우드프라이빗에쿼티</strong>
+            <span>3.4조</span>
+            <span>7</span>
           </div>
           <div class="market-row market-gp-row">
             <span>9</span>
             <strong>브이아이지파트너스</strong>
-            <span>2.8조</span>
-            <span>22</span>
+            <span>3.3조</span>
+            <span>25</span>
           </div>
           <div class="market-row market-gp-row">
             <span>10</span>
-            <strong>한국투자프라이빗에쿼티</strong>
-            <span>2.8조</span>
-            <span>13</span>
+            <strong>아이엠엠크레딧앤솔루션</strong>
+            <span>2.9조</span>
+            <span>6</span>
           </div>
       </div>
     </section>
@@ -2480,14 +2496,19 @@
         <div class="market-table">
           <div class="market-head market-new-row"><span>연도</span><span>펀드</span><span>약정액</span></div>
           <div class="market-row market-new-row">
+            <span>2025</span>
+            <span>208</span>
+            <span>24.6조</span>
+          </div>
+          <div class="market-row market-new-row">
             <span>2024</span>
-            <span>170</span>
-            <span>19.1조</span>
+            <span>175</span>
+            <span>19.9조</span>
           </div>
           <div class="market-row market-new-row">
             <span>2023</span>
-            <span>160</span>
-            <span>19.4조</span>
+            <span>167</span>
+            <span>20.8조</span>
           </div>
           <div class="market-row market-new-row">
             <span>2022</span>
@@ -2496,7 +2517,7 @@
           </div>
           <div class="market-row market-new-row">
             <span>2021</span>
-            <span>346</span>
+            <span>348</span>
             <span>24.0조</span>
           </div>
           <div class="market-row market-new-row">
@@ -2506,18 +2527,13 @@
           </div>
           <div class="market-row market-new-row">
             <span>2019</span>
-            <span>235</span>
+            <span>236</span>
             <span>18.7조</span>
           </div>
           <div class="market-row market-new-row">
             <span>2018</span>
             <span>218</span>
             <span>17.6조</span>
-          </div>
-          <div class="market-row market-new-row">
-            <span>2017</span>
-            <span>146</span>
-            <span>10.7조</span>
           </div>
         </div>
     </section>
@@ -2528,14 +2544,34 @@
         <div class="market-table">
           <div class="market-head market-new-row"><span>분기</span><span>펀드</span><span>약정액</span></div>
           <div class="market-row market-new-row">
+            <span>2025Q4</span>
+            <span>63</span>
+            <span>5.7조</span>
+          </div>
+          <div class="market-row market-new-row">
+            <span>2025Q3</span>
+            <span>59</span>
+            <span>5.4조</span>
+          </div>
+          <div class="market-row market-new-row">
+            <span>2025Q2</span>
+            <span>55</span>
+            <span>7.0조</span>
+          </div>
+          <div class="market-row market-new-row">
+            <span>2025Q1</span>
+            <span>31</span>
+            <span>6.5조</span>
+          </div>
+          <div class="market-row market-new-row">
             <span>2024Q4</span>
-            <span>53</span>
-            <span>4.1조</span>
+            <span>55</span>
+            <span>4.2조</span>
           </div>
           <div class="market-row market-new-row">
             <span>2024Q3</span>
-            <span>43</span>
-            <span>7.9조</span>
+            <span>45</span>
+            <span>8.5조</span>
           </div>
           <div class="market-row market-new-row">
             <span>2024Q2</span>
@@ -2544,28 +2580,8 @@
           </div>
           <div class="market-row market-new-row">
             <span>2024Q1</span>
-            <span>37</span>
-            <span>3.2조</span>
-          </div>
-          <div class="market-row market-new-row">
-            <span>2023Q4</span>
-            <span>46</span>
-            <span>3.7조</span>
-          </div>
-          <div class="market-row market-new-row">
-            <span>2023Q3</span>
-            <span>33</span>
-            <span>3.4조</span>
-          </div>
-          <div class="market-row market-new-row">
-            <span>2023Q2</span>
             <span>38</span>
-            <span>5.7조</span>
-          </div>
-          <div class="market-row market-new-row">
-            <span>2023Q1</span>
-            <span>43</span>
-            <span>6.5조</span>
+            <span>3.3조</span>
           </div>
         </div>
     </section>
@@ -2614,6 +2630,10 @@
       <strong>기준 자료</strong>
       <ul>
           <li>
+            <a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">2025Q4</a>
+            <span>2025.12.31</span>
+          </li>
+          <li>
             <a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">2024Q4</a>
             <span>2024.12.31</span>
           </li>
@@ -2632,10 +2652,6 @@
           <li>
             <a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">2023Q1</a>
             <span>2023.03.31</span>
-          </li>
-          <li>
-            <a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=126966&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">2022Q4</a>
-            <span>2022.12.31</span>
           </li>
       </ul>
     </section>
