@@ -2387,6 +2387,63 @@
     .gp-profile-preview-info-row a {
       color: #3182f6;
     }
+    .gp-profile-preview-people {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-people-head {
+      margin-bottom: 4px;
+    }
+    .gp-profile-preview-people-source {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      color: #3182f6;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .gp-profile-preview-people-source::after {
+      width: 6px;
+      height: 6px;
+      margin-left: 7px;
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+      content: "";
+      transform: rotate(45deg);
+    }
+    .gp-profile-preview-people-list {
+      display: grid;
+    }
+    .gp-profile-preview-person-row {
+      display: flex;
+      align-items: center;
+      min-height: 64px;
+      border-top: 1px solid #f2f4f6;
+      padding: 12px 0;
+    }
+    .gp-profile-preview-person-row h3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 7px;
+      margin: 0;
+      color: #333d4b;
+      font-size: 15px;
+      font-weight: 730;
+      line-height: 1.35;
+    }
+    .gp-profile-preview-person-row h3 span {
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .gp-profile-preview-person-row p {
+      margin: 5px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
     .gp-profile-preview-funds {
       padding-bottom: 4px;
     }
