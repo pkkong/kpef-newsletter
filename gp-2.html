@@ -886,6 +886,54 @@
       display: grid;
       gap: 8px;
     }
+    .gp-person-list {
+      display: grid;
+    }
+    .gp-person-row {
+      min-width: 0;
+      border-top: 1px solid var(--line);
+      padding: 10px 0;
+    }
+    .gp-person-row:first-child { border-top: 0; padding-top: 0; }
+    .gp-person-row h3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 7px;
+      margin: 0;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .gp-person-row h3 span {
+      color: var(--secondary);
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .gp-person-row p {
+      margin: 4px 0 0;
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 650;
+      line-height: 1.4;
+    }
+    .gp-person-row-link {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 16px;
+      gap: 10px;
+      align-items: center;
+      color: inherit;
+      text-decoration: none;
+    }
+    .gp-person-row-link > span,
+    .gp-profile-preview-person-link > span {
+      width: 7px;
+      height: 7px;
+      border-top: 1.5px solid var(--secondary);
+      border-right: 1.5px solid var(--secondary);
+      transform: rotate(45deg);
+    }
     .gp-fund-row,
     .gp-lp-row {
       border-top: 1px solid var(--line);
@@ -2422,6 +2470,15 @@
       border-top: 1px solid #f2f4f6;
       padding: 12px 0;
     }
+    .gp-profile-preview-person-link {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 16px;
+      gap: 10px;
+      width: 100%;
+      align-items: center;
+      color: inherit;
+      text-decoration: none;
+    }
     .gp-profile-preview-person-row h3 {
       display: flex;
       flex-wrap: wrap;
@@ -2574,6 +2631,178 @@
       text-decoration: underline;
       text-underline-offset: 2px;
     }
+    .person-profile {
+      width: min(calc(100% - 32px), 760px);
+      padding-bottom: calc(100px + env(safe-area-inset-bottom));
+    }
+    .person-profile-back {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 14px 0 18px;
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .person-profile-back a {
+      color: #3182f6;
+      text-decoration: none;
+    }
+    .person-profile-back span::before {
+      margin-right: 7px;
+      color: #b0b8c1;
+      content: "/";
+    }
+    .person-profile-hero {
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      padding-bottom: 24px;
+    }
+    .person-profile-avatar {
+      display: grid;
+      width: 58px;
+      height: 58px;
+      place-items: center;
+      border-radius: 50%;
+      background: #e8f3ff;
+      color: #3182f6;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .person-profile-kicker {
+      display: block;
+      margin-bottom: 4px;
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .person-profile-hero h1 {
+      margin: 0;
+      color: #191f28;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .person-profile-english {
+      margin: 4px 0 0;
+      color: #6b7684;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .person-profile-hero > div > p:last-child {
+      margin: 6px 0 0;
+      color: #4e5968;
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.45;
+    }
+    .person-profile-section {
+      margin: 0 -16px;
+      border-top: 8px solid #f2f4f6;
+      padding: 24px 16px 0;
+    }
+    .person-profile-section-head {
+      margin-bottom: 12px;
+    }
+    .person-profile-section-head h2 {
+      margin: 0;
+      color: #191f28;
+      font-size: 18px;
+      font-weight: 760;
+      line-height: 1.35;
+    }
+    .person-profile-info-list { margin: 0; }
+    .person-profile-info-row {
+      display: grid;
+      grid-template-columns: minmax(80px, 0.42fr) minmax(0, 1fr);
+      gap: 16px;
+      min-height: 53px;
+      align-items: center;
+      border-top: 1px solid #f2f4f6;
+    }
+    .person-profile-info-row:first-child { border-top: 0; }
+    .person-profile-info-row dt {
+      color: #6b7684;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .person-profile-info-row dd {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 650;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .person-profile-info-row a { color: #3182f6; text-decoration: none; }
+    .person-profile-list { display: grid; }
+    .person-profile-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      min-height: 62px;
+      border-top: 1px solid #f2f4f6;
+      padding: 11px 0;
+    }
+    .person-profile-row:first-child { border-top: 0; padding-top: 0; }
+    .person-profile-row h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 15px;
+      font-weight: 730;
+      line-height: 1.4;
+    }
+    .person-profile-row p {
+      margin: 4px 0 0;
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .person-profile-row > span {
+      color: #8b95a1;
+      font-size: 11.5px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .person-profile-sources { padding-bottom: 4px; }
+    .person-profile-source-list { display: grid; }
+    .person-profile-source-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 16px;
+      gap: 10px;
+      min-height: 54px;
+      align-items: center;
+      border-top: 1px solid #f2f4f6;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .person-profile-source-row:first-child { border-top: 0; }
+    .person-profile-source-row i {
+      width: 7px;
+      height: 7px;
+      border-top: 1.5px solid #6b7684;
+      border-right: 1.5px solid #6b7684;
+      transform: rotate(45deg);
+    }
+    .person-profile-source-note {
+      margin: 0 -16px;
+      border-top: 8px solid #f2f4f6;
+      padding: 18px 16px 0;
+    }
+    .person-profile-source-note p {
+      margin: 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
     @media (min-width: 700px) {
       .gp-profile-preview { width: min(calc(100% - 48px), 760px); }
       .gp-profile-preview-hero { grid-template-columns: 72px minmax(0, 1fr); padding-bottom: 30px; }
@@ -2590,6 +2819,11 @@
       .gp-profile-preview-source { margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; }
       .gp-profile-preview-section { padding-top: 28px; }
       .gp-profile-preview-source { padding-top: 20px; }
+      .person-profile { width: min(calc(100% - 48px), 760px); }
+      .person-profile-section,
+      .person-profile-source-note { margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; }
+      .person-profile-section { padding-top: 28px; }
+      .person-profile-source-note { padding-top: 20px; }
     }
   </style>
 </head>
@@ -2683,82 +2917,56 @@
       </div>
       <div class="gp-profile-preview-people-list">
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Jeonghwan Kim</h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-45.html"><h3>Jeonghwan Kim</h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Joo Ho Moon</h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-49.html"><h3>Joo Ho Moon</h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Yon Sog Choi</h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-42.html"><h3>Yon Sog Choi</h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>김광일<span>Kwang Il Kim</span></h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-46.html"><h3>김광일<span>Kwang Il Kim</span></h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>김병주<span>Michael B. Kim</span></h3>
-            <p>Partner · Hong Kong, Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-47.html"><h3>김병주<span>Michael B. Kim</span></h3>
+            <p>Partner · Hong Kong, Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>부재훈<span>Jay H. Bu</span></h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-40.html"><h3>부재훈<span>Jay H. Bu</span></h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>윤종하<span>Jong-Ha James Yoon</span></h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-52.html"><h3>윤종하<span>Jong-Ha James Yoon</span></h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>이인경<span>In Kyung Lee</span></h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-48.html"><h3>이인경<span>In Kyung Lee</span></h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>효성 크리스티 탕<span>Hyosung Christie Tang</span></h3>
-            <p>Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-51.html"><h3>효성 크리스티 탕<span>Hyosung Christie Tang</span></h3>
+            <p>Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>차영수<span>Youngsoo Cha</span></h3>
-            <p>Operating Partner · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-41.html"><h3>차영수<span>Youngsoo Cha</span></h3>
+            <p>Operating Partner · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Byungok Na</h3>
-            <p>Managing Director · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-50.html"><h3>Byungok Na</h3>
+            <p>Managing Director · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Junho Chun</h3>
-            <p>Managing Director · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-43.html"><h3>Junho Chun</h3>
+            <p>Managing Director · Seoul</p><span aria-hidden="true"></span></a>
         </article>
         <article class="gp-profile-preview-person-row">
-          <div>
-            <h3>Seikyu Hong</h3>
-            <p>Managing Director · Seoul</p>
-          </div>
+          <a class="gp-profile-preview-person-link" href="person-44.html"><h3>Seikyu Hong</h3>
+            <p>Managing Director · Seoul</p><span aria-hidden="true"></span></a>
         </article>
       </div>
     </section>
