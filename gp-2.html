@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <meta name="kpef-fss-reporting-period" content="2025Q4">
     <style>
     :root {
       --bg: #ffffff;
@@ -2229,10 +2230,314 @@
         font-size: 13px;
       }
     }
+
+    /* Isolated profile preview: applies only to the approved MBK profile. */
+    .gp-profile-preview {
+      width: min(calc(100% - 32px), 760px);
+      padding-bottom: calc(100px + env(safe-area-inset-bottom));
+    }
+    .gp-profile-preview .gp-app-header {
+      margin-bottom: 10px;
+    }
+    .gp-profile-preview-back {
+      margin: 12px 0 22px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .gp-profile-preview-back a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      color: #4e5968;
+    }
+    .gp-profile-preview-back a::before {
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-bottom: 1.5px solid currentColor;
+      border-left: 1.5px solid currentColor;
+      content: "";
+      transform: rotate(45deg);
+    }
+    .gp-profile-preview-hero {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr);
+      gap: 15px;
+      align-items: center;
+      padding: 0 0 26px;
+    }
+    .gp-profile-preview-logo {
+      width: 64px;
+      height: 64px;
+      border-color: #e5e8eb;
+      background: #fff;
+      border-radius: 18px;
+    }
+    .gp-profile-preview-logo img {
+      width: var(--logo-detail-img-width, var(--logo-img-width, 45px));
+      height: var(--logo-detail-img-height, var(--logo-img-height, 45px));
+    }
+    .gp-profile-preview-kicker {
+      display: block;
+      margin-bottom: 4px;
+      color: #6b7684;
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.3;
+    }
+    .gp-profile-preview-hero h1 {
+      color: #191f28;
+      font-size: 25px;
+      font-weight: 780;
+      line-height: 1.22;
+    }
+    .gp-profile-preview-hero p {
+      margin: 6px 0 0;
+      color: #6b7684;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-metrics {
+      border-top: 1px solid #e5e8eb;
+      border-bottom: 1px solid #e5e8eb;
+      padding: 0;
+    }
+    .gp-profile-preview-metrics dl {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      margin: 0;
+    }
+    .gp-profile-preview-metrics div {
+      min-width: 0;
+      padding: 18px 12px 16px 0;
+    }
+    .gp-profile-preview-metrics div:nth-child(even) {
+      padding-right: 0;
+      padding-left: 12px;
+    }
+    .gp-profile-preview-metrics div:nth-child(n + 3) {
+      border-top: 1px solid #f2f4f6;
+    }
+    .gp-profile-preview-metrics dt {
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+    .gp-profile-preview-metrics dd {
+      margin: 7px 0 3px;
+      color: #191f28;
+      font-size: 22px;
+      font-weight: 780;
+      line-height: 1.18;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-metrics span {
+      display: block;
+      color: #8b95a1;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .gp-profile-preview-section {
+      margin: 0 -16px;
+      border-top: 8px solid #f2f4f6;
+      padding: 24px 16px 0;
+    }
+    .gp-profile-preview-section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .gp-profile-preview-section-head h2 {
+      margin: 0;
+      color: #191f28;
+      font-size: 18px;
+      font-weight: 760;
+      line-height: 1.35;
+    }
+    .gp-profile-preview-info-list {
+      margin: 0;
+    }
+    .gp-profile-preview-info-row {
+      display: grid;
+      grid-template-columns: minmax(80px, 0.42fr) minmax(0, 1fr);
+      gap: 16px;
+      min-height: 53px;
+      align-items: center;
+      border-top: 1px solid #f2f4f6;
+    }
+    .gp-profile-preview-info-row dt {
+      color: #6b7684;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .gp-profile-preview-info-row dd {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 650;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-info-row a {
+      color: #3182f6;
+    }
+    .gp-profile-preview-funds {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-fund-head {
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .gp-profile-preview-fund-head p {
+      margin: 5px 0 0;
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .gp-profile-preview-fund-head > strong {
+      padding-top: 2px;
+      color: #4e5968;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .gp-profile-preview-filter {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      margin: 0 -2px 10px;
+      padding: 0 2px 4px;
+      scrollbar-width: none;
+    }
+    .gp-profile-preview-filter::-webkit-scrollbar { display: none; }
+    .gp-profile-preview-filter button {
+      flex: 0 0 auto;
+      min-height: 34px;
+      border: 0;
+      border-radius: 8px;
+      padding: 0 11px;
+      background: #f2f4f6;
+      color: #6b7684;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .gp-profile-preview-filter button.active {
+      background: #191f28;
+      color: #fff;
+    }
+    .gp-profile-preview-fund-list {
+      display: grid;
+    }
+    .gp-profile-preview-fund-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      min-height: 84px;
+      border-top: 1px solid #f2f4f6;
+      padding: 14px 0;
+    }
+    .gp-profile-preview-fund-row[hidden] { display: none; }
+    .gp-profile-preview-fund-copy { min-width: 0; }
+    .gp-profile-preview-fund-copy h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-fund-copy a { color: inherit; }
+    .gp-profile-preview-fund-copy p {
+      margin: 5px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-fund-amount {
+      display: grid;
+      justify-items: end;
+      gap: 6px;
+      min-width: 72px;
+    }
+    .gp-profile-preview-fund-state {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      border-radius: 6px;
+      padding: 0 7px;
+      background: #e8f3ff;
+      color: #3182f6;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .gp-profile-preview-fund-state.historical {
+      background: #f2f4f6;
+      color: #6b7684;
+    }
+    .gp-profile-preview-fund-amount strong {
+      color: #333d4b;
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.3;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .gp-profile-preview-empty {
+      margin: 16px 0;
+      color: #6b7684;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .gp-profile-preview-source {
+      margin: 0 -16px;
+      border-top: 8px solid #f2f4f6;
+      padding: 18px 16px 0;
+    }
+    .gp-profile-preview-source p {
+      margin: 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .gp-profile-preview-source a {
+      margin-left: 2px;
+      color: #6b7684;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    @media (min-width: 700px) {
+      .gp-profile-preview { width: min(calc(100% - 48px), 760px); }
+      .gp-profile-preview-hero { grid-template-columns: 72px minmax(0, 1fr); padding-bottom: 30px; }
+      .gp-profile-preview-logo { width: 72px; height: 72px; }
+      .gp-profile-preview-hero h1 { font-size: 28px; }
+      .gp-profile-preview-metrics dl { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .gp-profile-preview-metrics div,
+      .gp-profile-preview-metrics div:nth-child(even) { padding: 21px 14px 19px; }
+      .gp-profile-preview-metrics div:first-child { padding-left: 0; }
+      .gp-profile-preview-metrics div:last-child { padding-right: 0; }
+      .gp-profile-preview-metrics div:nth-child(n + 3) { border-top: 0; }
+      .gp-profile-preview-metrics div + div { border-left: 1px solid #f2f4f6; }
+      .gp-profile-preview-section,
+      .gp-profile-preview-source { margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; }
+      .gp-profile-preview-section { padding-top: 28px; }
+      .gp-profile-preview-source { padding-top: 20px; }
+    }
   </style>
 </head>
 <body>
-  <main class="gp-shell">
+  <main class="gp-shell gp-profile-preview">
         <header class="app-header gp-app-header">
       <div class="service-bar">
         <strong class="service-title">GP</strong>
@@ -2252,395 +2557,519 @@
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
       </nav>
     </header>
-    <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP</a>
-      <span>엠비케이파트너스</span>
+    <nav class="gp-profile-preview-back" aria-label="경로">
+      <a href="gps.html">GP 목록</a>
     </nav>
 
-    <header class="gp-detail-hero">
-      <div class="gp-detail-title-head">
-        <span class="gp-detail-logo has-logo" data-tone="1" aria-hidden="true" style="--logo-bg: #183f7a; --logo-border: #183f7a;"><img src="https://www.mbkpartners.com/mbk/images/common/og_image.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>엠비</span></span>
-        <div>
-          <span>운용사</span>
-          <h1>엠비케이파트너스</h1>
-        </div>
-        <p>금감원 PEF 운용 현황에서 2025Q4 기준 최신 순위 1위, 운용 중 펀드 16개, 약정액 기준 17.8조으로 확인됩니다.</p>
+    <header class="gp-profile-preview-hero">
+      <span class="gp-detail-logo gp-profile-preview-logo has-logo" aria-hidden="true" style="--logo-bg: #183f7a; --logo-border: #183f7a;"><img src="https://www.mbkpartners.com/mbk/images/common/og_image.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>엠비</span></span>
+      <div>
+        <span class="gp-profile-preview-kicker">PEF 운용사</span>
+        <h1>엠비케이파트너스</h1>
+        <p>2025년 4분기 운용 현황</p>
       </div>
-      <aside class="gp-detail-card" aria-label="핵심 정보">
-        <span>PE 운용사</span>
-        <span>대표 Michael B. Kim</span>
-        <a href="https://www.mbkpartners.com/" target="_blank" rel="noreferrer">mbkpartners.com</a>
-      </aside>
     </header>
 
-    <section class="gp-detail-kpis" aria-label="운용 현황">
-      <div><span>최신 순위</span><strong>1위</strong></div>
-      <div><span>운용 중 펀드</span><strong>16</strong></div>
-      <div><span>약정액 기준</span><strong>17.8조</strong></div>
-      <div><span>약정액 점유율</span><strong>10.60%</strong></div>
-    </section>
-
-        <section class="gp-signal-bar" aria-label="관련 정보 요약">
-      <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>0</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>0</strong><em>관련 기사</em></div>
-    </section>
-
-    <section class="gp-detail-grid">
-      <article class="gp-panel">
-        <h2>회사 개요</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>운용사명</dt>
-            <dd>엠비케이파트너스</dd>
-          </div>
-          <div>
-            <dt>법인명</dt>
-            <dd>엠비케이파트너스 유한책임회사</dd>
-          </div>
-          <div>
-            <dt>대표</dt>
-            <dd>Michael B. Kim</dd>
-          </div>
-          <div>
-            <dt>홈페이지</dt>
-            <dd><a href="https://www.mbkpartners.com/" target="_blank" rel="noreferrer">mbkpartners.com</a></dd>
-          </div>
-          <div>
-            <dt>설립</dt>
-            <dd>2005</dd>
-          </div>
-          <div>
-            <dt>본점/주소</dt>
-            <dd>21-22 Fl., D Tower D1, 17 Jongno 3-gil, Jongno-gu, Seoul, Korea 03155</dd>
-          </div>
-          <div>
-            <dt>최근 기준 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="gp-panel">
-        <h2>운용 정보</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>최신 순위</dt>
-            <dd>1위</dd>
-          </div>
-          <div>
-            <dt>누적 순위 (복수 GP 반영)</dt>
-            <dd>1위</dd>
-          </div>
-          <div>
-            <dt>약정액 점유율</dt>
-            <dd>10.60%</dd>
-          </div>
-          <div>
-            <dt>최초 확인 기간</dt>
-            <dd>2016Q2</dd>
-          </div>
-          <div>
-            <dt>최근 확인 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-          <div>
-            <dt>자료 범위</dt>
-            <dd>공개자료에서 확인되는 항목만 표시합니다.</dd>
-          </div>
-        </dl>
-      </article>
-    </section>
-
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>금감원 확인 펀드</h2>
-          <span>43개</span>
+    <section class="gp-profile-preview-metrics" aria-label="핵심 통계">
+      <dl>
+        <div>
+          <dt>최신 약정액</dt>
+          <dd>17.8조</dd>
+          <span>2025년 4분기</span>
         </div>
-        <div class="gp-fund-list">
-          <article class="gp-fund-row">
+        <div>
+          <dt>누적 약정액</dt>
+          <dd>25.6조</dd>
+          <span>펀드 이력 기준</span>
+        </div>
+        <div>
+          <dt>연결 펀드</dt>
+          <dd>43개</dd>
+          <span>금감원 확인 이력</span>
+        </div>
+        <div>
+          <dt>최신 순위</dt>
+          <dd>1위</dd>
+          <span>2025년 4분기 약정액 기준</span>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section" aria-labelledby="gpCompanyInfo">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpCompanyInfo">회사 정보</h2>
+      </div>
+      <dl class="gp-profile-preview-info-list">
+        <div class="gp-profile-preview-info-row">
+          <dt>법인명</dt>
+          <dd>엠비케이파트너스 유한책임회사</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>대표</dt>
+          <dd>Michael B. Kim</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>설립</dt>
+          <dd>2005</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>홈페이지</dt>
+          <dd><a href="https://www.mbkpartners.com/" target="_blank" rel="noreferrer">mbkpartners.com</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section gp-profile-preview-funds" aria-labelledby="gpFundHistory">
+      <div class="gp-profile-preview-section-head gp-profile-preview-fund-head">
+        <div>
+          <h2 id="gpFundHistory">금감원 확인 펀드</h2>
+          <p>공동 운용 펀드는 각 GP에 함께 표시합니다.</p>
+        </div>
+        <strong>43개</strong>
+      </div>
+      <div class="gp-profile-preview-filter" role="group" aria-label="펀드 상태">
+        <button class="active" type="button" data-fund-filter="all" aria-pressed="true">전체 43</button>
+        <button type="button" data-fund-filter="active" aria-pressed="false">운용 중 20</button>
+        <button type="button" data-fund-filter="historical" aria-pressed="false">과거 확인 23</button>
+      </div>
+      <div class="gp-profile-preview-fund-list">
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스오호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>4.5조</span>
-            <p>운용 중 · 2020-04-10 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2020-04-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>4.5조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스육호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>4.1조</span>
-            <p>운용 중 · 2024-07-24 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-07-24 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>4.1조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스삼호사모투자전문회사</a></h3>
-            <span><small>최대 총약정액</small>2.5조</span>
-            <p>운용 중 · 2013-02-15 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-02-15 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>2.5조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스사호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2.0조</span>
-            <p>운용 중 · 2017-01-31 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-01-31 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>2.0조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스스페셜시튜에이션이호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1.7조</span>
-            <p>운용 중 · 2023-08-30 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-08-30 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1.7조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20716&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스이호</a></h3>
-            <span><small>최대 총약정액</small>1.5조</span>
-            <p>과거 확인 · 2008-11-18 · 최근 확인 2021Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2008-11-18 · 최근 확인 2021년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1.5조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=133518&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2015의4호</a></h3>
-            <span><small>최대 총약정액</small>1.2조</span>
-            <p>과거 확인 · 2015-10-02 · 최근 확인 2023Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-10-02 · 최근 확인 2023년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1.2조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스오호의이사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1.0조</span>
-            <p>운용 중 · 2019-12-16 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-12-16 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1.0조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">엠비케이파트너스</a></h3>
-            <span><small>최대 총약정액</small>1.0조</span>
-            <p>과거 확인 · 2005-09-08 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2005-09-08 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1.0조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스육호의이사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>6,674억</span>
-            <p>운용 중 · 2023-11-03 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-11-03 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>6,674억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20716&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2015의1호</a></h3>
-            <span><small>최대 총약정액</small>5,827억</span>
-            <p>과거 확인 · 2015-10-02 · 최근 확인 2021Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-10-02 · 최근 확인 2021년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>5,827억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=133518&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2015의3호</a></h3>
-            <span><small>최대 총약정액</small>4,052억</span>
-            <p>과거 확인 · 2015-10-02 · 최근 확인 2023Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-10-02 · 최근 확인 2023년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>4,052억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=56995&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2017의1호</a></h3>
-            <span><small>최대 총약정액</small>3,449억</span>
-            <p>과거 확인 · 2017-03-07 · 최근 확인 2022Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-03-07 · 최근 확인 2022년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>3,449억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20686&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">다산일호</a></h3>
-            <span><small>최대 총약정액</small>2,929억</span>
-            <p>과거 확인 · 2013-10-29 · 최근 확인 2020Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-10-29 · 최근 확인 2020년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>2,929억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20669&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2012의2호</a></h3>
-            <span><small>최대 총약정액</small>2,556억</span>
-            <p>과거 확인 · 2012-09-21 · 최근 확인 2020Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-09-21 · 최근 확인 2020년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>2,556억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20583&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">엠비케이파트너스 2011의 2호</a></h3>
-            <span><small>최대 총약정액</small>2,501억</span>
-            <p>과거 확인 · 2012-09-25 · 최근 확인 2018Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-09-25 · 최근 확인 2018년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>2,501억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2023의1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,420억</span>
-            <p>운용 중 · 2023-03-03 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-03-03 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>2,420억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2023의2호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,088억</span>
-            <p>운용 중 · 2023-03-03 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-03-03 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>2,088억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20538&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">엠비케이파트너스 2012의 1호</a></h3>
-            <span><small>최대 총약정액</small>2,001억</span>
-            <p>과거 확인 · 2012-09-21 · 최근 확인 2017Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-09-21 · 최근 확인 2017년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>2,001억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20669&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2011</a></h3>
-            <span><small>최대 총약정액</small>1,929억</span>
-            <p>과거 확인 · 2012-08-30 · 최근 확인 2020Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-08-30 · 최근 확인 2020년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,929억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023의3사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,709억</span>
-            <p>운용 중 · 2023-07-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-07-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,709억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20596&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">다산사호</a></h3>
-            <span><small>최대 총약정액</small>1,701억</span>
-            <p>과거 확인 · 2013-11-21 · 최근 확인 2018Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-11-21 · 최근 확인 2018년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,701억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=56995&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">다산삼호</a></h3>
-            <span><small>최대 총약정액</small>1,692억</span>
-            <p>과거 확인 · 2013-11-18 · 최근 확인 2022Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-11-18 · 최근 확인 2022년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,692억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스삼호의이사모투자전문회사</a></h3>
-            <span><small>최대 총약정액</small>1,679억</span>
-            <p>운용 중 · 2013-11-18 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-11-18 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,679억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,551억</span>
-            <p>운용 중 · 2023-06-15 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-06-15 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,551억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스육호의이공동투자사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,490억</span>
-            <p>운용 중 · 2025-02-26 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-02-26 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,490억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20669&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">다산이호</a></h3>
-            <span><small>최대 총약정액</small>1,430억</span>
-            <p>과거 확인 · 2013-10-29 · 최근 확인 2020Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-10-29 · 최근 확인 2020년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,430억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">알프스파이낸스2024사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,392억</span>
-            <p>운용 중 · 2024-11-29 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-11-29 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,392억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2015의2호</a></h3>
-            <span><small>최대 총약정액</small>1,369억</span>
-            <p>과거 확인 · 2015-10-02 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-10-02 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,369억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023의1사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,211억</span>
-            <p>운용 중 · 2023-06-15 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-06-15 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>1,211억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2019의1</a></h3>
-            <span><small>최대 총약정액</small>1,020억</span>
-            <p>과거 확인 · 2019-07-18 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-07-18 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,020억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20705&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스케이씨지뉴인</a></h3>
-            <span><small>최대 총약정액</small>1,014억</span>
-            <p>과거 확인 · 2013-04-22 · 최근 확인 2021Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-04-22 · 최근 확인 2021년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,014억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20538&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">국민유선방송투자 이호</a></h3>
-            <span><small>최대 총약정액</small>1,005억</span>
-            <p>과거 확인 · 2007-02-07 · 최근 확인 2017Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2007-02-07 · 최근 확인 2017년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>1,005억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">추사이호</a></h3>
-            <span><small>최대 총약정액</small>870억</span>
-            <p>과거 확인 · 2016-04-11 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-04-11 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>870억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20660&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2012의3호</a></h3>
-            <span><small>최대 총약정액</small>854억</span>
-            <p>과거 확인 · 2012-09-21 · 최근 확인 2020Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-09-21 · 최근 확인 2020년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>854억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">에너자이저2023</a></h3>
-            <span><small>최대 총약정액</small>701억</span>
-            <p>과거 확인 · 2023-09-07 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-09-07 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>701억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023의5사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>553억</span>
-            <p>운용 중 · 2024-02-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-02-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>553억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023의2사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>552억</span>
-            <p>운용 중 · 2023-06-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-06-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>552억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2019의2</a></h3>
-            <span><small>최대 총약정액</small>408억</span>
-            <p>과거 확인 · 2019-08-13 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-08-13 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>408억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2019의2호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>408억</span>
-            <p>운용 중 · 2019-08-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-08-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>408억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">덴티스트리홀딩스2023의4사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>338억</span>
-            <p>운용 중 · 2024-01-03 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-01-03 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>338억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20596&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">추사일호</a></h3>
-            <span><small>최대 총약정액</small>251억</span>
-            <p>과거 확인 · 2016-04-20 · 최근 확인 2018Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-04-20 · 최근 확인 2018년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">과거 확인</span>
+            <strong>251억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">엠비케이파트너스2023의3사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>67억</span>
-            <p>운용 중 · 2025-12-23 · 최근 확인 2025Q4</p>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>출자 연결</h2>
-        <p class="gp-empty-note">이 GP와 직접 연결된 공개 LP 공고·선정 이력이 없습니다.</p>
-      </article>
+            <p>설정 2025-12-23 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용 중</span>
+            <strong>67억</strong>
+          </div>
+        </article>
+      </div>
+      <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>관련 딜</h2>
-        <p class="gp-empty-note">딜 관련 뉴스가 없습니다.</p>
-      </article>
-      <article class="gp-panel">
-        <h2>관련 뉴스</h2>
-        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
-      </article>
-    </section>
-
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>비교 GP</h2>
-        <div class="gp-peer-list">
-          <a class="gp-peer-row" href="gp-56.html">
-            <strong>한앤컴퍼니</strong>
-            <span>2위</span>
-            <span>16.1조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-41.html">
-            <strong>아이엠엠인베스트먼트</strong>
-            <span>3위</span>
-            <span>7.2조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-9.html">
-            <strong>아이엠엠프라이빗에쿼티</strong>
-            <span>4위</span>
-            <span>7.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-22.html">
-            <strong>스틱인베스트먼트</strong>
-            <span>5위</span>
-            <span>6.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-67.html">
-            <strong>연합자산관리</strong>
-            <span>6위</span>
-            <span>4.6조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-8188.html">
-            <strong>한국투자프라이빗에쿼티</strong>
-            <span>7위</span>
-            <span>3.5조</span>
-          </a>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>명칭 정보</h2>
-        <div class="gp-alias-box">
-          <strong>함께 쓰이는 명칭</strong>
-          <p>함께 쓰이는 별칭이 없습니다.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="gp-disclaimer" aria-label="참고사항">
-      <h2>참고사항</h2>
-      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
-    </section>
+    <footer class="gp-profile-preview-source">
+      <p>금감원 PEF 운용현황 2025년 4분기 기준</p>
+    </footer>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a href="index.html">
@@ -2701,6 +3130,28 @@
           window.location.href = query ? `gps.html?q=${encodeURIComponent(query)}` : "gps.html";
         });
       }
+    })();
+  </script>
+    <script>
+    (() => {
+      const buttons = Array.from(document.querySelectorAll("[data-fund-filter]"));
+      const rows = Array.from(document.querySelectorAll("[data-fund-state]"));
+      const empty = document.getElementById("gpFundEmpty");
+      const apply = (filter) => {
+        let visible = 0;
+        rows.forEach((row) => {
+          const show = filter === "all" || row.dataset.fundState === filter;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+        buttons.forEach((button) => {
+          const active = button.dataset.fundFilter === filter;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        if (empty) empty.hidden = visible > 0;
+      };
+      buttons.forEach((button) => button.addEventListener("click", () => apply(button.dataset.fundFilter || "all")));
     })();
   </script>
 </body>
