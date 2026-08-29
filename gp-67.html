@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <meta name="kpef-fss-reporting-period" content="2025Q4">
     <style>
     :root {
       --bg: #ffffff;
@@ -1917,7 +1918,7 @@
       width: 100%;
       min-height: 8px;
       border-radius: 4px 4px 0 0;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-chart-bar strong {
       overflow: hidden;
@@ -1968,7 +1969,7 @@
       display: block;
       height: 100%;
       border-radius: inherit;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-rank-bar strong {
       color: var(--secondary);
@@ -2123,7 +2124,7 @@
       flex-wrap: wrap;
       align-items: baseline;
       gap: 4px 6px;
-      font-size: 16px !important;
+      font-size: 19px !important;
       line-height: 1.35;
     }
     .gp-directory-title strong {
@@ -2133,7 +2134,7 @@
     }
     .gp-directory-title span {
       color: var(--text);
-      font-weight: 760;
+      font-weight: 780;
     }
     .gp-directory-title em {
       color: var(--secondary);
@@ -2257,7 +2258,7 @@
         font-size: 13px;
       }
       .gp-controls {
-        grid-template-columns: minmax(150px, 1fr) minmax(120px, 0.7fr) minmax(150px, 0.9fr) minmax(130px, 0.7fr) !important;
+        grid-template-columns: minmax(180px, 1fr) minmax(150px, 0.8fr) minmax(180px, 1fr) !important;
         justify-content: stretch;
       }
       .gp-directory-head,
@@ -2278,7 +2279,7 @@
       }
     }
 
-    /* Isolated profile preview: applies only to the approved MBK profile. */
+    /* Shared GP profile layout. */
     .gp-profile-preview {
       width: min(calc(100% - 32px), 760px);
       padding-bottom: calc(100px + env(safe-area-inset-bottom));
@@ -2344,6 +2345,11 @@
       font-size: 13px;
       font-weight: 600;
       line-height: 1.4;
+    }
+    .gp-profile-preview-description {
+      max-width: 620px;
+      color: #4e5968 !important;
+      line-height: 1.5 !important;
     }
     .gp-profile-preview-metrics {
       border-top: 1px solid #e5e8eb;
@@ -2461,6 +2467,46 @@
     }
     .gp-profile-preview-people-list {
       display: grid;
+    }
+    .gp-profile-preview-activity {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-activity-list {
+      display: grid;
+    }
+    .gp-profile-preview-activity-row {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      min-height: 62px;
+      border-top: 1px solid #f2f4f6;
+      padding: 12px 0;
+    }
+    .gp-profile-preview-activity-row > span {
+      padding-top: 2px;
+      color: #8b95a1;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-activity-row h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-activity-row h3 a {
+      color: inherit;
+    }
+    .gp-profile-preview-activity-row p {
+      margin: 4px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
     }
     .gp-profile-preview-person-row {
       display: flex;
@@ -2827,7 +2873,7 @@
   </style>
 </head>
 <body>
-  <main class="gp-shell">
+  <main class="gp-shell gp-profile-preview">
         <header class="app-header gp-app-header">
       <div class="service-bar">
         <strong class="service-title">GP</strong>
@@ -2847,447 +2893,605 @@
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
       </nav>
     </header>
-    <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP</a>
-      <span>연합자산관리</span>
+    <nav class="gp-profile-preview-back" aria-label="경로">
+      <a href="gps.html">GP 목록</a>
     </nav>
 
-    <header class="gp-detail-hero">
-      <div class="gp-detail-title-head">
-        <span class="gp-detail-logo has-logo" data-tone="2" aria-hidden="true"><img src="https://dev2023.uamco.co.kr/assets/images/common/apple-touch-icon.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>연합</span></span>
-        <div>
-          <span>운용사</span>
-          <h1>연합자산관리</h1>
-        </div>
-        <p>금감원 PEF 운용 현황에서 2025Q4 기준 최신 순위 6위, 운용중 펀드 22개, 약정액 기준 4.6조으로 확인됩니다.</p>
+    <header class="gp-profile-preview-hero">
+      <span class="gp-detail-logo gp-profile-preview-logo has-logo" aria-hidden="true"><img src="https://dev2023.uamco.co.kr/assets/images/common/apple-touch-icon.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>연합</span></span>
+      <div>
+        <span class="gp-profile-preview-kicker">PEF 운용사</span>
+        <h1>연합자산관리</h1>
+        <p>2025년 4분기 운용 현황</p>
+        <p class="gp-profile-preview-description">금감원 PEF 운용 현황에서 2025Q4 기준 최신 순위 6위, 운용중 펀드 22개, 약정액 기준 4.6조으로 확인됩니다.</p>
       </div>
-      <aside class="gp-detail-card" aria-label="핵심 정보">
-        <span>구조조정·PE 운용사</span>
-        <span>대표 김윤우</span>
-        <a href="https://dev2023.uamco.co.kr/" target="_blank" rel="noreferrer">dev2023.uamco.co.kr</a>
-      </aside>
     </header>
 
-    <section class="gp-detail-kpis" aria-label="운용 현황">
-      <div><span>최신 순위</span><strong>6위</strong></div>
-      <div><span>운용중 펀드</span><strong>22</strong></div>
-      <div><span>약정액 기준</span><strong>4.6조</strong></div>
-      <div><span>약정액 점유율</span><strong>2.74%</strong></div>
-    </section>
-
-        <section class="gp-signal-bar" aria-label="관련 정보 요약">
-      <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>0</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>0</strong><em>관련 기사</em></div>
-    </section>
-
-    <section class="gp-detail-grid">
-      <article class="gp-panel">
-        <h2>회사 개요</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>운용사명</dt>
-            <dd>연합자산관리</dd>
-          </div>
-          <div>
-            <dt>법인명</dt>
-            <dd>연합자산관리주식회사</dd>
-          </div>
-          <div>
-            <dt>대표</dt>
-            <dd>김윤우</dd>
-          </div>
-          <div>
-            <dt>홈페이지</dt>
-            <dd><a href="https://dev2023.uamco.co.kr/" target="_blank" rel="noreferrer">dev2023.uamco.co.kr</a></dd>
-          </div>
-          <div>
-            <dt>설립</dt>
-            <dd>2009-10-01</dd>
-          </div>
-          <div>
-            <dt>본점/주소</dt>
-            <dd>(우)04516 서울특별시 중구 서소문로 95 서소문동, 정안빌딩</dd>
-          </div>
-          <div>
-            <dt>최근 기준 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="gp-panel">
-        <h2>운용 정보</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>최신 순위</dt>
-            <dd>6위</dd>
-          </div>
-          <div>
-            <dt>누적 순위 (복수 GP 반영)</dt>
-            <dd>9위</dd>
-          </div>
-          <div>
-            <dt>약정액 점유율</dt>
-            <dd>2.74%</dd>
-          </div>
-          <div>
-            <dt>최초 확인 기간</dt>
-            <dd>2016Q2</dd>
-          </div>
-          <div>
-            <dt>최근 확인 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-          <div>
-            <dt>자료 범위</dt>
-            <dd>공개자료에서 확인되는 항목만 표시합니다.</dd>
-          </div>
-        </dl>
-      </article>
-    </section>
-
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>금감원 확인 펀드</h2>
-          <span>50개</span>
+    <section class="gp-profile-preview-metrics" aria-label="핵심 통계">
+      <dl>
+        <div>
+          <dt>최신 약정액</dt>
+          <dd>4.6조</dd>
+          <span>2025년 4분기</span>
         </div>
-        <div class="gp-fund-list">
-          <article class="gp-fund-row">
+        <div>
+          <dt>누적 약정액</dt>
+          <dd>6.5조</dd>
+          <span>펀드 이력 기준</span>
+        </div>
+        <div>
+          <dt>연결 펀드</dt>
+          <dd>50개</dd>
+          <span>금감원 확인 이력</span>
+        </div>
+        <div>
+          <dt>최신 순위</dt>
+          <dd>6위</dd>
+          <span>2025년 4분기 약정액 기준</span>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section" aria-labelledby="gpCompanyInfo">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpCompanyInfo">회사 정보</h2>
+      </div>
+      <dl class="gp-profile-preview-info-list">
+        <div class="gp-profile-preview-info-row">
+          <dt>법인명</dt>
+          <dd>연합자산관리주식회사</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>대표</dt>
+          <dd>김윤우</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>설립</dt>
+          <dd>2009-10-01</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>홈페이지</dt>
+          <dd><a href="https://dev2023.uamco.co.kr/" target="_blank" rel="noreferrer">dev2023.uamco.co.kr</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section gp-profile-preview-people" aria-labelledby="gpPeople">
+      <div class="gp-profile-preview-section-head gp-profile-preview-people-head">
+        <h2 id="gpPeople">주요 인물</h2>
+        <a class="gp-profile-preview-people-source" href="https://dev2023.uamco.co.kr/intro/uamco" target="_blank" rel="noreferrer">공식 팀 페이지</a>
+      </div>
+      <div class="gp-profile-preview-people-list">
+        <article class="gp-profile-preview-person-row">
+          <a class="gp-profile-preview-person-link" href="person-98.html"><h3>김윤우</h3>
+            <p>대표이사 · Executive</p><span aria-hidden="true"></span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gp-profile-preview-section gp-profile-preview-funds" aria-labelledby="gpFundHistory">
+      <div class="gp-profile-preview-section-head gp-profile-preview-fund-head">
+        <div>
+          <h2 id="gpFundHistory">금감원 확인 펀드</h2>
+          <p>공동 운용 펀드는 각 GP에 함께 표시합니다.</p>
+        </div>
+        <strong>50개</strong>
+      </div>
+      <div class="gp-profile-preview-filter" role="group" aria-label="펀드 상태">
+        <button class="active" type="button" data-fund-filter="all" aria-pressed="true">전체 50</button>
+        <button type="button" data-fund-filter="active" aria-pressed="false">운용중 23</button>
+        <button type="button" data-fund-filter="historical" aria-pressed="false">청산완료 27</button>
+      </div>
+      <div class="gp-profile-preview-fund-list">
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유나이티드피에프제일차기업재무안정사모투자전문회사</a></h3>
-            <span><small>최대 총약정액</small>1.4조</span>
-            <p>운용중 · 2011-06-24 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2011-06-24 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1.4조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코엠지피에프정상화사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>5,000억</span>
-            <p>운용중 · 2024-09-30 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-09-30 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>5,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제칠차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>3,447억</span>
-            <p>운용중 · 2017-09-05 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-09-05 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>3,447억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제팔차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>3,300억</span>
-            <p>운용중 · 2018-03-19 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2018-03-19 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>3,300억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십삼차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>3,000억</span>
-            <p>운용중 · 2023-02-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>3,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코멜론구조혁신기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,500억</span>
-            <p>운용중 · 2025-12-31 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-12-31 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코아이비케이피에프제이차사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,500억</span>
-            <p>운용중 · 2024-12-30 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-12-30 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코아이비케이금융그룹기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,000억</span>
-            <p>운용중 · 2021-02-22 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2021-02-22 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코아이비케이피에프제일차사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,500억</span>
-            <p>운용중 · 2024-01-12 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-01-12 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=56995&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코오퍼스기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,410억</span>
-            <p>청산완료 · 2015-09-10 · 최근 확인 2022Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-09-10 · 최근 확인 2022년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,410억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코케이비크레딧제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,290억</span>
-            <p>운용중 · 2023-10-06 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-10-06 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,290억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제삼차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,150억</span>
-            <p>운용중 · 2016-07-01 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-07-01 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,150억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십일차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,130억</span>
-            <p>운용중 · 2021-06-28 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2021-06-28 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,130억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코옥터스기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,050억</span>
-            <p>청산완료 · 2016-11-01 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-11-01 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,050억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코리바운스제일차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,030억</span>
-            <p>청산완료 · 2018-07-23 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2018-07-23 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,030억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20583&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">유나이티드턴어라운드제삼차 기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2013-04-15 · 최근 확인 2018Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-04-15 · 최근 확인 2018년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십삼차기업재무안정사모투자</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2023-02-13 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-13 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=56223&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제이차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2016-07-01 · 최근 확인 2022Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-07-01 · 최근 확인 2022년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20722&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제일차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2016-05-23 · 최근 확인 2021Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-05-23 · 최근 확인 2021년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코리바운스제이차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2019-10-02 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-10-02 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코베어스톤기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>운용중 · 2025-05-12 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-05-12 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20669&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코워크아웃제일차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>청산완료 · 2014-10-16 · 최근 확인 2020Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2014-10-16 · 최근 확인 2020년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코태성기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>운용중 · 2025-01-02 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-01-02 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">로하스사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>913억</span>
-            <p>운용중 · 2023-08-22 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-08-22 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>913억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코키스톤구조혁신기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>900억</span>
-            <p>운용중 · 2019-11-15 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-11-15 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>900억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">유암코 기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>750억</span>
-            <p>청산완료 · 2012-01-20 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-01-20 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>750억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십이차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>750억</span>
-            <p>운용중 · 2022-11-14 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2022-11-14 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>750억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>750억</span>
-            <p>청산완료 · 2020-04-09 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2020-04-09 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>750억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=126966&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제육차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>750억</span>
-            <p>청산완료 · 2017-06-07 · 최근 확인 2022Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-06-07 · 최근 확인 2022년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>750억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=133518&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제사차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>600억</span>
-            <p>청산완료 · 2016-10-24 · 최근 확인 2023Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-10-24 · 최근 확인 2023년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=133518&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제오차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>600억</span>
-            <p>청산완료 · 2016-10-20 · 최근 확인 2023Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-10-20 · 최근 확인 2023년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코파인우드기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>600억</span>
-            <p>청산완료 · 2017-04-24 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-04-24 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20512&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">유나이티드턴어라운드제이차 기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>580억</span>
-            <p>청산완료 · 2012-03-26 · 최근 확인 2016Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-03-26 · 최근 확인 2016년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>580억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">아이비케이유암코중소기업구조조정제1차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>500억</span>
-            <p>청산완료 · 2016-06-03 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-06-03 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">아이비케이유암코중소기업구조조정제2차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>500억</span>
-            <p>청산완료 · 2017-03-31 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-03-31 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20722&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코키스톤제일차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>450억</span>
-            <p>청산완료 · 2016-08-05 · 최근 확인 2021Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-08-05 · 최근 확인 2021년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>450억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코그루기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>430억</span>
-            <p>청산완료 · 2023-07-21 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-07-21 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>430억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코젤코바제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>420억</span>
-            <p>운용중 · 2024-08-16 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-08-16 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>420억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십사차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>405억</span>
-            <p>청산완료 · 2023-02-10 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-10 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>405억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제십사차기업재무안정사모투자</a></h3>
-            <span><small>최대 총약정액</small>405억</span>
-            <p>운용중 · 2023-02-10 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>405억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코삼호그린중소기업성장</a></h3>
-            <span><small>최대 총약정액</small>400억</span>
-            <p>청산완료 · 2017-02-06 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-02-06 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>400억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코라헨느기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>380억</span>
-            <p>운용중 · 2024-06-12 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-06-12 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>380억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코노틱반도체제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>232억</span>
-            <p>운용중 · 2024-08-23 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-08-23 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>232억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20624&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">유암코기업리바운스제구차기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>200억</span>
-            <p>청산완료 · 2019-03-22 · 최근 확인 2019Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-03-22 · 최근 확인 2019년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>200억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제구차기업재무안정사모투자합자회</a></h3>
-            <span><small>최대 총약정액</small>200억</span>
-            <p>청산완료 · 2019-03-22 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-03-22 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>200억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제구차기업재무안정합자회</a></h3>
-            <span><small>최대 총약정액</small>200억</span>
-            <p>청산완료 · 2019-03-22 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-03-22 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>200억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코피아이파트너즈기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>161억</span>
-            <p>운용중 · 2025-12-08 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-12-08 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>161억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코기업리바운스제15차기업재무안정사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>150억</span>
-            <p>운용중 · 2025-06-23 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-06-23 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>150억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=135865&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">유암코헬리오스중소기업성장창업벤처전문</a></h3>
-            <span><small>최대 총약정액</small>140억</span>
-            <p>청산완료 · 2020-05-13 · 최근 확인 2023Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2020-05-13 · 최근 확인 2023년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>140억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">온기업1호기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>104억</span>
-            <p>청산완료 · 2019-07-25 · 최근 확인 2024Q4</p>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>출자 연결</h2>
-        <p class="gp-empty-note">이 GP와 직접 연결된 공개 LP 공고·선정 이력이 없습니다.</p>
-      </article>
+            <p>설정 2019-07-25 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>104억</strong>
+          </div>
+        </article>
+      </div>
+      <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>주요 인물</h2>
-          <span>1명</span>
-        </div>
-        <div class="gp-person-list">
-          <article class="gp-person-row">
-            <a class="gp-person-row-link" href="person-98.html"><div>
-              <h3>김윤우</h3>
-              <p>대표이사 · Executive</p>
-            </div><span aria-hidden="true"></span></a>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>비교 GP</h2>
-        <div class="gp-peer-list">
-          <a class="gp-peer-row" href="gp-2.html">
-            <strong>엠비케이파트너스</strong>
-            <span>1위</span>
-            <span>17.8조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-56.html">
-            <strong>한앤컴퍼니</strong>
-            <span>2위</span>
-            <span>16.1조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-41.html">
-            <strong>아이엠엠인베스트먼트</strong>
-            <span>3위</span>
-            <span>7.2조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-9.html">
-            <strong>아이엠엠프라이빗에쿼티</strong>
-            <span>4위</span>
-            <span>7.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-22.html">
-            <strong>스틱인베스트먼트</strong>
-            <span>5위</span>
-            <span>6.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-8188.html">
-            <strong>한국투자프라이빗에쿼티</strong>
-            <span>7위</span>
-            <span>3.5조</span>
-          </a>
-        </div>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>관련 딜</h2>
-        <p class="gp-empty-note">딜 관련 뉴스가 없습니다.</p>
-      </article>
-      <article class="gp-panel">
-        <h2>관련 뉴스</h2>
-        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>명칭 정보</h2>
-        <div class="gp-alias-box">
-          <strong>함께 쓰이는 명칭</strong>
-          <p>함께 쓰이는 별칭이 없습니다.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="gp-disclaimer" aria-label="참고사항">
-      <h2>참고사항</h2>
-      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
-    </section>
+    <footer class="gp-profile-preview-source">
+      <p>금감원 PEF 운용현황 2025년 4분기 기준</p>
+    </footer>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a href="index.html">
@@ -3348,6 +3552,28 @@
           window.location.href = query ? `gps.html?q=${encodeURIComponent(query)}` : "gps.html";
         });
       }
+    })();
+  </script>
+    <script>
+    (() => {
+      const buttons = Array.from(document.querySelectorAll("[data-fund-filter]"));
+      const rows = Array.from(document.querySelectorAll("[data-fund-state]"));
+      const empty = document.getElementById("gpFundEmpty");
+      const apply = (filter) => {
+        let visible = 0;
+        rows.forEach((row) => {
+          const show = filter === "all" || row.dataset.fundState === filter;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+        buttons.forEach((button) => {
+          const active = button.dataset.fundFilter === filter;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        if (empty) empty.hidden = visible > 0;
+      };
+      buttons.forEach((button) => button.addEventListener("click", () => apply(button.dataset.fundFilter || "all")));
     })();
   </script>
 </body>

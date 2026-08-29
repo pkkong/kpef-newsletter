@@ -1917,7 +1917,7 @@
       width: 100%;
       min-height: 8px;
       border-radius: 4px 4px 0 0;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-chart-bar strong {
       overflow: hidden;
@@ -1968,7 +1968,7 @@
       display: block;
       height: 100%;
       border-radius: inherit;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-rank-bar strong {
       color: var(--secondary);
@@ -2123,7 +2123,7 @@
       flex-wrap: wrap;
       align-items: baseline;
       gap: 4px 6px;
-      font-size: 16px !important;
+      font-size: 19px !important;
       line-height: 1.35;
     }
     .gp-directory-title strong {
@@ -2133,7 +2133,7 @@
     }
     .gp-directory-title span {
       color: var(--text);
-      font-weight: 760;
+      font-weight: 780;
     }
     .gp-directory-title em {
       color: var(--secondary);
@@ -2257,7 +2257,7 @@
         font-size: 13px;
       }
       .gp-controls {
-        grid-template-columns: minmax(150px, 1fr) minmax(120px, 0.7fr) minmax(150px, 0.9fr) minmax(130px, 0.7fr) !important;
+        grid-template-columns: minmax(180px, 1fr) minmax(150px, 0.8fr) minmax(180px, 1fr) !important;
         justify-content: stretch;
       }
       .gp-directory-head,
@@ -2278,7 +2278,7 @@
       }
     }
 
-    /* Isolated profile preview: applies only to the approved MBK profile. */
+    /* Shared GP profile layout. */
     .gp-profile-preview {
       width: min(calc(100% - 32px), 760px);
       padding-bottom: calc(100px + env(safe-area-inset-bottom));
@@ -2344,6 +2344,11 @@
       font-size: 13px;
       font-weight: 600;
       line-height: 1.4;
+    }
+    .gp-profile-preview-description {
+      max-width: 620px;
+      color: #4e5968 !important;
+      line-height: 1.5 !important;
     }
     .gp-profile-preview-metrics {
       border-top: 1px solid #e5e8eb;
@@ -2461,6 +2466,46 @@
     }
     .gp-profile-preview-people-list {
       display: grid;
+    }
+    .gp-profile-preview-activity {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-activity-list {
+      display: grid;
+    }
+    .gp-profile-preview-activity-row {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      min-height: 62px;
+      border-top: 1px solid #f2f4f6;
+      padding: 12px 0;
+    }
+    .gp-profile-preview-activity-row > span {
+      padding-top: 2px;
+      color: #8b95a1;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-activity-row h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-activity-row h3 a {
+      color: inherit;
+    }
+    .gp-profile-preview-activity-row p {
+      margin: 4px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
     }
     .gp-profile-preview-person-row {
       display: flex;
@@ -2849,11 +2894,15 @@
     </header>
     <header class="gp-hero">
       <div class="gp-hero-copy">
-        <h1 class="gp-directory-title"><strong>712개</strong> <span>PEF 운용사</span></h1>
+        <h1 class="gp-directory-title"><span>PEF GP 디렉토리</span></h1>
+        <p>2025.12.31 금감원 공개 운용현황 기준</p>
       </div>
     </header>
 
     <section class="gp-control-panel" aria-label="GP 필터">
+      <div class="gp-control-head">
+        <span id="gpVisibleCount">712개 표시</span>
+      </div>
       <div class="gp-controls">
         <label>
           <span>기준일</span>
@@ -2893,10 +2942,10 @@
           </select>
         </label>
         <label>
-          <span>누적/운용중</span>
+          <span>집계 기준</span>
           <select id="gpScope" aria-label="복수 GP 반영 누적 또는 운용중">
             <option value="active" selected>운용중</option>
-            <option value="cumulative">누적 (복수 GP 반영)</option>
+            <option value="cumulative">누적 (공동 GP 포함)</option>
           </select>
         </label>
         <label>
@@ -2907,18 +2956,6 @@
             <option value="name">운용사명순</option>
           </select>
         </label>
-        <label>
-          <span>보기</span>
-          <select id="gpPageSize" aria-label="페이지당 표시">
-            <option value="30" selected>30개씩 보기</option>
-            <option value="50">50개씩 보기</option>
-            <option value="100">100개씩 보기</option>
-            <option value="all">전체 보기</option>
-          </select>
-        </label>
-      </div>
-      <div class="gp-control-head">
-        <span id="gpVisibleCount">712개 중 1-30</span>
       </div>
     </section>
 
@@ -20758,7 +20795,6 @@
       const periodSelect = document.getElementById("gpPeriod");
       const scopeSelect = document.getElementById("gpScope");
       const sort = document.getElementById("gpSort");
-      const pageSizeSelect = document.getElementById("gpPageSize");
       const list = document.getElementById("gpDirectory");
       const visible = document.getElementById("gpVisibleCount");
       const pagination = document.getElementById("gpPagination");
@@ -20833,10 +20869,7 @@
       };
 
       const getPageSize = (matchCount) => {
-        const value = pageSizeSelect?.value || "30";
-        if (value === "all") return Math.max(matchCount, 1);
-        const parsed = Number(value);
-        return Number.isFinite(parsed) && parsed > 0 ? parsed : 30;
+        return Math.min(Math.max(matchCount, 1), 50);
       };
 
       const apply = (options = {}) => {
@@ -20859,7 +20892,9 @@
         });
         if (visible) {
           const range = matches.length ? `${(start + 1).toLocaleString("ko-KR")}-${end.toLocaleString("ko-KR")}` : "0";
-          visible.textContent = `${matches.length.toLocaleString("ko-KR")}개 중 ${range}`;
+          visible.textContent = matches.length > pageSize
+            ? `${matches.length.toLocaleString("ko-KR")}개 · ${range}`
+            : `${matches.length.toLocaleString("ko-KR")}개 표시`;
         }
         if (pagination) pagination.hidden = matches.length <= pageSize;
         if (pageState) pageState.textContent = `${currentPage.toLocaleString("ko-KR")} / ${totalPages.toLocaleString("ko-KR")}`;
@@ -20882,7 +20917,6 @@
         applySort();
         apply({ resetPage: true });
       });
-      pageSizeSelect?.addEventListener("change", () => apply({ resetPage: true }));
       cards.forEach((card) => {
         const url = card.dataset.url || "";
         if (!url) return;

@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <meta name="kpef-fss-reporting-period" content="2025Q4">
     <style>
     :root {
       --bg: #ffffff;
@@ -1917,7 +1918,7 @@
       width: 100%;
       min-height: 8px;
       border-radius: 4px 4px 0 0;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-chart-bar strong {
       overflow: hidden;
@@ -1968,7 +1969,7 @@
       display: block;
       height: 100%;
       border-radius: inherit;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-rank-bar strong {
       color: var(--secondary);
@@ -2123,7 +2124,7 @@
       flex-wrap: wrap;
       align-items: baseline;
       gap: 4px 6px;
-      font-size: 16px !important;
+      font-size: 19px !important;
       line-height: 1.35;
     }
     .gp-directory-title strong {
@@ -2133,7 +2134,7 @@
     }
     .gp-directory-title span {
       color: var(--text);
-      font-weight: 760;
+      font-weight: 780;
     }
     .gp-directory-title em {
       color: var(--secondary);
@@ -2257,7 +2258,7 @@
         font-size: 13px;
       }
       .gp-controls {
-        grid-template-columns: minmax(150px, 1fr) minmax(120px, 0.7fr) minmax(150px, 0.9fr) minmax(130px, 0.7fr) !important;
+        grid-template-columns: minmax(180px, 1fr) minmax(150px, 0.8fr) minmax(180px, 1fr) !important;
         justify-content: stretch;
       }
       .gp-directory-head,
@@ -2278,7 +2279,7 @@
       }
     }
 
-    /* Isolated profile preview: applies only to the approved MBK profile. */
+    /* Shared GP profile layout. */
     .gp-profile-preview {
       width: min(calc(100% - 32px), 760px);
       padding-bottom: calc(100px + env(safe-area-inset-bottom));
@@ -2344,6 +2345,11 @@
       font-size: 13px;
       font-weight: 600;
       line-height: 1.4;
+    }
+    .gp-profile-preview-description {
+      max-width: 620px;
+      color: #4e5968 !important;
+      line-height: 1.5 !important;
     }
     .gp-profile-preview-metrics {
       border-top: 1px solid #e5e8eb;
@@ -2461,6 +2467,46 @@
     }
     .gp-profile-preview-people-list {
       display: grid;
+    }
+    .gp-profile-preview-activity {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-activity-list {
+      display: grid;
+    }
+    .gp-profile-preview-activity-row {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      min-height: 62px;
+      border-top: 1px solid #f2f4f6;
+      padding: 12px 0;
+    }
+    .gp-profile-preview-activity-row > span {
+      padding-top: 2px;
+      color: #8b95a1;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-activity-row h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-activity-row h3 a {
+      color: inherit;
+    }
+    .gp-profile-preview-activity-row p {
+      margin: 4px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
     }
     .gp-profile-preview-person-row {
       display: flex;
@@ -2827,7 +2873,7 @@
   </style>
 </head>
 <body>
-  <main class="gp-shell">
+  <main class="gp-shell gp-profile-preview">
         <header class="app-header gp-app-header">
       <div class="service-bar">
         <strong class="service-title">GP</strong>
@@ -2847,379 +2893,453 @@
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
       </nav>
     </header>
-    <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP</a>
-      <span>한국산업은행</span>
+    <nav class="gp-profile-preview-back" aria-label="경로">
+      <a href="gps.html">GP 목록</a>
     </nav>
 
-    <header class="gp-detail-hero">
-      <div class="gp-detail-title-head">
-        <span class="gp-detail-logo has-logo" data-tone="4" aria-hidden="true" style="--logo-img-width: 30px; --logo-img-height: 27px;"><img src="https://www.kdb.co.kr/wcmscontents/hmp/ch/bi/bi/rc/img_symbol_chbi.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>한국</span></span>
-        <div>
-          <span>운용사</span>
-          <h1>한국산업은행</h1>
-        </div>
-        <p>금감원 PEF 운용 현황에서 2025Q4 기준 최신 순위 15위, 운용중 펀드 10개, 약정액 기준 2.2조으로 확인됩니다.</p>
+    <header class="gp-profile-preview-hero">
+      <span class="gp-detail-logo gp-profile-preview-logo has-logo" aria-hidden="true" style="--logo-img-width: 30px; --logo-img-height: 27px;"><img src="https://www.kdb.co.kr/wcmscontents/hmp/ch/bi/bi/rc/img_symbol_chbi.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>한국</span></span>
+      <div>
+        <span class="gp-profile-preview-kicker">PEF 운용사</span>
+        <h1>한국산업은행</h1>
+        <p>2025년 4분기 운용 현황</p>
+        <p class="gp-profile-preview-description">금감원 PEF 운용 현황에서 2025Q4 기준 최신 순위 15위, 운용중 펀드 10개, 약정액 기준 2.2조으로 확인됩니다.</p>
       </div>
-      <aside class="gp-detail-card" aria-label="핵심 정보">
-        <span>정책금융기관</span>
-        <span>대표 박상진</span>
-        <a href="https://www.kdb.co.kr/" target="_blank" rel="noreferrer">kdb.co.kr</a>
-      </aside>
     </header>
 
-    <section class="gp-detail-kpis" aria-label="운용 현황">
-      <div><span>최신 순위</span><strong>15위</strong></div>
-      <div><span>운용중 펀드</span><strong>10</strong></div>
-      <div><span>약정액 기준</span><strong>2.2조</strong></div>
-      <div><span>약정액 점유율</span><strong>1.32%</strong></div>
-    </section>
-
-        <section class="gp-signal-bar" aria-label="관련 정보 요약">
-      <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>0</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>0</strong><em>관련 기사</em></div>
-    </section>
-
-    <section class="gp-detail-grid">
-      <article class="gp-panel">
-        <h2>회사 개요</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>운용사명</dt>
-            <dd>한국산업은행</dd>
-          </div>
-          <div>
-            <dt>법인명</dt>
-            <dd>한국산업은행</dd>
-          </div>
-          <div>
-            <dt>대표</dt>
-            <dd>박상진</dd>
-          </div>
-          <div>
-            <dt>홈페이지</dt>
-            <dd><a href="https://www.kdb.co.kr/" target="_blank" rel="noreferrer">kdb.co.kr</a></dd>
-          </div>
-          <div>
-            <dt>설립</dt>
-            <dd>1954</dd>
-          </div>
-          <div>
-            <dt>본점/주소</dt>
-            <dd>07242 서울시 영등포구 은행로 14</dd>
-          </div>
-          <div>
-            <dt>최근 기준 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="gp-panel">
-        <h2>운용 정보</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>최신 순위</dt>
-            <dd>15위</dd>
-          </div>
-          <div>
-            <dt>누적 순위 (복수 GP 반영)</dt>
-            <dd>3위</dd>
-          </div>
-          <div>
-            <dt>약정액 점유율</dt>
-            <dd>1.32%</dd>
-          </div>
-          <div>
-            <dt>최초 확인 기간</dt>
-            <dd>2016Q2</dd>
-          </div>
-          <div>
-            <dt>최근 확인 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-          <div>
-            <dt>자료 범위</dt>
-            <dd>공개자료에서 확인되는 항목만 표시합니다.</dd>
-          </div>
-        </dl>
-      </article>
-    </section>
-
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>금감원 확인 펀드</h2>
-          <span>34개</span>
+    <section class="gp-profile-preview-metrics" aria-label="핵심 통계">
+      <dl>
+        <div>
+          <dt>최신 약정액</dt>
+          <dd>2.2조</dd>
+          <span>2025년 4분기</span>
         </div>
-        <div class="gp-fund-list">
-          <article class="gp-fund-row">
+        <div>
+          <dt>누적 약정액</dt>
+          <dd>12.9조</dd>
+          <span>펀드 이력 기준</span>
+        </div>
+        <div>
+          <dt>연결 펀드</dt>
+          <dd>34개</dd>
+          <span>금감원 확인 이력</span>
+        </div>
+        <div>
+          <dt>최신 순위</dt>
+          <dd>15위</dd>
+          <span>2025년 4분기 약정액 기준</span>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section" aria-labelledby="gpCompanyInfo">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpCompanyInfo">회사 정보</h2>
+      </div>
+      <dl class="gp-profile-preview-info-list">
+        <div class="gp-profile-preview-info-row">
+          <dt>법인명</dt>
+          <dd>한국산업은행</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>대표</dt>
+          <dd>박상진</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>설립</dt>
+          <dd>1954</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>홈페이지</dt>
+          <dd><a href="https://www.kdb.co.kr/" target="_blank" rel="noreferrer">kdb.co.kr</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section gp-profile-preview-people" aria-labelledby="gpPeople">
+      <div class="gp-profile-preview-section-head gp-profile-preview-people-head">
+        <h2 id="gpPeople">주요 인물</h2>
+        <a class="gp-profile-preview-people-source" href="https://www.kdb.co.kr/BZCOWS00N00.act?_mnuId=IHIHEN0011&amp;wcmsPath=%2Fhmp%2Fch%2Fgl%2Fak%2FCHGLAK1200.html" target="_blank" rel="noreferrer">공식 팀 페이지</a>
+      </div>
+      <div class="gp-profile-preview-people-list">
+        <article class="gp-profile-preview-person-row">
+          <a class="gp-profile-preview-person-link" href="person-99.html"><h3>박상진<span>Park Sang Jin</span></h3>
+            <p>Chairman &amp; CEO · Executive Management</p><span aria-hidden="true"></span></a>
+        </article>
+        <article class="gp-profile-preview-person-row">
+          <a class="gp-profile-preview-person-link" href="person-101.html"><h3>신혜숙<span>Shin Hey Sook</span></h3>
+            <p>Executive Director / National Growth Fund Division · Executive Directors</p><span aria-hidden="true"></span></a>
+        </article>
+        <article class="gp-profile-preview-person-row">
+          <a class="gp-profile-preview-person-link" href="person-100.html"><h3>이봉희<span>Lee Bong Hee</span></h3>
+            <p>Vice Chairman &amp; COO · Executive Management</p><span aria-hidden="true"></span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gp-profile-preview-section gp-profile-preview-funds" aria-labelledby="gpFundHistory">
+      <div class="gp-profile-preview-section-head gp-profile-preview-fund-head">
+        <div>
+          <h2 id="gpFundHistory">금감원 확인 펀드</h2>
+          <p>공동 운용 펀드는 각 GP에 함께 표시합니다.</p>
+        </div>
+        <strong>34개</strong>
+      </div>
+      <div class="gp-profile-preview-filter" role="group" aria-label="펀드 상태">
+        <button class="active" type="button" data-fund-filter="all" aria-pressed="true">전체 34</button>
+        <button type="button" data-fund-filter="active" aria-pressed="false">운용중 12</button>
+        <button type="button" data-fund-filter="historical" aria-pressed="false">청산완료 22</button>
+      </div>
+      <div class="gp-profile-preview-fund-list">
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20627&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비밸류제육호</a></h3>
-            <span><small>최대 총약정액</small>2.8조</span>
-            <p>청산완료 · 2009-07-30 · 최근 확인 2019Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2009-07-30 · 최근 확인 2019년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2.8조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비칸서스밸류</a></h3>
-            <span><small>최대 총약정액</small>1.7조</span>
-            <p>청산완료 · 2010-02-22 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2010-02-22 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1.7조</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">그린이니셔티브2호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>7,050억</span>
-            <p>운용중 · 2021-08-31 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2021-08-31 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>7,050억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20675&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">트로이카해외자원개발</a></h3>
-            <span><small>최대 총약정액</small>5,486억</span>
-            <p>청산완료 · 2010-01-11 · 최근 확인 2020Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2010-01-11 · 최근 확인 2020년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,486억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20583&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">트로이카</a></h3>
-            <span><small>최대 총약정액</small>5,458억</span>
-            <p>청산완료 · 2010-01-11 · 최근 확인 2018Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2010-01-11 · 최근 확인 2018년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,458억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20528&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">머큐리</a></h3>
-            <span><small>최대 총약정액</small>5,140억</span>
-            <p>청산완료 · 2015-08-13 · 최근 확인 2017Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-08-13 · 최근 확인 2017년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,140억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">롯데케이디비대우증권코스모글로벌투자파트너쉽</a></h3>
-            <span><small>최대 총약정액</small>5,000억</span>
-            <p>청산완료 · 2015-02-27 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-02-27 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20624&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">롯데케이디비미래에셋대우글로벌투자파트너쉽</a></h3>
-            <span><small>최대 총약정액</small>5,000억</span>
-            <p>청산완료 · 2015-02-27 · 최근 확인 2019Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-02-27 · 최근 확인 2019년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20512&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">롯데케이디비미래에셋대우스팍스 글로벌투자파트너쉽</a></h3>
-            <span><small>최대 총약정액</small>5,000억</span>
-            <p>청산완료 · 2015-02-27 · 최근 확인 2016Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-02-27 · 최근 확인 2016년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20512&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">에스케이케이디비 글로벌투자파트너쉽</a></h3>
-            <span><small>최대 총약정액</small>4,900억</span>
-            <p>청산완료 · 2012-11-09 · 최근 확인 2016Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-11-09 · 최근 확인 2016년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>4,900억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20637&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비트리니티디에이치아이씨</a></h3>
-            <span><small>최대 총약정액</small>3,480억</span>
-            <p>청산완료 · 2014-11-24 · 최근 확인 2019Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2014-11-24 · 최근 확인 2019년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>3,480억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">케이디비에이치더블유아이글로벌엠앤에이</a></h3>
-            <span><small>최대 총약정액</small>3,000억</span>
-            <p>청산완료 · 2013-05-09 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2013-05-09 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>3,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비아시아사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,646억</span>
-            <p>운용중 · 2016-06-28 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-06-28 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,646억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비브레인글로벌1호</a></h3>
-            <span><small>최대 총약정액</small>2,546억</span>
-            <p>청산완료 · 2023-06-28 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-06-28 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,546억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비브레인글로벌사모투자합자회사1호</a></h3>
-            <span><small>최대 총약정액</small>2,546억</span>
-            <p>운용중 · 2023-06-28 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-06-28 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,546억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20675&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비케이티비에이치에스</a></h3>
-            <span><small>최대 총약정액</small>2,463억</span>
-            <p>청산완료 · 2015-12-22 · 최근 확인 2020Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-12-22 · 최근 확인 2020년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,463억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20716&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비시그마제2호기업재무안정</a></h3>
-            <span><small>최대 총약정액</small>2,250억</span>
-            <p>청산완료 · 2015-07-03 · 최근 확인 2021Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2015-07-03 · 최근 확인 2021년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,250억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비스틱지역성장제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,150억</span>
-            <p>운용중 · 2024-03-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2024-03-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,150억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20722&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비밸류제칠호</a></h3>
-            <span><small>최대 총약정액</small>2,000억</span>
-            <p>청산완료 · 2014-04-09 · 최근 확인 2021Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2014-04-09 · 최근 확인 2021년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이씨중소중견밸류업제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,000억</span>
-            <p>운용중 · 2021-01-04 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2021-01-04 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비케이엘중소중견밸류업제2호사모투자</a></h3>
-            <span><small>최대 총약정액</small>1,600억</span>
-            <p>청산완료 · 2023-02-28 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-28 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비케이엘중소중견밸류업제2호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,600억</span>
-            <p>운용중 · 2023-02-28 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-02-28 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비아이2025기업가치제고시너지사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,500억</span>
-            <p>운용중 · 2025-12-31 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-12-31 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=195446&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비중소중견메자닌</a></h3>
-            <span><small>최대 총약정액</small>1,500억</span>
-            <p>청산완료 · 2018-02-23 · 최근 확인 2024Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2018-02-23 · 최근 확인 2024년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">에코리아사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,352억</span>
-            <p>운용중 · 2016-12-13 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-12-13 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,352억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비케이와이산업성장제2호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,303억</span>
-            <p>운용중 · 2025-09-29 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2025-09-29 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,303억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비아이에이피일대일로사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,284억</span>
-            <p>청산완료 · 2017-06-23 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2017-06-23 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,284억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">호주그린에너지제1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,240억</span>
-            <p>운용중 · 2022-09-14 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2022-09-14 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,240억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20716&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">신성장동력그린퓨처</a></h3>
-            <span><small>최대 총약정액</small>1,001억</span>
-            <p>청산완료 · 2010-01-07 · 최근 확인 2021Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2010-01-07 · 최근 확인 2021년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,001억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">케이디비키움테크그로스사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,000억</span>
-            <p>운용중 · 2023-05-31 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2023-05-31 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,000억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">인프라이니셔티브1호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>900억</span>
-            <p>운용중 · 2018-11-30 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2018-11-30 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>900억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20547&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=3" target="_blank" rel="noreferrer">케이비에스케이디비문화융성</a></h3>
-            <span><small>최대 총약정액</small>900억</span>
-            <p>청산완료 · 2016-08-31 · 최근 확인 2017Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2016-08-31 · 최근 확인 2017년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>900억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20596&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=2" target="_blank" rel="noreferrer">차이나플래티넘</a></h3>
-            <span><small>최대 총약정액</small>600억</span>
-            <p>청산완료 · 2010-09-02 · 최근 확인 2018Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2010-09-02 · 최근 확인 2018년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>600억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20716&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=1" target="_blank" rel="noreferrer">케이비에스케이디비한류콘텐츠</a></h3>
-            <span><small>최대 총약정액</small>600억</span>
-            <p>청산완료 · 2016-08-31 · 최근 확인 2021Q2</p>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>출자 연결</h2>
-        <p class="gp-empty-note">이 GP와 직접 연결된 공개 LP 공고·선정 이력이 없습니다.</p>
-      </article>
+            <p>설정 2016-08-31 · 최근 확인 2021년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>600억</strong>
+          </div>
+        </article>
+      </div>
+      <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>주요 인물</h2>
-          <span>3명</span>
-        </div>
-        <div class="gp-person-list">
-          <article class="gp-person-row">
-            <a class="gp-person-row-link" href="person-99.html"><div>
-              <h3>박상진<span>Park Sang Jin</span></h3>
-              <p>Chairman &amp; CEO · Executive Management</p>
-            </div><span aria-hidden="true"></span></a>
-          </article>
-          <article class="gp-person-row">
-            <a class="gp-person-row-link" href="person-101.html"><div>
-              <h3>신혜숙<span>Shin Hey Sook</span></h3>
-              <p>Executive Director / National Growth Fund Division · Executive Directors</p>
-            </div><span aria-hidden="true"></span></a>
-          </article>
-          <article class="gp-person-row">
-            <a class="gp-person-row-link" href="person-100.html"><div>
-              <h3>이봉희<span>Lee Bong Hee</span></h3>
-              <p>Vice Chairman &amp; COO · Executive Management</p>
-            </div><span aria-hidden="true"></span></a>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>비교 GP</h2>
-        <div class="gp-peer-list">
-          <a class="gp-peer-row" href="gp-2.html">
-            <strong>엠비케이파트너스</strong>
-            <span>1위</span>
-            <span>17.8조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-56.html">
-            <strong>한앤컴퍼니</strong>
-            <span>2위</span>
-            <span>16.1조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-41.html">
-            <strong>아이엠엠인베스트먼트</strong>
-            <span>3위</span>
-            <span>7.2조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-9.html">
-            <strong>아이엠엠프라이빗에쿼티</strong>
-            <span>4위</span>
-            <span>7.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-22.html">
-            <strong>스틱인베스트먼트</strong>
-            <span>5위</span>
-            <span>6.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-67.html">
-            <strong>연합자산관리</strong>
-            <span>6위</span>
-            <span>4.6조</span>
-          </a>
-        </div>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>관련 딜</h2>
-        <p class="gp-empty-note">딜 관련 뉴스가 없습니다.</p>
-      </article>
-      <article class="gp-panel">
-        <h2>관련 뉴스</h2>
-        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>명칭 정보</h2>
-        <div class="gp-alias-box">
-          <strong>함께 쓰이는 명칭</strong>
-          <p>함께 쓰이는 별칭이 없습니다.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="gp-disclaimer" aria-label="참고사항">
-      <h2>참고사항</h2>
-      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
-    </section>
+    <footer class="gp-profile-preview-source">
+      <p>금감원 PEF 운용현황 2025년 4분기 기준</p>
+    </footer>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a href="index.html">
@@ -3280,6 +3400,28 @@
           window.location.href = query ? `gps.html?q=${encodeURIComponent(query)}` : "gps.html";
         });
       }
+    })();
+  </script>
+    <script>
+    (() => {
+      const buttons = Array.from(document.querySelectorAll("[data-fund-filter]"));
+      const rows = Array.from(document.querySelectorAll("[data-fund-state]"));
+      const empty = document.getElementById("gpFundEmpty");
+      const apply = (filter) => {
+        let visible = 0;
+        rows.forEach((row) => {
+          const show = filter === "all" || row.dataset.fundState === filter;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+        buttons.forEach((button) => {
+          const active = button.dataset.fundFilter === filter;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        if (empty) empty.hidden = visible > 0;
+      };
+      buttons.forEach((button) => button.addEventListener("click", () => apply(button.dataset.fundFilter || "all")));
     })();
   </script>
 </body>

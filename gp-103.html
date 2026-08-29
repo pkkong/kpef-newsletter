@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <meta name="kpef-fss-reporting-period" content="2025Q4">
     <style>
     :root {
       --bg: #ffffff;
@@ -1917,7 +1918,7 @@
       width: 100%;
       min-height: 8px;
       border-radius: 4px 4px 0 0;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-chart-bar strong {
       overflow: hidden;
@@ -1968,7 +1969,7 @@
       display: block;
       height: 100%;
       border-radius: inherit;
-      background: #2f6f66;
+      background: #3182f6;
     }
     .market-rank-bar strong {
       color: var(--secondary);
@@ -2123,7 +2124,7 @@
       flex-wrap: wrap;
       align-items: baseline;
       gap: 4px 6px;
-      font-size: 16px !important;
+      font-size: 19px !important;
       line-height: 1.35;
     }
     .gp-directory-title strong {
@@ -2133,7 +2134,7 @@
     }
     .gp-directory-title span {
       color: var(--text);
-      font-weight: 760;
+      font-weight: 780;
     }
     .gp-directory-title em {
       color: var(--secondary);
@@ -2257,7 +2258,7 @@
         font-size: 13px;
       }
       .gp-controls {
-        grid-template-columns: minmax(150px, 1fr) minmax(120px, 0.7fr) minmax(150px, 0.9fr) minmax(130px, 0.7fr) !important;
+        grid-template-columns: minmax(180px, 1fr) minmax(150px, 0.8fr) minmax(180px, 1fr) !important;
         justify-content: stretch;
       }
       .gp-directory-head,
@@ -2278,7 +2279,7 @@
       }
     }
 
-    /* Isolated profile preview: applies only to the approved MBK profile. */
+    /* Shared GP profile layout. */
     .gp-profile-preview {
       width: min(calc(100% - 32px), 760px);
       padding-bottom: calc(100px + env(safe-area-inset-bottom));
@@ -2344,6 +2345,11 @@
       font-size: 13px;
       font-weight: 600;
       line-height: 1.4;
+    }
+    .gp-profile-preview-description {
+      max-width: 620px;
+      color: #4e5968 !important;
+      line-height: 1.5 !important;
     }
     .gp-profile-preview-metrics {
       border-top: 1px solid #e5e8eb;
@@ -2461,6 +2467,46 @@
     }
     .gp-profile-preview-people-list {
       display: grid;
+    }
+    .gp-profile-preview-activity {
+      padding-bottom: 4px;
+    }
+    .gp-profile-preview-activity-list {
+      display: grid;
+    }
+    .gp-profile-preview-activity-row {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      min-height: 62px;
+      border-top: 1px solid #f2f4f6;
+      padding: 12px 0;
+    }
+    .gp-profile-preview-activity-row > span {
+      padding-top: 2px;
+      color: #8b95a1;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .gp-profile-preview-activity-row h3 {
+      margin: 0;
+      color: #333d4b;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .gp-profile-preview-activity-row h3 a {
+      color: inherit;
+    }
+    .gp-profile-preview-activity-row p {
+      margin: 4px 0 0;
+      color: #8b95a1;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
     }
     .gp-profile-preview-person-row {
       display: flex;
@@ -2827,7 +2873,7 @@
   </style>
 </head>
 <body>
-  <main class="gp-shell">
+  <main class="gp-shell gp-profile-preview">
         <header class="app-header gp-app-header">
       <div class="service-bar">
         <strong class="service-title">GP</strong>
@@ -2847,232 +2893,194 @@
         <a class="brief-section-tab active" href="gps.html" aria-current="page">GP</a>
       </nav>
     </header>
-    <nav class="gp-breadcrumb" aria-label="경로">
-      <a href="gps.html">GP</a>
-      <span>브이아이지파트너스이호</span>
+    <nav class="gp-profile-preview-back" aria-label="경로">
+      <a href="gps.html">GP 목록</a>
     </nav>
 
-    <header class="gp-detail-hero">
-      <div class="gp-detail-title-head">
-        <span class="gp-detail-logo has-logo" data-tone="5" aria-hidden="true" style="--logo-img-width: 31px; --logo-img-height: 13px;"><img src="https://vigpartners.com/img/p00_title.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>브이</span></span>
-        <div>
-          <span>운용사</span>
-          <h1>브이아이지파트너스이호</h1>
-        </div>
-
+    <header class="gp-profile-preview-hero">
+      <span class="gp-detail-logo gp-profile-preview-logo has-logo" aria-hidden="true" style="--logo-img-width: 31px; --logo-img-height: 13px;"><img src="https://vigpartners.com/img/p00_title.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('fallback-only'); this.remove()"><span>브이</span></span>
+      <div>
+        <span class="gp-profile-preview-kicker">PEF 운용사</span>
+        <h1>브이아이지파트너스이호</h1>
+        <p>2025년 4분기 운용 현황</p>
+        
       </div>
-      <aside class="gp-detail-card" aria-label="핵심 정보">
-        <span>PE 운용사</span>
-        <span>대표 박병무</span>
-        <a href="https://www.vigpartners.com/" target="_blank" rel="noreferrer">vigpartners.com</a>
-      </aside>
     </header>
 
-    <section class="gp-detail-kpis" aria-label="운용 현황">
-      <div><span>최신 순위</span><strong>-</strong></div>
-      <div><span>운용중 펀드</span><strong>-</strong></div>
-      <div><span>약정액 기준</span><strong>-</strong></div>
-      <div><span>약정액 점유율</span><strong>-</strong></div>
-    </section>
-
-        <section class="gp-signal-bar" aria-label="관련 정보 요약">
-      <div><span>출자 연결</span><strong>0</strong><em>공고·선정 이력</em></div>
-      <div><span>딜 관련</span><strong>0</strong><em>딜 관련 기사</em></div>
-      <div><span>관련 뉴스</span><strong>0</strong><em>관련 기사</em></div>
-    </section>
-
-    <section class="gp-detail-grid">
-      <article class="gp-panel">
-        <h2>회사 개요</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>운용사명</dt>
-            <dd>브이아이지파트너스이호</dd>
-          </div>
-          <div>
-            <dt>법인명</dt>
-            <dd>브이아이지파트너스이호 유한책임회사</dd>
-          </div>
-          <div>
-            <dt>대표</dt>
-            <dd>박병무</dd>
-          </div>
-          <div>
-            <dt>홈페이지</dt>
-            <dd><a href="https://www.vigpartners.com/" target="_blank" rel="noreferrer">vigpartners.com</a></dd>
-          </div>
-          <div>
-            <dt>설립</dt>
-            <dd>2012-04-01</dd>
-          </div>
-          <div>
-            <dt>본점/주소</dt>
-            <dd>서울특별시 중구 청계천로 100, 3층(수표동, 시그니쳐타워)</dd>
-          </div>
-          <div>
-            <dt>최근 기준 기간</dt>
-            <dd>2025Q4</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="gp-panel">
-        <h2>운용 정보</h2>
-        <dl class="gp-fact-list">
-          <div>
-            <dt>누적 순위 (복수 GP 반영)</dt>
-            <dd>29위</dd>
-          </div>
-          <div>
-            <dt>최초 확인 기간</dt>
-            <dd>2016Q2</dd>
-          </div>
-          <div>
-            <dt>최근 확인 기간</dt>
-            <dd>2023Q1</dd>
-          </div>
-          <div>
-            <dt>자료 범위</dt>
-            <dd>공개자료에서 확인되는 항목만 표시합니다.</dd>
-          </div>
-        </dl>
-      </article>
-    </section>
-
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>금감원 확인 펀드</h2>
-          <span>10개</span>
+    <section class="gp-profile-preview-metrics" aria-label="핵심 통계">
+      <dl>
+        <div>
+          <dt>최신 약정액</dt>
+          <dd>-</dd>
+          <span>2025년 4분기</span>
         </div>
-        <div class="gp-fund-list">
-          <article class="gp-fund-row">
+        <div>
+          <dt>누적 약정액</dt>
+          <dd>2.6조</dd>
+          <span>펀드 이력 기준</span>
+        </div>
+        <div>
+          <dt>연결 펀드</dt>
+          <dd>10개</dd>
+          <span>금감원 확인 이력</span>
+        </div>
+        <div>
+          <dt>최신 순위</dt>
+          <dd>-</dd>
+          <span>2025년 4분기 약정액 기준</span>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gp-profile-preview-section" aria-labelledby="gpCompanyInfo">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpCompanyInfo">회사 정보</h2>
+      </div>
+      <dl class="gp-profile-preview-info-list">
+        <div class="gp-profile-preview-info-row">
+          <dt>법인명</dt>
+          <dd>브이아이지파트너스이호 유한책임회사</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>대표</dt>
+          <dd>박병무</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>설립</dt>
+          <dd>2012-04-01</dd>
+        </div>
+        <div class="gp-profile-preview-info-row">
+          <dt>홈페이지</dt>
+          <dd><a href="https://www.vigpartners.com/" target="_blank" rel="noreferrer">vigpartners.com</a></dd>
+        </div>
+      </dl>
+    </section>
+
+
+
+    <section class="gp-profile-preview-section gp-profile-preview-funds" aria-labelledby="gpFundHistory">
+      <div class="gp-profile-preview-section-head gp-profile-preview-fund-head">
+        <div>
+          <h2 id="gpFundHistory">금감원 확인 펀드</h2>
+          <p>공동 운용 펀드는 각 GP에 함께 표시합니다.</p>
+        </div>
+        <strong>10개</strong>
+      </div>
+      <div class="gp-profile-preview-filter" role="group" aria-label="펀드 상태">
+        <button class="active" type="button" data-fund-filter="all" aria-pressed="true">전체 10</button>
+        <button type="button" data-fund-filter="active" aria-pressed="false">운용중 4</button>
+        <button type="button" data-fund-filter="historical" aria-pressed="false">청산완료 6</button>
+      </div>
+      <div class="gp-profile-preview-fund-list">
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">보고이글포드</a></h3>
-            <span><small>최대 총약정액</small>5,500억</span>
-            <p>청산완료 · 2012-12-12 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-12-12 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=57908&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지이글포드</a></h3>
-            <span><small>최대 총약정액</small>5,500억</span>
-            <p>청산완료 · 2012-12-12 · 최근 확인 2022Q3</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-12-12 · 최근 확인 2022년 3분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>5,500억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지제사의삼호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,465억</span>
-            <p>운용중 · 2019-05-10 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-05-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,465억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지제사의일호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>2,172억</span>
-            <p>운용중 · 2019-05-10 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-05-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>2,172억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">보고제이호</a></h3>
-            <span><small>최대 총약정액</small>2,020억</span>
-            <p>청산완료 · 2012-08-31 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-08-31 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,020억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=56995&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지제이호</a></h3>
-            <span><small>최대 총약정액</small>2,020억</span>
-            <p>청산완료 · 2012-08-31 · 최근 확인 2022Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2012-08-31 · 최근 확인 2022년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>2,020억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지제사의이호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,737억</span>
-            <p>운용중 · 2019-05-10 · 최근 확인 2025Q4</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2019-05-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,737억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=20491&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B2%BD%EC%98%81%EC%B0%B8%EC%97%AC&amp;pageIndex=4" target="_blank" rel="noreferrer">보고이호국민성장</a></h3>
-            <span><small>최대 총약정액</small>1,643억</span>
-            <p>청산완료 · 2014-04-25 · 최근 확인 2016Q2</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2014-04-25 · 최근 확인 2016년 2분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,643억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="historical">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=129505&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지이호국민성장사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,643억</span>
-            <p>청산완료 · 2014-04-25 · 최근 확인 2023Q1</p>
-          </article>
-          <article class="gp-fund-row">
+            <p>설정 2014-04-25 · 최근 확인 2023년 1분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state historical">청산완료</span>
+            <strong>1,643억</strong>
+          </div>
+        </article>
+        <article class="gp-profile-preview-fund-row" data-fund-state="active">
+          <div class="gp-profile-preview-fund-copy">
             <h3><a href="https://www.fss.or.kr/fss/bbs/B0000079/view.do?nttId=219017&amp;menuNo=200111&amp;searchCnd=1&amp;searchWrd=%EA%B8%B0%EA%B4%80%EC%A0%84%EC%9A%A9+%EC%82%AC%EB%AA%A8%EC%A7%91%ED%95%A9%ED%88%AC%EC%9E%90%EA%B8%B0%EA%B5%AC+%ED%98%84%ED%99%A9&amp;pageIndex=1" target="_blank" rel="noreferrer">브이아이지제사의사호사모투자합자회사</a></h3>
-            <span><small>최대 총약정액</small>1,485억</span>
-            <p>운용중 · 2019-05-10 · 최근 확인 2025Q4</p>
-          </article>
-        </div>
-      </article>
-      <article class="gp-panel">
-        <h2>출자 연결</h2>
-        <p class="gp-empty-note">이 GP와 직접 연결된 공개 LP 공고·선정 이력이 없습니다.</p>
-      </article>
+            <p>설정 2019-05-10 · 최근 확인 2025년 4분기</p>
+          </div>
+          <div class="gp-profile-preview-fund-amount">
+            <span class="gp-profile-preview-fund-state active">운용중</span>
+            <strong>1,485억</strong>
+          </div>
+        </article>
+      </div>
+      <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <div class="gp-panel-heading">
-          <h2>주요 인물</h2>
-          <span>0명</span>
-        </div>
-        <p class="gp-empty-note">공식 공개 자료에서 확인된 현재 인물이 없습니다.</p>
-      </article>
-      <article class="gp-panel">
-        <h2>비교 GP</h2>
-        <div class="gp-peer-list">
-          <a class="gp-peer-row" href="gp-2.html">
-            <strong>엠비케이파트너스</strong>
-            <span>1위</span>
-            <span>17.8조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-56.html">
-            <strong>한앤컴퍼니</strong>
-            <span>2위</span>
-            <span>16.1조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-41.html">
-            <strong>아이엠엠인베스트먼트</strong>
-            <span>3위</span>
-            <span>7.2조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-9.html">
-            <strong>아이엠엠프라이빗에쿼티</strong>
-            <span>4위</span>
-            <span>7.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-22.html">
-            <strong>스틱인베스트먼트</strong>
-            <span>5위</span>
-            <span>6.0조</span>
-          </a>
-          <a class="gp-peer-row" href="gp-67.html">
-            <strong>연합자산관리</strong>
-            <span>6위</span>
-            <span>4.6조</span>
-          </a>
-        </div>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>관련 딜</h2>
-        <p class="gp-empty-note">딜 관련 뉴스가 없습니다.</p>
-      </article>
-      <article class="gp-panel">
-        <h2>관련 뉴스</h2>
-        <p class="gp-empty-note">최근 공개 뉴스가 없습니다.</p>
-      </article>
-    </section>
 
-    <section class="gp-detail-grid gp-detail-lower">
-      <article class="gp-panel">
-        <h2>명칭 정보</h2>
-        <div class="gp-alias-box">
-          <strong>함께 쓰이는 명칭</strong>
-          <p>함께 쓰이는 별칭이 없습니다.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="gp-disclaimer" aria-label="참고사항">
-      <h2>참고사항</h2>
-      <p>순위와 약정액은 공개 운용 현황 기준이며 실제 순자산이나 미실현 가치를 의미하지 않습니다. 관련 뉴스는 운용사명 기준으로 연결됩니다.</p>
-    </section>
+    <footer class="gp-profile-preview-source">
+      <p>금감원 PEF 운용현황 2025년 4분기 기준</p>
+    </footer>
   </main>
     <nav class="bottom-nav newsletter-only" aria-label="하단 메뉴">
     <a href="index.html">
@@ -3133,6 +3141,28 @@
           window.location.href = query ? `gps.html?q=${encodeURIComponent(query)}` : "gps.html";
         });
       }
+    })();
+  </script>
+    <script>
+    (() => {
+      const buttons = Array.from(document.querySelectorAll("[data-fund-filter]"));
+      const rows = Array.from(document.querySelectorAll("[data-fund-state]"));
+      const empty = document.getElementById("gpFundEmpty");
+      const apply = (filter) => {
+        let visible = 0;
+        rows.forEach((row) => {
+          const show = filter === "all" || row.dataset.fundState === filter;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+        buttons.forEach((button) => {
+          const active = button.dataset.fundFilter === filter;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        if (empty) empty.hidden = visible > 0;
+      };
+      buttons.forEach((button) => button.addEventListener("click", () => apply(button.dataset.fundFilter || "all")));
     })();
   </script>
 </body>
