@@ -3,7 +3,7 @@
     "reportDate": "2026-09-07",
     "visibleDate": "2026.09.07",
     "basis": "",
-    "articleCount": 12,
+    "articleCount": 9,
     "articles": [
       {
         "id": "clip-20260907-0",
@@ -143,33 +143,6 @@
       {
         "id": "clip-20260907-5",
         "rank": 5,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "가업 승계의 대안",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609020834047360108975",
-        "summaryText": "얼마 전 열심히 다니던 골프 연습장에서 황당한 소식을 들었다. 레슨 횟수가 절반 넘게 남았는데 담당 프로가 바뀐단다.",
-        "summaryLines": [
-          "얼마 전 열심히 다니던 골프 연습장에서 황당한 소식을 들었다",
-          "레슨 횟수가 절반 넘게 남았는데 담당 프로가 바뀐단다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260907-6",
-        "rank": 6,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -195,8 +168,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260907-7",
-        "rank": 7,
+        "id": "clip-20260907-6",
+        "rank": 6,
         "section": "LP",
         "subCategory": "Mandate",
         "rawSection": "LP",
@@ -222,34 +195,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260907-8",
-        "rank": 8,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "캘퍼스·노르웨이 중앙은행, MBK 손 들어줬다 [fn마켓워치]",
-        "titleBadges": [],
-        "source": "파이낸셜뉴스",
-        "sourceBadge": "파",
-        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
-        "sourceIconStyle": "",
-        "url": "https://www.fnnews.com/news/202609061726493974",
-        "summaryText": "세계 최대 연기금 가운데 하나인 노르웨이 중앙은행 투자관리청과 미국 최대 공적연금인 캘리포니아공무원연금이 고려아연 임시 주주총회에서 MBK파트너스·영풍이 추천한 감사위원 후보에 찬성표를 던지기로 했다.6일 투자은행 업계에 따르면 NBIM은 사전 의결권 행사 ..",
-        "summaryLines": [
-          "세계 최대 연기금 가운데 하나인 노르웨이 중앙은행 투자관리청과 미국 최대 공적연금인 캘리포니아공무원연금이 고려아연…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260907-9",
-        "rank": 9,
+        "id": "clip-20260907-7",
+        "rank": 7,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -275,8 +222,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20260907-10",
-        "rank": 10,
+        "id": "clip-20260907-8",
+        "rank": 8,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -292,32 +239,6 @@
           "한화·신세계도 쪼갠다",
           "대기업 사업재편 핵심수단 된 인적분할, 지배구조 새판짜기",
           "키워드는 인적분할 한화·카카오 등 올해 10곳 '쪼개기 상장' 물적분할 막혀 주주 달래고 자금유치 고육책"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20260907-11",
-        "rank": 11,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "탄생부터 성장까지…벤처 생태계 '선순환 구축'",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609011538390320106658",
-        "summaryText": "한국투자금융그룹 계열사들은 기업의 자금 조달 단계마다 갓 태어난 초기 기업의 경우 한국투자액셀러레이터(한투AC)의 투자 및 지원을 받고 있고 이후에는 벤처캐피탈(VC)인 한국투자파트너스(한투파)와 성장을 도모하고 있다.",
-        "summaryLines": [
-          "한국투자금융그룹 계열사들은 기업의 자금 조달 단계마다 갓 태어난 초기 기업의 경우 한국투자액셀러레이터(한투AC)의…"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
