@@ -729,4 +729,4 @@
   window.addEventListener("hashchange", setViewFromHash);
   render();
   setViewFromHash();
-})(); 
+})();
