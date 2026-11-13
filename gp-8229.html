@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3192,17 +3198,17 @@
       </div>
       <div class="gp-profile-preview-activity-list">
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
+          <span>관련 딜</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608271633555640105550" target="_blank" rel="noreferrer">블룸 잭팟 뒤 첫 단독 블라인드…1본부 역할 커진다</a></h3>
-            <p>더벨 · 2026-09-03</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610291516351040105184" target="_blank" rel="noreferrer">&#x27;바이아웃 확장&#x27; 엘로힘, 메카트로로 체급 키우나</a></h3>
+            <p>더벨 · 2026-11-03</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
+          <span>관련 딜</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608211627392240101268" target="_blank" rel="noreferrer">잭팟 실적도 안 통했다…벽 부딪힌 블라인드펀드 조성</a></h3>
-            <p>더벨 · 2026-09-02</p>
+            <h3><a href="https://dealsite.co.kr/articles/170413" target="_blank" rel="noreferrer">IPO 시한 2년 남은 텍슨…李 때문에 탈출로 막힌 SKS</a></h3>
+            <p>딜사이트 · 2026-10-15</p>
           </div>
         </article>
       </div>

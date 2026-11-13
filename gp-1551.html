@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3087,8 +3093,15 @@
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 딜</span>
           <div>
-            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=670602" target="_blank" rel="noreferrer">한화와 피 섞은 센트로이드PE, 방산기업 인수 노린다</a></h3>
-            <p>블로터 · 2026-08-13</p>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=677762" target="_blank" rel="noreferrer">센트로이드PE, 더피플라이프 인수 9부 능선…자금조달 &#x27;순항&#x27;</a></h3>
+            <p>블로터 · 2026-11-06</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://dealsite.co.kr/articles/170999" target="_blank" rel="noreferrer">[테일러메이드 M&amp;A] 4조 거래 급물살…11월 SPA·12월 인수자 윤곽</a></h3>
+            <p>딜사이트 · 2026-10-22</p>
           </div>
         </article>
       </div>

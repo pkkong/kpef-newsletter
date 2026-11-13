@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -2903,7 +2909,7 @@
         <span class="gp-profile-preview-kicker">PEF 운용사</span>
         <h1>삼호그린인베스트먼트</h1>
         <p>2025년 4분기 운용 현황</p>
-        
+        <p class="gp-profile-preview-description">공개자료에서 출자 연결 1건이 확인됩니다.</p>
       </div>
     </header>
 
@@ -2982,7 +2988,20 @@
       <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-
+    <section class="gp-profile-preview-section gp-profile-preview-activity" aria-labelledby="gpActivity">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpActivity">관련 정보</h2>
+      </div>
+      <div class="gp-profile-preview-activity-list">
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
+          <div>
+            <h3><a href="https://kpef-lp.vercel.app/program-ibk-2025-18fd0388efb1dbc2.html" target="_blank" rel="noreferrer">2025 IBK 혁신펀드 출자사업 위탁운용사 선정계획 공고</a></h3>
+            <p>IBK기업은행 · 최종 선정 · 2025-11-28</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <footer class="gp-profile-preview-source">
       <p>금감원 PEF 운용현황 2025년 4분기 기준</p>

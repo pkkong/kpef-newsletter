@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3167,32 +3173,25 @@
         <h2 id="gpActivity">관련 정보</h2>
       </div>
       <div class="gp-profile-preview-activity-list">
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
           <div>
-            <h3><a href="https://www.sedaily.com/article/20078475" target="_blank" rel="noreferrer">제네시스PE, 캡스텍 인수 본계약…볼트온 M&amp;A 차원 [시그널]</a></h3>
-            <p>서울경제 · 2026-08-13</p>
-          </div>
-        </article>
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
-          <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608100949023160101688" target="_blank" rel="noreferrer">제네시스PE, 자이엘리베이터로 &#x27;세 번째 빌드업&#x27; 시동</a></h3>
-            <p>더벨 · 2026-08-12</p>
+            <h3><a href="https://kpef-lp.vercel.app/program-moel-iaci-2026-pe.html" target="_blank" rel="noreferrer">2026년 산재보험기금 대체투자상품 PE 선정</a></h3>
+            <p>산재보험기금 · 최종 선정 · 2026-08-25</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 기사</span>
           <div>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4431616" target="_blank" rel="noreferrer">삼성운용, 산재기금 PE 부문 GP 선정…BNW·H&amp;Q·제네시스</a></h3>
-            <p>연합인포맥스 · 2026-08-26</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611101346124960105956" target="_blank" rel="noreferrer">제네시스PE, 크레딧 투자법인 세운다</a></h3>
+            <p>더벨 · 2026-11-13</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 기사</span>
           <div>
-            <h3><a href="https://dealsite.co.kr/articles/167799" target="_blank" rel="noreferrer">산재기금 PE 부문 GP에 BNW·H&amp;Q·제네시스 선정</a></h3>
-            <p>딜사이트 · 2026-08-26</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611030946359680101545" target="_blank" rel="noreferrer">제네시스PE, 2호 블라인드펀드 8500억까지 키웠다</a></h3>
+            <p>더벨 · 2026-11-05</p>
           </div>
         </article>
       </div>

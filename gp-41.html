@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3724,32 +3730,25 @@
         <h2 id="gpActivity">관련 정보</h2>
       </div>
       <div class="gp-profile-preview-activity-list">
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609012112505280109523" target="_blank" rel="noreferrer">&#x27;주관사 변경&#x27; IMM인베스트먼트, 팜양주 매각 재시동</a></h3>
-            <p>더벨 · 2026-09-04</p>
+            <h3><a href="https://kpef-lp.vercel.app/program-kdb-2026-694a652687822b15.html" target="_blank" rel="noreferrer">2026 회수시장 지원 세컨더리 펀드 위탁운용사 선정계획 공고</a></h3>
+            <p>한국산업은행 · 최종 선정 · 2026-06-30</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 딜</span>
           <div>
-            <h3><a href="https://www.fnnews.com/news/202608271948123309" target="_blank" rel="noreferrer">&#x27;SK호라이즌&#x27; KKR·IMM 3조 투자 뜯어보니…SKT가 &#x27;51%&#x27; 남긴 셈법 [fn마켓워치]</a></h3>
-            <p>파이낸셜뉴스 · 2026-08-28</p>
+            <h3><a href="https://dealsite.co.kr/articles/170621" target="_blank" rel="noreferrer">[롯데손보 M&amp;A] 상처뿐인 JKL…중순위 IMM인베도 손실 가능성 높아져</a></h3>
+            <p>딜사이트 · 2026-10-17</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 기사</span>
           <div>
-            <h3><a href="https://dealsite.co.kr/articles/168331" target="_blank" rel="noreferrer">나진상가-KKR 데이터센터-삼성물산까지…IMM의 변신</a></h3>
-            <p>딜사이트 · 2026-09-07</p>
-          </div>
-        </article>
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
-          <div>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4429172" target="_blank" rel="noreferrer">삼성운용, 산재보험기금 VC 부문 GP 선정…IMM인베·파트너스·프리미어</a></h3>
-            <p>연합인포맥스 · 2026-08-08</p>
+            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4439437" target="_blank" rel="noreferrer">군인공제회, PE·VC 위탁운용사 18곳 선정…3천억 배정</a></h3>
+            <p>연합인포맥스 · 2026-10-16</p>
           </div>
         </article>
       </div>

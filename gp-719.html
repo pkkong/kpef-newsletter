@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3176,18 +3182,67 @@
         <h2 id="gpActivity">관련 정보</h2>
       </div>
       <div class="gp-profile-preview-activity-list">
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
+          <div>
+            <h3><a href="https://kpef-lp.vercel.app/program-kgrowth-2026-max-7.html" target="_blank" rel="noreferrer">2026 기술혁신전문펀드 7호 · M.AX</a></h3>
+            <p>한국성장금융 · 최종 선정 · 2026-08-26</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
+          <div>
+            <h3><a href="https://kpef-lp.vercel.app/program-kgrowth-2026-bank-valueup-3.html" target="_blank" rel="noreferrer">은행권 중견기업 밸류업펀드 3차 · 블라인드</a></h3>
+            <p>한국성장금융 · 최종 선정 · 2026-07-31</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
+          <div>
+            <h3><a href="https://kpef-lp.vercel.app/program-kexim-2026-h1-regional-growth-pe.html" target="_blank" rel="noreferrer">2026년 상반기 수출중소중견 지역주도성장 펀드</a></h3>
+            <p>한국수출입은행 · 최종 선정 · 2026-04-10</p>
+          </div>
+        </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 딜</span>
           <div>
-            <h3><a href="https://dealsite.co.kr/articles/167030" target="_blank" rel="noreferrer">수은·성장금융 잡은 우리PE, 2500억 단독 펀딩 순항</a></h3>
-            <p>딜사이트 · 2026-08-27</p>
+            <h3><a href="https://dealsite.co.kr/articles/171281" target="_blank" rel="noreferrer">2450억 우본 PEF 사업 GP에…우리PE 등 6곳</a></h3>
+            <p>딜사이트 · 2026-10-24</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=48445" target="_blank" rel="noreferrer">우리PE·제이앤PE·JKL, 우본 PEF 우협 선정</a></h3>
+            <p>뉴스톱 · 2026-10-24</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610150817076160107795" target="_blank" rel="noreferrer">포레스트·우리PE, 피노 RCPS 1500억 투자 추진</a></h3>
+            <p>더벨 · 2026-10-19</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.mk.co.kr/news/stock/12126830" target="_blank" rel="noreferrer">사모펀드 헬리오스PE … 서울전선 3천억에 품었다</a></h3>
-            <p>매일경제 · 2026-08-14</p>
+            <h3><a href="https://www.fnnews.com/news/202611050849558566" target="_blank" rel="noreferrer">우리PE, &#x27;2500억 블라인드펀드&#x27; 출격…중견기업 밸류업 승부수 [fn마켓워치]</a></h3>
+            <p>파이낸셜뉴스 · 2026-11-06</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 기사</span>
+          <div>
+            <h3><a href="https://www.investchosun.com/site/data/html_dir/2026/10/23/2026102380208.html" target="_blank" rel="noreferrer">우정사업본부, 국내 블라인드 PEF 우협에 우리PE·JKL 등 선정</a></h3>
+            <p>인베스트조선 · 2026-10-24</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 기사</span>
+          <div>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=48231" target="_blank" rel="noreferrer">우리PE, 2500억 블라인드펀드 조성 초읽기</a></h3>
+            <p>뉴스톱 · 2026-10-17</p>
           </div>
         </article>
       </div>

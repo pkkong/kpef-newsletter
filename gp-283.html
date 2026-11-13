@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3316,18 +3322,25 @@
         <h2 id="gpActivity">관련 정보</h2>
       </div>
       <div class="gp-profile-preview-activity-list">
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608031602292840109096" target="_blank" rel="noreferrer">프리미어, 한국펀드파트너스 인수에 6호펀드 2400억 투입</a></h3>
-            <p>더벨 · 2026-08-07</p>
+            <h3><a href="https://kpef-lp.vercel.app/program-ibk-2026-55536e457edab5ec.html" target="_blank" rel="noreferrer">2026 IBK 동행펀드 출자사업 위탁운용사 선정계획 공고</a></h3>
+            <p>IBK기업은행 · 최종 선정 · 2026-07-08</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
+          <span>관련 딜</span>
           <div>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4429172" target="_blank" rel="noreferrer">삼성운용, 산재보험기금 VC 부문 GP 선정…IMM인베·파트너스·프리미어</a></h3>
-            <p>연합인포맥스 · 2026-08-08</p>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=677761" target="_blank" rel="noreferrer">[VC·PE 후계 점검] 매각도 세습도 아니다…프리미어파트너스의 &#x27;내부 승계&#x27; 해법</a></h3>
+            <p>블로터 · 2026-11-09</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://www.fnnews.com/news/202611040903304791" target="_blank" rel="noreferrer">프리미어, 한국펀드파트너스 85% 인수 눈앞…ETF 성장에 &#x27;베팅&#x27; [fn마켓워치]</a></h3>
+            <p>파이낸셜뉴스 · 2026-11-05</p>
           </div>
         </article>
       </div>

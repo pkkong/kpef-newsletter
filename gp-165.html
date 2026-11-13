@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3142,10 +3148,10 @@
       </div>
       <div class="gp-profile-preview-activity-list">
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+          <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.sedaily.com/article/20083085" target="_blank" rel="noreferrer">SLL중앙·프랙시스, 1050억 조달 추진…몸값은 ‘반토막’[시그널]</a></h3>
-            <p>서울경제 · 2026-08-26</p>
+            <h3><a href="https://www.asiae.co.kr/article/2026111115485493868" target="_blank" rel="noreferrer">1년 만에 크레딧 사업 접는 프랙시스…&quot;선택과 집중&quot;</a></h3>
+            <p>아시아경제 · 2026-11-13</p>
           </div>
         </article>
       </div>

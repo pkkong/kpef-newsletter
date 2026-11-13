@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3177,22 +3183,8 @@
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608201535412040102081" target="_blank" rel="noreferrer">크레센도, 자회사로 VC 시장 공식 진입</a></h3>
-            <p>더벨 · 2026-08-24</p>
-          </div>
-        </article>
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
-          <div>
-            <h3><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4431379" target="_blank" rel="noreferrer">크레센도얼터너티브, VC 라이선스 획득…벤처투자 본격화</a></h3>
-            <p>연합인포맥스 · 2026-08-24</p>
-          </div>
-        </article>
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 기사</span>
-          <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608180918459880104431" target="_blank" rel="noreferrer">HPSP 성장 둔화에 칼 빼든 크레센도, &#x27;재고 419억&#x27; 승부수</a></h3>
-            <p>더벨 · 2026-08-20</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611060910472220107090" target="_blank" rel="noreferrer">크레센도, 4호 펀드에 &#x27;미·유럽 LP&#x27;도 품었다</a></h3>
+            <p>더벨 · 2026-11-10</p>
           </div>
         </article>
       </div>

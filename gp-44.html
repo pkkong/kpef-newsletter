@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -2903,7 +2909,7 @@
         <span class="gp-profile-preview-kicker">PEF 운용사</span>
         <h1>NH투자증권</h1>
         <p>2025년 4분기 운용 현황</p>
-        
+        <p class="gp-profile-preview-description">공개자료에서 관련 뉴스 3건이 확인됩니다.</p>
       </div>
     </header>
 
@@ -3086,7 +3092,34 @@
       <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-
+    <section class="gp-profile-preview-section gp-profile-preview-activity" aria-labelledby="gpActivity">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpActivity">관련 정보</h2>
+      </div>
+      <div class="gp-profile-preview-activity-list">
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://www.fnnews.com/news/202611040903304791" target="_blank" rel="noreferrer">프리미어, 한국펀드파트너스 85% 인수 눈앞…ETF 성장에 &#x27;베팅&#x27; [fn마켓워치]</a></h3>
+            <p>파이낸셜뉴스 · 2026-11-05</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 기사</span>
+          <div>
+            <h3><a href="https://www.etoday.co.kr/news/view/2642784" target="_blank" rel="noreferrer">제이앤PE, 현대힘스 주식담보대출 만기 연장…600억으로 증액</a></h3>
+            <p>이투데이 · 2026-11-03</p>
+          </div>
+        </article>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 기사</span>
+          <div>
+            <h3><a href="https://www.fnnews.com/news/202610151328058185" target="_blank" rel="noreferrer">파인앤파트너스·아워서킷, 1390억 규모 &#x27;안산 데이터센터&#x27; 만든다 [fn마켓워치]</a></h3>
+            <p>파이낸셜뉴스 · 2026-10-16</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <footer class="gp-profile-preview-source">
       <p>금감원 PEF 운용현황 2025년 4분기 기준</p>

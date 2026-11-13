@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3081,10 +3087,10 @@
       </div>
       <div class="gp-profile-preview-activity-list">
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+          <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608121126449800108266" target="_blank" rel="noreferrer">미래에셋 알파셀렉션, 변동성 확대에 하위펀드 리밸런싱</a></h3>
-            <p>더벨 · 2026-08-15</p>
+            <h3><a href="https://www.bloter.net/news/articleView.html?idxno=676796" target="_blank" rel="noreferrer">[미래에셋운용 자본의 궤적]① 펀드 넘어 그룹 지배구조 축…캐피탈 지분법이익 4배</a></h3>
+            <p>블로터 · 2026-10-28</p>
           </div>
         </article>
       </div>

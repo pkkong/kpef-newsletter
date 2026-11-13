@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3083,18 +3089,18 @@
         <h2 id="gpActivity">관련 정보</h2>
       </div>
       <div class="gp-profile-preview-activity-list">
-        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+        <article class="gp-profile-preview-activity-row" data-profile-activity="lp">
+          <span>출자 연결</span>
           <div>
-            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=47252" target="_blank" rel="noreferrer">맘스터치, 내달 본입찰 간다...KLN 엑시트 가시권</a></h3>
-            <p>뉴스톱 · 2026-08-26</p>
+            <h3><a href="https://kpef-lp.vercel.app/program-kgrowth-2026-bank-valueup-3.html" target="_blank" rel="noreferrer">은행권 중견기업 밸류업펀드 3차 · 블라인드</a></h3>
+            <p>한국성장금융 · 최종 선정 · 2026-07-31</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+          <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608040841469040109375" target="_blank" rel="noreferrer">케이엘앤, &#x27;굿리치 콜옵션 딜&#x27; 합류…베이사이드PE와 공동운용 추진</a></h3>
-            <p>더벨 · 2026-08-07</p>
+            <h3><a href="https://biz.heraldcorp.com/article/10904928" target="_blank" rel="noreferrer">첫 독자펀드로 도약하는 KLN</a></h3>
+            <p>헤럴드경제 · 2026-10-17</p>
           </div>
         </article>
       </div>

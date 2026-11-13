@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -2996,15 +3002,15 @@
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
           <span>관련 딜</span>
           <div>
-            <h3><a href="https://www.mk.co.kr/news/stock/12131822" target="_blank" rel="noreferrer">“롯데렌탈 6만원까지 갈 것”…대신증권, 목표가 13.2% 올린 이유는</a></h3>
-            <p>매일경제 · 2026-08-20</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610141309130720107019" target="_blank" rel="noreferrer">두산그룹의 대신증권 &#x27;편애&#x27;…주요 딜마다 개근중</a></h3>
+            <p>더벨 · 2026-10-16</p>
           </div>
         </article>
         <article class="gp-profile-preview-activity-row" data-profile-activity="news">
-          <span>관련 딜</span>
+          <span>관련 기사</span>
           <div>
-            <h3><a href="https://www.asiae.co.kr/article/2026081920262319020" target="_blank" rel="noreferrer">롯데렌탈, 새 주인 사모펀드 TPG 효과…&quot;목표가 13% 상향&quot; [클릭e종목]</a></h3>
-            <p>아시아경제 · 2026-08-20</p>
+            <h3><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610151550015000109192" target="_blank" rel="noreferrer">기업 장악력 핵심 커버리지, 더딘 성장세 &#x27;고민&#x27;</a></h3>
+            <p>더벨 · 2026-10-21</p>
           </div>
         </article>
       </div>

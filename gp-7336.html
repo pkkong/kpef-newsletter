@@ -2870,6 +2870,12 @@
       .person-profile-section { padding-top: 28px; }
       .person-profile-source-note { padding-top: 20px; }
     }
+    /* Cross-service frame (2026-11-13): 브리프·LP·GP share one 900px column and
+       gutter, so the header and every list or profile line up across services. */
+    .gp-shell,
+    .gp-profile-preview,
+    .person-profile { width: min(calc(100% - 28px), 900px); }
+    .gp-app-header { max-width: none; }
   </style>
 </head>
 <body>
@@ -3016,7 +3022,20 @@
       <p class="gp-profile-preview-empty" id="gpFundEmpty" hidden>해당 상태의 펀드가 없습니다.</p>
     </section>
 
-
+    <section class="gp-profile-preview-section gp-profile-preview-activity" aria-labelledby="gpActivity">
+      <div class="gp-profile-preview-section-head">
+        <h2 id="gpActivity">관련 정보</h2>
+      </div>
+      <div class="gp-profile-preview-activity-list">
+        <article class="gp-profile-preview-activity-row" data-profile-activity="news">
+          <span>관련 딜</span>
+          <div>
+            <h3><a href="https://www.newstopkorea.com/news/articleView.html?idxno=48731" target="_blank" rel="noreferrer">한국콜마 손잡은 산은인베스트, 블루엠텍 인수 눈앞</a></h3>
+            <p>뉴스톱 · 2026-11-04</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <footer class="gp-profile-preview-source">
       <p>금감원 PEF 운용현황 2025년 4분기 기준</p>
