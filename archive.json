@@ -1,5 +1,515 @@
 [
   {
+    "reportDate": "2026-11-14",
+    "visibleDate": "2026.11.14",
+    "basis": "",
+    "articleCount": 18,
+    "articles": [
+      {
+        "id": "clip-20261114-0",
+        "rank": 0,
+        "section": "AI & PE",
+        "subCategory": "AI 전략·운영",
+        "rawSection": "AI & PE",
+        "title": "‘AI 중앙은행장’ 젠슨 황 사임에…AI 업계, 돈줄 마를라",
+        "titleBadges": [],
+        "source": "한겨레",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://www.hani.co.kr/images/shortcut-icon.png",
+        "sourceIconStyle": "",
+        "url": "https://www.hani.co.kr/arti/international/international_general/1287259.html",
+        "summaryText": "‘인공지능(AI) 업계의 중앙은행장’으로 불려온 젠슨 황 전 엔비디아 최고경영자의 사임 여파가 인공지능 분야 투자를 뒷받침해온 금융권으로 확산할 수 있다는 우려가 나온다. 일본 노무라종합연구소는 13일 ‘엔비디아 젠슨 황 최고경영자의 사임과 인공지능 붐의 향방’이란 제",
+        "summaryLines": [
+          "인공지능(AI) 업계의 중앙은행장’으로 불려온 젠슨 황 전 엔비디아 최고경영자의 사임 여파가 인공지능 분야 투자를…",
+          "일본 노무라종합연구소는 13일 ‘엔비디아 젠슨 황 최고경영자의 사임과 인공지능 붐의 향방’이란 제"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 0,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-1",
+        "rank": 1,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "부산EP, 넥스플렉스 9000억원에 인수…MBK가 지분 17% 재투자",
+        "titleBadges": [],
+        "source": "인베스트조선",
+        "sourceBadge": "인",
+        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
+        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
+        "url": "https://www.investchosun.com/site/data/html_dir/2026/11/13/2026111380072.html",
+        "summaryText": "부산EP, 넥스플렉스 9000억원에 인수…MBK가 지분 17% 재투자-인베스트조선",
+        "summaryLines": [
+          "부산EP, 넥스플렉스 9000억원에 인수",
+          "MBK가 지분 17% 재투자-인베스트조선"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-2",
+        "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "의무공개매수 100%냐 50%냐…대통령 간담회서도 논쟁 가열",
+        "titleBadges": [],
+        "source": "연합인포맥스",
+        "sourceBadge": "연",
+        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
+        "sourceIconStyle": "",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444643",
+        "summaryText": "의무공개매수제도 도입을 둘러싸고 소액주주 보호를 위한 '100% 전량매수' 원칙과 인수·합병(M&A) 시장 활성화를 위한 '50%+1주' 방식이 충돌했다.전량매수 의무화가 M&A를 위축시킬 것이라는 우려에 대해 해외 41개국의 실증연구에서는 그러한 증거는 발견되지 않았다는 반론이 나왔다.사모펀드(PEF) 업계에서는 실제 기업 인수 과정에서 자금 부담과 거래 불확실성이 커질 수 있다고 맞섰다.13일 서울 여의도에서 열린 이재명 대통령 주재 자본시장 정책 간담회에서는 의무공개매수제도의 매수 비율과 방식 등을 놓고 전문가들의 토론이 벌",
+        "summaryLines": [
+          "의무공개매수제도 도입을 둘러싸고 소액주주 보호를 위한 '100% 전량매수' 원칙과 인수·합병(M&A) 시장 활성화…",
+          "전량매수 의무화가 M&A를 위축시킬 것이라는 우려에 대해 해외 41개국의 실증연구에서는 그러한 증거는 발견되지 않…",
+          "사모펀드(PEF) 업계에서는 실제 기업 인수 과정에서 자금 부담과 거래 불확실성이 커질 수 있다고 맞섰다.13일…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-3",
+        "rank": 3,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "李 “난 욕 먹더라도 파이 키우는 쪽…M&A 활성화해야 주주 혜택”",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12208451",
+        "summaryText": "李, 자본시장 정책간담회 의무공개매수제 의견 갈리자 즉석투표 제안하며 논의 주도 ‘50%+1주’ 주장에 무게 실어 적대적 M&A 장벽 허무는 게 자본시장 정상화할 핵심 방안",
+        "summaryLines": [
+          "자본시장 정책간담회 의무공개매수제 의견 갈리자 즉석투표 제안하며 논의 주도 ‘50%+1주’ 주장에 무게 실어 적대…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "부산EP, 넥스플렉스 9000억에 품는다…MBK와 SPA 체결",
+        "titleBadges": [],
+        "source": "이투데이",
+        "sourceBadge": "투",
+        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
+        "url": "https://www.etoday.co.kr/news/view/2648022",
+        "summaryText": "▲넥스플렉스 (넥스플렉스)국내 사모펀드(PEF) 운용사 부산에쿼티파트너스(BEP)가 연성동박적층판(FCLL) 제조사 넥스플렉스를 인수한다.",
+        "summaryLines": [],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스",
+          "부산에쿼티파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-5",
+        "rank": 5,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "MBK, 넥스플렉스 9000억 매각…17% 재투자",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=49043",
+        "summaryText": "국내 사모펀드(PEF) 운용사 MBK파트너스가 연성동박적층판(FCCL) 제조업체 넥스플렉스 매각에 성공했다. 인수 약 3년 만에 기업 지분가치를 1.7배로 높이며",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 MBK파트너스가 연성동박적층판(FCCL) 제조업체 넥스플렉스 매각에 성공",
+          "인수 약 3년 만에 기업 지분가치를 1.7배로 높이며"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-6",
+        "rank": 6,
+        "section": "Deal",
+        "subCategory": "Signing·Closing",
+        "rawSection": "Deal",
+        "title": "부산EP, 몸값 9000억 넥스플렉스 인수 본계약… MBK 1530억 재투자",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/stock_general/2026/11/13/VE3SA3H5XFF6FEC5HKKZPBJDS4",
+        "summaryText": "사모펀드(PEF) 운용사 부산에쿼티파트너스(부산EP)가 연성동박적층판(FCCL) 제조사 넥스플렉스를 인수한다. 매도자인 MBK파트너스는 매각대금 일부를 재투자해 지분 17%를 보유한 주주로 남는다.",
+        "summaryLines": [
+          "사모펀드(PEF) 운용사 부산에쿼티파트너스(부산EP)가 연성동박적층판(FCCL) 제조사 넥스플렉스를 인수",
+          "매도자인 MBK파트너스는 매각대금 일부를 재투자해 지분 17%를 보유한 주주로 남는다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스",
+          "부산에쿼티파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-7",
+        "rank": 7,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "李 “욕먹어도 파이 키우는 쪽으로”…의무공개매수 ‘50%+1주’ 힘실어",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20114196",
+        "summaryText": "이재명 대통령이 소액주주 보호와 인수합병(M&A) 시장 위축 우려가 맞서는 ‘의무공개매수제도’ 도입 방식을 두고 시장 활성화에 방점을 찍은 ‘50%+1주’ 방안에 힘을 실었다. 자금 부담으로 M&A가 위축되는 부작용을 막는 것이 우선이라는 판단으로 풀이된다.",
+        "summaryLines": [
+          "이재명 대통령이 소액주주 보호와 인수합병(M&A) 시장 위축 우려가 맞서는 ‘의무공개매수제도’ 도입 방식을 두고…",
+          "자금 부담으로 M&A가 위축되는 부작용을 막는 것이 우선이라는 판단으로"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-8",
+        "rank": 8,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "MBK, 넥스플렉스 매각…부산EP와 주식매매계약 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20113881",
+        "summaryText": "MBK파트너스가 연성동박적층판(FCCL) 국내 1위 기업 넥스플렉스를 부산에쿼티파트너스(부산EP)에 매각한다. 부산EP의 자금조달 난항으로 표류하던 매각 작업이 MBK의 일부 지분 재투자 방식으로 돌파구를 찾았다.",
+        "summaryLines": [
+          "MBK파트너스가 연성동박적층판(FCCL) 국내 1위 기업 넥스플렉스를 부산에쿼티파트너스(부산EP)에 매각",
+          "부산EP의 자금조달 난항으로 표류하던 매각 작업이 MBK의 일부 지분 재투자 방식으로 돌파구를 찾았다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스",
+          "부산에쿼티파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-9",
+        "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "넥스플렉스 품는 부산EP…9000억 딜, MBK '17% 재베팅'이 살렸다 [fn마켓워치]",
+        "titleBadges": [],
+        "source": "파이낸셜뉴스",
+        "sourceBadge": "파",
+        "sourceIconUrl": "https://static.fnnews.com/resources/w/img/icon2020/favicon-96x96.png",
+        "sourceIconStyle": "",
+        "url": "https://www.fnnews.com/news/202611131520582901",
+        "summaryText": "자금조달 난항으로 장기간 표류했던 넥스플렉스 매각이 기존 대주주인 MBK파트너스의 재출자로 돌파구를 찾았다.",
+        "summaryLines": [
+          "자금조달 난항으로 장기간 표류했던 넥스플렉스 매각이 기존 대주주인 MBK파트너스의 재출자로 돌파구를 찾았다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-10",
+        "rank": 10,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "적대적 M&A 힘 싣는 李대통령…\"대주주 지분 과도하면 증시 퇴출시켜야\"",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://www.hankyung.com/article/2026111358441",
+        "summaryText": "적대적 M&A 힘 싣는 李대통령…\"대주주 지분 과도하면 증시 퇴출시켜야\", \"M&A 활성화해야 주주 혜택\" 자본시장 개혁 강조 \"상장 이익 누리며 독점 경영\" '개인회사식' 기업들에 직격 의무공개매수 논쟁 이어지자 \"욕 먹더라도 파이 더 키워야\" 여야 합의안 '50%+1주'에 무게",
+        "summaryLines": [
+          "적대적 M&A 힘 싣는 李대통령",
+          "대주주 지분 과도하면 증시 퇴출시켜야\", \"M&A 활성화해야 주주 혜택\" 자본시장 개혁 강조 \"상장 이익 누리며…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-11",
+        "rank": 11,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "“투자금 회수 길 열고, 기업 IR 늘려야”…의무공개매수엔 찬반 공방",
+        "titleBadges": [],
+        "source": "이데일리",
+        "sourceBadge": "이",
+        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03585046645645392",
+        "summaryText": "이재명 대통령이 자본시장 저평가 해소를 위한 의무공개매수제도 논의에 조속한 결론을 당부하고, 상장기업의 투자자 소통을 강화하기 위한 제도 개선을 주문했다. 경영권 거래 과정에서 일반주주에게 공정한 매도 기회를 보장하되 인수·합병(M&A)이 위축되지 않도록 제도를 설계...",
+        "summaryLines": [
+          "이재명 대통령이 자본시장 저평가 해소를 위한 의무공개매수제도 논의에 조속한 결론을 당부하고, 상장기업의 투자자 소…",
+          "경영권 거래 과정에서 일반주주에게 공정한 매도 기회를 보장하되 인수·합병(M&A)이 위축되지 않도록 제도를 설계"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-12",
+        "rank": 12,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "IR 안하는 코스닥, '연 1회 의무' 예고…의무공개매수는 논쟁 계속",
+        "titleBadges": [],
+        "source": "머니투데이",
+        "sourceBadge": "머",
+        "sourceIconUrl": "https://menu.mt.co.kr/mt24/assets/20260605151524/logo-ClKSLyDR.svg",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 10px;",
+        "url": "https://www.mt.co.kr/stock/2026/11/13/2026111316091195813",
+        "summaryText": "코스닥 상장사가 기업설명회(IR)에 소극적이라는 이재명 대통령 지적에 한국거래소가 연 1회 이상 IR을 의무화하겠다고 예고했다. 이날 토론에 참석한 이건재 IBK투자증권 코스닥 리서치센터장은 \"증권사 최초로 코스닥 리서치센터를 출범했으나 기업들이 탐방을 받지 않거나 IR을 하지 않는 경우가 대다수\"라며 \"투자자 중에서는 기업들이 돈이 필요할 때는 IR을 열심히 하고 돈을 벌기 시작할 때는 IR을 하지 않는다는 의견이 다수 존재한다\"고 말했다.",
+        "summaryLines": [
+          "코스닥 상장사가 기업설명회(IR)에 소극적이라는 이재명 대통령 지적에 한국거래소가 연 1회 이상 IR을 의무화하겠…",
+          "이날 토론에 참석한 이건재 IBK투자증권 코스닥 리서치센터장은 \"증권사 최초로 코스닥 리서치센터를 출범했으나 기업…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-13",
+        "rank": 13,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "국민연금-JP모간자산운용, 협력 확대…주식·채권·대체투자까지 '포괄'",
+        "titleBadges": [],
+        "source": "뉴스핌",
+        "sourceBadge": "핌",
+        "sourceIconUrl": "https://img.newspim.com/m/mweb/favicon_144X144V2.png",
+        "sourceIconStyle": "",
+        "url": "https://www.newspim.com/news/view/20261113000876",
+        "summaryText": "[세종=뉴스핌] 신도경 기자 = 국민연금공단이 글로벌 자산운용사 JP모간자산운용과 손을 잡고 주식·채권·대체투자 등 전 자산군에 걸친 포괄적 투자 협력에 나선다.연금공단과 JP모간자산운용은 지난 10일(현지시각) 오전 미국 뉴욕 JP모간체이스",
+        "summaryLines": [
+          "국민연금공단이 글로벌 자산운용사 JP모간자산운용과 손을 잡고 주식·채권·대체투자 등 전 자산군에 걸친 포괄적 투자…",
+          "연금공단과 JP모간자산운용은 지난 10일(현지시각) 오전 미국 뉴욕 JP모간체이스"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-14",
+        "rank": 14,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "“국민연금과 10년 ‘jeong’ 쌓여”…JP모건운용 사장의 인맥자랑",
+        "titleBadges": [],
+        "source": "매일경제",
+        "sourceBadge": "매",
+        "sourceIconUrl": "https://static.mk.co.kr/favicon_180180.png",
+        "sourceIconStyle": "",
+        "url": "https://www.mk.co.kr/news/stock/12207952",
+        "summaryText": "링크드인에 뉴욕 방문한 국민연금 언급 ‘세계에서 가장 존경받는 연기금’ 찬사 내년 전주사무소 개소 의지도 밝혀 “액티브 역량 韓 고객에게 보다",
+        "summaryLines": [
+          "링크드인에 뉴욕 방문한 국민연금 언급 ‘세계에서 가장 존경받는 연기금’ 찬사 내년 전주사무소 개소 의지도 밝혀 “…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-15",
+        "rank": 15,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "스틱인베스트먼트, KEMI ESG 어워즈 우수상 수상",
+        "titleBadges": [],
+        "source": "헤럴드경제",
+        "sourceBadge": "헤",
+        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
+        "sourceIconStyle": "",
+        "url": "https://biz.heraldcorp.com/article/10935808",
+        "summaryText": "ESG(환경·사회·지배구조) 경영을 적극 실천한 우수 기업과 공공기관을 매년 선정해 시상하는 ‘KEMI ESG Awards’에서 국내 사모펀드(PEF) 운용사 스틱인베스트먼트가 전",
+        "summaryLines": [
+          "ESG(환경·사회·지배구조) 경영을 적극 실천한 우수 기업과 공공기관을 매년 선정해 시상하는 ‘KEMI ESG A…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-16",
+        "rank": 16,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "“M&A 시장 양극화 심화…로펌 역량따라 성패 좌우될 것”[시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20114041",
+        "summaryText": "인공지능(AI)과 로봇, 에너지 등 특정 산업으로 기업 인수 수요가 몰리면서 인수합병(M&A) 시장의 양극화 현상은 심화되고 난이도는 더욱 높아질 것이라는 진단이 나왔다. 김진오 김앤장 변호사는 13일 서울경제신문과의 인터뷰에서 “공정거래와 지배구조 등 기업 M&A 난",
+        "summaryLines": [
+          "인공지능(AI)과 로봇, 에너지 등 특정 산업으로 기업 인수 수요가 몰리면서 인수합병(M&A) 시장의 양극화 현상…",
+          "김진오 김앤장 변호사는 13일 서울경제신문과의 인터뷰에서 “공정거래와 지배구조 등 기업 M&A 난"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-17",
+        "rank": 17,
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
+        "title": "李대통령 \"적대적 M&A 활성화로, 주식시장 비정상 구조 깨야\"",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://www.hankyung.com/article/2026111358511",
+        "summaryText": "李대통령 \"적대적 M&A 활성화로, 주식시장 비정상 구조 깨야\", 자본시장 정책 간담회 \"민·관 고위급 개혁기구 만들라\"",
+        "summaryLines": [
+          "李대통령 \"적대적 M&A 활성화로",
+          "주식시장 비정상 구조 깨야",
+          "자본시장 정책 간담회 \"민·관 고위급 개혁기구 만들라"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      }
+    ]
+  },
+  {
     "reportDate": "2026-11-13",
     "visibleDate": "2026.11.13",
     "basis": "",
@@ -376,7 +886,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -403,7 +915,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -455,7 +969,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "제네시스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -481,7 +997,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "프랙시스캐피탈파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -535,7 +1053,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -563,7 +1083,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -589,7 +1111,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -616,7 +1140,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -703,7 +1229,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -783,7 +1311,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "유진프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -919,7 +1449,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국성장금융"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -946,7 +1478,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -973,7 +1507,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1000,7 +1536,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1025,9 +1563,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "노앤파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회",
+          "한국수출입은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1052,7 +1595,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "에이치앤큐코리아파트너스",
+          "헬리오스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -1080,7 +1626,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -1138,7 +1686,9 @@
         "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "건설근로자공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1171,7 +1721,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "이앤에프프라이빗에퀴티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -1250,7 +1802,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -1414,9 +1968,15 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "크레센도에쿼티파트너스",
+          "어펄마캐피탈",
+          "아주아이비투자"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "총회연금재단"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1440,9 +2000,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "크레센도에쿼티파트너스",
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "총회연금재단"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1468,7 +2033,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1495,7 +2062,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1521,7 +2090,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1549,7 +2120,11 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국수출입은행",
+          "한국성장금융",
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1574,9 +2149,15 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회",
+          "군인공제회",
+          "중소기업중앙회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -1600,7 +2181,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "원익투자파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -1826,7 +2409,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -2094,7 +2679,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "크레센도에쿼티파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2123,7 +2710,10 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국성장금융",
+          "한국벤처투자"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -2151,7 +2741,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -2202,7 +2794,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2231,7 +2825,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국수출입은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -2318,7 +2914,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2345,7 +2943,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "프리미어파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2371,7 +2971,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스",
+          "케이씨지아이"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2531,7 +3134,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2646,7 +3251,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "웰투시인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2733,9 +3340,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아크앤파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국성장금융",
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -2813,7 +3425,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2867,7 +3481,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -2921,7 +3537,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "제이씨파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3030,7 +3648,10 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사",
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -3082,7 +3703,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "파라투스인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3171,7 +3794,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스",
+          "유씨케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3224,7 +3850,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3251,7 +3879,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "센트로이드인베스트먼트파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3278,7 +3908,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3304,7 +3936,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "이음프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3384,7 +4018,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3438,7 +4074,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3521,7 +4159,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -3547,7 +4187,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -3573,7 +4215,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -3598,7 +4242,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "우리프라이빗에퀴티자산운용"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3653,7 +4299,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "에이치앤큐코리아파트너스",
+          "헬리오스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3732,7 +4381,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "에이치앤큐코리아파트너스",
+          "헬리오스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3786,7 +4438,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "테스투자파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3848,7 +4502,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3875,7 +4531,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3901,7 +4559,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3928,7 +4588,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3955,7 +4617,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "프리미어파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -3982,7 +4646,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4008,7 +4674,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4061,7 +4729,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4115,7 +4785,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "글랜우드프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4222,9 +4894,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "제네시스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4251,7 +4927,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4302,9 +4980,16 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "케이비인베스트먼트",
+          "아이엠엠크레딧앤솔루션"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국산업은행",
+          "IBK기업은행",
+          "한국수출입은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4366,7 +5051,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4471,7 +5158,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "산은인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4525,7 +5214,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "웰투시인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4551,9 +5242,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "유안타증권"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4577,9 +5273,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "아크앤파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회",
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4607,7 +5308,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -4659,7 +5362,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "소시어스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4713,7 +5418,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4739,7 +5446,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4801,7 +5510,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "키스톤프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4828,7 +5539,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "스카이레이크에쿼티파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -4882,7 +5595,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "에스케이에스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5071,7 +5786,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -5123,9 +5840,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "제네시스프라이빗에쿼티",
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -5178,7 +5900,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "제이앤프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5206,7 +5930,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -5232,7 +5958,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5313,7 +6041,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5340,7 +6070,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5535,7 +6267,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5616,7 +6350,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -5670,9 +6406,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "컴퍼니케이파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -5812,7 +6552,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "파라투스인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6117,7 +6859,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6197,9 +6941,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -6338,7 +7086,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6418,7 +7168,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6473,7 +7225,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -6498,7 +7252,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6524,7 +7280,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6632,9 +7390,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "유진프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -6659,9 +7421,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠크레딧앤솔루션",
+          "케이비인베스트먼트"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국성장금융"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -6765,7 +7532,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6801,7 +7570,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "헬리오스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6828,7 +7599,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "에스지프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6881,7 +7654,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6908,7 +7683,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6935,7 +7712,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -6989,7 +7768,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7071,7 +7852,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "레버런트파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7100,7 +7883,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "농업정책보험금융원"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -7150,7 +7935,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "제이케이엘파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7232,7 +8019,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7528,7 +8317,11 @@
         "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "새마을금고중앙회",
+          "중소기업중앙회",
+          "경찰공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -7561,7 +8354,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 0,
-        "gpNames": [],
+        "gpNames": [
+          "인빅터스프라이빗에쿼티아시아"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7615,7 +8410,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "스톤브릿지캐피탈"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7641,7 +8438,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7668,7 +8467,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7694,7 +8495,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7721,7 +8524,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7749,7 +8554,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7775,7 +8582,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7830,7 +8639,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -7855,7 +8666,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -7911,7 +8724,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "과학기술인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -7938,7 +8753,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8024,7 +8841,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8104,7 +8923,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "제이씨파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8131,7 +8952,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8185,7 +9008,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "그린하버"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8319,7 +9144,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8344,7 +9171,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8485,7 +9314,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "에이치앤큐코리아파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8511,7 +9342,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8545,7 +9378,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "제이씨파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8710,9 +9545,15 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "우리프라이빗에퀴티자산운용",
+          "제이앤프라이빗에쿼티",
+          "제이케이엘파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "우정사업본부"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8739,7 +9580,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국교직원공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8764,9 +9607,16 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "우리프라이빗에퀴티자산운용",
+          "제이앤프라이빗에쿼티",
+          "더함파트너스",
+          "레버런트파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "우정사업본부"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8790,9 +9640,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "우리프라이빗에퀴티자산운용",
+          "제이케이엘파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "우정사업본부"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -8844,7 +9699,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "제이케이엘파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -8871,7 +9728,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "오로라파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9043,7 +9902,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국교직원공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -9095,7 +9956,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "제이케이엘파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9151,7 +10014,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국성장금융"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -9178,7 +10043,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -9284,7 +10151,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9365,7 +10234,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9505,7 +10376,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "센트로이드인베스트먼트파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9612,7 +10485,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9824,7 +10699,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국벤처투자"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -9875,7 +10752,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "스틱인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -9929,9 +10808,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "한국투자프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국산업은행"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -9956,7 +10839,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10010,7 +10895,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "에이치앤큐코리아파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10125,7 +11012,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엔베스터"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10180,7 +11069,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10317,7 +11208,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10344,7 +11237,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국교직원공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10424,7 +11319,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
-        "gpNames": [],
+        "gpNames": [
+          "케이씨지아이"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10540,7 +11437,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10567,7 +11466,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "뉴젠인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10785,7 +11686,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "총회연금재단"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10810,9 +11713,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10838,7 +11745,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "한국교직원공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10864,9 +11773,13 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -10891,7 +11804,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "맥쿼리자산운용"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10972,7 +11887,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "유안타인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -10999,7 +11916,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "노앤파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11118,7 +12037,9 @@
         "sectionOrder": 0,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -11143,7 +12064,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "포레스트파트너스",
+          "우리프라이빗에퀴티자산운용"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11172,7 +12096,9 @@
         "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "우정사업본부"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -11197,7 +12123,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11333,7 +12261,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -11360,7 +12290,9 @@
         "sectionOrder": 3,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "국민연금기금"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -11385,7 +12317,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "노앤파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11439,7 +12373,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "인터베스트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11466,7 +12402,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11563,7 +12501,10 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "제이케이엘파트너스",
+          "아이엠엠인베스트먼트"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11590,7 +12531,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엔베스터"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11617,7 +12560,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엔베스터"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11644,7 +12589,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11671,7 +12618,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엔베스터"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11723,7 +12672,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "우리프라이빗에퀴티자산운용"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11750,7 +12701,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "케이엘앤파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11865,7 +12818,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11892,7 +12847,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "아이엠엠프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11919,7 +12876,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -11999,7 +12958,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 2,
-        "gpNames": [],
+        "gpNames": [
+          "스톤브릿지캐피탈"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -12162,9 +13123,16 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "아크앤파트너스",
+          "어펄마캐피탈",
+          "이니어스프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12189,9 +13157,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 3,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "미래에셋벤처투자"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12215,9 +13188,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "어펄마캐피탈"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12244,7 +13222,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12269,7 +13249,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "대신프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -12296,7 +13278,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "비에이프라이빗에쿼티"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -12325,7 +13309,9 @@
         "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12350,9 +13336,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "아이엠엠인베스트먼트"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12377,9 +13368,14 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "브이아이지파트너스",
+          "미래에셋벤처투자"
+        ],
         "gpProfileLinks": [],
-        "lpNames": [],
+        "lpNames": [
+          "군인공제회"
+        ],
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
@@ -12404,7 +13400,9 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
-        "gpNames": [],
+        "gpNames": [
+          "한앤컴퍼니"
+        ],
         "gpProfileLinks": [],
         "lpNames": [],
         "lpProfileLinks": [],
@@ -12454,605 +13452,6 @@
         "summaryLines": [
           "두산그룹 자금 조달에 대신증권의 행보가 눈에 띈다",
           "최근 들어 대형 딜에 잇따라 참여하는 모습이 포착되고 있기 때문이다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      }
-    ]
-  },
-  {
-    "reportDate": "2026-10-15",
-    "visibleDate": "2026.10.15",
-    "basis": "",
-    "articleCount": 22,
-    "articles": [
-      {
-        "id": "clip-20261015-0",
-        "rank": 0,
-        "section": "국민성장펀드",
-        "subCategory": "정책펀드",
-        "rawSection": "국민성장펀드",
-        "title": "정책자금 확보해도 '돈 구하기 전쟁'…민간 매칭에 발목 [국민성장펀드 병목]②",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2634839",
-        "summaryText": "국민성장펀드에 LP 관심 집중…기존 정책펀드 GP 부담 우려정책기관 출자 확약 이후 민간 자금 확보가 펀드 결성 관건▲여의도 증권가국민성장펀드 출자",
-        "summaryLines": [
-          "국민성장펀드에 LP 관심 집중",
-          "기존 정책펀드 GP 부담 우려정책기관 출자 확약 이후 민간 자금 확보가 펀드 결성 관건"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-1",
-        "rank": 1,
-        "section": "국민성장펀드",
-        "subCategory": "출자·선정",
-        "rawSection": "국민성장펀드",
-        "title": "35조원 간접투자에 자금 쏠림…PEF 운용사 '펀딩 한파' [국민성장펀드 병목]①",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2634838",
-        "summaryText": "국민성장펀드 출자 본격화…민간 LP 자금 확보 경쟁 심화은행·보험사 생산적 금융 확대에 정책펀드 우선 검토일반 블라인드펀드 자금 모집 위축·GP 양",
-        "summaryLines": [
-          "국민성장펀드 출자 본격화",
-          "민간 LP 자금 확보 경쟁 심화은행·보험사 생산적 금융 확대에 정책펀드 우선 검토일반 블라인드펀드 자금 모집 위축…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-2",
-        "rank": 2,
-        "section": "국민성장펀드",
-        "subCategory": "정책펀드",
-        "rawSection": "국민성장펀드",
-        "title": "돈은 넘치는데 투자처는 한정…기업 몸값만 높이나 [국민성장펀드 병목]③",
-        "titleBadges": [],
-        "source": "이투데이",
-        "sourceBadge": "투",
-        "sourceIconUrl": "https://www.etoday.co.kr/images/etoday_logo_pc.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 15px;",
-        "url": "https://www.etoday.co.kr/news/view/2634844",
-        "summaryText": "AI·반도체·바이오 등 첨단산업에 정책·민간 투자자금 집중우량 비상장기업 확보 경쟁 심화…투자 단가 상승 가능성펀드 결성 이후 집행·회수까지 고려",
-        "summaryLines": [
-          "AI·반도체·바이오 등 첨단산업에 정책·민간 투자자금 집중우량 비상장기업 확보 경쟁 심화",
-          "투자 단가 상승 가능성펀드 결성 이후 집행·회수까지 고려"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 1,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-3",
-        "rank": 3,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
-        "title": "IMM PE, 특화 여행사 품는 ‘하나투어’ 밸류업 힘준다",
-        "titleBadges": [],
-        "source": "뉴스톱",
-        "sourceBadge": "톱",
-        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
-        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48178",
-        "summaryText": "하나투어가 테마여행 중심으로 사업 구조를 재편하고 있다. 최대주주인 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE) 주도하에 마케팅 전문가를 새 수장으로 영입",
-        "summaryLines": [
-          "하나투어가 테마여행 중심으로 사업 구조를 재편하고 있다",
-          "최대주주인 사모펀드(PEF) 운용사 IMM프라이빗에쿼티(PE) 주도하에 마케팅 전문가를 새 수장으로 영입"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-4",
-        "rank": 4,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "햄버거 다운타우너 이어... GFFG, 노티드 도넛도 매각 추진",
-        "titleBadges": [],
-        "source": "조선비즈",
-        "sourceBadge": "조",
-        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
-        "sourceIconStyle": "",
-        "url": "https://biz.chosun.com/stock/market_trend/2026/10/15/BHEHP2ABWVCZHLUJPQOIX2YX6E",
-        "summaryText": "GFFG, 노티드 도넛도 매각 추진 이 기사는 2026년 10월 14일 15시 38분 조선비즈 머니무브MM 사이트에 표출됐습니다. 외식 브랜드 운영사 GFFG가 도넛 브랜드 노티드Knotted의 분리 매각을 물밑에서 타진하고 있다.",
-        "summaryLines": [
-          "GFFG, 노티드 도넛도 매각 추진",
-          "외식 브랜드 운영사 GFFG가 도넛 브랜드 노티드Knotted의 분리 매각을 물밑에서 타진하고 있다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-5",
-        "rank": 5,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "LNG 가스선사로 변신한 SK해운…증시상장 도전",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/170338",
-        "summaryText": "한앤컴퍼니가 투자 포트폴리오 기업인 SK해운의 기업공개(IPO)를 검토하며 증시 상장을 타진하고 있다. SK해운은 유조선 사업을 정리하고 LNG·LPG 운반선 중심으로 선대를 재편했으며, 5년 이상 장기계약 비중이 2018년 70%→2024년 말 87%로 상승했다.",
-        "summaryLines": [
-          "한앤컴퍼니가 투자 포트폴리오 기업인 SK해운의 기업공개(IPO)를 검토하며 증시 상장을 타진하고 있다",
-          "SK해운은 유조선 사업을 정리하고 LNG·LPG 운반선 중심으로 선대를 재편했으며, 5년 이상 장기계약 비중이 2…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-6",
-        "rank": 6,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "롯데손보 품는 신한금융, 7500억 규모 자본재편 나선다",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610131428497520109591",
-        "summaryText": "신한금융지주가 롯데손해보험 인수 나선 가운데 7500억원 규모의 자본재편안을 마련했다. 경영권 인수 후 3000억원을 추가 증자하는 한편 4500억원 규모의 무상감자를 병행해 롯데손보 재무 구조를 전면 재편할 계획이다.",
-        "summaryLines": [
-          "신한금융지주가 롯데손해보험 인수 나선 가운데 7500억원 규모의 자본재편안을 마련",
-          "경영권 인수 후 3000억원을 추가 증자하는 한편 4500억원 규모의 무상감자를 병행해 롯데손보 재무 구조를 전면…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-7",
-        "rank": 7,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "에이비즈, 진시스템 유동화 속도…경보전기 투자 발판",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610121919283920108678",
-        "summaryText": "사모펀드(PEF) 운용사 에이비즈파트너스의 포트폴리오 기업 진시스템이 약 130억원 규모의 현금 유동화에 나섰다. 58억원 규모 전환사채(CB) 발행에 이어 보유 토지와 건물을 매각해 현금을 확보하고 있다.",
-        "summaryLines": [
-          "사모펀드(PEF) 운용사 에이비즈파트너스의 포트폴리오 기업 진시스템이 약 130억원 규모의 현금 유동화에",
-          "58억원 규모 전환사채(CB) 발행에 이어 보유 토지와 건물을 매각해 현금을 확보하고 있다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-8",
-        "rank": 8,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "[이현정의 어프로치] 진옥동, 신한의 화려한 부활을 꿈꾸다",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439167",
-        "summaryText": "오랜만에 4대 금융지주에서 대형 딜이 나왔다. 5년 만에 인수·합병(M&A) 시장에 모습을 드러낸 신한금융지주다.",
-        "summaryLines": [
-          "오랜만에 4대 금융지주에서 대형 딜이 나왔다",
-          "5년 만에 인수·합병(M&A) 시장에 모습을 드러낸 신한금융지주다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-9",
-        "rank": 9,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "신한지주 품에 안긴 롯데손보, 적기시정조치 조기 졸업 '파란불'",
-        "titleBadges": [],
-        "source": "연합인포맥스",
-        "sourceBadge": "연",
-        "sourceIconUrl": "https://news.einfomax.co.kr/image/logo/snslogo_20231006045256.png",
-        "sourceIconStyle": "",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439097",
-        "summaryText": "롯데손해보험이 신한금융지주 품에 안기면서 적기시정조치 조기에 벗어날 전망이다. 과거 대주주의 유상증자나 대형 금융그룹으로의 피인수 등을 통해 자본 건전성 요건을 충족할 경우 조기 해제된 선례가 다수 있어서다.14일 보험업계에 따르면 롯데손보는 지난 5월 조건부 승인을 받은 경영개선계획을 충실히 이행하면서 향후 금융당국에 적기시정조치 조기 해제를 요청하는 방안을 검토할 계획이다.앞서 롯데손보는 지난해 11월 적기시정조치 1단계인 경영개선권고를 부여받았다.",
-        "summaryLines": [
-          "롯데손해보험이 신한금융지주 품에 안기면서 적기시정조치 조기에 벗어날 전망",
-          "과거 대주주의 유상증자나 대형 금융그룹으로의 피인수 등을 통해 자본 건전성 요건을 충족할 경우 조기 해제된 선례가…",
-          "앞서 롯데손보는 지난해 11월 적기시정조치 1단계인 경영개선권고를 부여받았다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-10",
-        "rank": 10,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "노앤파트너스, 방산 항법기업 '마이크로인피니티' 150억 투자",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610130919106920102532",
-        "summaryText": "사모투자펀드(PEF) 운용사 노앤파트너스가 방산 항법기업 마이크로인피니티에 신규 투자를 단행했다. 핵심 부품의 양산 확대에 맞춰 생산설비와 연구개발에 필요한 자금을 공급하는 투자다.",
-        "summaryLines": [
-          "사모투자펀드(PEF) 운용사 노앤파트너스가 방산 항법기업 마이크로인피니티에 신규 투자를 단행",
-          "핵심 부품의 양산 확대에 맞춰 생산설비와 연구개발에 필요한 자금을 공급하는 투자다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-11",
-        "rank": 11,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "신평사들, 롯데손보 신용등급 상향 검토…\"신한, 신용도 영향 제한적\"",
-        "titleBadges": [],
-        "source": "뉴시스",
-        "sourceBadge": "뉴",
-        "sourceIconUrl": "https://img1.newsis.com/n_www/images/ci/2024/logo2024.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 11px;",
-        "url": "https://www.newsis.com/view/NISX20261014_0003825832",
-        "summaryText": "국내 신용평가사들이 14일 신한금융지주에 매각되는 롯데손해보험을 신용등급 상향 검토 워치리스트에 등록했다. 또 이번 거래가 신한지주 신용도에 미치는 영향은 제한적일 것으로 평가했다.",
-        "summaryLines": [
-          "국내 신용평가사들이 14일 신한금융지주에 매각되는 롯데손해보험을 신용등급 상향 검토 워치리스트에 등록",
-          "또 이번 거래가 신한지주 신용도에 미치는 영향은 제한적일 것으로 평가"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-12",
-        "rank": 12,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
-        "title": "김지원 대표 “韓스타트업 글로벌 투자유치 늘리려면…국내 VC, 해외사업 물꼬 먼저 터야”",
-        "titleBadges": [],
-        "source": "서울경제",
-        "sourceBadge": "서",
-        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
-        "sourceIconStyle": "",
-        "url": "https://www.sedaily.com/article/20101677",
-        "summaryText": "“한국의 벤처캐피털(VC)이 해외 기업에 투자하면서 교류의 물꼬를 터야 해외 VC도 한국의 기업에 투자할 수 있을 것이라는 발상의 전환이 필요한 때입니다.” 김지원 아주IB투자 대표는 14일 서울경제신문과의 인터뷰에서 ‘한국 스타트업을 돕지 않고 왜 해외 스타트업을 돕",
-        "summaryLines": [
-          "김지원 대표 “韓스타트업 글로벌 투자유치 거래 이벤트"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-13",
-        "rank": 13,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
-        "title": "IPO 시한 2년 남은 텍슨…李 때문에 탈출로 막힌 SKS",
-        "titleBadges": [],
-        "source": "딜사이트",
-        "sourceBadge": "딜",
-        "sourceIconUrl": "https://dealsite.co.kr/static/images/favicon.svg",
-        "sourceIconStyle": "",
-        "url": "https://dealsite.co.kr/articles/170413",
-        "summaryText": "SKS PE가 총 1000억원을 투자한 텍슨의 기업공개(IPO)가 중복상장 규제로 인해 불확실해졌다. 텍슨은 매출이 2023년 2570억원 $ ightarrow$ 2024년 3858억원 $ ightarrow$ 지난해 4885억원으로 증가하고 영업이익도 2023년 -11억원 $ ightarrow$ 2024년 284억원 $ ightarrow$ 지난해 326억원으로 개선됐으나 모회사 서진시스템의 상장으로 심사 부담이 커졌다.",
-        "summaryLines": [
-          "SKS PE가 총 1000억원을 투자한 텍슨의 기업공개(IPO)가 중복상장 규제로 인해 불확실해졌다",
-          "텍슨은 매출이 2023년 2570억원 $ ightarrow$ 2024년 3858억원 $ ightarrow$ 지난해…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-14",
-        "rank": 14,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "국민연금 ‘전관 논란’에...센터필드 운용사 교체 문턱 높였다",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03535846645612920",
-        "summaryText": "이 기사는 2026년10월12일 17시17분에 마켓인 프리미엄 콘텐츠로 선공개 되었습니다. 국민연금공단이 서울 역삼동 센터필드 위탁운용사(GP) 교체 과정에서 이례적으로 대체투자위원회 의결 요건을 상향 적용했던 사실이 확인됐다.",
-        "summaryLines": [
-          "국민연금공단이 서울 역삼동 센터필드 위탁운용사(GP) 교체 과정에서 이례적으로 대체투자위원회 의결 요건을 상향 적…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-15",
-        "rank": 15,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "운용사엔 책임투자 압박, 내부엔 통제 구멍…국민연금 국감서 드러난 두 얼굴",
-        "titleBadges": [],
-        "source": "인베스트조선",
-        "sourceBadge": "인",
-        "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
-        "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/10/14/2026101480107.html",
-        "summaryText": "운용사엔 책임투자 압박, 내부엔 통제 구멍…국민연금 국감서 드러난 두 얼굴-인베스트조선",
-        "summaryLines": [
-          "운용사엔 책임투자 압박, 내부엔 통제 구멍",
-          "국민연금 국감서 드러난 두 얼굴-인베스트조선"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-16",
-        "rank": 16,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "삼성운용, 전주사무소 개소…국민연금 접점 확대",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610121005325920103890",
-        "summaryText": "삼성자산운용이 전북 전주에 사무소를 열었다. 국민연금공단과 접점을 넓히려는 운용사들의 전주 진출이 이어지는 가운데 국내 최대 운용사까지 거점을 마련했다.",
-        "summaryLines": [
-          "삼성자산운용이 전북 전주에 사무소를 열었다",
-          "국민연금공단과 접점을 넓히려는 운용사들의 전주 진출이 이어지는 가운데 국내 최대 운용사까지 거점을 마련"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-17",
-        "rank": 17,
-        "section": "LP",
-        "subCategory": "Governance",
-        "rawSection": "LP",
-        "title": "국민연금 눈치에 전주간 금융사, 간판만 걸었나…국감서 '유령 사무실' 지적",
-        "titleBadges": [],
-        "source": "이데일리",
-        "sourceBadge": "이",
-        "sourceIconUrl": "https://image.edaily.co.kr/images/favicon/favicon_180x180.png",
-        "sourceIconStyle": "",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03322646645612920",
-        "summaryText": "국민연금공단이 위치한 전북 전주에 국내외 금융회사들이 잇달아 사무소를 열고 있지만, 실제 운용인력 없이 간판만 내건 형식적인 진출에 그쳐서는 안 된다는 지적이 국회 국정감사에서 나왔다. 국민연금이 위탁운용사 선정 과정에서 전주 거점에 가점을 부여하고 있는 만큼 단순한...",
-        "summaryLines": [
-          "국민연금공단이 위치한 전북 전주에 국내외 금융회사들이 잇달아 사무소를 열고 있지만, 실제 운용인력 없이 간판만 내…",
-          "국민연금이 위탁운용사 선정 과정에서 전주 거점에 가점을 부여하고 있는 만큼 단순한"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 3,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-18",
-        "rank": 18,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "메가딜 넘어 성장축 구축하는 한투PE",
-        "titleBadges": [],
-        "source": "헤럴드경제",
-        "sourceBadge": "헤",
-        "sourceIconUrl": "https://static.heraldcorp.com/wbazic/biz/www/image/m_touch_icon180.png",
-        "sourceIconStyle": "",
-        "url": "https://biz.heraldcorp.com/article/10902202",
-        "summaryText": "한국투자프라이빗에쿼티(한투PE)가 조 단위 대형 거래를 성사시키며 누적 운용자산(AUM) 6조원 시대를 열었다. 한투PE는 6월 1조6000억원 규모의 SK에너지 인프라 거래를",
-        "summaryLines": [
-          "한국투자프라이빗에쿼티(한투PE)가 조 단위 대형 거래를 성사시키며 누적 운용자산(AUM) 6조원 시대를 열었다",
-          "한투PE는 6월 1조6000억원 규모의 SK에너지 인프라 거래를"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-19",
-        "rank": 19,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
-        "title": "SBA, 서울시 벤처펀드 18개 선정...작년보다 2배 이상 결성 '막바지’",
-        "titleBadges": [],
-        "source": "뉴스톱",
-        "sourceBadge": "톱",
-        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
-        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48184",
-        "summaryText": "서울경제진흥원(SBA)이 올해 서울시 벤처펀드 출자사업에서 총 18개 펀드를 선정하며 지난해보다",
-        "summaryLines": [
-          "서울경제진흥원(SBA)이 올해 서울시 벤처펀드 출자사업에서 총 18개 펀드를 선정하며 지난해보다"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-20",
-        "rank": 20,
-        "section": "Market",
-        "subCategory": "Regulation",
-        "rawSection": "Market",
-        "title": "167조원으로 커졌는데…금감원 PEF 검사 역량 ‘제자리’",
-        "titleBadges": [],
-        "source": "아시아경제",
-        "sourceBadge": "아",
-        "sourceIconUrl": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
-        "sourceIconStyle": "",
-        "url": "https://www.asiae.co.kr/article/2026101414485757585",
-        "summaryText": "투자 규모가 167조원을 넘고 운용사 수도 500개 가까이 성장한 기관전용 사모펀드(PEF) 시장에 대한 금융감독원의 검.",
-        "summaryLines": [
-          "투자 규모가 167조원을 넘고 운용사 수도 500개 가까이 성장한 기관전용 사모펀드(PEF) 시장에 대한 금융감독…"
-        ],
-        "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
-        "gpNames": [],
-        "gpProfileLinks": [],
-        "lpNames": [],
-        "lpProfileLinks": [],
-        "peopleCount": 0,
-        "searchTerms": []
-      },
-      {
-        "id": "clip-20261015-21",
-        "rank": 21,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
-        "title": "고려아연 출자 뒤 최윤범 개인투자…아크미디어 이슈 급부상 이유",
-        "titleBadges": [],
-        "source": "더벨",
-        "sourceBadge": "더",
-        "sourceIconUrl": "https://image.thebell.co.kr/thebell10/img/2020/top-logo.png",
-        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 17px;",
-        "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610131039399040101175",
-        "summaryText": "최윤범 고려아연 회장의 아크미디어 선행투자를 둘러싼 논란이 확대되고 있다. 기존에는 최 회장과 친인척이 비상장 엔터테인먼트 기업에 먼저 투자한 뒤 고려아연이 출자한 펀드가 대규모 후속투자를 집행했다는 점이 문제로 지목됐다.",
-        "summaryLines": [
-          "최윤범 고려아연 회장의 아크미디어 선행투자를 둘러싼 논란이 확대되고 있다",
-          "기존에는 최 회장과 친인척이 비상장 엔터테인먼트 기업에 먼저 투자한 뒤 고려아연이 출자한 펀드가 대규모 후속투자를…"
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 5,
