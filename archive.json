@@ -353,7 +353,7 @@
     "reportDate": "2026-11-22",
     "visibleDate": "2026.11.22",
     "basis": "",
-    "articleCount": 4,
+    "articleCount": 5,
     "articles": [
       {
         "id": "clip-20261122-0",
@@ -465,6 +465,34 @@
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
+      },
+      {
+        "id": "clip-20261122-4",
+        "rank": 4,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "규제 앞둔 대학병원 의료기기 납품사 ‘M&A 도미노’…을지·순천향도 매물로",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/science-chosun/medicine-health/2026/11/22/FCTEOUGMKFD6BHJW6UR54EFJ5I",
+        "summaryText": "내년 특수관계 업체 납품 제한 앞두고 M&A 활발 세브란스·가톨릭 의료원, 경영권 매각 완료 서울아산병원, 현대그린푸드와 협상 중 사모펀드·대형 유통기업에 납품망 집중 공급 안정성 우려도 국내 주요 대학병원과 관련된 의료기기 간접납품회사(간납사)가 잇따라 인수합병(M&A)…",
+        "summaryLines": [
+          "내년 특수관계 업체 납품 제한 앞두고 M&A 활발 세브란스·가톨릭 의료원",
+          "경영권 매각 완료 서울아산병원",
+          "현대그린푸드와 협상 중 사모펀드·대형 유통기업에 납품망 집중 공급 안정성 우려도 국내 주요 대학병원과 관련된…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
       }
     ]
   },
@@ -472,7 +500,7 @@
     "reportDate": "2026-11-21",
     "visibleDate": "2026.11.21",
     "basis": "",
-    "articleCount": 10,
+    "articleCount": 12,
     "articles": [
       {
         "id": "clip-20261121-0",
@@ -560,8 +588,64 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261121-3",
+        "id": "clip-20261121-10",
         "rank": 3,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "“상장사 오너들, 의무공개매수제 도입 전 회사 팔고 싶어해”... 사모펀드는 신중",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/11/21/PTTVXVE37VGODG4DH5SUR2MJEE",
+        "summaryText": "이 기사는 2026년 11월 18일 09시 59분 조선비즈 머니무브(MM) 사이트에 표출됐습니다. 의무공개매수제 도입을 앞두고 경영권 매각을 타진하는 상장사 최대주주들이 늘고 있다.",
+        "summaryLines": [
+          "의무공개매수제 도입을 앞두고 경영권 매각을 타진하는 상장사 최대주주들이 늘고 있다"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261121-11",
+        "rank": 4,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "\"스타트업처럼 도전하는 VC\"…위벤처스, 새로운 길 개척한다",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611157005r",
+        "summaryText": "\"스타트업처럼 도전하는 VC\"…위벤처스, 새로운 길 개척한다, 하태훈 위벤처스 대표 LB인베스트먼트·DSC인베스트먼트 거쳐 2019년 위벤처스 설립 실리콘웍스·컨텍 투자 성과…국민성장펀드 GP 선정 LP 지분 유동화 등 차별화 전략으로 AUM 1조원 도전",
+        "summaryLines": [
+          "스타트업처럼 도전하는 VC",
+          "위벤처스, 새로운 길 개척한다, 하태훈 위벤처스 대표 LB인베스트먼트·DSC인베스트먼트 거쳐 2019년 위벤처…",
+          "국민성장펀드 GP 선정 LP 지분 유동화 등 차별화 전략으로 AUM 1조원 도전"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [
+          "위벤처스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261121-3",
+        "rank": 5,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -589,7 +673,7 @@
       },
       {
         "id": "clip-20261121-4",
-        "rank": 4,
+        "rank": 6,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -617,7 +701,7 @@
       },
       {
         "id": "clip-20261121-5",
-        "rank": 5,
+        "rank": 7,
         "section": "GP",
         "subCategory": "People",
         "rawSection": "GP",
@@ -644,7 +728,7 @@
       },
       {
         "id": "clip-20261121-6",
-        "rank": 6,
+        "rank": 8,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -673,7 +757,7 @@
       },
       {
         "id": "clip-20261121-7",
-        "rank": 7,
+        "rank": 9,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -701,7 +785,7 @@
       },
       {
         "id": "clip-20261121-8",
-        "rank": 8,
+        "rank": 10,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -727,7 +811,7 @@
       },
       {
         "id": "clip-20261121-9",
-        "rank": 9,
+        "rank": 11,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -1328,7 +1412,7 @@
     "reportDate": "2026-11-19",
     "visibleDate": "2026.11.19",
     "basis": "",
-    "articleCount": 20,
+    "articleCount": 21,
     "articles": [
       {
         "id": "clip-20261119-0",
@@ -1882,6 +1966,35 @@
         "lpProfileLinks": [],
         "peopleCount": 0,
         "searchTerms": []
+      },
+      {
+        "id": "clip-20261119-20",
+        "rank": 20,
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Market",
+        "title": "금감원, PEF 내부통제 현장점검 본격화…한앤코·SKS 등 10여곳 점검",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611171441r",
+        "summaryText": "[단독] 금감원, PEF 내부통제 현장점검 본격화…한앤코·SKS 등 10여곳 점검, 최다은 기자, 경제",
+        "summaryLines": [
+          "금감원, PEF 내부통제 현장점검 본격화",
+          "한앤코·SKS 등 10여곳 점검, 최다은 기자, 경제"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
+        "gpNames": [
+          "한앤컴퍼니"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
       }
     ]
   },
@@ -1889,7 +2002,7 @@
     "reportDate": "2026-11-18",
     "visibleDate": "2026.11.18",
     "basis": "",
-    "articleCount": 19,
+    "articleCount": 20,
     "articles": [
       {
         "id": "clip-20261118-0",
@@ -2228,8 +2341,35 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261118-12",
+        "id": "clip-20261118-19",
         "rank": 12,
+        "section": "Deal",
+        "subCategory": "Ownership",
+        "rawSection": "Deal",
+        "title": "타워팰리스서 에르메스 판다…중고명품 1위 굳힌 구구스 [PEF 밸류업 사례탐구]",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611169399r",
+        "summaryText": "타워팰리스서 에르메스 판다…중고명품 1위 굳힌 구구스 [PEF 밸류업 사례탐구], 중고명품 거래 온·오프라인 결합 '보고구매' 실적 2년새 2.1배 급증 부촌 파고든 '1인 매입센터' 확장 PEF 인수 후 매출 2배 '껑충'",
+        "summaryLines": [
+          "타워팰리스서 에르메스 판다",
+          "중고명품 1위 굳힌 구구스 [PEF 밸류업 사례탐구], 중고명품 거래 온·오프라인 결합 '보고구매' 실적 2년…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261118-12",
+        "rank": 13,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -2257,7 +2397,7 @@
       },
       {
         "id": "clip-20261118-13",
-        "rank": 13,
+        "rank": 14,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -2286,7 +2426,7 @@
       },
       {
         "id": "clip-20261118-14",
-        "rank": 14,
+        "rank": 15,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -2314,7 +2454,7 @@
       },
       {
         "id": "clip-20261118-15",
-        "rank": 15,
+        "rank": 16,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -2343,7 +2483,7 @@
       },
       {
         "id": "clip-20261118-16",
-        "rank": 16,
+        "rank": 17,
         "section": "GP",
         "subCategory": "Organization",
         "rawSection": "GP",
@@ -2373,7 +2513,7 @@
       },
       {
         "id": "clip-20261118-17",
-        "rank": 17,
+        "rank": 18,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -2399,7 +2539,7 @@
       },
       {
         "id": "clip-20261118-18",
-        "rank": 18,
+        "rank": 19,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -2430,7 +2570,7 @@
     "reportDate": "2026-11-17",
     "visibleDate": "2026.11.17",
     "basis": "",
-    "articleCount": 16,
+    "articleCount": 17,
     "articles": [
       {
         "id": "clip-20261117-0",
@@ -2792,8 +2932,37 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261117-13",
+        "id": "clip-20261117-16",
         "rank": 13,
+        "section": "LP",
+        "subCategory": "Allocation",
+        "rawSection": "LP",
+        "title": "韓 투자 확대하는 KIC도 지방 이전 거론…’큰손 LP’ 줄이전 땐 대체투자 위축 우려",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611135296r",
+        "summaryText": "韓 투자 확대하는 KIC도 지방 이전 거론…’큰손 LP’ 줄이전 땐 대체투자 위축 우려, 국내 투자 확대하는 KIC, 본사 이전에 부담 가중 대체투자 비중 60% 넘는 공제회도 거론 “LP 인력 흔들리면 수익률에도 영향”",
+        "summaryLines": [
+          "韓 투자 확대하는 KIC도 지방 이전 거론",
+          "큰손 LP’ 줄이전 땐 대체투자 위축 우려, 국내 투자 확대하는 KIC, 본사 이전에 부담 가중 대체투자 비중…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [
+          "한국투자공사"
+        ],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261117-13",
+        "rank": 14,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -2823,7 +2992,7 @@
       },
       {
         "id": "clip-20261117-14",
-        "rank": 14,
+        "rank": 15,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -2849,7 +3018,7 @@
       },
       {
         "id": "clip-20261117-15",
-        "rank": 15,
+        "rank": 16,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -2881,7 +3050,7 @@
     "reportDate": "2026-11-16",
     "visibleDate": "2026.11.16",
     "basis": "",
-    "articleCount": 17,
+    "articleCount": 18,
     "articles": [
       {
         "id": "clip-20261116-0",
@@ -3303,8 +3472,36 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261116-15",
+        "id": "clip-20261116-17",
         "rank": 15,
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
+        "title": "프리미어, 한국펀드파트너스 인수 구조 윤곽… 1500억대 코인베 펀드 별도 조성",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/11/16/POYDJ325HZAXPH7TDOYHLD4OXE",
+        "summaryText": "이 기사는 2026년 11월 13일 16시 04분 조선비즈 머니무브(MM) 사이트에 표출됐습니다. 국내 사모펀드(PEF) 운용사 프리미어파트너스가 펀드 사무관리회사인 한국펀드파트너스 경영권 인수를 위해 1500억~1600억원 규모의 공동투자(Co-Investment·코인베)…",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 프리미어파트너스가 펀드 사무관리회사인 한국펀드파트너스 경영권 인수를 위해 150…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [
+          "프리미어파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261116-15",
+        "rank": 16,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -3333,7 +3530,7 @@
       },
       {
         "id": "clip-20261116-16",
-        "rank": 16,
+        "rank": 17,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -3364,7 +3561,7 @@
     "reportDate": "2026-11-15",
     "visibleDate": "2026.11.15",
     "basis": "",
-    "articleCount": 3,
+    "articleCount": 4,
     "articles": [
       {
         "id": "clip-20261115-0",
@@ -3421,8 +3618,36 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261115-2",
+        "id": "clip-20261115-3",
         "rank": 2,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "바이아웃 외길 VIG, 그로쓰 전담팀 꾸린다… 이철민 대표가 지휘",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/stock/market_trend/2026/11/15/BUBZ475DZ5EY3PY4KMK7RUG6LI",
+        "summaryText": "그로스캐피털 부문 신설 방침 확정 이철민 그로스·신창훈 바이아웃 투톱 미니쉬 300억 투자로 시험대 거쳐 이 기사는 2026년 11월 13일 16시 57분 조선비즈 머니무브(MM) 사이트에 표출됐습니다.",
+        "summaryLines": [
+          "그로스캐피털 부문 신설 방침 확정 이철민 그로스·신창훈 바이아웃 투톱 미니쉬 300억 투자로 시험대 거쳐"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "브이아이지파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261115-2",
+        "rank": 3,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -3453,7 +3678,7 @@
     "reportDate": "2026-11-14",
     "visibleDate": "2026.11.14",
     "basis": "",
-    "articleCount": 18,
+    "articleCount": 19,
     "articles": [
       {
         "id": "clip-20261114-0",
@@ -3903,8 +4128,35 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261114-16",
+        "id": "clip-20261114-18",
         "rank": 16,
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
+        "title": "진화하는 대기업–글로벌 PEF 동맹…'재무해결사'서 '성장 파트너'로",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611122365r",
+        "summaryText": "진화하는 대기업–글로벌 PEF 동맹…'재무해결사'서 '성장 파트너'로, 외부자본에 보수적인 삼성도 KKR과 두 차례 딜 현대글로비스x칼라일 등 윈윈 사례도 \"대미 투자 등 늘면서 협력 수요도 커질 것\"",
+        "summaryLines": [
+          "진화하는 대기업–글로벌 PEF 동맹",
+          "'재무해결사'서 '성장 파트너'로, 외부자본에 보수적인 삼성도 KKR과 두 차례 딜 현대글로비스x칼라일 등 윈…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261114-16",
+        "rank": 17,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -3931,7 +4183,7 @@
       },
       {
         "id": "clip-20261114-17",
-        "rank": 17,
+        "rank": 18,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -3963,7 +4215,7 @@
     "reportDate": "2026-11-13",
     "visibleDate": "2026.11.13",
     "basis": "",
-    "articleCount": 25,
+    "articleCount": 26,
     "articles": [
       {
         "id": "clip-20261113-0",
@@ -4400,8 +4652,39 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261113-16",
+        "id": "clip-20261113-25",
         "rank": 16,
+        "section": "LP",
+        "subCategory": "Governance",
+        "rawSection": "LP",
+        "title": "총회연금 선택받은 아주IB투자…美 벤처 시장 확대 나선다",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611110266r",
+        "summaryText": "총회연금 선택받은 아주IB투자…美 벤처 시장 확대 나선다, 하반기 출자사업 위탁운용사 선정 솔라스타벤처스 전용 펀드에 매칭 1500억 목표로 현지 투자 재원 조성",
+        "summaryLines": [
+          "총회연금 선택받은 아주IB투자",
+          "美 벤처 시장 확대 나선다, 하반기 출자사업 위탁운용사 선정 솔라스타벤처스 전용 펀드에 매칭 1500억 목표로…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 3,
+        "gpNames": [
+          "아주아이비투자"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [
+          "총회연금재단"
+        ],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261113-16",
+        "rank": 17,
         "section": "GP",
         "subCategory": "Organization",
         "rawSection": "GP",
@@ -4430,7 +4713,7 @@
       },
       {
         "id": "clip-20261113-17",
-        "rank": 17,
+        "rank": 18,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -4458,7 +4741,7 @@
       },
       {
         "id": "clip-20261113-18",
-        "rank": 18,
+        "rank": 19,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -4485,7 +4768,7 @@
       },
       {
         "id": "clip-20261113-19",
-        "rank": 19,
+        "rank": 20,
         "section": "GP",
         "subCategory": "Organization",
         "rawSection": "GP",
@@ -4514,7 +4797,7 @@
       },
       {
         "id": "clip-20261113-20",
-        "rank": 20,
+        "rank": 21,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -4544,7 +4827,7 @@
       },
       {
         "id": "clip-20261113-21",
-        "rank": 21,
+        "rank": 22,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -4572,7 +4855,7 @@
       },
       {
         "id": "clip-20261113-22",
-        "rank": 22,
+        "rank": 23,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -4601,7 +4884,7 @@
       },
       {
         "id": "clip-20261113-23",
-        "rank": 23,
+        "rank": 24,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -4628,7 +4911,7 @@
       },
       {
         "id": "clip-20261113-24",
-        "rank": 24,
+        "rank": 25,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -4658,7 +4941,7 @@
     "reportDate": "2026-11-12",
     "visibleDate": "2026.11.12",
     "basis": "",
-    "articleCount": 17,
+    "articleCount": 18,
     "articles": [
       {
         "id": "clip-20261112-0",
@@ -4878,8 +5161,34 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261112-8",
+        "id": "clip-20261112-17",
         "rank": 8,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "[K유니콘 리포트] 카카오엔터,기업가치 68% 뚝...1조 국부펀드 '회수비상'",
+        "titleBadges": [],
+        "source": "뉴스톱",
+        "sourceBadge": "톱",
+        "sourceIconUrl": "https://cdn.newstopkorea.com/image/logo/toplogo_20250923031735.png",
+        "sourceIconStyle": "--logo-img-width: 31px; --logo-img-height: 5px;",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48845",
+        "summaryText": "한때 11조원대 기업가치를 인정받으며 '데카콘' 왕관을 가졌던 카카오엔터테인먼트(이하 '카카오엔터')의 몸값이 3조6000억원대로 대폭 낮아졌다.",
+        "summaryLines": [
+          "한때 11조원대 기업가치를 인정받으며 '데카콘' 왕관을 가졌던 카카오엔터테인먼트(이하 '카카오엔터')의 몸값이…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261112-8",
+        "rank": 9,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -4908,7 +5217,7 @@
       },
       {
         "id": "clip-20261112-9",
-        "rank": 9,
+        "rank": 10,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -4937,7 +5246,7 @@
       },
       {
         "id": "clip-20261112-10",
-        "rank": 10,
+        "rank": 11,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -4966,7 +5275,7 @@
       },
       {
         "id": "clip-20261112-11",
-        "rank": 11,
+        "rank": 12,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -4995,7 +5304,7 @@
       },
       {
         "id": "clip-20261112-12",
-        "rank": 12,
+        "rank": 13,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -5027,7 +5336,7 @@
       },
       {
         "id": "clip-20261112-13",
-        "rank": 13,
+        "rank": 14,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -5057,7 +5366,7 @@
       },
       {
         "id": "clip-20261112-14",
-        "rank": 14,
+        "rank": 15,
         "section": "GP",
         "subCategory": "People",
         "rawSection": "GP",
@@ -5087,7 +5396,7 @@
       },
       {
         "id": "clip-20261112-15",
-        "rank": 15,
+        "rank": 16,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -5115,7 +5424,7 @@
       },
       {
         "id": "clip-20261112-16",
-        "rank": 16,
+        "rank": 17,
         "section": "Market",
         "subCategory": "Capital Market",
         "rawSection": "Market",
@@ -5149,7 +5458,7 @@
     "reportDate": "2026-11-11",
     "visibleDate": "2026.11.11",
     "basis": "",
-    "articleCount": 20,
+    "articleCount": 21,
     "articles": [
       {
         "id": "clip-20261111-0",
@@ -5695,8 +6004,36 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261111-19",
+        "id": "clip-20261111-20",
         "rank": 19,
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
+        "title": "MBK·노태우 비자금·방시혁 사건… 공소청, 대형 사건 연말까지 마무리 속도",
+        "titleBadges": [],
+        "source": "조선비즈",
+        "sourceBadge": "조",
+        "sourceIconUrl": "https://biz.chosun.com/pf/resources/icons/favicon_chosun.png?d=446",
+        "sourceIconStyle": "",
+        "url": "https://biz.chosun.com/topics/law_firm/2026/11/10/5F27Q3GGBJD6VJSD64Q6YOWNN4",
+        "summaryText": "공소청이 MBK파트너스의 홈플러스 관련 의혹과 노태우 전 대통령 일가의 비자금 은닉 의혹 등 주요 검찰의 직접 수사권 폐지에 따라 기존 수사를 계속할 수 있는 한시적 기간이 오는 12월 30일 끝나기 때문이다.",
+        "summaryLines": [
+          "공소청이 MBK파트너스의 홈플러스 관련 의혹과 노태우 전 대통령 일가의 비자금 은닉 의혹 등 주요 검찰의 직접…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [
+          "엠비케이파트너스"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261111-19",
+        "rank": 20,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -6768,7 +7105,7 @@
     "reportDate": "2026-11-07",
     "visibleDate": "2026.11.07",
     "basis": "",
-    "articleCount": 16,
+    "articleCount": 17,
     "articles": [
       {
         "id": "clip-20261107-0",
@@ -7209,6 +7546,33 @@
         ],
         "tagVersion": "news-taxonomy-v1",
         "sectionOrder": 4,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261107-16",
+        "rank": 16,
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Market",
+        "title": "\"신생 PEF 앞세워 한미 지분 매집?\"…신동국, 불공정거래 의혹 금감원 신고",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202611057737r",
+        "summaryText": "[단독] \"신생 PEF 앞세워 한미 지분 매집?\"…신동국, 불공정거래 의혹 금감원 신고, 신고서, 약정된 펀드 통해 우회 매집 의혹 제기 신 회장 측 \"사전 약속 전혀 없었다\"",
+        "summaryLines": [
+          "신생 PEF 앞세워 한미 지분 매집?",
+          "신동국, 불공정거래 의혹 금감원 신고, 신고서, 약정된 펀드 통해 우회 매집 의혹 제기 신 회장 측 \"사전 약…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -9615,7 +9979,7 @@
     "reportDate": "2026-11-02",
     "visibleDate": "2026.11.02",
     "basis": "",
-    "articleCount": 12,
+    "articleCount": 13,
     "articles": [
       {
         "id": "clip-20261102-0",
@@ -9837,8 +10201,37 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261102-8",
+        "id": "clip-20261102-12",
         "rank": 8,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "키스톤PE, 2300억에 ‘실크밸리GC’ 품는다 [시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20108386",
+        "summaryText": "국내 사모펀드(PEF) 운용사 키스톤프라이빗에쿼티(PE)가 경기도 이천 소재 ‘실크밸리골프클럽(GC)’을 품는다. 키스톤PE는 인수 후 투자를 통해 실크밸리GC를 수도권 주요",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 키스톤프라이빗에쿼티(PE)가 경기도 이천 소재 ‘실크밸리골프클럽(GC)’을 품는다",
+          "키스톤PE는 인수 후 투자를 통해 실크밸리GC를 수도권 주요"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [
+          "키스톤프라이빗에쿼티"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261102-8",
+        "rank": 9,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -9869,7 +10262,7 @@
       },
       {
         "id": "clip-20261102-9",
-        "rank": 9,
+        "rank": 10,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -9896,7 +10289,7 @@
       },
       {
         "id": "clip-20261102-10",
-        "rank": 10,
+        "rank": 11,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -9923,7 +10316,7 @@
       },
       {
         "id": "clip-20261102-11",
-        "rank": 11,
+        "rank": 12,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -10044,7 +10437,7 @@
     "reportDate": "2026-10-31",
     "visibleDate": "2026.10.31",
     "basis": "",
-    "articleCount": 17,
+    "articleCount": 18,
     "articles": [
       {
         "id": "clip-20261031-0",
@@ -10372,8 +10765,36 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261031-12",
+        "id": "clip-20261031-17",
         "rank": 12,
+        "section": "Deal",
+        "subCategory": "Exit",
+        "rawSection": "Deal",
+        "title": "\"매각 타이밍 놓치는 中企 많아…정보 비대칭·가치평가 '두 관문' 통과해야 M&A 성공\"",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202610278853r",
+        "summaryText": "\"매각 타이밍 놓치는 中企 많아…정보 비대칭·가치평가 '두 관문' 통과해야 M&A 성공\", 회계법인 딜메이커-이도신 삼일PwC 미들마켓 플랫폼 리더 20여년간 중소·중견기업 담당 \"사업 안될 땐 매각도 불가능, 적기 매각 타이밍 잡아라\" 회계법인 최초로 M&A중개 플랫폼 '딜엑세스'출시…전문가 유기적 자문 연결",
+        "summaryLines": [
+          "매각 타이밍 놓치는 中企 많아",
+          "정보 비대칭·가치평가 '두 관문' 통과해야 M&A 성공\", 회계법인 딜메이커-이도신 삼일PwC 미들마켓 플랫폼…",
+          "전문가 유기적 자문 연결"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261031-12",
+        "rank": 13,
         "section": "LP",
         "subCategory": "Allocation",
         "rawSection": "LP",
@@ -10404,7 +10825,7 @@
       },
       {
         "id": "clip-20261031-13",
-        "rank": 13,
+        "rank": 14,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -10430,7 +10851,7 @@
       },
       {
         "id": "clip-20261031-14",
-        "rank": 14,
+        "rank": 15,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -10457,7 +10878,7 @@
       },
       {
         "id": "clip-20261031-15",
-        "rank": 15,
+        "rank": 16,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -10484,7 +10905,7 @@
       },
       {
         "id": "clip-20261031-16",
-        "rank": 16,
+        "rank": 17,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -10997,7 +11418,7 @@
     "reportDate": "2026-10-29",
     "visibleDate": "2026.10.29",
     "basis": "",
-    "articleCount": 28,
+    "articleCount": 29,
     "articles": [
       {
         "id": "clip-20261029-0",
@@ -11255,8 +11676,36 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261029-9",
+        "id": "clip-20261029-28",
         "rank": 9,
+        "section": "Deal",
+        "subCategory": "Acquisition",
+        "rawSection": "Deal",
+        "title": "신동국 회장, 신생 펀드서 한미사이언스 지분 싸게 샀다",
+        "titleBadges": [],
+        "source": "한국경제",
+        "sourceBadge": "한",
+        "sourceIconUrl": "https://hkstatic.hankyung.com/resource/common/img/logo/logo-hk-short-w.svg",
+        "sourceIconStyle": "--logo-bg: #17376f; --logo-border: #17376f; --logo-img-width: 30px; --logo-img-height: 18px;",
+        "url": "https://marketinsight.hankyung.com/article/202610277551r",
+        "summaryText": "신동국 회장, 신생 펀드서 한미사이언스 지분 싸게 샀다, 분쟁 속 매집 중인데 전날 시세보다 4% 싸게…앞선 거래는 최대 50% 웃돈 펀드는 2차 계약 사흘 뒤 설립…운용사는 양평 9.5평 사무소 신 회장 측 \"통상적 블록딜과 다르지 않아, 펀드는 이번에 처음 알게된 곳\"",
+        "summaryLines": [
+          "신동국 회장, 신생 펀드서 한미사이언스 지분 싸게 샀다, 분쟁 속 매집 중인데 전날 시세보다 4% 싸게",
+          "앞선 거래는 최대 50% 웃돈 펀드는 2차 계약 사흘 뒤 설립",
+          "운용사는 양평 9.5평 사무소 신 회장 측 \"통상적 블록딜과 다르지 않아, 펀드는 이번에 처음 알게된 곳"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 2,
+        "gpNames": [],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261029-9",
+        "rank": 10,
         "section": "LP",
         "subCategory": "Governance",
         "rawSection": "LP",
@@ -11284,7 +11733,7 @@
       },
       {
         "id": "clip-20261029-10",
-        "rank": 10,
+        "rank": 11,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -11313,7 +11762,7 @@
       },
       {
         "id": "clip-20261029-11",
-        "rank": 11,
+        "rank": 12,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -11342,7 +11791,7 @@
       },
       {
         "id": "clip-20261029-12",
-        "rank": 12,
+        "rank": 13,
         "section": "GP",
         "subCategory": "Fundraising",
         "rawSection": "GP",
@@ -11368,7 +11817,7 @@
       },
       {
         "id": "clip-20261029-13",
-        "rank": 13,
+        "rank": 14,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -11396,7 +11845,7 @@
       },
       {
         "id": "clip-20261029-14",
-        "rank": 14,
+        "rank": 15,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -11423,7 +11872,7 @@
       },
       {
         "id": "clip-20261029-15",
-        "rank": 15,
+        "rank": 16,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -11451,7 +11900,7 @@
       },
       {
         "id": "clip-20261029-16",
-        "rank": 16,
+        "rank": 17,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
@@ -11480,7 +11929,7 @@
       },
       {
         "id": "clip-20261029-17",
-        "rank": 17,
+        "rank": 18,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11507,7 +11956,7 @@
       },
       {
         "id": "clip-20261029-18",
-        "rank": 18,
+        "rank": 19,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11534,7 +11983,7 @@
       },
       {
         "id": "clip-20261029-19",
-        "rank": 19,
+        "rank": 20,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11561,7 +12010,7 @@
       },
       {
         "id": "clip-20261029-20",
-        "rank": 20,
+        "rank": 21,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11587,7 +12036,7 @@
       },
       {
         "id": "clip-20261029-21",
-        "rank": 21,
+        "rank": 22,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -11614,7 +12063,7 @@
       },
       {
         "id": "clip-20261029-22",
-        "rank": 22,
+        "rank": 23,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11640,7 +12089,7 @@
       },
       {
         "id": "clip-20261029-23",
-        "rank": 23,
+        "rank": 24,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
@@ -11666,7 +12115,7 @@
       },
       {
         "id": "clip-20261029-24",
-        "rank": 24,
+        "rank": 25,
         "section": "Market",
         "subCategory": "Sector Theme",
         "rawSection": "Market",
@@ -11693,7 +12142,7 @@
       },
       {
         "id": "clip-20261029-25",
-        "rank": 25,
+        "rank": 26,
         "section": "Market",
         "subCategory": "Regulation",
         "rawSection": "Market",
@@ -11720,7 +12169,7 @@
       },
       {
         "id": "clip-20261029-26",
-        "rank": 26,
+        "rank": 27,
         "section": "Market",
         "subCategory": "Capital Market",
         "rawSection": "Market",
@@ -11748,7 +12197,7 @@
       },
       {
         "id": "clip-20261029-27",
-        "rank": 27,
+        "rank": 28,
         "section": "Market",
         "subCategory": "Market View",
         "rawSection": "Market",
