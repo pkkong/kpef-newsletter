@@ -3,7 +3,7 @@
     "reportDate": "2026-11-23",
     "visibleDate": "2026.11.23",
     "basis": "",
-    "articleCount": 11,
+    "articleCount": 12,
     "articles": [
       {
         "id": "clip-20261123-0",
@@ -211,14 +211,14 @@
         "section": "Deal",
         "subCategory": "Acquisition",
         "rawSection": "Deal",
-        "title": "MBK,'갤럭시 S펜 기술' 日와콤 1.2조원에 인수 추진…삼성전자도 재출자",
+        "title": "MBK, '갤럭시 S펜 기술' 日와콤 1.2조원에 인수 추진…삼성전자도 재출자",
         "titleBadges": [],
         "source": "인베스트조선",
         "sourceBadge": "인",
         "sourceIconUrl": "https://img.investchosun.com/images/2025/logo_header.svg",
         "sourceIconStyle": "--logo-img-width: 32px; --logo-img-height: 13px;",
         "url": "https://www.investchosun.com/site/data/html_dir/2026/11/22/2026112280045.html",
-        "summaryText": "MBK,'갤럭시 S펜 기술' 日와콤 1.2조원에 인수 추진…삼성전자도 재출자-인베스트조선",
+        "summaryText": "MBK, '갤럭시 S펜 기술' 日와콤 1.2조원에 인수 추진…삼성전자도 재출자-인베스트조선",
         "summaryLines": [
           "삼성전자도 재출자-인베스트조선"
         ],
@@ -266,6 +266,35 @@
         "id": "clip-20261123-9",
         "rank": 9,
         "section": "GP",
+        "subCategory": "Fundraising",
+        "rawSection": "GP",
+        "title": "제네시스PE, 8500억 2호 블라인드펀드 결성[시그널]",
+        "titleBadges": [],
+        "source": "서울경제",
+        "sourceBadge": "서",
+        "sourceIconUrl": "https://static.sedaily.com/img/favicon-228.png",
+        "sourceIconStyle": "",
+        "url": "https://www.sedaily.com/article/20116956",
+        "summaryText": "국내 사모펀드(PEF) 운용사 제네시스프라이빗에쿼티(PE)가 8500억 원 규모로 2호 블라인드펀드를 결성했다. 당초 목표 대비 2500억 원가량 펀드 규모가 커졌는데 제네시스PE만의 ‘롤업 전략’이 긍정적인 평가를 받은 영향으로 풀이된다.",
+        "summaryLines": [
+          "국내 사모펀드(PEF) 운용사 제네시스프라이빗에쿼티(PE)가 8500억 원 규모로 2호 블라인드펀드를 결성",
+          "당초 목표 대비 2500억 원가량 펀드 규모가 커졌는데 제네시스PE만의 ‘롤업 전략’이 긍정적인 평가를 받은 영향…"
+        ],
+        "tagVersion": "news-taxonomy-v1",
+        "sectionOrder": 4,
+        "gpNames": [
+          "제네시스프라이빗에쿼티"
+        ],
+        "gpProfileLinks": [],
+        "lpNames": [],
+        "lpProfileLinks": [],
+        "peopleCount": 0,
+        "searchTerms": []
+      },
+      {
+        "id": "clip-20261123-10",
+        "rank": 10,
+        "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
         "title": "IMM '장기보유' 에어퍼스트, 국내서 이정표 세우나[PE는 지금]",
@@ -291,8 +320,8 @@
         "searchTerms": []
       },
       {
-        "id": "clip-20261123-10",
-        "rank": 10,
+        "id": "clip-20261123-11",
+        "rank": 11,
         "section": "GP",
         "subCategory": "Strategy",
         "rawSection": "GP",
