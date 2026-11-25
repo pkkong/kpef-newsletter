@@ -288,9 +288,9 @@
       {
         "id": "clip-20261125-10",
         "rank": 10,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Sector Theme",
+        "rawSection": "Market",
         "title": "[밸류업 점검] LG화학, 바이오 R&D 2조 투자…다음 과제는 매출",
         "titleBadges": [],
         "source": "블로터",
@@ -304,7 +304,7 @@
           "생명과학 R&D에 2027년까지 2조원을 투입한다는 기존 목표는 현재 집행 속도를 유지하면 달성 가능하다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
