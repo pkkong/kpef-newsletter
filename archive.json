@@ -94,9 +94,9 @@
       {
         "id": "clip-20261125-3",
         "rank": 3,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "다올투자證 경영권 매각설 수면 위로",
         "titleBadges": [],
         "source": "파이낸셜뉴스",
@@ -110,7 +110,7 @@
           "KCGI의 한양증권 인수에 이어 Sh수협은행이 상상인증권 인수에 나선 가운데 다올투자증권 경영권 매각 가능성까지…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [
           "케이씨지아이"
         ],
