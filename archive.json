@@ -37,9 +37,9 @@
       {
         "id": "clip-20261125-1",
         "rank": 1,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
+        "section": "GP",
+        "subCategory": "Strategy",
+        "rawSection": "GP",
         "title": "[마켓인]올해 신규 인수 ‘0건’…바이아웃 명가 한앤코의 변신",
         "titleBadges": [],
         "source": "이데일리",
@@ -52,7 +52,7 @@
           "국내 대표 바이아웃(경영권 인수) 사모펀드(PEF) 운용사인 한앤컴퍼니가 체질 개선에"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 4,
         "gpNames": [
           "한앤컴퍼니"
         ],
@@ -125,9 +125,9 @@
       {
         "id": "clip-20261125-4",
         "rank": 4,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "삼성 금융 네트워크 글로벌 영토 넓힌다…해외 M&A 속도",
         "titleBadges": [],
         "source": "서울경제",
@@ -140,7 +140,7 @@
           "삼성생명·삼성화재·삼성증권·삼성자산운용 등 삼성그룹 주요 금융 계열사들이 네트워크를 활용해 미국 등 주요"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -151,9 +151,9 @@
       {
         "id": "clip-20261125-5",
         "rank": 5,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
+        "section": "GP",
+        "subCategory": "Track Record",
+        "rawSection": "GP",
         "title": "미래에셋벤처, 시드부터 프리IPO까지…딥테크 성장 파트너",
         "titleBadges": [],
         "source": "더벨",
@@ -167,7 +167,7 @@
           "자금을 보태며 딥테크 기업의 성장 단계마다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 4,
         "gpNames": [
           "미래에셋벤처투자"
         ],
@@ -235,9 +235,9 @@
       {
         "id": "clip-20261125-8",
         "rank": 8,
-        "section": "Deal",
-        "subCategory": "Acquisition",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "[마켓인]\"바이아웃만으론 부족\"…글로벌 PE들 하이브리드 투자 확대",
         "titleBadges": [],
         "source": "이데일리",
@@ -250,7 +250,7 @@
           "글로벌 사모펀드(PEF) 운용사들이 전통적인 바이아웃(buyout·경영권 인수)에서 벗어나 에쿼티와 대출의 특성을…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -261,9 +261,9 @@
       {
         "id": "clip-20261125-9",
         "rank": 9,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "“대기업 믿었는데” 자금 회수 막히자 법정 찾는 FI [시그널]",
         "titleBadges": [],
         "source": "서울경제",
@@ -277,7 +277,7 @@
           "발행사의 회생·사업 부진에 중복상장 규제까지 겹치면서 FI 엑시트가 갈수록 요원해지는 상황이어서 업계에서는 유사…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -315,9 +315,9 @@
       {
         "id": "clip-20261125-11",
         "rank": 11,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
+        "section": "GP",
+        "subCategory": "People",
+        "rawSection": "GP",
         "title": "'IPO 드림팀' 4인방, 상장 길목마다 밀착 밸류업",
         "titleBadges": [],
         "source": "더벨",
@@ -331,7 +331,7 @@
           "기술 기업이 코스닥에 상장하기까지 거치는 길목을 각기 다른 자리에서 경험한 전문가들이 한 팀을 이루고 있다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 4,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -342,9 +342,9 @@
       {
         "id": "clip-20261125-12",
         "rank": 12,
-        "section": "Deal",
-        "subCategory": "Exit",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Regulation",
+        "rawSection": "Market",
         "title": "“몸값 높여야 하는데”…투썸, 강매 의혹에 엑시트 암초? [재계톡톡]- 매경ECONOMY",
         "titleBadges": [],
         "source": "매일경제",
@@ -358,7 +358,7 @@
           "최근 투썸 미국 시장 진출도 기업가치를 높이기 위한 행보라는 해석이 나온다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -599,9 +599,9 @@
       {
         "id": "clip-20261125-21",
         "rank": 21,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
+        "section": "Deal",
+        "subCategory": "Financing",
+        "rawSection": "Deal",
         "title": "TKL인베스트먼트, 풍원정밀 200억 영구CB 투자 추진",
         "titleBadges": [],
         "source": "더벨",
@@ -615,7 +615,7 @@
           "유기발광다이오드(OLED) 공정용 파인메탈마스크(FMM)를 개발하는 풍원정밀에 투자하기 위해 펀드 조성에"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
+        "sectionOrder": 2,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
