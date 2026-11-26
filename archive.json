@@ -8,9 +8,9 @@
       {
         "id": "clip-20261126-0",
         "rank": 0,
-        "section": "Deal",
-        "subCategory": "Ownership",
-        "rawSection": "Deal",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "E&F PE의 쎄노텍, 매각 재도전 앞두고 실적 개선",
         "titleBadges": [],
         "source": "더벨",
@@ -24,7 +24,7 @@
           "올해 3분기 누적 영업이익이 이미 지난해 연간 수준을 넘어섰고 신사업 매출 비중도 커지고 있다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 2,
+        "sectionOrder": 5,
         "gpNames": [
           "이앤에프프라이빗에퀴티"
         ],
@@ -340,9 +340,9 @@
       {
         "id": "clip-20261126-12",
         "rank": 12,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "PEF연합회 출범키로…초대 회장 임유철에 관료 투톱",
         "titleBadges": [],
         "source": "딜사이트",
@@ -356,7 +356,7 @@
           "홈플러스 사태 이후 규제 대응 필요성이 커짐에 따라 사단법인으로 전환하며, 업계 인사와 관료 출신 인사를 활용한…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
+        "sectionOrder": 5,
         "gpNames": [
           "에이치앤큐코리아파트너스"
         ],
@@ -427,9 +427,9 @@
       {
         "id": "clip-20261126-15",
         "rank": 15,
-        "section": "GP",
-        "subCategory": "Organization",
-        "rawSection": "GP",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "'모험자본 플랫폼' 참여 936개사 돌파…창업·벤처 PEF 인정·NCR 완화 추진",
         "titleBadges": [],
         "source": "한국경제",
@@ -443,7 +443,7 @@
           "창업·벤처 PEF 인정·NCR 완화 추진, KB증권, 모험자본 플랫폼 통해 유니스트기술지주 투자조합에 출자 모험자…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -454,9 +454,9 @@
       {
         "id": "clip-20261126-16",
         "rank": 16,
-        "section": "GP",
-        "subCategory": "Organization",
-        "rawSection": "GP",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "종투사 모험자본 공급 11조원 넘어...'1호 출자' 플랫폼은 KB증권",
         "titleBadges": [],
         "source": "아시아경제",
@@ -469,7 +469,7 @@
           "금융감독원과 네이버페이가 구축한 모험자본 투자 플랫폼을 통해 종합금융투자사업자(종투사)가 출자에 나선 첫"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -509,9 +509,9 @@
       {
         "id": "clip-20261126-18",
         "rank": 18,
-        "section": "GP",
-        "subCategory": "Strategy",
-        "rawSection": "GP",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "[마켓인]TPG 측 이사 임기 만료 임박…카카오모빌리티 이사회 재편되나",
         "titleBadges": [],
         "source": "이데일리",
@@ -524,7 +524,7 @@
           "카카오모빌리티가 롯데렌탈 이사 겸직을 불허한 윤신원 텍사스퍼시픽그룹(TPG) 부대표의 임기 만료를 앞두고 있다"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -535,9 +535,9 @@
       {
         "id": "clip-20261126-19",
         "rank": 19,
-        "section": "GP",
-        "subCategory": "Track Record",
-        "rawSection": "GP",
+        "section": "Market",
+        "subCategory": "Market View",
+        "rawSection": "Market",
         "title": "하이워터마크의 벽…헤지펀드 성과보수 보릿고개",
         "titleBadges": [],
         "source": "더벨",
@@ -551,7 +551,7 @@
           "상반기 급등장에서 고점을 찍은 펀드 상당수가 하반기 급락으로 직전 최고 기준가(하이워터마크) 아래로 내려왔기 때문…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 4,
+        "sectionOrder": 5,
         "gpNames": [],
         "gpProfileLinks": [],
         "lpNames": [],
@@ -589,9 +589,9 @@
       {
         "id": "clip-20261126-21",
         "rank": 21,
-        "section": "Market",
-        "subCategory": "Market View",
-        "rawSection": "Market",
+        "section": "Deal",
+        "subCategory": "Financing",
+        "rawSection": "Deal",
         "title": "에코프로비엠, 5700억 CB 발행 추진…1700억은 추가 모집",
         "titleBadges": [],
         "source": "더벨",
@@ -605,7 +605,7 @@
           "기존 투자자인 신한투자증권과 IMM인베스트먼트가 추가 인수를 추진하고, IMM크레딧앤솔루션도 신규 참여를 검토하고…"
         ],
         "tagVersion": "news-taxonomy-v1",
-        "sectionOrder": 5,
+        "sectionOrder": 2,
         "gpNames": [
           "아이엠엠인베스트먼트",
           "아이엠엠크레딧앤솔루션"
